@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C53980C2F4EBE5800905CF0 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53980A2F4EBE5800905CF0 /* PaywallView.swift */; };
+		9C53980D2F4EBE5800905CF0 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53980B2F4EBE5800905CF0 /* StoreKitManager.swift */; };
 		A10001 /* JuniorDevMistakesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001 /* JuniorDevMistakesApp.swift */; };
 		A10002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20002 /* ContentView.swift */; };
 		A10003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20003 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C53980A2F4EBE5800905CF0 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		9C53980B2F4EBE5800905CF0 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
 		A20001 /* JuniorDevMistakesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuniorDevMistakesApp.swift; sourceTree = "<group>"; };
 		A20002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A20003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		A50002 /* JuniorDevMistakes */ = {
 			isa = PBXGroup;
 			children = (
+				9C53980A2F4EBE5800905CF0 /* PaywallView.swift */,
+				9C53980B2F4EBE5800905CF0 /* StoreKitManager.swift */,
 				A20001 /* JuniorDevMistakesApp.swift */,
 				A20002 /* ContentView.swift */,
 				A20005 /* Models.swift */,
@@ -158,6 +164,8 @@
 				A10004 /* MistakeData.swift in Sources */,
 				A10005 /* Models.swift in Sources */,
 				A10006 /* CategoryListView.swift in Sources */,
+				9C53980C2F4EBE5800905CF0 /* PaywallView.swift in Sources */,
+				9C53980D2F4EBE5800905CF0 /* StoreKitManager.swift in Sources */,
 				A10007 /* MistakeListView.swift in Sources */,
 				A10008 /* MistakeDetailView.swift in Sources */,
 				A10009 /* ProgressView.swift in Sources */,

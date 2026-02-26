@@ -49,6 +49,7 @@ enum AppTheme {
 
 struct ContentView: View {
     @EnvironmentObject var manager: ChecklistManager
+    @EnvironmentObject var storeManager: StoreKitManager
 
     var body: some View {
         TabView {
@@ -70,6 +71,11 @@ struct ContentView: View {
             BookmarkListView()
                 .tabItem {
                     Label("북마크", systemImage: "bookmark.fill")
+                }
+
+            SettingsView()
+                .tabItem {
+                    Label("설정", systemImage: "gearshape.fill")
                 }
         }
         .tint(AppTheme.primary)
@@ -125,6 +131,132 @@ struct BookmarkListView: View {
                 }
             }
             .navigationTitle("북마크")
+        }
+    }
+}
+
+// MARK: - Settings
+struct SettingsView: View {
+    @EnvironmentObject var manager: ChecklistManager
+    @EnvironmentObject var storeManager: StoreKitManager
+    @State private var showPaywall = false
+    @State private var showResetAlert = false
+
+    var body: some View {
+        NavigationStack {
+            List {
+                // 구독 섹션
+                Section {
+                    if storeManager.isPremium {
+                        HStack(spacing: 14) {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(AppTheme.retroAmber.opacity(0.15))
+                                    .frame(width: 40, height: 40)
+                                Image(systemName: "crown.fill")
+                                    .font(.system(size: 18))
+                                    .foregroundStyle(AppTheme.retroAmber)
+                            }
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text("PRO 이용 중")
+                                    .font(.system(size: 15, weight: .bold, design: .rounded))
+                                Text("100개 실수 전체 이용 가능")
+                                    .font(.system(size: 12, design: .rounded))
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                        .padding(.vertical, 4)
+                    } else {
+                        Button {
+                            showPaywall = true
+                        } label: {
+                            HStack(spacing: 14) {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .fill(AppTheme.primary.opacity(0.1))
+                                        .frame(width: 40, height: 40)
+                                    Image(systemName: "crown.fill")
+                                        .font(.system(size: 18))
+                                        .foregroundStyle(AppTheme.primary)
+                                }
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text("PRO로 업그레이드")
+                                        .font(.system(size: 15, weight: .bold, design: .rounded))
+                                        .foregroundStyle(.primary)
+                                    Text("나머지 70개 실수를 잠금 해제하세요")
+                                        .font(.system(size: 12, design: .rounded))
+                                        .foregroundStyle(.secondary)
+                                }
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                                    .font(.system(size: 12))
+                                    .foregroundStyle(.quaternary)
+                            }
+                            .padding(.vertical, 4)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                } header: {
+                    Text("구독")
+                }
+
+                // 복원 섹션
+                Section {
+                    Button {
+                        Task { await storeManager.restorePurchases() }
+                    } label: {
+                        HStack {
+                            Label("구매 복원하기", systemImage: "arrow.clockwise")
+                                .font(.system(size: 15, design: .rounded))
+                                .foregroundStyle(.primary)
+                            Spacer()
+                            if storeManager.isLoading {
+                                ProgressView().scaleEffect(0.85)
+                            }
+                        }
+                    }
+                    .buttonStyle(.plain)
+                }
+
+                // 데이터 섹션
+                Section {
+                    Button(role: .destructive) {
+                        showResetAlert = true
+                    } label: {
+                        Label("모든 데이터 초기화", systemImage: "trash")
+                            .font(.system(size: 15, design: .rounded))
+                    }
+                } header: {
+                    Text("데이터")
+                } footer: {
+                    Text("체크리스트, 회고 기록, 북마크가 모두 삭제됩니다.")
+                        .font(.system(size: 11, design: .rounded))
+                }
+
+                // 정보 섹션
+                Section {
+                    HStack {
+                        Text("버전")
+                            .font(.system(size: 15, design: .rounded))
+                        Spacer()
+                        Text(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0")
+                            .font(.system(size: 15, design: .rounded))
+                            .foregroundStyle(.secondary)
+                    }
+                } header: {
+                    Text("정보")
+                }
+            }
+            .navigationTitle("설정")
+            .sheet(isPresented: $showPaywall) {
+                PaywallView()
+            }
+            .alert("초기화 확인", isPresented: $showResetAlert) {
+                Button("취소", role: .cancel) {}
+                Button("초기화", role: .destructive) { manager.resetAll() }
+            } message: {
+                Text("모든 진행 데이터가 삭제됩니다. 이 작업은 되돌릴 수 없습니다.")
+            }
         }
     }
 }

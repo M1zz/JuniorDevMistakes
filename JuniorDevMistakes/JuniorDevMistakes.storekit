@@ -1,0 +1,99 @@
+{
+  "identifier" : "A1B2C3D4-0001-0001-0001-A1B2C3D40001",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "39900",
+      "familySharable" : false,
+      "internalID" : "A1B2C3D4-0001-0001-0001-A1B2C3D40003",
+      "localizations" : [
+        {
+          "description" : "한 번 결제로 PRO 기능을 영구적으로 이용하세요.",
+          "displayName" : "평생 이용권",
+          "locale" : "ko_KR"
+        }
+      ],
+      "productID" : "com.leeo.JuniorDevMistakes.pro.lifetime",
+      "referenceName" : "Pro Lifetime",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "id" : "InterruptedPurchaseError"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "A1B2C3D4-0001-0001-0001-A1B2C3D40010",
+      "localizations" : [
+        {
+          "locale" : "ko_KR",
+          "name" : "PRO 구독"
+        }
+      ],
+      "name" : "PRO 구독",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "3900",
+          "familySharable" : false,
+          "gracePeriod" : null,
+          "internalID" : "A1B2C3D4-0001-0001-0001-A1B2C3D40011",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "매월 자동으로 갱신되는 PRO 구독입니다.",
+              "displayName" : "월간 구독",
+              "locale" : "ko_KR"
+            }
+          ],
+          "productID" : "com.leeo.JuniorDevMistakes.pro.monthly",
+          "referenceName" : "Pro Monthly",
+          "subscriptionPeriod" : "P1M",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "24900",
+          "familySharable" : false,
+          "gracePeriod" : null,
+          "internalID" : "A1B2C3D4-0001-0001-0001-A1B2C3D40012",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "매년 자동으로 갱신되는 PRO 구독입니다. 월간 대비 최대 50% 절약.",
+              "displayName" : "연간 구독",
+              "locale" : "ko_KR"
+            }
+          ],
+          "productID" : "com.leeo.JuniorDevMistakes.pro.yearly",
+          "referenceName" : "Pro Yearly",
+          "subscriptionPeriod" : "P1Y",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}
