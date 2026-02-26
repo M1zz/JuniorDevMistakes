@@ -53,32 +53,26 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-            CategoryListView()
-                .tabItem {
-                    Label("실수 100", systemImage: "rectangle.grid.1x2.fill")
-                }
-
-            OverallProgressView()
-                .tabItem {
-                    Label("진행률", systemImage: "chart.bar.fill")
-                }
-
-            RetroJournalView()
-                .tabItem {
-                    Label("회고 일지", systemImage: "book.closed.fill")
-                }
-
-            BookmarkListView()
-                .tabItem {
-                    Label("북마크", systemImage: "bookmark.fill")
-                }
-
-            SettingsView()
-                .tabItem {
-                    Label("설정", systemImage: "gearshape.fill")
-                }
+            Tab("실수 100", systemImage: "rectangle.grid.1x2.fill") {
+                CategoryListView()
+            }
+            Tab("진행률", systemImage: "chart.bar.fill") {
+                OverallProgressView()
+            }
+            Tab("회고 일지", systemImage: "book.closed.fill") {
+                RetroJournalView()
+            }
+            Tab("북마크", systemImage: "bookmark.fill") {
+                BookmarkListView()
+            }
+            Tab("설정", systemImage: "gearshape.fill") {
+                SettingsView()
+            }
         }
         .tint(AppTheme.primary)
+#if targetEnvironment(macCatalyst)
+        .tabViewStyle(.sidebarAdaptable)
+#endif
     }
 }
 

@@ -10,6 +10,20 @@ struct JuniorDevMistakesApp: App {
             ContentView()
                 .environmentObject(checklistManager)
                 .environmentObject(storeManager)
+#if targetEnvironment(macCatalyst)
+                .frame(minWidth: 900, minHeight: 600)
+#endif
         }
+#if targetEnvironment(macCatalyst)
+        .windowResizability(.contentMinSize)
+        .commands {
+            // 사이드바 토글 단축키 제거 (탭 기반 앱)
+            CommandGroup(replacing: .sidebar) {}
+            // 앱 정보 메뉴
+            CommandGroup(replacing: .appInfo) {
+                Button("주니어 개발자의 실수 100 정보") {}
+            }
+        }
+#endif
     }
 }

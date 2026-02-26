@@ -441,5 +441,8 @@ struct RetroAnswerSheet: View {
         .onAppear {
             isFocused = true
         }
+#if targetEnvironment(macCatalyst)
+        .frame(minWidth: 500, minHeight: 400)
+#endif
     }
 }
