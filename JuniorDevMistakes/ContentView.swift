@@ -1,4 +1,5 @@
 import SwiftUI
+import StoreKit
 
 // MARK: - Design System
 enum AppTheme {
@@ -50,6 +51,7 @@ enum AppTheme {
 struct ContentView: View {
     @EnvironmentObject var manager: ChecklistManager
     @EnvironmentObject var storeManager: StoreKitManager
+    @Environment(\.requestReview) private var requestReview
 
     var body: some View {
         TabView {
@@ -73,6 +75,13 @@ struct ContentView: View {
 #if targetEnvironment(macCatalyst)
         .tabViewStyle(.sidebarAdaptable)
 #endif
+        .onChange(of: manager.totalChecked) { _, count in
+            if count == 5 || count == 20 || count == 50 {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    requestReview()
+                }
+            }
+        }
     }
 }
 

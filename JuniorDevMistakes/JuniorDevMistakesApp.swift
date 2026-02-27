@@ -4,12 +4,19 @@ import SwiftUI
 struct JuniorDevMistakesApp: App {
     @StateObject private var checklistManager = ChecklistManager()
     @StateObject private var storeManager = StoreKitManager()
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(checklistManager)
                 .environmentObject(storeManager)
+                .fullScreenCover(isPresented: Binding(
+                    get: { !hasSeenOnboarding },
+                    set: { _ in }
+                )) {
+                    OnboardingView { hasSeenOnboarding = true }
+                }
 #if targetEnvironment(macCatalyst)
                 .frame(minWidth: 900, minHeight: 600)
 #endif

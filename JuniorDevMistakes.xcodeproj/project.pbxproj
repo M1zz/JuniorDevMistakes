@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD0002 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0001 /* PersistenceController.swift */; };
+		CD0008 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0009 /* OnboardingView.swift */; };
 		CD0004 /* JuniorDevMistakes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD0003 /* JuniorDevMistakes.xcdatamodeld */; };
 		CD0006 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0005 /* CoreData.framework */; };
 		9C53980C2F4EBE5800905CF0 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53980A2F4EBE5800905CF0 /* PaywallView.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		CD0001 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		CD0009 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		CD0003 /* JuniorDevMistakes.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = JuniorDevMistakes.xcdatamodeld; sourceTree = "<group>"; };
 		CD0005 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CD0007 /* JuniorDevMistakes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JuniorDevMistakes.entitlements; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				CD0001 /* PersistenceController.swift */,
+				CD0009 /* OnboardingView.swift */,
 				CD0003 /* JuniorDevMistakes.xcdatamodeld */,
 				CD0007 /* JuniorDevMistakes.entitlements */,
 				9C53980A2F4EBE5800905CF0 /* PaywallView.swift */,
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0002 /* PersistenceController.swift in Sources */,
+				CD0008 /* OnboardingView.swift in Sources */,
 				CD0004 /* JuniorDevMistakes.xcdatamodeld in Sources */,
 				A10001 /* JuniorDevMistakesApp.swift in Sources */,
 				A10002 /* ContentView.swift in Sources */,
