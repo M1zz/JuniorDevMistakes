@@ -152,7 +152,7 @@ struct CategoryCard: View {
     var body: some View {
         HStack(spacing: 14) {
             // 아이콘
-            ZStack(alignment: .bottomTrailing) {
+            ZStack {
                 RoundedRectangle(cornerRadius: 14)
                     .fill(
                         LinearGradient(
@@ -165,7 +165,8 @@ struct CategoryCard: View {
                 Image(systemName: category.icon)
                     .font(.system(size: 22, weight: .medium))
                     .foregroundStyle(isLocked ? color.opacity(0.35) : color)
-
+            }
+            .overlay(alignment: .bottomTrailing) {
                 if isLocked {
                     ZStack {
                         Circle()

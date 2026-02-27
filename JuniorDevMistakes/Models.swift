@@ -41,4 +41,12 @@ struct RetroEntry: Codable, Identifiable {
         self.answer = answer
         self.date = Date()
     }
+
+    init(id: UUID, mistakeId: Int, questionIndex: Int, answer: String, date: Date) {
+        self.id = id
+        self.mistakeId = mistakeId
+        self.questionIndex = questionIndex
+        self.answer = answer
+        self.date = date
+    }
 }
