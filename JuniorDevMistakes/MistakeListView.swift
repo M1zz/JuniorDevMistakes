@@ -51,9 +51,6 @@ struct MistakeListView: View {
         }
         .navigationTitle(category.title)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationDestination(for: MistakeItem.self) { item in
-            MistakeDetailView(item: item)
-        }
     }
 }
 

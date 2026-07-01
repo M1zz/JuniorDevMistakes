@@ -3,7 +3,6 @@ import SwiftUI
 struct CategoryListView: View {
     @EnvironmentObject var manager: ChecklistManager
     @EnvironmentObject var storeManager: StoreKitManager
-    @State private var selectedCategory: MistakeCategory?
     @State private var showPaywall = false
 
     private var lockedCount: Int {
@@ -24,16 +23,19 @@ struct CategoryListView: View {
                     LazyVStack(spacing: 12) {
                         ForEach(allCategories) { category in
                             let isLocked = storeManager.isCategoryLocked(category.id)
-                            Button {
-                                if isLocked {
+                            if isLocked {
+                                Button {
                                     showPaywall = true
-                                } else {
-                                    selectedCategory = category
+                                } label: {
+                                    CategoryCard(category: category, isLocked: true)
                                 }
-                            } label: {
-                                CategoryCard(category: category, isLocked: isLocked)
+                                .buttonStyle(.plain)
+                            } else {
+                                NavigationLink(value: category) {
+                                    CategoryCard(category: category, isLocked: false)
+                                }
+                                .buttonStyle(.plain)
                             }
-                            .buttonStyle(.plain)
                         }
                     }
                     .padding(.bottom, 24)
@@ -43,8 +45,11 @@ struct CategoryListView: View {
             .background(Color(.systemGroupedBackground))
             .navigationTitle("주니어 개발자의 실수 100")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(item: $selectedCategory) { category in
+            .navigationDestination(for: MistakeCategory.self) { category in
                 MistakeListView(category: category)
+            }
+            .navigationDestination(for: MistakeItem.self) { item in
+                MistakeDetailView(item: item)
             }
             .sheet(isPresented: $showPaywall) {
                 PaywallView()
