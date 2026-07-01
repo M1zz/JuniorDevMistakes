@@ -41,6 +41,13 @@ final class StoreKitManager: ObservableObject {
             products = fetched.sorted {
                 (Self.allIds.firstIndex(of: $0.id) ?? 0) < (Self.allIds.firstIndex(of: $1.id) ?? 0)
             }
+            // 진단: 요청한 ID 중 실제로 돌아온 것과 누락된 것을 로그로 남김
+            let returned = Set(fetched.map(\.id))
+            let missing = Self.allIds.filter { !returned.contains($0) }
+            print("[StoreKit] 요청 \(Self.allIds.count)개, 응답 \(fetched.count)개 → \(returned.sorted())")
+            if !missing.isEmpty {
+                print("[StoreKit] ⚠️ 누락된 상품 ID(ASC에서 조회 불가): \(missing)")
+            }
             loadFailed = products.isEmpty
         } catch {
             print("[StoreKit] loadProducts 오류: \(error)")

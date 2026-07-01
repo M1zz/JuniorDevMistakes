@@ -50,9 +50,6 @@
             ReferencedContainer = "container:JuniorDevMistakes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <StoreKitConfigurationFileReference
-         identifier = "../../JuniorDevMistakes/JuniorDevMistakes.storekit">
-      </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
