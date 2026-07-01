@@ -356,7 +356,8 @@ struct RetroAnswerSheet: View {
 
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading, spacing: 20) {
+            ScrollView {
+             VStack(alignment: .leading, spacing: 20) {
                 // Context card
                 VStack(alignment: .leading, spacing: 8) {
                     Text(item.numberString)
@@ -412,9 +413,10 @@ struct RetroAnswerSheet: View {
                     )
                     .animation(.easeInOut(duration: 0.2), value: isFocused)
 
-                Spacer()
+             }
+             .padding(20)
             }
-            .padding(20)
+            .scrollDismissesKeyboard(.interactively)
             .navigationTitle("회고 작성")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

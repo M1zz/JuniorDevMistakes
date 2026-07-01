@@ -15,8 +15,8 @@ struct OverallProgressView: View {
                     // Stats grid
                     statsGrid
 
-                    // Category breakdown
-                    categoryBreakdown
+                    // 100-cell progress map
+                    progressGrid
 
                     // Reset button
                     Button(role: .destructive) {
@@ -145,52 +145,34 @@ struct OverallProgressView: View {
         }
     }
 
-    // MARK: - Category Breakdown
-    private var categoryBreakdown: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            Text("카테고리별 진행률")
-                .font(.system(size: 17, weight: .bold, design: .rounded))
-                .padding(.top, 4)
+    // MARK: - 100-Cell Progress Grid
+    private var progressGrid: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack {
+                Text("나의 실수 100")
+                    .font(.system(size: 17, weight: .bold, design: .rounded))
+                Spacer()
+                Text("\(manager.totalChecked) / 100")
+                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+                    .foregroundStyle(.secondary)
+            }
+            .padding(.top, 4)
 
-            ForEach(allCategories) { category in
-                let checked = manager.checkedCount(for: category)
-                let total = category.items.count
-                let ratio = Double(checked) / Double(total)
-                let color = AppTheme.categoryColors[category.id % AppTheme.categoryColors.count]
-
-                HStack(spacing: 10) {
-                    Image(systemName: category.icon)
-                        .font(.system(size: 14, weight: .medium))
-                        .foregroundStyle(color)
-                        .frame(width: 22)
-
-                    Text(category.title)
-                        .font(.system(size: 13, weight: .medium, design: .rounded))
-                        .frame(width: 100, alignment: .leading)
-
-                    GeometryReader { geo in
-                        ZStack(alignment: .leading) {
+            LazyVGrid(
+                columns: Array(repeating: GridItem(.flexible(), spacing: 6), count: 10),
+                spacing: 6
+            ) {
+                ForEach(1...100, id: \.self) { id in
+                    let checked = manager.isChecked(id)
+                    let color = AppTheme.categoryColors[((id - 1) / 10) % AppTheme.categoryColors.count]
+                    RoundedRectangle(cornerRadius: 4)
+                        .fill(checked ? AnyShapeStyle(color) : AnyShapeStyle(color.opacity(0.1)))
+                        .aspectRatio(1, contentMode: .fit)
+                        .overlay(
                             RoundedRectangle(cornerRadius: 4)
-                                .fill(color.opacity(0.1))
-                                .frame(height: 8)
-                            RoundedRectangle(cornerRadius: 4)
-                                .fill(
-                                    LinearGradient(
-                                        colors: ratio == 1.0 ? [AppTheme.actionGreen, AppTheme.actionGreen.opacity(0.8)] : [color, color.opacity(0.7)],
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
-                                .frame(width: max(0, geo.size.width * ratio), height: 8)
-                                .animation(.spring(response: 0.5), value: ratio)
-                        }
-                    }
-                    .frame(height: 8)
-
-                    Text("\(checked)/\(total)")
-                        .font(.system(size: 12, weight: .semibold, design: .rounded))
-                        .foregroundStyle(color)
-                        .frame(width: 36, alignment: .trailing)
+                                .strokeBorder(color.opacity(checked ? 0 : 0.15), lineWidth: 1)
+                        )
+                        .animation(.spring(response: 0.4), value: checked)
                 }
             }
         }
