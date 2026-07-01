@@ -6,6 +6,10 @@ struct PaywallView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var selectedId = StoreKitManager.yearlyId
 
+    // App Review 3.1.2: 자동 갱신 구독 앱은 이용약관/개인정보처리방침 링크 필수
+    private let termsURL = URL(string: "https://m1zz.github.io/JuniorDevMistakes/terms.html")!
+    private let privacyURL = URL(string: "https://m1zz.github.io/JuniorDevMistakes/privacy.html")!
+
     private var selectedProduct: Product? {
         storeManager.products.first { $0.id == selectedId }
     }
@@ -59,6 +63,14 @@ struct PaywallView: View {
             Button("확인") { storeManager.purchaseError = nil }
         } message: {
             Text(storeManager.purchaseError ?? "")
+        }
+        .alert("안내", isPresented: Binding(
+            get: { storeManager.infoMessage != nil },
+            set: { if !$0 { storeManager.infoMessage = nil } }
+        )) {
+            Button("확인") { storeManager.infoMessage = nil }
+        } message: {
+            Text(storeManager.infoMessage ?? "")
         }
     }
 
@@ -153,14 +165,33 @@ struct PaywallView: View {
                 .padding(.bottom, 4)
 
             if storeManager.products.isEmpty {
-                VStack(spacing: 12) {
-                    ProgressView()
-                    Text("상품 정보를 불러오는 중...")
-                        .font(.system(size: 13, design: .rounded))
-                        .foregroundStyle(.secondary)
+                if storeManager.loadFailed {
+                    VStack(spacing: 12) {
+                        Text("상품 정보를 불러오지 못했습니다.\n네트워크 연결을 확인해 주세요.")
+                            .font(.system(size: 13, design: .rounded))
+                            .foregroundStyle(.secondary)
+                            .multilineTextAlignment(.center)
+                            .lineSpacing(3)
+                        Button {
+                            Task { await storeManager.loadProducts() }
+                        } label: {
+                            Text("다시 시도")
+                                .font(.system(size: 14, weight: .semibold, design: .rounded))
+                                .foregroundStyle(AppTheme.primary)
+                        }
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 32)
+                } else {
+                    VStack(spacing: 12) {
+                        ProgressView()
+                        Text("상품 정보를 불러오는 중...")
+                            .font(.system(size: 13, design: .rounded))
+                            .foregroundStyle(.secondary)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 32)
                 }
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 32)
             } else {
                 VStack(spacing: 10) {
                     ForEach(storeManager.products, id: \.id) { product in
@@ -223,11 +254,21 @@ struct PaywallView: View {
                 .foregroundStyle(AppTheme.primary)
             }
 
-            Text("구독은 언제든지 취소할 수 있으며\nApple ID 설정에서 관리할 수 있습니다.")
+            Text("월간·연간 구독은 자동으로 갱신되며, 현재 기간 종료 24시간 전까지 취소하지 않으면 결제됩니다. 구독은 Apple ID 설정에서 언제든지 관리·취소할 수 있습니다.")
                 .font(.system(size: 11, design: .rounded))
                 .foregroundStyle(.tertiary)
                 .multilineTextAlignment(.center)
                 .lineSpacing(3)
+                .padding(.horizontal, 24)
+
+            HStack(spacing: 6) {
+                Link("이용약관", destination: termsURL)
+                Text("·").foregroundStyle(.tertiary)
+                Link("개인정보처리방침", destination: privacyURL)
+            }
+            .font(.system(size: 12, weight: .medium, design: .rounded))
+            .tint(AppTheme.primary)
+            .padding(.top, 2)
         }
         .padding(.top, 20)
     }
