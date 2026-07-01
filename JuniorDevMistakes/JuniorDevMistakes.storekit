@@ -15,7 +15,7 @@
           "locale" : "ko_KR"
         }
       ],
-      "productID" : "com.leeo.JuniorDevMistakes.pro.lifetime",
+      "productID" : "com.leeo.JuniorDevMistakes.pro.1lifetime",
       "referenceName" : "Pro Lifetime",
       "type" : "NonConsumable"
     }
@@ -60,7 +60,7 @@
               "locale" : "ko_KR"
             }
           ],
-          "productID" : "com.leeo.JuniorDevMistakes.pro.monthly",
+          "productID" : "com.leeo.JuniorDevMistakes.pro.1monthly",
           "referenceName" : "Pro Monthly",
           "subscriptionPeriod" : "P1M",
           "type" : "RecurringSubscription"
@@ -84,7 +84,7 @@
               "locale" : "ko_KR"
             }
           ],
-          "productID" : "com.leeo.JuniorDevMistakes.pro.yearly",
+          "productID" : "com.leeo.JuniorDevMistakes.pro.1yearly",
           "referenceName" : "Pro Yearly",
           "subscriptionPeriod" : "P1Y",
           "type" : "RecurringSubscription"

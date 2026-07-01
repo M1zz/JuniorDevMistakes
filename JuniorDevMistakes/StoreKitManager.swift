@@ -4,9 +4,9 @@ import StoreKit
 final class StoreKitManager: ObservableObject {
 
     // MARK: - Product IDs
-    static let monthlyId  = "com.leeo.JuniorDevMistakes.pro.monthly"
-    static let yearlyId   = "com.leeo.JuniorDevMistakes.pro.yearly"
-    static let lifetimeId = "com.leeo.JuniorDevMistakes.pro.lifetime"
+    static let monthlyId  = "com.leeo.JuniorDevMistakes.pro.1monthly"
+    static let yearlyId   = "com.leeo.JuniorDevMistakes.pro.1yearly"
+    static let lifetimeId = "com.leeo.JuniorDevMistakes.pro.1lifetime"
     static let allIds     = [monthlyId, yearlyId, lifetimeId]
 
     /// 첫 N개 카테고리(0-indexed)는 무료
