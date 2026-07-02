@@ -14,6 +14,21 @@ struct PaywallView: View {
         storeManager.products.first { $0.id == selectedId }
     }
 
+    /// App Review 3.1.2: 선택된 상품의 제목·기간·가격·갱신 조건을 결제 버튼 근처에 명시
+    private var selectedTermsLine: String? {
+        guard let p = selectedProduct else { return nil }
+        switch p.id {
+        case StoreKitManager.monthlyId:
+            return "월간 구독 · \(p.displayPrice)/월 · 매월 자동 갱신"
+        case StoreKitManager.yearlyId:
+            return "연간 구독 · \(p.displayPrice)/년 · 매년 자동 갱신"
+        case StoreKitManager.lifetimeId:
+            return "평생 이용권 · \(p.displayPrice) · 1회 결제, 자동 갱신 없음"
+        default:
+            return "\(p.displayName) · \(p.displayPrice)"
+        }
+    }
+
     private let featureItems: [(String, String)] = [
         ("lock.open.fill",          "카테고리 4-10 완전 잠금 해제"),
         ("number.circle.fill",      "실수 #031-100 전체 학습"),
@@ -234,6 +249,15 @@ struct PaywallView: View {
             .disabled(storeManager.isLoading || storeManager.products.isEmpty)
             .padding(.horizontal, 16)
             .padding(.top, 4)
+
+            if let terms = selectedTermsLine {
+                Text(terms)
+                    .font(.system(size: 12, weight: .medium, design: .rounded))
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 24)
+                    .padding(.top, 2)
+            }
         }
     }
 
@@ -261,14 +285,18 @@ struct PaywallView: View {
                 .lineSpacing(3)
                 .padding(.horizontal, 24)
 
-            HStack(spacing: 6) {
-                Link("이용약관", destination: termsURL)
+            HStack(spacing: 8) {
+                Link(destination: termsURL) {
+                    Text("이용약관(EULA)").underline()
+                }
                 Text("·").foregroundStyle(.tertiary)
-                Link("개인정보처리방침", destination: privacyURL)
+                Link(destination: privacyURL) {
+                    Text("개인정보처리방침").underline()
+                }
             }
-            .font(.system(size: 12, weight: .medium, design: .rounded))
+            .font(.system(size: 13, weight: .semibold, design: .rounded))
             .tint(AppTheme.primary)
-            .padding(.top, 2)
+            .padding(.top, 6)
         }
         .padding(.top, 20)
     }
