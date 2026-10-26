@@ -51,6 +51,12 @@
             "value" : "%lld / 100 vividos"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 koettu"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -168,6 +174,12 @@
             "value" : "%lld errores"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld kpl"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -266,6 +278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld completados"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld valmiina"
           }
         },
         "fr" : {
@@ -368,6 +386,12 @@
             "value" : "%lld categorías bloqueadas"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld kategoriaa lukittu"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -466,6 +490,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld elementos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld kohdetta"
           }
         },
         "fr" : {
@@ -571,6 +601,12 @@
             "value" : "/año"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/vuosi"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -669,6 +705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/mes"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/kk"
           }
         },
         "fr" : {
@@ -771,6 +813,12 @@
             "value" : "/día"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/pv"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -869,6 +917,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/sem"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/vko"
           }
         },
         "fr" : {
@@ -971,6 +1025,12 @@
             "value" : "Lista de los 100\nerrores"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 virheen\ntarkistuslista"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1069,6 +1129,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Los 100 errores disponibles"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki 100 virhettä käytössäsi"
           }
         },
         "fr" : {
@@ -1171,6 +1237,12 @@
             "value" : "Seguimiento completo de los 100"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kasvun seuranta kaikille 100 virheelle"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1269,6 +1341,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "10 categorías, 100 errores\nAprende antes de vivirlos en carne propia"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 kategoriaa, 100 virhettä\nOpi ne ennen kuin teet ne itse"
           }
         },
         "fr" : {
@@ -1371,6 +1449,12 @@
             "value" : "280 preguntas de reflexión adicionales"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 pohdintakysymystä lisää"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1466,6 +1550,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -1571,6 +1661,12 @@
             "value" : "PRO activo"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO käytössä"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1669,6 +1765,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qué incluye PRO"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO-tilaukseen kuuluu"
           }
         },
         "fr" : {
@@ -1771,6 +1873,12 @@
             "value" : "Mejorar a PRO"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Päivitä PRO:hon"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1869,6 +1977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mejora a PRO y estudia todo"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Päivitä PRO:hon ja opi kaikki"
           }
         },
         "fr" : {
@@ -1971,6 +2085,12 @@
             "value" : "P%lld"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "K%lld"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2069,6 +2189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En iPhone, iPad y Mac,\ntus datos siempre te siguen con iCloud"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tietosi seuraavat mukana iCloudin\nkautta iPhonella, iPadilla ja Macilla"
           }
         },
         "fr" : {
@@ -2174,6 +2300,12 @@
             "value" : "Responde las preguntas de\nreflexión de cada error"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vastaa jokaisen virheen\npohdintakysymyksiin"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2272,6 +2404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Al responder las preguntas de reflexión\nde cada error, no repetirás el mismo dos veces"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vastaa pohdintakysymyksiin,\nniin et tee samaa virhettä kahdesti"
           }
         },
         "fr" : {
@@ -2374,6 +2512,12 @@
             "value" : "Política de privacidad"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tietosuojakäytäntö"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2472,6 +2616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Ya casi llegas!\nSeguro que ya aprendiste muchísimo"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Melkein perillä!\nOlet jo oppinut paljon"
           }
         },
         "fr" : {
@@ -2574,6 +2724,12 @@
             "value" : "Omitir"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ohita"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2672,6 +2828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vivido"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koettu"
           }
         },
         "fr" : {
@@ -2774,6 +2936,12 @@
             "value" : "Errores vividos"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koetut virheet"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2872,6 +3040,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suscripción"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilaus"
           }
         },
         "fr" : {
@@ -2974,6 +3148,12 @@
             "value" : "Suscríbete para desbloquear"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avaa tilaamalla"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3072,6 +3252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudieron restaurar las compras."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostosten palautus epäonnistui."
           }
         },
         "fr" : {
@@ -3174,6 +3360,12 @@
             "value" : "Restaurar compras"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palauta ostokset"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3272,6 +3464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se recibió tu solicitud de compra. Cuando se apruebe, se desbloqueará automáticamente."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostopyyntö on vastaanotettu. Lukitus aukeaa automaattisesti, kun pyyntö on hyväksytty."
           }
         },
         "fr" : {
@@ -3374,6 +3572,12 @@
             "value" : "Ocurrió un error durante la compra."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oston aikana tapahtui virhe."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3472,6 +3676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo confirmar la compra. Inténtalo de nuevo en un momento."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ostoa ei voitu vahvistaa. Yritä hetken kuluttua uudelleen."
           }
         },
         "fr" : {
@@ -3574,6 +3784,12 @@
             "value" : "¡Vas creciendo sin parar!\nCada error suma a tu experiencia"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kasvat tasaisesti!\nMitä enemmän virheitä, sitä enemmän taitoa"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3672,6 +3888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desbloquea los 70 errores restantes"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avaa loput 70 virhettä"
           }
         },
         "fr" : {
@@ -3774,6 +3996,12 @@
             "value" : "Mi camino de crecimiento"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oma kasvupolkuni"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3872,6 +4100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mis 100 errores"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omat 100 virheeni"
           }
         },
         "fr" : {
@@ -3974,6 +4208,12 @@
             "value" : "Mis reflexiones"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omat pohdintani"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4072,6 +4312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reintentar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yritä uudelleen"
           }
         },
         "fr" : {
@@ -4174,6 +4420,12 @@
             "value" : "Siguiente"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seuraava"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4272,6 +4524,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Datos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiedot"
           }
         },
         "fr" : {
@@ -4374,6 +4632,12 @@
             "value" : "¡Solo faltan unos pocos!\nLa meta está a la vista"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enää muutama jäljellä!\nMaali häämöttää"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4472,6 +4736,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sincronización automática\nen todos tus dispositivos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkronointi automaattisesti\nkaikilla laitteilla"
           }
         },
         "fr" : {
@@ -4574,6 +4844,12 @@
             "value" : "Restablecer todos los datos"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nollaa kaikki tiedot"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4672,6 +4948,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se borrarán todos los datos de progreso. Esta acción no se puede deshacer."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki edistymistiedot poistetaan. Tätä ei voi perua."
           }
         },
         "fr" : {
@@ -4774,6 +5056,12 @@
             "value" : "Versión"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versio"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4872,6 +5160,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No hay compras que restaurar."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palautettavia ostoksia ei löytynyt."
           }
         },
         "fr" : {
@@ -4974,6 +5268,12 @@
             "value" : "Marcadores"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kirjanmerkit"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5072,6 +5372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No tienes marcadores"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ei kirjanmerkittyjä kohteita"
           }
         },
         "fr" : {
@@ -5174,6 +5480,12 @@
             "value" : "Eliminar"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5272,6 +5584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toca el botón de marcador en el detalle\npara guardar lo que quieras ver después"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Napauta tietonäkymässä kirjanmerkkiä\nja tallenna kohde myöhemmäksi"
           }
         },
         "fr" : {
@@ -5374,6 +5692,12 @@
             "value" : "Cargando información del producto..."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ladataan tuotetietoja..."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5472,6 +5796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo cargar la información del producto.\nRevisa tu conexión a internet."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuotetietojen lataus epäonnistui.\nTarkista verkkoyhteytesi."
           }
         },
         "fr" : {
@@ -5574,6 +5904,12 @@
             "value" : "Ajustes"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asetukset"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5672,6 +6008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Comenzar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aloita"
           }
         },
         "fr" : {
@@ -5774,6 +6116,12 @@
             "value" : "Estudia los errores #031-100"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opi kaikki virheet #031-100"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5872,6 +6220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Errores Dev"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 virhettä"
           }
         },
         "fr" : {
@@ -5974,6 +6328,12 @@
             "value" : "Te esperan 70 errores más\nDesbloquéalos ahora"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "70 virhettä odottaa vielä\nAvaa ne nyt"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6072,6 +6432,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pregúntate después de un error"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kysy itseltäsi virheen jälkeen"
           }
         },
         "fr" : {
@@ -6174,6 +6540,12 @@
             "value" : "Aún no has empezado.\n¡Vive tu primer error!"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Et ole vielä aloittanut.\nMerkitse ensimmäinen virhe koetuksi!"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6272,6 +6644,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aviso"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huomio"
           }
         },
         "fr" : {
@@ -6374,6 +6752,12 @@
             "value" : "Escribe tu respuesta aquí..."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kirjoita vastauksesi tähän..."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6472,6 +6856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Ya empezaste el camino!\nTodos los seniors empezaron aquí"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matka on alkanut!\nJokainen senior aloitti juuri täältä"
           }
         },
         "fr" : {
@@ -6574,6 +6964,12 @@
             "value" : "Suscripción anual"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vuositilaus"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6672,6 +7068,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suscripción anual · %@/año · Se renueva cada año"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vuositilaus · %@/vuosi · uusiutuu automaattisesti vuosittain"
           }
         },
         "fr" : {
@@ -6774,6 +7176,12 @@
             "value" : "Error"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Virhe"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6872,6 +7280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suscripción mensual"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuukausitilaus"
           }
         },
         "fr" : {
@@ -6974,6 +7388,12 @@
             "value" : "Suscripción mensual · %@/mes · Se renueva cada mes"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuukausitilaus · %@/kk · uusiutuu automaattisesti kuukausittain"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7072,6 +7492,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ahorra hasta 50% frente al plan mensual"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säästä jopa 50 % kuukausitilaukseen verrattuna"
           }
         },
         "fr" : {
@@ -7174,6 +7600,12 @@
             "value" : "Las suscripciones mensual y anual se renuevan automáticamente y se cobran si no las cancelas al menos 24 horas antes de que termine el periodo actual. Puedes administrar o cancelar tu suscripción en cualquier momento en los ajustes de tu ID de Apple."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuukausi- ja vuositilaukset uusiutuvat automaattisesti, ellet peruuta niitä vähintään 24 tuntia ennen nykyisen jakson päättymistä. Voit hallita ja peruuttaa tilauksen milloin tahansa Apple ID:n asetuksissa."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7272,6 +7704,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Esto aprenderás y así crecerás"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tästä opit ja kasvat"
           }
         },
         "fr" : {
@@ -7374,6 +7812,12 @@
             "value" : "Esto es lo que pasa"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näin tässä käy"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7472,6 +7916,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haz esto"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tee näin"
           }
         },
         "fr" : {
@@ -7574,6 +8024,12 @@
             "value" : "Términos de uso (EULA)"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käyttöehdot (EULA)"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7672,6 +8128,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popular"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suosittu"
           }
         },
         "fr" : {
@@ -7774,6 +8236,12 @@
             "value" : "Guardar"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tallenna"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7872,6 +8340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Todos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki"
           }
         },
         "fr" : {
@@ -7974,6 +8448,12 @@
             "value" : "Restablecer todo"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nollaa kaikki"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8072,6 +8552,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Estás cerca de la mitad!\nA este ritmo serás senior muy pronto"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puolet alkaa olla koossa!\nTällä vauhdilla olet pian senior"
           }
         },
         "fr" : {
@@ -8174,6 +8660,12 @@
             "value" : "¡Pasaste la mitad!\nYa empiezas a ver con ojos de dev de nivel medio"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yli puolet takana!\nNyt alkaa näkyä keskitason kehittäjän näkökulma"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8272,6 +8764,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Acerca de"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tietoja"
           }
         },
         "fr" : {
@@ -8374,6 +8872,12 @@
             "value" : "100 errores\ndel dev junior"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Juniorikehittäjän\n100 virhettä"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8472,6 +8976,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 errores del dev junior"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Juniorikehittäjän 100 virhettä"
           }
         },
         "fr" : {
@@ -8576,6 +9086,12 @@
             "value" : "Acerca de 100 errores del dev junior"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tietoja: Juniorikehittäjän 100 virhettä"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8674,6 +9190,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Empezar ahora"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aloita nyt"
           }
         },
         "fr" : {
@@ -8776,6 +9298,12 @@
             "value" : "Progreso"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edistyminen"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8874,6 +9402,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se borrarán la lista de verificación, las reflexiones y los marcadores."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarkistuslista, pohdinnat ja kirjanmerkit poistetaan kaikki."
           }
         },
         "fr" : {
@@ -8976,6 +9510,12 @@
             "value" : "Se borrarán la lista de verificación, las reflexiones y los marcadores. Esta acción no se puede deshacer."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarkistuslista, pohdinnat ja kirjanmerkit poistetaan kaikki. Tätä ei voi perua."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9074,6 +9614,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restablecer"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nollaa"
           }
         },
         "fr" : {
@@ -9176,6 +9722,12 @@
             "value" : "Confirmar restablecimiento"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vahvista nollaus"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9274,6 +9826,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Felicidades! ¡Viviste todos los errores!\n¡Ya se abre el camino al nivel senior!"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onnittelut! Olet kokenut kaikki virheet!\nSeniorin tie on nyt auki!"
           }
         },
         "fr" : {
@@ -9376,6 +9934,12 @@
             "value" : "Cancelar"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peruuta"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9474,6 +10038,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desbloquea por completo las categorías 4-10"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avaa kategoriat 4-10 kokonaan"
           }
         },
         "fr" : {
@@ -9576,6 +10146,12 @@
             "value" : "Acceso de por vida"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elinikäinen pääsy"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9674,6 +10250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Acceso de por vida · %@ · Pago único, sin renovación"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elinikäinen pääsy · %@ · kertamaksu, ei automaattista uusiutumista"
           }
         },
         "fr" : {
@@ -9776,6 +10358,12 @@
             "value" : "Elige un plan"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse tilaus"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9874,6 +10462,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Un solo pago, para siempre"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kertamaksu, käyttö ikuisesti"
           }
         },
         "fr" : {
@@ -9976,6 +10570,12 @@
             "value" : "Todas las futuras actualizaciones de contenido"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki tulevat sisältöpäivitykset"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10074,6 +10674,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Conoce de antemano los errores que más\ncometen los devs y crece más rápido"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunne kehittäjien yleisimmät virheet\netukäteen ja kasva nopeammin"
           }
         },
         "fr" : {
@@ -10176,6 +10782,12 @@
             "value" : "Aceptar"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10274,6 +10886,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflexiones"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pohdinnat"
           }
         },
         "fr" : {
@@ -10376,6 +10994,12 @@
             "value" : "Aún no hay reflexiones"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ei vielä pohdintoja"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10474,6 +11098,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflexión hecha"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pohdittu"
           }
         },
         "fr" : {
@@ -10576,6 +11206,12 @@
             "value" : "Diario de reflexión"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pohdintapäiväkirja"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10674,6 +11310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escribir reflexión"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kirjoita pohdinta"
           }
         },
         "fr" : {
@@ -10776,6 +11418,12 @@
             "value" : "Preguntas de reflexión"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pohdintakysymykset"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10876,6 +11524,12 @@
             "value" : "Vive un crecimiento real\ncon la reflexión"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koe todellinen kasvu\npohdinnan kautta"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10974,6 +11628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflexiones hechas"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pohditut kohteet"
           }
         },
         "fr" : {

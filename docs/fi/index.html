@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>100 virhettä – kasvun tarkistuslista juniorikehittäjille</title>
+  <meta name="description" content="Kehittäjien 100 yleisintä virhettä. Tunne ne etukäteen ja kasva nopeammin." />
+  <meta property="og:title" content="100 virhettä – kasvun tarkistuslista juniorikehittäjille" />
+  <meta property="og:description" content="Kehittäjien 100 yleisintä virhettä. Tunne ne etukäteen ja kasva nopeammin." />
+  <meta property="og:type" content="website" />
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/index.html" />
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/index.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/index.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/index.html" />
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/index.html" />
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/index.html" />
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/index.html" />
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/index.html" />
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/index.html" />
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/index.html" />
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/index.html" />
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/index.html" />
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/index.html" />
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/index.html" />
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/index.html" />
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/index.html" />
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/index.html" />
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/index.html" />
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/index.html" />
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/index.html" />
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/index.html" />
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/index.html" />
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:      #3F3884;
+      --primary-light:#6159AD;
+      --accent:       #F06B6B;
+      --green:        #38C78C;
+      --amber:        #F2B333;
+      --blue:         #4D8CEB;
+      --purple:       #8059B8;
+      --bg:           #0f0e1a;
+      --surface:      #1a1829;
+      --border:       rgba(255,255,255,0.08);
+      --text:         #f0eefc;
+      --muted:        rgba(240,238,252,0.55);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%;
+      height: 64px;
+      background: rgba(15,14,26,0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.3px; }
+    .nav-logo span { color: var(--accent); }
+    nav a.nav-link {
+      font-size: 0.9rem; color: var(--muted); text-decoration: none;
+      transition: color .2s;
+    }
+    nav a.nav-link:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; overflow: hidden;
+      display: flex; flex-direction: column; align-items: center; text-align: center;
+      padding: 100px 5% 80px;
+      background: linear-gradient(145deg, #2a2460 0%, #3F3884 40%, #8059B8 100%);
+    }
+    .hero::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(240,107,107,.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-block;
+      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
+      color: var(--amber);
+      background: rgba(242,179,51,.12);
+      border: 1px solid rgba(242,179,51,.25);
+      border-radius: 99px;
+      padding: 5px 14px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .app-icon {
+      width: 120px; height: 120px;
+      border-radius: 27px;
+      background: linear-gradient(145deg, #3F3884, #8059B8);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 52px;
+      margin-bottom: 32px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.12);
+    }
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+    h1 em { font-style: normal; color: var(--accent); }
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,.72);
+      max-width: 520px;
+      margin-bottom: 40px;
+      line-height: 1.75;
+    }
+    .btn-store {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: #fff; color: #000;
+      font-weight: 700; font-size: 1rem;
+      padding: 14px 28px;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    }
+    .btn-store:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.35); }
+    .btn-store svg { width: 22px; height: 22px; }
+    .btn-store-sub { font-size: .7rem; font-weight: 400; display: block; text-align: left; opacity: .6; margin-bottom: 1px; }
+    .btn-store-main { font-size: 1rem; font-weight: 700; display: block; text-align: left; }
+
+    /* ── FEATURES ── */
+    section { padding: 80px 5%; }
+    .section-label {
+      text-align: center;
+      font-size: .75rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    h2 {
+      text-align: center;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .section-desc {
+      text-align: center;
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 500px;
+      margin: 0 auto 56px;
+      line-height: 1.75;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .feature-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 24px;
+      transition: transform .25s, border-color .25s;
+    }
+    .feature-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.15); }
+    .feature-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+    .feature-card p { font-size: .9rem; color: var(--muted); line-height: 1.65; }
+
+    /* ── CATEGORIES ── */
+    .categories-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .cat-chip {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 16px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-size: .9rem; font-weight: 500;
+    }
+    .cat-chip span { font-size: 1.1rem; }
+
+    /* ── PRICING ── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .price-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .price-card.featured {
+      background: linear-gradient(145deg, #3F3884, #6159AD);
+      border-color: rgba(255,255,255,.2);
+    }
+    .price-badge {
+      display: inline-block;
+      font-size: .7rem; font-weight: 700;
+      background: var(--amber); color: #000;
+      border-radius: 99px; padding: 3px 10px;
+      margin-bottom: 16px;
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .price-plan { font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
+    .price-amount { font-size: 2rem; font-weight: 800; margin-bottom: 4px; }
+    .price-period { font-size: .8rem; color: var(--muted); margin-bottom: 20px; }
+    .price-features { list-style: none; text-align: left; }
+    .price-features li { font-size: .88rem; padding: 6px 0; color: var(--muted); display: flex; gap: 8px; }
+    .price-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+    .price-card.featured .price-features li { color: rgba(255,255,255,.8); }
+
+    /* ── SYNC ── */
+    .sync-section { text-align: center; }
+    .devices {
+      display: flex; justify-content: center; align-items: center;
+      gap: 24px; flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .device-chip {
+      display: flex; align-items: center; gap: 8px;
+      padding: 10px 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      font-size: .9rem; font-weight: 500;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      text-align: center;
+      background: linear-gradient(145deg, #2a2460, #3F3884, #8059B8);
+      padding: 100px 5%;
+    }
+    .cta-section h2 { margin-bottom: 16px; }
+    .cta-section p { color: rgba(255,255,255,.7); margin-bottom: 40px; font-size: 1.05rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+      padding: 32px 5%;
+      display: flex; flex-wrap: wrap;
+      align-items: center; justify-content: space-between;
+      gap: 12px;
+    }
+    footer p { font-size: .85rem; color: var(--muted); }
+    footer a { color: var(--muted); font-size: .85rem; text-decoration: none; transition: color .2s; }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 4%; }
+      .hero { padding: 72px 4% 60px; }
+      section { padding: 60px 4%; }
+    }
+  
+    .langs { font-size: .8rem; color: rgba(240,238,252,.45); line-height: 2; }
+    .langs a { color: rgba(240,238,252,.6); text-decoration: none; margin-right: 10px; white-space: nowrap; }
+    .langs a:hover, .langs a.cur { color: #f0eefc; }
+    .langs a.cur { font-weight: 700; }
+    .doc-langs { max-width: 720px; margin: 64px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); }
+    .foot-links a { margin-right: 14px; }
+    .faq dt { font-weight: 700; margin: 24px 0 6px; color: #f0eefc; }
+    .faq dd { color: rgba(240,238,252,.75); margin: 0; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">100 virhettä</div>
+  <span><a href="support.html" class="nav-link">Tuki</a> &nbsp; <a href="privacy.html" class="nav-link">Tietosuojakäytäntö</a></span>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">Sovellus juniorikehittäjille</div>
+  <div class="app-icon">⌨️</div>
+  <h1>Tunne virheet etukäteen ja<br><em>kasva nopeammin</em>.</h1>
+  <p class="hero-sub">
+    Kehittäjien 100 yleisintä virhettä.<br>
+    Käy ne läpi tarkistuslistalla ja tee niistä omiasi pohdinnan avulla.
+  </p>
+  <a href="#" class="btn-store">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+    <div>
+      <span class="btn-store-sub">Download on the</span>
+      <span class="btn-store-main">App Store</span>
+    </div>
+  </a>
+</section>
+
+<section>
+  <p class="section-label">Ominaisuudet</p>
+  <h2>Kaikki, mitä kasvu vaatii</h2>
+  <p class="section-desc">Virheen tunteminen ei riitä. Pohdinta tekee siitä lopulta sinun omaasi.</p>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon" style="background:rgba(63,56,132,.25)">✓</div>
+      <h3>100 virheen tarkistuslista</h3>
+      <p>Koodauksesta tiimityöhön: työelämässä toistuvat virheet on jäsennelty kategorioihin.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:rgba(242,179,51,.2)">📓</div>
+      <h3>Pohdintapäiväkirja</h3>
+      <p>Vastaa jokaisen virheen pohdintakysymyksiin, niin ulkoa opettelun sijaan ymmärrät asian oikeasti.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:rgba(56,199,140,.2)">📊</div>
+      <h3>Edistymisen seuranta</h3>
+      <p>Näe kategorioiden ja koko listan edistyminen yhdellä silmäyksellä ja tunne kasvusi.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:rgba(77,140,235,.2)">☁️</div>
+      <h3>Automaattinen iCloud-synkronointi</h3>
+      <p>Käytä samoja tietoja iPhonella, iPadilla ja Macilla. CloudKit synkronoi ne automaattisesti.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:rgba(240,107,107,.2)">🔖</div>
+      <h3>Kirjanmerkit</h3>
+      <p>Merkitse kohteet, joihin haluat palata, ja kerro ne myöhemmin yhteen kertausta varten.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:rgba(128,89,184,.2)">💻</div>
+      <h3>iPhone · iPad · Mac</h3>
+      <p>Mac Catalystin ansiosta iPhone-sovellus toimii sellaisenaan myös Macilla. Opi missä tahansa.</p>
+    </div>
+  </div>
+</section>
+
+<section class="categories-section">
+  <p class="section-label">10 kategoriaa</p>
+  <h2>Mitä virheitä käsitellään?</h2>
+  <p class="section-desc">Virheet on ryhmitelty tilanteiden mukaan, joita juniorikehittäjät oikeasti kohtaavat.</p>
+
+  <div class="categories-grid">
+    <div class="cat-chip"><span>⌨️</span> Koodaustavat</div>
+    <div class="cat-chip"><span>🐛</span> Debuggaus ja ongelmanratkaisu</div>
+    <div class="cat-chip"><span>🌿</span> Versionhallinta ja yhteistyö</div>
+    <div class="cat-chip"><span>🏗️</span> Suunnittelu ja arkkitehtuuri</div>
+    <div class="cat-chip"><span>🛡️</span> Testaus ja laatu</div>
+    <div class="cat-chip"><span>🧠</span> Oppiminen ja kasvu</div>
+    <div class="cat-chip"><span>💬</span> Viestintä</div>
+    <div class="cat-chip"><span>🖥️</span> Infrastruktuuri ja julkaisu</div>
+    <div class="cat-chip"><span>🔒</span> Tietoturva ja yksityisyys</div>
+    <div class="cat-chip"><span>⚡</span> Suorituskyky ja optimointi</div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Hinnoittelu</p>
+  <h2>Aloita ilmaiseksi</h2>
+  <p class="section-desc">Kokeile ensin 30 virhettä ilmaiseksi ja avaa kaikki 100 PRO:lla.</p>
+
+  <div class="pricing-grid">
+    <div class="price-card">
+      <p class="price-plan">Ilmainen</p>
+      <p class="price-amount">Ilmainen</p>
+      <p class="price-period">Ilmainen ikuisesti</p>
+      <ul class="price-features">
+        <li>Koodaustavat (10 kpl)</li>
+        <li>Debuggaus ja ongelmanratkaisu (10 kpl)</li>
+        <li>Versionhallinta ja yhteistyö (10 kpl)</li>
+        <li>Pohdintapäiväkirja</li>
+        <li>Edistyminen ja kirjanmerkit</li>
+      </ul>
+    </div>
+    <div class="price-card featured">
+      <div class="price-badge">BEST</div>
+      <p class="price-plan">PRO kuukausitilaus</p>
+      <p class="price-amount">Kuukausitilaus</p>
+      <p class="price-period">Hinta näkyy App Storessa</p>
+      <ul class="price-features">
+        <li>Kaikki 100 virhettä</li>
+        <li>Kaikki 10 kategoriaa</li>
+        <li>Pohdintapäiväkirja</li>
+        <li>iCloud-synkronointi</li>
+        <li>iPhone · iPad · Mac</li>
+      </ul>
+    </div>
+    <div class="price-card">
+      <p class="price-plan">PRO elinikäinen pääsy</p>
+      <p class="price-amount">Elinikäinen</p>
+      <p class="price-period">Kertamaksu, käyttö ikuisesti</p>
+      <ul class="price-features">
+        <li>Kaikki 100 virhettä</li>
+        <li>Kaikki 10 kategoriaa</li>
+        <li>Pohdintapäiväkirja</li>
+        <li>iCloud-synkronointi</li>
+        <li>iPhone · iPad · Mac</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sync-section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <p class="section-label">Usealla alustalla</p>
+  <h2>Mukanasi kaikilla laitteilla</h2>
+  <p class="section-desc">CloudKitiin perustuva iCloud-synkronointi jatkaa siitä, mihin jäit, millä laitteella tahansa.</p>
+  <div class="devices">
+    <div class="device-chip">📱 iPhone</div>
+    <div class="device-chip">📲 iPad</div>
+    <div class="device-chip">💻 Mac</div>
+    <div class="device-chip">☁️ Automaattinen iCloud-synkronointi</div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Aloita kasvusi nyt</h2>
+  <p>30 virhettä ilmaiseksi, PRO avaa kaikki 100.<br>Ole kehittäjä, joka ei tee samaa virhettä kahdesti.</p>
+  <a href="#" class="btn-store">
+    <svg style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+    <div>
+      <span class="btn-store-sub">Download on the</span>
+      <span class="btn-store-main">App Store</span>
+    </div>
+  </a>
+</section>
+
+<footer>
+  <div>
+    <p>© 2026 100 virhettä. All rights reserved.</p>
+    <div style="margin-top:12px"><div class="langs"><a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/index.html" hreflang="en" lang="en">English</a> <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a> <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/index.html" hreflang="es" lang="es">Español</a> <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a> <a href="../it/index.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/index.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a> <a href="../da/index.html" hreflang="da" lang="da">Dansk</a> <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/index.html" hreflang="fi" lang="fi" class="cur" aria-current="true">Suomi</a> <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a> <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a></div></div>
+  </div>
+  <span class="foot-links"><a href="support.html">Tuki</a><a href="privacy.html">Tietosuojakäytäntö</a></span>
+</footer>
+
+</body>
+</html>

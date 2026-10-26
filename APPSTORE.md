@@ -877,3 +877,55 @@ https://m1zz.github.io/JuniorDevMistakes/el/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/el/index.html
+
+## fi
+
+### 이름
+
+100 virhettä: koodarin opas
+
+### 부제
+
+Opi ennen kuin kompastut
+
+### 키워드
+
+ohjelmointi,kehittäjä,junior,tarkistuslista,päiväkirja,retrospektiivi,git,debuggaus,oppiminen,vinkit
+
+### 프로모션 텍스트
+
+Tutustu juniorikehittäjien 100 yleisimpään virheeseen ennen kuin teet ne itse. Merkitse koetut, pohdi ja älä toista samaa virhettä. 30 virhettä ilmaiseksi.
+
+### 설명
+
+Tunne virheet ennen kuin teet ne itse. 100 virhettä on kasvun tarkistuslista, jossa on 100 yleisintä virhettä, joita juniorikehittäjät tekevät. Opit nopeammin etkä toista samoja virheitä.
+
+Virheet on jaettu 10 kategoriaan: koodaustavat, debuggaus ja ongelmanratkaisu, versionhallinta ja yhteistyö, suunnittelu ja arkkitehtuuri, testaus ja laatu, oppiminen ja kasvu, viestintä, infrastruktuuri ja julkaisu, tietoturva ja yksityisyys sekä suorituskyky ja optimointi. Jokainen virhe selitetään kolmessa osassa: näin tässä käy, tee näin ja tästä opit ja kasvat.
+
+Merkitse koetuksi ne virheet, jotka olet itse tehnyt, ja vastaa jokaisen virheen pohdintakysymyksiin. Kysymyksiä on yhteensä 400, ja niiden avulla pelkästä lukemisesta tulee oikeaa ymmärrystä. Näet edistymisesi kategorioittain ja koko 100 virheen listalla, ja kirjanmerkeillä tallennat kohteet, joihin haluat palata.
+
+Tietosi synkronoituvat iCloudin (CloudKit) kautta iPhonen, iPadin ja Macin välillä, joten voit jatkaa siitä, mihin jäit. Sovellus ei kerää henkilötietoja, eikä siinä ole analytiikkaa tai mainoksia.
+
+Kokeile ensimmäiset 30 virhettä (3 kategoriaa) ilmaiseksi. PRO avaa kaikki 100. PRO on saatavilla kuukausi- tai vuositilauksena, jolloin vuositilaus säästää jopa 50 % kuukausitilaukseen verrattuna, tai kertamaksulla ostettavana elinikäisenä käyttöoikeutena.
+
+Kuukausi- ja vuositilaukset uusiutuvat automaattisesti, ellet peruuta niitä vähintään 24 tuntia ennen nykyisen jakson päättymistä. Voit hallita ja peruuttaa tilauksen milloin tahansa Apple ID:n asetuksissa.
+
+Älä opi kantapään kautta. Tunne virheet ajoissa, opi niistä ja kasva kehittäjänä nopeammin.
+
+Käyttöehdot (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Tietosuojakäytäntö (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/fi/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/fi/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/fi/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/fi/index.html

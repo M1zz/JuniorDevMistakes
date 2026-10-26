@@ -103,3 +103,9 @@ Besvar refleksionsspørgsmål på dit sprog
 Δείτε το 100 Λάθη σε πολλές γλώσσες
 Οθόνες και ιστορίες στη γλώσσα σας
 Ερωτήσεις ανασκόπησης στη γλώσσα σας
+
+### 앱스토어 (fi)
+
+100 virhettä nyt monella kielellä
+Näkymät ja sisältö laitteesi kielellä
+Pohdintakysymykset omalla kielelläsi
