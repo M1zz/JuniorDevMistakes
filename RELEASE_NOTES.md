@@ -55,3 +55,9 @@ Responde las reflexiones en tu idioma
 100 Dev-Fehler jetzt in vielen Sprachen
 Alles passt sich deiner Sprache an
 Rückblickfragen in deiner Sprache
+
+### 앱스토어 (fr)
+
+100 Erreurs Dev dans plusieurs langues
+L'app s'adapte à la langue de l'appareil
+Rédigez vos rétros dans votre langue

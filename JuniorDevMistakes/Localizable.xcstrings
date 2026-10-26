@@ -33,6 +33,12 @@
             "value" : "%lld / 100 vividos"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 vécues"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -102,6 +108,12 @@
             "value" : "%lld errores"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -152,6 +164,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld completados"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld terminées"
           }
         },
         "ja" : {
@@ -206,6 +224,12 @@
             "value" : "%lld categorías bloqueadas"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld catégories verrouillées"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -256,6 +280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld elementos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld éléments"
           }
         },
         "ja" : {
@@ -313,6 +343,12 @@
             "value" : "/año"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/an"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -363,6 +399,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/mes"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/mois"
           }
         },
         "ja" : {
@@ -417,6 +459,12 @@
             "value" : "/día"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/jour"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -467,6 +515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/sem"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/sem."
           }
         },
         "ja" : {
@@ -521,6 +575,12 @@
             "value" : "Lista de los 100\nerrores"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checklist des\n100 erreurs"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -571,6 +631,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Los 100 errores disponibles"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les 100 erreurs accessibles"
           }
         },
         "ja" : {
@@ -625,6 +691,12 @@
             "value" : "Seguimiento completo de los 100"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivi complet des 100 erreurs"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -675,6 +747,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "10 categorías, 100 errores\nAprende antes de vivirlos en carne propia"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 catégories, 100 erreurs\nApprenez-les avant de les vivre"
           }
         },
         "ja" : {
@@ -729,6 +807,12 @@
             "value" : "280 preguntas de reflexión adicionales"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 questions de rétro en plus"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -776,6 +860,12 @@
           }
         },
         "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -833,6 +923,12 @@
             "value" : "PRO activo"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO actif"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -883,6 +979,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qué incluye PRO"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inclus dans PRO"
           }
         },
         "ja" : {
@@ -937,6 +1039,12 @@
             "value" : "Mejorar a PRO"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer à PRO"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -987,6 +1095,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mejora a PRO y estudia todo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passez à PRO pour tout apprendre"
           }
         },
         "ja" : {
@@ -1041,6 +1155,12 @@
             "value" : "P%lld"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Q%lld"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1091,6 +1211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En iPhone, iPad y Mac,\ntus datos siempre te siguen con iCloud"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sur iPhone, iPad et Mac,\nvos données vous suivent grâce à iCloud"
           }
         },
         "ja" : {
@@ -1148,6 +1274,12 @@
             "value" : "Responde las preguntas de\nreflexión de cada error"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Répondez aux questions de rétro\nde chaque erreur"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1198,6 +1330,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Al responder las preguntas de reflexión\nde cada error, no repetirás el mismo dos veces"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En répondant aux questions de rétro,\nvous ne ferez plus deux fois la même erreur"
           }
         },
         "ja" : {
@@ -1252,6 +1390,12 @@
             "value" : "Política de privacidad"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Politique de confidentialité"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1302,6 +1446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Ya casi llegas!\nSeguro que ya aprendiste muchísimo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous y êtes presque !\nVous avez déjà beaucoup appris"
           }
         },
         "ja" : {
@@ -1356,6 +1506,12 @@
             "value" : "Omitir"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1406,6 +1562,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vivido"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vécue"
           }
         },
         "ja" : {
@@ -1460,6 +1622,12 @@
             "value" : "Errores vividos"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erreurs vécues"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1510,6 +1678,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suscripción"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnement"
           }
         },
         "ja" : {
@@ -1564,6 +1738,12 @@
             "value" : "Suscríbete para desbloquear"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "S'abonner pour débloquer"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1614,6 +1794,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudieron restaurar las compras."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La restauration des achats a échoué."
           }
         },
         "ja" : {
@@ -1668,6 +1854,12 @@
             "value" : "Restaurar compras"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurer les achats"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1718,6 +1910,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se recibió tu solicitud de compra. Cuando se apruebe, se desbloqueará automáticamente."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre demande d'achat a bien été reçue. Le contenu sera débloqué automatiquement une fois l'achat approuvé."
           }
         },
         "ja" : {
@@ -1772,6 +1970,12 @@
             "value" : "Ocurrió un error durante la compra."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une erreur est survenue pendant l'achat."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1822,6 +2026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo confirmar la compra. Inténtalo de nuevo en un momento."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de vérifier l'achat. Veuillez réessayer dans un instant."
           }
         },
         "ja" : {
@@ -1876,6 +2086,12 @@
             "value" : "¡Vas creciendo sin parar!\nCada error suma a tu experiencia"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous progressez régulièrement !\nPlus d'erreurs vécues, plus de compétences"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1926,6 +2142,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desbloquea los 70 errores restantes"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Débloquez les 70 autres erreurs"
           }
         },
         "ja" : {
@@ -1980,6 +2202,12 @@
             "value" : "Mi camino de crecimiento"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mon parcours de progression"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2030,6 +2258,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mis 100 errores"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mes 100 erreurs"
           }
         },
         "ja" : {
@@ -2084,6 +2318,12 @@
             "value" : "Mis reflexiones"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mes notes de rétro"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2134,6 +2374,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reintentar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réessayer"
           }
         },
         "ja" : {
@@ -2188,6 +2434,12 @@
             "value" : "Siguiente"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivant"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2238,6 +2490,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Datos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Données"
           }
         },
         "ja" : {
@@ -2292,6 +2550,12 @@
             "value" : "¡Solo faltan unos pocos!\nLa meta está a la vista"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus que quelques-unes !\nL'arrivée est toute proche"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2342,6 +2606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sincronización automática\nen todos tus dispositivos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronisation automatique\nsur tous vos appareils"
           }
         },
         "ja" : {
@@ -2396,6 +2666,12 @@
             "value" : "Restablecer todos los datos"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réinitialiser toutes les données"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2446,6 +2722,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se borrarán todos los datos de progreso. Esta acción no se puede deshacer."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les données de progression seront supprimées. Cette action est irréversible."
           }
         },
         "ja" : {
@@ -2500,6 +2782,12 @@
             "value" : "Versión"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2550,6 +2838,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No hay compras que restaurar."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun achat à restaurer."
           }
         },
         "ja" : {
@@ -2604,6 +2898,12 @@
             "value" : "Marcadores"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoris"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2654,6 +2954,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No tienes marcadores"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun favori"
           }
         },
         "ja" : {
@@ -2708,6 +3014,12 @@
             "value" : "Eliminar"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2758,6 +3070,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toca el botón de marcador en el detalle\npara guardar lo que quieras ver después"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appuyez sur le bouton Favori dans le détail\npour garder un élément à revoir plus tard"
           }
         },
         "ja" : {
@@ -2812,6 +3130,12 @@
             "value" : "Cargando información del producto..."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chargement des offres..."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2862,6 +3186,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo cargar la información del producto.\nRevisa tu conexión a internet."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de charger les offres.\nVérifiez votre connexion réseau."
           }
         },
         "ja" : {
@@ -2916,6 +3246,12 @@
             "value" : "Ajustes"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglages"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2966,6 +3302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Comenzar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencer"
           }
         },
         "ja" : {
@@ -3020,6 +3362,12 @@
             "value" : "Estudia los errores #031-100"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les erreurs n°031 à 100"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3070,6 +3418,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Errores Dev"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Erreurs Dev"
           }
         },
         "ja" : {
@@ -3124,6 +3478,12 @@
             "value" : "Te esperan 70 errores más\nDesbloquéalos ahora"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "70 erreurs de plus vous attendent\nDébloquez-les maintenant"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3174,6 +3534,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pregúntate después de un error"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posez-vous ces questions après l'erreur"
           }
         },
         "ja" : {
@@ -3228,6 +3594,12 @@
             "value" : "Aún no has empezado.\n¡Vive tu primer error!"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous n'avez pas encore commencé.\nVivez votre première erreur !"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3278,6 +3650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aviso"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Information"
           }
         },
         "ja" : {
@@ -3332,6 +3710,12 @@
             "value" : "Escribe tu respuesta aquí..."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écrivez votre réponse ici..."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3382,6 +3766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Ya empezaste el camino!\nTodos los seniors empezaron aquí"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le voyage commence !\nTous les seniors sont partis d'ici"
           }
         },
         "ja" : {
@@ -3436,6 +3826,12 @@
             "value" : "Suscripción anual"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnement annuel"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3486,6 +3882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suscripción anual · %@/año · Se renueva cada año"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnement annuel · %@/an · renouvelé chaque année"
           }
         },
         "ja" : {
@@ -3540,6 +3942,12 @@
             "value" : "Error"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erreur"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3590,6 +3998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suscripción mensual"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnement mensuel"
           }
         },
         "ja" : {
@@ -3644,6 +4058,12 @@
             "value" : "Suscripción mensual · %@/mes · Se renueva cada mes"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnement mensuel · %@/mois · renouvelé chaque mois"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3694,6 +4114,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ahorra hasta 50% frente al plan mensual"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jusqu'à 50 % d'économie par rapport au mensuel"
           }
         },
         "ja" : {
@@ -3748,6 +4174,12 @@
             "value" : "Las suscripciones mensual y anual se renuevan automáticamente y se cobran si no las cancelas al menos 24 horas antes de que termine el periodo actual. Puedes administrar o cancelar tu suscripción en cualquier momento en los ajustes de tu ID de Apple."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les abonnements mensuel et annuel se renouvellent automatiquement, sauf annulation au moins 24 heures avant la fin de la période en cours. Vous pouvez les gérer ou les annuler à tout moment dans les réglages de votre identifiant Apple."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3798,6 +4230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Esto aprenderás y así crecerás"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce que vous apprendrez en progressant"
           }
         },
         "ja" : {
@@ -3852,6 +4290,12 @@
             "value" : "Esto es lo que pasa"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voici ce qui se passe"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3902,6 +4346,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haz esto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faites plutôt ceci"
           }
         },
         "ja" : {
@@ -3956,6 +4406,12 @@
             "value" : "Términos de uso (EULA)"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conditions d'utilisation (EULA)"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4006,6 +4462,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popular"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Populaire"
           }
         },
         "ja" : {
@@ -4060,6 +4522,12 @@
             "value" : "Guardar"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4110,6 +4578,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Todos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout"
           }
         },
         "ja" : {
@@ -4164,6 +4638,12 @@
             "value" : "Restablecer todo"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout réinitialiser"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4214,6 +4694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Estás cerca de la mitad!\nA este ritmo serás senior muy pronto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous approchez de la moitié !\nÀ ce rythme, vous serez vite senior"
           }
         },
         "ja" : {
@@ -4268,6 +4754,12 @@
             "value" : "¡Pasaste la mitad!\nYa empiezas a ver con ojos de dev de nivel medio"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus de la moitié faite !\nVous commencez à voir comme un développeur confirmé"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4318,6 +4810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Acerca de"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos"
           }
         },
         "ja" : {
@@ -4372,6 +4870,12 @@
             "value" : "100 errores\ndel dev junior"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les 100 erreurs\ndu développeur junior"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4422,6 +4926,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 errores del dev junior"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les 100 erreurs du développeur junior"
           }
         },
         "ja" : {
@@ -4478,6 +4988,12 @@
             "value" : "Acerca de 100 errores del dev junior"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos de 100 Erreurs Dev"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4528,6 +5044,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Empezar ahora"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencer maintenant"
           }
         },
         "ja" : {
@@ -4582,6 +5104,12 @@
             "value" : "Progreso"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progression"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4632,6 +5160,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se borrarán la lista de verificación, las reflexiones y los marcadores."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La checklist, les notes de rétro et les favoris seront tous supprimés."
           }
         },
         "ja" : {
@@ -4686,6 +5220,12 @@
             "value" : "Se borrarán la lista de verificación, las reflexiones y los marcadores. Esta acción no se puede deshacer."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La checklist, les notes de rétro et les favoris seront tous supprimés. Cette action est irréversible."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4736,6 +5276,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restablecer"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réinitialiser"
           }
         },
         "ja" : {
@@ -4790,6 +5336,12 @@
             "value" : "Confirmar restablecimiento"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmer la réinitialisation"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4840,6 +5392,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Felicidades! ¡Viviste todos los errores!\n¡Ya se abre el camino al nivel senior!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Félicitations ! Vous avez vécu toutes les erreurs !\nLa voie vers le niveau senior est ouverte !"
           }
         },
         "ja" : {
@@ -4894,6 +5452,12 @@
             "value" : "Cancelar"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4944,6 +5508,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Desbloquea por completo las categorías 4-10"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Déblocage complet des catégories 4 à 10"
           }
         },
         "ja" : {
@@ -4998,6 +5568,12 @@
             "value" : "Acceso de por vida"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accès à vie"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5048,6 +5624,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Acceso de por vida · %@ · Pago único, sin renovación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accès à vie · %@ · paiement unique, sans renouvellement"
           }
         },
         "ja" : {
@@ -5102,6 +5684,12 @@
             "value" : "Elige un plan"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir une offre"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5152,6 +5740,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Un solo pago, para siempre"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un seul paiement, accès permanent"
           }
         },
         "ja" : {
@@ -5206,6 +5800,12 @@
             "value" : "Todas las futuras actualizaciones de contenido"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les futures mises à jour de contenu"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5256,6 +5856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Conoce de antemano los errores que más\ncometen los devs y crece más rápido"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Découvrez à l'avance les erreurs que font\nle plus les développeurs, et progressez plus vite"
           }
         },
         "ja" : {
@@ -5310,6 +5916,12 @@
             "value" : "Aceptar"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5360,6 +5972,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflexiones"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes de rétro"
           }
         },
         "ja" : {
@@ -5414,6 +6032,12 @@
             "value" : "Aún no hay reflexiones"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune note de rétro"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5464,6 +6088,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflexión hecha"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rétro faite"
           }
         },
         "ja" : {
@@ -5518,6 +6148,12 @@
             "value" : "Diario de reflexión"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Journal de rétro"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5568,6 +6204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escribir reflexión"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écrire une rétro"
           }
         },
         "ja" : {
@@ -5622,6 +6264,12 @@
             "value" : "Preguntas de reflexión"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questions de rétro"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5674,6 +6322,12 @@
             "value" : "Vive un crecimiento real\ncon la reflexión"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vivez une vraie\nprogression grâce à la rétro"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5724,6 +6378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflexiones hechas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éléments revus"
           }
         },
         "ja" : {
