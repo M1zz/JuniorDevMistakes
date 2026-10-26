@@ -166,6 +166,7 @@
 				en,
 				"en-GB",
 				"zh-Hans",
+				"zh-Hant",
 				Base,
 			);
 			mainGroup = A50001;

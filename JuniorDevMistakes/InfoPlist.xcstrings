@@ -28,6 +28,12 @@
             "state" : "translated",
             "value" : "踩坑100"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "踩雷100"
+          }
         }
       }
     },
@@ -57,6 +63,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "踩坑100"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "踩雷100"
           }
         }
       }

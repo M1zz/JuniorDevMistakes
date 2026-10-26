@@ -193,3 +193,53 @@ https://m1zz.github.io/JuniorDevMistakes/zh-Hans/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/zh-Hans/index.html
+
+## zh-Hant
+
+### 이름
+
+踩雷100：新手工程師成長清單
+
+### 부제
+
+同樣的錯，不犯第二次
+
+### 키워드
+
+程式設計,寫程式,程式碼,除錯,回顧,Git,面試,職涯,學習筆記,日誌,避雷,軟體工程,自學,前端,後端,最佳實踐,轉職,Code Review,重構,團隊協作,實習,新鮮人,後端工程,技術
+
+### 프로모션 텍스트
+
+事先了解新手工程師最常犯的 100 個錯誤，用檢查清單確認、用回顧日誌內化，同樣的雷不踩第二次。前 30 個錯誤免費體驗。
+
+### 설명
+
+事先知道雷在哪裡，成長就能快人一步。「踩雷100」整理了新手工程師最常犯的 100 個錯誤，幫你少走冤枉路，不在同一個地方跌倒兩次。
+
+這 100 個錯誤分為 10 大分類：程式碼撰寫習慣、除錯與問題排查、版本控制與協作、設計與架構、測試與品質、學習與成長、溝通、部署與維運、資安與資料、效能與最佳化。每個錯誤都用三個部分說清楚：會發生什麼狀況、建議怎麼做，以及從中學到什麼。
+
+踩過的雷，就在檢查清單裡標示為「已踩過」，再回答每個錯誤配套的回顧問題。總共 400 個回顧問題組成的回顧日誌，能讓你從「看過」變成「真的懂」。你可以依分類與整體查看 100 個錯誤的完成進度（100 格），需要再看一次的內容就加入書籤。
+
+資料會透過 iCloud (CloudKit) 在 iPhone、iPad 與 Mac 之間同步，換裝置也能接著學。本 App 不蒐集任何個人資料，沒有分析追蹤，也沒有廣告。
+
+免費版可先體驗前 30 個錯誤（3 個分類）。升級 PRO 即可解鎖全部 100 個錯誤。PRO 提供月度訂閱、年度訂閱（比月度訂閱最多省 50%），以及一次付費的終身買斷。
+
+訂閱會自動續訂。若未在目前訂閱期間結束前至少 24 小時取消，將自動續訂並扣款。你可以隨時在 Apple ID 設定中管理或取消訂閱。
+
+使用條款 (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+隱私權政策 (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/zh-Hant/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/zh-Hant/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/zh-Hant/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/zh-Hant/index.html
