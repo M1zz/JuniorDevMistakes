@@ -985,3 +985,55 @@ https://m1zz.github.io/JuniorDevMistakes/id/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/id/index.html
+
+## nb
+
+### 이름
+
+100 feil: Sjekkliste for devs
+
+### 부제
+
+Lær av dem før du gjør dem
+
+### 키워드
+
+junior,utvikler,programmering,git,feilsøking,code review,karriere,dagbok,programvare,tips,refleksjon
+
+### 프로모션 텍스트
+
+Lær de 100 feilene juniorutviklere oftest gjør, før du går i dem selv. Kryss av, reflekter og gjør aldri den samme feilen to ganger. De første 30 er gratis.
+
+### 설명
+
+Kjenn feilene før du gjør dem. 100 feil er sjekklisten for veksten din, med de 100 feilene juniorutviklere oftest gjør, så du utvikler deg raskere og slipper å gjenta de samme feilene om og om igjen.
+
+Feilene er delt inn i 10 kategorier: kodevaner, feilsøking og problemløsning, versjonskontroll og samarbeid, design og arkitektur, testing og kvalitet, læring og vekst, kommunikasjon, infrastruktur og utrulling, sikkerhet og personvern samt ytelse og optimalisering. Hver feil forklares i tre steg: slik kan det gå, gjør dette, og dette lærer du.
+
+Kryss av for feilene du selv har opplevd, og svar på refleksjonsspørsmålene til hver av dem. Med 400 spørsmål til sammen blir hurtiglesing til ekte forståelse. Du kan følge fremgangen per kategori og totalt på tvers av alle 100 feil, og med bokmerker husker du det du vil se på igjen.
+
+Dataene dine synkroniseres mellom iPhone, iPad og Mac via iCloud (CloudKit), så du kan fortsette der du slapp, uansett hvilken enhet du bruker. Appen samler ikke inn personopplysninger, og har verken analyse eller annonser.
+
+Prøv de første 30 feilene (3 kategorier) gratis. Med PRO låser du opp alle 100. PRO fås som månedlig eller årlig abonnement, der det årlige sparer opptil 50 % sammenlignet med det månedlige, eller som engangskjøp med livstidstilgang.
+
+Månedlige og årlige abonnement fornyes automatisk med mindre du sier dem opp senest 24 timer før gjeldende periode utløper. Du kan når som helst administrere eller si opp abonnementet i Apple-ID-innstillingene dine.
+
+Ikke lær av å brenne deg. Kjenn feilene i god tid, lær av dem og vokse raskere som utvikler.
+
+Bruksvilkår (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Personvernerklæring (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/nb/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/nb/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/nb/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/nb/index.html

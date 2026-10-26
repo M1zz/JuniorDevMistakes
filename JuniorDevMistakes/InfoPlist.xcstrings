@@ -83,6 +83,12 @@
             "value" : "실수 100"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 feil"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -201,6 +207,12 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "실수 100"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 feil"
           }
         },
         "pt-BR" : {

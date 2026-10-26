@@ -81,6 +81,12 @@
             "value" : "%lld / 100 経験済み"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 opplevd"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -210,6 +216,12 @@
             "value" : "%lld個"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld stk."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -320,6 +332,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld個 完了"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld fullført"
           }
         },
         "pt-BR" : {
@@ -434,6 +452,12 @@
             "value" : "%lld個のカテゴリがロックされています"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld kategorier er låst"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -544,6 +568,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld件"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld elementer"
           }
         },
         "pt-BR" : {
@@ -661,6 +691,12 @@
             "value" : "/年"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/år"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -771,6 +807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/月"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/mnd"
           }
         },
         "pt-BR" : {
@@ -885,6 +927,12 @@
             "value" : "/日"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/dag"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -995,6 +1043,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/週"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/uke"
           }
         },
         "pt-BR" : {
@@ -1109,6 +1163,12 @@
             "value" : "100のミス\nチェックリスト"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sjekkliste over\n100 feil"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1219,6 +1279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100個のミスをすべて利用可能"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle 100 feil er tilgjengelige"
           }
         },
         "pt-BR" : {
@@ -1333,6 +1399,12 @@
             "value" : "100個すべての成長を記録"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full vekstsporing for alle 100"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1443,6 +1515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "10カテゴリ、100のミス\n自分でやらかす前に、先に学ぼう"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 kategorier, 100 feil\nLær dem før du gjør dem selv"
           }
         },
         "pt-BR" : {
@@ -1557,6 +1635,12 @@
             "value" : "追加のふりかえり質問280個"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 ekstra refleksjonsspørsmål"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1664,6 +1748,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -1781,6 +1871,12 @@
             "value" : "PROをご利用中"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du har PRO"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1891,6 +1987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "PROプランの内容"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dette får du med PRO"
           }
         },
         "pt-BR" : {
@@ -2005,6 +2107,12 @@
             "value" : "PROにアップグレード"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppgrader til PRO"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2115,6 +2223,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "PROにアップグレードして全部学ぶ"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppgrader til PRO og lær alt"
           }
         },
         "pt-BR" : {
@@ -2229,6 +2343,12 @@
             "value" : "Q%lld"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spm. %lld"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2339,6 +2459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "iPhone、iPad、Macで\niCloudによりデータがいつもつながります"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dataene dine følger deg på iPhone,\niPad og Mac via iCloud"
           }
         },
         "pt-BR" : {
@@ -2456,6 +2582,12 @@
             "value" : "それぞれのミスのふりかえり質問に\n答えを書いてみましょう"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svar på refleksjonsspørsmålene\nfor hver feil"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2566,6 +2698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ミスごとのふりかえり質問に答えて\n同じミスを繰り返さなくなります"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svar på refleksjonsspørsmål for hver feil,\nså gjør du den ikke to ganger"
           }
         },
         "pt-BR" : {
@@ -2680,6 +2818,12 @@
             "value" : "プライバシーポリシー"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personvernerklæring"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2790,6 +2934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "もう少しです!\nここまでで、きっと多くのことを学びましたね"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nesten i mål!\nDu har allerede lært masse"
           }
         },
         "pt-BR" : {
@@ -2904,6 +3054,12 @@
             "value" : "スキップ"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hopp over"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3014,6 +3170,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "経験済み"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opplevd"
           }
         },
         "pt-BR" : {
@@ -3128,6 +3290,12 @@
             "value" : "経験したミス"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opplevde feil"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3238,6 +3406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "サブスクリプション"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnement"
           }
         },
         "pt-BR" : {
@@ -3352,6 +3526,12 @@
             "value" : "登録してロック解除"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonner for å låse opp"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3462,6 +3642,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "購入の復元に失敗しました。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke gjenopprette kjøp."
           }
         },
         "pt-BR" : {
@@ -3576,6 +3762,12 @@
             "value" : "購入を復元"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjenopprett kjøp"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3686,6 +3878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "購入リクエストを受け付けました。承認されると、自動でロックが解除されます。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kjøpsforespørselen er mottatt. Innholdet låses opp automatisk når den er godkjent."
           }
         },
         "pt-BR" : {
@@ -3800,6 +3998,12 @@
             "value" : "購入中にエラーが発生しました。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det oppstod en feil under kjøpet."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3910,6 +4114,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "購入を確認できませんでした。しばらくしてからもう一度お試しください。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke bekrefte kjøpet. Prøv igjen om litt."
           }
         },
         "pt-BR" : {
@@ -4024,6 +4234,12 @@
             "value" : "着実に成長しています!\nミスが積み重なるほど、実力も積み重なります"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du vokser jevnt og trutt!\nJo flere feil, desto bedre blir du"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4134,6 +4350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "残り70個のミスをロック解除しましょう"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås opp de resterende 70 feilene"
           }
         },
         "pt-BR" : {
@@ -4248,6 +4470,12 @@
             "value" : "わたしの成長の道のり"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min vekstreise"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4358,6 +4586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "わたしのやらかし100"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mine 100 feil"
           }
         },
         "pt-BR" : {
@@ -4472,6 +4706,12 @@
             "value" : "わたしのふりかえり記録"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mine refleksjoner"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4582,6 +4822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "再試行"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prøv igjen"
           }
         },
         "pt-BR" : {
@@ -4696,6 +4942,12 @@
             "value" : "次へ"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neste"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4806,6 +5058,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "データ"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data"
           }
         },
         "pt-BR" : {
@@ -4920,6 +5178,12 @@
             "value" : "あと少しです!\n完走はもう目の前です"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bare noen få igjen!\nMålstreken er like foran deg"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5030,6 +5294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "すべてのデバイスで\n自動的に同期"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkroniseres automatisk\npå alle enhetene dine"
           }
         },
         "pt-BR" : {
@@ -5144,6 +5414,12 @@
             "value" : "すべてのデータをリセット"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilbakestill alle data"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5254,6 +5530,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "すべての進行データが削除されます。この操作は取り消せません。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All fremgang slettes. Dette kan ikke angres."
           }
         },
         "pt-BR" : {
@@ -5368,6 +5650,12 @@
             "value" : "バージョン"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versjon"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5478,6 +5766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "復元できる購入履歴がありません。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen kjøp å gjenopprette."
           }
         },
         "pt-BR" : {
@@ -5592,6 +5886,12 @@
             "value" : "ブックマーク"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bokmerker"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5702,6 +6002,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ブックマークした項目はありません"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen bokmerkede elementer"
           }
         },
         "pt-BR" : {
@@ -5816,6 +6122,12 @@
             "value" : "削除"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5926,6 +6238,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "詳細画面でブックマークボタンを押して\n後で見たい項目を保存しましょう"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk på bokmerkeknappen i detaljvisningen\nfor å lagre det du vil se senere"
           }
         },
         "pt-BR" : {
@@ -6040,6 +6358,12 @@
             "value" : "商品情報を読み込み中..."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Henter produktinformasjon ..."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6150,6 +6474,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "商品情報を読み込めませんでした。\nネットワーク接続をご確認ください。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke hente produktinformasjon.\nSjekk nettverkstilkoblingen."
           }
         },
         "pt-BR" : {
@@ -6264,6 +6594,12 @@
             "value" : "設定"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innstillinger"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6374,6 +6710,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "はじめる"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom i gang"
           }
         },
         "pt-BR" : {
@@ -6488,6 +6830,12 @@
             "value" : "ミス #031-100 をすべて学ぶ"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lær alle feil #031-100"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6598,6 +6946,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "やらかし100"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 feil"
           }
         },
         "pt-BR" : {
@@ -6712,6 +7066,12 @@
             "value" : "あと70個のミスが待っています\nいますぐロックを解除しましょう"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "70 feil til venter på deg\nLås dem opp nå"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6822,6 +7182,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ミスをしたら、自分に問いかけてみましょう"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spør deg selv etter en feil"
           }
         },
         "pt-BR" : {
@@ -6936,6 +7302,12 @@
             "value" : "まだ始めていません。\n最初のミスを体験してみましょう!"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du har ikke begynt ennå.\nOpplev din første feil!"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7046,6 +7418,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "お知らせ"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
           }
         },
         "pt-BR" : {
@@ -7160,6 +7538,12 @@
             "value" : "ここに答えを書いてください..."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv svaret ditt her ..."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7270,6 +7654,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "旅が始まりました!\nどんなシニアも、ここから始まりました"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reisen er i gang!\nAlle seniorer startet her"
           }
         },
         "pt-BR" : {
@@ -7384,6 +7774,12 @@
             "value" : "年間サブスクリプション"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Årsabonnement"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7494,6 +7890,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "年間サブスクリプション · %@/年 · 毎年自動更新"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Årsabonnement · %@/år · fornyes automatisk hvert år"
           }
         },
         "pt-BR" : {
@@ -7608,6 +8010,12 @@
             "value" : "エラー"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feil"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7718,6 +8126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "月間サブスクリプション"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månedsabonnement"
           }
         },
         "pt-BR" : {
@@ -7832,6 +8246,12 @@
             "value" : "月間サブスクリプション · %@/月 · 毎月自動更新"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månedsabonnement · %@/mnd · fornyes automatisk hver måned"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7942,6 +8362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "月間プランより最大50%お得"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spar opptil 50 % mot månedlig"
           }
         },
         "pt-BR" : {
@@ -8056,6 +8482,12 @@
             "value" : "月間・年間サブスクリプションは自動的に更新され、現在の期間が終了する24時間前までに解約しない限り、料金が請求されます。サブスクリプションは、Apple IDの設定からいつでも管理・解約できます。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månedlige og årlige abonnement fornyes automatisk, og du belastes med mindre du sier opp senest 24 timer før gjeldende periode utløper. Du kan administrere og si opp abonnementet når som helst i Apple ID-innstillingene."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8166,6 +8598,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ここから学んで成長します"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dette lærer du"
           }
         },
         "pt-BR" : {
@@ -8280,6 +8718,12 @@
             "value" : "こんなことが起きます"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slik kan det gå"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8390,6 +8834,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "こうしましょう"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjør dette"
           }
         },
         "pt-BR" : {
@@ -8504,6 +8954,12 @@
             "value" : "利用規約(EULA)"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruksvilkår (EULA)"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8614,6 +9070,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "人気"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Populær"
           }
         },
         "pt-BR" : {
@@ -8728,6 +9190,12 @@
             "value" : "保存"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8838,6 +9306,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "すべて"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
           }
         },
         "pt-BR" : {
@@ -8952,6 +9426,12 @@
             "value" : "すべてリセット"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilbakestill alt"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9062,6 +9542,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "半分に近づいています!\nこのペースなら、すぐシニアですね"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snart halvveis!\nMed dette tempoet er du snart senior"
           }
         },
         "pt-BR" : {
@@ -9176,6 +9662,12 @@
             "value" : "半分を超えました!\n中堅エンジニアの視野が見えてきます"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over halvveis!\nNå begynner du å se som en erfaren utvikler"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9286,6 +9778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "情報"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om"
           }
         },
         "pt-BR" : {
@@ -9400,6 +9898,12 @@
             "value" : "新人エンジニアの\nやらかし100"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 feil\njuniorutviklere gjør"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9510,6 +10014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "新人エンジニアのやらかし100"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 feil juniorutviklere gjør"
           }
         },
         "pt-BR" : {
@@ -9626,6 +10136,12 @@
             "value" : "新人エンジニアのやらかし100について"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om 100 feil juniorutviklere gjør"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9736,6 +10252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今すぐはじめる"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start nå"
           }
         },
         "pt-BR" : {
@@ -9850,6 +10372,12 @@
             "value" : "進行状況"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fremgang"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9960,6 +10488,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "チェックリスト、ふりかえり記録、ブックマークがすべて削除されます。"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sjekklisten, refleksjonene og bokmerkene slettes."
           }
         },
         "pt-BR" : {
@@ -10074,6 +10608,12 @@
             "value" : "チェックリスト、ふりかえり記録、ブックマークがすべて削除されます。この操作は取り消せません。"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sjekklisten, refleksjonene og bokmerkene slettes. Dette kan ikke angres."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10184,6 +10724,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "リセット"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilbakestill"
           }
         },
         "pt-BR" : {
@@ -10298,6 +10844,12 @@
             "value" : "リセットの確認"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bekreft tilbakestilling"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10408,6 +10960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "おめでとうございます!すべてのミスを経験しました!\nシニアへの道が開けました!"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratulerer! Du har opplevd alle feilene!\nVeien til senior ligger åpen!"
           }
         },
         "pt-BR" : {
@@ -10522,6 +11080,12 @@
             "value" : "キャンセル"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10632,6 +11196,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "カテゴリ4〜10を完全ロック解除"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås opp alle kategorier 4-10"
           }
         },
         "pt-BR" : {
@@ -10746,6 +11316,12 @@
             "value" : "買い切り(永久利用権)"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livstidstilgang"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10856,6 +11432,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "買い切り(永久利用権) · %@ · 1回払い、自動更新なし"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livstidstilgang · %@ · engangsbetaling, ingen automatisk fornyelse"
           }
         },
         "pt-BR" : {
@@ -10970,6 +11552,12 @@
             "value" : "プランを選ぶ"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg plan"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11080,6 +11668,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "1回の支払いでずっと使える"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betal én gang, bruk for alltid"
           }
         },
         "pt-BR" : {
@@ -11194,6 +11788,12 @@
             "value" : "今後のコンテンツ更新をすべて利用可能"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle fremtidige innholdsoppdateringer"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11306,6 +11906,12 @@
             "value" : "現役エンジニアが最も多くやらかすミスを\n先に知って、より早く成長しましょう"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kjenn feilene utviklere oftest gjør,\nså vokser du raskere"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11413,6 +12019,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -11530,6 +12142,12 @@
             "value" : "ふりかえり記録"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksjoner"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11640,6 +12258,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえり記録はありません"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen refleksjoner ennå"
           }
         },
         "pt-BR" : {
@@ -11754,6 +12378,12 @@
             "value" : "ふりかえり済み"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflektert"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11864,6 +12494,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえり日誌"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksjonslogg"
           }
         },
         "pt-BR" : {
@@ -11978,6 +12614,12 @@
             "value" : "ふりかえりを書く"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv refleksjon"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12088,6 +12730,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえり質問"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksjonsspørsmål"
           }
         },
         "pt-BR" : {
@@ -12202,6 +12850,12 @@
             "value" : "ふりかえりで\n本当の成長を実感しよう"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opplev ekte vekst\nmed refleksjon"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12312,6 +12966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえった項目"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflekterte elementer"
           }
         },
         "pt-BR" : {

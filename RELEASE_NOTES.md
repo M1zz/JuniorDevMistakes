@@ -115,3 +115,9 @@ Pohdintakysymykset omalla kielelläsi
 100 Kesalahan kini hadir multibahasa
 Layar dan cerita ikut bahasa perangkat
 Pertanyaan refleksi juga dalam bahasamu
+
+### 앱스토어 (nb)
+
+Nå kan du bruke 100 feil på flere språk
+Appen og feilene følger enhetens språk
+Refleksjonsspørsmål på ditt eget språk
