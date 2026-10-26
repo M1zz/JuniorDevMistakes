@@ -663,3 +663,59 @@ https://m1zz.github.io/JuniorDevMistakes/th/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/th/index.html
+
+## vi
+
+### 이름
+
+100 Sai Lầm Junior Dev
+
+### 부제
+
+Checklist & nhật ký nhìn lại
+
+### 키워드
+
+lập trình viên,học lập trình,lỗi code,debug,git,code review,fresher,kỹ năng,phần mềm,mới đi làm
+
+### 프로모션 텍스트
+
+Biết trước 100 sai lầm mà junior dev hay mắc để không phải tự vấp. Dùng thử miễn phí 30 mục đầu, checklist và nhật ký nhìn lại giúp bạn không mắc lại lần hai.
+
+### 설명
+
+Biết trước sai lầm, trưởng thành nhanh hơn. 100 Sai Lầm Junior Dev tổng hợp 100 sai lầm mà junior dev hay mắc nhất để bạn học trước khi tự mình vấp phải, và không mắc lại lần thứ hai.
+
+100 sai lầm được chia thành 10 danh mục: thói quen viết code, debug và giải quyết vấn đề, quản lý phiên bản và cộng tác, thiết kế và kiến trúc, test và chất lượng, học tập và trưởng thành, giao tiếp, hạ tầng và deploy, bảo mật và quyền riêng tư, hiệu năng và tối ưu hóa.
+
+Mỗi sai lầm được giải thích đủ ba phần: tình huống thường xảy ra, cách xử lý nên làm, và điều bạn học được để trưởng thành. Đọc xong là áp dụng được ngay vào công việc thật.
+
+Sai lầm nào đã từng trải qua thì đánh dấu vào checklist, rồi viết nhật ký nhìn lại bằng cách trả lời các câu hỏi dành cho từng mục, tổng cộng 400 câu hỏi. Nhờ vậy sai lầm trở thành kinh nghiệm của chính bạn, chứ không chỉ là kiến thức đọc lướt qua.
+
+Xem tiến độ từng danh mục và toàn bộ 100 ô chỉ trong một cái nhìn. Bookmark những mục muốn đọc lại, và đồng bộ dữ liệu giữa iPhone, iPad và Mac qua iCloud (CloudKit). Bắt đầu ở thiết bị này, học tiếp ở thiết bị kia.
+
+Về quyền riêng tư, bạn có thể yên tâm: ứng dụng không thu thập thông tin cá nhân, không có công cụ phân tích và không có quảng cáo.
+
+Bạn dùng miễn phí được 30 mục đầu tiên (3 danh mục) và mở khóa toàn bộ 100 mục với PRO. PRO có gói đăng ký hằng tháng và hằng năm (tự động gia hạn, gói năm tiết kiệm đến 50% so với gói tháng) hoặc gói trọn đời chỉ thanh toán một lần.
+
+Gói đăng ký sẽ tự động gia hạn nếu bạn không hủy ít nhất 24 giờ trước khi kết thúc kỳ hiện tại. Bạn có thể quản lý hoặc hủy bất cứ lúc nào trong cài đặt Apple ID.
+
+Bắt đầu ngay hôm nay và trở thành lập trình viên không mắc lại sai lầm lần thứ hai.
+
+Điều khoản sử dụng (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Chính sách quyền riêng tư (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/vi/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/vi/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/vi/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/vi/index.html

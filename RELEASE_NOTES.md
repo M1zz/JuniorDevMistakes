@@ -79,3 +79,9 @@ Responda às retrospectivas no seu idioma
 ตอนนี้ดู 100 ข้อพลาดได้หลายภาษาแล้ว
 หน้าจอและเนื้อหาเปลี่ยนตามภาษาของเครื่อง
 อ่านและตอบคำถามทบทวนเป็นภาษาของคุณได้
+
+### 앱스토어 (vi)
+
+Xem 100 Sai Lầm bằng nhiều ngôn ngữ
+Giao diện và nội dung theo ngôn ngữ máy
+Câu hỏi nhìn lại bằng ngôn ngữ của bạn

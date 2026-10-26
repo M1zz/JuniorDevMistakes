@@ -71,6 +71,12 @@
             "value" : "100 ข้อพลาด"
           }
         },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Sai Lầm Junior"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -153,6 +159,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 ข้อพลาด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Sai Lầm Junior"
           }
         },
         "zh-Hans" : {
