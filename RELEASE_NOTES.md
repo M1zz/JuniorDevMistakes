@@ -61,3 +61,9 @@ Rückblickfragen in deiner Sprache
 100 Erreurs Dev dans plusieurs langues
 L'app s'adapte à la langue de l'appareil
 Rédigez vos rétros dans votre langue
+
+### 앱스토어 (it)
+
+Leggi 100 Errori Dev in più lingue
+App ed errori nella tua lingua
+Rifletti e rispondi nella tua lingua

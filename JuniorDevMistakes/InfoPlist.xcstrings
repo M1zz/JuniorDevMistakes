@@ -35,6 +35,12 @@
             "value" : "100 Erreurs Dev"
           }
         },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Errori Dev"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -99,6 +105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Erreurs Dev"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Errori Dev"
           }
         },
         "ja" : {
