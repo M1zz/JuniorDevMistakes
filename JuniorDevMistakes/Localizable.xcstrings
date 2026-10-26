@@ -14,6 +14,12 @@
             "state" : "translated",
             "value" : "%lld / 100 experienced"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 experienced"
+          }
         }
       }
     },
@@ -41,12 +47,24 @@
             "state" : "translated",
             "value" : "%lld"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
         }
       }
     },
     "%lld개 완료" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld done"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld done"
@@ -61,12 +79,24 @@
             "state" : "translated",
             "value" : "Locked categories: %lld"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld categories are locked"
+          }
         }
       }
     },
     "%lld개 항목" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld items"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld items"
@@ -84,12 +114,24 @@
             "state" : "translated",
             "value" : "/year"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/year"
+          }
         }
       }
     },
     "/월" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/month"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "/month"
@@ -104,12 +146,24 @@
             "state" : "translated",
             "value" : "/day"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/day"
+          }
         }
       }
     },
     "/주" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/week"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "/week"
@@ -124,12 +178,24 @@
             "state" : "translated",
             "value" : "100 Mistakes\nChecklist"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Mistakes\nChecklist"
+          }
         }
       }
     },
     "100개 실수 전체 이용 가능" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All 100 mistakes available"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "All 100 mistakes available"
@@ -144,6 +210,12 @@
             "state" : "translated",
             "value" : "Track your growth across all 100"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Track your progress across all 100"
+          }
         }
       }
     },
@@ -154,12 +226,24 @@
             "state" : "translated",
             "value" : "10 categories, 100 mistakes\nLearn them before you live them"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 categories, 100 mistakes\nLearn them before you make them"
+          }
         }
       }
     },
     "280개 추가 회고 질문" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 more reflection questions"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "280 more reflection questions"
@@ -174,6 +258,12 @@
             "state" : "translated",
             "value" : "PRO"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
         }
       }
     },
@@ -183,6 +273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO Active"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO active"
           }
         }
       }
@@ -194,12 +290,24 @@
             "state" : "translated",
             "value" : "What's included in PRO"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What PRO includes"
+          }
         }
       }
     },
     "PRO로 업그레이드" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade to PRO"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upgrade to PRO"
@@ -214,12 +322,24 @@
             "state" : "translated",
             "value" : "Upgrade to PRO to learn them all"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade to PRO to learn them all"
+          }
         }
       }
     },
     "Q%lld" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Q%lld"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Q%lld"
@@ -234,6 +354,12 @@
             "state" : "translated",
             "value" : "Your data stays in sync across\niPhone, iPad, and Mac with iCloud"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your data stays in step across\niPhone, iPad and Mac with iCloud"
+          }
         }
       }
     },
@@ -243,6 +369,12 @@
     "각 실수 항목의 회고 질문에\n답변을 작성해보세요" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Answer the reflection questions\nfor each mistake"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Answer the reflection questions\nfor each mistake"
@@ -257,12 +389,24 @@
             "state" : "translated",
             "value" : "Answer a reflection question for each mistake\nand never make the same one twice"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Answer the reflection questions for each mistake\nand don't make the same one twice"
+          }
         }
       }
     },
     "개인정보처리방침" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy Policy"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Privacy Policy"
@@ -277,12 +421,24 @@
             "state" : "translated",
             "value" : "Almost there!\nYou've already learned a lot"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nearly there!\nYou've already learned a great deal"
+          }
         }
       }
     },
     "건너뛰기" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skip"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skip"
@@ -297,6 +453,12 @@
             "state" : "translated",
             "value" : "Experienced"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Experienced"
+          }
         }
       }
     },
@@ -306,6 +468,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mistakes Experienced"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mistakes experienced"
           }
         }
       }
@@ -317,6 +485,12 @@
             "state" : "translated",
             "value" : "Subscription"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscribe"
+          }
         }
       }
     },
@@ -326,6 +500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Subscribe to Unlock"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscribe to unlock"
           }
         }
       }
@@ -337,6 +517,12 @@
             "state" : "translated",
             "value" : "Couldn't restore purchases."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't restore your purchases."
+          }
         }
       }
     },
@@ -346,6 +532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restore Purchases"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore purchases"
           }
         }
       }
@@ -357,6 +549,12 @@
             "state" : "translated",
             "value" : "Your purchase request has been submitted. Once it's approved, everything unlocks automatically."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your purchase request has been sent. Once it's approved, everything will unlock automatically."
+          }
         }
       }
     },
@@ -366,6 +564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Something went wrong with the purchase."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Something went wrong with your purchase."
           }
         }
       }
@@ -377,6 +581,12 @@
             "state" : "translated",
             "value" : "Couldn't verify your purchase. Please try again in a moment."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We couldn't verify your purchase. Please try again in a moment."
+          }
         }
       }
     },
@@ -387,12 +597,24 @@
             "state" : "translated",
             "value" : "You're growing steadily!\nEvery mistake adds to your skills"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're growing steadily!\nThe more mistakes you collect, the more skill you gain"
+          }
         }
       }
     },
     "나머지 70개 실수를 잠금 해제하세요" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unlock the remaining 70 mistakes"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unlock the remaining 70 mistakes"
@@ -407,12 +629,24 @@
             "state" : "translated",
             "value" : "My Growth Journey"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My progress"
+          }
         }
       }
     },
     "나의 실수 100" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My 100 Mistakes"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "My 100 Mistakes"
@@ -427,6 +661,12 @@
             "state" : "translated",
             "value" : "My Reflections"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My reflections"
+          }
         }
       }
     },
@@ -437,12 +677,24 @@
             "state" : "translated",
             "value" : "Try Again"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try again"
+          }
         }
       }
     },
     "다음" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Next"
@@ -457,6 +709,12 @@
             "state" : "translated",
             "value" : "Data"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data"
+          }
         }
       }
     },
@@ -466,6 +724,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Just a few left!\nThe finish line is in sight"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only a few left!\nThe finish line is in sight"
           }
         }
       }
@@ -477,6 +741,12 @@
             "state" : "translated",
             "value" : "Automatically synced\non all your devices"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synced automatically\non all your devices"
+          }
         }
       }
     },
@@ -487,12 +757,24 @@
             "state" : "translated",
             "value" : "Reset All Data"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset all data"
+          }
         }
       }
     },
     "모든 진행 데이터가 삭제됩니다. 이 작업은 되돌릴 수 없습니다." : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All your progress data will be deleted. This can't be undone."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "All your progress data will be deleted. This can't be undone."
@@ -507,6 +789,12 @@
             "state" : "translated",
             "value" : "Version"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
         }
       }
     },
@@ -517,12 +805,24 @@
             "state" : "translated",
             "value" : "No purchases to restore."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There are no purchases to restore."
+          }
         }
       }
     },
     "북마크" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bookmarks"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bookmarks"
@@ -537,12 +837,24 @@
             "state" : "translated",
             "value" : "No bookmarked items"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No bookmarks yet"
+          }
         }
       }
     },
     "삭제" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Delete"
@@ -557,6 +869,12 @@
             "state" : "translated",
             "value" : "Tap the bookmark button on a detail screen\nto save items for later"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the bookmark button on a detail screen\nto save items for later"
+          }
         }
       }
     },
@@ -566,6 +884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Loading product info..."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading product information..."
           }
         }
       }
@@ -577,12 +901,24 @@
             "state" : "translated",
             "value" : "Couldn't load product info.\nPlease check your network connection."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't load product information.\nPlease check your network connection."
+          }
         }
       }
     },
     "설정" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Settings"
@@ -597,6 +933,12 @@
             "state" : "translated",
             "value" : "Get Started"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get started"
+          }
         }
       }
     },
@@ -607,12 +949,24 @@
             "state" : "translated",
             "value" : "Study all mistakes #031-100"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn mistakes #031-100"
+          }
         }
       }
     },
     "실수 100" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Dev Mistakes"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Dev Mistakes"
@@ -627,12 +981,24 @@
             "state" : "translated",
             "value" : "70 more mistakes are waiting\nUnlock them now"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "70 more mistakes are waiting for you\nUnlock them now"
+          }
         }
       }
     },
     "실수 후 스스로에게 물어보세요" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ask yourself after a mistake"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ask yourself after a mistake"
@@ -647,12 +1013,24 @@
             "state" : "translated",
             "value" : "You haven't started yet.\nExperience your first mistake!"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You haven't started yet.\nTry your first mistake!"
+          }
         }
       }
     },
     "안내" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notice"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notice"
@@ -667,6 +1045,12 @@
             "state" : "translated",
             "value" : "Write your answer here..."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write your answer here..."
+          }
         }
       }
     },
@@ -676,6 +1060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your journey has begun!\nEvery senior dev started here"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You've begun your journey!\nEvery senior developer started here"
           }
         }
       }
@@ -687,6 +1077,12 @@
             "state" : "translated",
             "value" : "Yearly Subscription"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yearly subscription"
+          }
         }
       }
     },
@@ -697,12 +1093,24 @@
             "state" : "translated",
             "value" : "Yearly subscription · %@/year · Renews automatically each year"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yearly subscription · %@/year · renews automatically each year"
+          }
         }
       }
     },
     "오류" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Error"
@@ -717,6 +1125,12 @@
             "state" : "translated",
             "value" : "Monthly Subscription"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly subscription"
+          }
         }
       }
     },
@@ -726,6 +1140,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Monthly subscription · %@/month · Renews automatically each month"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly subscription · %@/month · renews automatically each month"
           }
         }
       }
@@ -737,6 +1157,12 @@
             "state" : "translated",
             "value" : "Save up to 50% vs. monthly"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save up to 50% compared with monthly"
+          }
         }
       }
     },
@@ -746,6 +1172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Monthly and yearly subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. You can manage or cancel your subscription anytime in your Apple ID settings."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly and yearly subscriptions renew automatically unless you cancel at least 24 hours before the end of the current period. You can manage or cancel your subscription at any time in your Apple ID settings."
           }
         }
       }
@@ -757,6 +1189,12 @@
             "state" : "translated",
             "value" : "What You'll Learn"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What you learn"
+          }
         }
       }
     },
@@ -766,6 +1204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "What Happens"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What happens"
           }
         }
       }
@@ -777,12 +1221,24 @@
             "state" : "translated",
             "value" : "What to Do"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What to do"
+          }
         }
       }
     },
     "이용약관(EULA)" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terms of Use (EULA)"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Terms of Use (EULA)"
@@ -797,12 +1253,24 @@
             "state" : "translated",
             "value" : "Popular"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popular"
+          }
         }
       }
     },
     "저장" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Save"
@@ -817,6 +1285,12 @@
             "state" : "translated",
             "value" : "All"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
         }
       }
     },
@@ -826,6 +1300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reset All"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset everything"
           }
         }
       }
@@ -837,6 +1317,12 @@
             "state" : "translated",
             "value" : "Closing in on halfway!\nAt this pace, you'll be a senior dev in no time"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closing in on halfway!\nAt this rate you'll be a senior in no time"
+          }
         }
       }
     },
@@ -847,12 +1333,24 @@
             "state" : "translated",
             "value" : "Past the halfway mark!\nYou're starting to think like a mid-level dev"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over halfway!\nYou're starting to see things like a mid-level developer"
+          }
         }
       }
     },
     "정보" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "About"
@@ -867,6 +1365,12 @@
             "state" : "translated",
             "value" : "100 Junior Dev\nMistakes"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Mistakes\nJunior Developers Make"
+          }
         }
       }
     },
@@ -876,6 +1380,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Junior Dev Mistakes"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Mistakes Junior Developers Make"
           }
         }
       }
@@ -889,6 +1399,12 @@
             "state" : "translated",
             "value" : "About 100 Junior Dev Mistakes"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About 100 Mistakes Junior Developers Make"
+          }
         }
       }
     },
@@ -899,12 +1415,24 @@
             "state" : "translated",
             "value" : "Start Now"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start now"
+          }
         }
       }
     },
     "진행률" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progress"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Progress"
@@ -919,6 +1447,12 @@
             "state" : "translated",
             "value" : "Your checklist, reflections, and bookmarks will all be deleted."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your checklist, reflections and bookmarks will all be deleted."
+          }
         }
       }
     },
@@ -929,12 +1463,24 @@
             "state" : "translated",
             "value" : "Your checklist, reflections, and bookmarks will all be deleted. This can't be undone."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your checklist, reflections and bookmarks will all be deleted. This can't be undone."
+          }
         }
       }
     },
     "초기화" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reset"
@@ -949,6 +1495,12 @@
             "state" : "translated",
             "value" : "Confirm Reset"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm reset"
+          }
         }
       }
     },
@@ -959,12 +1511,24 @@
             "state" : "translated",
             "value" : "Congratulations! You've experienced every mistake!\nThe path to senior is wide open!"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Congratulations! You've experienced every mistake!\nThe road to senior is now open!"
+          }
         }
       }
     },
     "취소" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancel"
@@ -979,6 +1543,12 @@
             "state" : "translated",
             "value" : "Fully unlock categories 4-10"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unlock categories 4-10 in full"
+          }
         }
       }
     },
@@ -988,6 +1558,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lifetime Access"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lifetime pass"
           }
         }
       }
@@ -999,6 +1575,12 @@
             "state" : "translated",
             "value" : "Lifetime access · %@ · One-time payment, no renewal"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lifetime pass · %@ · one-off payment, no renewal"
+          }
         }
       }
     },
@@ -1008,6 +1590,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choose a Plan"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose a plan"
           }
         }
       }
@@ -1019,12 +1607,24 @@
             "state" : "translated",
             "value" : "Pay once, use forever"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pay once, keep it for good"
+          }
         }
       }
     },
     "향후 모든 콘텐츠 업데이트" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All future content updates"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "All future content updates"
@@ -1039,12 +1639,24 @@
             "state" : "translated",
             "value" : "Learn the mistakes working developers\nmake most and grow faster"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Know the mistakes working developers\nmake most often, and grow faster"
+          }
         }
       }
     },
     "확인" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -1059,12 +1671,24 @@
             "state" : "translated",
             "value" : "Reflections"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflections"
+          }
         }
       }
     },
     "회고 기록이 없습니다" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No reflections yet"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "No reflections yet"
@@ -1079,6 +1703,12 @@
             "state" : "translated",
             "value" : "Reflected"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflected"
+          }
         }
       }
     },
@@ -1088,6 +1718,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflection Journal"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflection journal"
           }
         }
       }
@@ -1099,6 +1735,12 @@
             "state" : "translated",
             "value" : "Write Reflection"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write a reflection"
+          }
         }
       }
     },
@@ -1108,6 +1750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflection Questions"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflection questions"
           }
         }
       }
@@ -1119,6 +1767,12 @@
             "state" : "translated",
             "value" : "Experience real growth\nthrough reflection"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grow for real\nthrough reflection"
+          }
         }
       }
     },
@@ -1128,6 +1782,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflected Items"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Items reflected on"
           }
         }
       }

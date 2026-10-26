@@ -13,3 +13,9 @@
 Read 100 Dev Mistakes in more languages
 Screens and stories match your language
 Reflection questions in your language
+
+### 앱스토어 (en-GB)
+
+Read 100 Dev Mistakes in more languages
+Screens and stories follow your language
+Reflection questions in your language
