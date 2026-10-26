@@ -91,3 +91,9 @@ Câu hỏi nhìn lại bằng ngôn ngữ của bạn
 100 chyb teď ve více jazycích
 Obsah se přizpůsobí jazyku zařízení
 Reflexní otázky ve vašem jazyce
+
+### 앱스토어 (da)
+
+Nu kan du se 100 Fejl på flere sprog
+Appen og fejlene følger din enheds sprog
+Besvar refleksionsspørgsmål på dit sprog

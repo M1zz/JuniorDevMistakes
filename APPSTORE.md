@@ -771,3 +771,55 @@ https://m1zz.github.io/JuniorDevMistakes/cs/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/cs/index.html
+
+## da
+
+### 이름
+
+100 Fejl: Tjekliste for devs
+
+### 부제
+
+Lær af dem, før du begår dem
+
+### 키워드
+
+junior,udvikler,programmering,git,debugging,code review,karriere,dagbog,software,tips,læring,kode
+
+### 프로모션 텍스트
+
+Lær de 100 fejl, som juniorudviklere oftest begår, før du selv rammer ind i dem. Afkryds dem, reflektér, og begå aldrig den samme fejl to gange. De første 30 er gratis.
+
+### 설명
+
+Kend fejlene, før du begår dem. 100 Fejl er tjeklisten til din vækst med de 100 fejl, som juniorudviklere oftest begår, så du vokser hurtigere og slipper for at gentage de samme fejl igen og igen.
+
+Fejlene er sorteret i 10 kategorier: kodevaner, fejlfinding og problemløsning, versionsstyring og samarbejde, design og arkitektur, test og kvalitet, læring og vækst, kommunikation, infrastruktur og udrulning, sikkerhed og privatliv samt ydeevne og optimering. Hver fejl forklares i tre trin: sådan går det, gør sådan her, og det lærer og vokser du af.
+
+Afkryds de fejl, du selv har oplevet, og besvar refleksionsspørgsmålene til hver af dem. Med 400 spørgsmål i alt bliver hurtig læsning til ægte forståelse. Du kan følge dine fremskridt pr. kategori og samlet på tværs af alle 100 fejl, og med bogmærker husker du, hvad du vil se igen.
+
+Dine data synkroniseres mellem iPhone, iPad og Mac via iCloud (CloudKit), så du kan fortsætte, hvor du slap, uanset hvilken enhed du bruger. Appen indsamler ingen personoplysninger og har hverken analyse eller reklamer.
+
+Prøv de første 30 fejl (3 kategorier) gratis. Med PRO låser du alle 100 op. PRO fås som månedligt eller årligt abonnement, hvor det årlige sparer op til 50 % i forhold til det månedlige, eller som et engangskøb med livstidsadgang.
+
+Månedlige og årlige abonnementer fornyes automatisk, medmindre du opsiger dem senest 24 timer før udløbet af den aktuelle periode. Du kan til enhver tid administrere eller opsige dit abonnement i indstillingerne for dit Apple-id.
+
+Lær ikke af at brænde fingrene. Kend fejlene i god tid, lær af dem, og voks hurtigere som udvikler.
+
+Brugsvilkår (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Privatlivspolitik (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/da/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/da/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/da/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/da/index.html
