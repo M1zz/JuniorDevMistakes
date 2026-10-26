@@ -399,3 +399,55 @@ https://m1zz.github.io/JuniorDevMistakes/es/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/es/index.html
+
+## de
+
+### 이름
+
+100 Dev-Fehler: Checkliste
+
+### 부제
+
+Kein Fehler passiert zweimal
+
+### 키워드
+
+junior,entwickler,programmieren,git,debugging,code-review,lernen,karriere,journal,software,tipps
+
+### 프로모션 텍스트
+
+Lerne die 100 häufigsten Fehler von Junior-Entwicklern kennen, bevor du sie selbst machst. Hake sie ab, blicke zurück und mach keinen Fehler zweimal. 30 Fehler gratis.
+
+### 설명
+
+Kenne die Fehler, bevor du sie machst. 100 Dev-Fehler ist die Wachstums-Checkliste mit den 100 häufigsten Fehlern von Junior-Entwicklern, damit du schneller wächst und nicht ständig dieselben Fehler wiederholst.
+
+Die Fehler sind in 10 Kategorien sortiert: Gewohnheiten beim Programmieren, Debugging und Problemlösung, Versionsverwaltung und Zusammenarbeit, Design und Architektur, Tests und Qualität, Lernen und Wachsen, Kommunikation, Infrastruktur und Deployment, Sicherheit und Datenschutz sowie Performance und Optimierung. Jeder Fehler wird in drei Teilen erklärt: So sieht es aus, so machst du es besser und das lernst du dabei.
+
+Hake die Fehler ab, die du selbst erlebt hast, und beantworte zu jedem die Rückblickfragen. Mit insgesamt 400 Fragen wird aus schnellem Lesen echtes Verständnis. Deinen Fortschritt siehst du pro Kategorie und insgesamt über alle 100 Fehler, und mit Lesezeichen merkst du dir, was du noch einmal ansehen willst.
+
+Deine Daten werden über iCloud (CloudKit) zwischen iPhone, iPad und Mac synchronisiert, sodass du überall dort weitermachst, wo du aufgehört hast. Die App erfasst keine persönlichen Daten, es gibt weder Analysen noch Werbung.
+
+Probiere die ersten 30 Fehler (3 Kategorien) kostenlos aus. Mit PRO schaltest du alle 100 frei. PRO gibt es als Monats- oder Jahresabo, wobei das Jahresabo im Vergleich zum Monatsabo bis zu 50 % spart, oder als einmaligen Lifetime-Kauf.
+
+Monats- und Jahresabos verlängern sich automatisch, sofern du sie nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums kündigst. Du kannst dein Abo jederzeit in den Einstellungen deiner Apple-ID verwalten oder kündigen.
+
+Lerne nicht auf die harte Tour. Kenne die Fehler früh, lerne aus ihnen und wachse schneller als Entwickler.
+
+Nutzungsbedingungen (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Datenschutzerklärung (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/de/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/de/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/de/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/de/index.html

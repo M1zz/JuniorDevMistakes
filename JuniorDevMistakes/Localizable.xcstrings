@@ -9,6 +9,12 @@
     },
     "%lld / 100 경험 완료" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 erlebt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -72,6 +78,12 @@
     },
     "%lld개" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -118,6 +130,12 @@
     },
     "%lld개 완료" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld erledigt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -164,6 +182,12 @@
     },
     "%lld개 카테고리가 잠겨 있습니다" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Kategorien sind gesperrt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -210,6 +234,12 @@
     },
     "%lld개 항목" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Einträge"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -259,6 +289,12 @@
     },
     "/년" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/Jahr"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -305,6 +341,12 @@
     },
     "/월" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/Monat"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -351,6 +393,12 @@
     },
     "/일" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/Tag"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -397,6 +445,12 @@
     },
     "/주" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/Woche"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -443,6 +497,12 @@
     },
     "100가지 실수\n체크리스트" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checkliste mit\n100 Fehlern"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -489,6 +549,12 @@
     },
     "100개 실수 전체 이용 가능" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle 100 Fehler verfügbar"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -535,6 +601,12 @@
     },
     "100개 완전한 성장 추적" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vollständiger Fortschritt über alle 100"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -581,6 +653,12 @@
     },
     "10개 카테고리, 100가지 실수\n직접 경험하기 전에 미리 배우세요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 Kategorien, 100 Fehler\nLerne sie, bevor du sie selbst machst"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -627,6 +705,12 @@
     },
     "280개 추가 회고 질문" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 weitere Rückblickfragen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -673,6 +757,12 @@
     },
     "PRO" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -719,6 +809,12 @@
     },
     "PRO 이용 중" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO aktiv"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -765,6 +861,12 @@
     },
     "PRO 플랜 포함 내용" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das ist in PRO enthalten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -811,6 +913,12 @@
     },
     "PRO로 업그레이드" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf PRO upgraden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -857,6 +965,12 @@
     },
     "PRO로 업그레이드하여 전체 학습하기" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf PRO upgraden und alles lernen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -903,6 +1017,12 @@
     },
     "Q%lld" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F%lld"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -949,6 +1069,12 @@
     },
     "iPhone, iPad, Mac에서\niCloud로 데이터가 항상 이어집니다" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Daten bleiben über iCloud\nauf iPhone, iPad und Mac aktuell"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -998,6 +1124,12 @@
     },
     "각 실수 항목의 회고 질문에\n답변을 작성해보세요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beantworte zu jedem Fehler\ndie Rückblickfragen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1044,6 +1176,12 @@
     },
     "각 실수마다 회고 질문에 답하며\n같은 실수를 두 번 하지 않게 됩니다" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wer bei jedem Fehler die Rückblickfragen beantwortet,\nmacht denselben Fehler nicht zweimal"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1090,6 +1228,12 @@
     },
     "개인정보처리방침" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datenschutzerklärung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1136,6 +1280,12 @@
     },
     "거의 다 왔습니다!\n이 정도면 이미 많은 것을 배웠을 거예요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fast geschafft!\nDu hast schon richtig viel gelernt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1182,6 +1332,12 @@
     },
     "건너뛰기" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Überspringen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1228,6 +1384,12 @@
     },
     "경험 완료" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erlebt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1274,6 +1436,12 @@
     },
     "경험한 실수" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erlebte Fehler"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1320,6 +1488,12 @@
     },
     "구독" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abo"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1366,6 +1540,12 @@
     },
     "구독하여 잠금 해제" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnieren und freischalten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1412,6 +1592,12 @@
     },
     "구매 복원에 실패했습니다." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Kauf konnte nicht wiederhergestellt werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1458,6 +1644,12 @@
     },
     "구매 복원하기" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käufe wiederherstellen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1504,6 +1696,12 @@
     },
     "구매 요청이 접수되었습니다. 승인이 완료되면 자동으로 잠금이 해제됩니다." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Kaufanfrage wurde übermittelt. Sobald sie genehmigt ist, wird alles automatisch freigeschaltet."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1550,6 +1748,12 @@
     },
     "구매 중 오류가 발생했습니다." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beim Kauf ist ein Fehler aufgetreten."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1596,6 +1800,12 @@
     },
     "구매를 확인하지 못했습니다. 잠시 후 다시 시도해 주세요." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Kauf konnte nicht bestätigt werden. Bitte versuche es später erneut."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1642,6 +1852,12 @@
     },
     "꾸준히 성장하고 있습니다!\n실수가 쌓일수록 실력도 쌓입니다" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du wächst stetig!\nMit jedem Fehler wächst auch dein Können"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1688,6 +1904,12 @@
     },
     "나머지 70개 실수를 잠금 해제하세요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schalte die restlichen 70 Fehler frei"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1734,6 +1956,12 @@
     },
     "나의 성장 여정" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meine Lernreise"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1780,6 +2008,12 @@
     },
     "나의 실수 100" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meine 100 Fehler"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1826,6 +2060,12 @@
     },
     "나의 회고 기록" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meine Rückblicke"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1872,6 +2112,12 @@
     },
     "다시 시도" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erneut versuchen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1918,6 +2164,12 @@
     },
     "다음" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiter"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1964,6 +2216,12 @@
     },
     "데이터" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2010,6 +2268,12 @@
     },
     "마지막 몇 개만 남았습니다!\n완주가 코앞입니다" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur noch ein paar!\nDas Ziel ist zum Greifen nah"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2056,6 +2320,12 @@
     },
     "모든 기기에서\n자동으로 동기화" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatische Synchronisierung\nauf allen Geräten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2102,6 +2372,12 @@
     },
     "모든 데이터 초기화" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Daten zurücksetzen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2148,6 +2424,12 @@
     },
     "모든 진행 데이터가 삭제됩니다. 이 작업은 되돌릴 수 없습니다." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein gesamter Fortschritt wird gelöscht. Das kann nicht rückgängig gemacht werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2194,6 +2476,12 @@
     },
     "버전" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2240,6 +2528,12 @@
     },
     "복원할 구매 내역이 없습니다." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es gibt keine Käufe zum Wiederherstellen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2286,6 +2580,12 @@
     },
     "북마크" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lesezeichen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2332,6 +2632,12 @@
     },
     "북마크한 항목이 없습니다" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Einträge mit Lesezeichen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2378,6 +2684,12 @@
     },
     "삭제" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löschen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2424,6 +2736,12 @@
     },
     "상세 화면에서 북마크 버튼을 눌러\n나중에 볼 항목을 저장하세요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tippe in der Detailansicht auf das Lesezeichen,\num Einträge für später zu speichern"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2470,6 +2788,12 @@
     },
     "상품 정보를 불러오는 중..." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Produktinformationen werden geladen ..."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2516,6 +2840,12 @@
     },
     "상품 정보를 불러오지 못했습니다.\n네트워크 연결을 확인해 주세요." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Produktinformationen konnten nicht geladen werden.\nBitte prüfe deine Netzwerkverbindung."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2562,6 +2892,12 @@
     },
     "설정" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2608,6 +2944,12 @@
     },
     "시작하기" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los geht's"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2654,6 +2996,12 @@
     },
     "실수 #031-100 전체 학습" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Fehler #031–100 lernen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2700,6 +3048,12 @@
     },
     "실수 100" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Dev-Fehler"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2746,6 +3100,12 @@
     },
     "실수 70개가 더 기다리고 있어요\n지금 잠금을 해제하세요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "70 weitere Fehler warten auf dich\nSchalte sie jetzt frei"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2792,6 +3152,12 @@
     },
     "실수 후 스스로에게 물어보세요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frag dich nach dem Fehler selbst"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2838,6 +3204,12 @@
     },
     "아직 시작하지 않았습니다.\n첫 번째 실수를 경험해보세요!" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du hast noch nicht angefangen.\nErlebe deinen ersten Fehler!"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2884,6 +3256,12 @@
     },
     "안내" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hinweis"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2930,6 +3308,12 @@
     },
     "여기에 답변을 작성하세요..." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schreibe hier deine Antwort ..."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2976,6 +3360,12 @@
     },
     "여정을 시작했습니다!\n모든 시니어도 여기서 시작했어요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Reise hat begonnen!\nJeder Senior hat hier angefangen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3022,6 +3412,12 @@
     },
     "연간 구독" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jahresabo"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3068,6 +3464,12 @@
     },
     "연간 구독 · %@/년 · 매년 자동 갱신" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jahresabo · %@/Jahr · verlängert sich jährlich automatisch"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3114,6 +3516,12 @@
     },
     "오류" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3160,6 +3568,12 @@
     },
     "월간 구독" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monatsabo"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3206,6 +3620,12 @@
     },
     "월간 구독 · %@/월 · 매월 자동 갱신" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monatsabo · %@/Monat · verlängert sich monatlich automatisch"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3252,6 +3672,12 @@
     },
     "월간 대비 최대 50% 절약" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bis zu 50 % günstiger als monatlich"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3298,6 +3724,12 @@
     },
     "월간·연간 구독은 자동으로 갱신되며, 현재 기간 종료 24시간 전까지 취소하지 않으면 결제됩니다. 구독은 Apple ID 설정에서 언제든지 관리·취소할 수 있습니다." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monats- und Jahresabos verlängern sich automatisch, sofern du sie nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums kündigst. Du kannst dein Abo jederzeit in den Einstellungen deiner Apple-ID verwalten und kündigen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3344,6 +3776,12 @@
     },
     "이것을 배우며 성장합니다" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das lernst du dabei"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3390,6 +3828,12 @@
     },
     "이런 상황이 벌어집니다" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "So sieht es aus"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3436,6 +3880,12 @@
     },
     "이렇게 하세요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "So machst du es besser"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3482,6 +3932,12 @@
     },
     "이용약관(EULA)" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nutzungsbedingungen (EULA)"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3528,6 +3984,12 @@
     },
     "인기" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beliebt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3574,6 +4036,12 @@
     },
     "저장" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sichern"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3620,6 +4088,12 @@
     },
     "전체" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3666,6 +4140,12 @@
     },
     "전체 초기화" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles zurücksetzen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3712,6 +4192,12 @@
     },
     "절반에 가까워지고 있습니다!\n이 속도면 금방 시니어가 되겠네요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Hälfte rückt näher!\nSo bist du bald Senior"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3758,6 +4244,12 @@
     },
     "절반을 넘었습니다!\n이제 중급 개발자의 시야가 보이기 시작합니다" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mehr als die Hälfte geschafft!\nDu denkst schon wie ein Mid-Level-Entwickler"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3804,6 +4296,12 @@
     },
     "정보" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3850,6 +4348,12 @@
     },
     "주니어 개발자의\n실수 100" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Fehler\nvon Junior-Entwicklern"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3896,6 +4400,12 @@
     },
     "주니어 개발자의 실수 100" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Fehler von Junior-Entwicklern"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3944,6 +4454,12 @@
       "comment" : "Mac Catalyst 앱 메뉴 (macCatalyst 빌드에서만 컴파일됨)",
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info zu 100 Fehler von Junior-Entwicklern"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3990,6 +4506,12 @@
     },
     "지금 시작하기" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jetzt starten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4036,6 +4558,12 @@
     },
     "진행률" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortschritt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4082,6 +4610,12 @@
     },
     "체크리스트, 회고 기록, 북마크가 모두 삭제됩니다." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checkliste, Rückblicke und Lesezeichen werden vollständig gelöscht."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4128,6 +4662,12 @@
     },
     "체크리스트, 회고 기록, 북마크가 모두 삭제됩니다. 이 작업은 되돌릴 수 없습니다." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checkliste, Rückblicke und Lesezeichen werden vollständig gelöscht. Das kann nicht rückgängig gemacht werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4174,6 +4714,12 @@
     },
     "초기화" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zurücksetzen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4220,6 +4766,12 @@
     },
     "초기화 확인" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zurücksetzen bestätigen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4266,6 +4818,12 @@
     },
     "축하합니다! 모든 실수를 경험했습니다!\n이제 시니어의 길이 열렸습니다!" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glückwunsch! Du hast alle Fehler erlebt!\nDer Weg zum Senior steht dir offen!"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4312,6 +4870,12 @@
     },
     "취소" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4358,6 +4922,12 @@
     },
     "카테고리 4-10 완전 잠금 해제" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kategorien 4–10 komplett freischalten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4404,6 +4974,12 @@
     },
     "평생 이용권" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lifetime-Zugang"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4450,6 +5026,12 @@
     },
     "평생 이용권 · %@ · 1회 결제, 자동 갱신 없음" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lifetime-Zugang · %@ · Einmalzahlung, keine automatische Verlängerung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4496,6 +5078,12 @@
     },
     "플랜 선택" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarif wählen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4542,6 +5130,12 @@
     },
     "한 번 결제로 영구 이용" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einmal zahlen, dauerhaft nutzen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4588,6 +5182,12 @@
     },
     "향후 모든 콘텐츠 업데이트" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle künftigen Inhalts-Updates"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4634,6 +5234,12 @@
     },
     "현직 개발자들이 가장 많이 하는\n실수를 미리 알고 더 빨리 성장하세요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lerne die häufigsten Fehler\nvon Entwicklern vorab kennen und wachse schneller"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4680,6 +5286,12 @@
     },
     "확인" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4726,6 +5338,12 @@
     },
     "회고 기록" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rückblicke"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4772,6 +5390,12 @@
     },
     "회고 기록이 없습니다" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch keine Rückblicke"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4818,6 +5442,12 @@
     },
     "회고 완료" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rückblick fertig"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4864,6 +5494,12 @@
     },
     "회고 일지" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rückblick-Journal"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4910,6 +5546,12 @@
     },
     "회고 작성" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rückblick schreiben"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4956,6 +5598,12 @@
     },
     "회고 질문" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rückblickfragen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5002,6 +5650,12 @@
     },
     "회고로 진짜\n성장을 경험하세요" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Echtes Wachstum\ndurch Rückblick"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5048,6 +5702,12 @@
     },
     "회고한 항목" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rückblick-Einträge"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",

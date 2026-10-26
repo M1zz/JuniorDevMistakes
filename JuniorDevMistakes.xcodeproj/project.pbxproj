@@ -170,6 +170,7 @@
 				ja,
 				ru,
 				es,
+				de,
 				Base,
 			);
 			mainGroup = A50001;

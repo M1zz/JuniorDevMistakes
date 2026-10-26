@@ -49,3 +49,9 @@ Reflection questions in your language
 Lee 100 Errores Dev en más idiomas
 La app y los errores hablan tu idioma
 Responde las reflexiones en tu idioma
+
+### 앱스토어 (de)
+
+100 Dev-Fehler jetzt in vielen Sprachen
+Alles passt sich deiner Sprache an
+Rückblickfragen in deiner Sprache
