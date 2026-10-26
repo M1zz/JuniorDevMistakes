@@ -125,6 +125,12 @@
             "value" : "100 ข้อพลาด"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Hata"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -267,6 +273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 ข้อพลาด"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Hata"
           }
         },
         "vi" : {

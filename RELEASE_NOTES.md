@@ -139,3 +139,9 @@ Pytania retrospektywne w twoim języku
 Nu finns 100 Misstag på flera språk
 Appen följer enhetens språk
 Svara på reflektionsfrågor på ditt språk
+
+### 앱스토어 (tr)
+
+Artık 100 Hata birçok dilde
+Ekran ve içerik cihaz dilinize uyar
+Soruları kendi dilinizde yanıtlayın

@@ -1193,3 +1193,59 @@ https://m1zz.github.io/JuniorDevMistakes/sv/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/sv/index.html
+
+## tr
+
+### 이름
+
+100 Hata: Junior Geliştirici
+
+### 부제
+
+Kontrol listesi ve geri bakış
+
+### 키워드
+
+yazılım,kodlama,programlama,mentor,kariyer,günlük,rehber,debug,git,test,bug,ipucu,icloud,tüyo
+
+### 프로모션 텍스트
+
+Junior geliştiricilerin en sık yaptığı 100 hatayı önceden öğrenin. Kontrol listesiyle takip edin, geri bakış sorularıyla kalıcı kılın ve aynı hatayı iki kez yapmayın.
+
+### 설명
+
+Junior geliştiricilerin en sık yaptığı 100 hatayı baştan bilin, başınıza gelmeden daha hızlı gelişin. 100 Hata, her geliştiricinin yolda mutlaka karşılaştığı hataları kontrol listesi ve geri bakış günlüğüyle birleştiren bir gelişim uygulamasıdır.
+
+Hatalar 10 kategoriye ayrıldı: kod yazma alışkanlıkları, debug ve sorun çözme, sürüm kontrolü ve iş birliği, tasarım ve mimari, test ve kalite, öğrenme ve gelişim, iletişim, altyapı ve deploy, güvenlik ve gizlilik, performans ve optimizasyon.
+
+Her hata üç adımda anlatılır: "Böyle bir durum yaşanır", "Şöyle yapın" ve "Bundan öğrenerek gelişirsiniz". Teori kitaplarındaki gibi uzun uzun değil; sahada gerçekten yaşanan sahneler ve hemen uygulayabileceğiniz çözümlerle.
+
+Bir hatayı deneyimlediğinizde kontrol listesinde "Deneyimlendi" olarak işaretleyin. Her hatanın geri bakış sorularını yanıtlayarak toplam 400 soruyla yaşadıklarınızı kendi cümlelerinizle yazın. Ezberlemek yerine gerçekten anlar, aynı hatayı ikinci kez yapmazsınız.
+
+Kategori bazında ve genel ilerlemenizi 100 kutuluk görünümle izleyin. Tekrar bakmak istediklerinizi yer imine ekleyip sonra toplu olarak gözden geçirin.
+
+Verileriniz iCloud (CloudKit) ile iPhone, iPad ve Mac arasında senkronize olur. Hangi cihazda başlarsanız başlayın, kaldığınız yerden devam edersiniz. Uygulama kişisel veri toplamaz; analiz ve reklam yoktur.
+
+Ücretsiz sürümde ilk 30 hatayı (3 kategori) deneyebilirsiniz. PRO ile 100 hatanın tamamının kilidini açarsınız. PRO, aylık ve yıllık abonelik (otomatik yenilenir; yıllık plan aylığa göre %50'ye varan tasarruf sağlar) ya da tek seferlik ödemeyle ömür boyu erişim olarak sunulur.
+
+Abonelikler, mevcut dönemin bitiminden en az 24 saat önce iptal edilmezse otomatik olarak yenilenir. Aboneliğinizi istediğiniz zaman Apple ID ayarlarından yönetebilir ve iptal edebilirsiniz.
+
+Hataları bilmek ilk adım, geri bakış ise onları gerçekten sizin yapan adımdır. Bugün başlayın ve aynı hatayı iki kez yapmayan bir geliştirici olun.
+
+Kullanım Koşulları (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Gizlilik Politikası (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/tr/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/tr/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/tr/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/tr/index.html
