@@ -85,3 +85,9 @@ Responda às retrospectivas no seu idioma
 Xem 100 Sai Lầm bằng nhiều ngôn ngữ
 Giao diện và nội dung theo ngôn ngữ máy
 Câu hỏi nhìn lại bằng ngôn ngữ của bạn
+
+### 앱스토어 (cs)
+
+100 chyb teď ve více jazycích
+Obsah se přizpůsobí jazyku zařízení
+Reflexní otázky ve vašem jazyce

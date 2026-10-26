@@ -176,6 +176,7 @@
 				"pt-BR",
 				th,
 				vi,
+				cs,
 				Base,
 			);
 			mainGroup = A50001;

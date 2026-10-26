@@ -719,3 +719,55 @@ https://m1zz.github.io/JuniorDevMistakes/vi/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/vi/index.html
+
+## cs
+
+### 이름
+
+100 chyb: checklist vývojáře
+
+### 부제
+
+Poučte se, než to zkazíte
+
+### 키워드
+
+junior,programátor,programování,git,ladění,code review,testování,kariéra,deník,reflexe,učení,návyky
+
+### 프로모션 텍스트
+
+Poznejte 100 nejčastějších chyb juniorních vývojářů dřív, než je uděláte. Odškrtávejte je, vracejte se k nim v reflexi a neopakujte je. 30 chyb zdarma.
+
+### 설명
+
+Poznejte chyby dřív, než je uděláte. 100 chyb je checklist růstu se stovkou nejčastějších chyb juniorních vývojářů, díky kterému budete rychleji růst a nebudete pořád opakovat to samé.
+
+Chyby jsou rozdělené do 10 kategorií: návyky při psaní kódu, ladění a řešení problémů, správa verzí a spolupráce, návrh a architektura, testování a kvalita, učení a růst, komunikace, infrastruktura a nasazení, bezpečnost a soukromí a výkon a optimalizace. Každá chyba je vysvětlená ve třech krocích: k čemu dojde, jak na to a co vás to naučí.
+
+Chyby, které jste sami zažili, si odškrtněte a u každé odpovězte na reflexní otázky. Díky celkem 400 otázkám se z rychlého čtení stane skutečné porozumění. Pokrok vidíte po kategoriích i celkově na 100 polích a díky záložkám si označíte, k čemu se chcete ještě vrátit.
+
+Data se přes iCloud (CloudKit) synchronizují mezi iPhonem, iPadem a Macem, takže navážete kdekoli, kde jste skončili. Aplikace neshromažďuje žádné osobní údaje, neobsahuje analytiku ani reklamy.
+
+Prvních 30 chyb (3 kategorie) si můžete vyzkoušet zdarma. S PRO odemknete všech 100. PRO je k dispozici jako měsíční nebo roční předplatné, přičemž roční ušetří až 50 % oproti měsíčnímu, nebo jako jednorázový doživotní nákup.
+
+Měsíční a roční předplatné se automaticky obnovuje, pokud ho nezrušíte nejpozději 24 hodin před koncem aktuálního období. Předplatné můžete kdykoli spravovat a zrušit v nastavení Apple ID.
+
+Neučte se na vlastní kůži. Poznejte chyby včas, poučte se z nich a rostěte rychleji.
+
+Podmínky použití (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Zásady ochrany osobních údajů (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/cs/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/cs/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/cs/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/cs/index.html
