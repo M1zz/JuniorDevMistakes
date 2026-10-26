@@ -51,6 +51,12 @@
             "value" : "%lld / 100 経験済み"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 vividos"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -132,6 +138,12 @@
             "value" : "%lld個"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -194,6 +206,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld個 完了"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld concluídos"
           }
         },
         "ru" : {
@@ -260,6 +278,12 @@
             "value" : "%lld個のカテゴリがロックされています"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld categorias bloqueadas"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -322,6 +346,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld件"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld itens"
           }
         },
         "ru" : {
@@ -391,6 +421,12 @@
             "value" : "/年"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/ano"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -453,6 +489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/月"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/mês"
           }
         },
         "ru" : {
@@ -519,6 +561,12 @@
             "value" : "/日"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/dia"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -581,6 +629,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/週"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/sem."
           }
         },
         "ru" : {
@@ -647,6 +701,12 @@
             "value" : "100のミス\nチェックリスト"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checklist dos\n100 erros"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -709,6 +769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100個のミスをすべて利用可能"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acesso aos 100 erros"
           }
         },
         "ru" : {
@@ -775,6 +841,12 @@
             "value" : "100個すべての成長を記録"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acompanhe seu progresso nos 100 erros"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -837,6 +909,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "10カテゴリ、100のミス\n自分でやらかす前に、先に学ぼう"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 categorias, 100 erros\nAprenda antes de errar na pele"
           }
         },
         "ru" : {
@@ -903,6 +981,12 @@
             "value" : "追加のふりかえり質問280個"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 perguntas de retrospectiva extras"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -962,6 +1046,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -1031,6 +1121,12 @@
             "value" : "PROをご利用中"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO ativo"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1093,6 +1189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "PROプランの内容"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que o PRO inclui"
           }
         },
         "ru" : {
@@ -1159,6 +1261,12 @@
             "value" : "PROにアップグレード"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assinar o PRO"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1221,6 +1329,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "PROにアップグレードして全部学ぶ"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assine o PRO e estude tudo"
           }
         },
         "ru" : {
@@ -1287,6 +1401,12 @@
             "value" : "Q%lld"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "P%lld"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1349,6 +1469,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "iPhone、iPad、Macで\niCloudによりデータがいつもつながります"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No iPhone, iPad e Mac,\nseus dados sempre acompanham você pelo iCloud"
           }
         },
         "ru" : {
@@ -1418,6 +1544,12 @@
             "value" : "それぞれのミスのふりかえり質問に\n答えを書いてみましょう"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Responda às perguntas de\nretrospectiva de cada erro"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1480,6 +1612,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ミスごとのふりかえり質問に答えて\n同じミスを繰り返さなくなります"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ao responder às perguntas de cada erro,\nvocê não comete o mesmo erro duas vezes"
           }
         },
         "ru" : {
@@ -1546,6 +1684,12 @@
             "value" : "プライバシーポリシー"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Política de Privacidade"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1608,6 +1752,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "もう少しです!\nここまでで、きっと多くのことを学びましたね"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quase lá!\nVocê já aprendeu muita coisa"
           }
         },
         "ru" : {
@@ -1674,6 +1824,12 @@
             "value" : "スキップ"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pular"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1736,6 +1892,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "経験済み"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vivido"
           }
         },
         "ru" : {
@@ -1802,6 +1964,12 @@
             "value" : "経験したミス"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erros vividos"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1864,6 +2032,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "サブスクリプション"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assinatura"
           }
         },
         "ru" : {
@@ -1930,6 +2104,12 @@
             "value" : "登録してロック解除"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assinar e desbloquear"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1992,6 +2172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "購入の復元に失敗しました。"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível restaurar as compras."
           }
         },
         "ru" : {
@@ -2058,6 +2244,12 @@
             "value" : "購入を復元"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar compras"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2120,6 +2312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "購入リクエストを受け付けました。承認されると、自動でロックが解除されます。"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solicitação de compra recebida. Quando for aprovada, o conteúdo será desbloqueado automaticamente."
           }
         },
         "ru" : {
@@ -2186,6 +2384,12 @@
             "value" : "購入中にエラーが発生しました。"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ocorreu um erro durante a compra."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2248,6 +2452,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "購入を確認できませんでした。しばらくしてからもう一度お試しください。"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível confirmar a compra. Tente novamente em instantes."
           }
         },
         "ru" : {
@@ -2314,6 +2524,12 @@
             "value" : "着実に成長しています!\nミスが積み重なるほど、実力も積み重なります"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você está evoluindo sem parar!\nQuanto mais erros, mais experiência"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2376,6 +2592,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "残り70個のミスをロック解除しましょう"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueie os outros 70 erros"
           }
         },
         "ru" : {
@@ -2442,6 +2664,12 @@
             "value" : "わたしの成長の道のり"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minha jornada de evolução"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2504,6 +2732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "わたしのやらかし100"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meus 100 erros"
           }
         },
         "ru" : {
@@ -2570,6 +2804,12 @@
             "value" : "わたしのふりかえり記録"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minhas retrospectivas"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2632,6 +2872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "再試行"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentar de novo"
           }
         },
         "ru" : {
@@ -2698,6 +2944,12 @@
             "value" : "次へ"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximo"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2760,6 +3012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "データ"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dados"
           }
         },
         "ru" : {
@@ -2826,6 +3084,12 @@
             "value" : "あと少しです!\n完走はもう目の前です"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faltam só alguns!\nA linha de chegada está logo ali"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2888,6 +3152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "すべてのデバイスで\n自動的に同期"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronização automática\nem todos os dispositivos"
           }
         },
         "ru" : {
@@ -2954,6 +3224,12 @@
             "value" : "すべてのデータをリセット"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar todos os dados"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3016,6 +3292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "すべての進行データが削除されます。この操作は取り消せません。"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todo o seu progresso será apagado. Esta ação não pode ser desfeita."
           }
         },
         "ru" : {
@@ -3082,6 +3364,12 @@
             "value" : "バージョン"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versão"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3144,6 +3432,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "復元できる購入履歴がありません。"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não há compras para restaurar."
           }
         },
         "ru" : {
@@ -3210,6 +3504,12 @@
             "value" : "ブックマーク"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoritos"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3272,6 +3572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ブックマークした項目はありません"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum item nos favoritos"
           }
         },
         "ru" : {
@@ -3338,6 +3644,12 @@
             "value" : "削除"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excluir"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3400,6 +3712,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "詳細画面でブックマークボタンを押して\n後で見たい項目を保存しましょう"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque no botão de favorito na tela de detalhes\npara guardar itens e ver depois"
           }
         },
         "ru" : {
@@ -3466,6 +3784,12 @@
             "value" : "商品情報を読み込み中..."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carregando produtos..."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3528,6 +3852,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "商品情報を読み込めませんでした。\nネットワーク接続をご確認ください。"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível carregar os produtos.\nVerifique sua conexão com a internet."
           }
         },
         "ru" : {
@@ -3594,6 +3924,12 @@
             "value" : "設定"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3656,6 +3992,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "はじめる"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Começar"
           }
         },
         "ru" : {
@@ -3722,6 +4064,12 @@
             "value" : "ミス #031-100 をすべて学ぶ"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estude os erros #031 a #100"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3784,6 +4132,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "やらかし100"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Erros de Dev"
           }
         },
         "ru" : {
@@ -3850,6 +4204,12 @@
             "value" : "あと70個のミスが待っています\nいますぐロックを解除しましょう"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mais 70 erros esperam por você\nDesbloqueie agora"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3912,6 +4272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ミスをしたら、自分に問いかけてみましょう"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depois de errar, pergunte-se"
           }
         },
         "ru" : {
@@ -3978,6 +4344,12 @@
             "value" : "まだ始めていません。\n最初のミスを体験してみましょう!"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você ainda não começou.\nVivencie o primeiro erro!"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4040,6 +4412,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "お知らせ"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aviso"
           }
         },
         "ru" : {
@@ -4106,6 +4484,12 @@
             "value" : "ここに答えを書いてください..."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escreva sua resposta aqui..."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4168,6 +4552,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "旅が始まりました!\nどんなシニアも、ここから始まりました"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua jornada começou!\nTodo dev sênior começou por aqui"
           }
         },
         "ru" : {
@@ -4234,6 +4624,12 @@
             "value" : "年間サブスクリプション"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assinatura anual"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4296,6 +4692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "年間サブスクリプション · %@/年 · 毎年自動更新"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assinatura anual · %@/ano · renovação automática anual"
           }
         },
         "ru" : {
@@ -4362,6 +4764,12 @@
             "value" : "エラー"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erro"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4424,6 +4832,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "月間サブスクリプション"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assinatura mensal"
           }
         },
         "ru" : {
@@ -4490,6 +4904,12 @@
             "value" : "月間サブスクリプション · %@/月 · 毎月自動更新"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assinatura mensal · %@/mês · renovação automática mensal"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4552,6 +4972,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "月間プランより最大50%お得"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Economize até 50% em relação ao mensal"
           }
         },
         "ru" : {
@@ -4618,6 +5044,12 @@
             "value" : "月間・年間サブスクリプションは自動的に更新され、現在の期間が終了する24時間前までに解約しない限り、料金が請求されます。サブスクリプションは、Apple IDの設定からいつでも管理・解約できます。"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As assinaturas mensal e anual são renovadas automaticamente, a menos que sejam canceladas pelo menos 24 horas antes do fim do período atual. Você pode gerenciar ou cancelar a assinatura a qualquer momento nos ajustes do ID Apple."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4680,6 +5112,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ここから学んで成長します"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que você aprende"
           }
         },
         "ru" : {
@@ -4746,6 +5184,12 @@
             "value" : "こんなことが起きます"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que acontece"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4808,6 +5252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "こうしましょう"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como evitar"
           }
         },
         "ru" : {
@@ -4874,6 +5324,12 @@
             "value" : "利用規約(EULA)"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termos de Uso (EULA)"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4936,6 +5392,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "人気"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popular"
           }
         },
         "ru" : {
@@ -5002,6 +5464,12 @@
             "value" : "保存"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5064,6 +5532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "すべて"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos"
           }
         },
         "ru" : {
@@ -5130,6 +5604,12 @@
             "value" : "すべてリセット"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar tudo"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5192,6 +5672,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "半分に近づいています!\nこのペースなら、すぐシニアですね"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quase na metade!\nNesse ritmo, logo você será sênior"
           }
         },
         "ru" : {
@@ -5258,6 +5744,12 @@
             "value" : "半分を超えました!\n中堅エンジニアの視野が見えてきます"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passou da metade!\nVocê já começa a enxergar como um dev pleno"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5320,6 +5812,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "情報"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre"
           }
         },
         "ru" : {
@@ -5386,6 +5884,12 @@
             "value" : "新人エンジニアの\nやらかし100"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Erros de\nDev Júnior"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5448,6 +5952,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "新人エンジニアのやらかし100"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Erros de Dev Júnior"
           }
         },
         "ru" : {
@@ -5516,6 +6026,12 @@
             "value" : "新人エンジニアのやらかし100について"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre o 100 Erros de Dev Júnior"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5578,6 +6094,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今すぐはじめる"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Começar agora"
           }
         },
         "ru" : {
@@ -5644,6 +6166,12 @@
             "value" : "進行状況"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progresso"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5706,6 +6234,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "チェックリスト、ふりかえり記録、ブックマークがすべて削除されます。"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O checklist, as retrospectivas e os favoritos serão apagados."
           }
         },
         "ru" : {
@@ -5772,6 +6306,12 @@
             "value" : "チェックリスト、ふりかえり記録、ブックマークがすべて削除されます。この操作は取り消せません。"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O checklist, as retrospectivas e os favoritos serão apagados. Esta ação não pode ser desfeita."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5834,6 +6374,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "リセット"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar"
           }
         },
         "ru" : {
@@ -5900,6 +6446,12 @@
             "value" : "リセットの確認"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmar exclusão"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5962,6 +6514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "おめでとうございます!すべてのミスを経験しました!\nシニアへの道が開けました!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parabéns! Você viveu todos os erros!\nO caminho para ser sênior está aberto!"
           }
         },
         "ru" : {
@@ -6028,6 +6586,12 @@
             "value" : "キャンセル"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6090,6 +6654,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "カテゴリ4〜10を完全ロック解除"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloqueio total das categorias 4 a 10"
           }
         },
         "ru" : {
@@ -6156,6 +6726,12 @@
             "value" : "買い切り(永久利用権)"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acesso vitalício"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6218,6 +6794,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "買い切り(永久利用権) · %@ · 1回払い、自動更新なし"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acesso vitalício · %@ · pagamento único, sem renovação"
           }
         },
         "ru" : {
@@ -6284,6 +6866,12 @@
             "value" : "プランを選ぶ"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha um plano"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6346,6 +6934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "1回の支払いでずっと使える"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pague uma vez e use para sempre"
           }
         },
         "ru" : {
@@ -6412,6 +7006,12 @@
             "value" : "今後のコンテンツ更新をすべて利用可能"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todas as atualizações de conteúdo futuras"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6476,6 +7076,12 @@
             "value" : "現役エンジニアが最も多くやらかすミスを\n先に知って、より早く成長しましょう"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conheça os erros mais comuns de\ndevs na ativa e evolua mais rápido"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6535,6 +7141,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -6604,6 +7216,12 @@
             "value" : "ふりかえり記録"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retrospectivas"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6666,6 +7284,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえり記録はありません"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhuma retrospectiva ainda"
           }
         },
         "ru" : {
@@ -6732,6 +7356,12 @@
             "value" : "ふりかえり済み"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retrospectiva feita"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6794,6 +7424,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえり日誌"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diário de retrospectivas"
           }
         },
         "ru" : {
@@ -6860,6 +7496,12 @@
             "value" : "ふりかえりを書く"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escrever retrospectiva"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6922,6 +7564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえり質問"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perguntas de retrospectiva"
           }
         },
         "ru" : {
@@ -6988,6 +7636,12 @@
             "value" : "ふりかえりで\n本当の成長を実感しよう"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Evolua de verdade\ncom as retrospectivas"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7050,6 +7704,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえった項目"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Itens com retrospectiva"
           }
         },
         "ru" : {

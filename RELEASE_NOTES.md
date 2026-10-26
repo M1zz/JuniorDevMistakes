@@ -67,3 +67,9 @@ Rédigez vos rétros dans votre langue
 Leggi 100 Errori Dev in più lingue
 App ed errori nella tua lingua
 Rifletti e rispondi nella tua lingua
+
+### 앱스토어 (pt-BR)
+
+Veja os 100 Erros em vários idiomas
+O app muda conforme o idioma do aparelho
+Responda às retrospectivas no seu idioma
