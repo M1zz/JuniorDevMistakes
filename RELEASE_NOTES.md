@@ -43,3 +43,9 @@ Reflection questions in your language
 Теперь «100 ошибок» на многих языках
 Экран и ошибки — на языке устройства
 Вопросы ретроспективы — на вашем языке
+
+### 앱스토어 (es)
+
+Lee 100 Errores Dev en más idiomas
+La app y los errores hablan tu idioma
+Responde las reflexiones en tu idioma

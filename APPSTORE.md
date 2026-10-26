@@ -347,3 +347,55 @@ https://m1zz.github.io/JuniorDevMistakes/ru/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/ru/index.html
+
+## es
+
+### 이름
+
+100 Errores Dev
+
+### 부제
+
+Crece sin tropezar dos veces
+
+### 키워드
+
+programador,junior,código,git,depuración,checklist,diario,reflexión,aprender,software,consejos
+
+### 프로모션 텍스트
+
+Conoce los 100 errores que más cometen los desarrolladores junior antes de cometerlos tú. Márcalos, reflexiona y no repitas ninguno. Prueba gratis los primeros 30.
+
+### 설명
+
+Conoce los errores antes de cometerlos. 100 Errores Dev es una lista de crecimiento con los 100 errores que más cometen los desarrolladores junior, para que avances más rápido y dejes de tropezar con la misma piedra.
+
+Los errores están organizados en 10 categorías: hábitos al escribir código, depuración y resolución de problemas, control de versiones y colaboración, diseño y arquitectura, pruebas y calidad, aprendizaje y crecimiento, comunicación, infraestructura y despliegue, seguridad y privacidad, y rendimiento y optimización. Cada error se explica en tres partes: esto es lo que pasa, haz esto y esto aprenderás para crecer.
+
+Marca como vividos los errores por los que ya pasaste y responde las preguntas de reflexión de cada uno. Con 400 preguntas en total, el diario de reflexión convierte una lectura rápida en comprensión real. Puedes ver tu progreso por categoría y el total de los 100 errores, y guardar en marcadores lo que quieras repasar después.
+
+Tus datos se sincronizan con iCloud (CloudKit) entre iPhone, iPad y Mac, así que continúas justo donde lo dejaste. La app no recopila información personal y no tiene análisis ni anuncios.
+
+Prueba gratis los primeros 30 errores (3 categorías). Con PRO desbloqueas los 100. PRO está disponible como suscripción mensual o anual, con un ahorro de hasta 50% en el plan anual frente al mensual, o como acceso de por vida con un solo pago.
+
+Las suscripciones mensual y anual se renuevan automáticamente, a menos que las canceles al menos 24 horas antes de que termine el periodo actual. Puedes administrarlas o cancelarlas en cualquier momento en los ajustes de tu ID de Apple.
+
+No esperes a aprenderlo por las malas. Conoce los errores a tiempo, aprende de ellos y crece más rápido como desarrollador.
+
+Términos de uso (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Política de privacidad (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/es/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/es/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/es/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/es/index.html
