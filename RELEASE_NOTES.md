@@ -127,3 +127,9 @@ Refleksjonsspørsmål på ditt eget språk
 100 Fouten nu in veel talen
 Scherm en inhoud volgen je apparaattaal
 Terugblikvragen nu ook in jouw taal
+
+### 앱스토어 (pl)
+
+100 błędów w wielu językach
+Treści dopasują się do języka urządzenia
+Pytania retrospektywne w twoim języku

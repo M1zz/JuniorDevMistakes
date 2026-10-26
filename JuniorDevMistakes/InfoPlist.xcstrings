@@ -95,6 +95,12 @@
             "value" : "100 Fouten"
           }
         },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 błędów"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -225,6 +231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Fouten"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 błędów"
           }
         },
         "pt-BR" : {

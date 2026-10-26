@@ -1089,3 +1089,55 @@ https://m1zz.github.io/JuniorDevMistakes/nl/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/nl/index.html
+
+## pl
+
+### 이름
+
+100 błędów juniora
+
+### 부제
+
+Ucz się, zanim zawalisz
+
+### 키워드
+
+programista,kodowanie,nauka,checklista,dziennik,retrospektywa,git,debugowanie,testy,kariera,nawyki
+
+### 프로모션 텍스트
+
+Poznaj 100 najczęstszych błędów początkujących programistów, zanim je popełnisz. Odhaczaj je, rób retrospektywy i nie powtarzaj błędów. 30 błędów za darmo.
+
+### 설명
+
+Poznaj błędy, zanim je popełnisz. 100 błędów juniora to checklista rozwoju: setka najczęstszych błędów początkujących programistów, dzięki której szybciej urośniesz i nie wpadniesz dwa razy w ten sam dołek.
+
+Błędy są podzielone na 10 kategorii: nawyki przy pisaniu kodu, debugowanie i rozwiązywanie problemów, kontrola wersji i współpraca, projektowanie i architektura, testy i jakość, nauka i rozwój, komunikacja, infrastruktura i wdrożenia, bezpieczeństwo i prywatność oraz wydajność i optymalizacja. Każdy błąd opisany jest w trzech krokach: co się dzieje, co zrobić i czego się dzięki temu nauczysz.
+
+Błędy, które już przeżyłeś, oznaczaj jako doświadczone i odpowiadaj na pytania retrospektywne. Łącznie to 400 pytań, które zamieniają szybkie czytanie w prawdziwe zrozumienie. Postępy widzisz w każdej kategorii i w całości na 100 polach, a zakładki pomogą ci zapisać to, do czego chcesz wrócić.
+
+Dane synchronizują się przez iCloud (CloudKit) między iPhonem, iPadem i Macem, więc zawsze kontynuujesz tam, gdzie skończyłeś. Aplikacja nie gromadzi żadnych danych osobowych, nie ma analityki ani reklam.
+
+Pierwsze 30 błędów (3 kategorie) możesz poznać za darmo. PRO odblokowuje wszystkie 100. PRO jest dostępne jako subskrypcja miesięczna lub roczna, przy czym roczna pozwala zaoszczędzić do 50% w porównaniu z miesięczną, albo jako jednorazowy zakup na zawsze.
+
+Subskrypcje miesięczna i roczna odnawiają się automatycznie, chyba że anulujesz je co najmniej 24 godziny przed końcem bieżącego okresu. Subskrypcjami zarządzasz i anulujesz je w ustawieniach Apple ID.
+
+Nie ucz się na własnych błędach. Poznaj je wcześniej, wyciągnij wnioski i rośnij szybciej.
+
+Warunki użytkowania (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Polityka prywatności (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/pl/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/pl/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/pl/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/pl/index.html
