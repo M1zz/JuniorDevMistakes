@@ -7,7 +7,16 @@
     "%lld / 100" : {
       "shouldTranslate" : false
     },
-    "%lld / 100 경험 완료" : {},
+    "%lld / 100 경험 완료" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 experienced"
+          }
+        }
+      }
+    },
     "%lld%%" : {
       "shouldTranslate" : false
     },
@@ -25,124 +34,1104 @@
       },
       "shouldTranslate" : false
     },
-    "%lld개" : {},
-    "%lld개 완료" : {},
-    "%lld개 카테고리가 잠겨 있습니다" : {},
-    "%lld개 항목" : {},
+    "%lld개" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "%lld개 완료" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld done"
+          }
+        }
+      }
+    },
+    "%lld개 카테고리가 잠겨 있습니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Locked categories: %lld"
+          }
+        }
+      }
+    },
+    "%lld개 항목" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld items"
+          }
+        }
+      }
+    },
     "/ 100" : {
       "shouldTranslate" : false
     },
-    "/년" : {},
-    "/월" : {},
-    "/일" : {},
-    "/주" : {},
-    "100가지 실수\n체크리스트" : {},
-    "100개 실수 전체 이용 가능" : {},
-    "100개 완전한 성장 추적" : {},
-    "10개 카테고리, 100가지 실수\n직접 경험하기 전에 미리 배우세요" : {},
-    "280개 추가 회고 질문" : {},
-    "PRO" : {},
-    "PRO 이용 중" : {},
-    "PRO 플랜 포함 내용" : {},
-    "PRO로 업그레이드" : {},
-    "PRO로 업그레이드하여 전체 학습하기" : {},
-    "Q%lld" : {},
-    "iPhone, iPad, Mac에서\niCloud로 데이터가 항상 이어집니다" : {},
+    "/년" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/year"
+          }
+        }
+      }
+    },
+    "/월" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/month"
+          }
+        }
+      }
+    },
+    "/일" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/day"
+          }
+        }
+      }
+    },
+    "/주" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/week"
+          }
+        }
+      }
+    },
+    "100가지 실수\n체크리스트" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Mistakes\nChecklist"
+          }
+        }
+      }
+    },
+    "100개 실수 전체 이용 가능" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All 100 mistakes available"
+          }
+        }
+      }
+    },
+    "100개 완전한 성장 추적" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Track your growth across all 100"
+          }
+        }
+      }
+    },
+    "10개 카테고리, 100가지 실수\n직접 경험하기 전에 미리 배우세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 categories, 100 mistakes\nLearn them before you live them"
+          }
+        }
+      }
+    },
+    "280개 추가 회고 질문" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 more reflection questions"
+          }
+        }
+      }
+    },
+    "PRO" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        }
+      }
+    },
+    "PRO 이용 중" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO Active"
+          }
+        }
+      }
+    },
+    "PRO 플랜 포함 내용" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What's included in PRO"
+          }
+        }
+      }
+    },
+    "PRO로 업그레이드" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade to PRO"
+          }
+        }
+      }
+    },
+    "PRO로 업그레이드하여 전체 학습하기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade to PRO to learn them all"
+          }
+        }
+      }
+    },
+    "Q%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Q%lld"
+          }
+        }
+      }
+    },
+    "iPhone, iPad, Mac에서\niCloud로 데이터가 항상 이어집니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your data stays in sync across\niPhone, iPad, and Mac with iCloud"
+          }
+        }
+      }
+    },
     "·" : {
       "shouldTranslate" : false
     },
-    "각 실수 항목의 회고 질문에\n답변을 작성해보세요" : {},
-    "각 실수마다 회고 질문에 답하며\n같은 실수를 두 번 하지 않게 됩니다" : {},
-    "개인정보처리방침" : {},
-    "거의 다 왔습니다!\n이 정도면 이미 많은 것을 배웠을 거예요" : {},
-    "건너뛰기" : {},
-    "경험 완료" : {},
-    "경험한 실수" : {},
-    "구독" : {},
-    "구독하여 잠금 해제" : {},
-    "구매 복원에 실패했습니다." : {},
-    "구매 복원하기" : {},
-    "구매 요청이 접수되었습니다. 승인이 완료되면 자동으로 잠금이 해제됩니다." : {},
-    "구매 중 오류가 발생했습니다." : {},
-    "구매를 확인하지 못했습니다. 잠시 후 다시 시도해 주세요." : {},
-    "꾸준히 성장하고 있습니다!\n실수가 쌓일수록 실력도 쌓입니다" : {},
-    "나머지 70개 실수를 잠금 해제하세요" : {},
-    "나의 성장 여정" : {},
-    "나의 실수 100" : {},
-    "나의 회고 기록" : {},
-    "다시 시도" : {},
-    "다음" : {},
-    "데이터" : {},
-    "마지막 몇 개만 남았습니다!\n완주가 코앞입니다" : {},
-    "모든 기기에서\n자동으로 동기화" : {},
-    "모든 데이터 초기화" : {},
-    "모든 진행 데이터가 삭제됩니다. 이 작업은 되돌릴 수 없습니다." : {},
-    "버전" : {},
-    "복원할 구매 내역이 없습니다." : {},
-    "북마크" : {},
-    "북마크한 항목이 없습니다" : {},
-    "삭제" : {},
-    "상세 화면에서 북마크 버튼을 눌러\n나중에 볼 항목을 저장하세요" : {},
-    "상품 정보를 불러오는 중..." : {},
-    "상품 정보를 불러오지 못했습니다.\n네트워크 연결을 확인해 주세요." : {},
-    "설정" : {},
-    "시작하기" : {},
-    "실수 #031-100 전체 학습" : {},
-    "실수 100" : {},
-    "실수 70개가 더 기다리고 있어요\n지금 잠금을 해제하세요" : {},
-    "실수 후 스스로에게 물어보세요" : {},
-    "아직 시작하지 않았습니다.\n첫 번째 실수를 경험해보세요!" : {},
-    "안내" : {},
-    "여기에 답변을 작성하세요..." : {},
-    "여정을 시작했습니다!\n모든 시니어도 여기서 시작했어요" : {},
-    "연간 구독" : {},
-    "연간 구독 · %@/년 · 매년 자동 갱신" : {},
-    "오류" : {},
-    "월간 구독" : {},
-    "월간 구독 · %@/월 · 매월 자동 갱신" : {},
-    "월간 대비 최대 50% 절약" : {},
-    "월간·연간 구독은 자동으로 갱신되며, 현재 기간 종료 24시간 전까지 취소하지 않으면 결제됩니다. 구독은 Apple ID 설정에서 언제든지 관리·취소할 수 있습니다." : {},
-    "이것을 배우며 성장합니다" : {},
-    "이런 상황이 벌어집니다" : {},
-    "이렇게 하세요" : {},
-    "이용약관(EULA)" : {},
-    "인기" : {},
-    "저장" : {},
-    "전체" : {},
-    "전체 초기화" : {},
-    "절반에 가까워지고 있습니다!\n이 속도면 금방 시니어가 되겠네요" : {},
-    "절반을 넘었습니다!\n이제 중급 개발자의 시야가 보이기 시작합니다" : {},
-    "정보" : {},
-    "주니어 개발자의\n실수 100" : {},
-    "주니어 개발자의 실수 100" : {},
+    "각 실수 항목의 회고 질문에\n답변을 작성해보세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Answer the reflection questions\nfor each mistake"
+          }
+        }
+      }
+    },
+    "각 실수마다 회고 질문에 답하며\n같은 실수를 두 번 하지 않게 됩니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Answer a reflection question for each mistake\nand never make the same one twice"
+          }
+        }
+      }
+    },
+    "개인정보처리방침" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy Policy"
+          }
+        }
+      }
+    },
+    "거의 다 왔습니다!\n이 정도면 이미 많은 것을 배웠을 거예요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Almost there!\nYou've already learned a lot"
+          }
+        }
+      }
+    },
+    "건너뛰기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skip"
+          }
+        }
+      }
+    },
+    "경험 완료" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Experienced"
+          }
+        }
+      }
+    },
+    "경험한 실수" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mistakes Experienced"
+          }
+        }
+      }
+    },
+    "구독" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscription"
+          }
+        }
+      }
+    },
+    "구독하여 잠금 해제" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscribe to Unlock"
+          }
+        }
+      }
+    },
+    "구매 복원에 실패했습니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't restore purchases."
+          }
+        }
+      }
+    },
+    "구매 복원하기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore Purchases"
+          }
+        }
+      }
+    },
+    "구매 요청이 접수되었습니다. 승인이 완료되면 자동으로 잠금이 해제됩니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your purchase request has been submitted. Once it's approved, everything unlocks automatically."
+          }
+        }
+      }
+    },
+    "구매 중 오류가 발생했습니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Something went wrong with the purchase."
+          }
+        }
+      }
+    },
+    "구매를 확인하지 못했습니다. 잠시 후 다시 시도해 주세요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't verify your purchase. Please try again in a moment."
+          }
+        }
+      }
+    },
+    "꾸준히 성장하고 있습니다!\n실수가 쌓일수록 실력도 쌓입니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're growing steadily!\nEvery mistake adds to your skills"
+          }
+        }
+      }
+    },
+    "나머지 70개 실수를 잠금 해제하세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unlock the remaining 70 mistakes"
+          }
+        }
+      }
+    },
+    "나의 성장 여정" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My Growth Journey"
+          }
+        }
+      }
+    },
+    "나의 실수 100" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My 100 Mistakes"
+          }
+        }
+      }
+    },
+    "나의 회고 기록" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My Reflections"
+          }
+        }
+      }
+    },
+    "다시 시도" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try Again"
+          }
+        }
+      }
+    },
+    "다음" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        }
+      }
+    },
+    "데이터" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data"
+          }
+        }
+      }
+    },
+    "마지막 몇 개만 남았습니다!\n완주가 코앞입니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Just a few left!\nThe finish line is in sight"
+          }
+        }
+      }
+    },
+    "모든 기기에서\n자동으로 동기화" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatically synced\non all your devices"
+          }
+        }
+      }
+    },
+    "모든 데이터 초기화" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset All Data"
+          }
+        }
+      }
+    },
+    "모든 진행 데이터가 삭제됩니다. 이 작업은 되돌릴 수 없습니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All your progress data will be deleted. This can't be undone."
+          }
+        }
+      }
+    },
+    "버전" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
+        }
+      }
+    },
+    "복원할 구매 내역이 없습니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No purchases to restore."
+          }
+        }
+      }
+    },
+    "북마크" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bookmarks"
+          }
+        }
+      }
+    },
+    "북마크한 항목이 없습니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No bookmarked items"
+          }
+        }
+      }
+    },
+    "삭제" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        }
+      }
+    },
+    "상세 화면에서 북마크 버튼을 눌러\n나중에 볼 항목을 저장하세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the bookmark button on a detail screen\nto save items for later"
+          }
+        }
+      }
+    },
+    "상품 정보를 불러오는 중..." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading product info..."
+          }
+        }
+      }
+    },
+    "상품 정보를 불러오지 못했습니다.\n네트워크 연결을 확인해 주세요." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't load product info.\nPlease check your network connection."
+          }
+        }
+      }
+    },
+    "설정" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        }
+      }
+    },
+    "시작하기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get Started"
+          }
+        }
+      }
+    },
+    "실수 #031-100 전체 학습" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Study all mistakes #031-100"
+          }
+        }
+      }
+    },
+    "실수 100" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Dev Mistakes"
+          }
+        }
+      }
+    },
+    "실수 70개가 더 기다리고 있어요\n지금 잠금을 해제하세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "70 more mistakes are waiting\nUnlock them now"
+          }
+        }
+      }
+    },
+    "실수 후 스스로에게 물어보세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ask yourself after a mistake"
+          }
+        }
+      }
+    },
+    "아직 시작하지 않았습니다.\n첫 번째 실수를 경험해보세요!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You haven't started yet.\nExperience your first mistake!"
+          }
+        }
+      }
+    },
+    "안내" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notice"
+          }
+        }
+      }
+    },
+    "여기에 답변을 작성하세요..." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write your answer here..."
+          }
+        }
+      }
+    },
+    "여정을 시작했습니다!\n모든 시니어도 여기서 시작했어요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your journey has begun!\nEvery senior dev started here"
+          }
+        }
+      }
+    },
+    "연간 구독" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yearly Subscription"
+          }
+        }
+      }
+    },
+    "연간 구독 · %@/년 · 매년 자동 갱신" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yearly subscription · %@/year · Renews automatically each year"
+          }
+        }
+      }
+    },
+    "오류" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        }
+      }
+    },
+    "월간 구독" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly Subscription"
+          }
+        }
+      }
+    },
+    "월간 구독 · %@/월 · 매월 자동 갱신" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly subscription · %@/month · Renews automatically each month"
+          }
+        }
+      }
+    },
+    "월간 대비 최대 50% 절약" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save up to 50% vs. monthly"
+          }
+        }
+      }
+    },
+    "월간·연간 구독은 자동으로 갱신되며, 현재 기간 종료 24시간 전까지 취소하지 않으면 결제됩니다. 구독은 Apple ID 설정에서 언제든지 관리·취소할 수 있습니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly and yearly subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. You can manage or cancel your subscription anytime in your Apple ID settings."
+          }
+        }
+      }
+    },
+    "이것을 배우며 성장합니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What You'll Learn"
+          }
+        }
+      }
+    },
+    "이런 상황이 벌어집니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What Happens"
+          }
+        }
+      }
+    },
+    "이렇게 하세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What to Do"
+          }
+        }
+      }
+    },
+    "이용약관(EULA)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terms of Use (EULA)"
+          }
+        }
+      }
+    },
+    "인기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popular"
+          }
+        }
+      }
+    },
+    "저장" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        }
+      }
+    },
+    "전체" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        }
+      }
+    },
+    "전체 초기화" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset All"
+          }
+        }
+      }
+    },
+    "절반에 가까워지고 있습니다!\n이 속도면 금방 시니어가 되겠네요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Closing in on halfway!\nAt this pace, you'll be a senior dev in no time"
+          }
+        }
+      }
+    },
+    "절반을 넘었습니다!\n이제 중급 개발자의 시야가 보이기 시작합니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Past the halfway mark!\nYou're starting to think like a mid-level dev"
+          }
+        }
+      }
+    },
+    "정보" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        }
+      }
+    },
+    "주니어 개발자의\n실수 100" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Junior Dev\nMistakes"
+          }
+        }
+      }
+    },
+    "주니어 개발자의 실수 100" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Junior Dev Mistakes"
+          }
+        }
+      }
+    },
     "주니어 개발자의 실수 100 정보" : {
       "comment" : "Mac Catalyst 앱 메뉴 (macCatalyst 빌드에서만 컴파일됨)",
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About 100 Junior Dev Mistakes"
+          }
+        }
+      }
     },
-    "지금 시작하기" : {},
-    "진행률" : {},
-    "체크리스트, 회고 기록, 북마크가 모두 삭제됩니다." : {},
-    "체크리스트, 회고 기록, 북마크가 모두 삭제됩니다. 이 작업은 되돌릴 수 없습니다." : {},
-    "초기화" : {},
-    "초기화 확인" : {},
-    "축하합니다! 모든 실수를 경험했습니다!\n이제 시니어의 길이 열렸습니다!" : {},
-    "취소" : {},
-    "카테고리 4-10 완전 잠금 해제" : {},
-    "평생 이용권" : {},
-    "평생 이용권 · %@ · 1회 결제, 자동 갱신 없음" : {},
-    "플랜 선택" : {},
-    "한 번 결제로 영구 이용" : {},
-    "향후 모든 콘텐츠 업데이트" : {},
-    "현직 개발자들이 가장 많이 하는\n실수를 미리 알고 더 빨리 성장하세요" : {},
-    "확인" : {},
-    "회고 기록" : {},
-    "회고 기록이 없습니다" : {},
-    "회고 완료" : {},
-    "회고 일지" : {},
-    "회고 작성" : {},
-    "회고 질문" : {},
-    "회고로 진짜\n성장을 경험하세요" : {},
-    "회고한 항목" : {}
+    "지금 시작하기" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start Now"
+          }
+        }
+      }
+    },
+    "진행률" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progress"
+          }
+        }
+      }
+    },
+    "체크리스트, 회고 기록, 북마크가 모두 삭제됩니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your checklist, reflections, and bookmarks will all be deleted."
+          }
+        }
+      }
+    },
+    "체크리스트, 회고 기록, 북마크가 모두 삭제됩니다. 이 작업은 되돌릴 수 없습니다." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your checklist, reflections, and bookmarks will all be deleted. This can't be undone."
+          }
+        }
+      }
+    },
+    "초기화" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset"
+          }
+        }
+      }
+    },
+    "초기화 확인" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm Reset"
+          }
+        }
+      }
+    },
+    "축하합니다! 모든 실수를 경험했습니다!\n이제 시니어의 길이 열렸습니다!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Congratulations! You've experienced every mistake!\nThe path to senior is wide open!"
+          }
+        }
+      }
+    },
+    "취소" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "카테고리 4-10 완전 잠금 해제" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fully unlock categories 4-10"
+          }
+        }
+      }
+    },
+    "평생 이용권" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lifetime Access"
+          }
+        }
+      }
+    },
+    "평생 이용권 · %@ · 1회 결제, 자동 갱신 없음" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lifetime access · %@ · One-time payment, no renewal"
+          }
+        }
+      }
+    },
+    "플랜 선택" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose a Plan"
+          }
+        }
+      }
+    },
+    "한 번 결제로 영구 이용" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pay once, use forever"
+          }
+        }
+      }
+    },
+    "향후 모든 콘텐츠 업데이트" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All future content updates"
+          }
+        }
+      }
+    },
+    "현직 개발자들이 가장 많이 하는\n실수를 미리 알고 더 빨리 성장하세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn the mistakes working developers\nmake most and grow faster"
+          }
+        }
+      }
+    },
+    "확인" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "회고 기록" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflections"
+          }
+        }
+      }
+    },
+    "회고 기록이 없습니다" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No reflections yet"
+          }
+        }
+      }
+    },
+    "회고 완료" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflected"
+          }
+        }
+      }
+    },
+    "회고 일지" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflection Journal"
+          }
+        }
+      }
+    },
+    "회고 작성" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write Reflection"
+          }
+        }
+      }
+    },
+    "회고 질문" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflection Questions"
+          }
+        }
+      }
+    },
+    "회고로 진짜\n성장을 경험하세요" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Experience real growth\nthrough reflection"
+          }
+        }
+      }
+    },
+    "회고한 항목" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflected Items"
+          }
+        }
+      }
+    }
   },
   "version" : "1.0"
 }

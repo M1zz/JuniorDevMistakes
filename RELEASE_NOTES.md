@@ -7,3 +7,9 @@
 이제 여러 나라 언어로 실수 100을 볼 수 있어요
 기기 언어에 맞춰 화면과 실수 이야기가 바뀝니다
 회고 질문도 내 언어로 읽고 답할 수 있어요
+
+### 앱스토어 (en)
+
+Read 100 Dev Mistakes in more languages
+Screens and stories match your language
+Reflection questions in your language
