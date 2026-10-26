@@ -929,3 +929,59 @@ https://m1zz.github.io/JuniorDevMistakes/fi/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/fi/index.html
+
+## id
+
+### 이름
+
+100 Kesalahan Junior Dev
+
+### 부제
+
+Checklist & jurnal refleksi
+
+### 키워드
+
+programmer,belajar coding,pemrograman,pemula,karier,debugging,git,code review,software,tips,bug,IT
+
+### 프로모션 텍스트
+
+Kenali 100 kesalahan yang sering dibuat junior developer sebelum mengalaminya sendiri. Coba gratis 30 kesalahan pertama, dan jangan ulangi kesalahan yang sama.
+
+### 설명
+
+Kenali kesalahan lebih awal, berkembanglah lebih cepat. 100 Kesalahan Junior Dev merangkum 100 kesalahan yang paling sering dibuat junior developer, supaya kamu bisa belajar sebelum mengalaminya sendiri dan tidak mengulanginya dua kali.
+
+Ke-100 kesalahan dikelompokkan dalam 10 kategori: kebiasaan menulis kode, debugging dan pemecahan masalah, version control dan kolaborasi, desain dan arsitektur, testing dan kualitas, belajar dan bertumbuh, komunikasi, infrastruktur dan deployment, keamanan dan privasi, serta performa dan optimasi.
+
+Setiap kesalahan dijelaskan dalam tiga bagian: situasi yang biasanya terjadi, cara menanganinya dengan benar, dan pelajaran yang membuatmu bertumbuh. Cukup baca, lalu langsung terapkan di pekerjaan nyata.
+
+Tandai kesalahan yang pernah kamu alami di checklist, lalu tulis jurnal refleksi dengan menjawab pertanyaan untuk tiap kesalahan, total 400 pertanyaan. Dengan begitu, kesalahan berubah menjadi pengalamanmu sendiri, bukan sekadar bacaan sekilas.
+
+Lihat progres tiap kategori dan seluruh 100 kotak dalam sekali pandang. Bookmark item yang ingin dibaca lagi, dan sinkronkan data antara iPhone, iPad, dan Mac lewat iCloud (CloudKit). Mulai di satu perangkat, lanjutkan belajar di perangkat lain.
+
+Soal privasi, kamu bisa tenang: aplikasi ini tidak mengumpulkan informasi pribadi, tanpa analitik, dan tanpa iklan.
+
+Kamu bisa mencoba 30 kesalahan pertama (3 kategori) secara gratis, dan membuka kunci semua 100 kesalahan dengan PRO. PRO tersedia sebagai langganan bulanan dan tahunan (diperpanjang otomatis, paket tahunan hemat hingga 50% dibanding bulanan) atau akses seumur hidup dengan sekali bayar.
+
+Langganan diperpanjang otomatis kecuali dibatalkan paling lambat 24 jam sebelum periode saat ini berakhir. Kamu bisa mengelola atau membatalkannya kapan saja di pengaturan Apple ID.
+
+Mulai hari ini dan jadilah developer yang tidak mengulang kesalahan yang sama.
+
+Ketentuan Penggunaan (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Kebijakan Privasi (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/id/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/id/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/id/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/id/index.html

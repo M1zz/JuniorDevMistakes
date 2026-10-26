@@ -63,6 +63,12 @@
             "value" : "%lld / 100 vécues"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 sudah dialami"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -186,6 +192,12 @@
             "value" : "%lld"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -290,6 +302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld terminées"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld selesai"
           }
         },
         "it" : {
@@ -398,6 +416,12 @@
             "value" : "%lld catégories verrouillées"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld kategori masih terkunci"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -502,6 +526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld éléments"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld item"
           }
         },
         "it" : {
@@ -613,6 +643,12 @@
             "value" : "/an"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/tahun"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -717,6 +753,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/mois"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/bulan"
           }
         },
         "it" : {
@@ -825,6 +867,12 @@
             "value" : "/jour"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/hari"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -929,6 +977,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/sem."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/minggu"
           }
         },
         "it" : {
@@ -1037,6 +1091,12 @@
             "value" : "Checklist des\n100 erreurs"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checklist\n100 Kesalahan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1141,6 +1201,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Les 100 erreurs accessibles"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akses ke semua 100 kesalahan"
           }
         },
         "it" : {
@@ -1249,6 +1315,12 @@
             "value" : "Suivi complet des 100 erreurs"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantau pertumbuhan di semua 100 kesalahan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1353,6 +1425,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "10 catégories, 100 erreurs\nApprenez-les avant de les vivre"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 kategori, 100 kesalahan\nPelajari dulu sebelum mengalaminya sendiri"
           }
         },
         "it" : {
@@ -1461,6 +1539,12 @@
             "value" : "280 questions de rétro en plus"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 pertanyaan refleksi tambahan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1562,6 +1646,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -1673,6 +1763,12 @@
             "value" : "PRO actif"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO aktif"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1777,6 +1873,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inclus dans PRO"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Isi paket PRO"
           }
         },
         "it" : {
@@ -1885,6 +1987,12 @@
             "value" : "Passer à PRO"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade ke PRO"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1991,6 +2099,12 @@
             "value" : "Passez à PRO pour tout apprendre"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade ke PRO dan pelajari semuanya"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2092,6 +2206,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Q%lld"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Q%lld"
@@ -2203,6 +2323,12 @@
             "value" : "Sur iPhone, iPad et Mac,\nvos données vous suivent grâce à iCloud"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data selalu tersambung lewat iCloud\ndi iPhone, iPad, dan Mac"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2312,6 +2438,12 @@
             "value" : "Répondez aux questions de rétro\nde chaque erreur"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jawab pertanyaan refleksi\npada setiap kesalahan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2416,6 +2548,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En répondant aux questions de rétro,\nvous ne ferez plus deux fois la même erreur"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dengan menjawab pertanyaan refleksi tiap kesalahan,\nkamu tak akan mengulang kesalahan yang sama"
           }
         },
         "it" : {
@@ -2524,6 +2662,12 @@
             "value" : "Politique de confidentialité"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kebijakan Privasi"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2628,6 +2772,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous y êtes presque !\nVous avez déjà beaucoup appris"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hampir sampai!\nKamu pasti sudah belajar banyak"
           }
         },
         "it" : {
@@ -2736,6 +2886,12 @@
             "value" : "Passer"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lewati"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2840,6 +2996,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vécue"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sudah dialami"
           }
         },
         "it" : {
@@ -2948,6 +3110,12 @@
             "value" : "Erreurs vécues"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kesalahan yang dialami"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3052,6 +3220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abonnement"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langganan"
           }
         },
         "it" : {
@@ -3160,6 +3334,12 @@
             "value" : "S'abonner pour débloquer"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berlangganan untuk membuka kunci"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3264,6 +3444,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La restauration des achats a échoué."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gagal memulihkan pembelian."
           }
         },
         "it" : {
@@ -3372,6 +3558,12 @@
             "value" : "Restaurer les achats"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulihkan pembelian"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3476,6 +3668,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Votre demande d'achat a bien été reçue. Le contenu sera débloqué automatiquement une fois l'achat approuvé."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permintaan pembelian sudah diterima. Setelah disetujui, kunci akan terbuka otomatis."
           }
         },
         "it" : {
@@ -3584,6 +3782,12 @@
             "value" : "Une erreur est survenue pendant l'achat."
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terjadi kesalahan saat pembelian."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3688,6 +3892,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossible de vérifier l'achat. Veuillez réessayer dans un instant."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pembelian belum dapat diverifikasi. Coba lagi sebentar lagi."
           }
         },
         "it" : {
@@ -3796,6 +4006,12 @@
             "value" : "Vous progressez régulièrement !\nPlus d'erreurs vécues, plus de compétences"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamu terus berkembang!\nSemakin banyak kesalahan, semakin tajam kemampuanmu"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3900,6 +4116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Débloquez les 70 autres erreurs"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka kunci 70 kesalahan lainnya"
           }
         },
         "it" : {
@@ -4008,6 +4230,12 @@
             "value" : "Mon parcours de progression"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perjalanan Pertumbuhanku"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4112,6 +4340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mes 100 erreurs"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Kesalahanku"
           }
         },
         "it" : {
@@ -4220,6 +4454,12 @@
             "value" : "Mes notes de rétro"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Catatan Refleksiku"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4324,6 +4564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réessayer"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coba lagi"
           }
         },
         "it" : {
@@ -4432,6 +4678,12 @@
             "value" : "Suivant"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lanjut"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4536,6 +4788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Données"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data"
           }
         },
         "it" : {
@@ -4644,6 +4902,12 @@
             "value" : "Plus que quelques-unes !\nL'arrivée est toute proche"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tinggal beberapa lagi!\nGaris finis sudah di depan mata"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4748,6 +5012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synchronisation automatique\nsur tous vos appareils"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tersinkron otomatis\ndi semua perangkat"
           }
         },
         "it" : {
@@ -4856,6 +5126,12 @@
             "value" : "Réinitialiser toutes les données"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset semua data"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4960,6 +5236,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toutes les données de progression seront supprimées. Cette action est irréversible."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua data progres akan dihapus. Tindakan ini tidak dapat dibatalkan."
           }
         },
         "it" : {
@@ -5068,6 +5350,12 @@
             "value" : "Version"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versi"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5172,6 +5460,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucun achat à restaurer."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada pembelian yang bisa dipulihkan."
           }
         },
         "it" : {
@@ -5280,6 +5574,12 @@
             "value" : "Favoris"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bookmark"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5384,6 +5684,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucun favori"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum ada item yang di-bookmark"
           }
         },
         "it" : {
@@ -5492,6 +5798,12 @@
             "value" : "Supprimer"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5596,6 +5908,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Appuyez sur le bouton Favori dans le détail\npour garder un élément à revoir plus tard"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ketuk tombol bookmark di halaman detail\nuntuk menyimpan item yang ingin dibaca nanti"
           }
         },
         "it" : {
@@ -5704,6 +6022,12 @@
             "value" : "Chargement des offres..."
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memuat info produk..."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5808,6 +6132,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossible de charger les offres.\nVérifiez votre connexion réseau."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gagal memuat info produk.\nPeriksa koneksi internetmu."
           }
         },
         "it" : {
@@ -5916,6 +6246,12 @@
             "value" : "Réglages"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6020,6 +6356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Commencer"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai"
           }
         },
         "it" : {
@@ -6128,6 +6470,12 @@
             "value" : "Toutes les erreurs n°031 à 100"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pelajari kesalahan #031-100"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6232,6 +6580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Erreurs Dev"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Kesalahan Dev"
           }
         },
         "it" : {
@@ -6340,6 +6694,12 @@
             "value" : "70 erreurs de plus vous attendent\nDébloquez-les maintenant"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "70 kesalahan lagi menunggumu\nBuka kuncinya sekarang"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6444,6 +6804,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Posez-vous ces questions après l'erreur"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanyakan pada dirimu setelah berbuat salah"
           }
         },
         "it" : {
@@ -6552,6 +6918,12 @@
             "value" : "Vous n'avez pas encore commencé.\nVivez votre première erreur !"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum dimulai.\nCoba alami kesalahan pertamamu!"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6656,6 +7028,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Information"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
           }
         },
         "it" : {
@@ -6764,6 +7142,12 @@
             "value" : "Écrivez votre réponse ici..."
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tulis jawabanmu di sini..."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6868,6 +7252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le voyage commence !\nTous les seniors sont partis d'ici"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perjalananmu dimulai!\nSemua senior juga mulai dari sini"
           }
         },
         "it" : {
@@ -6976,6 +7366,12 @@
             "value" : "Abonnement annuel"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langganan tahunan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7080,6 +7476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abonnement annuel · %@/an · renouvelé chaque année"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langganan tahunan · %@/tahun · diperpanjang otomatis tiap tahun"
           }
         },
         "it" : {
@@ -7188,6 +7590,12 @@
             "value" : "Erreur"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7292,6 +7700,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abonnement mensuel"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langganan bulanan"
           }
         },
         "it" : {
@@ -7400,6 +7814,12 @@
             "value" : "Abonnement mensuel · %@/mois · renouvelé chaque mois"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langganan bulanan · %@/bulan · diperpanjang otomatis tiap bulan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7504,6 +7924,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jusqu'à 50 % d'économie par rapport au mensuel"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hemat hingga 50% dibanding bulanan"
           }
         },
         "it" : {
@@ -7612,6 +8038,12 @@
             "value" : "Les abonnements mensuel et annuel se renouvellent automatiquement, sauf annulation au moins 24 heures avant la fin de la période en cours. Vous pouvez les gérer ou les annuler à tout moment dans les réglages de votre identifiant Apple."
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langganan bulanan dan tahunan diperpanjang otomatis dan akan ditagih jika tidak dibatalkan paling lambat 24 jam sebelum periode saat ini berakhir. Kamu bisa mengelola atau membatalkan langganan kapan saja di pengaturan Apple ID."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7716,6 +8148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ce que vous apprendrez en progressant"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yang kamu pelajari"
           }
         },
         "it" : {
@@ -7824,6 +8262,12 @@
             "value" : "Voici ce qui se passe"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Situasi yang terjadi"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7928,6 +8372,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Faites plutôt ceci"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yang sebaiknya dilakukan"
           }
         },
         "it" : {
@@ -8036,6 +8486,12 @@
             "value" : "Conditions d'utilisation (EULA)"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ketentuan Penggunaan (EULA)"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8140,6 +8596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Populaire"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Populer"
           }
         },
         "it" : {
@@ -8248,6 +8710,12 @@
             "value" : "Enregistrer"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8352,6 +8820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tout"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua"
           }
         },
         "it" : {
@@ -8460,6 +8934,12 @@
             "value" : "Tout réinitialiser"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset semua"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8564,6 +9044,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vous approchez de la moitié !\nÀ ce rythme, vous serez vite senior"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hampir separuh jalan!\nDengan kecepatan ini, kamu segera jadi senior"
           }
         },
         "it" : {
@@ -8672,6 +9158,12 @@
             "value" : "Plus de la moitié faite !\nVous commencez à voir comme un développeur confirmé"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sudah lewat separuh!\nCara pandang developer menengah mulai terlihat"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8776,6 +9268,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "À propos"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentang"
           }
         },
         "it" : {
@@ -8884,6 +9382,12 @@
             "value" : "Les 100 erreurs\ndu développeur junior"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Kesalahan\nJunior Developer"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8988,6 +9492,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Les 100 erreurs du développeur junior"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Kesalahan Junior Developer"
           }
         },
         "it" : {
@@ -9098,6 +9608,12 @@
             "value" : "À propos de 100 Erreurs Dev"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentang 100 Kesalahan Junior Developer"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9202,6 +9718,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Commencer maintenant"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai sekarang"
           }
         },
         "it" : {
@@ -9310,6 +9832,12 @@
             "value" : "Progression"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progres"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9414,6 +9942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La checklist, les notes de rétro et les favoris seront tous supprimés."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checklist, catatan refleksi, dan bookmark akan dihapus semua."
           }
         },
         "it" : {
@@ -9522,6 +10056,12 @@
             "value" : "La checklist, les notes de rétro et les favoris seront tous supprimés. Cette action est irréversible."
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checklist, catatan refleksi, dan bookmark akan dihapus semua. Tindakan ini tidak dapat dibatalkan."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9626,6 +10166,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réinitialiser"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset"
           }
         },
         "it" : {
@@ -9734,6 +10280,12 @@
             "value" : "Confirmer la réinitialisation"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konfirmasi reset"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9838,6 +10390,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Félicitations ! Vous avez vécu toutes les erreurs !\nLa voie vers le niveau senior est ouverte !"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selamat! Semua kesalahan sudah kamu alami!\nJalan menuju senior kini terbuka!"
           }
         },
         "it" : {
@@ -9946,6 +10504,12 @@
             "value" : "Annuler"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batal"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10050,6 +10614,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Déblocage complet des catégories 4 à 10"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buka kunci penuh kategori 4-10"
           }
         },
         "it" : {
@@ -10158,6 +10728,12 @@
             "value" : "Accès à vie"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akses seumur hidup"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10262,6 +10838,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Accès à vie · %@ · paiement unique, sans renouvellement"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akses seumur hidup · %@ · sekali bayar, tanpa perpanjangan otomatis"
           }
         },
         "it" : {
@@ -10370,6 +10952,12 @@
             "value" : "Choisir une offre"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih paket"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10474,6 +11062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Un seul paiement, accès permanent"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sekali bayar, akses selamanya"
           }
         },
         "it" : {
@@ -10582,6 +11176,12 @@
             "value" : "Toutes les futures mises à jour de contenu"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua pembaruan konten ke depannya"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10688,6 +11288,12 @@
             "value" : "Découvrez à l'avance les erreurs que font\nle plus les développeurs, et progressez plus vite"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kenali lebih awal kesalahan yang paling sering\ndilakukan developer dan berkembanglah lebih cepat"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10789,6 +11395,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -10900,6 +11512,12 @@
             "value" : "Notes de rétro"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Catatan refleksi"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11004,6 +11622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune note de rétro"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Belum ada catatan refleksi"
           }
         },
         "it" : {
@@ -11112,6 +11736,12 @@
             "value" : "Rétro faite"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refleksi selesai"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11216,6 +11846,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Journal de rétro"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jurnal Refleksi"
           }
         },
         "it" : {
@@ -11324,6 +11960,12 @@
             "value" : "Écrire une rétro"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tulis refleksi"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11428,6 +12070,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questions de rétro"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pertanyaan refleksi"
           }
         },
         "it" : {
@@ -11536,6 +12184,12 @@
             "value" : "Vivez une vraie\nprogression grâce à la rétro"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rasakan pertumbuhan nyata\nlewat refleksi"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11640,6 +12294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Éléments revus"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Item yang direfleksikan"
           }
         },
         "it" : {

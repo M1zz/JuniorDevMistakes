@@ -109,3 +109,9 @@ Besvar refleksionsspørgsmål på dit sprog
 100 virhettä nyt monella kielellä
 Näkymät ja sisältö laitteesi kielellä
 Pohdintakysymykset omalla kielelläsi
+
+### 앱스토어 (id)
+
+100 Kesalahan kini hadir multibahasa
+Layar dan cerita ikut bahasa perangkat
+Pertanyaan refleksi juga dalam bahasamu

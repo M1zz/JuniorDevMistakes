@@ -59,6 +59,12 @@
             "value" : "100 Erreurs Dev"
           }
         },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Kesalahan Dev"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -171,6 +177,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Erreurs Dev"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Kesalahan Dev"
           }
         },
         "it" : {
