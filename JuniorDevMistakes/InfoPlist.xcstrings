@@ -17,6 +17,12 @@
             "value" : "100 Dev Mistakes"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "やらかし100"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "new",
@@ -51,6 +57,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Dev Mistakes"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "やらかし100"
           }
         },
         "ko" : {

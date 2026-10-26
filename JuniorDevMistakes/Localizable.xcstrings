@@ -21,6 +21,12 @@
             "value" : "%lld / 100 experienced"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 経験済み"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -66,6 +72,12 @@
             "value" : "%lld"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld個"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -92,6 +104,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld done"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld個 完了"
           }
         },
         "zh-Hans" : {
@@ -122,6 +140,12 @@
             "value" : "%lld categories are locked"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld個のカテゴリがロックされています"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -148,6 +172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld items"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld件"
           }
         },
         "zh-Hans" : {
@@ -181,6 +211,12 @@
             "value" : "/year"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/年"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -207,6 +243,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/month"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/月"
           }
         },
         "zh-Hans" : {
@@ -237,6 +279,12 @@
             "value" : "/day"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/日"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -263,6 +311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/week"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/週"
           }
         },
         "zh-Hans" : {
@@ -293,6 +347,12 @@
             "value" : "100 Mistakes\nChecklist"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100のミス\nチェックリスト"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -319,6 +379,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "All 100 mistakes available"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100個のミスをすべて利用可能"
           }
         },
         "zh-Hans" : {
@@ -349,6 +415,12 @@
             "value" : "Track your progress across all 100"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100個すべての成長を記録"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -375,6 +447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "10 categories, 100 mistakes\nLearn them before you make them"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10カテゴリ、100のミス\n自分でやらかす前に、先に学ぼう"
           }
         },
         "zh-Hans" : {
@@ -405,6 +483,12 @@
             "value" : "280 more reflection questions"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "追加のふりかえり質問280個"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -428,6 +512,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -461,6 +551,12 @@
             "value" : "PRO active"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PROをご利用中"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -487,6 +583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "What PRO includes"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PROプランの内容"
           }
         },
         "zh-Hans" : {
@@ -517,6 +619,12 @@
             "value" : "Upgrade to PRO"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PROにアップグレード"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -545,6 +653,12 @@
             "value" : "Upgrade to PRO to learn them all"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PROにアップグレードして全部学ぶ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -568,6 +682,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Q%lld"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Q%lld"
@@ -601,6 +721,12 @@
             "value" : "Your data stays in step across\niPhone, iPad and Mac with iCloud"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone、iPad、Macで\niCloudによりデータがいつもつながります"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -632,6 +758,12 @@
             "value" : "Answer the reflection questions\nfor each mistake"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "それぞれのミスのふりかえり質問に\n答えを書いてみましょう"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -658,6 +790,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Answer the reflection questions for each mistake\nand don't make the same one twice"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ミスごとのふりかえり質問に答えて\n同じミスを繰り返さなくなります"
           }
         },
         "zh-Hans" : {
@@ -688,6 +826,12 @@
             "value" : "Privacy Policy"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プライバシーポリシー"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -714,6 +858,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nearly there!\nYou've already learned a great deal"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "もう少しです!\nここまでで、きっと多くのことを学びましたね"
           }
         },
         "zh-Hans" : {
@@ -744,6 +894,12 @@
             "value" : "Skip"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スキップ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -770,6 +926,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Experienced"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "経験済み"
           }
         },
         "zh-Hans" : {
@@ -800,6 +962,12 @@
             "value" : "Mistakes experienced"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "経験したミス"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -826,6 +994,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Subscribe"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サブスクリプション"
           }
         },
         "zh-Hans" : {
@@ -856,6 +1030,12 @@
             "value" : "Subscribe to unlock"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "登録してロック解除"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -882,6 +1062,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't restore your purchases."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購入の復元に失敗しました。"
           }
         },
         "zh-Hans" : {
@@ -912,6 +1098,12 @@
             "value" : "Restore purchases"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購入を復元"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -938,6 +1130,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your purchase request has been sent. Once it's approved, everything will unlock automatically."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購入リクエストを受け付けました。承認されると、自動でロックが解除されます。"
           }
         },
         "zh-Hans" : {
@@ -968,6 +1166,12 @@
             "value" : "Something went wrong with your purchase."
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購入中にエラーが発生しました。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -994,6 +1198,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "We couldn't verify your purchase. Please try again in a moment."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "購入を確認できませんでした。しばらくしてからもう一度お試しください。"
           }
         },
         "zh-Hans" : {
@@ -1024,6 +1234,12 @@
             "value" : "You're growing steadily!\nThe more mistakes you collect, the more skill you gain"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "着実に成長しています!\nミスが積み重なるほど、実力も積み重なります"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1050,6 +1266,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unlock the remaining 70 mistakes"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "残り70個のミスをロック解除しましょう"
           }
         },
         "zh-Hans" : {
@@ -1080,6 +1302,12 @@
             "value" : "My progress"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "わたしの成長の道のり"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1106,6 +1334,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "My 100 Mistakes"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "わたしのやらかし100"
           }
         },
         "zh-Hans" : {
@@ -1136,6 +1370,12 @@
             "value" : "My reflections"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "わたしのふりかえり記録"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1162,6 +1402,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Try again"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再試行"
           }
         },
         "zh-Hans" : {
@@ -1192,6 +1438,12 @@
             "value" : "Next"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次へ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1218,6 +1470,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "データ"
           }
         },
         "zh-Hans" : {
@@ -1248,6 +1506,12 @@
             "value" : "Only a few left!\nThe finish line is in sight"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あと少しです!\n完走はもう目の前です"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1274,6 +1538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synced automatically\non all your devices"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてのデバイスで\n自動的に同期"
           }
         },
         "zh-Hans" : {
@@ -1304,6 +1574,12 @@
             "value" : "Reset all data"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてのデータをリセット"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1330,6 +1606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "All your progress data will be deleted. This can't be undone."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべての進行データが削除されます。この操作は取り消せません。"
           }
         },
         "zh-Hans" : {
@@ -1360,6 +1642,12 @@
             "value" : "Version"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "バージョン"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1386,6 +1674,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "There are no purchases to restore."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "復元できる購入履歴がありません。"
           }
         },
         "zh-Hans" : {
@@ -1416,6 +1710,12 @@
             "value" : "Bookmarks"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ブックマーク"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1442,6 +1742,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No bookmarks yet"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ブックマークした項目はありません"
           }
         },
         "zh-Hans" : {
@@ -1472,6 +1778,12 @@
             "value" : "Delete"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "削除"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1498,6 +1810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tap the bookmark button on a detail screen\nto save items for later"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "詳細画面でブックマークボタンを押して\n後で見たい項目を保存しましょう"
           }
         },
         "zh-Hans" : {
@@ -1528,6 +1846,12 @@
             "value" : "Loading product information..."
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "商品情報を読み込み中..."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1554,6 +1878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't load product information.\nPlease check your network connection."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "商品情報を読み込めませんでした。\nネットワーク接続をご確認ください。"
           }
         },
         "zh-Hans" : {
@@ -1584,6 +1914,12 @@
             "value" : "Settings"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1610,6 +1946,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Get started"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "はじめる"
           }
         },
         "zh-Hans" : {
@@ -1640,6 +1982,12 @@
             "value" : "Learn mistakes #031-100"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ミス #031-100 をすべて学ぶ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1666,6 +2014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Dev Mistakes"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "やらかし100"
           }
         },
         "zh-Hans" : {
@@ -1696,6 +2050,12 @@
             "value" : "70 more mistakes are waiting for you\nUnlock them now"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "あと70個のミスが待っています\nいますぐロックを解除しましょう"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1722,6 +2082,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ask yourself after a mistake"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ミスをしたら、自分に問いかけてみましょう"
           }
         },
         "zh-Hans" : {
@@ -1752,6 +2118,12 @@
             "value" : "You haven't started yet.\nTry your first mistake!"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まだ始めていません。\n最初のミスを体験してみましょう!"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1778,6 +2150,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notice"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お知らせ"
           }
         },
         "zh-Hans" : {
@@ -1808,6 +2186,12 @@
             "value" : "Write your answer here..."
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ここに答えを書いてください..."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1834,6 +2218,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "You've begun your journey!\nEvery senior developer started here"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旅が始まりました!\nどんなシニアも、ここから始まりました"
           }
         },
         "zh-Hans" : {
@@ -1864,6 +2254,12 @@
             "value" : "Yearly subscription"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "年間サブスクリプション"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1890,6 +2286,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yearly subscription · %@/year · renews automatically each year"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "年間サブスクリプション · %@/年 · 毎年自動更新"
           }
         },
         "zh-Hans" : {
@@ -1920,6 +2322,12 @@
             "value" : "Error"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エラー"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1946,6 +2354,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Monthly subscription"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月間サブスクリプション"
           }
         },
         "zh-Hans" : {
@@ -1976,6 +2390,12 @@
             "value" : "Monthly subscription · %@/month · renews automatically each month"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月間サブスクリプション · %@/月 · 毎月自動更新"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2002,6 +2422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Save up to 50% compared with monthly"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月間プランより最大50%お得"
           }
         },
         "zh-Hans" : {
@@ -2032,6 +2458,12 @@
             "value" : "Monthly and yearly subscriptions renew automatically unless you cancel at least 24 hours before the end of the current period. You can manage or cancel your subscription at any time in your Apple ID settings."
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月間・年間サブスクリプションは自動的に更新され、現在の期間が終了する24時間前までに解約しない限り、料金が請求されます。サブスクリプションは、Apple IDの設定からいつでも管理・解約できます。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2058,6 +2490,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "What you learn"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ここから学んで成長します"
           }
         },
         "zh-Hans" : {
@@ -2088,6 +2526,12 @@
             "value" : "What happens"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "こんなことが起きます"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2114,6 +2558,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "What to do"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "こうしましょう"
           }
         },
         "zh-Hans" : {
@@ -2144,6 +2594,12 @@
             "value" : "Terms of Use (EULA)"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "利用規約(EULA)"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2170,6 +2626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popular"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人気"
           }
         },
         "zh-Hans" : {
@@ -2200,6 +2662,12 @@
             "value" : "Save"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2226,6 +2694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "All"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべて"
           }
         },
         "zh-Hans" : {
@@ -2256,6 +2730,12 @@
             "value" : "Reset everything"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてリセット"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2282,6 +2762,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Closing in on halfway!\nAt this rate you'll be a senior in no time"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "半分に近づいています!\nこのペースなら、すぐシニアですね"
           }
         },
         "zh-Hans" : {
@@ -2312,6 +2798,12 @@
             "value" : "Over halfway!\nYou're starting to see things like a mid-level developer"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "半分を超えました!\n中堅エンジニアの視野が見えてきます"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2338,6 +2830,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "About"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "情報"
           }
         },
         "zh-Hans" : {
@@ -2368,6 +2866,12 @@
             "value" : "100 Mistakes\nJunior Developers Make"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新人エンジニアの\nやらかし100"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2394,6 +2898,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Mistakes Junior Developers Make"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新人エンジニアのやらかし100"
           }
         },
         "zh-Hans" : {
@@ -2426,6 +2936,12 @@
             "value" : "About 100 Mistakes Junior Developers Make"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新人エンジニアのやらかし100について"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2452,6 +2968,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Start now"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今すぐはじめる"
           }
         },
         "zh-Hans" : {
@@ -2482,6 +3004,12 @@
             "value" : "Progress"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "進行状況"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2508,6 +3036,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your checklist, reflections and bookmarks will all be deleted."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "チェックリスト、ふりかえり記録、ブックマークがすべて削除されます。"
           }
         },
         "zh-Hans" : {
@@ -2538,6 +3072,12 @@
             "value" : "Your checklist, reflections and bookmarks will all be deleted. This can't be undone."
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "チェックリスト、ふりかえり記録、ブックマークがすべて削除されます。この操作は取り消せません。"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2564,6 +3104,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reset"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リセット"
           }
         },
         "zh-Hans" : {
@@ -2594,6 +3140,12 @@
             "value" : "Confirm reset"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リセットの確認"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2620,6 +3172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Congratulations! You've experienced every mistake!\nThe road to senior is now open!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おめでとうございます!すべてのミスを経験しました!\nシニアへの道が開けました!"
           }
         },
         "zh-Hans" : {
@@ -2650,6 +3208,12 @@
             "value" : "Cancel"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2676,6 +3240,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unlock categories 4-10 in full"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カテゴリ4〜10を完全ロック解除"
           }
         },
         "zh-Hans" : {
@@ -2706,6 +3276,12 @@
             "value" : "Lifetime pass"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "買い切り(永久利用権)"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2732,6 +3308,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lifetime pass · %@ · one-off payment, no renewal"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "買い切り(永久利用権) · %@ · 1回払い、自動更新なし"
           }
         },
         "zh-Hans" : {
@@ -2762,6 +3344,12 @@
             "value" : "Choose a plan"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プランを選ぶ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2788,6 +3376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pay once, keep it for good"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1回の支払いでずっと使える"
           }
         },
         "zh-Hans" : {
@@ -2818,6 +3412,12 @@
             "value" : "All future content updates"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今後のコンテンツ更新をすべて利用可能"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2846,6 +3446,12 @@
             "value" : "Know the mistakes working developers\nmake most often, and grow faster"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現役エンジニアが最も多くやらかすミスを\n先に知って、より早く成長しましょう"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2869,6 +3475,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -2902,6 +3514,12 @@
             "value" : "Reflections"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふりかえり記録"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2928,6 +3546,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No reflections yet"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふりかえり記録はありません"
           }
         },
         "zh-Hans" : {
@@ -2958,6 +3582,12 @@
             "value" : "Reflected"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふりかえり済み"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2984,6 +3614,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflection journal"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふりかえり日誌"
           }
         },
         "zh-Hans" : {
@@ -3014,6 +3650,12 @@
             "value" : "Write a reflection"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふりかえりを書く"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3040,6 +3682,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflection questions"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふりかえり質問"
           }
         },
         "zh-Hans" : {
@@ -3070,6 +3718,12 @@
             "value" : "Grow for real\nthrough reflection"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふりかえりで\n本当の成長を実感しよう"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3096,6 +3750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Items reflected on"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふりかえった項目"
           }
         },
         "zh-Hans" : {
