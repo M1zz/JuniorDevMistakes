@@ -27,6 +27,12 @@
             "value" : "%lld / 100 経験済み"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Было такое: %lld / 100"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -78,6 +84,12 @@
             "value" : "%lld個"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld шт."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -110,6 +122,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld個 完了"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово: %lld"
           }
         },
         "zh-Hans" : {
@@ -146,6 +164,12 @@
             "value" : "%lld個のカテゴリがロックされています"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрытых категорий: %lld"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -178,6 +202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld件"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пунктов: %lld"
           }
         },
         "zh-Hans" : {
@@ -217,6 +247,12 @@
             "value" : "/年"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/год"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -249,6 +285,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/月"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/мес."
           }
         },
         "zh-Hans" : {
@@ -285,6 +327,12 @@
             "value" : "/日"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/день"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -317,6 +365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/週"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/нед."
           }
         },
         "zh-Hans" : {
@@ -353,6 +407,12 @@
             "value" : "100のミス\nチェックリスト"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 ошибок\nЧек-лист"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -385,6 +445,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100個のミスをすべて利用可能"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступны все 100 ошибок"
           }
         },
         "zh-Hans" : {
@@ -421,6 +487,12 @@
             "value" : "100個すべての成長を記録"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отслеживание роста по всем 100"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -453,6 +525,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "10カテゴリ、100のミス\n自分でやらかす前に、先に学ぼう"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 категорий, 100 ошибок\nУзнайте о них раньше, чем наступите на грабли"
           }
         },
         "zh-Hans" : {
@@ -489,6 +567,12 @@
             "value" : "追加のふりかえり質問280個"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ещё 280 вопросов для ретроспективы"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -518,6 +602,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -557,6 +647,12 @@
             "value" : "PROをご利用中"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO активен"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -589,6 +685,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "PROプランの内容"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что входит в PRO"
           }
         },
         "zh-Hans" : {
@@ -625,6 +727,12 @@
             "value" : "PROにアップグレード"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перейти на PRO"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -657,6 +765,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "PROにアップグレードして全部学ぶ"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перейдите на PRO и изучите всё"
           }
         },
         "zh-Hans" : {
@@ -693,6 +807,12 @@
             "value" : "Q%lld"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В%lld"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -725,6 +845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "iPhone、iPad、Macで\niCloudによりデータがいつもつながります"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Данные всегда синхронизируются через\niCloud на iPhone, iPad и Mac"
           }
         },
         "zh-Hans" : {
@@ -764,6 +890,12 @@
             "value" : "それぞれのミスのふりかえり質問に\n答えを書いてみましょう"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ответьте на вопросы ретроспективы\nк каждой ошибке"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -796,6 +928,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ミスごとのふりかえり質問に答えて\n同じミスを繰り返さなくなります"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отвечайте на вопросы ретроспективы по каждой ошибке\nи не наступайте на одни грабли дважды"
           }
         },
         "zh-Hans" : {
@@ -832,6 +970,12 @@
             "value" : "プライバシーポリシー"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Политика конфиденциальности"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -864,6 +1008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "もう少しです!\nここまでで、きっと多くのことを学びましたね"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Почти у цели!\nВы уже многому научились"
           }
         },
         "zh-Hans" : {
@@ -900,6 +1050,12 @@
             "value" : "スキップ"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пропустить"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -932,6 +1088,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "経験済み"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Было такое"
           }
         },
         "zh-Hans" : {
@@ -968,6 +1130,12 @@
             "value" : "経験したミス"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибки, которые были"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1000,6 +1168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "サブスクリプション"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подписка"
           }
         },
         "zh-Hans" : {
@@ -1036,6 +1210,12 @@
             "value" : "登録してロック解除"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оформить подписку и открыть"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1068,6 +1248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "購入の復元に失敗しました。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось восстановить покупки."
           }
         },
         "zh-Hans" : {
@@ -1104,6 +1290,12 @@
             "value" : "購入を復元"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Восстановить покупки"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1136,6 +1328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "購入リクエストを受け付けました。承認されると、自動でロックが解除されます。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запрос на покупку отправлен. Как только его одобрят, доступ откроется автоматически."
           }
         },
         "zh-Hans" : {
@@ -1172,6 +1370,12 @@
             "value" : "購入中にエラーが発生しました。"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "При покупке произошла ошибка."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1204,6 +1408,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "購入を確認できませんでした。しばらくしてからもう一度お試しください。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось подтвердить покупку. Повторите попытку чуть позже."
           }
         },
         "zh-Hans" : {
@@ -1240,6 +1450,12 @@
             "value" : "着実に成長しています!\nミスが積み重なるほど、実力も積み重なります"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы стабильно растёте!\nЧем больше ошибок, тем больше опыта"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1272,6 +1488,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "残り70個のミスをロック解除しましょう"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откройте остальные 70 ошибок"
           }
         },
         "zh-Hans" : {
@@ -1308,6 +1530,12 @@
             "value" : "わたしの成長の道のり"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мой путь роста"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1340,6 +1568,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "わたしのやらかし100"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мои 100 ошибок"
           }
         },
         "zh-Hans" : {
@@ -1376,6 +1610,12 @@
             "value" : "わたしのふりかえり記録"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мои записи ретроспектив"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1408,6 +1648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "再試行"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Повторить"
           }
         },
         "zh-Hans" : {
@@ -1444,6 +1690,12 @@
             "value" : "次へ"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Далее"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1476,6 +1728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "データ"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Данные"
           }
         },
         "zh-Hans" : {
@@ -1512,6 +1770,12 @@
             "value" : "あと少しです!\n完走はもう目の前です"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Осталось совсем немного!\nФиниш уже близко"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1544,6 +1808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "すべてのデバイスで\n自動的に同期"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Автоматическая синхронизация\nна всех устройствах"
           }
         },
         "zh-Hans" : {
@@ -1580,6 +1850,12 @@
             "value" : "すべてのデータをリセット"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сбросить все данные"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1612,6 +1888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "すべての進行データが削除されます。この操作は取り消せません。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все данные о прогрессе будут удалены. Это действие нельзя отменить."
           }
         },
         "zh-Hans" : {
@@ -1648,6 +1930,12 @@
             "value" : "バージョン"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1680,6 +1968,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "復元できる購入履歴がありません。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет покупок для восстановления."
           }
         },
         "zh-Hans" : {
@@ -1716,6 +2010,12 @@
             "value" : "ブックマーク"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закладки"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1748,6 +2048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ブックマークした項目はありません"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закладок пока нет"
           }
         },
         "zh-Hans" : {
@@ -1784,6 +2090,12 @@
             "value" : "削除"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1816,6 +2128,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "詳細画面でブックマークボタンを押して\n後で見たい項目を保存しましょう"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите кнопку закладки на экране ошибки,\nчтобы сохранить её на потом"
           }
         },
         "zh-Hans" : {
@@ -1852,6 +2170,12 @@
             "value" : "商品情報を読み込み中..."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка информации о товаре..."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1884,6 +2208,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "商品情報を読み込めませんでした。\nネットワーク接続をご確認ください。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось загрузить информацию о товаре.\nПроверьте подключение к сети."
           }
         },
         "zh-Hans" : {
@@ -1920,6 +2250,12 @@
             "value" : "設定"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1952,6 +2288,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "はじめる"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начать"
           }
         },
         "zh-Hans" : {
@@ -1988,6 +2330,12 @@
             "value" : "ミス #031-100 をすべて学ぶ"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все ошибки №031–100"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2020,6 +2368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "やらかし100"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 ошибок"
           }
         },
         "zh-Hans" : {
@@ -2056,6 +2410,12 @@
             "value" : "あと70個のミスが待っています\nいますぐロックを解除しましょう"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вас ждут ещё 70 ошибок\nОткройте их прямо сейчас"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2088,6 +2448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ミスをしたら、自分に問いかけてみましょう"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спросите себя после ошибки"
           }
         },
         "zh-Hans" : {
@@ -2124,6 +2490,12 @@
             "value" : "まだ始めていません。\n最初のミスを体験してみましょう!"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы ещё не начали.\nРазберите свою первую ошибку!"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2156,6 +2528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "お知らせ"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уведомление"
           }
         },
         "zh-Hans" : {
@@ -2192,6 +2570,12 @@
             "value" : "ここに答えを書いてください..."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напишите ответ здесь..."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2224,6 +2608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "旅が始まりました!\nどんなシニアも、ここから始まりました"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Путь начат!\nВсе сеньоры когда-то начинали с этого"
           }
         },
         "zh-Hans" : {
@@ -2260,6 +2650,12 @@
             "value" : "年間サブスクリプション"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Годовая подписка"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2292,6 +2688,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "年間サブスクリプション · %@/年 · 毎年自動更新"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Годовая подписка · %@/год · автопродление каждый год"
           }
         },
         "zh-Hans" : {
@@ -2328,6 +2730,12 @@
             "value" : "エラー"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2360,6 +2768,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "月間サブスクリプション"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Месячная подписка"
           }
         },
         "zh-Hans" : {
@@ -2396,6 +2810,12 @@
             "value" : "月間サブスクリプション · %@/月 · 毎月自動更新"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Месячная подписка · %@/мес. · автопродление каждый месяц"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2428,6 +2848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "月間プランより最大50%お得"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экономия до 50% по сравнению с месячной"
           }
         },
         "zh-Hans" : {
@@ -2464,6 +2890,12 @@
             "value" : "月間・年間サブスクリプションは自動的に更新され、現在の期間が終了する24時間前までに解約しない限り、料金が請求されます。サブスクリプションは、Apple IDの設定からいつでも管理・解約できます。"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Месячная и годовая подписки продлеваются автоматически, если не отменить их минимум за 24 часа до окончания текущего периода. Управлять подпиской и отменить её можно в любой момент в настройках Apple ID."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2496,6 +2928,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ここから学んで成長します"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чему вы научитесь"
           }
         },
         "zh-Hans" : {
@@ -2532,6 +2970,12 @@
             "value" : "こんなことが起きます"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что происходит"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2564,6 +3008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "こうしましょう"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как поступить"
           }
         },
         "zh-Hans" : {
@@ -2600,6 +3050,12 @@
             "value" : "利用規約(EULA)"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Условия использования (EULA)"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2632,6 +3088,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "人気"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Популярное"
           }
         },
         "zh-Hans" : {
@@ -2668,6 +3130,12 @@
             "value" : "保存"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2700,6 +3168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "すべて"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все"
           }
         },
         "zh-Hans" : {
@@ -2736,6 +3210,12 @@
             "value" : "すべてリセット"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сбросить всё"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2768,6 +3248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "半分に近づいています!\nこのペースなら、すぐシニアですね"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы уже почти на полпути!\nС таким темпом скоро станете сеньором"
           }
         },
         "zh-Hans" : {
@@ -2804,6 +3290,12 @@
             "value" : "半分を超えました!\n中堅エンジニアの視野が見えてきます"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Больше половины позади!\nУ вас появляется взгляд мидла"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2836,6 +3328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "情報"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О приложении"
           }
         },
         "zh-Hans" : {
@@ -2872,6 +3370,12 @@
             "value" : "新人エンジニアの\nやらかし100"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 ошибок\nджуниор-разработчика"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2904,6 +3408,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "新人エンジニアのやらかし100"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 ошибок джуниор-разработчика"
           }
         },
         "zh-Hans" : {
@@ -2942,6 +3452,12 @@
             "value" : "新人エンジニアのやらかし100について"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О приложении «100 ошибок джуна»"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2974,6 +3490,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "今すぐはじめる"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начать сейчас"
           }
         },
         "zh-Hans" : {
@@ -3010,6 +3532,12 @@
             "value" : "進行状況"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прогресс"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3042,6 +3570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "チェックリスト、ふりかえり記録、ブックマークがすべて削除されます。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чек-лист, записи ретроспектив и закладки будут удалены."
           }
         },
         "zh-Hans" : {
@@ -3078,6 +3612,12 @@
             "value" : "チェックリスト、ふりかえり記録、ブックマークがすべて削除されます。この操作は取り消せません。"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чек-лист, записи ретроспектив и закладки будут удалены. Это действие нельзя отменить."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3110,6 +3650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "リセット"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сбросить"
           }
         },
         "zh-Hans" : {
@@ -3146,6 +3692,12 @@
             "value" : "リセットの確認"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подтверждение сброса"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3178,6 +3730,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "おめでとうございます!すべてのミスを経験しました!\nシニアへの道が開けました!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поздравляем! Вы прошли все ошибки!\nДорога к сеньору открыта!"
           }
         },
         "zh-Hans" : {
@@ -3214,6 +3772,12 @@
             "value" : "キャンセル"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3246,6 +3810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "カテゴリ4〜10を完全ロック解除"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полный доступ к категориям 4–10"
           }
         },
         "zh-Hans" : {
@@ -3282,6 +3852,12 @@
             "value" : "買い切り(永久利用権)"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожизненный доступ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3314,6 +3890,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "買い切り(永久利用権) · %@ · 1回払い、自動更新なし"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожизненный доступ · %@ · разовый платёж, без автопродления"
           }
         },
         "zh-Hans" : {
@@ -3350,6 +3932,12 @@
             "value" : "プランを選ぶ"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите план"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3382,6 +3970,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "1回の支払いでずっと使える"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Один платёж — доступ навсегда"
           }
         },
         "zh-Hans" : {
@@ -3418,6 +4012,12 @@
             "value" : "今後のコンテンツ更新をすべて利用可能"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все будущие обновления контента"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3450,6 +4050,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "現役エンジニアが最も多くやらかすミスを\n先に知って、より早く成長しましょう"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Узнайте заранее, какие ошибки чаще всего\nделают разработчики, и растите быстрее"
           }
         },
         "zh-Hans" : {
@@ -3486,6 +4092,12 @@
             "value" : "OK"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ОК"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3518,6 +4130,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえり記録"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Записи ретроспектив"
           }
         },
         "zh-Hans" : {
@@ -3554,6 +4172,12 @@
             "value" : "ふりかえり記録はありません"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Записей ретроспектив пока нет"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3586,6 +4210,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえり済み"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ретроспектива пройдена"
           }
         },
         "zh-Hans" : {
@@ -3622,6 +4252,12 @@
             "value" : "ふりかえり日誌"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дневник ретроспектив"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3654,6 +4290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえりを書く"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Написать ретроспективу"
           }
         },
         "zh-Hans" : {
@@ -3690,6 +4332,12 @@
             "value" : "ふりかえり質問"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вопросы для ретроспективы"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3724,6 +4372,12 @@
             "value" : "ふりかえりで\n本当の成長を実感しよう"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ретроспектива — путь\nк настоящему росту"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3756,6 +4410,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ふりかえった項目"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разобранные ошибки"
           }
         },
         "zh-Hans" : {

@@ -29,6 +29,12 @@
             "value" : "실수 100"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 ошибок джуна"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -69,6 +75,12 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "실수 100"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 ошибок джуна"
           }
         },
         "zh-Hans" : {
