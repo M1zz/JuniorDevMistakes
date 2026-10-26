@@ -89,6 +89,12 @@
             "value" : "100 feil"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Fouten"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -213,6 +219,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 feil"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Fouten"
           }
         },
         "pt-BR" : {

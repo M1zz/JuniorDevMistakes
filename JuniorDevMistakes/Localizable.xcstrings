@@ -87,6 +87,12 @@
             "value" : "%lld / 100 opplevd"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 meegemaakt"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -222,6 +228,12 @@
             "value" : "%lld stk."
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -338,6 +350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld fullført"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld voltooid"
           }
         },
         "pt-BR" : {
@@ -458,6 +476,12 @@
             "value" : "%lld kategorier er låst"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld categorieën zijn vergrendeld"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -574,6 +598,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld elementer"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld items"
           }
         },
         "pt-BR" : {
@@ -697,6 +727,12 @@
             "value" : "/år"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/jaar"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -815,6 +851,12 @@
             "value" : "/mnd"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/maand"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -928,6 +970,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/dag"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "/dag"
@@ -1051,6 +1099,12 @@
             "value" : "/uke"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/week"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1167,6 +1221,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sjekkliste over\n100 feil"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 fouten\nchecklist"
           }
         },
         "pt-BR" : {
@@ -1287,6 +1347,12 @@
             "value" : "Alle 100 feil er tilgjengelige"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle 100 fouten beschikbaar"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1403,6 +1469,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Full vekstsporing for alle 100"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volledige groeivoortgang voor alle 100"
           }
         },
         "pt-BR" : {
@@ -1523,6 +1595,12 @@
             "value" : "10 kategorier, 100 feil\nLær dem før du gjør dem selv"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 categorieën, 100 fouten\nLeer ze kennen voordat je ze zelf maakt"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1641,6 +1719,12 @@
             "value" : "280 ekstra refleksjonsspørsmål"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 extra terugblikvragen"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1754,6 +1838,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -1877,6 +1967,12 @@
             "value" : "Du har PRO"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO actief"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1993,6 +2089,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dette får du med PRO"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dit zit in PRO"
           }
         },
         "pt-BR" : {
@@ -2113,6 +2215,12 @@
             "value" : "Oppgrader til PRO"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade naar PRO"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2229,6 +2337,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oppgrader til PRO og lær alt"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade naar PRO en leer alles"
           }
         },
         "pt-BR" : {
@@ -2349,6 +2463,12 @@
             "value" : "Spm. %lld"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "V%lld"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2465,6 +2585,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dataene dine følger deg på iPhone,\niPad og Mac via iCloud"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Op iPhone, iPad en Mac\nblijft je data via iCloud altijd bij"
           }
         },
         "pt-BR" : {
@@ -2588,6 +2714,12 @@
             "value" : "Svar på refleksjonsspørsmålene\nfor hver feil"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beantwoord de terugblikvragen\nbij elke fout"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2704,6 +2836,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Svar på refleksjonsspørsmål for hver feil,\nså gjør du den ikke to ganger"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Door bij elke fout de terugblikvragen\nte beantwoorden maak je dezelfde fout geen twee keer"
           }
         },
         "pt-BR" : {
@@ -2824,6 +2962,12 @@
             "value" : "Personvernerklæring"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacybeleid"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2940,6 +3084,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nesten i mål!\nDu har allerede lært masse"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bijna daar!\nJe hebt vast al ontzettend veel geleerd"
           }
         },
         "pt-BR" : {
@@ -3060,6 +3210,12 @@
             "value" : "Hopp over"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overslaan"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3176,6 +3332,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Opplevd"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meegemaakt"
           }
         },
         "pt-BR" : {
@@ -3296,6 +3458,12 @@
             "value" : "Opplevde feil"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meegemaakte fouten"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3409,6 +3577,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnement"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abonnement"
@@ -3532,6 +3706,12 @@
             "value" : "Abonner for å låse opp"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonneer om te ontgrendelen"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3648,6 +3828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kunne ikke gjenopprette kjøp."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aankopen herstellen is mislukt."
           }
         },
         "pt-BR" : {
@@ -3768,6 +3954,12 @@
             "value" : "Gjenopprett kjøp"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aankopen herstellen"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3884,6 +4076,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kjøpsforespørselen er mottatt. Innholdet låses opp automatisk når den er godkjent."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je aankoopverzoek is ontvangen. Na goedkeuring wordt alles automatisch ontgrendeld."
           }
         },
         "pt-BR" : {
@@ -4004,6 +4202,12 @@
             "value" : "Det oppstod en feil under kjøpet."
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er is een fout opgetreden bij de aankoop."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4120,6 +4324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kunne ikke bekrefte kjøpet. Prøv igjen om litt."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We konden je aankoop niet bevestigen. Probeer het later opnieuw."
           }
         },
         "pt-BR" : {
@@ -4240,6 +4450,12 @@
             "value" : "Du vokser jevnt og trutt!\nJo flere feil, desto bedre blir du"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je groeit gestaag!\nHoe meer fouten, hoe meer vakmanschap"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4356,6 +4572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lås opp de resterende 70 feilene"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ontgrendel de overige 70 fouten"
           }
         },
         "pt-BR" : {
@@ -4476,6 +4698,12 @@
             "value" : "Min vekstreise"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mijn groeireis"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4592,6 +4820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mine 100 feil"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mijn 100 fouten"
           }
         },
         "pt-BR" : {
@@ -4712,6 +4946,12 @@
             "value" : "Mine refleksjoner"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mijn terugblikken"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4828,6 +5068,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prøv igjen"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opnieuw proberen"
           }
         },
         "pt-BR" : {
@@ -4948,6 +5194,12 @@
             "value" : "Neste"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volgende"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5064,6 +5316,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gegevens"
           }
         },
         "pt-BR" : {
@@ -5184,6 +5442,12 @@
             "value" : "Bare noen få igjen!\nMålstreken er like foran deg"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nog maar een paar te gaan!\nDe finish is in zicht"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5300,6 +5564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synkroniseres automatisk\npå alle enhetene dine"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisch gesynchroniseerd\nop al je apparaten"
           }
         },
         "pt-BR" : {
@@ -5420,6 +5690,12 @@
             "value" : "Tilbakestill alle data"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle gegevens wissen"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5536,6 +5812,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "All fremgang slettes. Dette kan ikke angres."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al je voortgang wordt verwijderd. Dit kan niet ongedaan worden gemaakt."
           }
         },
         "pt-BR" : {
@@ -5656,6 +5938,12 @@
             "value" : "Versjon"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versie"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5772,6 +6060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen kjøp å gjenopprette."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er zijn geen aankopen om te herstellen."
           }
         },
         "pt-BR" : {
@@ -5892,6 +6186,12 @@
             "value" : "Bokmerker"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bladwijzers"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6008,6 +6308,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen bokmerkede elementer"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geen bladwijzers"
           }
         },
         "pt-BR" : {
@@ -6128,6 +6434,12 @@
             "value" : "Slett"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwijderen"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6244,6 +6556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trykk på bokmerkeknappen i detaljvisningen\nfor å lagre det du vil se senere"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tik in het detailscherm op de bladwijzerknop\nom items voor later te bewaren"
           }
         },
         "pt-BR" : {
@@ -6364,6 +6682,12 @@
             "value" : "Henter produktinformasjon ..."
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Productinformatie laden..."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6480,6 +6804,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kunne ikke hente produktinformasjon.\nSjekk nettverkstilkoblingen."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Productinformatie kon niet worden geladen.\nControleer je netwerkverbinding."
           }
         },
         "pt-BR" : {
@@ -6600,6 +6930,12 @@
             "value" : "Innstillinger"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellingen"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6716,6 +7052,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kom i gang"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aan de slag"
           }
         },
         "pt-BR" : {
@@ -6836,6 +7178,12 @@
             "value" : "Lær alle feil #031-100"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle fouten #031-100 leren"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6952,6 +7300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 feil"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Fouten"
           }
         },
         "pt-BR" : {
@@ -7072,6 +7426,12 @@
             "value" : "70 feil til venter på deg\nLås dem opp nå"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er wachten nog 70 fouten op je\nOntgrendel ze nu"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7188,6 +7548,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spør deg selv etter en feil"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vraag jezelf na een fout af"
           }
         },
         "pt-BR" : {
@@ -7308,6 +7674,12 @@
             "value" : "Du har ikke begynt ennå.\nOpplev din første feil!"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je bent nog niet begonnen.\nMaak kennis met je eerste fout!"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7424,6 +7796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Info"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Melding"
           }
         },
         "pt-BR" : {
@@ -7544,6 +7922,12 @@
             "value" : "Skriv svaret ditt her ..."
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schrijf hier je antwoord..."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7660,6 +8044,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reisen er i gang!\nAlle seniorer startet her"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je reis is begonnen!\nElke senior is ooit zo begonnen"
           }
         },
         "pt-BR" : {
@@ -7780,6 +8170,12 @@
             "value" : "Årsabonnement"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaarabonnement"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7896,6 +8292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Årsabonnement · %@/år · fornyes automatisk hvert år"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaarabonnement · %@/jaar · verlengt elk jaar automatisch"
           }
         },
         "pt-BR" : {
@@ -8016,6 +8418,12 @@
             "value" : "Feil"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fout"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8132,6 +8540,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Månedsabonnement"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maandabonnement"
           }
         },
         "pt-BR" : {
@@ -8252,6 +8666,12 @@
             "value" : "Månedsabonnement · %@/mnd · fornyes automatisk hver måned"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maandabonnement · %@/maand · verlengt elke maand automatisch"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8368,6 +8788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spar opptil 50 % mot månedlig"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bespaar tot 50% t.o.v. maandelijks"
           }
         },
         "pt-BR" : {
@@ -8488,6 +8914,12 @@
             "value" : "Månedlige og årlige abonnement fornyes automatisk, og du belastes med mindre du sier opp senest 24 timer før gjeldende periode utløper. Du kan administrere og si opp abonnementet når som helst i Apple ID-innstillingene."
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maand- en jaarabonnementen worden automatisch verlengd, tenzij je minstens 24 uur voor het einde van de huidige periode opzegt. Je kunt je abonnement op elk moment beheren of opzeggen in de instellingen van je Apple ID."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8604,6 +9036,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dette lærer du"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hier groei je van"
           }
         },
         "pt-BR" : {
@@ -8724,6 +9162,12 @@
             "value" : "Slik kan det gå"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zo gaat het mis"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8840,6 +9284,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gjør dette"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zo pak je het aan"
           }
         },
         "pt-BR" : {
@@ -8960,6 +9410,12 @@
             "value" : "Bruksvilkår (EULA)"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruiksvoorwaarden (EULA)"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9076,6 +9532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Populær"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Populair"
           }
         },
         "pt-BR" : {
@@ -9196,6 +9658,12 @@
             "value" : "Lagre"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bewaren"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9312,6 +9780,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles"
           }
         },
         "pt-BR" : {
@@ -9432,6 +9906,12 @@
             "value" : "Tilbakestill alt"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles wissen"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9548,6 +10028,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snart halvveis!\nMed dette tempoet er du snart senior"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je nadert de helft!\nZo ben je zó senior"
           }
         },
         "pt-BR" : {
@@ -9668,6 +10154,12 @@
             "value" : "Over halvveis!\nNå begynner du å se som en erfaren utvikler"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over de helft!\nJe begint te kijken als een medior"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9784,6 +10276,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Om"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
           }
         },
         "pt-BR" : {
@@ -9904,6 +10402,12 @@
             "value" : "100 feil\njuniorutviklere gjør"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De 100 fouten\nvan junior devs"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10020,6 +10524,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 feil juniorutviklere gjør"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De 100 fouten van junior devs"
           }
         },
         "pt-BR" : {
@@ -10142,6 +10652,12 @@
             "value" : "Om 100 feil juniorutviklere gjør"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over De 100 fouten van junior devs"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10258,6 +10774,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Start nå"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nu beginnen"
           }
         },
         "pt-BR" : {
@@ -10378,6 +10900,12 @@
             "value" : "Fremgang"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voortgang"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10494,6 +11022,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sjekklisten, refleksjonene og bokmerkene slettes."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je checklist, terugblikken en bladwijzers worden allemaal verwijderd."
           }
         },
         "pt-BR" : {
@@ -10614,6 +11148,12 @@
             "value" : "Sjekklisten, refleksjonene og bokmerkene slettes. Dette kan ikke angres."
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je checklist, terugblikken en bladwijzers worden allemaal verwijderd. Dit kan niet ongedaan worden gemaakt."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10730,6 +11270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilbakestill"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wissen"
           }
         },
         "pt-BR" : {
@@ -10850,6 +11396,12 @@
             "value" : "Bekreft tilbakestilling"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wissen bevestigen"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10966,6 +11518,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gratulerer! Du har opplevd alle feilene!\nVeien til senior ligger åpen!"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gefeliciteerd! Je hebt alle fouten meegemaakt!\nDe weg naar senior ligt open!"
           }
         },
         "pt-BR" : {
@@ -11086,6 +11644,12 @@
             "value" : "Avbryt"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuleren"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11202,6 +11766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lås opp alle kategorier 4-10"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categorieën 4-10 volledig ontgrendeld"
           }
         },
         "pt-BR" : {
@@ -11322,6 +11892,12 @@
             "value" : "Livstidstilgang"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Levenslange toegang"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11438,6 +12014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Livstidstilgang · %@ · engangsbetaling, ingen automatisk fornyelse"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Levenslange toegang · %@ · eenmalige betaling, geen automatische verlenging"
           }
         },
         "pt-BR" : {
@@ -11558,6 +12140,12 @@
             "value" : "Velg plan"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kies een abonnement"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11674,6 +12262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Betal én gang, bruk for alltid"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eén keer betalen, voor altijd toegang"
           }
         },
         "pt-BR" : {
@@ -11794,6 +12388,12 @@
             "value" : "Alle fremtidige innholdsoppdateringer"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle toekomstige content-updates"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11912,6 +12512,12 @@
             "value" : "Kjenn feilene utviklere oftest gjør,\nså vokser du raskere"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ken de fouten die ontwikkelaars\nhet vaakst maken en groei sneller"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12025,6 +12631,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -12148,6 +12760,12 @@
             "value" : "Refleksjoner"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terugblikken"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12264,6 +12882,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen refleksjoner ennå"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nog geen terugblikken"
           }
         },
         "pt-BR" : {
@@ -12384,6 +13008,12 @@
             "value" : "Reflektert"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teruggeblikt"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12500,6 +13130,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Refleksjonslogg"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terugblikdagboek"
           }
         },
         "pt-BR" : {
@@ -12620,6 +13256,12 @@
             "value" : "Skriv refleksjon"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terugblik schrijven"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12736,6 +13378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Refleksjonsspørsmål"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terugblikvragen"
           }
         },
         "pt-BR" : {
@@ -12856,6 +13504,12 @@
             "value" : "Opplev ekte vekst\nmed refleksjon"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ervaar echte groei\ndoor terug te blikken"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12972,6 +13626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflekterte elementer"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teruggeblikte items"
           }
         },
         "pt-BR" : {

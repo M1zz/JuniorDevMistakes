@@ -1037,3 +1037,55 @@ https://m1zz.github.io/JuniorDevMistakes/nb/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/nb/index.html
+
+## nl
+
+### 이름
+
+100 Fouten: Dev Checklist
+
+### 부제
+
+Leer ervan voordat het misgaat
+
+### 키워드
+
+junior,developer,programmeren,coderen,beginner,carrière,git,debuggen,code review,testen,dagboek
+
+### 프로모션 텍스트
+
+Ken de 100 fouten die junior developers het vaakst maken voordat je ze zelf maakt. Vink ze af, blik terug en maak dezelfde fout nooit twee keer. De eerste 30 zijn gratis.
+
+### 설명
+
+Ken de fouten voordat je ze maakt. 100 Fouten is de groeichecklist met de 100 fouten die junior developers het vaakst maken, zodat je sneller groeit en niet steeds in dezelfde valkuilen trapt.
+
+De fouten zijn ingedeeld in 10 categorieën: gewoontes bij het coderen, debuggen en probleemoplossing, versiebeheer en samenwerking, ontwerp en architectuur, testen en kwaliteit, leren en groeien, communicatie, infrastructuur en deployment, beveiliging en privacy, en performance en optimalisatie. Elke fout wordt in drie stappen uitgelegd: zo gaat het mis, zo pak je het aan en hier groei je van.
+
+Vink de fouten af die je zelf hebt meegemaakt en beantwoord bij elke fout de terugblikvragen in je terugblikdagboek. Met in totaal 400 vragen wordt snel lezen echt begrip. Je ziet je voortgang per categorie en over alle 100 fouten, en met bladwijzers bewaar je wat je later nog eens wilt bekijken.
+
+Je gegevens worden via iCloud (CloudKit) gesynchroniseerd tussen iPhone, iPad en Mac, zodat je overal verdergaat waar je gebleven was. De app verzamelt geen persoonsgegevens en bevat geen analyses of advertenties.
+
+Probeer de eerste 30 fouten (3 categorieën) gratis uit. Met PRO ontgrendel je alle 100. PRO is er als maand- of jaarabonnement, waarbij het jaarabonnement tot 50% goedkoper is dan maandelijks, en als levenslange toegang met een eenmalige betaling.
+
+Maand- en jaarabonnementen worden automatisch verlengd, tenzij je minstens 24 uur voor het einde van de huidige periode opzegt. Je kunt je abonnement op elk moment beheren of opzeggen in de instellingen van je Apple ID.
+
+Leer het niet op de harde manier. Ken de fouten vroeg, leer ervan en groei sneller als developer.
+
+Gebruiksvoorwaarden (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Privacybeleid (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/nl/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/nl/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/nl/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/nl/index.html

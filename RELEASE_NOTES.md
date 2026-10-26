@@ -121,3 +121,9 @@ Pertanyaan refleksi juga dalam bahasamu
 Nå kan du bruke 100 feil på flere språk
 Appen og feilene følger enhetens språk
 Refleksjonsspørsmål på ditt eget språk
+
+### 앱스토어 (nl)
+
+100 Fouten nu in veel talen
+Scherm en inhoud volgen je apparaattaal
+Terugblikvragen nu ook in jouw taal
