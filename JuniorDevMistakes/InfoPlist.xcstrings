@@ -65,6 +65,12 @@
             "value" : "100 ошибок джуна"
           }
         },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 ข้อพลาด"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -141,6 +147,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 ошибок джуна"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 ข้อพลาด"
           }
         },
         "zh-Hans" : {

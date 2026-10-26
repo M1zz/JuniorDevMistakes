@@ -73,3 +73,9 @@ Rifletti e rispondi nella tua lingua
 Veja os 100 Erros em vários idiomas
 O app muda conforme o idioma do aparelho
 Responda às retrospectivas no seu idioma
+
+### 앱스토어 (th)
+
+ตอนนี้ดู 100 ข้อพลาดได้หลายภาษาแล้ว
+หน้าจอและเนื้อหาเปลี่ยนตามภาษาของเครื่อง
+อ่านและตอบคำถามทบทวนเป็นภาษาของคุณได้
