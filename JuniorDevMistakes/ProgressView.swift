@@ -103,14 +103,14 @@ struct OverallProgressView: View {
 
     private var progressMessage: String {
         switch manager.totalChecked {
-        case 0: return "아직 시작하지 않았습니다.\n첫 번째 실수를 경험해보세요!"
-        case 1...10: return "여정을 시작했습니다!\n모든 시니어도 여기서 시작했어요"
-        case 11...30: return "꾸준히 성장하고 있습니다!\n실수가 쌓일수록 실력도 쌓입니다"
-        case 31...50: return "절반에 가까워지고 있습니다!\n이 속도면 금방 시니어가 되겠네요"
-        case 51...70: return "절반을 넘었습니다!\n이제 중급 개발자의 시야가 보이기 시작합니다"
-        case 71...90: return "거의 다 왔습니다!\n이 정도면 이미 많은 것을 배웠을 거예요"
-        case 91...99: return "마지막 몇 개만 남았습니다!\n완주가 코앞입니다"
-        case 100: return "축하합니다! 모든 실수를 경험했습니다!\n이제 시니어의 길이 열렸습니다!"
+        case 0: return String(localized: "아직 시작하지 않았습니다.\n첫 번째 실수를 경험해보세요!")
+        case 1...10: return String(localized: "여정을 시작했습니다!\n모든 시니어도 여기서 시작했어요")
+        case 11...30: return String(localized: "꾸준히 성장하고 있습니다!\n실수가 쌓일수록 실력도 쌓입니다")
+        case 31...50: return String(localized: "절반에 가까워지고 있습니다!\n이 속도면 금방 시니어가 되겠네요")
+        case 51...70: return String(localized: "절반을 넘었습니다!\n이제 중급 개발자의 시야가 보이기 시작합니다")
+        case 71...90: return String(localized: "거의 다 왔습니다!\n이 정도면 이미 많은 것을 배웠을 거예요")
+        case 91...99: return String(localized: "마지막 몇 개만 남았습니다!\n완주가 코앞입니다")
+        case 100: return String(localized: "축하합니다! 모든 실수를 경험했습니다!\n이제 시니어의 길이 열렸습니다!")
         default: return ""
         }
     }
@@ -122,25 +122,25 @@ struct OverallProgressView: View {
                 icon: "checkmark.circle.fill",
                 color: AppTheme.actionGreen,
                 value: "\(manager.totalChecked)",
-                label: "경험한 실수"
+                label: String(localized: "경험한 실수")
             )
             StatCard(
                 icon: "text.book.closed.fill",
                 color: AppTheme.retroAmber,
                 value: "\(manager.totalRetroEntries)",
-                label: "회고 기록"
+                label: String(localized: "회고 기록")
             )
             StatCard(
                 icon: "brain.head.profile",
                 color: AppTheme.primaryLight,
                 value: "\(manager.mistakesWithRetro)",
-                label: "회고한 항목"
+                label: String(localized: "회고한 항목")
             )
             StatCard(
                 icon: "bookmark.fill",
                 color: AppTheme.growthBlue,
                 value: "\(manager.bookmarkedItems.count)",
-                label: "북마크"
+                label: String(localized: "북마크")
             )
         }
     }

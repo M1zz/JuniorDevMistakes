@@ -19,22 +19,22 @@ struct PaywallView: View {
         guard let p = selectedProduct else { return nil }
         switch p.id {
         case StoreKitManager.monthlyId:
-            return "월간 구독 · \(p.displayPrice)/월 · 매월 자동 갱신"
+            return String(localized: "월간 구독 · \(p.displayPrice)/월 · 매월 자동 갱신")
         case StoreKitManager.yearlyId:
-            return "연간 구독 · \(p.displayPrice)/년 · 매년 자동 갱신"
+            return String(localized: "연간 구독 · \(p.displayPrice)/년 · 매년 자동 갱신")
         case StoreKitManager.lifetimeId:
-            return "평생 이용권 · \(p.displayPrice) · 1회 결제, 자동 갱신 없음"
+            return String(localized: "평생 이용권 · \(p.displayPrice) · 1회 결제, 자동 갱신 없음")
         default:
             return "\(p.displayName) · \(p.displayPrice)"
         }
     }
 
     private let featureItems: [(String, String)] = [
-        ("lock.open.fill",          "카테고리 4-10 완전 잠금 해제"),
-        ("number.circle.fill",      "실수 #031-100 전체 학습"),
-        ("questionmark.bubble.fill","280개 추가 회고 질문"),
-        ("chart.bar.fill",          "100개 완전한 성장 추적"),
-        ("sparkles",                "향후 모든 콘텐츠 업데이트"),
+        ("lock.open.fill",          String(localized: "카테고리 4-10 완전 잠금 해제")),
+        ("number.circle.fill",      String(localized: "실수 #031-100 전체 학습")),
+        ("questionmark.bubble.fill",String(localized: "280개 추가 회고 질문")),
+        ("chart.bar.fill",          String(localized: "100개 완전한 성장 추적")),
+        ("sparkles",                String(localized: "향후 모든 콘텐츠 업데이트")),
     ]
 
     var body: some View {
@@ -313,27 +313,27 @@ struct ProductOptionCard: View {
     private var periodLabel: String {
         guard let sub = product.subscription else { return "" }
         switch sub.subscriptionPeriod.unit {
-        case .month: return "/월"
-        case .year:  return "/년"
-        case .week:  return "/주"
-        case .day:   return "/일"
+        case .month: return String(localized: "/월")
+        case .year:  return String(localized: "/년")
+        case .week:  return String(localized: "/주")
+        case .day:   return String(localized: "/일")
         @unknown default: return ""
         }
     }
 
     private var titleLabel: String {
         switch product.id {
-        case StoreKitManager.monthlyId:  return "월간 구독"
-        case StoreKitManager.yearlyId:   return "연간 구독"
-        case StoreKitManager.lifetimeId: return "평생 이용권"
+        case StoreKitManager.monthlyId:  return String(localized: "월간 구독")
+        case StoreKitManager.yearlyId:   return String(localized: "연간 구독")
+        case StoreKitManager.lifetimeId: return String(localized: "평생 이용권")
         default: return product.displayName
         }
     }
 
     private var subtitleLabel: String? {
         switch product.id {
-        case StoreKitManager.yearlyId:   return "월간 대비 최대 50% 절약"
-        case StoreKitManager.lifetimeId: return "한 번 결제로 영구 이용"
+        case StoreKitManager.yearlyId:   return String(localized: "월간 대비 최대 50% 절약")
+        case StoreKitManager.lifetimeId: return String(localized: "한 번 결제로 영구 이용")
         default: return nil
         }
     }

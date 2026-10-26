@@ -124,7 +124,7 @@ struct MistakeDetailView: View {
     private var situationSection: some View {
         ContentSection(
             icon: "exclamationmark.triangle.fill",
-            title: "이런 상황이 벌어집니다",
+            title: String(localized: "이런 상황이 벌어집니다"),
             color: AppTheme.situationRed,
             content: item.situation
         )
@@ -134,7 +134,7 @@ struct MistakeDetailView: View {
     private var actionSection: some View {
         ContentSection(
             icon: "lightbulb.fill",
-            title: "이렇게 하세요",
+            title: String(localized: "이렇게 하세요"),
             color: AppTheme.actionGreen,
             content: item.action
         )
@@ -144,7 +144,7 @@ struct MistakeDetailView: View {
     private var growthSection: some View {
         ContentSection(
             icon: "arrow.up.right.circle.fill",
-            title: "이것을 배우며 성장합니다",
+            title: String(localized: "이것을 배우며 성장합니다"),
             color: AppTheme.growthBlue,
             content: item.growth
         )

@@ -15,26 +15,26 @@ struct OnboardingView: View {
         Page(
             icon: "chevron.left.forwardslash.chevron.right",
             iconColor: AppTheme.primaryLight,
-            title: "주니어 개발자의\n실수 100",
-            description: "현직 개발자들이 가장 많이 하는\n실수를 미리 알고 더 빨리 성장하세요"
+            title: String(localized: "주니어 개발자의\n실수 100"),
+            description: String(localized: "현직 개발자들이 가장 많이 하는\n실수를 미리 알고 더 빨리 성장하세요")
         ),
         Page(
             icon: "checkmark.circle.fill",
             iconColor: AppTheme.actionGreen,
-            title: "100가지 실수\n체크리스트",
-            description: "10개 카테고리, 100가지 실수\n직접 경험하기 전에 미리 배우세요"
+            title: String(localized: "100가지 실수\n체크리스트"),
+            description: String(localized: "10개 카테고리, 100가지 실수\n직접 경험하기 전에 미리 배우세요")
         ),
         Page(
             icon: "book.closed.fill",
             iconColor: AppTheme.retroAmber,
-            title: "회고로 진짜\n성장을 경험하세요",
-            description: "각 실수마다 회고 질문에 답하며\n같은 실수를 두 번 하지 않게 됩니다"
+            title: String(localized: "회고로 진짜\n성장을 경험하세요"),
+            description: String(localized: "각 실수마다 회고 질문에 답하며\n같은 실수를 두 번 하지 않게 됩니다")
         ),
         Page(
             icon: "icloud.fill",
             iconColor: AppTheme.growthBlue,
-            title: "모든 기기에서\n자동으로 동기화",
-            description: "iPhone, iPad, Mac에서\niCloud로 데이터가 항상 이어집니다"
+            title: String(localized: "모든 기기에서\n자동으로 동기화"),
+            description: String(localized: "iPhone, iPad, Mac에서\niCloud로 데이터가 항상 이어집니다")
         ),
     ]
 

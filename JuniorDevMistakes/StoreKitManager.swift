@@ -71,18 +71,18 @@ final class StoreKitManager: ObservableObject {
                 case .unverified(let tx, _):
                     // 검증 실패 트랜잭션도 정리해 결제 큐에 쌓이지 않도록 처리
                     await tx.finish()
-                    purchaseError = "구매를 확인하지 못했습니다. 잠시 후 다시 시도해 주세요."
+                    purchaseError = String(localized: "구매를 확인하지 못했습니다. 잠시 후 다시 시도해 주세요.")
                 }
             case .pending:
                 // Ask to Buy / 결제 승인 대기 등
-                infoMessage = "구매 요청이 접수되었습니다. 승인이 완료되면 자동으로 잠금이 해제됩니다."
+                infoMessage = String(localized: "구매 요청이 접수되었습니다. 승인이 완료되면 자동으로 잠금이 해제됩니다.")
             case .userCancelled:
                 break // 사용자가 취소 — 오류 아님
             @unknown default:
                 break
             }
         } catch {
-            purchaseError = "구매 중 오류가 발생했습니다."
+            purchaseError = String(localized: "구매 중 오류가 발생했습니다.")
         }
     }
 
@@ -94,10 +94,10 @@ final class StoreKitManager: ObservableObject {
             try await AppStore.sync()
             await refreshStatus()
             if !isPremium {
-                infoMessage = "복원할 구매 내역이 없습니다."
+                infoMessage = String(localized: "복원할 구매 내역이 없습니다.")
             }
         } catch {
-            purchaseError = "구매 복원에 실패했습니다."
+            purchaseError = String(localized: "구매 복원에 실패했습니다.")
         }
     }
 

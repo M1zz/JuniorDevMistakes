@@ -79,7 +79,7 @@ struct RetroJournalView: View {
     private var filterBar: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
-                FilterChip(title: "전체", isSelected: filterCategory == nil) {
+                FilterChip(title: String(localized: "전체"), isSelected: filterCategory == nil) {
                     withAnimation(.easeInOut(duration: 0.2)) {
                         filterCategory = nil
                     }
