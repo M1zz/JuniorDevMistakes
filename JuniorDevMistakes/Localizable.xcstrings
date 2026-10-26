@@ -20,6 +20,12 @@
             "state" : "translated",
             "value" : "%lld / 100 experienced"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已踩坑 %lld / 100"
+          }
         }
       }
     },
@@ -53,6 +59,12 @@
             "state" : "translated",
             "value" : "%lld"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 个"
+          }
         }
       }
     },
@@ -68,6 +80,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld done"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已完成 %lld 个"
           }
         }
       }
@@ -85,6 +103,12 @@
             "state" : "translated",
             "value" : "%lld categories are locked"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 个分类未解锁"
+          }
         }
       }
     },
@@ -100,6 +124,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld items"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 项"
           }
         }
       }
@@ -120,6 +150,12 @@
             "state" : "translated",
             "value" : "/year"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/年"
+          }
         }
       }
     },
@@ -135,6 +171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/month"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/月"
           }
         }
       }
@@ -152,6 +194,12 @@
             "state" : "translated",
             "value" : "/day"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/天"
+          }
         }
       }
     },
@@ -167,6 +215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/week"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/周"
           }
         }
       }
@@ -184,6 +238,12 @@
             "state" : "translated",
             "value" : "100 Mistakes\nChecklist"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 个常见错误\n清单"
+          }
         }
       }
     },
@@ -199,6 +259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "All 100 mistakes available"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 个错误全部可看"
           }
         }
       }
@@ -216,6 +282,12 @@
             "state" : "translated",
             "value" : "Track your progress across all 100"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完整追踪 100 个错误的成长"
+          }
         }
       }
     },
@@ -231,6 +303,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "10 categories, 100 mistakes\nLearn them before you make them"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 个分类，100 个错误\n先学一遍，少踩几个坑"
           }
         }
       }
@@ -248,6 +326,12 @@
             "state" : "translated",
             "value" : "280 more reflection questions"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "另外 280 个复盘问题"
+          }
         }
       }
     },
@@ -260,6 +344,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -280,6 +370,12 @@
             "state" : "translated",
             "value" : "PRO active"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO 使用中"
+          }
         }
       }
     },
@@ -295,6 +391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "What PRO includes"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO 方案包含内容"
           }
         }
       }
@@ -312,6 +414,12 @@
             "state" : "translated",
             "value" : "Upgrade to PRO"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "升级到 PRO"
+          }
         }
       }
     },
@@ -328,6 +436,12 @@
             "state" : "translated",
             "value" : "Upgrade to PRO to learn them all"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "升级到 PRO，学习全部内容"
+          }
         }
       }
     },
@@ -340,6 +454,12 @@
           }
         },
         "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Q%lld"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Q%lld"
@@ -360,6 +480,12 @@
             "state" : "translated",
             "value" : "Your data stays in step across\niPhone, iPad and Mac with iCloud"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通过 iCloud，数据在\niPhone、iPad 和 Mac 上始终同步"
+          }
         }
       }
     },
@@ -379,6 +505,12 @@
             "state" : "translated",
             "value" : "Answer the reflection questions\nfor each mistake"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "针对每个错误的复盘问题\n写下你的回答吧"
+          }
         }
       }
     },
@@ -394,6 +526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Answer the reflection questions for each mistake\nand don't make the same one twice"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "回答每个错误的复盘问题\n同一个坑不再踩第二次"
           }
         }
       }
@@ -411,6 +549,12 @@
             "state" : "translated",
             "value" : "Privacy Policy"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐私政策"
+          }
         }
       }
     },
@@ -426,6 +570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nearly there!\nYou've already learned a great deal"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快到终点了！\n这一路你已经学到了很多"
           }
         }
       }
@@ -443,6 +593,12 @@
             "state" : "translated",
             "value" : "Skip"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跳过"
+          }
         }
       }
     },
@@ -458,6 +614,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Experienced"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已踩坑"
           }
         }
       }
@@ -475,6 +637,12 @@
             "state" : "translated",
             "value" : "Mistakes experienced"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "踩过的坑"
+          }
         }
       }
     },
@@ -490,6 +658,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Subscribe"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "订阅"
           }
         }
       }
@@ -507,6 +681,12 @@
             "state" : "translated",
             "value" : "Subscribe to unlock"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "订阅并解锁"
+          }
         }
       }
     },
@@ -522,6 +702,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't restore your purchases."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢复购买失败。"
           }
         }
       }
@@ -539,6 +725,12 @@
             "state" : "translated",
             "value" : "Restore purchases"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢复购买"
+          }
         }
       }
     },
@@ -554,6 +746,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your purchase request has been sent. Once it's approved, everything will unlock automatically."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "购买请求已提交。批准后将自动解锁。"
           }
         }
       }
@@ -571,6 +769,12 @@
             "state" : "translated",
             "value" : "Something went wrong with your purchase."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "购买时出错。"
+          }
         }
       }
     },
@@ -586,6 +790,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "We couldn't verify your purchase. Please try again in a moment."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法确认购买，请稍后重试。"
           }
         }
       }
@@ -603,6 +813,12 @@
             "state" : "translated",
             "value" : "You're growing steadily!\nThe more mistakes you collect, the more skill you gain"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你在稳步成长！\n踩的坑越多，本事越大"
+          }
         }
       }
     },
@@ -618,6 +834,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unlock the remaining 70 mistakes"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解锁剩下的 70 个错误"
           }
         }
       }
@@ -635,6 +857,12 @@
             "state" : "translated",
             "value" : "My progress"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我的成长之路"
+          }
         }
       }
     },
@@ -650,6 +878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "My 100 Mistakes"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我的踩坑 100"
           }
         }
       }
@@ -667,6 +901,12 @@
             "state" : "translated",
             "value" : "My reflections"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我的复盘记录"
+          }
         }
       }
     },
@@ -682,6 +922,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Try again"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重试"
           }
         }
       }
@@ -699,6 +945,12 @@
             "state" : "translated",
             "value" : "Next"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一步"
+          }
         }
       }
     },
@@ -714,6 +966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Data"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "数据"
           }
         }
       }
@@ -731,6 +989,12 @@
             "state" : "translated",
             "value" : "Only a few left!\nThe finish line is in sight"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只剩最后几个了！\n马上就能通关"
+          }
         }
       }
     },
@@ -746,6 +1010,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synced automatically\non all your devices"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有设备\n自动同步"
           }
         }
       }
@@ -763,6 +1033,12 @@
             "state" : "translated",
             "value" : "Reset all data"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置所有数据"
+          }
         }
       }
     },
@@ -778,6 +1054,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "All your progress data will be deleted. This can't be undone."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有进度数据都将被删除，且无法恢复。"
           }
         }
       }
@@ -795,6 +1077,12 @@
             "state" : "translated",
             "value" : "Version"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "版本"
+          }
         }
       }
     },
@@ -810,6 +1098,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "There are no purchases to restore."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有可恢复的购买记录。"
           }
         }
       }
@@ -827,6 +1121,12 @@
             "state" : "translated",
             "value" : "Bookmarks"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "书签"
+          }
         }
       }
     },
@@ -842,6 +1142,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No bookmarks yet"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还没有添加书签"
           }
         }
       }
@@ -859,6 +1165,12 @@
             "state" : "translated",
             "value" : "Delete"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
+          }
         }
       }
     },
@@ -874,6 +1186,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tap the bookmark button on a detail screen\nto save items for later"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在详情页点按书签按钮\n把想之后再看的内容存下来"
           }
         }
       }
@@ -891,6 +1209,12 @@
             "state" : "translated",
             "value" : "Loading product information..."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在加载商品信息…"
+          }
         }
       }
     },
@@ -906,6 +1230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't load product information.\nPlease check your network connection."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法加载商品信息。\n请检查网络连接。"
           }
         }
       }
@@ -923,6 +1253,12 @@
             "state" : "translated",
             "value" : "Settings"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
+          }
         }
       }
     },
@@ -938,6 +1274,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Get started"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开始"
           }
         }
       }
@@ -955,6 +1297,12 @@
             "state" : "translated",
             "value" : "Learn mistakes #031-100"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "学习第 031–100 个错误"
+          }
         }
       }
     },
@@ -970,6 +1318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Dev Mistakes"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "踩坑100"
           }
         }
       }
@@ -987,6 +1341,12 @@
             "state" : "translated",
             "value" : "70 more mistakes are waiting for you\nUnlock them now"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还有 70 个错误等着你\n现在就解锁吧"
+          }
         }
       }
     },
@@ -1002,6 +1362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ask yourself after a mistake"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "踩坑之后，问问自己"
           }
         }
       }
@@ -1019,6 +1385,12 @@
             "state" : "translated",
             "value" : "You haven't started yet.\nTry your first mistake!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还没有开始。\n去看看第一个坑吧！"
+          }
         }
       }
     },
@@ -1034,6 +1406,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notice"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示"
           }
         }
       }
@@ -1051,6 +1429,12 @@
             "state" : "translated",
             "value" : "Write your answer here..."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在这里写下你的回答…"
+          }
         }
       }
     },
@@ -1066,6 +1450,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "You've begun your journey!\nEvery senior developer started here"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旅程开始了！\n每位资深开发者都是从这里起步的"
           }
         }
       }
@@ -1083,6 +1473,12 @@
             "state" : "translated",
             "value" : "Yearly subscription"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "年度订阅"
+          }
         }
       }
     },
@@ -1098,6 +1494,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yearly subscription · %@/year · renews automatically each year"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "年度订阅 · %@/年 · 每年自动续订"
           }
         }
       }
@@ -1115,6 +1517,12 @@
             "state" : "translated",
             "value" : "Error"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误"
+          }
         }
       }
     },
@@ -1130,6 +1538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Monthly subscription"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月度订阅"
           }
         }
       }
@@ -1147,6 +1561,12 @@
             "state" : "translated",
             "value" : "Monthly subscription · %@/month · renews automatically each month"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月度订阅 · %@/月 · 每月自动续订"
+          }
         }
       }
     },
@@ -1162,6 +1582,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Save up to 50% compared with monthly"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "比月度订阅最多省 50%"
           }
         }
       }
@@ -1179,6 +1605,12 @@
             "state" : "translated",
             "value" : "Monthly and yearly subscriptions renew automatically unless you cancel at least 24 hours before the end of the current period. You can manage or cancel your subscription at any time in your Apple ID settings."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "月度和年度订阅会自动续订。如未在当前订阅期结束前至少 24 小时取消，将自动扣费。你可以随时在 Apple ID 设置中管理或取消订阅。"
+          }
         }
       }
     },
@@ -1194,6 +1626,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "What you learn"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从中成长"
           }
         }
       }
@@ -1211,6 +1649,12 @@
             "state" : "translated",
             "value" : "What happens"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "会发生什么"
+          }
         }
       }
     },
@@ -1226,6 +1670,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "What to do"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正确做法"
           }
         }
       }
@@ -1243,6 +1693,12 @@
             "state" : "translated",
             "value" : "Terms of Use (EULA)"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用条款 (EULA)"
+          }
         }
       }
     },
@@ -1258,6 +1714,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Popular"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "热门"
           }
         }
       }
@@ -1275,6 +1737,12 @@
             "state" : "translated",
             "value" : "Save"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存"
+          }
         }
       }
     },
@@ -1290,6 +1758,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "All"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部"
           }
         }
       }
@@ -1307,6 +1781,12 @@
             "state" : "translated",
             "value" : "Reset everything"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部重置"
+          }
         }
       }
     },
@@ -1322,6 +1802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Closing in on halfway!\nAt this rate you'll be a senior in no time"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快到一半了！\n照这个速度，很快就能成为资深开发者"
           }
         }
       }
@@ -1339,6 +1825,12 @@
             "state" : "translated",
             "value" : "Over halfway!\nYou're starting to see things like a mid-level developer"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已经过半！\n你开始有中级开发者的视野了"
+          }
         }
       }
     },
@@ -1354,6 +1846,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "About"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于"
           }
         }
       }
@@ -1371,6 +1869,12 @@
             "state" : "translated",
             "value" : "100 Mistakes\nJunior Developers Make"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初级开发者\n踩坑100"
+          }
         }
       }
     },
@@ -1386,6 +1890,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Mistakes Junior Developers Make"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初级开发者踩坑100"
           }
         }
       }
@@ -1405,6 +1915,12 @@
             "state" : "translated",
             "value" : "About 100 Mistakes Junior Developers Make"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于初级开发者踩坑100"
+          }
         }
       }
     },
@@ -1420,6 +1936,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Start now"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "立即开始"
           }
         }
       }
@@ -1437,6 +1959,12 @@
             "state" : "translated",
             "value" : "Progress"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "进度"
+          }
         }
       }
     },
@@ -1452,6 +1980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your checklist, reflections and bookmarks will all be deleted."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清单、复盘记录和书签都将被删除。"
           }
         }
       }
@@ -1469,6 +2003,12 @@
             "state" : "translated",
             "value" : "Your checklist, reflections and bookmarks will all be deleted. This can't be undone."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "清单、复盘记录和书签都将被删除，且无法恢复。"
+          }
         }
       }
     },
@@ -1484,6 +2024,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reset"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置"
           }
         }
       }
@@ -1501,6 +2047,12 @@
             "state" : "translated",
             "value" : "Confirm reset"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确认重置"
+          }
         }
       }
     },
@@ -1516,6 +2068,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Congratulations! You've experienced every mistake!\nThe road to senior is now open!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恭喜！100 个坑全部踩完！\n通往资深开发者的路已经打开！"
           }
         }
       }
@@ -1533,6 +2091,12 @@
             "state" : "translated",
             "value" : "Cancel"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
         }
       }
     },
@@ -1548,6 +2112,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unlock categories 4-10 in full"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完全解锁分类 4–10"
           }
         }
       }
@@ -1565,6 +2135,12 @@
             "state" : "translated",
             "value" : "Lifetime pass"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "终身买断"
+          }
         }
       }
     },
@@ -1580,6 +2156,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lifetime pass · %@ · one-off payment, no renewal"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "终身买断 · %@ · 一次付费，不自动续订"
           }
         }
       }
@@ -1597,6 +2179,12 @@
             "state" : "translated",
             "value" : "Choose a plan"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择方案"
+          }
         }
       }
     },
@@ -1612,6 +2200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pay once, keep it for good"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一次付费，永久使用"
           }
         }
       }
@@ -1629,6 +2223,12 @@
             "state" : "translated",
             "value" : "All future content updates"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "后续所有内容更新"
+          }
         }
       }
     },
@@ -1644,6 +2244,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Know the mistakes working developers\nmake most often, and grow faster"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提前了解在职开发者\n最常犯的错误，更快成长"
           }
         }
       }
@@ -1661,6 +2267,12 @@
             "state" : "translated",
             "value" : "OK"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好"
+          }
         }
       }
     },
@@ -1676,6 +2288,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflections"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复盘记录"
           }
         }
       }
@@ -1693,6 +2311,12 @@
             "state" : "translated",
             "value" : "No reflections yet"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "还没有复盘记录"
+          }
         }
       }
     },
@@ -1708,6 +2332,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reflected"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已复盘"
           }
         }
       }
@@ -1725,6 +2355,12 @@
             "state" : "translated",
             "value" : "Reflection journal"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复盘日志"
+          }
         }
       }
     },
@@ -1740,6 +2376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Write a reflection"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "写复盘"
           }
         }
       }
@@ -1757,6 +2399,12 @@
             "state" : "translated",
             "value" : "Reflection questions"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复盘问题"
+          }
         }
       }
     },
@@ -1773,6 +2421,12 @@
             "state" : "translated",
             "value" : "Grow for real\nthrough reflection"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用复盘\n实现真正的成长"
+          }
         }
       }
     },
@@ -1788,6 +2442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Items reflected on"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已复盘的项目"
           }
         }
       }

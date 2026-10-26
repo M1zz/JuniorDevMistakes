@@ -165,6 +165,7 @@
 				ko,
 				en,
 				"en-GB",
+				"zh-Hans",
 				Base,
 			);
 			mainGroup = A50001;

@@ -19,3 +19,9 @@ Reflection questions in your language
 Read 100 Dev Mistakes in more languages
 Screens and stories follow your language
 Reflection questions in your language
+
+### 앱스토어 (zh-Hans)
+
+现已支持多种语言，用你的语言看踩坑100
+界面和踩坑故事会随设备语言自动切换
+复盘问题也能用你的语言阅读和回答
