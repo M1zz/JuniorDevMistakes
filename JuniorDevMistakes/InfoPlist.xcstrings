@@ -113,6 +113,12 @@
             "value" : "100 ошибок джуна"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Misstag"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -249,6 +255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 ошибок джуна"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Misstag"
           }
         },
         "th" : {

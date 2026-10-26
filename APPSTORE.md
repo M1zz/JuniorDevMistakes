@@ -1141,3 +1141,55 @@ https://m1zz.github.io/JuniorDevMistakes/pl/privacy.html
 ### 마케팅 URL
 
 https://m1zz.github.io/JuniorDevMistakes/pl/index.html
+
+## sv
+
+### 이름
+
+100 Misstag: Dev-checklista
+
+### 부제
+
+Lär dig av dem i förväg
+
+### 키워드
+
+juniorutvecklare,programmering,kodgranskning,felsökning,git,karriär,dagbok,reflektion,kod,lärande
+
+### 프로모션 텍스트
+
+Lär dig de 100 misstag som juniorutvecklare oftast gör, innan du gör dem själv. Bocka av, reflektera och gör aldrig samma misstag två gånger. De första 30 är gratis.
+
+### 설명
+
+Känn misstagen innan du gör dem. 100 Misstag är checklistan för din utveckling, med de 100 misstag som juniorutvecklare oftast gör, så att du växer snabbare och slipper upprepa samma fel.
+
+Misstagen är ordnade i 10 kategorier: kodvanor, felsökning och problemlösning, versionshantering och samarbete, design och arkitektur, testning och kvalitet, lärande och utveckling, kommunikation, infrastruktur och driftsättning, säkerhet och integritet samt prestanda och optimering. Varje misstag förklaras i tre steg: så här går det till, gör så här och det här lär du dig och växer av.
+
+Bocka av de misstag du har upplevt och svara på reflektionsfrågorna till varje misstag. Med totalt 400 frågor blir snabbläsning till verklig förståelse. Du ser dina framsteg per kategori och för alla 100 tillsammans, och med bokmärken hittar du tillbaka till det du vill repetera.
+
+Din data synkas mellan iPhone, iPad och Mac via iCloud (CloudKit), så du kan fortsätta där du slutade på vilken enhet du vill. Appen samlar inte in några personuppgifter och har varken analys eller annonser.
+
+Prova de första 30 misstagen (3 kategorier) gratis. Med PRO låser du upp alla 100. PRO finns som månads- eller årsprenumeration, där årsprenumerationen sparar upp till 50 % jämfört med månadsvis, eller som ett engångsköp med livstidsåtkomst.
+
+Månads- och årsprenumerationer förnyas automatiskt om du inte avslutar dem senast 24 timmar före slutet av den aktuella perioden. Du kan när som helst hantera eller avsluta din prenumeration i inställningarna för ditt Apple-ID.
+
+Du behöver inte bränna dig för att lära dig. Känn misstagen i god tid, lär dig av dem och utvecklas snabbare som utvecklare.
+
+Användarvillkor (Terms of Use / EULA):
+https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+Integritetspolicy (Privacy Policy):
+https://m1zz.github.io/JuniorDevMistakes/sv/privacy.html
+
+### 지원 URL
+
+https://m1zz.github.io/JuniorDevMistakes/sv/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/JuniorDevMistakes/sv/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/JuniorDevMistakes/sv/index.html

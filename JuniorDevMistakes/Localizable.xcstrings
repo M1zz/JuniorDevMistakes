@@ -111,6 +111,12 @@
             "value" : "Было такое: %lld / 100"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 upplevda"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -258,6 +264,12 @@
             "value" : "%lld шт."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld st"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -386,6 +398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово: %lld"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld klara"
           }
         },
         "th" : {
@@ -518,6 +536,12 @@
             "value" : "Закрытых категорий: %lld"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld kategorier är låsta"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -646,6 +670,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пунктов: %lld"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld poster"
           }
         },
         "th" : {
@@ -781,6 +811,12 @@
             "value" : "/год"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/år"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -909,6 +945,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/мес."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/mån"
           }
         },
         "th" : {
@@ -1041,6 +1083,12 @@
             "value" : "/день"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/dag"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1169,6 +1217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/нед."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/vecka"
           }
         },
         "th" : {
@@ -1301,6 +1355,12 @@
             "value" : "100 ошибок\nЧек-лист"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checklista med\n100 misstag"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1429,6 +1489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Доступны все 100 ошибок"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alla 100 misstag tillgängliga"
           }
         },
         "th" : {
@@ -1561,6 +1627,12 @@
             "value" : "Отслеживание роста по всем 100"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full tillväxtspårning för alla 100"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1689,6 +1761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "10 категорий, 100 ошибок\nУзнайте о них раньше, чем наступите на грабли"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 kategorier, 100 misstag\nLär dig dem innan du gör dem själv"
           }
         },
         "th" : {
@@ -1821,6 +1899,12 @@
             "value" : "Ещё 280 вопросов для ретроспективы"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 extra reflektionsfrågor"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1946,6 +2030,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -2081,6 +2171,12 @@
             "value" : "PRO активен"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du har PRO"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2209,6 +2305,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Что входит в PRO"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det ingår i PRO"
           }
         },
         "th" : {
@@ -2341,6 +2443,12 @@
             "value" : "Перейти на PRO"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uppgradera till PRO"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2469,6 +2577,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Перейдите на PRO и изучите всё"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uppgradera till PRO och lär dig allt"
           }
         },
         "th" : {
@@ -2601,6 +2715,12 @@
             "value" : "В%lld"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F%lld"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2729,6 +2849,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Данные всегда синхронизируются через\niCloud на iPhone, iPad и Mac"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din data följer med på iPhone,\niPad och Mac via iCloud"
           }
         },
         "th" : {
@@ -2864,6 +2990,12 @@
             "value" : "Ответьте на вопросы ретроспективы\nк каждой ошибке"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svara på reflektionsfrågorna\ntill varje misstag"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2992,6 +3124,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Отвечайте на вопросы ретроспективы по каждой ошибке\nи не наступайте на одни грабли дважды"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genom att svara på reflektionsfrågorna\ngör du aldrig samma misstag två gånger"
           }
         },
         "th" : {
@@ -3124,6 +3262,12 @@
             "value" : "Политика конфиденциальности"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Integritetspolicy"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3252,6 +3396,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Почти у цели!\nВы уже многому научились"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nästan framme!\nDu har säkert lärt dig massor redan"
           }
         },
         "th" : {
@@ -3384,6 +3534,12 @@
             "value" : "Пропустить"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoppa över"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3512,6 +3668,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Было такое"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upplevt"
           }
         },
         "th" : {
@@ -3644,6 +3806,12 @@
             "value" : "Ошибки, которые были"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upplevda misstag"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3772,6 +3940,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Подписка"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prenumeration"
           }
         },
         "th" : {
@@ -3904,6 +4078,12 @@
             "value" : "Оформить подписку и открыть"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prenumerera för att låsa upp"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4032,6 +4212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось восстановить покупки."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gick inte att återställa köpen."
           }
         },
         "th" : {
@@ -4164,6 +4350,12 @@
             "value" : "Восстановить покупки"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återställ köp"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4292,6 +4484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Запрос на покупку отправлен. Как только его одобрят, доступ откроется автоматически."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din köpförfrågan har tagits emot. När den har godkänts låses innehållet upp automatiskt."
           }
         },
         "th" : {
@@ -4424,6 +4622,12 @@
             "value" : "При покупке произошла ошибка."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett fel uppstod under köpet."
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4552,6 +4756,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось подтвердить покупку. Повторите попытку чуть позже."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gick inte att bekräfta köpet. Försök igen om en stund."
           }
         },
         "th" : {
@@ -4684,6 +4894,12 @@
             "value" : "Вы стабильно растёте!\nЧем больше ошибок, тем больше опыта"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du utvecklas stadigt!\nFler misstag ger bättre kunskaper"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4812,6 +5028,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Откройте остальные 70 ошибок"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås upp de återstående 70 misstagen"
           }
         },
         "th" : {
@@ -4944,6 +5166,12 @@
             "value" : "Мой путь роста"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min utvecklingsresa"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5072,6 +5300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Мои 100 ошибок"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mina 100 misstag"
           }
         },
         "th" : {
@@ -5204,6 +5438,12 @@
             "value" : "Мои записи ретроспектив"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mina reflektioner"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5332,6 +5572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Повторить"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Försök igen"
           }
         },
         "th" : {
@@ -5464,6 +5710,12 @@
             "value" : "Далее"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nästa"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5592,6 +5844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Данные"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data"
           }
         },
         "th" : {
@@ -5724,6 +5982,12 @@
             "value" : "Осталось совсем немного!\nФиниш уже близко"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bara ett par kvar!\nMållinjen är nära"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5852,6 +6116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Автоматическая синхронизация\nна всех устройствах"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkas automatiskt\npå alla dina enheter"
           }
         },
         "th" : {
@@ -5984,6 +6254,12 @@
             "value" : "Сбросить все данные"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återställ all data"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6112,6 +6388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Все данные о прогрессе будут удалены. Это действие нельзя отменить."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All data om dina framsteg raderas. Det här kan inte ångras."
           }
         },
         "th" : {
@@ -6244,6 +6526,12 @@
             "value" : "Версия"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6372,6 +6660,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нет покупок для восстановления."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det finns inga köp att återställa."
           }
         },
         "th" : {
@@ -6504,6 +6798,12 @@
             "value" : "Закладки"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bokmärken"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6632,6 +6932,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закладок пока нет"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga bokmärkta poster"
           }
         },
         "th" : {
@@ -6764,6 +7070,12 @@
             "value" : "Удалить"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Radera"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6892,6 +7204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нажмите кнопку закладки на экране ошибки,\nчтобы сохранить её на потом"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck på bokmärkesknappen i detaljvyn\nför att spara poster till senare"
           }
         },
         "th" : {
@@ -7024,6 +7342,12 @@
             "value" : "Загрузка информации о товаре..."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hämtar produktinformation..."
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7152,6 +7476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось загрузить информацию о товаре.\nПроверьте подключение к сети."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gick inte att hämta produktinformationen.\nKontrollera din nätverksanslutning."
           }
         },
         "th" : {
@@ -7284,6 +7614,12 @@
             "value" : "Настройки"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7412,6 +7748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Начать"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom igång"
           }
         },
         "th" : {
@@ -7544,6 +7886,12 @@
             "value" : "Все ошибки №031–100"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lär dig alla misstag #031–100"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7672,6 +8020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 ошибок"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Misstag"
           }
         },
         "th" : {
@@ -7804,6 +8158,12 @@
             "value" : "Вас ждут ещё 70 ошибок\nОткройте их прямо сейчас"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "70 misstag till väntar på dig\nLås upp dem nu"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7932,6 +8292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Спросите себя после ошибки"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fråga dig själv efter misstaget"
           }
         },
         "th" : {
@@ -8064,6 +8430,12 @@
             "value" : "Вы ещё не начали.\nРазберите свою первую ошибку!"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du har inte börjat än.\nUpplev ditt första misstag!"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8192,6 +8564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Уведомление"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Information"
           }
         },
         "th" : {
@@ -8324,6 +8702,12 @@
             "value" : "Напишите ответ здесь..."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv ditt svar här..."
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8452,6 +8836,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Путь начат!\nВсе сеньоры когда-то начинали с этого"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resan har börjat!\nAlla seniorer började här"
           }
         },
         "th" : {
@@ -8584,6 +8974,12 @@
             "value" : "Годовая подписка"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Årsprenumeration"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8712,6 +9108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Годовая подписка · %@/год · автопродление каждый год"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Årsprenumeration · %@/år · förnyas automatiskt varje år"
           }
         },
         "th" : {
@@ -8844,6 +9246,12 @@
             "value" : "Ошибка"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fel"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8972,6 +9380,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Месячная подписка"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månadsprenumeration"
           }
         },
         "th" : {
@@ -9104,6 +9518,12 @@
             "value" : "Месячная подписка · %@/мес. · автопродление каждый месяц"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månadsprenumeration · %@/mån · förnyas automatiskt varje månad"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9232,6 +9652,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Экономия до 50% по сравнению с месячной"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara upp till 50 % jämfört med månadsvis"
           }
         },
         "th" : {
@@ -9364,6 +9790,12 @@
             "value" : "Месячная и годовая подписки продлеваются автоматически, если не отменить их минимум за 24 часа до окончания текущего периода. Управлять подпиской и отменить её можно в любой момент в настройках Apple ID."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Månads- och årsprenumerationer förnyas automatiskt och debiteras om du inte avslutar dem senast 24 timmar före slutet av den aktuella perioden. Du kan när som helst hantera eller avsluta din prenumeration i inställningarna för ditt Apple-ID."
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9492,6 +9924,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Чему вы научитесь"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det här lär du dig och växer av"
           }
         },
         "th" : {
@@ -9624,6 +10062,12 @@
             "value" : "Что происходит"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Så här går det till"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9752,6 +10196,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Как поступить"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gör så här"
           }
         },
         "th" : {
@@ -9884,6 +10334,12 @@
             "value" : "Условия использования (EULA)"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Användarvillkor (EULA)"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10012,6 +10468,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Популярное"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Populärast"
           }
         },
         "th" : {
@@ -10144,6 +10606,12 @@
             "value" : "Сохранить"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10272,6 +10740,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Все"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alla"
           }
         },
         "th" : {
@@ -10404,6 +10878,12 @@
             "value" : "Сбросить всё"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återställ allt"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10532,6 +11012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вы уже почти на полпути!\nС таким темпом скоро станете сеньором"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snart halvvägs!\nI det här tempot är du senior på nolltid"
           }
         },
         "th" : {
@@ -10664,6 +11150,12 @@
             "value" : "Больше половины позади!\nУ вас появляется взгляд мидла"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Över halvvägs!\nNu börjar du se som en mellannivåutvecklare"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10792,6 +11284,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "О приложении"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om"
           }
         },
         "th" : {
@@ -10924,6 +11422,12 @@
             "value" : "100 ошибок\nджуниор-разработчика"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Juniorutvecklarens\n100 misstag"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11052,6 +11556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 ошибок джуниор-разработчика"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Juniorutvecklarens 100 misstag"
           }
         },
         "th" : {
@@ -11186,6 +11696,12 @@
             "value" : "О приложении «100 ошибок джуна»"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om Juniorutvecklarens 100 misstag"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11314,6 +11830,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Начать сейчас"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Börja nu"
           }
         },
         "th" : {
@@ -11446,6 +11968,12 @@
             "value" : "Прогресс"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Framsteg"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11574,6 +12102,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Чек-лист, записи ретроспектив и закладки будут удалены."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checklista, reflektioner och bokmärken raderas."
           }
         },
         "th" : {
@@ -11706,6 +12240,12 @@
             "value" : "Чек-лист, записи ретроспектив и закладки будут удалены. Это действие нельзя отменить."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checklista, reflektioner och bokmärken raderas. Det här kan inte ångras."
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11834,6 +12374,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сбросить"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återställ"
           }
         },
         "th" : {
@@ -11966,6 +12512,12 @@
             "value" : "Подтверждение сброса"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bekräfta återställning"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12094,6 +12646,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поздравляем! Вы прошли все ошибки!\nДорога к сеньору открыта!"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grattis! Du har upplevt alla misstag!\nVägen till senior ligger öppen!"
           }
         },
         "th" : {
@@ -12226,6 +12784,12 @@
             "value" : "Отмена"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12354,6 +12918,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Полный доступ к категориям 4–10"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås upp kategori 4–10 helt"
           }
         },
         "th" : {
@@ -12486,6 +13056,12 @@
             "value" : "Пожизненный доступ"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livstidsåtkomst"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12614,6 +13190,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пожизненный доступ · %@ · разовый платёж, без автопродления"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livstidsåtkomst · %@ · engångsbetalning, ingen automatisk förnyelse"
           }
         },
         "th" : {
@@ -12746,6 +13328,12 @@
             "value" : "Выберите план"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj plan"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12874,6 +13462,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Один платёж — доступ навсегда"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betala en gång, använd för alltid"
           }
         },
         "th" : {
@@ -13006,6 +13600,12 @@
             "value" : "Все будущие обновления контента"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alla framtida innehållsuppdateringar"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13134,6 +13734,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Узнайте заранее, какие ошибки чаще всего\nделают разработчики, и растите быстрее"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lär dig i förväg de misstag som utvecklare\noftast gör och utvecklas snabbare"
           }
         },
         "th" : {
@@ -13266,6 +13872,12 @@
             "value" : "ОК"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13394,6 +14006,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Записи ретроспектив"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflektioner"
           }
         },
         "th" : {
@@ -13526,6 +14144,12 @@
             "value" : "Записей ретроспектив пока нет"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga reflektioner än"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13654,6 +14278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ретроспектива пройдена"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflekterat"
           }
         },
         "th" : {
@@ -13786,6 +14416,12 @@
             "value" : "Дневник ретроспектив"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflektionsdagbok"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13914,6 +14550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Написать ретроспективу"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv reflektion"
           }
         },
         "th" : {
@@ -14046,6 +14688,12 @@
             "value" : "Вопросы для ретроспективы"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflektionsfrågor"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14176,6 +14824,12 @@
             "value" : "Ретроспектива — путь\nк настоящему росту"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upplev verklig\nutveckling genom reflektion"
+          }
+        },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14304,6 +14958,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Разобранные ошибки"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reflekterade poster"
           }
         },
         "th" : {

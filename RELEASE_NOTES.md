@@ -133,3 +133,9 @@ Terugblikvragen nu ook in jouw taal
 100 błędów w wielu językach
 Treści dopasują się do języka urządzenia
 Pytania retrospektywne w twoim języku
+
+### 앱스토어 (sv)
+
+Nu finns 100 Misstag på flera språk
+Appen följer enhetens språk
+Svara på reflektionsfrågor på ditt språk
