@@ -97,3 +97,9 @@ Reflexní otázky ve vašem jazyce
 Nu kan du se 100 Fejl på flere sprog
 Appen og fejlene følger din enheds sprog
 Besvar refleksionsspørgsmål på dit sprog
+
+### 앱스토어 (el)
+
+Δείτε το 100 Λάθη σε πολλές γλώσσες
+Οθόνες και ιστορίες στη γλώσσα σας
+Ερωτήσεις ανασκόπησης στη γλώσσα σας

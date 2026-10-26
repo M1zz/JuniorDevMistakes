@@ -27,6 +27,12 @@
             "value" : "%lld / 100 erlebt"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / 100 λάθη που έζησα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -138,6 +144,12 @@
             "value" : "%lld"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -230,6 +242,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld erledigt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ολοκληρώθηκαν"
           }
         },
         "en" : {
@@ -326,6 +344,12 @@
             "value" : "%lld Kategorien sind gesperrt"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld κατηγορίες είναι κλειδωμένες"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -418,6 +442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld Einträge"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld στοιχεία"
           }
         },
         "en" : {
@@ -517,6 +547,12 @@
             "value" : "/Jahr"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/έτος"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -609,6 +645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/Monat"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/μήνα"
           }
         },
         "en" : {
@@ -705,6 +747,12 @@
             "value" : "/Tag"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/ημέρα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -797,6 +845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "/Woche"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/εβδομάδα"
           }
         },
         "en" : {
@@ -893,6 +947,12 @@
             "value" : "Checkliste mit\n100 Fehlern"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 λάθη\nλίστα ελέγχου"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -985,6 +1045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle 100 Fehler verfügbar"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Και τα 100 λάθη διαθέσιμα"
           }
         },
         "en" : {
@@ -1081,6 +1147,12 @@
             "value" : "Vollständiger Fortschritt über alle 100"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πλήρης παρακολούθηση προόδου στα 100"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1173,6 +1245,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "10 Kategorien, 100 Fehler\nLerne sie, bevor du sie selbst machst"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 κατηγορίες, 100 λάθη\nΜάθετέ τα πριν τα ζήσετε"
           }
         },
         "en" : {
@@ -1269,6 +1347,12 @@
             "value" : "280 weitere Rückblickfragen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 επιπλέον ερωτήσεις ανασκόπησης"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1358,6 +1442,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "PRO"
@@ -1457,6 +1547,12 @@
             "value" : "PRO aktiv"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έχετε PRO"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1549,6 +1645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Das ist in PRO enthalten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι περιλαμβάνει το PRO"
           }
         },
         "en" : {
@@ -1645,6 +1747,12 @@
             "value" : "Auf PRO upgraden"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αναβάθμιση σε PRO"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1737,6 +1845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Auf PRO upgraden und alles lernen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αναβαθμίστε σε PRO και μάθετε τα πάντα"
           }
         },
         "en" : {
@@ -1833,6 +1947,12 @@
             "value" : "F%lld"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ε%lld"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1925,6 +2045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deine Daten bleiben über iCloud\nauf iPhone, iPad und Mac aktuell"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σε iPhone, iPad και Mac\nτα δεδομένα σας συνεχίζονται μέσω iCloud"
           }
         },
         "en" : {
@@ -2024,6 +2150,12 @@
             "value" : "Beantworte zu jedem Fehler\ndie Rückblickfragen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράψτε τις απαντήσεις σας\nστις ερωτήσεις ανασκόπησης κάθε λάθους"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2116,6 +2248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wer bei jedem Fehler die Rückblickfragen beantwortet,\nmacht denselben Fehler nicht zweimal"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απαντώντας στις ερωτήσεις κάθε λάθους,\nδεν θα το κάνετε δεύτερη φορά"
           }
         },
         "en" : {
@@ -2212,6 +2350,12 @@
             "value" : "Datenschutzerklärung"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πολιτική απορρήτου"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2304,6 +2448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fast geschafft!\nDu hast schon richtig viel gelernt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σχεδόν φτάσατε!\nΈχετε ήδη μάθει πολλά"
           }
         },
         "en" : {
@@ -2400,6 +2550,12 @@
             "value" : "Überspringen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Παράλειψη"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2492,6 +2648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erlebt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το έζησα"
           }
         },
         "en" : {
@@ -2588,6 +2750,12 @@
             "value" : "Erlebte Fehler"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λάθη που έζησα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2680,6 +2848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abo"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συνδρομή"
           }
         },
         "en" : {
@@ -2776,6 +2950,12 @@
             "value" : "Abonnieren und freischalten"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συνδρομή για ξεκλείδωμα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2868,6 +3048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Der Kauf konnte nicht wiederhergestellt werden."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η επαναφορά αγορών απέτυχε."
           }
         },
         "en" : {
@@ -2964,6 +3150,12 @@
             "value" : "Käufe wiederherstellen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επαναφορά αγορών"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3056,6 +3248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Deine Kaufanfrage wurde übermittelt. Sobald sie genehmigt ist, wird alles automatisch freigeschaltet."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το αίτημα αγοράς καταχωρίστηκε. Μόλις εγκριθεί, το περιεχόμενο θα ξεκλειδωθεί αυτόματα."
           }
         },
         "en" : {
@@ -3152,6 +3350,12 @@
             "value" : "Beim Kauf ist ein Fehler aufgetreten."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Παρουσιάστηκε σφάλμα κατά την αγορά."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3244,6 +3448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Der Kauf konnte nicht bestätigt werden. Bitte versuche es später erneut."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν ήταν δυνατή η επαλήθευση της αγοράς. Δοκιμάστε ξανά σε λίγο."
           }
         },
         "en" : {
@@ -3340,6 +3550,12 @@
             "value" : "Du wächst stetig!\nMit jedem Fehler wächst auch dein Können"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εξελίσσεστε σταθερά!\nΟσο μαζεύονται τα λάθη, τόσο μαζεύεται και η πείρα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3432,6 +3648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schalte die restlichen 70 Fehler frei"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκλειδώστε τα υπόλοιπα 70 λάθη"
           }
         },
         "en" : {
@@ -3528,6 +3750,12 @@
             "value" : "Meine Lernreise"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η πορεία μου"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3620,6 +3848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Meine 100 Fehler"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τα 100 λάθη μου"
           }
         },
         "en" : {
@@ -3716,6 +3950,12 @@
             "value" : "Meine Rückblicke"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι ανασκοπήσεις μου"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3808,6 +4048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erneut versuchen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δοκιμή ξανά"
           }
         },
         "en" : {
@@ -3904,6 +4150,12 @@
             "value" : "Weiter"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επόμενο"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3996,6 +4248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεδομένα"
           }
         },
         "en" : {
@@ -4092,6 +4350,12 @@
             "value" : "Nur noch ein paar!\nDas Ziel ist zum Greifen nah"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έμειναν μόνο λίγα!\nΟ τερματισμός είναι κοντά"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4184,6 +4448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automatische Synchronisierung\nauf allen Geräten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτόματος συγχρονισμός\nσε όλες τις συσκευές"
           }
         },
         "en" : {
@@ -4280,6 +4550,12 @@
             "value" : "Alle Daten zurücksetzen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επαναφορά όλων των δεδομένων"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4372,6 +4648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dein gesamter Fortschritt wird gelöscht. Das kann nicht rückgängig gemacht werden."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όλα τα δεδομένα προόδου θα διαγραφούν. Η ενέργεια δεν αναιρείται."
           }
         },
         "en" : {
@@ -4468,6 +4750,12 @@
             "value" : "Version"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έκδοση"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4560,6 +4848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Es gibt keine Käufe zum Wiederherstellen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν υπάρχουν αγορές προς επαναφορά."
           }
         },
         "en" : {
@@ -4656,6 +4950,12 @@
             "value" : "Lesezeichen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σελιδοδείκτες"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4748,6 +5048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Keine Einträge mit Lesezeichen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κανένας σελιδοδείκτης"
           }
         },
         "en" : {
@@ -4844,6 +5150,12 @@
             "value" : "Löschen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγραφή"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4936,6 +5248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tippe in der Detailansicht auf das Lesezeichen,\num Einträge für später zu speichern"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε το κουμπί σελιδοδείκτη στην οθόνη λεπτομερειών\nγια να αποθηκεύσετε στοιχεία για αργότερα"
           }
         },
         "en" : {
@@ -5032,6 +5350,12 @@
             "value" : "Produktinformationen werden geladen ..."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φόρτωση πληροφοριών προϊόντος..."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5124,6 +5448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Produktinformationen konnten nicht geladen werden.\nBitte prüfe deine Netzwerkverbindung."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν ήταν δυνατή η φόρτωση των πληροφοριών προϊόντος.\nΕλέγξτε τη σύνδεσή σας στο διαδίκτυο."
           }
         },
         "en" : {
@@ -5220,6 +5550,12 @@
             "value" : "Einstellungen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ρυθμίσεις"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5312,6 +5648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Los geht's"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκινήστε"
           }
         },
         "en" : {
@@ -5408,6 +5750,12 @@
             "value" : "Alle Fehler #031–100 lernen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όλα τα λάθη #031-100"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5500,6 +5848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Dev-Fehler"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 Λάθη"
           }
         },
         "en" : {
@@ -5596,6 +5950,12 @@
             "value" : "70 weitere Fehler warten auf dich\nSchalte sie jetzt frei"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σας περιμένουν άλλα 70 λάθη\nΞεκλειδώστε τα τώρα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5688,6 +6048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Frag dich nach dem Fehler selbst"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ρωτήστε τον εαυτό σας μετά το λάθος"
           }
         },
         "en" : {
@@ -5784,6 +6150,12 @@
             "value" : "Du hast noch nicht angefangen.\nErlebe deinen ersten Fehler!"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν έχετε ξεκινήσει ακόμη.\nΖήστε το πρώτο σας λάθος!"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5876,6 +6248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hinweis"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ειδοποίηση"
           }
         },
         "en" : {
@@ -5972,6 +6350,12 @@
             "value" : "Schreibe hier deine Antwort ..."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράψτε την απάντησή σας εδώ..."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6064,6 +6448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Die Reise hat begonnen!\nJeder Senior hat hier angefangen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η πορεία ξεκίνησε!\nΚάθε senior από εδώ ξεκίνησε"
           }
         },
         "en" : {
@@ -6160,6 +6550,12 @@
             "value" : "Jahresabo"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ετήσια συνδρομή"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6252,6 +6648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jahresabo · %@/Jahr · verlängert sich jährlich automatisch"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ετήσια συνδρομή · %@/έτος · Ανανεώνεται αυτόματα κάθε έτος"
           }
         },
         "en" : {
@@ -6348,6 +6750,12 @@
             "value" : "Fehler"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σφάλμα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6440,6 +6848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Monatsabo"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μηνιαία συνδρομή"
           }
         },
         "en" : {
@@ -6536,6 +6950,12 @@
             "value" : "Monatsabo · %@/Monat · verlängert sich monatlich automatisch"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μηνιαία συνδρομή · %@/μήνα · Ανανεώνεται αυτόματα κάθε μήνα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6628,6 +7048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bis zu 50 % günstiger als monatlich"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έως και 50% φθηνότερα από τη μηνιαία"
           }
         },
         "en" : {
@@ -6724,6 +7150,12 @@
             "value" : "Monats- und Jahresabos verlängern sich automatisch, sofern du sie nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums kündigst. Du kannst dein Abo jederzeit in den Einstellungen deiner Apple-ID verwalten und kündigen."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι μηνιαίες και οι ετήσιες συνδρομές ανανεώνονται αυτόματα και χρεώνονται, εκτός αν ακυρωθούν τουλάχιστον 24 ώρες πριν από τη λήξη της τρέχουσας περιόδου. Μπορείτε να διαχειριστείτε ή να ακυρώσετε τη συνδρομή σας ανά πάσα στιγμή από τις ρυθμίσεις του Apple ID."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6816,6 +7248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Das lernst du dabei"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι θα μάθετε και πώς θα εξελιχθείτε"
           }
         },
         "en" : {
@@ -6912,6 +7350,12 @@
             "value" : "So sieht es aus"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι συμβαίνει"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7004,6 +7448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "So machst du es besser"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι να κάνετε"
           }
         },
         "en" : {
@@ -7100,6 +7550,12 @@
             "value" : "Nutzungsbedingungen (EULA)"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όροι χρήσης (EULA)"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7192,6 +7648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Beliebt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δημοφιλές"
           }
         },
         "en" : {
@@ -7288,6 +7750,12 @@
             "value" : "Sichern"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθήκευση"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7380,6 +7848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όλα"
           }
         },
         "en" : {
@@ -7476,6 +7950,12 @@
             "value" : "Alles zurücksetzen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πλήρης επαναφορά"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7568,6 +8048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Die Hälfte rückt näher!\nSo bist du bald Senior"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πλησιάζετε στη μέση!\nΜε αυτό το ρυθμό θα γίνετε senior σύντομα"
           }
         },
         "en" : {
@@ -7664,6 +8150,12 @@
             "value" : "Mehr als die Hälfte geschafft!\nDu denkst schon wie ein Mid-Level-Entwickler"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περάσατε τη μέση!\nΤώρα αρχίζετε να βλέπετε σαν mid-level developer"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7756,6 +8248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Info"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πληροφορίες"
           }
         },
         "en" : {
@@ -7852,6 +8350,12 @@
             "value" : "100 Fehler\nvon Junior-Entwicklern"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τα 100 λάθη\nενός junior developer"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7944,6 +8448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "100 Fehler von Junior-Entwicklern"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τα 100 λάθη ενός junior developer"
           }
         },
         "en" : {
@@ -8042,6 +8552,12 @@
             "value" : "Info zu 100 Fehler von Junior-Entwicklern"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σχετικά με τα 100 λάθη ενός junior developer"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8134,6 +8650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jetzt starten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκινήστε τώρα"
           }
         },
         "en" : {
@@ -8230,6 +8752,12 @@
             "value" : "Fortschritt"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πρόοδος"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8322,6 +8850,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Checkliste, Rückblicke und Lesezeichen werden vollständig gelöscht."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η λίστα ελέγχου, οι ανασκοπήσεις και οι σελιδοδείκτες θα διαγραφούν."
           }
         },
         "en" : {
@@ -8418,6 +8952,12 @@
             "value" : "Checkliste, Rückblicke und Lesezeichen werden vollständig gelöscht. Das kann nicht rückgängig gemacht werden."
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η λίστα ελέγχου, οι ανασκοπήσεις και οι σελιδοδείκτες θα διαγραφούν. Η ενέργεια δεν αναιρείται."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8510,6 +9050,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zurücksetzen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επαναφορά"
           }
         },
         "en" : {
@@ -8606,6 +9152,12 @@
             "value" : "Zurücksetzen bestätigen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επιβεβαίωση επαναφοράς"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8698,6 +9250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Glückwunsch! Du hast alle Fehler erlebt!\nDer Weg zum Senior steht dir offen!"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συγχαρητήρια! Ζήσατε όλα τα λάθη!\nΟ δρόμος για senior είναι ανοιχτός!"
           }
         },
         "en" : {
@@ -8794,6 +9352,12 @@
             "value" : "Abbrechen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακύρωση"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8886,6 +9450,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kategorien 4–10 komplett freischalten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πλήρες ξεκλείδωμα κατηγοριών 4-10"
           }
         },
         "en" : {
@@ -8982,6 +9552,12 @@
             "value" : "Lifetime-Zugang"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εφ' όρου ζωής"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9074,6 +9650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lifetime-Zugang · %@ · Einmalzahlung, keine automatische Verlängerung"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εφ' όρου ζωής · %@ · Εφάπαξ πληρωμή, χωρίς ανανέωση"
           }
         },
         "en" : {
@@ -9170,6 +9752,12 @@
             "value" : "Tarif wählen"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επιλογή πλάνου"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9262,6 +9850,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Einmal zahlen, dauerhaft nutzen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μία πληρωμή, για πάντα"
           }
         },
         "en" : {
@@ -9358,6 +9952,12 @@
             "value" : "Alle künftigen Inhalts-Updates"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όλες οι μελλοντικές ενημερώσεις περιεχομένου"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9452,6 +10052,12 @@
             "value" : "Lerne die häufigsten Fehler\nvon Entwicklern vorab kennen und wachse schneller"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μάθετε εκ των προτέρων τα λάθη που κάνουν\nοι περισσότεροι developers και εξελιχθείτε ταχύτερα"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9541,6 +10147,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -9640,6 +10252,12 @@
             "value" : "Rückblicke"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ανασκοπήσεις"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9732,6 +10350,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Noch keine Rückblicke"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καμία ανασκόπηση"
           }
         },
         "en" : {
@@ -9828,6 +10452,12 @@
             "value" : "Rückblick fertig"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ανασκόπηση ολοκληρώθηκε"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9920,6 +10550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rückblick-Journal"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ημερολόγιο ανασκόπησης"
           }
         },
         "en" : {
@@ -10016,6 +10652,12 @@
             "value" : "Rückblick schreiben"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράψτε ανασκόπηση"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10108,6 +10750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rückblickfragen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ερωτήσεις ανασκόπησης"
           }
         },
         "en" : {
@@ -10204,6 +10852,12 @@
             "value" : "Echtes Wachstum\ndurch Rückblick"
           }
         },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ζήστε πραγματική εξέλιξη\nμέσα από την ανασκόπηση"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10296,6 +10950,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rückblick-Einträge"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στοιχεία με ανασκόπηση"
           }
         },
         "en" : {
