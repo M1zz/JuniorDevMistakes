@@ -124,6 +124,7 @@ final class StoreKitManager: ObservableObject {
 
     // MARK: - Helpers
     private func setPremium(_ value: Bool) {
+        if ScreenshotScene.current != nil { return }  // 스크린샷은 PRO 화면으로 고정
         isPremium = value
         UserDefaults.standard.set(value, forKey: premiumKey)
     }

@@ -52,22 +52,23 @@ struct ContentView: View {
     @EnvironmentObject var manager: ChecklistManager
     @EnvironmentObject var storeManager: StoreKitManager
     @Environment(\.requestReview) private var requestReview
+    @State private var tab = ScreenshotScene.initialTab
 
     var body: some View {
-        TabView {
-            Tab("실수 100", systemImage: "rectangle.grid.1x2.fill") {
+        TabView(selection: $tab) {
+            Tab("실수 100", systemImage: "rectangle.grid.1x2.fill", value: 0) {
                 CategoryListView()
             }
-            Tab("진행률", systemImage: "chart.bar.fill") {
+            Tab("진행률", systemImage: "chart.bar.fill", value: 1) {
                 OverallProgressView()
             }
-            Tab("회고 일지", systemImage: "book.closed.fill") {
+            Tab("회고 일지", systemImage: "book.closed.fill", value: 2) {
                 RetroJournalView()
             }
-            Tab("북마크", systemImage: "bookmark.fill") {
+            Tab("북마크", systemImage: "bookmark.fill", value: 3) {
                 BookmarkListView()
             }
-            Tab("설정", systemImage: "gearshape.fill") {
+            Tab("설정", systemImage: "gearshape.fill", value: 4) {
                 SettingsView()
             }
         }

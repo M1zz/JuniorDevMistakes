@@ -4,13 +4,14 @@ struct CategoryListView: View {
     @EnvironmentObject var manager: ChecklistManager
     @EnvironmentObject var storeManager: StoreKitManager
     @State private var showPaywall = false
+    @State private var path = ScreenshotScene.initialPath
 
     private var lockedCount: Int {
         allCategories.count - StoreKitManager.freeCategoryLimit
     }
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ScrollView {
                 VStack(spacing: 16) {
                     headerCard
