@@ -1,0 +1,41 @@
+/* 실수 100 웹 체험. 섹션 색은 앱의 상세 화면과 같다: 상황 코랄, 할 일 초록, 성장 파랑, 회고 키 색. */
+.demo-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: var(--s5); align-items: start; }
+
+.jm-head { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s3); margin-bottom: var(--s2); }
+.jm-count { color: var(--muted); font-variant-numeric: tabular-nums; font-weight: 600; }
+.jm-bar { height: 6px; border-radius: 3px; background: var(--bg); overflow: hidden; margin-bottom: var(--s3); }
+.jm-bar i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .35s var(--ease); }
+.jm-list ol { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s1); }
+.jm-list button { display: flex; align-items: flex-start; gap: var(--s3); width: 100%; min-height: 48px; text-align: left;
+                  font: inherit; font-size: .9375rem; line-height: 1.4; color: var(--text); background: transparent;
+                  border: 0; border-radius: var(--r-inner); padding: var(--s2) var(--s3); cursor: pointer;
+                  transition: background .15s var(--ease); }
+.jm-list button:hover { background: var(--bg); }
+.jm-list button.on { background: color-mix(in srgb, var(--accent) 12%, var(--bg)); }
+.jm-list button small { display: block; color: var(--muted); font: 600 .75rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; }
+.jm-list button.done > span:last-child { color: var(--muted); text-decoration: line-through; }
+.jm-check { flex: none; width: 22px; height: 22px; margin-top: 8px; border-radius: 50%; border: 2px solid var(--line); }
+.done .jm-check { background: #38C78C; border-color: #38C78C;
+                  box-shadow: inset 0 0 0 4px var(--surface); }
+
+.jm-detail { background: var(--bg); border-radius: var(--r-inner); padding: var(--s5); outline: none; }
+.jm-detail header { margin-bottom: var(--s4); }
+.jm-detail header small { color: var(--accent); font: 700 .8125rem/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
+.jm-title { font-size: 1.375rem; margin: var(--s2) 0 var(--s4); }
+.jm-done { display: inline-flex; align-items: center; gap: var(--s2); min-height: 44px; padding: 0 var(--s4); cursor: pointer;
+           font: inherit; font-weight: 600; color: var(--text); background: var(--surface); border: 2px solid var(--line);
+           border-radius: 999px; transition: background .2s var(--ease), border-color .2s var(--ease); }
+.jm-done::before { content: ""; width: 16px; height: 16px; border-radius: 50%; border: 2px solid currentColor; opacity: .5; }
+.jm-done[aria-pressed="true"] { background: #38C78C; border-color: #38C78C; color: #fff; }
+.jm-done[aria-pressed="true"]::before { opacity: 1; background: currentColor; }
+.jm-sec { border-left: 3px solid var(--c); padding-left: var(--s4); margin-top: var(--s4); }
+.jm-sec h3 { font-size: 1rem; color: var(--c); margin-bottom: var(--s1); }
+.jm-sec p { margin: 0; color: var(--text); font-size: .9375rem; }
+.jm-sec.happens { --c: #E25555; }
+.jm-sec.todo { --c: #23A26E; }
+.jm-sec.learn { --c: #3F7FDB; }
+.jm-sec.retro { --c: var(--accent); }
+.jm-sec .q b { color: var(--accent); margin-right: var(--s1); }
+
+@media (prefers-reduced-motion: reduce) { .jm-bar i, .jm-done, .jm-list button { transition: none; } }
+@media (max-width: 760px) { .demo-card { grid-template-columns: 1fr; } }

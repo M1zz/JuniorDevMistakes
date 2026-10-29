@@ -1,0 +1,258 @@
+{
+  "title": "100 virhettä: tarkistuslista junior-kehittäjälle",
+  "description": "Lue 100 virhettä, joita junior-kehittäjät tekevät useimmin, merkitse itse tekemäsi ja vastaa pohdintakysymyksiin. Ensimmäiset 30 ilmaiseksi.",
+  "hero": {
+    "headline": "Tunne virheet\nennen kuin sattuu",
+    "lead": "100 virhettä, joita aloittelevat kehittäjät tekevät useimmin, yhdessä paikassa. Jokaisesta luet, mitä tapahtuu, mitä tehdä ja mitä opit, ja vastaat pohdintakysymykseen, jotta et tee samaa virhettä kahdesti.",
+    "cta": "Lataa ilmaiseksi App Storesta",
+    "note": "Ensimmäiset 30 virhettä ovat ilmaisia. iPhonelle, iPadille ja Macille."
+  },
+  "demo": {
+    "title": "Avaa yksi virhe",
+    "lead": "Tässä ovat ensimmäisen ilmaisen kategorian 10 virhettä, sanasta sanaan kuten sovelluksessa. Merkitse jo kokemasi kohdalla Koettu.",
+    "note": "Verkkokokeilu ei tallenna merkintöjä. Sovelluksessa merkinnät ja vastaukset synkronoituvat iCloudin kautta kaikille laitteillesi.",
+    "category": "Koodaustavat",
+    "labels": {
+      "happens": "Näin tässä käy",
+      "todo": "Tee näin",
+      "learn": "Tästä opit ja kasvat",
+      "retro": "Pohdintakysymykset",
+      "done": "Koettu"
+    },
+    "items": [
+      {
+        "n": 1,
+        "mistake": "Nimeää muuttujat merkityksettömästi, esimerkiksi a, b tai x",
+        "situation": "Nopeasti koodatessa temp, data, result ja val tulevat tavaksi. Kirjoitushetkellä konteksti on päässä eikä ongelmaa ole, mutta viikon päästä joudut lukemaan koodin alusta asti miettien, mikä muuttuja tämä oikein oli.",
+        "action": "Mieti nimeä keksiessäsi kolme sekuntia, mitä muuttuja sisältää. Kirjoita rooli nimeen: data-nimen sijaan userProfileList, temp-nimen sijaan formattedDate ja result-nimen sijaan filteredActiveUsers. Tavoitteena on, että koodi luetaan kuin englanninkielinen lause. Esimerkiksi if (isUserActive && hasPermission) kertoo merkityksensä jo ehtolausetta lukemalla.",
+        "growth": "Koodia luetaan kymmenen kertaa enemmän kuin kirjoitetaan. Hyvä nimi on kommenttia vahvempi. Sovi tiimin kanssa yhteiset nimeämiskäytännöt (camelCase, snake_case jne.), vältä lyhenteitä (usr → user, btn → button) ja käytä haettavia nimiä. Pelkästään tämä tapa nopeuttaa koodikatselmointia ja parantaa ylläpidettävyyttä huomattavasti.",
+        "retro": "Oliko viimeaikaisessa koodissasi muuttujia, joiden merkitys oli epäselvä? Mikä nimi se oli ja mikä olisi ollut parempi?"
+      },
+      {
+        "n": 2,
+        "mistake": "Ahtaa yhteen funktioon yli 100 riviä koodia",
+        "situation": "Toteutat yhtä ominaisuutta ja kirjoitat syötteen validoinnin, datan muunnoksen, API-kutsun, tuloksen käsittelyn ja virheenkäsittelyn kaiken yhteen funktioon. Aluksi kokonaisuus on helppo hahmottaa, mutta kun funktio ylittää 200 riviä, muutettavaa kohtaa on vaikea löytää eikä sivuvaikutuksia voi ennustaa.",
+        "action": "Harkitse funktion jakamista, kun se ylittää 20 riviä. Mittapuuna on, voitko kuvata funktion tehtävän yhdellä lauseella. Erota jokainen vaihe omaksi funktiokseen, kuten validateUserInput(), transformToAPIFormat(), callPaymentAPI() ja formatResponse(), ja anna pääfunktion vain kutsua niitä järjestyksessä orkestraattorin tavoin.",
+        "growth": "Opit soveltamaan yhden vastuun periaatetta (SRP) käytännössä. Pienen funktion rooli selviää jo nimestä, sitä voi testata erikseen ja käyttää uudelleen muualla. Kyky jäsentää koodi niin, että sen voi lukea kuin tarinan, on senior-kehittäjän keskeinen taito.",
+        "retro": "Kuinka monta riviä on nykyisen projektisi pisin funktio? Voitko kuvata sen tehtävän yhdellä lauseella?"
+      },
+      {
+        "n": 3,
+        "mistake": "Toistaa koodia kopioimalla ja liittämällä",
+        "situation": "Kun tarvitset samanlaista logiikkaa, kopioit olemassa olevan koodin ja muokkaat siitä vain osan. Käyttäjälistan ja tilauslistan haku ovat 90-prosenttisesti samat, mutta ne on kirjoitettu erikseen. Kun yhteisestä osasta löytyy myöhemmin bugi, joudut etsimään jokaisen kopion ja korjaamaan ne yksitellen, ja yhdenkin unohtaminen tuo saman bugin takaisin muualla.",
+        "action": "Hetki, jolloin haluat kopioida koodia, on refaktoroinnin merkki. Erota yhteinen logiikka funktioksi tai luokaksi ja välitä vain muuttuvat osat parametreina tai takaisinkutsuina. Kun toistoa on kolme kertaa tai enemmän (Rule of Three), abstrahoi se. Esimerkiksi yksi fetchList(endpoint, transformer) voi hoitaa useita listahakuja.",
+        "growth": "Opit DRY-periaatteen (Don't Repeat Yourself) ja abstrahoinnin. Liiallinen abstraktio on kuitenkin riskialtista, joten kysy, muuttuuko koodi todella samasta syystä samaan aikaan. Oikea abstraktio ei vähennä koodin määrää vaan muutoksen hintaa.",
+        "retro": "Oletko viime aikoina kopioinut koodia? Miksi valitsit kopioinnin abstrahoinnin sijaan?"
+      },
+      {
+        "n": 4,
+        "mistake": "Kirjoittaa monimutkaista liiketoimintalogiikkaa ilman kommentteja",
+        "situation": "Alennusprosentin laskennassa on kolminkertainen ehtolause, mutta kommentteja ei ole. Kun puoli vuotta myöhemmin tulee muutospyyntö, kukaan ei osaa selittää, miksi koodi on kirjoitettu näin. Koodista näkee, mitä se tekee, mutta ei sitä, miksi.",
+        "action": "Kirjoita kommentteja, jotka selittävät miksi. Jätä liiketoimintakonteksti, päätösten tausta ja liittyvien tikettien numerot, esimerkiksi: // VIP-asiakkaat saavat lisäalennuksen vuosiostojen perusteella (markkinoinnin pyyntö 2024 Q3, JIRA-1234). Kirjoita monimutkaisen algoritmin eteen lohkokommentti, joka tiivistää koko kulun.",
+        "growth": "Ymmärrät, että koodi kertoo mitä, kommentti kertoo miksi ja dokumentaatio kertoo miten. Hyvä kommentti on lahja tulevalle kehittäjälle (myös itsellesi), jotta hän ymmärtää koodin ja uskaltaa muokata sitä.",
+        "retro": "Oletko jättänyt viimeaikaiseen koodiisi kommentin kohtiin, jotka vaativat selityksen siitä, miksi ne on tehty niin?"
+      },
+      {
+        "n": 5,
+        "mistake": "Kommentoi liikaa selittäen jokaisen rivin",
+        "situation": "Kirjoitat jokaiselle riville itsestään selviä kommentteja, kuten let count = 0; // alustetaan laskuri nollaksi. Kun koodi muuttuu, myös kommentit pitäisi päivittää, mutta päivitys unohtuu ja koodi ja kommentti eroavat toisistaan. Valehteleva kommentti on haitallisempi kuin ei kommenttia lainkaan.",
+        "action": "Kirjoita koodi niin, että se selittää itse itsensä. Kun muuttujien ja funktioiden nimet ovat hyviä, useimmat kommentit ovat turhia. Jos koet kommentin tarpeelliseksi, mieti ensin, voisiko koodin refaktoroida niin selkeäksi, ettei kommenttia tarvita. Käytä kommentteja vain selittämään miksi tai tallentamaan epäintuitiivisen päätöksen tausta.",
+        "growth": "Opit kirjoittamaan itseään selittävää koodia (self-documenting code). Kun koodi on luettavaa, kommentteja tarvitaan vähemmän, ja oikeaan paikkaan kirjoitettu kommentti on entistä arvokkaampi.",
+        "retro": "Oletko huomannut, että koodi ja kommentti ovat ristiriidassa? Minkä sekaannuksen tuo väärä kommentti aiheutti?"
+      },
+      {
+        "n": 6,
+        "mistake": "Kovakoodaa taikanumeroita sinne tänne koodiin",
+        "situation": "Koodissa on siellä täällä rivejä kuten if (retryCount > 3), setTimeout(() => {}, 86400000) ja if (role === 2). Vain kirjoittaja tietää, mitä 3, 86400000 tai 2 tarkoittavat. Kun sääntö muuttuu ja uudelleenyritysten määräksi pitää vaihtaa 5, joudut etsimään kolmosia koko koodista, ja koska joukossa on muita kolmosia, väärän kohdan muokkaaminen on riski.",
+        "action": "Tee jokaiselle literaaliarvolle merkityksellinen vakio. Nimeä ne niin, että merkitys välittyy pelkästä nimestä: const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2. Kun vakiot on koottu yhteen paikkaan, käytännön muuttuessa riittää yhden rivin muutos.",
+        "growth": "Opit tuomaan koodin tarkoituksen selkeästi esiin. Se on ylläpidettävyyden perusta ja kehittyy luontevasti arkkitehtuurimalliksi, jossa asetusarvot viedään koodin ulkopuolelle (configuration).",
+        "retro": "Onko koodissasi numeroita tai merkkijonoja, joiden merkitystä on vaikea ymmärtää ja jotka on kovakoodattu?"
+      },
+      {
+        "n": 7,
+        "mistake": "Ohittaa koodauskäytännöt ja pitäytyy omassa tyylissään",
+        "situation": "Samassa tiedostossa sekoittuvat camelCase ja snake_case, ja sisennys vaihtelee tabulaattorien ja välilyöntien välillä. Tiimikaverin energia kuluu tyylin tulkitsemiseen koodia lukiessa, ja koodikatselmoinnissa riidellään muotoilusta eikä logiikasta.",
+        "action": "Noudata tiimin sopimia koodauskäytäntöjä ja ota projektiin käyttöön automaatiotyökaluja, kuten ESLint, Prettier tai SwiftLint. Kun automaattinen muotoilu tallennettaessa on päällä, tyyliä ei tarvitse edes ajatella. Jos käytäntöjä ei ole, ehdota niitä tiimille ja ota lähtökohdaksi alan standardi (esim. Airbnb Style Guide).",
+        "growth": "Opit yhteistyön periaatteen: yhdenmukaisuus on henkilökohtaista makua tärkeämpää. Opit myös tehokkuutta: ihmisen energiaa ei kuluteta siihen, minkä työkalu voi automatisoida. Tällä on suora vaikutus tiimin tuottavuuteen ja perehdytyksen nopeuteen.",
+        "retro": "Tiedätkö tiimisi koodauskäytännöt tarkasti? Jos et, mistä ne löytyvät?"
+      },
+      {
+        "n": 8,
+        "mistake": "Ohittaa virheenkäsittelyn tyhjällä catch-lohkolla",
+        "situation": "Nielaiset virheet rakenteella try { ... } catch(e) {}. Palvelu toimii oudosti, mutta virhelokia ei ole, joten syytä ei löydy. Käyttäjä ilmoittaa, ettei maksu mene läpi, mutta palvelimella ei ole mitään merkintää.",
+        "action": "Kirjaa jokaisessa catch-lohkossa vähintään virhe lokiin. Jos virheestä voi palautua, palaudu, ja jos ei voi, välitä se ylemmäs. Anna käyttäjälle ystävällinen viesti ja kehittäjälle yksityiskohtainen loki. Perusmalli on: catch(e) { logger.error('Maksun käsittely epäonnistui', { userId, orderId, error: e.message }); throw new PaymentError('Maksun käsittelyssä tapahtui virhe'); }",
+        "growth": "Opit suunnittelemaan virheenkäsittelystrategian (palautuminen, välitys, lokitus) järjestelmällisesti. Omaksut periaatteen, että jonkun on aina käsiteltävä virhe, ja se on palvelun vakauden ja jäljitettävyyden (observability) perusta.",
+        "retro": "Onko projektissasi tyhjiä catch-lohkoja? Hae ne ja tarkista. Kuinka monta löytyi?"
+      },
+      {
+        "n": 9,
+        "mistake": "Käyttää globaaleja muuttujia holtittomasti",
+        "situation": "Käytät globaaleja muuttujia, koska niitä on helppo jakaa usean funktion kesken. Sovelluksen kasvaessa ei enää pysty jäljittämään, mikä funktio muuttaa globaalia muuttujaa ja milloin, ja yhden ominaisuuden muokkaus rikkoo toisen, näennäisesti täysin asiaan kuulumattoman ominaisuuden.",
+        "action": "Pienennä muuttujien näkyvyysaluetta. Välitä data funktion parametreilla, paluuarvoilla ja riippuvuuksien injektiolla. Jos tarvitset tilanhallintaa, käytä tilanhallintakirjastoa kuten Redux tai Zustand tai luokan instanssimuuttujia, jotta tilan muutosten reitti on selvästi jäljitettävissä.",
+        "growth": "Ymmärrät tilanhallinnan ja näkyvyysalueen periaatteet. Koet funktionaalisen ohjelmoinnin ajattelutavan, joka minimoi sivuvaikutukset, ja muuttumattomuuden (immutability) arvon. Se on avaintaito monimutkaisten sovellusten pitämiseksi ennustettavina.",
+        "retro": "Onko nykyisessä projektissasi globaaleja muuttujia? Miksi ne on määritelty globaaleiksi?"
+      },
+      {
+        "n": 10,
+        "mistake": "Käyttää objektin kenttiä tarkistamatta null- tai undefined-arvoja",
+        "situation": "Käytät syviä objektipolkuja, kuten user.profile.address.city, ilman suojausta. Jos käyttäjällä ei ole profiilia tai hän ei ole antanut osoitetta, sovellus kaatuu heti virheeseen Cannot read property of null.",
+        "action": "Käytä aktiivisesti optional chainingia (user?.profile?.address?.city) ja oletusarvoja (nullish coalescing, ?? 'Osoite puuttuu'). Aseta suojalauseet (guard clause) funktion alkuun: if (!user) return null; Jos käytät TypeScriptiä, ota strictNullChecks käyttöön, jotta null-turvallisuus varmistetaan jo käännösvaiheessa.",
+        "growth": "Omaksut defensiivisen ohjelmoinnin (Defensive Programming) ajattelutavan. Tapa kysyä ensin, voiko arvo puuttua, vähentää ajonaikaisia kaatumisia huomattavasti. Ymmärrät myös, miksi kielitason null-turvallisuus, kuten Swiftin Optional ja Kotlinin Nullable, on tärkeää.",
+        "retro": "Oletko viime aikoina kohdannut null- tai undefined-arvoihin liittyvän ajonaikaisen virheen? Kuinka usein niitä tulee?"
+      }
+    ]
+  },
+  "problem": {
+    "title": "Taas sama kommentti koodikatselmoinnissa?",
+    "text": "Epäselvät muuttujien nimet, 200 rivin funktiot, kopioitu koodi. Jokainen seniori on käynyt sen läpi, mutta yleensä sen huomaa vasta itse kompastuessaan. 100 virhettä näyttää nämä virheet etukäteen ja saa sinut pohtimaan omaa työtäsi, jotta et toista niitä."
+  },
+  "features": [
+    {
+      "title": "Mitä tapahtuu, mitä tehdä, mitä oppia",
+      "text": "Jokainen virhe on jaettu kolmeen osaan: mitä tapahtuu, mitä tehdä ja mitä siitä opit.\nKymmenen kategoriaa koodaustavoista tietoturvaan ja suorituskykyyn, vain virheitä, jotka toistuvat oikeissa tiimeissä kerta toisensa jälkeen.",
+      "shot": "detail"
+    },
+    {
+      "title": "Pohdintakysymykset, jotta asia jää mieleen",
+      "text": "Jokaisessa virheessä on 4 pohdintakysymystä, yhteensä 400. Vastaa omia projektejasi ajatellen, niin luettu muuttuu kokemukseksi.\nVastauksesi kerääntyvät pohdintapäiväkirjaan kategorioittain, valmiina luettaviksi uudelleen.",
+      "shot": "retro"
+    },
+    {
+      "title": "Näe, kuinka pitkälle olet päässyt",
+      "text": "Merkitse kokemasi virheet, ja edistymisesi kasvaa kategorioittain ja kokonaisuutena. Lisää kirjanmerkki siihen, mihin haluat palata.\nKaikki synkronoituu iCloudin kautta iPhonen, iPadin ja Macin välillä.",
+      "shot": "progress"
+    }
+  ],
+  "steps": {
+    "title": "Kolme vaihetta alkuun",
+    "items": [
+      {
+        "title": "Valitse kategoria",
+        "text": "Koodaustavat, debuggaus ja versionhallinta ovat auki ilmaiseksi."
+      },
+      {
+        "title": "Lue ja merkitse",
+        "text": "Napauta Koettu niiden virheiden kohdalla, jotka olet tehnyt itse."
+      },
+      {
+        "title": "Pohdi",
+        "text": "Kirjoita vastaus, vaikka lyhyt. Se tallentuu pohdintapäiväkirjaasi."
+      }
+    ]
+  },
+  "reference": {
+    "title": "10 kategoriaa",
+    "tags": [
+      "Ilmainen",
+      "PRO"
+    ],
+    "rows": [
+      [
+        "Koodaustavat",
+        "#001–#010 · Ilmainen"
+      ],
+      [
+        "Debuggaus ja ongelmanratkaisu",
+        "#011–#020 · Ilmainen"
+      ],
+      [
+        "Versionhallinta ja yhteistyö",
+        "#021–#030 · Ilmainen"
+      ],
+      [
+        "Suunnittelu ja arkkitehtuuri",
+        "#031–#040 · PRO"
+      ],
+      [
+        "Testaus ja laatu",
+        "#041–#050 · PRO"
+      ],
+      [
+        "Oppiminen ja kasvu",
+        "#051–#060 · PRO"
+      ],
+      [
+        "Viestintä ja yhteistyö",
+        "#061–#070 · PRO"
+      ],
+      [
+        "Julkaisu ja ylläpito",
+        "#071–#080 · PRO"
+      ],
+      [
+        "Tietoturva ja data",
+        "#081–#090 · PRO"
+      ],
+      [
+        "Suorituskyky ja optimointi",
+        "#091–#100 · PRO"
+      ]
+    ],
+    "note": "Jokaisessa kategoriassa on 10 virhettä ja jokaisessa virheessä 4 pohdintakysymystä."
+  },
+  "pricing": {
+    "title": "30 ilmaiseksi. Kaikki 100 PRO:lla.",
+    "free": {
+      "name": "Ilmainen",
+      "items": [
+        "Ensimmäiset 3 kategoriaa, 30 virhettä",
+        "Niiden 120 pohdintakysymystä",
+        "Tarkistuslista, pohdintapäiväkirja, edistyminen ja kirjanmerkit",
+        "iCloud-synkronointi (iPhone, iPad, Mac)"
+      ]
+    },
+    "pro": {
+      "name": "100 virhettä PRO",
+      "items": [
+        "Loput 7 kategoriaa, 70 virhettä lisää (#031–#100)",
+        "280 pohdintakysymystä lisää",
+        "Kaikki tulevat sisältöpäivitykset"
+      ],
+      "note": "Kuukausi- tai vuositilaus (jopa 50 % kuukausitilausta edullisempi) tai kertaosto loppuiäksi."
+    },
+    "note": "Ei henkilötietojen keruuta, ei analytiikkaa eikä mainoksia."
+  },
+  "faq": {
+    "title": "Usein kysyttyä",
+    "items": [
+      {
+        "q": "Mikä on ilmaista?",
+        "a": "Kaikki 30 virhettä kysymyksineen kategorioissa Koodaustavat, Debuggaus ja ongelmanratkaisu sekä Versionhallinta ja yhteistyö. Myös tarkistuslista, pohdintapäiväkirja, edistyminen, kirjanmerkit ja iCloud-synkronointi ovat ilmaisia."
+      },
+      {
+        "q": "Miten käytän PRO:ta toisella laitteella?",
+        "a": "Kirjaudu samalla Apple ID:llä ja napauta tilausnäkymässä Palauta ostokset."
+      },
+      {
+        "q": "Miten peruutan tilauksen?",
+        "a": "Milloin tahansa kohdassa Asetukset › Apple ID › Tilaukset. Tilaus uusiutuu automaattisesti, ellet peru sitä vähintään 24 tuntia ennen kuluvan jakson päättymistä. Elinikäinen ostos maksetaan vain kerran."
+      },
+      {
+        "q": "Tiedot eivät synkronoidu laitteiden välillä.",
+        "a": "Tarkista, että kaikki laitteet on kirjattu iCloudiin samalla Apple ID:llä ja että iCloud on päällä tälle sovellukselle Asetuksissa. Synkronointi vaatii myös verkkoyhteyden."
+      },
+      {
+        "q": "Miten poistan kaiken?",
+        "a": "Napauta sovelluksen asetuksissa Nollaa kaikki tiedot. Merkinnät, vastaukset ja kirjanmerkit poistetaan, eikä toimintoa voi perua."
+      },
+      {
+        "q": "Millä laitteilla sovellus toimii?",
+        "a": "iPhonella, iPadilla ja Macilla. PRO avautuu kaikilla laitteilla, joilla on sama Apple ID."
+      },
+      {
+        "q": "Lähetetäänkö tietojani jonnekin?",
+        "a": "Ei. Merkintäsi ja vastauksesi tallentuvat vain laitteillesi ja omaan iCloudiisi. Sovellus ei kerää henkilötietoja, eikä siinä ole analytiikkaa tai mainoksia."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Ole kehittäjä, joka ei tee\nsamaa virhettä kahdesti",
+    "cta": "Lataa ilmaiseksi App Storesta"
+  },
+  "ui": {
+    "skip": "Siirry sisältöön",
+    "languages": "Kieli",
+    "privacy": "Tietosuojakäytäntö",
+    "contact": "Kysymyksiä tai ehdotuksia? Kirjoita osoitteeseen {email}."
+  }
+}

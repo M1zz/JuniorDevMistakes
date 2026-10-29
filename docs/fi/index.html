@@ -1,464 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>100 virhettä – kasvun tarkistuslista juniorikehittäjille</title>
-  <meta name="description" content="Kehittäjien 100 yleisintä virhettä. Tunne ne etukäteen ja kasva nopeammin." />
-  <meta property="og:title" content="100 virhettä – kasvun tarkistuslista juniorikehittäjille" />
-  <meta property="og:description" content="Kehittäjien 100 yleisintä virhettä. Tunne ne etukäteen ja kasva nopeammin." />
-  <meta property="og:type" content="website" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/index.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/index.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/index.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/index.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/index.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/index.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/index.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/index.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/index.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/index.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/index.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/index.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/index.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/index.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/index.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/index.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/index.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/index.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/index.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/index.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/index.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/index.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/index.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --primary:      #3F3884;
-      --primary-light:#6159AD;
-      --accent:       #F06B6B;
-      --green:        #38C78C;
-      --amber:        #F2B333;
-      --blue:         #4D8CEB;
-      --purple:       #8059B8;
-      --bg:           #0f0e1a;
-      --surface:      #1a1829;
-      --border:       rgba(255,255,255,0.08);
-      --text:         #f0eefc;
-      --muted:        rgba(240,238,252,0.55);
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 5%;
-      height: 64px;
-      background: rgba(15,14,26,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.3px; }
-    .nav-logo span { color: var(--accent); }
-    nav a.nav-link {
-      font-size: 0.9rem; color: var(--muted); text-decoration: none;
-      transition: color .2s;
-    }
-    nav a.nav-link:hover { color: var(--text); }
-
-    /* ── HERO ── */
-    .hero {
-      position: relative; overflow: hidden;
-      display: flex; flex-direction: column; align-items: center; text-align: center;
-      padding: 100px 5% 80px;
-      background: linear-gradient(145deg, #2a2460 0%, #3F3884 40%, #8059B8 100%);
-    }
-    .hero::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(240,107,107,.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-badge {
-      display: inline-block;
-      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
-      color: var(--amber);
-      background: rgba(242,179,51,.12);
-      border: 1px solid rgba(242,179,51,.25);
-      border-radius: 99px;
-      padding: 5px 14px;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-    }
-    .app-icon {
-      width: 120px; height: 120px;
-      border-radius: 27px;
-      background: linear-gradient(145deg, #3F3884, #8059B8);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 52px;
-      margin-bottom: 32px;
-      box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.12);
-    }
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 3.6rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -1px;
-      margin-bottom: 20px;
-    }
-    h1 em { font-style: normal; color: var(--accent); }
-    .hero-sub {
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      color: rgba(255,255,255,.72);
-      max-width: 520px;
-      margin-bottom: 40px;
-      line-height: 1.75;
-    }
-    .btn-store {
-      display: inline-flex; align-items: center; gap: 10px;
-      background: #fff; color: #000;
-      font-weight: 700; font-size: 1rem;
-      padding: 14px 28px;
-      border-radius: 14px;
-      text-decoration: none;
-      transition: transform .2s, box-shadow .2s;
-      box-shadow: 0 8px 24px rgba(0,0,0,.25);
-    }
-    .btn-store:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.35); }
-    .btn-store svg { width: 22px; height: 22px; }
-    .btn-store-sub { font-size: .7rem; font-weight: 400; display: block; text-align: left; opacity: .6; margin-bottom: 1px; }
-    .btn-store-main { font-size: 1rem; font-weight: 700; display: block; text-align: left; }
-
-    /* ── FEATURES ── */
-    section { padding: 80px 5%; }
-    .section-label {
-      text-align: center;
-      font-size: .75rem; font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    h2 {
-      text-align: center;
-      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 12px;
-    }
-    .section-desc {
-      text-align: center;
-      color: var(--muted);
-      font-size: 1rem;
-      max-width: 500px;
-      margin: 0 auto 56px;
-      line-height: 1.75;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .feature-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      transition: transform .25s, border-color .25s;
-    }
-    .feature-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.15); }
-    .feature-icon {
-      width: 48px; height: 48px;
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 22px;
-      margin-bottom: 16px;
-    }
-    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-    .feature-card p { font-size: .9rem; color: var(--muted); line-height: 1.65; }
-
-    /* ── CATEGORIES ── */
-    .categories-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .categories-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .cat-chip {
-      display: flex; align-items: center; gap: 10px;
-      padding: 12px 16px;
-      background: rgba(255,255,255,.04);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      font-size: .9rem; font-weight: 500;
-    }
-    .cat-chip span { font-size: 1.1rem; }
-
-    /* ── PRICING ── */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    .price-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      text-align: center;
-    }
-    .price-card.featured {
-      background: linear-gradient(145deg, #3F3884, #6159AD);
-      border-color: rgba(255,255,255,.2);
-    }
-    .price-badge {
-      display: inline-block;
-      font-size: .7rem; font-weight: 700;
-      background: var(--amber); color: #000;
-      border-radius: 99px; padding: 3px 10px;
-      margin-bottom: 16px;
-      text-transform: uppercase; letter-spacing: .05em;
-    }
-    .price-plan { font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
-    .price-amount { font-size: 2rem; font-weight: 800; margin-bottom: 4px; }
-    .price-period { font-size: .8rem; color: var(--muted); margin-bottom: 20px; }
-    .price-features { list-style: none; text-align: left; }
-    .price-features li { font-size: .88rem; padding: 6px 0; color: var(--muted); display: flex; gap: 8px; }
-    .price-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
-    .price-card.featured .price-features li { color: rgba(255,255,255,.8); }
-
-    /* ── SYNC ── */
-    .sync-section { text-align: center; }
-    .devices {
-      display: flex; justify-content: center; align-items: center;
-      gap: 24px; flex-wrap: wrap;
-      margin-top: 40px;
-    }
-    .device-chip {
-      display: flex; align-items: center; gap: 8px;
-      padding: 10px 20px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 99px;
-      font-size: .9rem; font-weight: 500;
-    }
-
-    /* ── CTA ── */
-    .cta-section {
-      text-align: center;
-      background: linear-gradient(145deg, #2a2460, #3F3884, #8059B8);
-      padding: 100px 5%;
-    }
-    .cta-section h2 { margin-bottom: 16px; }
-    .cta-section p { color: rgba(255,255,255,.7); margin-bottom: 40px; font-size: 1.05rem; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--bg);
-      border-top: 1px solid var(--border);
-      padding: 32px 5%;
-      display: flex; flex-wrap: wrap;
-      align-items: center; justify-content: space-between;
-      gap: 12px;
-    }
-    footer p { font-size: .85rem; color: var(--muted); }
-    footer a { color: var(--muted); font-size: .85rem; text-decoration: none; transition: color .2s; }
-    footer a:hover { color: var(--text); }
-
-    @media (max-width: 640px) {
-      nav { padding: 0 4%; }
-      .hero { padding: 72px 4% 60px; }
-      section { padding: 60px 4%; }
-    }
-  
-    .langs { font-size: .8rem; color: rgba(240,238,252,.45); line-height: 2; }
-    .langs a { color: rgba(240,238,252,.6); text-decoration: none; margin-right: 10px; white-space: nowrap; }
-    .langs a:hover, .langs a.cur { color: #f0eefc; }
-    .langs a.cur { font-weight: 700; }
-    .doc-langs { max-width: 720px; margin: 64px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); }
-    .foot-links a { margin-right: 14px; }
-    .faq dt { font-weight: 700; margin: 24px 0 6px; color: #f0eefc; }
-    .faq dd { color: rgba(240,238,252,.75); margin: 0; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>100 virhettä: tarkistuslista junior-kehittäjälle</title>
+  <meta name="description" content="Lue 100 virhettä, joita junior-kehittäjät tekevät useimmin, merkitse itse tekemäsi ja vastaa pohdintakysymyksiin. Ensimmäiset 30 ilmaiseksi.">
+  <meta name="theme-color" content="#403885" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6759643878">
+  <link rel="canonical" href="https://m1zz.github.io/JuniorDevMistakes/fi/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="100 virhettä: tarkistuslista junior-kehittäjälle">
+  <meta property="og:description" content="Lue 100 virhettä, joita junior-kehittäjät tekevät useimmin, merkitse itse tekemäsi ja vastaa pohdintakysymyksiin. Ensimmäiset 30 ilmaiseksi.">
+  <meta property="og:url" content="https://m1zz.github.io/JuniorDevMistakes/fi/">
+  <meta property="og:image" content="https://m1zz.github.io/JuniorDevMistakes/img/fi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#403885}@media (prefers-color-scheme:dark){:root{--accent:#8C82E6}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <a class="skip" href="#main">Siirry sisältöön</a>
+  <header class="bar">
+    <a class="brand" href="../fi/"><img src="../icon.png" alt="" width="32" height="32">100 virhettä</a>
+    <a class="lang-link" href="#languages">Kieli</a>
+  </header>
 
-<nav>
-  <div class="nav-logo">100 virhettä</div>
-  <span><a href="support.html" class="nav-link">Tuki</a> &nbsp; <a href="privacy.html" class="nav-link">Tietosuojakäytäntö</a></span>
-</nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Tunne virheet<br>ennen kuin sattuu</h1>
+        <p class="lead">100 virhettä, joita aloittelevat kehittäjät tekevät useimmin, yhdessä paikassa. Jokaisesta luet, mitä tapahtuu, mitä tehdä ja mitä opit, ja vastaat pohdintakysymykseen, jotta et tee samaa virhettä kahdesti.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6759643878">Lataa ilmaiseksi App Storesta</a><a class="try" href="#try">Avaa yksi virhe ↓</a></div>
+        <p class="muted small">Ensimmäiset 30 virhettä ovat ilmaisia. iPhonelle, iPadille ja Macille.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/home.jpg" alt="Tunne virheet ennen kuin sattuu" width="600" height="1303" decoding="async"></div>
+    </section>
 
-<section class="hero">
-  <div class="hero-badge">Sovellus juniorikehittäjille</div>
-  <div class="app-icon">⌨️</div>
-  <h1>Tunne virheet etukäteen ja<br><em>kasva nopeammin</em>.</h1>
-  <p class="hero-sub">
-    Kehittäjien 100 yleisintä virhettä.<br>
-    Käy ne läpi tarkistuslistalla ja tee niistä omiasi pohdinnan avulla.
-  </p>
-  <a href="#" class="btn-store">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Download on the</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<section>
-  <p class="section-label">Ominaisuudet</p>
-  <h2>Kaikki, mitä kasvu vaatii</h2>
-  <p class="section-desc">Virheen tunteminen ei riitä. Pohdinta tekee siitä lopulta sinun omaasi.</p>
+    <section class="reveal" id="try">
+      <h2>Avaa yksi virhe</h2>
+      <p class="muted">Tässä ovat ensimmäisen ilmaisen kategorian 10 virhettä, sanasta sanaan kuten sovelluksessa. Merkitse jo kokemasi kohdalla Koettu.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Avaa yksi virhe&quot;, &quot;lead&quot;: &quot;Tässä ovat ensimmäisen ilmaisen kategorian 10 virhettä, sanasta sanaan kuten sovelluksessa. Merkitse jo kokemasi kohdalla Koettu.&quot;, &quot;note&quot;: &quot;Verkkokokeilu ei tallenna merkintöjä. Sovelluksessa merkinnät ja vastaukset synkronoituvat iCloudin kautta kaikille laitteillesi.&quot;, &quot;category&quot;: &quot;Koodaustavat&quot;, &quot;labels&quot;: {&quot;happens&quot;: &quot;Näin tässä käy&quot;, &quot;todo&quot;: &quot;Tee näin&quot;, &quot;learn&quot;: &quot;Tästä opit ja kasvat&quot;, &quot;retro&quot;: &quot;Pohdintakysymykset&quot;, &quot;done&quot;: &quot;Koettu&quot;}, &quot;items&quot;: [{&quot;n&quot;: 1, &quot;mistake&quot;: &quot;Nimeää muuttujat merkityksettömästi, esimerkiksi a, b tai x&quot;, &quot;situation&quot;: &quot;Nopeasti koodatessa temp, data, result ja val tulevat tavaksi. Kirjoitushetkellä konteksti on päässä eikä ongelmaa ole, mutta viikon päästä joudut lukemaan koodin alusta asti miettien, mikä muuttuja tämä oikein oli.&quot;, &quot;action&quot;: &quot;Mieti nimeä keksiessäsi kolme sekuntia, mitä muuttuja sisältää. Kirjoita rooli nimeen: data-nimen sijaan userProfileList, temp-nimen sijaan formattedDate ja result-nimen sijaan filteredActiveUsers. Tavoitteena on, että koodi luetaan kuin englanninkielinen lause. Esimerkiksi if (isUserActive &amp;&amp; hasPermission) kertoo merkityksensä jo ehtolausetta lukemalla.&quot;, &quot;growth&quot;: &quot;Koodia luetaan kymmenen kertaa enemmän kuin kirjoitetaan. Hyvä nimi on kommenttia vahvempi. Sovi tiimin kanssa yhteiset nimeämiskäytännöt (camelCase, snake_case jne.), vältä lyhenteitä (usr → user, btn → button) ja käytä haettavia nimiä. Pelkästään tämä tapa nopeuttaa koodikatselmointia ja parantaa ylläpidettävyyttä huomattavasti.&quot;, &quot;retro&quot;: &quot;Oliko viimeaikaisessa koodissasi muuttujia, joiden merkitys oli epäselvä? Mikä nimi se oli ja mikä olisi ollut parempi?&quot;}, {&quot;n&quot;: 2, &quot;mistake&quot;: &quot;Ahtaa yhteen funktioon yli 100 riviä koodia&quot;, &quot;situation&quot;: &quot;Toteutat yhtä ominaisuutta ja kirjoitat syötteen validoinnin, datan muunnoksen, API-kutsun, tuloksen käsittelyn ja virheenkäsittelyn kaiken yhteen funktioon. Aluksi kokonaisuus on helppo hahmottaa, mutta kun funktio ylittää 200 riviä, muutettavaa kohtaa on vaikea löytää eikä sivuvaikutuksia voi ennustaa.&quot;, &quot;action&quot;: &quot;Harkitse funktion jakamista, kun se ylittää 20 riviä. Mittapuuna on, voitko kuvata funktion tehtävän yhdellä lauseella. Erota jokainen vaihe omaksi funktiokseen, kuten validateUserInput(), transformToAPIFormat(), callPaymentAPI() ja formatResponse(), ja anna pääfunktion vain kutsua niitä järjestyksessä orkestraattorin tavoin.&quot;, &quot;growth&quot;: &quot;Opit soveltamaan yhden vastuun periaatetta (SRP) käytännössä. Pienen funktion rooli selviää jo nimestä, sitä voi testata erikseen ja käyttää uudelleen muualla. Kyky jäsentää koodi niin, että sen voi lukea kuin tarinan, on senior-kehittäjän keskeinen taito.&quot;, &quot;retro&quot;: &quot;Kuinka monta riviä on nykyisen projektisi pisin funktio? Voitko kuvata sen tehtävän yhdellä lauseella?&quot;}, {&quot;n&quot;: 3, &quot;mistake&quot;: &quot;Toistaa koodia kopioimalla ja liittämällä&quot;, &quot;situation&quot;: &quot;Kun tarvitset samanlaista logiikkaa, kopioit olemassa olevan koodin ja muokkaat siitä vain osan. Käyttäjälistan ja tilauslistan haku ovat 90-prosenttisesti samat, mutta ne on kirjoitettu erikseen. Kun yhteisestä osasta löytyy myöhemmin bugi, joudut etsimään jokaisen kopion ja korjaamaan ne yksitellen, ja yhdenkin unohtaminen tuo saman bugin takaisin muualla.&quot;, &quot;action&quot;: &quot;Hetki, jolloin haluat kopioida koodia, on refaktoroinnin merkki. Erota yhteinen logiikka funktioksi tai luokaksi ja välitä vain muuttuvat osat parametreina tai takaisinkutsuina. Kun toistoa on kolme kertaa tai enemmän (Rule of Three), abstrahoi se. Esimerkiksi yksi fetchList(endpoint, transformer) voi hoitaa useita listahakuja.&quot;, &quot;growth&quot;: &quot;Opit DRY-periaatteen (Don&#x27;t Repeat Yourself) ja abstrahoinnin. Liiallinen abstraktio on kuitenkin riskialtista, joten kysy, muuttuuko koodi todella samasta syystä samaan aikaan. Oikea abstraktio ei vähennä koodin määrää vaan muutoksen hintaa.&quot;, &quot;retro&quot;: &quot;Oletko viime aikoina kopioinut koodia? Miksi valitsit kopioinnin abstrahoinnin sijaan?&quot;}, {&quot;n&quot;: 4, &quot;mistake&quot;: &quot;Kirjoittaa monimutkaista liiketoimintalogiikkaa ilman kommentteja&quot;, &quot;situation&quot;: &quot;Alennusprosentin laskennassa on kolminkertainen ehtolause, mutta kommentteja ei ole. Kun puoli vuotta myöhemmin tulee muutospyyntö, kukaan ei osaa selittää, miksi koodi on kirjoitettu näin. Koodista näkee, mitä se tekee, mutta ei sitä, miksi.&quot;, &quot;action&quot;: &quot;Kirjoita kommentteja, jotka selittävät miksi. Jätä liiketoimintakonteksti, päätösten tausta ja liittyvien tikettien numerot, esimerkiksi: // VIP-asiakkaat saavat lisäalennuksen vuosiostojen perusteella (markkinoinnin pyyntö 2024 Q3, JIRA-1234). Kirjoita monimutkaisen algoritmin eteen lohkokommentti, joka tiivistää koko kulun.&quot;, &quot;growth&quot;: &quot;Ymmärrät, että koodi kertoo mitä, kommentti kertoo miksi ja dokumentaatio kertoo miten. Hyvä kommentti on lahja tulevalle kehittäjälle (myös itsellesi), jotta hän ymmärtää koodin ja uskaltaa muokata sitä.&quot;, &quot;retro&quot;: &quot;Oletko jättänyt viimeaikaiseen koodiisi kommentin kohtiin, jotka vaativat selityksen siitä, miksi ne on tehty niin?&quot;}, {&quot;n&quot;: 5, &quot;mistake&quot;: &quot;Kommentoi liikaa selittäen jokaisen rivin&quot;, &quot;situation&quot;: &quot;Kirjoitat jokaiselle riville itsestään selviä kommentteja, kuten let count = 0; // alustetaan laskuri nollaksi. Kun koodi muuttuu, myös kommentit pitäisi päivittää, mutta päivitys unohtuu ja koodi ja kommentti eroavat toisistaan. Valehteleva kommentti on haitallisempi kuin ei kommenttia lainkaan.&quot;, &quot;action&quot;: &quot;Kirjoita koodi niin, että se selittää itse itsensä. Kun muuttujien ja funktioiden nimet ovat hyviä, useimmat kommentit ovat turhia. Jos koet kommentin tarpeelliseksi, mieti ensin, voisiko koodin refaktoroida niin selkeäksi, ettei kommenttia tarvita. Käytä kommentteja vain selittämään miksi tai tallentamaan epäintuitiivisen päätöksen tausta.&quot;, &quot;growth&quot;: &quot;Opit kirjoittamaan itseään selittävää koodia (self-documenting code). Kun koodi on luettavaa, kommentteja tarvitaan vähemmän, ja oikeaan paikkaan kirjoitettu kommentti on entistä arvokkaampi.&quot;, &quot;retro&quot;: &quot;Oletko huomannut, että koodi ja kommentti ovat ristiriidassa? Minkä sekaannuksen tuo väärä kommentti aiheutti?&quot;}, {&quot;n&quot;: 6, &quot;mistake&quot;: &quot;Kovakoodaa taikanumeroita sinne tänne koodiin&quot;, &quot;situation&quot;: &quot;Koodissa on siellä täällä rivejä kuten if (retryCount &gt; 3), setTimeout(() =&gt; {}, 86400000) ja if (role === 2). Vain kirjoittaja tietää, mitä 3, 86400000 tai 2 tarkoittavat. Kun sääntö muuttuu ja uudelleenyritysten määräksi pitää vaihtaa 5, joudut etsimään kolmosia koko koodista, ja koska joukossa on muita kolmosia, väärän kohdan muokkaaminen on riski.&quot;, &quot;action&quot;: &quot;Tee jokaiselle literaaliarvolle merkityksellinen vakio. Nimeä ne niin, että merkitys välittyy pelkästä nimestä: const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2. Kun vakiot on koottu yhteen paikkaan, käytännön muuttuessa riittää yhden rivin muutos.&quot;, &quot;growth&quot;: &quot;Opit tuomaan koodin tarkoituksen selkeästi esiin. Se on ylläpidettävyyden perusta ja kehittyy luontevasti arkkitehtuurimalliksi, jossa asetusarvot viedään koodin ulkopuolelle (configuration).&quot;, &quot;retro&quot;: &quot;Onko koodissasi numeroita tai merkkijonoja, joiden merkitystä on vaikea ymmärtää ja jotka on kovakoodattu?&quot;}, {&quot;n&quot;: 7, &quot;mistake&quot;: &quot;Ohittaa koodauskäytännöt ja pitäytyy omassa tyylissään&quot;, &quot;situation&quot;: &quot;Samassa tiedostossa sekoittuvat camelCase ja snake_case, ja sisennys vaihtelee tabulaattorien ja välilyöntien välillä. Tiimikaverin energia kuluu tyylin tulkitsemiseen koodia lukiessa, ja koodikatselmoinnissa riidellään muotoilusta eikä logiikasta.&quot;, &quot;action&quot;: &quot;Noudata tiimin sopimia koodauskäytäntöjä ja ota projektiin käyttöön automaatiotyökaluja, kuten ESLint, Prettier tai SwiftLint. Kun automaattinen muotoilu tallennettaessa on päällä, tyyliä ei tarvitse edes ajatella. Jos käytäntöjä ei ole, ehdota niitä tiimille ja ota lähtökohdaksi alan standardi (esim. Airbnb Style Guide).&quot;, &quot;growth&quot;: &quot;Opit yhteistyön periaatteen: yhdenmukaisuus on henkilökohtaista makua tärkeämpää. Opit myös tehokkuutta: ihmisen energiaa ei kuluteta siihen, minkä työkalu voi automatisoida. Tällä on suora vaikutus tiimin tuottavuuteen ja perehdytyksen nopeuteen.&quot;, &quot;retro&quot;: &quot;Tiedätkö tiimisi koodauskäytännöt tarkasti? Jos et, mistä ne löytyvät?&quot;}, {&quot;n&quot;: 8, &quot;mistake&quot;: &quot;Ohittaa virheenkäsittelyn tyhjällä catch-lohkolla&quot;, &quot;situation&quot;: &quot;Nielaiset virheet rakenteella try { ... } catch(e) {}. Palvelu toimii oudosti, mutta virhelokia ei ole, joten syytä ei löydy. Käyttäjä ilmoittaa, ettei maksu mene läpi, mutta palvelimella ei ole mitään merkintää.&quot;, &quot;action&quot;: &quot;Kirjaa jokaisessa catch-lohkossa vähintään virhe lokiin. Jos virheestä voi palautua, palaudu, ja jos ei voi, välitä se ylemmäs. Anna käyttäjälle ystävällinen viesti ja kehittäjälle yksityiskohtainen loki. Perusmalli on: catch(e) { logger.error(&#x27;Maksun käsittely epäonnistui&#x27;, { userId, orderId, error: e.message }); throw new PaymentError(&#x27;Maksun käsittelyssä tapahtui virhe&#x27;); }&quot;, &quot;growth&quot;: &quot;Opit suunnittelemaan virheenkäsittelystrategian (palautuminen, välitys, lokitus) järjestelmällisesti. Omaksut periaatteen, että jonkun on aina käsiteltävä virhe, ja se on palvelun vakauden ja jäljitettävyyden (observability) perusta.&quot;, &quot;retro&quot;: &quot;Onko projektissasi tyhjiä catch-lohkoja? Hae ne ja tarkista. Kuinka monta löytyi?&quot;}, {&quot;n&quot;: 9, &quot;mistake&quot;: &quot;Käyttää globaaleja muuttujia holtittomasti&quot;, &quot;situation&quot;: &quot;Käytät globaaleja muuttujia, koska niitä on helppo jakaa usean funktion kesken. Sovelluksen kasvaessa ei enää pysty jäljittämään, mikä funktio muuttaa globaalia muuttujaa ja milloin, ja yhden ominaisuuden muokkaus rikkoo toisen, näennäisesti täysin asiaan kuulumattoman ominaisuuden.&quot;, &quot;action&quot;: &quot;Pienennä muuttujien näkyvyysaluetta. Välitä data funktion parametreilla, paluuarvoilla ja riippuvuuksien injektiolla. Jos tarvitset tilanhallintaa, käytä tilanhallintakirjastoa kuten Redux tai Zustand tai luokan instanssimuuttujia, jotta tilan muutosten reitti on selvästi jäljitettävissä.&quot;, &quot;growth&quot;: &quot;Ymmärrät tilanhallinnan ja näkyvyysalueen periaatteet. Koet funktionaalisen ohjelmoinnin ajattelutavan, joka minimoi sivuvaikutukset, ja muuttumattomuuden (immutability) arvon. Se on avaintaito monimutkaisten sovellusten pitämiseksi ennustettavina.&quot;, &quot;retro&quot;: &quot;Onko nykyisessä projektissasi globaaleja muuttujia? Miksi ne on määritelty globaaleiksi?&quot;}, {&quot;n&quot;: 10, &quot;mistake&quot;: &quot;Käyttää objektin kenttiä tarkistamatta null- tai undefined-arvoja&quot;, &quot;situation&quot;: &quot;Käytät syviä objektipolkuja, kuten user.profile.address.city, ilman suojausta. Jos käyttäjällä ei ole profiilia tai hän ei ole antanut osoitetta, sovellus kaatuu heti virheeseen Cannot read property of null.&quot;, &quot;action&quot;: &quot;Käytä aktiivisesti optional chainingia (user?.profile?.address?.city) ja oletusarvoja (nullish coalescing, ?? &#x27;Osoite puuttuu&#x27;). Aseta suojalauseet (guard clause) funktion alkuun: if (!user) return null; Jos käytät TypeScriptiä, ota strictNullChecks käyttöön, jotta null-turvallisuus varmistetaan jo käännösvaiheessa.&quot;, &quot;growth&quot;: &quot;Omaksut defensiivisen ohjelmoinnin (Defensive Programming) ajattelutavan. Tapa kysyä ensin, voiko arvo puuttua, vähentää ajonaikaisia kaatumisia huomattavasti. Ymmärrät myös, miksi kielitason null-turvallisuus, kuten Swiftin Optional ja Kotlinin Nullable, on tärkeää.&quot;, &quot;retro&quot;: &quot;Oletko viime aikoina kohdannut null- tai undefined-arvoihin liittyvän ajonaikaisen virheen? Kuinka usein niitä tulee?&quot;}]}"></div>
+    </section>
 
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(63,56,132,.25)">✓</div>
-      <h3>100 virheen tarkistuslista</h3>
-      <p>Koodauksesta tiimityöhön: työelämässä toistuvat virheet on jäsennelty kategorioihin.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(242,179,51,.2)">📓</div>
-      <h3>Pohdintapäiväkirja</h3>
-      <p>Vastaa jokaisen virheen pohdintakysymyksiin, niin ulkoa opettelun sijaan ymmärrät asian oikeasti.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(56,199,140,.2)">📊</div>
-      <h3>Edistymisen seuranta</h3>
-      <p>Näe kategorioiden ja koko listan edistyminen yhdellä silmäyksellä ja tunne kasvusi.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(77,140,235,.2)">☁️</div>
-      <h3>Automaattinen iCloud-synkronointi</h3>
-      <p>Käytä samoja tietoja iPhonella, iPadilla ja Macilla. CloudKit synkronoi ne automaattisesti.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(240,107,107,.2)">🔖</div>
-      <h3>Kirjanmerkit</h3>
-      <p>Merkitse kohteet, joihin haluat palata, ja kerro ne myöhemmin yhteen kertausta varten.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(128,89,184,.2)">💻</div>
-      <h3>iPhone · iPad · Mac</h3>
-      <p>Mac Catalystin ansiosta iPhone-sovellus toimii sellaisenaan myös Macilla. Opi missä tahansa.</p>
-    </div>
-  </div>
-</section>
+    <section class="problem reveal">
+      <h2>Taas sama kommentti koodikatselmoinnissa?</h2>
+      <p>Epäselvät muuttujien nimet, 200 rivin funktiot, kopioitu koodi. Jokainen seniori on käynyt sen läpi, mutta yleensä sen huomaa vasta itse kompastuessaan. 100 virhettä näyttää nämä virheet etukäteen ja saa sinut pohtimaan omaa työtäsi, jotta et toista niitä.</p>
+    </section>
 
-<section class="categories-section">
-  <p class="section-label">10 kategoriaa</p>
-  <h2>Mitä virheitä käsitellään?</h2>
-  <p class="section-desc">Virheet on ryhmitelty tilanteiden mukaan, joita juniorikehittäjät oikeasti kohtaavat.</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Mitä tapahtuu, mitä tehdä, mitä oppia</h2>
+        <p>Jokainen virhe on jaettu kolmeen osaan: mitä tapahtuu, mitä tehdä ja mitä siitä opit.<br>Kymmenen kategoriaa koodaustavoista tietoturvaan ja suorituskykyyn, vain virheitä, jotka toistuvat oikeissa tiimeissä kerta toisensa jälkeen.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/detail.jpg" alt="Mitä tapahtuu, mitä tehdä, mitä oppia" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="categories-grid">
-    <div class="cat-chip"><span>⌨️</span> Koodaustavat</div>
-    <div class="cat-chip"><span>🐛</span> Debuggaus ja ongelmanratkaisu</div>
-    <div class="cat-chip"><span>🌿</span> Versionhallinta ja yhteistyö</div>
-    <div class="cat-chip"><span>🏗️</span> Suunnittelu ja arkkitehtuuri</div>
-    <div class="cat-chip"><span>🛡️</span> Testaus ja laatu</div>
-    <div class="cat-chip"><span>🧠</span> Oppiminen ja kasvu</div>
-    <div class="cat-chip"><span>💬</span> Viestintä</div>
-    <div class="cat-chip"><span>🖥️</span> Infrastruktuuri ja julkaisu</div>
-    <div class="cat-chip"><span>🔒</span> Tietoturva ja yksityisyys</div>
-    <div class="cat-chip"><span>⚡</span> Suorituskyky ja optimointi</div>
-  </div>
-</section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Pohdintakysymykset, jotta asia jää mieleen</h2>
+        <p>Jokaisessa virheessä on 4 pohdintakysymystä, yhteensä 400. Vastaa omia projektejasi ajatellen, niin luettu muuttuu kokemukseksi.<br>Vastauksesi kerääntyvät pohdintapäiväkirjaan kategorioittain, valmiina luettaviksi uudelleen.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/retro.jpg" alt="Pohdintakysymykset, jotta asia jää mieleen" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-<section>
-  <p class="section-label">Hinnoittelu</p>
-  <h2>Aloita ilmaiseksi</h2>
-  <p class="section-desc">Kokeile ensin 30 virhettä ilmaiseksi ja avaa kaikki 100 PRO:lla.</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Näe, kuinka pitkälle olet päässyt</h2>
+        <p>Merkitse kokemasi virheet, ja edistymisesi kasvaa kategorioittain ja kokonaisuutena. Lisää kirjanmerkki siihen, mihin haluat palata.<br>Kaikki synkronoituu iCloudin kautta iPhonen, iPadin ja Macin välillä.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/progress.jpg" alt="Näe, kuinka pitkälle olet päässyt" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="pricing-grid">
-    <div class="price-card">
-      <p class="price-plan">Ilmainen</p>
-      <p class="price-amount">Ilmainen</p>
-      <p class="price-period">Ilmainen ikuisesti</p>
-      <ul class="price-features">
-        <li>Koodaustavat (10 kpl)</li>
-        <li>Debuggaus ja ongelmanratkaisu (10 kpl)</li>
-        <li>Versionhallinta ja yhteistyö (10 kpl)</li>
-        <li>Pohdintapäiväkirja</li>
-        <li>Edistyminen ja kirjanmerkit</li>
-      </ul>
-    </div>
-    <div class="price-card featured">
-      <div class="price-badge">BEST</div>
-      <p class="price-plan">PRO kuukausitilaus</p>
-      <p class="price-amount">Kuukausitilaus</p>
-      <p class="price-period">Hinta näkyy App Storessa</p>
-      <ul class="price-features">
-        <li>Kaikki 100 virhettä</li>
-        <li>Kaikki 10 kategoriaa</li>
-        <li>Pohdintapäiväkirja</li>
-        <li>iCloud-synkronointi</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-    <div class="price-card">
-      <p class="price-plan">PRO elinikäinen pääsy</p>
-      <p class="price-amount">Elinikäinen</p>
-      <p class="price-period">Kertamaksu, käyttö ikuisesti</p>
-      <ul class="price-features">
-        <li>Kaikki 100 virhettä</li>
-        <li>Kaikki 10 kategoriaa</li>
-        <li>Pohdintapäiväkirja</li>
-        <li>iCloud-synkronointi</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <section class="reveal">
+      <h2>Kolme vaihetta alkuun</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Valitse kategoria</h3><p>Koodaustavat, debuggaus ja versionhallinta ovat auki ilmaiseksi.</p></li>
+<li class="card"><span class="n">2</span><h3>Lue ja merkitse</h3><p>Napauta Koettu niiden virheiden kohdalla, jotka olet tehnyt itse.</p></li>
+<li class="card"><span class="n">3</span><h3>Pohdi</h3><p>Kirjoita vastaus, vaikka lyhyt. Se tallentuu pohdintapäiväkirjaasi.</p></li></ol>
+    </section>
 
-<section class="sync-section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
-  <p class="section-label">Usealla alustalla</p>
-  <h2>Mukanasi kaikilla laitteilla</h2>
-  <p class="section-desc">CloudKitiin perustuva iCloud-synkronointi jatkaa siitä, mihin jäit, millä laitteella tahansa.</p>
-  <div class="devices">
-    <div class="device-chip">📱 iPhone</div>
-    <div class="device-chip">📲 iPad</div>
-    <div class="device-chip">💻 Mac</div>
-    <div class="device-chip">☁️ Automaattinen iCloud-synkronointi</div>
-  </div>
-</section>
+    <section class="reveal" id="commands">
+      <h2>10 kategoriaa</h2>
+      <div class="card table">
+        <dl><div><dt>Koodaustavat</dt><dd>#001–#010 · Ilmainen</dd></div><div><dt>Debuggaus ja ongelmanratkaisu</dt><dd>#011–#020 · Ilmainen</dd></div><div><dt>Versionhallinta ja yhteistyö</dt><dd>#021–#030 · Ilmainen</dd></div><div><dt>Suunnittelu ja arkkitehtuuri</dt><dd>#031–#040 · PRO</dd></div><div><dt>Testaus ja laatu</dt><dd>#041–#050 · PRO</dd></div><div><dt>Oppiminen ja kasvu</dt><dd>#051–#060 · PRO</dd></div><div><dt>Viestintä ja yhteistyö</dt><dd>#061–#070 · PRO</dd></div><div><dt>Julkaisu ja ylläpito</dt><dd>#071–#080 · PRO</dd></div><div><dt>Tietoturva ja data</dt><dd>#081–#090 · PRO</dd></div><div><dt>Suorituskyky ja optimointi</dt><dd>#091–#100 · PRO</dd></div></dl>
+      </div>
+      <p class="muted">Jokaisessa kategoriassa on 10 virhettä ja jokaisessa virheessä 4 pohdintakysymystä.</p>
+    </section>
 
-<section class="cta-section">
-  <h2>Aloita kasvusi nyt</h2>
-  <p>30 virhettä ilmaiseksi, PRO avaa kaikki 100.<br>Ole kehittäjä, joka ei tee samaa virhettä kahdesti.</p>
-  <a href="#" class="btn-store">
-    <svg style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Download on the</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<footer>
-  <div>
-    <p>© 2026 100 virhettä. All rights reserved.</p>
-    <div style="margin-top:12px"><div class="langs"><a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/index.html" hreflang="en" lang="en">English</a> <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a> <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/index.html" hreflang="es" lang="es">Español</a> <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a> <a href="../it/index.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/index.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a> <a href="../da/index.html" hreflang="da" lang="da">Dansk</a> <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/index.html" hreflang="fi" lang="fi" class="cur" aria-current="true">Suomi</a> <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a> <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a></div></div>
-  </div>
-  <span class="foot-links"><a href="support.html">Tuki</a><a href="privacy.html">Tietosuojakäytäntö</a></span>
-</footer>
+    <section class="reveal" id="pricing">
+      <h2>30 ilmaiseksi. Kaikki 100 PRO:lla.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Ilmainen</h3>
+          <ul><li>Ensimmäiset 3 kategoriaa, 30 virhettä</li><li>Niiden 120 pohdintakysymystä</li><li>Tarkistuslista, pohdintapäiväkirja, edistyminen ja kirjanmerkit</li><li>iCloud-synkronointi (iPhone, iPad, Mac)</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>100 virhettä PRO</h3>
+          <ul><li>Loput 7 kategoriaa, 70 virhettä lisää (#031–#100)</li><li>280 pohdintakysymystä lisää</li><li>Kaikki tulevat sisältöpäivitykset</li></ul>
+          <p class="muted">Kuukausi- tai vuositilaus (jopa 50 % kuukausitilausta edullisempi) tai kertaosto loppuiäksi.</p>
+        </div>
+      </div>
+      <p class="muted">Ei henkilötietojen keruuta, ei analytiikkaa eikä mainoksia.</p>
+    </section>
 
+    <section class="reveal" id="faq">
+      <h2>Usein kysyttyä</h2>
+      <div class="faq"><details><summary>Mikä on ilmaista?</summary><p>Kaikki 30 virhettä kysymyksineen kategorioissa Koodaustavat, Debuggaus ja ongelmanratkaisu sekä Versionhallinta ja yhteistyö. Myös tarkistuslista, pohdintapäiväkirja, edistyminen, kirjanmerkit ja iCloud-synkronointi ovat ilmaisia.</p></details>
+<details><summary>Miten käytän PRO:ta toisella laitteella?</summary><p>Kirjaudu samalla Apple ID:llä ja napauta tilausnäkymässä Palauta ostokset.</p></details>
+<details><summary>Miten peruutan tilauksen?</summary><p>Milloin tahansa kohdassa Asetukset › Apple ID › Tilaukset. Tilaus uusiutuu automaattisesti, ellet peru sitä vähintään 24 tuntia ennen kuluvan jakson päättymistä. Elinikäinen ostos maksetaan vain kerran.</p></details>
+<details><summary>Tiedot eivät synkronoidu laitteiden välillä.</summary><p>Tarkista, että kaikki laitteet on kirjattu iCloudiin samalla Apple ID:llä ja että iCloud on päällä tälle sovellukselle Asetuksissa. Synkronointi vaatii myös verkkoyhteyden.</p></details>
+<details><summary>Miten poistan kaiken?</summary><p>Napauta sovelluksen asetuksissa Nollaa kaikki tiedot. Merkinnät, vastaukset ja kirjanmerkit poistetaan, eikä toimintoa voi perua.</p></details>
+<details><summary>Millä laitteilla sovellus toimii?</summary><p>iPhonella, iPadilla ja Macilla. PRO avautuu kaikilla laitteilla, joilla on sama Apple ID.</p></details>
+<details><summary>Lähetetäänkö tietojani jonnekin?</summary><p>Ei. Merkintäsi ja vastauksesi tallentuvat vain laitteillesi ja omaan iCloudiisi. Sovellus ei kerää henkilötietoja, eikä siinä ole analytiikkaa tai mainoksia.</p></details></div>
+      <p class="contact">Kysymyksiä tai ehdotuksia? Kirjoita osoitteeseen <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Ole kehittäjä, joka ei tee<br>samaa virhettä kahdesti</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6759643878">Lataa ilmaiseksi App Storesta</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Kieli"><a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi" aria-current="page">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Tietosuojakäytäntö</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Hyunho Lee</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

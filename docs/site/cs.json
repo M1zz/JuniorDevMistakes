@@ -1,0 +1,258 @@
+{
+  "title": "100 chyb: checklist pro juniorní vývojáře",
+  "description": "Přečtěte si 100 nejčastějších chyb juniorních vývojářů, odškrtněte ty, které jste udělali, a odpovězte na otázky k reflexi. Prvních 30 zdarma.",
+  "hero": {
+    "headline": "Poznejte chyby dřív,\nnež vás bolí",
+    "lead": "100 chyb, které začínající vývojáři dělají nejčastěji, na jednom místě. U každé si přečtete, co se stane, co dělat a co si z toho odnést, a odpovíte na otázku k reflexi, abyste stejnou chybu neudělali dvakrát.",
+    "cta": "Stáhnout zdarma z App Storu",
+    "note": "Prvních 30 chyb je zdarma. Pro iPhone, iPad a Mac."
+  },
+  "demo": {
+    "title": "Otevřete si jednu chybu",
+    "lead": "Tohle je 10 chyb z první bezplatné kategorie, slovo od slova jako v aplikaci. Ty, které jste už zažili, označte jako Zažito.",
+    "note": "Webová ukázka označení neukládá. V aplikaci se označení a odpovědi synchronizují přes iCloud do všech vašich zařízení.",
+    "category": "Návyky při psaní kódu",
+    "labels": {
+      "happens": "K čemu dojde",
+      "todo": "Jak na to",
+      "learn": "Co vás to naučí",
+      "retro": "Reflexní otázky",
+      "done": "Zažito"
+    },
+    "items": [
+      {
+        "n": 1,
+        "mistake": "Proměnné se jmenují a, b, x a nic neříkají",
+        "situation": "Když píšete kód rychle, začnete automaticky používat názvy jako temp, data, result nebo val. V ten moment máte kontext v hlavě a nic vám nevadí, ale už za týden musíte kód číst znovu od začátku a ptát se: „Co to vlastně bylo za proměnnou?“",
+        "action": "Když pojmenováváte proměnnou, věnujte 3 sekundy otázce, co přesně obsahuje. Místo data pište userProfileList, místo temp formattedDate, místo result filteredActiveUsers. Role by měla být vidět v názvu. Cílem je, aby se kód četl jako anglická věta. Například if (isUserActive && hasPermission) je srozumitelné už samotným přečtením podmínky.",
+        "growth": "Kód se čte desetkrát víc než píše. Dobrý název je silnější než komentář. Sjednoťte s týmem konvenci pojmenování (camelCase, snake_case apod.), vyhýbejte se zkratkám (usr → user, btn → button) a používejte názvy, které se dají vyhledat. Jen tenhle jeden návyk dramaticky zrychlí code review a zlepší udržovatelnost.",
+        "retro": "Našly by se v kódu, který jste nedávno psali, proměnné s nejasným názvem? Jak se jmenovaly a jak by se daly pojmenovat lépe?"
+      },
+      {
+        "n": 2,
+        "mistake": "Do jedné funkce se napěchuje přes 100 řádků kódu",
+        "situation": "Při implementaci jedné funkce napíšete validaci vstupu, transformaci dat, volání API, zpracování výsledku i ošetření chyb do jediné funkce. Zpočátku je tok vidět, ale jakmile funkce přeroste 200 řádků, je těžké najít, kde provést úpravu, a vedlejší efekty se nedají předvídat.",
+        "action": "Jakmile funkce přesáhne 20 řádků, zvažte rozdělení. Měřítkem je otázka: „Dokážu popsat, co tato funkce dělá, jednou větou?“ Každý krok oddělte do samostatné funkce, třeba validateUserInput(), transformToAPIFormat(), callPaymentAPI() a formatResponse(). Hlavní funkce pak jen volá ostatní ve správném pořadí jako dirigent.",
+        "growth": "Osvojíte si princip jediné odpovědnosti (SRP) v praxi. Malá funkce prozradí svou roli už názvem, dá se testovat samostatně a znovu použít jinde. Schopnost strukturovat kód tak, aby se četl jako příběh, je základní dovedností seniorních vývojářů.",
+        "retro": "Kolik řádků má nejdelší funkce ve vašem aktuálním projektu? Dokážete její úkol popsat jednou větou?"
+      },
+      {
+        "n": 3,
+        "mistake": "Kód se opakuje kopírováním a vkládáním",
+        "situation": "Když potřebujete podobnou logiku, zkopírujete existující kód a trochu ho upravíte. Výpis uživatelů a výpis objednávek se z 90 % shodují, ale každý je napsaný zvlášť. Když se později v té společné části objeví chyba, musíte najít a opravit všechna místa, kam jste kód zkopírovali. Stačí jedno přehlédnout a stejná chyba se objeví jinde.",
+        "action": "Chvíle, kdy chcete kód zkopírovat, je signál k refaktoringu. Vytáhněte společnou logiku do funkce nebo třídy a odlišné části předávejte jako parametry nebo callbacky. Jakmile se něco opakuje potřetí (Rule of Three), je nutné to abstrahovat. Například jediná funkce fetchList(endpoint, transformer) zvládne obsloužit více výpisů.",
+        "growth": "Vypěstujete si princip DRY (Don't Repeat Yourself) a schopnost abstrakce. Přílišná abstrakce je ale také riziko, takže se ptejte: „Mění se tento kód opravdu ze stejného důvodu a společně?“ Správná abstrakce nesnižuje množství kódu, ale náklady na změnu.",
+        "retro": "Zkopírovali jste v poslední době nějaký kód? Proč jste zvolili kopírování místo abstrakce?"
+      },
+      {
+        "n": 4,
+        "mistake": "Složitá byznys logika se píše bez komentářů",
+        "situation": "Výpočet slevy obsahuje trojitou podmínku a žádný komentář. Když po půl roce přijde požadavek na změnu, nikdo nedokáže vysvětlit, proč je to napsané právě takhle. V kódu je vidět, co se děje, ale ne proč.",
+        "action": "Pište komentáře, které vysvětlují „proč“. Zanechte obchodní kontext, důvody rozhodnutí a čísla souvisejících ticketů, například: // VIP zákazníci dostávají další slevu podle ročních nákupů (požadavek marketingu, 2024 Q3, JIRA-1234). U složitých algoritmů napište před funkci blokový komentář shrnující celý postup.",
+        "growth": "Pochopíte, že „co“ říká samotný kód, „proč“ říkají komentáře a „jak“ říká dokumentace. Dobrý komentář je dárek pro budoucí vývojáře (včetně vás), díky kterému kódu porozumí a budou ho moci sebejistě upravovat.",
+        "retro": "Zanechali jste v nedávno napsaném kódu komentář tam, kde bylo potřeba vysvětlit, proč je to řešeno právě tak?"
+      },
+      {
+        "n": 5,
+        "mistake": "Komentuje se příliš a vysvětluje se každý řádek",
+        "situation": "Do každého řádku píšete samozřejmé komentáře typu let count = 0; // inicializace počtu na 0. Když se kód změní, musí se změnit i komentář, jenže na jeho aktualizaci se zapomene a komentář s kódem se rozejdou. Lhoucí komentář je horší než žádný.",
+        "action": "Pište kód tak, aby se vysvětloval sám. Při dobrých názvech proměnných a funkcí je většina komentářů zbytečná. Když máte pocit, že komentář potřebujete, nejdřív zvažte, jestli kód nejde refaktorovat tak, aby byl srozumitelný i bez něj. Komentář použijte jen k vysvětlení „proč“ nebo k zachycení pozadí neintuitivního rozhodnutí.",
+        "growth": "Naučíte se psát samodokumentující se kód (self-documenting code). Čitelný kód snižuje potřebu komentářů a komentáře, které jsou opravdu na místě, mají větší váhu.",
+        "retro": "Přistihli jste někdy komentář, který nesouhlasil s kódem? Jaký zmatek tento nepravdivý komentář způsobil?"
+      },
+      {
+        "n": 6,
+        "mistake": "Magická čísla jsou natvrdo rozeseta po kódu",
+        "situation": "Kód jako if (retryCount > 3), setTimeout(() => {}, 86400000) nebo if (role === 2) se rozsypal po celém projektu. Co je ta trojka, co znamená 86400000 a co dvojka, ví jen autor. Když se pravidla změní a počet opakování se má zvýšit na 5, musíte hledat trojku v celém kódu a hrozí, že omylem upravíte jinou trojku s jiným významem.",
+        "action": "Každé literální hodnotě dejte význam pomocí konstanty. Například const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2, aby význam vyplýval z názvu. Když konstanty držíte na jednom místě, při změně pravidel upravujete jediný řádek.",
+        "growth": "Zvyknete si jasně vyjadřovat záměr kódu. To je základ udržovatelnosti a vede to přirozeně k architektonickému vzoru externalizace konfigurace.",
+        "retro": "Najdete ve svém kódu čísla nebo řetězce natvrdo zapsané tak, že nejde poznat jejich význam?"
+      },
+      {
+        "n": 7,
+        "mistake": "Ignorují se konvence kódování a prosazuje se vlastní styl",
+        "situation": "V jednom souboru se míchá camelCase se snake_case a odsazení se střídá mezi tabulátory a mezerami. Kolega při čtení vašeho kódu spotřebuje energii na rozluštění stylu a při code review se neřeší logika, ale spory o formátování.",
+        "action": "Dodržujte konvence kódování, na kterých se tým shodl, a nastavte v projektu automatizační nástroje jako ESLint, Prettier nebo SwiftLint. Když zapnete automatické formátování při uložení, nemusíte o stylu vůbec přemýšlet. Pokud konvence nemáte, navrhněte je týmu a vyjděte z průmyslového standardu (například Airbnb Style Guide).",
+        "growth": "Naučíte se zásadu spolupráce, že konzistence je důležitější než osobní vkus. Osvojíte si také efektivitu v tom, že lidskou energii neutrácíte za věci, které zvládne automatizovat nástroj. To přímo ovlivňuje produktivitu týmu i rychlost zapracování nových lidí.",
+        "retro": "Znáte přesně konvence kódování svého týmu? Pokud ne, kde si je můžete ověřit?"
+      },
+      {
+        "n": 8,
+        "mistake": "Chyby se ignorují prázdným blokem catch",
+        "situation": "Chyby polykáte pomocí try { ... } catch(e) {}. Služba se chová divně, ale v logu žádná chyba není, takže příčinu nelze najít. Uživatelé hlásí, že jim nefunguje platba, a na serveru není vůbec žádný záznam.",
+        "action": "V každém bloku catch alespoň zalogujte chybu. Pokud se z chyby dá zotavit, zotavte se, a pokud ne, předejte ji výš. Uživateli ukažte přívětivou zprávu a vývojáři nechte podrobný log. Základní podoba je catch(e) { logger.error('Zpracování platby selhalo', { userId, orderId, error: e.message }); throw new PaymentError('Při zpracování platby došlo k problému'); }.",
+        "growth": "Naučíte se systematicky navrhovat strategii zpracování chyb (zotavení, propagace, logování). Zvnitřníte si zásadu, že každou chybu musí někdo zpracovat, a ta je základem stability služby a její pozorovatelnosti (observability).",
+        "retro": "Je ve vašem aktuálním projektu nějaký prázdný blok catch? Vyhledejte je. Kolik jich je?"
+      },
+      {
+        "n": 9,
+        "mistake": "Globální proměnné se používají na každém kroku",
+        "situation": "Používáte globální proměnné, protože se jednoduše sdílejí mezi funkcemi. Jak aplikace roste, nelze dohledat, která funkce a kdy globální proměnnou mění, a úprava jedné funkce rozbije jinou, která s ní zdánlivě vůbec nesouvisí.",
+        "action": "Omezte rozsah platnosti proměnných na minimum. Data předávejte pomocí parametrů funkcí, návratových hodnot a dependency injection. Pokud potřebujete správu stavu, použijte knihovnu jako Redux nebo Zustand nebo proměnné instance třídy, aby byla cesta změn stavu dobře dohledatelná.",
+        "growth": "Pochopíte principy správy stavu a rozsahu platnosti. Ucítíte hodnotu funkcionálního přístupu, který minimalizuje vedlejší efekty, i hodnotu neměnnosti (immutability), a to je klíčová schopnost, díky níž je složitá aplikace předvídatelná.",
+        "retro": "Používáte v aktuálním projektu někde globální proměnné? Proč jste je deklarovali globálně?"
+      },
+      {
+        "n": 10,
+        "mistake": "K objektu se přistupuje bez kontroly null/undefined",
+        "situation": "K hluboce vnořeným vlastnostem jako user.profile.address.city přistupujete bez jakékoli ochrany. Jakmile se objeví uživatel bez profilu nebo bez zadané adresy, aplikace okamžitě spadne s chybou Cannot read property of null.",
+        "action": "Aktivně využívejte optional chaining (user?.profile?.address?.city) a výchozí hodnoty (nullish coalescing, ?? 'Adresa nezadána'). Na začátek funkce dejte guard clause: if (!user) return null; Pokud používáte TypeScript, zapněte strictNullChecks, aby byla bezpečnost vůči null zaručena už při kompilaci.",
+        "growth": "Osvojíte si myšlení defenzivního programování. Návyk ptát se vždy nejdřív „může tahle hodnota chybět?“ dramaticky snižuje počet pádů za běhu. Pochopíte také, proč je důležitá null safety na úrovni jazyka, například Optional ve Swiftu nebo nullable typy v Kotlinu.",
+        "retro": "Setkali jste se nedávno s runtime chybou kvůli null/undefined? Jak často se to děje?"
+      }
+    ]
+  },
+  "problem": {
+    "title": "Zase stejná poznámka v code review?",
+    "text": "Nesrozumitelné názvy proměnných, funkce na 200 řádků, zkopírovaný kód. Každý senior tím prošel, ale člověk to většinou zjistí, až když do toho spadne. 100 chyb vám ty chyby ukáže předem a nechá vás zamyslet se nad vlastní prací, abyste je neopakovali."
+  },
+  "features": [
+    {
+      "title": "Co se stane, co dělat, co si odnést",
+      "text": "Každá chyba je rozebraná ve třech částech: co se stane, co dělat a co se z ní naučíte.\nDeset kategorií od návyků při psaní kódu po bezpečnost a výkon, jen s chybami, které se ve skutečných týmech pořád opakují.",
+      "shot": "detail"
+    },
+    {
+      "title": "Otázky k reflexi, aby to zůstalo",
+      "text": "Ke každé chybě jsou 4 otázky k reflexi, celkem 400. Odpovídejte s myšlenkou na vlastní projekty a z přečteného se stane zkušenost.\nOdpovědi se ukládají do deníku reflexí podle kategorií, kdykoli se k nim můžete vrátit.",
+      "shot": "retro"
+    },
+    {
+      "title": "Uvidíte, kam jste se posunuli",
+      "text": "Odškrtávejte chyby, které jste zažili, a pokrok roste po kategoriích i celkově. Co se chcete vrátit, si uložte do záložek.\nVše se synchronizuje přes iCloud mezi iPhonem, iPadem a Macem.",
+      "shot": "progress"
+    }
+  ],
+  "steps": {
+    "title": "Tři kroky na začátek",
+    "items": [
+      {
+        "title": "Vyberte kategorii",
+        "text": "Návyky při psaní kódu, ladění a správa verzí jsou zdarma."
+      },
+      {
+        "title": "Přečtěte a odškrtněte",
+        "text": "U chyb, které jste sami udělali, klepněte na Zažito."
+      },
+      {
+        "title": "Zamyslete se",
+        "text": "Napište odpověď, klidně krátkou. Uloží se do deníku reflexí."
+      }
+    ]
+  },
+  "reference": {
+    "title": "10 kategorií",
+    "tags": [
+      "Zdarma",
+      "PRO"
+    ],
+    "rows": [
+      [
+        "Návyky při psaní kódu",
+        "#001–#010 · Zdarma"
+      ],
+      [
+        "Ladění a řešení problémů",
+        "#011–#020 · Zdarma"
+      ],
+      [
+        "Správa verzí a spolupráce",
+        "#021–#030 · Zdarma"
+      ],
+      [
+        "Návrh a architektura",
+        "#031–#040 · PRO"
+      ],
+      [
+        "Testování a kvalita",
+        "#041–#050 · PRO"
+      ],
+      [
+        "Učení a růst",
+        "#051–#060 · PRO"
+      ],
+      [
+        "Komunikace a spolupráce",
+        "#061–#070 · PRO"
+      ],
+      [
+        "Nasazení a provoz",
+        "#071–#080 · PRO"
+      ],
+      [
+        "Bezpečnost a data",
+        "#081–#090 · PRO"
+      ],
+      [
+        "Výkon a optimalizace",
+        "#091–#100 · PRO"
+      ]
+    ],
+    "note": "Každá kategorie má 10 chyb a každá chyba 4 otázky k reflexi."
+  },
+  "pricing": {
+    "title": "30 zdarma. Všech 100 s PRO.",
+    "free": {
+      "name": "Zdarma",
+      "items": [
+        "První 3 kategorie, 30 chyb",
+        "Jejich 120 otázek k reflexi",
+        "Checklist, deník reflexí, pokrok a záložky",
+        "Synchronizace přes iCloud (iPhone, iPad, Mac)"
+      ]
+    },
+    "pro": {
+      "name": "100 chyb PRO",
+      "items": [
+        "Zbylých 7 kategorií, dalších 70 chyb (#031–#100)",
+        "Dalších 280 otázek k reflexi",
+        "Všechny budoucí aktualizace obsahu"
+      ],
+      "note": "Měsíční nebo roční předplatné (až o 50 % levnější než měsíční), nebo jednorázový doživotní nákup."
+    },
+    "note": "Žádná osobní data, žádné analytické nástroje, žádné reklamy."
+  },
+  "faq": {
+    "title": "Časté dotazy",
+    "items": [
+      {
+        "q": "Co je zdarma?",
+        "a": "Všech 30 chyb i s otázkami v kategoriích Návyky při psaní kódu, Ladění a řešení problémů a Správa verzí a spolupráce. Checklist, deník reflexí, pokrok, záložky i synchronizace přes iCloud jsou také zdarma."
+      },
+      {
+        "q": "Jak používat PRO na jiném zařízení?",
+        "a": "Přihlaste se stejným Apple ID a na obrazovce předplatného klepněte na Obnovit nákupy."
+      },
+      {
+        "q": "Jak zruším předplatné?",
+        "a": "Kdykoli v Nastavení › Apple ID › Předplatná. Předplatné se automaticky obnoví, pokud ho nezrušíte nejméně 24 hodin před koncem aktuálního období. Doživotní nákup platíte jen jednou."
+      },
+      {
+        "q": "Data se mezi zařízeními nesynchronizují.",
+        "a": "Zkontrolujte, že jsou všechna zařízení přihlášená do iCloudu stejným Apple ID a že má aplikace v Nastavení zapnutý iCloud. Synchronizace potřebuje i připojení k síti."
+      },
+      {
+        "q": "Jak všechno smazat?",
+        "a": "V nastavení aplikace klepněte na Smazat všechna data. Označení, odpovědi i záložky se smažou a nejde to vrátit."
+      },
+      {
+        "q": "Na jakých zařízeních aplikace funguje?",
+        "a": "Na iPhonu, iPadu a Macu. PRO se odemkne na všech zařízeních se stejným Apple ID."
+      },
+      {
+        "q": "Posílají se moje data někam?",
+        "a": "Ne. Označení a odpovědi zůstávají jen ve vašich zařízeních a ve vašem iCloudu. Aplikace nesbírá osobní data a nemá analytické nástroje ani reklamy."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Buďte vývojář, který stejnou\nchybu neudělá dvakrát",
+    "cta": "Stáhnout zdarma z App Storu"
+  },
+  "ui": {
+    "skip": "Přeskočit na obsah",
+    "languages": "Jazyk",
+    "privacy": "Zásady ochrany soukromí",
+    "contact": "Dotazy nebo návrhy posílejte na {email}."
+  }
+}

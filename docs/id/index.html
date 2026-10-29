@@ -1,464 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>100 Kesalahan Dev — Checklist Pertumbuhan Junior Developer</title>
-  <meta name="description" content="100 kesalahan yang paling sering dibuat developer. Kenali lebih awal dan berkembanglah lebih cepat." />
-  <meta property="og:title" content="100 Kesalahan Dev — Checklist Pertumbuhan Junior Developer" />
-  <meta property="og:description" content="100 kesalahan yang paling sering dibuat developer. Kenali lebih awal dan berkembanglah lebih cepat." />
-  <meta property="og:type" content="website" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/index.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/index.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/index.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/index.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/index.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/index.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/index.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/index.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/index.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/index.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/index.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/index.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/index.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/index.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/index.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/index.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/index.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/index.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/index.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/index.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/index.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/index.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/index.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --primary:      #3F3884;
-      --primary-light:#6159AD;
-      --accent:       #F06B6B;
-      --green:        #38C78C;
-      --amber:        #F2B333;
-      --blue:         #4D8CEB;
-      --purple:       #8059B8;
-      --bg:           #0f0e1a;
-      --surface:      #1a1829;
-      --border:       rgba(255,255,255,0.08);
-      --text:         #f0eefc;
-      --muted:        rgba(240,238,252,0.55);
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 5%;
-      height: 64px;
-      background: rgba(15,14,26,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.3px; }
-    .nav-logo span { color: var(--accent); }
-    nav a.nav-link {
-      font-size: 0.9rem; color: var(--muted); text-decoration: none;
-      transition: color .2s;
-    }
-    nav a.nav-link:hover { color: var(--text); }
-
-    /* ── HERO ── */
-    .hero {
-      position: relative; overflow: hidden;
-      display: flex; flex-direction: column; align-items: center; text-align: center;
-      padding: 100px 5% 80px;
-      background: linear-gradient(145deg, #2a2460 0%, #3F3884 40%, #8059B8 100%);
-    }
-    .hero::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(240,107,107,.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-badge {
-      display: inline-block;
-      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
-      color: var(--amber);
-      background: rgba(242,179,51,.12);
-      border: 1px solid rgba(242,179,51,.25);
-      border-radius: 99px;
-      padding: 5px 14px;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-    }
-    .app-icon {
-      width: 120px; height: 120px;
-      border-radius: 27px;
-      background: linear-gradient(145deg, #3F3884, #8059B8);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 52px;
-      margin-bottom: 32px;
-      box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.12);
-    }
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 3.6rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -1px;
-      margin-bottom: 20px;
-    }
-    h1 em { font-style: normal; color: var(--accent); }
-    .hero-sub {
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      color: rgba(255,255,255,.72);
-      max-width: 520px;
-      margin-bottom: 40px;
-      line-height: 1.75;
-    }
-    .btn-store {
-      display: inline-flex; align-items: center; gap: 10px;
-      background: #fff; color: #000;
-      font-weight: 700; font-size: 1rem;
-      padding: 14px 28px;
-      border-radius: 14px;
-      text-decoration: none;
-      transition: transform .2s, box-shadow .2s;
-      box-shadow: 0 8px 24px rgba(0,0,0,.25);
-    }
-    .btn-store:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.35); }
-    .btn-store svg { width: 22px; height: 22px; }
-    .btn-store-sub { font-size: .7rem; font-weight: 400; display: block; text-align: left; opacity: .6; margin-bottom: 1px; }
-    .btn-store-main { font-size: 1rem; font-weight: 700; display: block; text-align: left; }
-
-    /* ── FEATURES ── */
-    section { padding: 80px 5%; }
-    .section-label {
-      text-align: center;
-      font-size: .75rem; font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    h2 {
-      text-align: center;
-      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 12px;
-    }
-    .section-desc {
-      text-align: center;
-      color: var(--muted);
-      font-size: 1rem;
-      max-width: 500px;
-      margin: 0 auto 56px;
-      line-height: 1.75;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .feature-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      transition: transform .25s, border-color .25s;
-    }
-    .feature-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.15); }
-    .feature-icon {
-      width: 48px; height: 48px;
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 22px;
-      margin-bottom: 16px;
-    }
-    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-    .feature-card p { font-size: .9rem; color: var(--muted); line-height: 1.65; }
-
-    /* ── CATEGORIES ── */
-    .categories-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .categories-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .cat-chip {
-      display: flex; align-items: center; gap: 10px;
-      padding: 12px 16px;
-      background: rgba(255,255,255,.04);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      font-size: .9rem; font-weight: 500;
-    }
-    .cat-chip span { font-size: 1.1rem; }
-
-    /* ── PRICING ── */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    .price-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      text-align: center;
-    }
-    .price-card.featured {
-      background: linear-gradient(145deg, #3F3884, #6159AD);
-      border-color: rgba(255,255,255,.2);
-    }
-    .price-badge {
-      display: inline-block;
-      font-size: .7rem; font-weight: 700;
-      background: var(--amber); color: #000;
-      border-radius: 99px; padding: 3px 10px;
-      margin-bottom: 16px;
-      text-transform: uppercase; letter-spacing: .05em;
-    }
-    .price-plan { font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
-    .price-amount { font-size: 2rem; font-weight: 800; margin-bottom: 4px; }
-    .price-period { font-size: .8rem; color: var(--muted); margin-bottom: 20px; }
-    .price-features { list-style: none; text-align: left; }
-    .price-features li { font-size: .88rem; padding: 6px 0; color: var(--muted); display: flex; gap: 8px; }
-    .price-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
-    .price-card.featured .price-features li { color: rgba(255,255,255,.8); }
-
-    /* ── SYNC ── */
-    .sync-section { text-align: center; }
-    .devices {
-      display: flex; justify-content: center; align-items: center;
-      gap: 24px; flex-wrap: wrap;
-      margin-top: 40px;
-    }
-    .device-chip {
-      display: flex; align-items: center; gap: 8px;
-      padding: 10px 20px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 99px;
-      font-size: .9rem; font-weight: 500;
-    }
-
-    /* ── CTA ── */
-    .cta-section {
-      text-align: center;
-      background: linear-gradient(145deg, #2a2460, #3F3884, #8059B8);
-      padding: 100px 5%;
-    }
-    .cta-section h2 { margin-bottom: 16px; }
-    .cta-section p { color: rgba(255,255,255,.7); margin-bottom: 40px; font-size: 1.05rem; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--bg);
-      border-top: 1px solid var(--border);
-      padding: 32px 5%;
-      display: flex; flex-wrap: wrap;
-      align-items: center; justify-content: space-between;
-      gap: 12px;
-    }
-    footer p { font-size: .85rem; color: var(--muted); }
-    footer a { color: var(--muted); font-size: .85rem; text-decoration: none; transition: color .2s; }
-    footer a:hover { color: var(--text); }
-
-    @media (max-width: 640px) {
-      nav { padding: 0 4%; }
-      .hero { padding: 72px 4% 60px; }
-      section { padding: 60px 4%; }
-    }
-  
-    .langs { font-size: .8rem; color: rgba(240,238,252,.45); line-height: 2; }
-    .langs a { color: rgba(240,238,252,.6); text-decoration: none; margin-right: 10px; white-space: nowrap; }
-    .langs a:hover, .langs a.cur { color: #f0eefc; }
-    .langs a.cur { font-weight: 700; }
-    .doc-langs { max-width: 720px; margin: 64px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); }
-    .foot-links a { margin-right: 14px; }
-    .faq dt { font-weight: 700; margin: 24px 0 6px; color: #f0eefc; }
-    .faq dd { color: rgba(240,238,252,.75); margin: 0; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>100 Kesalahan Junior Dev: checklist untuk berkembang lebih cepat</title>
+  <meta name="description" content="Baca 100 kesalahan yang paling sering dibuat junior developer, centang yang pernah kamu alami, lalu jawab pertanyaan refleksi. 30 pertama gratis.">
+  <meta name="theme-color" content="#403885" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6759643878">
+  <link rel="canonical" href="https://m1zz.github.io/JuniorDevMistakes/id/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="100 Kesalahan Junior Dev: checklist untuk berkembang lebih cepat">
+  <meta property="og:description" content="Baca 100 kesalahan yang paling sering dibuat junior developer, centang yang pernah kamu alami, lalu jawab pertanyaan refleksi. 30 pertama gratis.">
+  <meta property="og:url" content="https://m1zz.github.io/JuniorDevMistakes/id/">
+  <meta property="og:image" content="https://m1zz.github.io/JuniorDevMistakes/img/id/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#403885}@media (prefers-color-scheme:dark){:root{--accent:#8C82E6}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <a class="skip" href="#main">Langsung ke konten</a>
+  <header class="bar">
+    <a class="brand" href="../id/"><img src="../icon.png" alt="" width="32" height="32">100 Kesalahan Junior Dev</a>
+    <a class="lang-link" href="#languages">Bahasa</a>
+  </header>
 
-<nav>
-  <div class="nav-logo">100 Kesalahan Dev</div>
-  <span><a href="support.html" class="nav-link">Dukungan</a> &nbsp; <a href="privacy.html" class="nav-link">Kebijakan Privasi</a></span>
-</nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Kenali kesalahannya<br>sebelum kena batunya</h1>
+        <p class="lead">Kumpulan 100 kesalahan yang paling sering dibuat developer pemula. Tiap kesalahan menjelaskan apa yang terjadi, apa yang harus dilakukan, dan apa pelajarannya, lalu kamu menjawab satu pertanyaan refleksi supaya tidak jatuh di lubang yang sama dua kali.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6759643878">Unduh gratis di App Store</a><a class="try" href="#try">Buka satu kesalahan ↓</a></div>
+        <p class="muted small">30 kesalahan pertama gratis. Bisa dipakai di iPhone, iPad, dan Mac.</p>
+      </div>
+      <div class="phone"><img src="../img/id/home.jpg" alt="Kenali kesalahannya sebelum kena batunya" width="600" height="1303" decoding="async"></div>
+    </section>
 
-<section class="hero">
-  <div class="hero-badge">🚀 Aplikasi untuk junior developer</div>
-  <div class="app-icon">⌨️</div>
-  <h1>Kenali kesalahan lebih awal,<br><em>berkembang lebih cepat</em>.</h1>
-  <p class="hero-sub">
-    100 kesalahan yang paling sering dibuat developer.<br>
-    Cek lewat checklist, lalu jadikan pelajaran milikmu lewat refleksi.
-  </p>
-  <a href="#" class="btn-store">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Download on the</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<section>
-  <p class="section-label">Fitur utama</p>
-  <h2>Semua untuk pertumbuhanmu</h2>
-  <p class="section-desc">Tidak berhenti di tahu kesalahannya, tapi sampai benar-benar menjadi pelajaranmu lewat refleksi.</p>
+    <section class="reveal" id="try">
+      <h2>Buka satu kesalahan</h2>
+      <p class="muted">Ini 10 kesalahan di kategori pertama yang dibuka gratis, persis sama dengan isi app. Tandai Sudah dialami untuk yang pernah kamu alami.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Buka satu kesalahan&quot;, &quot;lead&quot;: &quot;Ini 10 kesalahan di kategori pertama yang dibuka gratis, persis sama dengan isi app. Tandai Sudah dialami untuk yang pernah kamu alami.&quot;, &quot;note&quot;: &quot;Versi web ini tidak menyimpan centang. Di app, centang dan jawaban tersinkron lewat iCloud ke semua perangkatmu.&quot;, &quot;category&quot;: &quot;Kebiasaan menulis kode&quot;, &quot;labels&quot;: {&quot;happens&quot;: &quot;Situasi yang terjadi&quot;, &quot;todo&quot;: &quot;Yang sebaiknya dilakukan&quot;, &quot;learn&quot;: &quot;Yang kamu pelajari&quot;, &quot;retro&quot;: &quot;Pertanyaan refleksi&quot;, &quot;done&quot;: &quot;Sudah dialami&quot;}, &quot;items&quot;: [{&quot;n&quot;: 1, &quot;mistake&quot;: &quot;Menamai variabel dengan nama tak bermakna seperti a, b, x&quot;, &quot;situation&quot;: &quot;Saat menulis kode dengan cepat, kamu terbiasa memakai nama seperti temp, data, result, val. Saat menulis, konteksnya masih ada di kepala jadi tidak masalah. Tapi seminggu kemudian kamu bertanya \&quot;ini variabel apa ya?\&quot; dan harus membaca ulang kode dari awal.&quot;, &quot;action&quot;: &quot;Saat memberi nama variabel, luangkan 3 detik untuk memikirkan \&quot;apa isi variabel ini\&quot;. Masukkan perannya ke dalam nama, misalnya userProfileList, bukan data; formattedDate, bukan temp; filteredActiveUsers, bukan result. Tujuannya membuat kode terbaca seperti kalimat bahasa Inggris. Misalnya if (isUserActive &amp;&amp; hasPermission) sudah jelas artinya hanya dengan membaca kondisinya.&quot;, &quot;growth&quot;: &quot;Kode dibaca 10 kali lebih sering daripada ditulis. Nama yang baik lebih kuat daripada komentar. Samakan aturan penamaan (camelCase, snake_case, dll.) dengan tim, hindari singkatan (usr → user, btn → button), dan pakai nama yang mudah dicari. Kebiasaan ini saja sudah sangat meningkatkan kecepatan code review dan kemudahan maintenance.&quot;, &quot;retro&quot;: &quot;Apakah ada nama variabel yang maknanya tidak jelas di kode yang baru kamu tulis? Apa namanya, dan apa nama yang lebih baik?&quot;}, {&quot;n&quot;: 2, &quot;mistake&quot;: &quot;Menjejalkan 100 baris kode atau lebih ke dalam satu fungsi&quot;, &quot;situation&quot;: &quot;Saat membuat satu fitur, kamu menulis validasi input, transformasi data, pemanggilan API, pengolahan hasil, dan penanganan error semuanya dalam satu fungsi. Awalnya alurnya masih terlihat, tapi begitu fungsi melewati 200 baris, kamu sulit menemukan bagian yang harus diubah dan efek sampingnya tak bisa diprediksi.&quot;, &quot;action&quot;: &quot;Kalau satu fungsi lebih dari 20 baris, pertimbangkan untuk memecahnya. Ukurannya: \&quot;bisakah fungsi ini dijelaskan dalam satu kalimat?\&quot; Pisahkan tiap langkah menjadi fungsi mandiri seperti validateUserInput(), transformToAPIFormat(), callPaymentAPI(), formatResponse(), dan biarkan fungsi utama hanya berperan sebagai orkestrator yang memanggil semuanya berurutan.&quot;, &quot;growth&quot;: &quot;Kamu menguasai Single Responsibility Principle (SRP) lewat pengalaman langsung. Fungsi kecil perannya terlihat dari namanya, bisa di-test sendiri, dan bisa dipakai ulang di tempat lain. Kemampuan menyusun kode agar terbaca seperti \&quot;cerita\&quot; adalah kompetensi inti senior developer.&quot;, &quot;retro&quot;: &quot;Berapa baris fungsi terpanjang di proyekmu sekarang? Bisakah kamu menjelaskan tugasnya dalam satu kalimat?&quot;}, {&quot;n&quot;: 3, &quot;mistake&quot;: &quot;Mengulang kode dengan copy-paste&quot;, &quot;situation&quot;: &quot;Saat butuh logika yang mirip, kamu copy-paste kode lama lalu mengubah sebagian. Kode untuk daftar pengguna dan daftar pesanan 90% sama, tapi ditulis terpisah. Kelak saat bug ditemukan di bagian yang sama, kamu harus mencari dan memperbaiki semua hasil copy-paste satu per satu, dan kalau ada yang terlewat, bug yang sama muncul lagi di tempat lain.&quot;, &quot;action&quot;: &quot;Saat kamu hendak copy-paste kode, itu sinyal untuk refactoring. Ekstrak logika yang sama ke fungsi atau class, lalu kirim bagian yang berbeda lewat parameter atau callback. Kalau sudah berulang 3 kali (Rule of Three), wajib diabstraksikan. Misalnya satu fetchList(endpoint, transformer) bisa menangani berbagai pengambilan daftar.&quot;, &quot;growth&quot;: &quot;Kamu melatih prinsip DRY (Don&#x27;t Repeat Yourself) dan kemampuan abstraksi. Tapi abstraksi berlebihan juga berbahaya, jadi ukurlah dengan pertanyaan \&quot;apakah kode ini benar-benar berubah bersama karena alasan yang sama?\&quot; Abstraksi yang tepat bukan mengurangi jumlah kode, melainkan mengurangi biaya perubahan.&quot;, &quot;retro&quot;: &quot;Pernahkah kamu baru-baru ini meng-copy-paste kode? Kenapa kamu memilih copy-paste, bukan abstraksi?&quot;}, {&quot;n&quot;: 4, &quot;mistake&quot;: &quot;Menulis logika bisnis yang rumit tanpa komentar&quot;, &quot;situation&quot;: &quot;Perhitungan diskon memakai tiga lapis kondisi tanpa komentar, jadi enam bulan kemudian saat ada permintaan perubahan dari perencana produk, tak seorang pun bisa menjelaskan kenapa kodenya begitu. Dari kode terlihat \&quot;apa yang dilakukan\&quot;, tapi \&quot;kenapa dilakukan\&quot; tidak bisa diketahui.&quot;, &quot;action&quot;: &quot;Tulis komentar yang menjelaskan \&quot;Why\&quot;. Tinggalkan konteks bisnis, latar belakang keputusan, dan nomor isu terkait, misalnya // Pelanggan tier VIP mendapat diskon tambahan berdasarkan total pembelian tahunan (permintaan tim marketing 2024 Q3, JIRA-1234). Untuk algoritma kompleks, tulis komentar blok di atas fungsi yang meringkas alurnya.&quot;, &quot;growth&quot;: &quot;Kamu memahami bahwa \&quot;What\&quot; dijelaskan oleh kode itu sendiri, \&quot;Why\&quot; oleh komentar, dan \&quot;How\&quot; oleh dokumen. Komentar yang baik adalah hadiah bagi developer masa depan (termasuk dirimu) agar bisa memahami dan mengubah kode dengan percaya diri.&quot;, &quot;retro&quot;: &quot;Di kode yang baru kamu tulis, apakah bagian yang butuh penjelasan \&quot;kenapa dibuat begini\&quot; sudah diberi komentar?&quot;}, {&quot;n&quot;: 5, &quot;mistake&quot;: &quot;Memberi terlalu banyak komentar sampai setiap baris dijelaskan&quot;, &quot;situation&quot;: &quot;Kamu menulis komentar yang sudah jelas di setiap baris, seperti let count = 0; // inisialisasi count dengan 0. Saat kode berubah, komentar juga harus diubah, tapi kamu lupa memperbaruinya sehingga kode dan komentar jadi tidak cocok. Komentar yang berbohong lebih berbahaya daripada tidak ada komentar.&quot;, &quot;action&quot;: &quot;Tulislah kode yang menjelaskan dirinya sendiri. Kalau nama variabel dan fungsi bagus, sebagian besar komentar tidak diperlukan. Jika merasa butuh komentar, periksa dulu apakah kode bisa di-refactor agar jelas tanpa komentar. Pakai komentar hanya untuk menjelaskan \&quot;kenapa\&quot; atau menyimpan latar belakang keputusan yang tidak intuitif.&quot;, &quot;growth&quot;: &quot;Kamu melatih kemampuan menulis self-documenting code. Kode yang mudah dibaca mengurangi kebutuhan komentar, dan komentar yang ditulis di tempat yang benar-benar perlu justru bernilai lebih besar.&quot;, &quot;retro&quot;: &quot;Pernahkah kamu menemukan komentar yang tidak cocok dengan kodenya? Kebingungan apa yang ditimbulkan komentar palsu itu?&quot;}, {&quot;n&quot;: 6, &quot;mistake&quot;: &quot;Menulis magic number langsung (hardcode) di mana-mana dalam kode&quot;, &quot;situation&quot;: &quot;Kode seperti if (retryCount &gt; 3), setTimeout(() =&gt; {}, 86400000), if (role === 2) tersebar di mana-mana. Hanya penulisnya yang tahu apa itu 3, 86400000, dan 2. Saat kebijakan berubah dan jumlah retry harus jadi 5, kamu harus mencari angka 3 di seluruh kode, dan ada risiko salah ubah karena ada angka 3 lain dengan makna berbeda.&quot;, &quot;action&quot;: &quot;Buat konstanta yang bermakna untuk setiap nilai literal. Gunakan nama yang menjelaskan maknanya, seperti const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2. Kalau konstanta dikumpulkan di satu tempat, saat kebijakan berubah kamu cukup mengubah satu baris.&quot;, &quot;growth&quot;: &quot;Kamu terbiasa menyampaikan maksud kode dengan jelas. Ini dasar dari maintainability, dan berkembang secara alami menjadi pola arsitektur yang mengeluarkan nilai konfigurasi (configuration) dari kode.&quot;, &quot;retro&quot;: &quot;Adakah angka atau string yang di-hardcode di kodemu sekarang dan maknanya sulit dipahami?&quot;}, {&quot;n&quot;: 7, &quot;mistake&quot;: &quot;Mengabaikan coding convention dan ngotot dengan gaya sendiri&quot;, &quot;situation&quot;: &quot;Dalam satu file, camelCase dan snake_case bercampur, dan indentasi bolak-balik antara tab dan spasi. Rekan setim menghabiskan tenaga untuk menerjemahkan gaya saat membaca kodemu, dan code review berubah jadi debat format, bukan logika.&quot;, &quot;action&quot;: &quot;Ikuti coding convention yang disepakati tim, dan pasang alat otomatis seperti ESLint, Prettier, atau SwiftLint di proyek. Kalau auto-format saat simpan diaktifkan, kamu bahkan tak perlu memikirkan gaya. Kalau belum ada convention, usulkan ke tim dan jadikan standar industri (misalnya Airbnb Style Guide) sebagai titik awal.&quot;, &quot;growth&quot;: &quot;Kamu belajar prinsip kolaborasi bahwa konsistensi lebih penting daripada selera pribadi. Kamu juga menghayati efisiensi untuk tidak menghabiskan energi manusia pada hal yang bisa diotomatisasi alat. Ini berdampak langsung pada produktivitas tim dan kecepatan onboarding.&quot;, &quot;retro&quot;: &quot;Apakah kamu tahu persis coding convention timmu? Kalau belum, di mana kamu bisa mengeceknya?&quot;}, {&quot;n&quot;: 8, &quot;mistake&quot;: &quot;Mengabaikan penanganan error dengan blok catch kosong&quot;, &quot;situation&quot;: &quot;Kamu menelan error dengan try { ... } catch(e) {}. Layanan berperilaku aneh tapi tidak ada log error sehingga penyebabnya tak bisa ditemukan. Pengguna melapor pembayaran gagal, tetapi di server tidak ada catatan apa pun.&quot;, &quot;action&quot;: &quot;Minimal catat log error di setiap blok catch. Kalau error bisa dipulihkan, pulihkan; kalau tidak, teruskan ke tingkat atas. Beri pesan yang ramah untuk pengguna, dan log yang rinci untuk developer. Bentuk dasarnya: catch(e) { logger.error(&#x27;Pemrosesan pembayaran gagal&#x27;, { userId, orderId, error: e.message }); throw new PaymentError(&#x27;Terjadi masalah saat memproses pembayaran&#x27;); }&quot;, &quot;growth&quot;: &quot;Kamu melatih kemampuan merancang strategi penanganan error (pemulihan, propagasi, logging) secara sistematis. Kamu menginternalisasi prinsip \&quot;setiap error harus ditangani oleh seseorang\&quot;, yang menjadi fondasi stabilitas layanan dan observability.&quot;, &quot;retro&quot;: &quot;Adakah blok catch kosong di proyekmu sekarang? Coba cari. Ada berapa?&quot;}, {&quot;n&quot;: 9, &quot;mistake&quot;: &quot;Memakai variabel global secara berlebihan&quot;, &quot;situation&quot;: &quot;Kamu memakai variabel global karena enak dibagi ke banyak fungsi. Saat aplikasi membesar, mustahil melacak fungsi mana yang mengubah variabel global itu dan kapan, dan memperbaiki satu fitur merusak fitur lain yang tampaknya sama sekali tak berhubungan.&quot;, &quot;action&quot;: &quot;Perkecil scope variabel. Kirim data lewat parameter fungsi, nilai kembalian, atau dependency injection. Kalau butuh state management, pakai library seperti Redux atau Zustand, atau instance variable di class, agar jalur perubahan state mudah dilacak.&quot;, &quot;growth&quot;: &quot;Kamu memahami prinsip state management dan scope. Kamu merasakan cara berpikir functional programming yang meminimalkan side effect dan nilai immutability, yang menjadi kemampuan inti untuk membuat aplikasi kompleks tetap bisa diprediksi.&quot;, &quot;retro&quot;: &quot;Adakah bagian proyekmu yang memakai variabel global? Kenapa dijadikan global?&quot;}, {&quot;n&quot;: 10, &quot;mistake&quot;: &quot;Mengakses objek tanpa memeriksa null/undefined&quot;, &quot;situation&quot;: &quot;Kamu mengakses objek yang dalam seperti user.profile.address.city tanpa perlindungan apa pun. Begitu ada pengguna tanpa profil atau yang belum mengisi alamat, aplikasi langsung crash dengan error Cannot read property of null.&quot;, &quot;action&quot;: &quot;Manfaatkan optional chaining (user?.profile?.address?.city) dan nilai default (nullish coalescing, ?? &#x27;Alamat belum diisi&#x27;) secara aktif. Taruh guard clause di awal fungsi: if (!user) return null; Kalau memakai TypeScript, aktifkan strictNullChecks agar keamanan null terjamin saat compile time.&quot;, &quot;growth&quot;: &quot;Kamu menanamkan pola pikir defensive programming. Kebiasaan selalu bertanya dulu \&quot;mungkinkah nilai ini kosong?\&quot; sangat mengurangi crash saat runtime. Kamu juga jadi mengerti kenapa keamanan null di level bahasa, seperti Optional di Swift dan Nullable di Kotlin, begitu penting.&quot;, &quot;retro&quot;: &quot;Pernahkah kamu baru-baru ini mengalami runtime error terkait null/undefined? Seberapa sering terjadi?&quot;}]}"></div>
+    </section>
 
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(63,56,132,.25)">✓</div>
-      <h3>Checklist 100 kesalahan</h3>
-      <p>Dari menulis kode sampai kerja sama tim, kesalahan yang terus berulang di dunia kerja disusun per kategori.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(242,179,51,.2)">📓</div>
-      <h3>Jurnal refleksi</h3>
-      <p>Jawab pertanyaan refleksi di setiap kesalahan, supaya yang kamu dapat bukan sekadar hafalan, tapi pemahaman sungguhan.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(56,199,140,.2)">📊</div>
-      <h3>Pantau progres</h3>
-      <p>Lihat pencapaian per kategori dan progres keseluruhan secara visual, dan rasakan sendiri perkembanganmu.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(77,140,235,.2)">☁️</div>
-      <h3>Sinkronisasi iCloud otomatis</h3>
-      <p>Pakai data yang sama di iPhone, iPad, dan Mac. Tersinkron otomatis lewat CloudKit.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(240,107,107,.2)">🔖</div>
-      <h3>Bookmark</h3>
-      <p>Bookmark item yang perlu dibaca lagi, lalu pelajari ulang nanti sekaligus.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(128,89,184,.2)">💻</div>
-      <h3>iPhone · iPad · Mac</h3>
-      <p>Berkat Mac Catalyst, aplikasi iPhone ini berjalan apa adanya di Mac. Belajar di mana saja.</p>
-    </div>
-  </div>
-</section>
+    <section class="problem reveal">
+      <h2>Dapat komentar yang sama lagi saat code review?</h2>
+      <p>Nama variabel yang tidak jelas, fungsi 200 baris, kode hasil copas di mana-mana. Semua senior pernah mengalaminya, tapi biasanya kita baru sadar setelah jatuh sendiri. 100 Kesalahan Junior Dev menunjukkan kesalahan-kesalahan itu lebih dulu dan mengajakmu merenungkan pekerjaanmu sendiri supaya tidak terulang.</p>
+    </section>
 
-<section class="categories-section">
-  <p class="section-label">10 kategori</p>
-  <h2>Kesalahan apa saja yang dibahas?</h2>
-  <p class="section-desc">Dikelompokkan berdasarkan situasi yang benar-benar dihadapi junior developer.</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Apa yang terjadi, apa yang dilakukan, apa pelajarannya</h2>
+        <p>Setiap kesalahan dijelaskan dalam tiga bagian: apa yang terjadi, apa yang harus dilakukan, dan apa yang kamu pelajari.<br>Ada 10 kategori, dari kebiasaan menulis kode sampai keamanan dan performa, berisi kesalahan yang memang terus berulang di tim sungguhan.</p>
+      </div>
+      <div class="phone"><img src="../img/id/detail.jpg" alt="Apa yang terjadi, apa yang dilakukan, apa pelajarannya" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="categories-grid">
-    <div class="cat-chip"><span>⌨️</span> Kebiasaan menulis kode</div>
-    <div class="cat-chip"><span>🐛</span> Debugging dan pemecahan masalah</div>
-    <div class="cat-chip"><span>🌿</span> Version control dan kolaborasi</div>
-    <div class="cat-chip"><span>🏗️</span> Desain dan arsitektur</div>
-    <div class="cat-chip"><span>🛡️</span> Testing dan kualitas</div>
-    <div class="cat-chip"><span>🧠</span> Belajar dan bertumbuh</div>
-    <div class="cat-chip"><span>💬</span> Komunikasi</div>
-    <div class="cat-chip"><span>🖥️</span> Infrastruktur dan deployment</div>
-    <div class="cat-chip"><span>🔒</span> Keamanan dan privasi</div>
-    <div class="cat-chip"><span>⚡</span> Performa dan optimasi</div>
-  </div>
-</section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Pertanyaan refleksi supaya melekat</h2>
+        <p>Setiap kesalahan punya 4 pertanyaan refleksi, total 400. Jawab sambil memikirkan proyekmu sendiri, dan yang kamu baca berubah jadi pengalaman.<br>Jawabanmu terkumpul di Jurnal Refleksi per kategori, siap dibaca ulang kapan saja.</p>
+      </div>
+      <div class="phone"><img src="../img/id/retro.jpg" alt="Pertanyaan refleksi supaya melekat" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-<section>
-  <p class="section-label">Paket</p>
-  <h2>Mulai gratis</h2>
-  <p class="section-desc">Coba 30 kesalahan pertama secara gratis, lalu buka kunci semua 100 dengan PRO.</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Lihat sejauh mana kamu berkembang</h2>
+        <p>Centang kesalahan yang pernah kamu alami, dan progresmu bertambah per kategori maupun secara keseluruhan. Bookmark yang ingin kamu baca lagi.<br>Semuanya tersinkron lewat iCloud di iPhone, iPad, dan Mac.</p>
+      </div>
+      <div class="phone"><img src="../img/id/progress.jpg" alt="Lihat sejauh mana kamu berkembang" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="pricing-grid">
-    <div class="price-card">
-      <p class="price-plan">Gratis</p>
-      <p class="price-amount">Gratis</p>
-      <p class="price-period">Gratis selamanya</p>
-      <ul class="price-features">
-        <li>Kebiasaan menulis kode (10)</li>
-        <li>Debugging dan pemecahan masalah (10)</li>
-        <li>Version control dan kolaborasi (10)</li>
-        <li>Menulis jurnal refleksi</li>
-        <li>Progres &amp; bookmark</li>
-      </ul>
-    </div>
-    <div class="price-card featured">
-      <div class="price-badge">BEST</div>
-      <p class="price-plan">PRO Bulanan</p>
-      <p class="price-amount">Bulanan</p>
-      <p class="price-period">Harga sesuai tampilan di App Store</p>
-      <ul class="price-features">
-        <li>Semua 100 kesalahan</li>
-        <li>Semua 10 kategori</li>
-        <li>Menulis jurnal refleksi</li>
-        <li>Sinkronisasi iCloud</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-    <div class="price-card">
-      <p class="price-plan">PRO Seumur Hidup</p>
-      <p class="price-amount">Seumur hidup</p>
-      <p class="price-period">Sekali bayar, akses selamanya</p>
-      <ul class="price-features">
-        <li>Semua 100 kesalahan</li>
-        <li>Semua 10 kategori</li>
-        <li>Menulis jurnal refleksi</li>
-        <li>Sinkronisasi iCloud</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <section class="reveal">
+      <h2>Mulai dalam tiga langkah</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Pilih kategori</h3><p>Kebiasaan menulis kode, debugging, dan version control terbuka gratis.</p></li>
+<li class="card"><span class="n">2</span><h3>Baca dan centang</h3><p>Ketuk Sudah dialami pada kesalahan yang pernah kamu buat.</p></li>
+<li class="card"><span class="n">3</span><h3>Refleksikan</h3><p>Tulis jawaban, sependek apa pun. Jawabanmu masuk ke Jurnal Refleksi.</p></li></ol>
+    </section>
 
-<section class="sync-section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
-  <p class="section-label">Multi-platform</p>
-  <h2>Bersama di semua perangkat</h2>
-  <p class="section-desc">Berkat sinkronisasi iCloud berbasis CloudKit, mulai dari perangkat mana pun, lanjutnya tetap mulus.</p>
-  <div class="devices">
-    <div class="device-chip">📱 iPhone</div>
-    <div class="device-chip">📲 iPad</div>
-    <div class="device-chip">💻 Mac</div>
-    <div class="device-chip">☁️ Sinkronisasi iCloud otomatis</div>
-  </div>
-</section>
+    <section class="reveal" id="commands">
+      <h2>10 kategori</h2>
+      <div class="card table">
+        <dl><div><dt>Kebiasaan menulis kode</dt><dd>#001–#010 · Gratis</dd></div><div><dt>Debugging dan pemecahan masalah</dt><dd>#011–#020 · Gratis</dd></div><div><dt>Version control dan kolaborasi</dt><dd>#021–#030 · Gratis</dd></div><div><dt>Desain dan arsitektur</dt><dd>#031–#040 · PRO</dd></div><div><dt>Testing dan kualitas</dt><dd>#041–#050 · PRO</dd></div><div><dt>Belajar dan bertumbuh</dt><dd>#051–#060 · PRO</dd></div><div><dt>Komunikasi dan kolaborasi</dt><dd>#061–#070 · PRO</dd></div><div><dt>Deployment dan operasional</dt><dd>#071–#080 · PRO</dd></div><div><dt>Keamanan dan data</dt><dd>#081–#090 · PRO</dd></div><div><dt>Performa dan optimasi</dt><dd>#091–#100 · PRO</dd></div></dl>
+      </div>
+      <p class="muted">Setiap kategori berisi 10 kesalahan, dan setiap kesalahan punya 4 pertanyaan refleksi.</p>
+    </section>
 
-<section class="cta-section">
-  <h2>Mulai berkembang sekarang juga</h2>
-  <p>30 kesalahan gratis, semua 100 dengan PRO.<br>Jadilah developer yang tidak mengulang kesalahan yang sama.</p>
-  <a href="#" class="btn-store">
-    <svg style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Download on the</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<footer>
-  <div>
-    <p>© 2026 100 Kesalahan Dev. All rights reserved.</p>
-    <div style="margin-top:12px"><div class="langs"><a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/index.html" hreflang="en" lang="en">English</a> <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a> <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/index.html" hreflang="es" lang="es">Español</a> <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a> <a href="../it/index.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/index.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a> <a href="../da/index.html" hreflang="da" lang="da">Dansk</a> <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a> <a href="../id/index.html" hreflang="id" lang="id" class="cur" aria-current="true">Bahasa Indonesia</a> <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a> <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a></div></div>
-  </div>
-  <span class="foot-links"><a href="support.html">Dukungan</a><a href="privacy.html">Kebijakan Privasi</a></span>
-</footer>
+    <section class="reveal" id="pricing">
+      <h2>30 gratis. Semua 100 dengan PRO.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Gratis</h3>
+          <ul><li>3 kategori pertama, 30 kesalahan</li><li>120 pertanyaan refleksinya</li><li>Checklist, Jurnal Refleksi, progres, dan bookmark</li><li>Sinkronisasi iCloud (iPhone, iPad, Mac)</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>100 Kesalahan Junior Dev PRO</h3>
+          <ul><li>7 kategori lainnya, 70 kesalahan lagi (#031–#100)</li><li>280 pertanyaan refleksi tambahan</li><li>Semua pembaruan konten ke depannya</li></ul>
+          <p class="muted">Pilih langganan bulanan, tahunan (hemat hingga 50% dibanding bulanan), atau beli sekali seumur hidup.</p>
+        </div>
+      </div>
+      <p class="muted">Tidak mengumpulkan data pribadi, tanpa alat analitik, dan tanpa iklan.</p>
+    </section>
 
+    <section class="reveal" id="faq">
+      <h2>Pertanyaan umum</h2>
+      <div class="faq"><details><summary>Apa saja yang gratis?</summary><p>Semua 30 kesalahan beserta pertanyaannya di kategori Kebiasaan menulis kode, Debugging dan pemecahan masalah, serta Version control dan kolaborasi. Checklist, Jurnal Refleksi, progres, bookmark, dan sinkronisasi iCloud juga gratis.</p></details>
+<details><summary>Bagaimana memakai PRO di perangkat lain?</summary><p>Masuk dengan Apple ID yang sama, lalu ketuk Pulihkan pembelian di layar langganan.</p></details>
+<details><summary>Bagaimana cara membatalkan langganan?</summary><p>Kapan saja di Pengaturan › Apple ID › Langganan. Langganan diperpanjang otomatis kecuali dibatalkan paling lambat 24 jam sebelum periode berjalan berakhir. Paket seumur hidup hanya dibayar sekali.</p></details>
+<details><summary>Data tidak tersinkron antar perangkat.</summary><p>Pastikan semua perangkat masuk ke iCloud dengan Apple ID yang sama dan iCloud untuk app ini sudah aktif di Pengaturan. Sinkronisasi juga butuh koneksi internet.</p></details>
+<details><summary>Bagaimana menghapus semuanya?</summary><p>Ketuk Reset semua data di pengaturan app. Centang, jawaban, dan bookmark akan terhapus dan tidak bisa dikembalikan.</p></details>
+<details><summary>Bisa dipakai di perangkat apa saja?</summary><p>iPhone, iPad, dan Mac. PRO terbuka di semua perangkat dengan Apple ID yang sama.</p></details>
+<details><summary>Apakah data saya dikirim ke mana-mana?</summary><p>Tidak. Centang dan jawabanmu hanya tersimpan di perangkatmu dan iCloud milikmu sendiri. App ini tidak mengumpulkan data pribadi, tanpa alat analitik maupun iklan.</p></details></div>
+      <p class="contact">Ada pertanyaan atau saran? Kirim email ke <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Jadilah developer yang tidak<br>mengulang kesalahan yang sama</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6759643878">Unduh gratis di App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Bahasa"><a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id" aria-current="page">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Kebijakan Privasi</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Hyunho Lee</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

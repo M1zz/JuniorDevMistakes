@@ -1,0 +1,258 @@
+{
+  "title": "100 Hata: junior geliştiriciler için gelişim kontrol listesi",
+  "description": "Junior geliştiricilerin en sık yaptığı 100 hatayı oku, yaşadıklarını işaretle ve geri bakış sorularını yanıtla. İlk 30 hata ücretsiz.",
+  "hero": {
+    "headline": "Hataları canın\nyanmadan öğren",
+    "lead": "Yeni başlayan geliştiricilerin en sık yaptığı 100 hata tek bir yerde. Her birinde ne olduğunu, ne yapman gerektiğini ve ne öğrendiğini okur, ardından bir geri bakış sorusunu yanıtlarsın; böylece aynı hatayı iki kez yapmazsın.",
+    "cta": "App Store'dan ücretsiz indir",
+    "note": "İlk 30 hata ücretsiz. iPhone, iPad ve Mac'te çalışır."
+  },
+  "demo": {
+    "title": "Bir hatayı aç",
+    "lead": "Bunlar ücretsiz açık olan ilk kategorideki 10 hata, uygulamadakiyle kelimesi kelimesine aynı. Daha önce yaşadıklarını Deneyimlendi olarak işaretle.",
+    "note": "Bu web denemesi işaretlerini kaydetmez. Uygulamada işaretler ve yanıtlar iCloud ile tüm cihazlarına eşzamanlanır.",
+    "category": "Kod Yazma Alışkanlıkları",
+    "labels": {
+      "happens": "Böyle bir durum yaşanır",
+      "todo": "Şöyle yapın",
+      "learn": "Bundan öğrenerek gelişirsiniz",
+      "retro": "Geri bakış soruları",
+      "done": "Deneyimlendi"
+    },
+    "items": [
+      {
+        "n": 1,
+        "mistake": "Değişkenlere a, b, x gibi anlamsız adlar vermek",
+        "situation": "Hızlı kod yazarken temp, data, result, val gibi adları alışkanlıkla kullanırsınız. Yazdığınız anda bağlam aklınızdadır, sorun yoktur; ama bir hafta sonra \"Bu değişken neydi?\" diyerek kodu baştan okumak zorunda kalırsınız.",
+        "action": "Bir değişkene ad verirken \"Bu değişken ne tutuyor?\" diye 3 saniye düşünün. data yerine userProfileList, temp yerine formattedDate, result yerine filteredActiveUsers gibi, rolünü adının içine koyun. Amaç, kodun İngilizce bir cümle gibi okunmasıdır. Örneğin if (isUserActive && hasPermission) koşulunun anlamı sadece okuyarak anlaşılır.",
+        "growth": "Kod yazmaya harcanan zamanın 10 katı kadar zaman okumaya harcanır. İyi bir ad, yorum satırından daha etkilidir. Adlandırma kuralını (camelCase, snake_case vb.) ekiple ortaklaştırın, kısaltmalardan kaçının (usr → user, btn → button) ve aranabilir adlar kullanın. Yalnızca bu alışkanlık bile code review hızını ve bakım kolaylığını belirgin biçimde artırır.",
+        "retro": "Yakın zamanda yazdığınız kodda anlamı belirsiz bir değişken adı var mıydı? Adı neydi ve daha iyi bir ad ne olurdu?"
+      },
+      {
+        "n": 2,
+        "mistake": "Tek bir fonksiyona 100 satırdan fazla kod doldurmak",
+        "situation": "Bir özelliği geliştirirken girdi doğrulama, veri dönüştürme, API çağrısı, sonuç işleme ve hata yönetimini tek bir fonksiyona yazarsınız. Başta akış gözünüzün önündedir, ama fonksiyon 200 satırı aşınca değişiklik yaparken nereye dokunacağınızı bulmak zorlaşır ve yan etkileri öngöremez hale gelirsiniz.",
+        "action": "Bir fonksiyon 20 satırı geçtiğinde bölmeyi düşünün. Ölçüt şu: \"Bu fonksiyonun yaptığı işi tek cümleyle anlatabiliyor muyum?\" validateUserInput(), transformToAPIFormat(), callPaymentAPI(), formatResponse() gibi her adımı bağımsız bir fonksiyona ayırın; ana fonksiyon bunları sırayla çağıran bir orkestratör olsun.",
+        "growth": "Tek sorumluluk ilkesini (SRP) uygulayarak öğrenirsiniz. Küçük fonksiyonların rolü adından anlaşılır, bağımsız test edilebilir ve başka yerlerde yeniden kullanılabilir. Kodu bir \"hikâye\" gibi okunacak şekilde yapılandırma becerisi, kıdemli geliştiricilerin temel yetkinliklerinden biridir.",
+        "retro": "Projenizdeki en uzun fonksiyon kaç satır? Yaptığı işi tek cümleyle anlatabiliyor musunuz?"
+      },
+      {
+        "n": 3,
+        "mistake": "Kopyala-yapıştır ile kodu tekrar etmek",
+        "situation": "Benzer bir mantık gerektiğinde mevcut kodu kopyalayıp küçük değişiklikler yaparsınız. Kullanıcı listesi sorgusu ile sipariş listesi sorgusunun kodu %90 aynıdır ama ikisini ayrı ayrı yazarsınız. Sonra ortak kısımda bir bug bulunursa kopyaladığınız her yeri tek tek bulup düzeltmeniz gerekir ve tek biri bile atlanırsa aynı bug başka yerde yeniden çıkar.",
+        "action": "Kodu kopyalayıp yapıştırmak istediğiniz an, refactor etmeniz gerektiğinin işaretidir. Ortak mantığı bir fonksiyona ya da sınıfa çıkarın, değişen kısımları parametre veya callback olarak geçin. Tekrar 3 kezi bulduysa (Rule of Three) mutlaka soyutlayın. Örneğin tek bir fetchList(endpoint, transformer) ile birçok liste sorgusunu karşılayabilirsiniz.",
+        "growth": "DRY (Don't Repeat Yourself) ilkesini ve soyutlama becerisini geliştirirsiniz. Ancak aşırı soyutlama da risklidir; bu yüzden \"Bu kodlar gerçekten aynı nedenle birlikte mi değişiyor?\" sorusunu ölçü alın. Doğru soyutlama kod miktarını değil, değişiklik maliyetini azaltır.",
+        "retro": "Yakın zamanda kod kopyalayıp yapıştırdınız mı? Soyutlama yerine kopyalamayı neden seçtiniz?"
+      },
+      {
+        "n": 4,
+        "mistake": "Karmaşık iş mantığını hiç yorum yazmadan kodlamak",
+        "situation": "İndirim oranı hesabında üç katmanlı bir koşul var ama yorum yok. Altı ay sonra bir değişiklik talebi geldiğinde bunu neden böyle yazdığını kimse açıklayamıyor. Koda bakınca \"ne yaptığı\" görünüyor ama \"neden yaptığı\" anlaşılmıyor.",
+        "action": "\"Neden\"i açıklayan yorumlar yazın. // VIP müşterilere yıllık alışveriş tutarına göre ek indirim uygulanır (2024 Q3 pazarlama ekibi talebi, JIRA-1234) gibi iş bağlamını, karar gerekçesini ve ilgili iş numarasını bırakın. Karmaşık algoritmalarda, fonksiyonun üstüne genel akışı özetleyen bir blok yorum yazın.",
+        "growth": "Kodun \"Ne\" yaptığını kodun kendisinin, \"Neden\" yaptığını yorumların, \"Nasıl\" çalıştığını ise dokümanların anlattığını kavrarsınız. İyi bir yorum, gelecekteki geliştiricilerin (sizin de) kodu anlayıp güvenle değiştirmesini sağlayan bir hediyedir.",
+        "retro": "Yakın zamanda yazdığınız kodda \"neden böyle yaptım\" açıklaması gereken yerlere yorum bıraktınız mı?"
+      },
+      {
+        "n": 5,
+        "mistake": "Her satırı açıklayacak kadar çok yorum yazmak",
+        "situation": "let count = 0; // sayacı 0'a ayarla gibi apaçık yorumları her satıra yazarsınız. Kod değişince yorumun da güncellenmesi gerekir, ama güncellemeyi atlayınca kod ile yorum birbirini tutmaz hale gelir. Yalan söyleyen bir yorum, hiç olmamasından daha zararlıdır.",
+        "action": "Kodunuz kendini anlatsın. Değişken ve fonksiyon adları iyiyse yorumların çoğu gereksizdir. Bir yorum gerektiğini hissettiğinizde, önce kodu refactor ederek yorumsuz anlaşılır hale getirip getiremeyeceğinizi düşünün. Yorumu yalnızca \"neden\"i açıklarken ya da sezgisel olmayan bir kararın arka planını bırakırken kullanın.",
+        "growth": "Kendini açıklayan kod (self-documenting code) yazma becerisini geliştirirsiniz. Okunabilir kod yazınca yorum ihtiyacı azalır, gerçekten gereken yere yazılan yorum ise çok daha değerli olur.",
+        "retro": "Kodla yorumun birbiriyle çeliştiğini fark ettiğiniz oldu mu? Bu yanlış yorum nasıl bir karışıklığa yol açtı?"
+      },
+      {
+        "n": 6,
+        "mistake": "Sihirli sayıları kodun her yerine gömmek",
+        "situation": "if (retryCount > 3), setTimeout(() => {}, 86400000), if (role === 2) gibi kodlar sağa sola dağılmış durumda. 3'ün, 86400000'in ve 2'nin ne olduğunu yalnızca yazan kişi biliyor. Politika değişip deneme sayısını 5'e çıkarmanız gerektiğinde tüm kodda 3'leri aramanız gerekir; başka anlamlara gelen 3'ler de olduğu için yanlış yeri değiştirme riski vardır.",
+        "action": "Her sabit değere anlam veren bir sabit tanımlayın. const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2 gibi, anlamı adından anlaşılsın. Sabitleri tek bir yerde toplarsanız politika değiştiğinde yalnızca bir satırı düzeltmeniz yeter.",
+        "growth": "Kodun niyetini net aktarma alışkanlığı kazanırsınız. Bu, bakım kolaylığının temelidir ve ayar değerlerini dışarı alma (configuration) mimari desenine doğal olarak uzanır.",
+        "retro": "Mevcut kodunuzda anlamı zor anlaşılan sayıların ya da metinlerin doğrudan yazıldığı yerler var mı?"
+      },
+      {
+        "n": 7,
+        "mistake": "Kodlama standartlarını yok sayıp kendi tarzında ısrar etmek",
+        "situation": "Aynı dosyada camelCase ile snake_case karışıyor, girintiler tab ile boşluk arasında gidip geliyor. Ekip arkadaşları kodunuzu okurken stili çözmeye enerji harcıyor ve code review'da mantık yerine biçim tartışması yaşanıyor.",
+        "action": "Ekibin belirlediği kodlama standartlarına uyun; ESLint, Prettier, SwiftLint gibi otomasyon araçlarını projeye kurun. Kayıt sırasında otomatik biçimlendirmeyi açarsanız stil hakkında düşünmenize bile gerek kalmaz. Standart yoksa ekibe önerin ve sektör standartlarını (Airbnb Style Guide vb.) başlangıç noktası yapın.",
+        "growth": "İş birliğinde tutarlılığın kişisel zevkten daha önemli olduğunu öğrenirsiniz. Araçlarla otomatikleştirilebilen şeylere insan enerjisi harcamamanın verimliliğini de kavrarsınız. Bu, ekip üretkenliğini ve yeni gelenlerin uyum hızını doğrudan etkiler.",
+        "retro": "Ekibinizin kodlama standartlarını tam olarak biliyor musunuz? Bilmiyorsanız nereden öğrenebilirsiniz?"
+      },
+      {
+        "n": 8,
+        "mistake": "Hataları boş bir catch bloğuyla görmezden gelmek",
+        "situation": "try { ... } catch(e) {} ile hatayı yutarsınız. Servis tuhaf davranıyor ama hata logu olmadığı için nedenini bulamıyorsunuz. Kullanıcı ödeme yapamadığını bildiriyor, sunucuda ise hiçbir kayıt yok.",
+        "action": "Her catch bloğunda en azından hatayı loglayın. Hatadan toparlanabiliyorsanız toparlayın, toparlanamıyorsanız üst katmana iletin. Kullanıcıya anlaşılır bir mesaj, geliştiriciye ayrıntılı bir log bırakın. Temel kalıp şudur: catch(e) { logger.error('Ödeme işlemi başarısız', { userId, orderId, error: e.message }); throw new PaymentError('Ödeme işlemi sırasında bir sorun oluştu'); }",
+        "growth": "Hata yönetimi stratejisini (toparlama, iletme, loglama) sistemli biçimde tasarlama becerisini geliştirirsiniz. \"Her hatayı mutlaka birinin ele alması gerekir\" ilkesini içselleştirirsiniz; bu da servisin kararlılığının ve gözlemlenebilirliğinin (observability) temelidir.",
+        "retro": "Projenizde boş bir catch bloğu var mı? Aratıp bakın, kaç tane çıktı?"
+      },
+      {
+        "n": 9,
+        "mistake": "Global değişkenleri aşırı kullanmak",
+        "situation": "Birden çok fonksiyonda paylaşmak kolay olduğu için global değişken kullanırsınız. Uygulama büyüdükçe hangi fonksiyonun global değişkeni ne zaman değiştirdiğini izlemek imkânsızlaşır ve bir özelliği düzeltmek, alakasız görünen başka bir özelliği bozar.",
+        "action": "Değişkenlerin kapsamını (scope) olabildiğince daraltın. Veriyi fonksiyon parametreleri, dönüş değerleri ve dependency injection ile taşıyın. Durum yönetimi gerekiyorsa Redux, Zustand gibi bir kütüphane ya da sınıfın örnek değişkenlerini kullanıp durum değişikliklerinin yolunu net biçimde izlenebilir kılın.",
+        "growth": "Durum yönetimi ve kapsam ilkelerini kavrarsınız. Yan etkiyi en aza indiren fonksiyonel programlama bakış açısını ve değişmezliğin (immutability) değerini hissedersiniz; bu, karmaşık uygulamaları öngörülebilir kılmanın temel yetkinliğidir.",
+        "retro": "Projenizde global değişken kullandığınız yerler var mı? Neden global tanımladınız?"
+      },
+      {
+        "n": 10,
+        "mistake": "null/undefined kontrolü yapmadan nesneye erişmek",
+        "situation": "user.profile.address.city gibi derin nesne erişimini hiçbir korumasız yaparsınız. Profili olmayan ya da adres girmemiş bir kullanıcı çıkınca, uygulama hemen Cannot read property of null hatasıyla çöker.",
+        "action": "Opsiyonel zincirleme (user?.profile?.address?.city) ve varsayılan değerleri (nullish coalescing, ?? 'Adres girilmemiş') bolca kullanın. Fonksiyonun başına guard clause koyun: if (!user) return null; TypeScript kullanıyorsanız strictNullChecks'i açıp derleme zamanında null güvenliğini sağlayın.",
+        "growth": "Savunmacı programlama (Defensive Programming) bakış açısını edinirsiniz. Her zaman önce \"Bu değer olmayabilir mi?\" diye sorma alışkanlığı, çalışma zamanı çökmelerini ciddi biçimde azaltır. Swift'in Optional'ı, Kotlin'in Nullable'ı gibi dil düzeyindeki null güvenliğinin neden önemli olduğunu da anlarsınız.",
+        "retro": "Yakın zamanda null/undefined kaynaklı bir çalışma zamanı hatası yaşadınız mı? Ne sıklıkla oluyor?"
+      }
+    ]
+  },
+  "problem": {
+    "title": "Kod incelemesinde yine aynı yorum mu?",
+    "text": "Anlaşılmaz değişken adları, 200 satırlık fonksiyonlar, kopyala yapıştır kod. Her senior bunlardan geçti, ama insan genelde kendisi düşünce fark ediyor. 100 Hata bu hataları sana önceden gösterir ve kendi işini düşündürür, böylece onları tekrarlamazsın."
+  },
+  "features": [
+    {
+      "title": "Ne olur, ne yapılır, ne öğrenilir",
+      "text": "Her hata üç bölümde anlatılır: ne olduğu, ne yapman gerektiği ve ondan ne öğreneceğin.\nKod yazma alışkanlıklarından güvenlik ve performansa kadar on kategori; yalnızca gerçek ekiplerde tekrar tekrar yaşanan hatalar.",
+      "shot": "detail"
+    },
+    {
+      "title": "Akılda kalsın diye geri bakış soruları",
+      "text": "Her hatanın 4 geri bakış sorusu var, toplam 400. Kendi projelerini düşünerek yanıtla, okuduğun şey deneyime dönüşsün.\nYanıtların kategoriye göre Geri Bakış Günlüğü'nde toplanır, istediğin zaman yeniden okuyabilirsin.",
+      "shot": "retro"
+    },
+    {
+      "title": "Ne kadar ilerlediğini tek bakışta gör",
+      "text": "Yaşadığın hataları işaretle, ilerlemen kategori bazında ve toplamda büyüsün. Yeniden bakmak istediklerine yer imi ekle.\nHer şey iCloud ile iPhone, iPad ve Mac arasında eşzamanlanır.",
+      "shot": "progress"
+    }
+  ],
+  "steps": {
+    "title": "Üç adımda başla",
+    "items": [
+      {
+        "title": "Bir kategori seç",
+        "text": "Kod yazma alışkanlıkları, debug ve sürüm kontrolü ücretsiz açık."
+      },
+      {
+        "title": "Oku ve işaretle",
+        "text": "Kendin yaptığın hatalarda Deneyimlendi'ye dokun."
+      },
+      {
+        "title": "Geri bak",
+        "text": "Kısa da olsa bir yanıt yaz. Geri Bakış Günlüğü'ne eklenir."
+      }
+    ]
+  },
+  "reference": {
+    "title": "10 kategori",
+    "tags": [
+      "Ücretsiz",
+      "PRO"
+    ],
+    "rows": [
+      [
+        "Kod Yazma Alışkanlıkları",
+        "#001–#010 · Ücretsiz"
+      ],
+      [
+        "Debug ve Sorun Çözme",
+        "#011–#020 · Ücretsiz"
+      ],
+      [
+        "Sürüm Kontrolü ve İş Birliği",
+        "#021–#030 · Ücretsiz"
+      ],
+      [
+        "Tasarım ve Mimari",
+        "#031–#040 · PRO"
+      ],
+      [
+        "Test ve Kalite",
+        "#041–#050 · PRO"
+      ],
+      [
+        "Öğrenme ve Gelişim",
+        "#051–#060 · PRO"
+      ],
+      [
+        "İletişim ve İş Birliği",
+        "#061–#070 · PRO"
+      ],
+      [
+        "Deploy ve Operasyon",
+        "#071–#080 · PRO"
+      ],
+      [
+        "Güvenlik ve Veri",
+        "#081–#090 · PRO"
+      ],
+      [
+        "Performans ve Optimizasyon",
+        "#091–#100 · PRO"
+      ]
+    ],
+    "note": "Her kategoride 10 hata, her hatada 4 geri bakış sorusu var."
+  },
+  "pricing": {
+    "title": "30'u ücretsiz. 100'ünün hepsi PRO ile.",
+    "free": {
+      "name": "Ücretsiz",
+      "items": [
+        "İlk 3 kategori, 30 hata",
+        "Bunlara ait 120 geri bakış sorusu",
+        "Kontrol listesi, Geri Bakış Günlüğü, ilerleme ve yer imleri",
+        "iCloud eşzamanlama (iPhone, iPad, Mac)"
+      ]
+    },
+    "pro": {
+      "name": "100 Hata PRO",
+      "items": [
+        "Kalan 7 kategori, 70 hata daha (#031–#100)",
+        "280 geri bakış sorusu daha",
+        "Gelecekteki tüm içerik güncellemeleri"
+      ],
+      "note": "Aylık, yıllık (aylığa göre %50'ye varan indirim) ya da tek seferlik ömür boyu satın alma."
+    },
+    "note": "Kişisel veri toplanmaz, analiz aracı ve reklam yoktur."
+  },
+  "faq": {
+    "title": "Sık sorulan sorular",
+    "items": [
+      {
+        "q": "Neler ücretsiz?",
+        "a": "Kod Yazma Alışkanlıkları, Debug ve Sorun Çözme ile Sürüm Kontrolü ve İş Birliği kategorilerindeki 30 hatanın tamamı ve soruları. Kontrol listesi, Geri Bakış Günlüğü, ilerleme, yer imleri ve iCloud eşzamanlama da ücretsiz."
+      },
+      {
+        "q": "PRO'yu başka bir cihazda nasıl kullanırım?",
+        "a": "Aynı Apple Kimliği ile giriş yap ve abonelik ekranında Satın Alımları Geri Yükle'ye dokun."
+      },
+      {
+        "q": "Aboneliği nasıl iptal ederim?",
+        "a": "İstediğin zaman Ayarlar › Apple Kimliği › Abonelikler'den. Mevcut dönemin bitiminden en az 24 saat önce iptal edilmezse abonelik otomatik olarak yenilenir. Ömür boyu satın alma tek seferlik ödenir."
+      },
+      {
+        "q": "Verilerim cihazlar arasında eşzamanlanmıyor.",
+        "a": "Tüm cihazların aynı Apple Kimliği ile iCloud'a giriş yaptığını ve Ayarlar'da bu uygulama için iCloud'un açık olduğunu kontrol et. Eşzamanlama için ağ bağlantısı da gerekir."
+      },
+      {
+        "q": "Her şeyi nasıl silerim?",
+        "a": "Uygulamanın ayarlarında Tüm Verileri Sıfırla'ya dokun. İşaretler, yanıtlar ve yer imleri silinir; bu işlem geri alınamaz."
+      },
+      {
+        "q": "Hangi cihazlarda çalışır?",
+        "a": "iPhone, iPad ve Mac. PRO, aynı Apple Kimliği'ni kullanan tüm cihazlarda açılır."
+      },
+      {
+        "q": "Verilerim bir yere gönderiliyor mu?",
+        "a": "Hayır. İşaretlerin ve yanıtların yalnızca kendi cihazlarında ve kendi iCloud'unda saklanır. Uygulama kişisel veri toplamaz, analiz aracı ve reklam içermez."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Aynı hatayı iki kez\nyapmayan geliştirici ol",
+    "cta": "App Store'dan ücretsiz indir"
+  },
+  "ui": {
+    "skip": "İçeriğe geç",
+    "languages": "Dil",
+    "privacy": "Gizlilik Politikası",
+    "contact": "Soru ya da önerin mi var? {email} adresine yaz."
+  }
+}

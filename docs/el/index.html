@@ -1,464 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>100 Λάθη — Λίστα ελέγχου εξέλιξης για junior developers</title>
-  <meta name="description" content="Τα 100 λάθη που κάνουν οι περισσότεροι developers. Μάθετέ τα εκ των προτέρων και εξελιχθείτε ταχύτερα." />
-  <meta property="og:title" content="100 Λάθη — Λίστα ελέγχου εξέλιξης για junior developers" />
-  <meta property="og:description" content="Τα 100 λάθη που κάνουν οι περισσότεροι developers. Μάθετέ τα εκ των προτέρων και εξελιχθείτε ταχύτερα." />
-  <meta property="og:type" content="website" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/index.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/index.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/index.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/index.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/index.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/index.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/index.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/index.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/index.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/index.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/index.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/index.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/index.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/index.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/index.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/index.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/index.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/index.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/index.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/index.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/index.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/index.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/index.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --primary:      #3F3884;
-      --primary-light:#6159AD;
-      --accent:       #F06B6B;
-      --green:        #38C78C;
-      --amber:        #F2B333;
-      --blue:         #4D8CEB;
-      --purple:       #8059B8;
-      --bg:           #0f0e1a;
-      --surface:      #1a1829;
-      --border:       rgba(255,255,255,0.08);
-      --text:         #f0eefc;
-      --muted:        rgba(240,238,252,0.55);
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 5%;
-      height: 64px;
-      background: rgba(15,14,26,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.3px; }
-    .nav-logo span { color: var(--accent); }
-    nav a.nav-link {
-      font-size: 0.9rem; color: var(--muted); text-decoration: none;
-      transition: color .2s;
-    }
-    nav a.nav-link:hover { color: var(--text); }
-
-    /* ── HERO ── */
-    .hero {
-      position: relative; overflow: hidden;
-      display: flex; flex-direction: column; align-items: center; text-align: center;
-      padding: 100px 5% 80px;
-      background: linear-gradient(145deg, #2a2460 0%, #3F3884 40%, #8059B8 100%);
-    }
-    .hero::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(240,107,107,.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-badge {
-      display: inline-block;
-      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
-      color: var(--amber);
-      background: rgba(242,179,51,.12);
-      border: 1px solid rgba(242,179,51,.25);
-      border-radius: 99px;
-      padding: 5px 14px;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-    }
-    .app-icon {
-      width: 120px; height: 120px;
-      border-radius: 27px;
-      background: linear-gradient(145deg, #3F3884, #8059B8);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 52px;
-      margin-bottom: 32px;
-      box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.12);
-    }
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 3.6rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -1px;
-      margin-bottom: 20px;
-    }
-    h1 em { font-style: normal; color: var(--accent); }
-    .hero-sub {
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      color: rgba(255,255,255,.72);
-      max-width: 520px;
-      margin-bottom: 40px;
-      line-height: 1.75;
-    }
-    .btn-store {
-      display: inline-flex; align-items: center; gap: 10px;
-      background: #fff; color: #000;
-      font-weight: 700; font-size: 1rem;
-      padding: 14px 28px;
-      border-radius: 14px;
-      text-decoration: none;
-      transition: transform .2s, box-shadow .2s;
-      box-shadow: 0 8px 24px rgba(0,0,0,.25);
-    }
-    .btn-store:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.35); }
-    .btn-store svg { width: 22px; height: 22px; }
-    .btn-store-sub { font-size: .7rem; font-weight: 400; display: block; text-align: left; opacity: .6; margin-bottom: 1px; }
-    .btn-store-main { font-size: 1rem; font-weight: 700; display: block; text-align: left; }
-
-    /* ── FEATURES ── */
-    section { padding: 80px 5%; }
-    .section-label {
-      text-align: center;
-      font-size: .75rem; font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    h2 {
-      text-align: center;
-      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 12px;
-    }
-    .section-desc {
-      text-align: center;
-      color: var(--muted);
-      font-size: 1rem;
-      max-width: 500px;
-      margin: 0 auto 56px;
-      line-height: 1.75;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .feature-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      transition: transform .25s, border-color .25s;
-    }
-    .feature-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.15); }
-    .feature-icon {
-      width: 48px; height: 48px;
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 22px;
-      margin-bottom: 16px;
-    }
-    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-    .feature-card p { font-size: .9rem; color: var(--muted); line-height: 1.65; }
-
-    /* ── CATEGORIES ── */
-    .categories-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .categories-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .cat-chip {
-      display: flex; align-items: center; gap: 10px;
-      padding: 12px 16px;
-      background: rgba(255,255,255,.04);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      font-size: .9rem; font-weight: 500;
-    }
-    .cat-chip span { font-size: 1.1rem; }
-
-    /* ── PRICING ── */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    .price-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      text-align: center;
-    }
-    .price-card.featured {
-      background: linear-gradient(145deg, #3F3884, #6159AD);
-      border-color: rgba(255,255,255,.2);
-    }
-    .price-badge {
-      display: inline-block;
-      font-size: .7rem; font-weight: 700;
-      background: var(--amber); color: #000;
-      border-radius: 99px; padding: 3px 10px;
-      margin-bottom: 16px;
-      text-transform: uppercase; letter-spacing: .05em;
-    }
-    .price-plan { font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
-    .price-amount { font-size: 2rem; font-weight: 800; margin-bottom: 4px; }
-    .price-period { font-size: .8rem; color: var(--muted); margin-bottom: 20px; }
-    .price-features { list-style: none; text-align: left; }
-    .price-features li { font-size: .88rem; padding: 6px 0; color: var(--muted); display: flex; gap: 8px; }
-    .price-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
-    .price-card.featured .price-features li { color: rgba(255,255,255,.8); }
-
-    /* ── SYNC ── */
-    .sync-section { text-align: center; }
-    .devices {
-      display: flex; justify-content: center; align-items: center;
-      gap: 24px; flex-wrap: wrap;
-      margin-top: 40px;
-    }
-    .device-chip {
-      display: flex; align-items: center; gap: 8px;
-      padding: 10px 20px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 99px;
-      font-size: .9rem; font-weight: 500;
-    }
-
-    /* ── CTA ── */
-    .cta-section {
-      text-align: center;
-      background: linear-gradient(145deg, #2a2460, #3F3884, #8059B8);
-      padding: 100px 5%;
-    }
-    .cta-section h2 { margin-bottom: 16px; }
-    .cta-section p { color: rgba(255,255,255,.7); margin-bottom: 40px; font-size: 1.05rem; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--bg);
-      border-top: 1px solid var(--border);
-      padding: 32px 5%;
-      display: flex; flex-wrap: wrap;
-      align-items: center; justify-content: space-between;
-      gap: 12px;
-    }
-    footer p { font-size: .85rem; color: var(--muted); }
-    footer a { color: var(--muted); font-size: .85rem; text-decoration: none; transition: color .2s; }
-    footer a:hover { color: var(--text); }
-
-    @media (max-width: 640px) {
-      nav { padding: 0 4%; }
-      .hero { padding: 72px 4% 60px; }
-      section { padding: 60px 4%; }
-    }
-  
-    .langs { font-size: .8rem; color: rgba(240,238,252,.45); line-height: 2; }
-    .langs a { color: rgba(240,238,252,.6); text-decoration: none; margin-right: 10px; white-space: nowrap; }
-    .langs a:hover, .langs a.cur { color: #f0eefc; }
-    .langs a.cur { font-weight: 700; }
-    .doc-langs { max-width: 720px; margin: 64px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); }
-    .foot-links a { margin-right: 14px; }
-    .faq dt { font-weight: 700; margin: 24px 0 6px; color: #f0eefc; }
-    .faq dd { color: rgba(240,238,252,.75); margin: 0; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>100 Λάθη: η λίστα ελέγχου για junior developers</title>
+  <meta name="description" content="Διαβάστε τα 100 πιο συχνά λάθη των junior developers, σημειώστε όσα έχετε κάνει και απαντήστε σε ερωτήσεις ανασκόπησης. Τα πρώτα 30 δωρεάν.">
+  <meta name="theme-color" content="#403885" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6759643878">
+  <link rel="canonical" href="https://m1zz.github.io/JuniorDevMistakes/el/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="100 Λάθη: η λίστα ελέγχου για junior developers">
+  <meta property="og:description" content="Διαβάστε τα 100 πιο συχνά λάθη των junior developers, σημειώστε όσα έχετε κάνει και απαντήστε σε ερωτήσεις ανασκόπησης. Τα πρώτα 30 δωρεάν.">
+  <meta property="og:url" content="https://m1zz.github.io/JuniorDevMistakes/el/">
+  <meta property="og:image" content="https://m1zz.github.io/JuniorDevMistakes/img/el/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#403885}@media (prefers-color-scheme:dark){:root{--accent:#8C82E6}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+  <header class="bar">
+    <a class="brand" href="../el/"><img src="../icon.png" alt="" width="32" height="32">100 Λάθη</a>
+    <a class="lang-link" href="#languages">Γλώσσα</a>
+  </header>
 
-<nav>
-  <div class="nav-logo">100 Λάθη</div>
-  <span><a href="support.html" class="nav-link">Υποστήριξη</a> &nbsp; <a href="privacy.html" class="nav-link">Πολιτική απορρήτου</a></span>
-</nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Μάθετε τα λάθη<br>πριν σας κοστίσουν</h1>
+        <p class="lead">Τα 100 λάθη που κάνουν πιο συχνά οι αρχάριοι developers, σε ένα μέρος. Για το καθένα διαβάζετε τι συμβαίνει, τι να κάνετε και τι μαθαίνετε, και απαντάτε σε μια ερώτηση ανασκόπησης για να μην το επαναλάβετε.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6759643878">Δωρεάν λήψη στο App Store</a><a class="try" href="#try">Ανοίξτε ένα λάθος ↓</a></div>
+        <p class="muted small">Τα πρώτα 30 λάθη είναι δωρεάν. Σε iPhone, iPad και Mac.</p>
+      </div>
+      <div class="phone"><img src="../img/el/home.jpg" alt="Μάθετε τα λάθη πριν σας κοστίσουν" width="600" height="1303" decoding="async"></div>
+    </section>
 
-<section class="hero">
-  <div class="hero-badge">🚀 Εφαρμογή για junior developers</div>
-  <div class="app-icon">⌨️</div>
-  <h1>Μάθετε τα λάθη από πριν και<br><em>εξελιχθείτε ταχύτερα</em>.</h1>
-  <p class="hero-sub">
-    Τα 100 λάθη που κάνουν οι περισσότεροι developers.<br>
-    Ελέγξτε τα με τη λίστα και κάντε τα δικά σας μέσα από την ανασκόπηση.
-  </p>
-  <a href="#" class="btn-store">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Λήψη από το</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<section>
-  <p class="section-label">Βασικά χαρακτηριστικά</p>
-  <h2>Όλα όσα χρειάζεστε για να εξελιχθείτε</h2>
-  <p class="section-desc">Δεν σταματάτε στο να γνωρίζετε τα λάθη. Φτάνετε μέχρι το σημείο να τα κάνετε πραγματικά δικά σας μέσα από την ανασκόπηση.</p>
+    <section class="reveal" id="try">
+      <h2>Ανοίξτε ένα λάθος</h2>
+      <p class="muted">Αυτά είναι τα 10 λάθη της πρώτης δωρεάν κατηγορίας, λέξη προς λέξη όπως στην εφαρμογή. Σημειώστε με «Το έζησα» όσα σας έχουν ήδη συμβεί.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Ανοίξτε ένα λάθος&quot;, &quot;lead&quot;: &quot;Αυτά είναι τα 10 λάθη της πρώτης δωρεάν κατηγορίας, λέξη προς λέξη όπως στην εφαρμογή. Σημειώστε με «Το έζησα» όσα σας έχουν ήδη συμβεί.&quot;, &quot;note&quot;: &quot;Εδώ οι σημειώσεις δεν αποθηκεύονται. Στην εφαρμογή, σημειώσεις και απαντήσεις συγχρονίζονται μέσω iCloud σε όλες τις συσκευές σας.&quot;, &quot;category&quot;: &quot;Συνήθειες συγγραφής κώδικα&quot;, &quot;labels&quot;: {&quot;happens&quot;: &quot;Τι συμβαίνει&quot;, &quot;todo&quot;: &quot;Τι να κάνετε&quot;, &quot;learn&quot;: &quot;Τι θα μάθετε και πώς θα εξελιχθείτε&quot;, &quot;retro&quot;: &quot;Ερωτήσεις ανασκόπησης&quot;, &quot;done&quot;: &quot;Το έζησα&quot;}, &quot;items&quot;: [{&quot;n&quot;: 1, &quot;mistake&quot;: &quot;Δίνετε στις μεταβλητές ονόματα χωρίς νόημα, όπως a, b, x&quot;, &quot;situation&quot;: &quot;Όταν γράφετε γρήγορα, συνηθίζετε να χρησιμοποιείτε ονόματα όπως temp, data, result, val. Την ώρα που τα γράφετε το πλαίσιο είναι στο μυαλό σας και όλα πάνε καλά, όμως μετά από μία εβδομάδα πρέπει να διαβάσετε τον κώδικα από την αρχή αναρωτώμενοι «τι ήταν αυτή η μεταβλητή;».&quot;, &quot;action&quot;: &quot;Όταν ονομάζετε μια μεταβλητή, σκεφτείτε για 3 δευτερόλεπτα «τι περιέχει;». Βάλτε τον ρόλο στο όνομα: userProfileList αντί για data, formattedDate αντί για temp, filteredActiveUsers αντί για result. Στόχος είναι ο κώδικας να διαβάζεται σαν πρόταση στα αγγλικά. Για παράδειγμα, το if (isUserActive &amp;&amp; hasPermission) γίνεται κατανοητό μόνο με την ανάγνωση της συνθήκης.&quot;, &quot;growth&quot;: &quot;Ο κώδικας διαβάζεται 10 φορές περισσότερο από όσο γράφεται. Ένα καλό όνομα είναι πιο δυνατό από ένα σχόλιο. Ενοποιήστε με την ομάδα τους κανόνες ονοματοδοσίας (camelCase, snake_case κ.λπ.), αποφύγετε τις συντμήσεις (usr → user, btn → button) και χρησιμοποιήστε ονόματα που βρίσκονται εύκολα με αναζήτηση. Αυτή η μία συνήθεια επιταχύνει θεαματικά τα code reviews και βελτιώνει τη συντηρησιμότητα.&quot;, &quot;retro&quot;: &quot;Υπήρχε σε κώδικα που γράψατε πρόσφατα όνομα μεταβλητής με ασαφές νόημα; Ποιο ήταν και ποιο θα ήταν καλύτερο;&quot;}, {&quot;n&quot;: 2, &quot;mistake&quot;: &quot;Στριμώχνετε πάνω από 100 γραμμές κώδικα σε μία συνάρτηση&quot;, &quot;situation&quot;: &quot;Υλοποιώντας μια λειτουργία, γράφετε επικύρωση εισόδου, μετατροπή δεδομένων, κλήση API, επεξεργασία αποτελέσματος και χειρισμό σφαλμάτων όλα σε μία συνάρτηση. Στην αρχή η ροή φαίνεται καθαρά, αλλά όταν η συνάρτηση ξεπεράσει τις 200 γραμμές, είναι δύσκολο να βρείτε πού να αλλάξετε και οι παρενέργειες γίνονται απρόβλεπτες.&quot;, &quot;action&quot;: &quot;Όταν μια συνάρτηση ξεπερνά τις 20 γραμμές, εξετάστε αν πρέπει να χωριστεί. Το κριτήριο είναι: «μπορώ να περιγράψω τι κάνει με μία πρόταση;». Χωρίστε κάθε βήμα σε ανεξάρτητη συνάρτηση, όπως validateUserInput(), transformToAPIFormat(), callPaymentAPI(), formatResponse(), και αφήστε την κύρια συνάρτηση να τις καλεί με τη σειρά, σαν ενορχηστρωτής.&quot;, &quot;growth&quot;: &quot;Μαθαίνετε στην πράξη την Αρχή Μοναδικής Ευθύνης (SRP). Οι μικρές συναρτήσεις φανερώνουν τον ρόλο τους από το όνομα, ελέγχονται ανεξάρτητα και επαναχρησιμοποιούνται αλλού. Η ικανότητα να δομείτε τον κώδικα ώστε να διαβάζεται σαν ιστορία είναι βασικό προσόν ενός senior developer.&quot;, &quot;retro&quot;: &quot;Πόσες γραμμές έχει η μεγαλύτερη συνάρτηση του project σας; Μπορείτε να περιγράψετε τι κάνει με μία πρόταση;&quot;}, {&quot;n&quot;: 3, &quot;mistake&quot;: &quot;Επαναλαμβάνετε κώδικα με copy-paste&quot;, &quot;situation&quot;: &quot;Όταν χρειάζεστε παρόμοια λογική, αντιγράφετε υπάρχοντα κώδικα και αλλάζετε λίγα σημεία. Ο κώδικας για τη λίστα χρηστών και για τη λίστα παραγγελιών είναι 90% ίδιος, αλλά τον γράφετε χωριστά. Όταν αργότερα βρεθεί bug στο κοινό κομμάτι, πρέπει να βρείτε και να διορθώσετε ένα προς ένα όλα τα αντίγραφα, και αν χάσετε ένα, το ίδιο bug ξαναεμφανίζεται αλλού.&quot;, &quot;action&quot;: &quot;Η στιγμή που πάτε να κάνετε copy-paste είναι το σήμα για refactoring. Βγάλτε την κοινή λογική σε συνάρτηση ή κλάση και περάστε μόνο ό,τι αλλάζει ως παράμετρο ή callback. Αν κάτι επαναλαμβάνεται 3 ή περισσότερες φορές (Rule of Three), πρέπει οπωσδήποτε να γίνει αφαίρεση. Για παράδειγμα, μία fetchList(endpoint, transformer) μπορεί να εξυπηρετεί πολλά αιτήματα λίστας.&quot;, &quot;growth&quot;: &quot;Καλλιεργείτε την αρχή DRY (Don&#x27;t Repeat Yourself) και την ικανότητα αφαίρεσης. Προσοχή όμως: η υπερβολική αφαίρεση είναι επικίνδυνη, γι&#x27; αυτό κρίνετε με το ερώτημα «αλλάζει αυτός ο κώδικας πραγματικά για τον ίδιο λόγο;». Η σωστή αφαίρεση δεν μειώνει τον όγκο του κώδικα, μειώνει το κόστος της αλλαγής.&quot;, &quot;retro&quot;: &quot;Έχετε κάνει πρόσφατα copy-paste κώδικα; Γιατί διαλέξατε copy-paste αντί για αφαίρεση;&quot;}, {&quot;n&quot;: 4, &quot;mistake&quot;: &quot;Γράφετε πολύπλοκη επιχειρηματική λογική χωρίς σχόλια&quot;, &quot;situation&quot;: &quot;Ο υπολογισμός της έκπτωσης έχει τριπλή συνθήκη χωρίς σχόλια. Όταν μισό χρόνο αργότερα έρχεται αίτημα αλλαγής, κανείς δεν μπορεί να εξηγήσει γιατί γράφτηκε έτσι. Διαβάζοντας τον κώδικα βλέπετε «τι κάνει», αλλά όχι «γιατί το κάνει».&quot;, &quot;action&quot;: &quot;Γράψτε σχόλια που εξηγούν το «Γιατί». Αφήστε επιχειρηματικό πλαίσιο, το σκεπτικό της απόφασης και αριθμούς σχετικών issues, όπως // Οι πελάτες VIP παίρνουν επιπλέον έκπτωση βάσει των ετήσιων αγορών τους (αίτημα ομάδας marketing, 2024 Q3, JIRA-1234). Στους πολύπλοκους αλγορίθμους, γράψτε πριν από τη συνάρτηση ένα σχόλιο-μπλοκ που συνοψίζει τη συνολική ροή.&quot;, &quot;growth&quot;: &quot;Καταλαβαίνετε ότι το «Τι» το λέει ο ίδιος ο κώδικας, το «Γιατί» τα σχόλια και το «Πώς» η τεκμηρίωση. Ένα καλό σχόλιο είναι δώρο προς τους μελλοντικούς developers (και προς εσάς), ώστε να καταλαβαίνουν τον κώδικα και να τον αλλάζουν με αυτοπεποίθηση.&quot;, &quot;retro&quot;: &quot;Στον κώδικα που γράψατε πρόσφατα, αφήσατε σχόλια εκεί που χρειάζεται να εξηγηθεί «γιατί έγινε έτσι»;&quot;}, {&quot;n&quot;: 5, &quot;mistake&quot;: &quot;Βάζετε υπερβολικά πολλά σχόλια, εξηγώντας κάθε γραμμή&quot;, &quot;situation&quot;: &quot;Γράφετε αυτονόητα σχόλια σε κάθε γραμμή, όπως let count = 0; // αρχικοποιεί το count στο 0. Όταν αλλάζει ο κώδικας, πρέπει να αλλάξει και το σχόλιο, αλλά ξεχνάτε να το ενημερώσετε και ο κώδικας με το σχόλιο παύουν να συμφωνούν. Ένα σχόλιο που λέει ψέματα είναι χειρότερο από την απουσία σχολίου.&quot;, &quot;action&quot;: &quot;Γράψτε κώδικα που εξηγεί τον εαυτό του. Με καλά ονόματα μεταβλητών και συναρτήσεων, τα περισσότερα σχόλια περιττεύουν. Όταν νιώσετε ότι χρειάζεστε σχόλιο, εξετάστε πρώτα αν μπορείτε να κάνετε refactoring ώστε ο κώδικας να γίνεται κατανοητός χωρίς αυτό. Χρησιμοποιήστε σχόλια μόνο για να εξηγήσετε το «γιατί» ή το σκεπτικό μιας μη διαισθητικής απόφασης.&quot;, &quot;growth&quot;: &quot;Αναπτύσσετε την ικανότητα να γράφετε αυτο-τεκμηριωμένο κώδικα (self-documenting code). Όσο πιο ευανάγνωστος ο κώδικας, τόσο λιγότερο χρειάζονται τα σχόλια, και τα σχόλια που μπαίνουν όπου πραγματικά χρειάζονται αποκτούν μεγαλύτερη αξία.&quot;, &quot;retro&quot;: &quot;Έχετε βρει ποτέ κώδικα και σχόλιο που δεν συμφωνούσαν; Τι σύγχυση προκάλεσε αυτό το ψευδές σχόλιο;&quot;}, {&quot;n&quot;: 6, &quot;mistake&quot;: &quot;Γράφετε μαγικούς αριθμούς (magic numbers) σκληρά μέσα στον κώδικα&quot;, &quot;situation&quot;: &quot;Κώδικας όπως if (retryCount &gt; 3), setTimeout(() =&gt; {}, 86400000), if (role === 2) είναι σκορπισμένος παντού. Μόνο ο συγγραφέας ξέρει τι είναι το 3, το 86400000 και το 2. Όταν αλλάξει η πολιτική και οι επαναλήψεις πρέπει να γίνουν 5, πρέπει να ψάξετε όλο τον κώδικα για το 3, και υπάρχει κίνδυνος να αλλάξετε κατά λάθος κάποιο 3 με άλλο νόημα.&quot;, &quot;action&quot;: &quot;Δημιουργήστε σταθερές που δίνουν νόημα σε κάθε literal τιμή. Όπως const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2, ώστε το νόημα να φαίνεται μόνο από το όνομα. Αν μαζέψετε τις σταθερές σε ένα σημείο, όταν αλλάξει μια πολιτική θα διορθώσετε μόνο μία γραμμή.&quot;, &quot;growth&quot;: &quot;Αποκτάτε τη συνήθεια να εκφράζετε καθαρά την πρόθεση του κώδικα. Αυτό είναι η βάση της συντηρησιμότητας και εξελίσσεται φυσικά στο αρχιτεκτονικό μοτίβο της εξωτερίκευσης των ρυθμίσεων (configuration).&quot;, &quot;retro&quot;: &quot;Υπάρχουν στον τρέχοντα κώδικα αριθμοί ή strings με δυσνόητο νόημα γραμμένα σκληρά;&quot;}, {&quot;n&quot;: 7, &quot;mistake&quot;: &quot;Αγνοείτε τις coding conventions και επιμένετε στο δικό σας στυλ&quot;, &quot;situation&quot;: &quot;Σε ένα αρχείο αναμειγνύονται camelCase και snake_case και η εσοχή πηγαινοέρχεται ανάμεσα σε tabs και spaces. Οι συνάδελφοι ξοδεύουν ενέργεια να αποκρυπτογραφήσουν το στυλ και τα code reviews γεμίζουν με διαφωνίες μορφοποίησης αντί για λογική.&quot;, &quot;action&quot;: &quot;Ακολουθήστε τις coding conventions της ομάδας και ρυθμίστε στο project αυτοματοποιημένα εργαλεία όπως ESLint, Prettier, SwiftLint. Με αυτόματη μορφοποίηση κατά την αποθήκευση, δεν χρειάζεται καν να σκέφτεστε το στυλ. Αν δεν υπάρχουν conventions, προτείνετέ τις στην ομάδα και πάρτε ως αφετηρία ένα βιομηχανικό πρότυπο (π.χ. Airbnb Style Guide).&quot;, &quot;growth&quot;: &quot;Μαθαίνετε την αρχή της συνεργασίας ότι η συνέπεια μετράει περισσότερο από την προσωπική προτίμηση. Εσωτερικεύετε και την αποδοτικότητα του να μη σπαταλάτε ανθρώπινη ενέργεια σε ό,τι μπορεί να αυτοματοποιηθεί. Αυτό επηρεάζει άμεσα την παραγωγικότητα της ομάδας και την ταχύτητα onboarding.&quot;, &quot;retro&quot;: &quot;Γνωρίζετε με ακρίβεια τις coding conventions της ομάδας; Αν όχι, πού μπορείτε να τις βρείτε;&quot;}, {&quot;n&quot;: 8, &quot;mistake&quot;: &quot;Αγνοείτε τα σφάλματα με ένα κενό catch block&quot;, &quot;situation&quot;: &quot;Καταπίνετε τα σφάλματα με try { ... } catch(e) {}. Η υπηρεσία συμπεριφέρεται παράξενα, αλλά δεν υπάρχει log σφάλματος και δεν βρίσκετε την αιτία. Οι χρήστες ρωτούν γιατί δεν περνάει η πληρωμή τους, ενώ στον server δεν έχει καταγραφεί τίποτα.&quot;, &quot;action&quot;: &quot;Σε κάθε catch block, καταγράψτε τουλάχιστον το σφάλμα. Αν μπορείτε να ανακάμψετε, ανακάμψτε, αλλιώς προωθήστε το σφάλμα προς τα πάνω. Δώστε στον χρήστη ένα φιλικό μήνυμα και στον developer ένα αναλυτικό log. Η βασική μορφή είναι: catch(e) { logger.error(&#x27;Αποτυχία επεξεργασίας πληρωμής&#x27;, { userId, orderId, error: e.message }); throw new PaymentError(&#x27;Παρουσιάστηκε πρόβλημα κατά την επεξεργασία της πληρωμής&#x27;); }&quot;, &quot;growth&quot;: &quot;Αναπτύσσετε την ικανότητα να σχεδιάζετε συστηματικά στρατηγική διαχείρισης σφαλμάτων (ανάκαμψη, προώθηση, καταγραφή). Εσωτερικεύετε την αρχή ότι «κάθε σφάλμα πρέπει να το χειριστεί κάποιος», που είναι η βάση της σταθερότητας μιας υπηρεσίας και της δυνατότητας debugging (observability).&quot;, &quot;retro&quot;: &quot;Υπάρχουν κενά catch blocks στο τρέχον project; Αναζητήστε τα. Πόσα είναι;&quot;}, {&quot;n&quot;: 9, &quot;mistake&quot;: &quot;Χρησιμοποιείτε υπερβολικά καθολικές (global) μεταβλητές&quot;, &quot;situation&quot;: &quot;Χρησιμοποιείτε καθολικές μεταβλητές επειδή είναι βολικό να τις μοιράζονται πολλές συναρτήσεις. Καθώς η εφαρμογή μεγαλώνει, δεν μπορείτε πια να παρακολουθήσετε ποια συνάρτηση αλλάζει πότε την καθολική μεταβλητή, και η αλλαγή μιας λειτουργίας χαλάει μια άλλη που φαινομενικά δεν σχετίζεται.&quot;, &quot;action&quot;: &quot;Περιορίστε στο ελάχιστο το scope των μεταβλητών. Περνάτε δεδομένα με παραμέτρους συναρτήσεων, τιμές επιστροφής και dependency injection. Αν χρειάζεστε διαχείριση κατάστασης, χρησιμοποιήστε βιβλιοθήκη όπως Redux ή Zustand, ή μεταβλητές στιγμιοτύπου μιας κλάσης, ώστε η διαδρομή αλλαγής της κατάστασης να παρακολουθείται καθαρά.&quot;, &quot;growth&quot;: &quot;Καταλαβαίνετε τις αρχές διαχείρισης κατάστασης και scope. Νιώθετε την αξία της νοοτροπίας λειτουργικού προγραμματισμού που ελαχιστοποιεί τις παρενέργειες και της αμεταβλητότητας (immutability), βασικής ικανότητας για να είναι προβλέψιμες οι σύνθετες εφαρμογές.&quot;, &quot;retro&quot;: &quot;Υπάρχουν σημεία στο τρέχον project όπου χρησιμοποιείτε καθολικές μεταβλητές; Γιατί τις δηλώσατε καθολικές;&quot;}, {&quot;n&quot;: 10, &quot;mistake&quot;: &quot;Προσπελάζετε αντικείμενα χωρίς έλεγχο null/undefined&quot;, &quot;situation&quot;: &quot;Προσπελάζετε βαθιά αντικείμενα όπως user.profile.address.city χωρίς καμία προστασία. Αν υπάρχει χρήστης χωρίς προφίλ ή χωρίς διεύθυνση, η εφαρμογή κρασάρει αμέσως με σφάλμα Cannot read property of null.&quot;, &quot;action&quot;: &quot;Αξιοποιήστε το optional chaining (user?.profile?.address?.city) και τις προεπιλεγμένες τιμές (nullish coalescing, ?? &#x27;Δεν έχει δοθεί διεύθυνση&#x27;). Βάλτε guard clauses στην αρχή των συναρτήσεων: if (!user) return null; Αν χρησιμοποιείτε TypeScript, ενεργοποιήστε το strictNullChecks ώστε η ασφάλεια ως προς το null να εξασφαλίζεται στο compile time.&quot;, &quot;growth&quot;: &quot;Εσωτερικεύετε τη νοοτροπία του αμυντικού προγραμματισμού (Defensive Programming). Η συνήθεια να αναρωτιέστε πάντα πρώτα «μπορεί αυτή η τιμή να λείπει;» μειώνει θεαματικά τα runtime crashes. Καταλαβαίνετε και γιατί μετράει η ασφάλεια null σε επίπεδο γλώσσας, όπως το Optional της Swift ή το Nullable της Kotlin.&quot;, &quot;retro&quot;: &quot;Είχατε πρόσφατα runtime σφάλμα σχετικό με null/undefined; Πόσο συχνά συμβαίνει;&quot;}]}"></div>
+    </section>
 
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(63,56,132,.25)">✓</div>
-      <h3>Λίστα ελέγχου με 100 λάθη</h3>
-      <p>Από τη συγγραφή κώδικα μέχρι τη συνεργασία στην ομάδα, τα λάθη που επαναλαμβάνονται στην πράξη είναι οργανωμένα ανά κατηγορία.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(242,179,51,.2)">📓</div>
-      <h3>Ημερολόγιο ανασκόπησης</h3>
-      <p>Απαντώντας στις ερωτήσεις ανασκόπησης που υπάρχουν για κάθε λάθος, χτίζετε πραγματική κατανόηση και όχι απλή απομνημόνευση.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(56,199,140,.2)">📊</div>
-      <h3>Παρακολούθηση προόδου</h3>
-      <p>Δείτε οπτικά το ποσοστό ολοκλήρωσης ανά κατηγορία και τη συνολική πρόοδο, και νιώστε την εξέλιξή σας.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(77,140,235,.2)">☁️</div>
-      <h3>Αυτόματος συγχρονισμός iCloud</h3>
-      <p>Χρησιμοποιήστε τα ίδια δεδομένα σε iPhone, iPad και Mac. Ο συγχρονισμός γίνεται αυτόματα μέσω CloudKit.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(240,107,107,.2)">🔖</div>
-      <h3>Σελιδοδείκτες</h3>
-      <p>Βάλτε σελιδοδείκτη στα στοιχεία που θέλετε να ξαναδείτε και επαναλάβετέ τα αργότερα όλα μαζί.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(128,89,184,.2)">💻</div>
-      <h3>iPhone · iPad · Mac</h3>
-      <p>Με το Mac Catalyst, η εφαρμογή iPhone δουλεύει ως έχει και στο Mac. Μελετήστε όπου κι αν βρίσκεστε.</p>
-    </div>
-  </div>
-</section>
+    <section class="problem reveal">
+      <h2>Πάλι το ίδιο σχόλιο στο code review;</h2>
+      <p>Ακατανόητα ονόματα μεταβλητών, συναρτήσεις 200 γραμμών, κώδικας με αντιγραφή-επικόλληση. Όλοι οι senior έχουν περάσει από εκεί, αλλά συνήθως το καταλαβαίνεις μόνο όταν σκοντάψεις. Το 100 Λάθη σάς δείχνει αυτά τα λάθη από πριν και σας βάζει να σκεφτείτε τη δική σας δουλειά, ώστε να μην τα επαναλάβετε.</p>
+    </section>
 
-<section class="categories-section">
-  <p class="section-label">10 κατηγορίες</p>
-  <h2>Ποια λάθη καλύπτει;</h2>
-  <p class="section-desc">Είναι ταξινομημένα με βάση τις καταστάσεις που αντιμετωπίζουν πραγματικά οι junior developers.</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Τι συμβαίνει, τι να κάνετε, τι μαθαίνετε</h2>
+        <p>Κάθε λάθος εξηγείται σε τρία μέρη: τι συμβαίνει, τι να κάνετε και τι θα μάθετε.<br>Δέκα κατηγορίες, από τις συνήθειες συγγραφής κώδικα ως την ασφάλεια και την απόδοση, μόνο με λάθη που επαναλαμβάνονται σε πραγματικές ομάδες.</p>
+      </div>
+      <div class="phone"><img src="../img/el/detail.jpg" alt="Τι συμβαίνει, τι να κάνετε, τι μαθαίνετε" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="categories-grid">
-    <div class="cat-chip"><span>⌨️</span> Συνήθειες συγγραφής κώδικα</div>
-    <div class="cat-chip"><span>🐛</span> Debugging και επίλυση προβλημάτων</div>
-    <div class="cat-chip"><span>🌿</span> Version control και συνεργασία</div>
-    <div class="cat-chip"><span>🏗️</span> Σχεδιασμός και αρχιτεκτονική</div>
-    <div class="cat-chip"><span>🛡️</span> Tests και ποιότητα</div>
-    <div class="cat-chip"><span>🧠</span> Μάθηση και εξέλιξη</div>
-    <div class="cat-chip"><span>💬</span> Επικοινωνία</div>
-    <div class="cat-chip"><span>🖥️</span> Υποδομή και deployment</div>
-    <div class="cat-chip"><span>🔒</span> Ασφάλεια και απόρρητο</div>
-    <div class="cat-chip"><span>⚡</span> Απόδοση και βελτιστοποίηση</div>
-  </div>
-</section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ερωτήσεις ανασκόπησης για να μείνει</h2>
+        <p>Κάθε λάθος έχει 4 ερωτήσεις ανασκόπησης, 400 συνολικά. Απαντήστε σκεπτόμενοι τα δικά σας έργα και ό,τι διαβάζετε γίνεται εμπειρία.<br>Οι απαντήσεις σας μαζεύονται στο ημερολόγιο ανασκόπησης ανά κατηγορία, για να τις ξαναδείτε όποτε θέλετε.</p>
+      </div>
+      <div class="phone"><img src="../img/el/retro.jpg" alt="Ερωτήσεις ανασκόπησης για να μείνει" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-<section>
-  <p class="section-label">Πλάνα</p>
-  <h2>Ξεκινήστε δωρεάν</h2>
-  <p class="section-desc">Δοκιμάστε πρώτα 30 λάθη δωρεάν και ξεκλειδώστε και τα 100 με το PRO.</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Δείτε πόσο έχετε προχωρήσει</h2>
+        <p>Σημειώστε τα λάθη που έχετε ζήσει και η πρόοδός σας μεγαλώνει ανά κατηγορία και συνολικά. Βάλτε σελιδοδείκτη σε ό,τι θέλετε να ξαναδείτε.<br>Όλα συγχρονίζονται μέσω iCloud σε iPhone, iPad και Mac.</p>
+      </div>
+      <div class="phone"><img src="../img/el/progress.jpg" alt="Δείτε πόσο έχετε προχωρήσει" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="pricing-grid">
-    <div class="price-card">
-      <p class="price-plan">Δωρεάν</p>
-      <p class="price-amount">Δωρεάν</p>
-      <p class="price-period">Δωρεάν για πάντα</p>
-      <ul class="price-features">
-        <li>Συνήθειες συγγραφής κώδικα (10)</li>
-        <li>Debugging και επίλυση προβλημάτων (10)</li>
-        <li>Version control και συνεργασία (10)</li>
-        <li>Ημερολόγιο ανασκόπησης</li>
-        <li>Πρόοδος και σελιδοδείκτες</li>
-      </ul>
-    </div>
-    <div class="price-card featured">
-      <div class="price-badge">BEST</div>
-      <p class="price-plan">PRO Μηνιαίο</p>
-      <p class="price-amount">Μηνιαία</p>
-      <p class="price-period">Η τιμή εμφανίζεται στο App Store</p>
-      <ul class="price-features">
-        <li>Και τα 100 λάθη</li>
-        <li>Και οι 10 κατηγορίες</li>
-        <li>Ημερολόγιο ανασκόπησης</li>
-        <li>Συγχρονισμός iCloud</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-    <div class="price-card">
-      <p class="price-plan">PRO Εφ&#x27; όρου ζωής</p>
-      <p class="price-amount">Εφ&#x27; όρου ζωής</p>
-      <p class="price-period">Μία πληρωμή, για πάντα</p>
-      <ul class="price-features">
-        <li>Και τα 100 λάθη</li>
-        <li>Και οι 10 κατηγορίες</li>
-        <li>Ημερολόγιο ανασκόπησης</li>
-        <li>Συγχρονισμός iCloud</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <section class="reveal">
+      <h2>Τρία βήματα για να ξεκινήσετε</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Διαλέξτε κατηγορία</h3><p>Οι συνήθειες συγγραφής κώδικα, το debugging και το version control είναι ανοιχτά δωρεάν.</p></li>
+<li class="card"><span class="n">2</span><h3>Διαβάστε και σημειώστε</h3><p>Πατήστε «Το έζησα» στα λάθη που έχετε κάνει κι εσείς.</p></li>
+<li class="card"><span class="n">3</span><h3>Κάντε ανασκόπηση</h3><p>Γράψτε μια απάντηση, έστω σύντομη. Μπαίνει στο ημερολόγιο ανασκόπησης.</p></li></ol>
+    </section>
 
-<section class="sync-section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
-  <p class="section-label">Πολλαπλές πλατφόρμες</p>
-  <h2>Μαζί σε όλες τις συσκευές</h2>
-  <p class="section-desc">Με συγχρονισμό iCloud μέσω CloudKit, συνεχίζετε από όπου κι αν ξεκινήσατε, σε οποιαδήποτε συσκευή.</p>
-  <div class="devices">
-    <div class="device-chip">📱 iPhone</div>
-    <div class="device-chip">📲 iPad</div>
-    <div class="device-chip">💻 Mac</div>
-    <div class="device-chip">☁️ Αυτόματος συγχρονισμός iCloud</div>
-  </div>
-</section>
+    <section class="reveal" id="commands">
+      <h2>Οι 10 κατηγορίες</h2>
+      <div class="card table">
+        <dl><div><dt>Συνήθειες συγγραφής κώδικα</dt><dd>#001–#010 · Δωρεάν</dd></div><div><dt>Debugging και επίλυση προβλημάτων</dt><dd>#011–#020 · Δωρεάν</dd></div><div><dt>Version control και συνεργασία</dt><dd>#021–#030 · Δωρεάν</dd></div><div><dt>Σχεδιασμός και αρχιτεκτονική</dt><dd>#031–#040 · PRO</dd></div><div><dt>Tests και ποιότητα</dt><dd>#041–#050 · PRO</dd></div><div><dt>Μάθηση και εξέλιξη</dt><dd>#051–#060 · PRO</dd></div><div><dt>Επικοινωνία και συνεργασία</dt><dd>#061–#070 · PRO</dd></div><div><dt>Deployment και λειτουργία</dt><dd>#071–#080 · PRO</dd></div><div><dt>Ασφάλεια και δεδομένα</dt><dd>#081–#090 · PRO</dd></div><div><dt>Απόδοση και βελτιστοποίηση</dt><dd>#091–#100 · PRO</dd></div></dl>
+      </div>
+      <p class="muted">Κάθε κατηγορία έχει 10 λάθη και κάθε λάθος 4 ερωτήσεις ανασκόπησης.</p>
+    </section>
 
-<section class="cta-section">
-  <h2>Ξεκινήστε να εξελίσσεστε από τώρα</h2>
-  <p>30 λάθη δωρεάν, και με το PRO και τα 100.<br>Γίνετε ο developer που δεν κάνει το ίδιο λάθος δύο φορές.</p>
-  <a href="#" class="btn-store">
-    <svg style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Λήψη από το</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<footer>
-  <div>
-    <p>© 2026 100 Λάθη. All rights reserved.</p>
-    <div style="margin-top:12px"><div class="langs"><a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/index.html" hreflang="en" lang="en">English</a> <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a> <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/index.html" hreflang="es" lang="es">Español</a> <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a> <a href="../it/index.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/index.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a> <a href="../da/index.html" hreflang="da" lang="da">Dansk</a> <a href="../el/index.html" hreflang="el" lang="el" class="cur" aria-current="true">Ελληνικά</a> <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a> <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a> <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a></div></div>
-  </div>
-  <span class="foot-links"><a href="support.html">Υποστήριξη</a><a href="privacy.html">Πολιτική απορρήτου</a></span>
-</footer>
+    <section class="reveal" id="pricing">
+      <h2>30 δωρεάν. Και τα 100 με το PRO.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Δωρεάν</h3>
+          <ul><li>Οι πρώτες 3 κατηγορίες, 30 λάθη</li><li>Οι 120 ερωτήσεις ανασκόπησής τους</li><li>Λίστα ελέγχου, ημερολόγιο ανασκόπησης, πρόοδος και σελιδοδείκτες</li><li>Συγχρονισμός iCloud (iPhone, iPad, Mac)</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>100 Λάθη PRO</h3>
+          <ul><li>Οι άλλες 7 κατηγορίες, 70 ακόμη λάθη (#031–#100)</li><li>280 ακόμη ερωτήσεις ανασκόπησης</li><li>Όλες οι μελλοντικές ενημερώσεις περιεχομένου</li></ul>
+          <p class="muted">Μηνιαία ή ετήσια συνδρομή (έως 50% φθηνότερη από τη μηνιαία) ή εφάπαξ αγορά εφ' όρου ζωής.</p>
+        </div>
+      </div>
+      <p class="muted">Καμία συλλογή προσωπικών δεδομένων, χωρίς εργαλεία ανάλυσης και χωρίς διαφημίσεις.</p>
+    </section>
 
+    <section class="reveal" id="faq">
+      <h2>Συχνές ερωτήσεις</h2>
+      <div class="faq"><details><summary>Τι είναι δωρεάν;</summary><p>Και τα 30 λάθη με τις ερωτήσεις τους στις κατηγορίες Συνήθειες συγγραφής κώδικα, Debugging και επίλυση προβλημάτων, Version control και συνεργασία. Η λίστα ελέγχου, το ημερολόγιο ανασκόπησης, η πρόοδος, οι σελιδοδείκτες και ο συγχρονισμός iCloud είναι επίσης δωρεάν.</p></details>
+<details><summary>Πώς χρησιμοποιώ το PRO σε άλλη συσκευή;</summary><p>Συνδεθείτε με το ίδιο Apple ID και πατήστε «Επαναφορά αγορών» στην οθόνη συνδρομής.</p></details>
+<details><summary>Πώς ακυρώνω τη συνδρομή;</summary><p>Οποιαδήποτε στιγμή από Ρυθμίσεις › Apple ID › Συνδρομές. Η συνδρομή ανανεώνεται αυτόματα, εκτός αν την ακυρώσετε τουλάχιστον 24 ώρες πριν λήξει η τρέχουσα περίοδος. Η αγορά εφ' όρου ζωής πληρώνεται μία φορά.</p></details>
+<details><summary>Τα δεδομένα δεν συγχρονίζονται μεταξύ συσκευών.</summary><p>Ελέγξτε ότι όλες οι συσκευές είναι συνδεδεμένες στο iCloud με το ίδιο Apple ID και ότι το iCloud είναι ενεργό για αυτή την εφαρμογή στις Ρυθμίσεις. Για τον συγχρονισμό χρειάζεται και σύνδεση στο δίκτυο.</p></details>
+<details><summary>Πώς τα διαγράφω όλα;</summary><p>Πατήστε «Επαναφορά όλων των δεδομένων» στις ρυθμίσεις της εφαρμογής. Σημειώσεις, απαντήσεις και σελιδοδείκτες διαγράφονται και δεν γίνεται αναίρεση.</p></details>
+<details><summary>Σε ποιες συσκευές λειτουργεί;</summary><p>Σε iPhone, iPad και Mac. Το PRO ξεκλειδώνει σε όλες τις συσκευές με το ίδιο Apple ID.</p></details>
+<details><summary>Στέλνονται κάπου τα δεδομένα μου;</summary><p>Όχι. Οι σημειώσεις και οι απαντήσεις σας μένουν μόνο στις συσκευές σας και στο δικό σας iCloud. Η εφαρμογή δεν συλλέγει προσωπικά δεδομένα και δεν έχει εργαλεία ανάλυσης ούτε διαφημίσεις.</p></details></div>
+      <p class="contact">Ερωτήσεις ή προτάσεις; Γράψτε στο <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Γίνετε ο developer που δεν<br>κάνει το ίδιο λάθος δύο φορές</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6759643878">Δωρεάν λήψη στο App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Γλώσσα"><a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el" aria-current="page">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Πολιτική απορρήτου</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Hyunho Lee</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

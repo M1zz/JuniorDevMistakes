@@ -1,0 +1,258 @@
+{
+  "title": "100 Misstag: checklistan för juniora utvecklare",
+  "description": "Läs de 100 misstag juniora utvecklare gör oftast, bocka av dem du har gjort och svara på reflektionsfrågor. De första 30 är gratis.",
+  "hero": {
+    "headline": "Känn till misstagen\ninnan de svider",
+    "lead": "De 100 misstag som nya utvecklare gör oftast, samlade på ett ställe. För varje misstag läser du vad som händer, vad du ska göra och vad du lär dig, och svarar sedan på en reflektionsfråga så att du inte gör samma misstag två gånger.",
+    "cta": "Hämta gratis på App Store",
+    "note": "De första 30 misstagen är gratis. För iPhone, iPad och Mac."
+  },
+  "demo": {
+    "title": "Öppna ett misstag",
+    "lead": "Här är de 10 misstagen i den första gratiskategorin, ord för ord som i appen. Markera dem du redan har varit med om som Upplevt.",
+    "note": "Webbdemon sparar inte dina bockar. I appen synkas bockar och svar till alla dina enheter via iCloud.",
+    "category": "Kodvanor",
+    "labels": {
+      "happens": "Så här går det till",
+      "todo": "Gör så här",
+      "learn": "Det här lär du dig och växer av",
+      "retro": "Reflektionsfrågor",
+      "done": "Upplevt"
+    },
+    "items": [
+      {
+        "n": 1,
+        "mistake": "Du ger variabler meningslösa namn som a, b och x",
+        "situation": "När du skriver kod snabbt använder du av gammal vana namn som temp, data, result och val. Medan du skriver finns sammanhanget i huvudet, så det är inget problem, men efter bara en vecka måste du läsa koden från början och undra \"vad var den här variabeln nu igen?\".",
+        "action": "När du namnger en variabel, ägna tre sekunder åt att fråga dig vad den innehåller. Låt namnet beskriva rollen: userProfileList i stället för data, formattedDate i stället för temp och filteredActiveUsers i stället för result. Målet är att koden ska läsas som en vanlig engelsk mening. Till exempel går det att förstå if (isUserActive && hasPermission) bara genom att läsa villkoret.",
+        "growth": "Kod läses tio gånger mer än den skrivs. Ett bra namn är kraftfullare än en kommentar. Enas med teamet om namnkonventioner (camelCase, snake_case och så vidare), undvik förkortningar (usr → user, btn → button) och välj namn som går att söka efter. Bara den här vanan förbättrar hastigheten på kodgranskningen och underhållbarheten dramatiskt.",
+        "retro": "Fanns det variabelnamn i din senaste kod där betydelsen var oklar? Vad hette de, och vad hade varit bättre namn?"
+      },
+      {
+        "n": 2,
+        "mistake": "Du packar in över 100 rader kod i en enda funktion",
+        "situation": "När du implementerar en funktion skriver du indatavalidering, datatransformering, API-anrop, bearbetning av resultatet och felhantering i en enda funktion. I början går det att överblicka flödet, men när funktionen passerar 200 rader blir det svårt att veta var man ska ändra, och biverkningarna går inte att förutse.",
+        "action": "När en funktion blir längre än 20 rader är det dags att fundera på att dela upp den. Måttstocken är: går det att beskriva vad funktionen gör i en mening? Bryt ut varje steg i en egen funktion, som validateUserInput(), transformToAPIFormat(), callPaymentAPI() och formatResponse(), och låt huvudfunktionen bara fungera som en orkestrerare som anropar dem i ordning.",
+        "growth": "Du får principen om enskilt ansvar (SRP) i fingrarna. En liten funktion visar sin roll redan genom namnet, går att testa för sig och kan återanvändas på andra ställen. Förmågan att strukturera kod så att den läses som en berättelse är en kärnkompetens hos seniora utvecklare.",
+        "retro": "Hur många rader har den längsta funktionen i ditt nuvarande projekt? Kan du beskriva vad den gör i en mening?"
+      },
+      {
+        "n": 3,
+        "mistake": "Du upprepar kod genom att kopiera och klistra in",
+        "situation": "När du behöver liknande logik kopierar du befintlig kod och ändrar bara en liten del. Koden för att hämta användarlistan och orderlistan är 90 % identisk men skrivs separat. Om en bugg senare hittas i den gemensamma delen måste du leta upp och rätta varje kopia, och missar du en enda dyker samma bugg upp igen på ett annat ställe.",
+        "action": "I samma stund som du vill kopiera och klistra in kod är det en signal om att refaktorera. Bryt ut den gemensamma logiken i en funktion eller klass och skicka bara in det som skiljer sig som parametrar eller callbacks. När något upprepas tre gånger eller mer (Rule of Three) bör du alltid abstrahera. Till exempel kan en enda fetchList(endpoint, transformer) hantera flera listhämtningar.",
+        "growth": "Du tränar upp DRY-principen (Don't Repeat Yourself) och förmågan att abstrahera. Men för mycket abstraktion är också riskabelt, så bedöm utifrån frågan om koden verkligen ändras tillsammans av samma skäl. Rätt abstraktion handlar inte om att minska mängden kod, utan om att sänka kostnaden för förändring.",
+        "retro": "Har du nyligen kopierat och klistrat in kod? Varför valde du det i stället för att abstrahera?"
+      },
+      {
+        "n": 4,
+        "mistake": "Du skriver komplicerad affärslogik utan kommentarer",
+        "situation": "Rabattberäkningen innehåller ett trefaldigt villkor utan kommentarer, så när en planeringsändring kommer ett halvår senare kan ingen förklara varför det blev så. Koden visar vad den gör men inte varför.",
+        "action": "Skriv kommentarer som förklarar varför. Lämna affärssammanhang, bakgrunden till beslut och relaterade ärendenummer, som i // Extra rabatt för VIP-kunder utifrån årligt köpvärde (begärt av marknadsteamet 2024 Q3, JIRA-1234). Skriv en blockkommentar före komplicerade algoritmer som sammanfattar hela flödet.",
+        "growth": "Du förstår att koden själv berättar vad den gör, kommentarerna berättar varför och dokumentationen berättar hur. En bra kommentar är en gåva till framtida utvecklare, inklusive dig själv, som gör att de förstår koden och vågar ändra den.",
+        "retro": "Har du i din senaste kod lämnat kommentarer där det behövs en förklaring av varför du gjorde så?"
+      },
+      {
+        "n": 5,
+        "mistake": "Du kommenterar för mycket och förklarar varje rad",
+        "situation": "Du skriver självklara kommentarer på varje rad, som let count = 0; // sätt räknaren till 0. När koden ändras måste kommentarerna ändras med den, men du glömmer att uppdatera dem och koden och kommentarerna säger olika saker. En kommentar som ljuger är värre än ingen kommentar alls.",
+        "action": "Skriv kod som förklarar sig själv. Med bra variabel- och funktionsnamn behövs de flesta kommentarer inte. När du känner att en kommentar behövs, undersök först om du kan refaktorera koden så att den går att förstå utan. Använd kommentarer bara för att förklara varför, eller för bakgrunden till ett ointuitivt beslut.",
+        "growth": "Du tränar upp förmågan att skriva självdokumenterande kod (self-documenting code). När koden är lättläst minskar behovet av kommentarer, och de kommentarer som verkligen behövs gör större nytta.",
+        "retro": "Har du hittat en kommentar som inte stämde med koden? Vilken förvirring skapade den falska kommentaren?"
+      },
+      {
+        "n": 6,
+        "mistake": "Du hårdkodar magiska tal överallt i koden",
+        "situation": "Kod som if (retryCount > 3), setTimeout(() => {}, 86400000) och if (role === 2) ligger utspridd här och där. Bara den som skrev koden vet vad 3 är, vad 86400000 är och vad 2 är. När policyn ändras och antalet försök ska höjas till 5 måste du leta efter 3 i hela koden, och eftersom andra 3:or har en annan betydelse finns risken att du ändrar fel.",
+        "action": "Skapa konstanter som ger varje literalt värde en betydelse. Låt namnet förmedla meningen, som const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000 och const ROLE_ADMIN = 2. Samlar du konstanterna på ett ställe räcker det att ändra en rad när policyn ändras.",
+        "growth": "Du får vanan att förmedla kodens avsikt tydligt. Det är grunden för underhållbarhet och utvecklas naturligt till arkitekturmönstret att flytta ut inställningar (configuration).",
+        "retro": "Finns det någon plats i din kod där tal eller strängar är hårdkodade och svåra att förstå?"
+      },
+      {
+        "n": 7,
+        "mistake": "Du struntar i kodkonventionerna och envisas med din egen stil",
+        "situation": "I en och samma fil blandas camelCase och snake_case, och indragningen växlar mellan tabbar och mellanslag. När lagkamrater läser din kod går energin åt till att tyda stilen, och i kodgranskningen blir det diskussioner om formatering i stället för logik.",
+        "action": "Följ de kodkonventioner som teamet har bestämt och sätt upp automatiska verktyg som ESLint, Prettier och SwiftLint i projektet. Med automatisk formatering vid sparning behöver du inte ens tänka på stilen. Om det saknas konventioner, föreslå det för teamet och använd en branschstandard (till exempel Airbnb Style Guide) som utgångspunkt.",
+        "growth": "Du lär dig samarbetets princip att konsekvens väger tyngre än personlig smak. Du lär dig också vara effektiv och inte lägga mänsklig energi på sådant som verktyg kan automatisera. Det påverkar direkt teamets produktivitet och hur snabbt nya medlemmar kommer in i arbetet.",
+        "retro": "Vet du exakt vilka kodkonventioner teamet har? Om inte, var kan du hitta dem?"
+      },
+      {
+        "n": 8,
+        "mistake": "Du ignorerar felhantering med ett tomt catch-block",
+        "situation": "Du sväljer felet med try { ... } catch(e) {}. Tjänsten beter sig konstigt men det finns ingen felloggning, så orsaken går inte att hitta. Användare hör av sig och säger att betalningen inte går igenom, men servern har inte registrerat någonting.",
+        "action": "Logga åtminstone felet i varje catch-block. Kan du återhämta dig från felet, gör det, annars skickar du det vidare uppåt. Ge användaren ett vänligt meddelande och utvecklaren en detaljerad logg. Grundmönstret är catch(e) { logger.error('Betalningen misslyckades', { userId, orderId, error: e.message }); throw new PaymentError('Ett problem uppstod vid betalningen'); }.",
+        "growth": "Du tränar upp förmågan att systematiskt utforma en strategi för felhantering (återhämtning, vidarebefordran, loggning). Du tar till dig principen att alla fel måste hanteras av någon, och den är grunden för tjänstens stabilitet och observerbarhet (observability).",
+        "retro": "Finns det tomma catch-block i ditt nuvarande projekt? Sök och kontrollera. Hur många finns det?"
+      },
+      {
+        "n": 9,
+        "mistake": "Du använder globala variabler urskillningslöst",
+        "situation": "Du använder globala variabler för att det är bekvämt att dela dem mellan flera funktioner. När appen växer går det inte längre att spåra vilken funktion som ändrar den globala variabeln och när, och en ändring i en funktion förstör en annan, till synes orelaterad funktion.",
+        "action": "Minimera variablernas räckvidd (scope). Skicka data via funktionsparametrar, returvärden och beroendeinjektion. Behöver du tillståndshantering, använd ett bibliotek som Redux eller Zustand, eller instansvariabler i en klass, så att vägen för tillståndsändringar går att följa tydligt.",
+        "growth": "Du förstår principerna för tillståndshantering och scope. Du upplever värdet av ett funktionellt tänkesätt som minimerar biverkningar och av oföränderlighet (immutability), en kärnkompetens för att göra komplexa applikationer förutsägbara.",
+        "retro": "Finns det globala variabler i ditt nuvarande projekt? Varför deklarerade du dem globalt?"
+      },
+      {
+        "n": 10,
+        "mistake": "Du kommer åt objekt utan att kontrollera null/undefined",
+        "situation": "Du kommer åt djupa objekt som user.profile.address.city helt utan skydd. Finns det en användare utan profil eller utan angiven adress kraschar appen direkt med felet Cannot read property of null.",
+        "action": "Använd optional chaining (user?.profile?.address?.city) och standardvärden (nullish coalescing, ?? 'Adress saknas') flitigt. Lägg en vaktsats (guard clause) i början av funktionen: if (!user) return null; Använder du TypeScript, slå på strictNullChecks så att null-säkerhet garanteras vid kompilering.",
+        "growth": "Du tar till dig tänkesättet bakom defensiv programmering (defensive programming). Vanan att alltid först fråga sig om värdet kan saknas minskar körtidskrascher dramatiskt. Du förstår också varför null-säkerhet på språknivå, som Swifts Optional och Kotlins Nullable, är så viktigt.",
+        "retro": "Har du nyligen råkat ut för ett körtidsfel kopplat till null/undefined? Hur ofta händer det?"
+      }
+    ]
+  },
+  "problem": {
+    "title": "Samma kommentar i kodgranskningen igen?",
+    "text": "Kryptiska variabelnamn, funktioner på 200 rader, kopierad kod. Alla seniorer har varit där, men oftast märker man det först när man själv går i fällan. 100 Misstag visar dig misstagen i förväg och får dig att reflektera över ditt eget arbete, så att du slutar upprepa dem."
+  },
+  "features": [
+    {
+      "title": "Vad som händer, vad du gör, vad du lär dig",
+      "text": "Varje misstag är uppdelat i tre delar: vad som händer, vad du ska göra och vad du lär dig av det.\nTio kategorier, från kodvanor till säkerhet och prestanda, med bara de misstag som dyker upp gång på gång i riktiga team.",
+      "shot": "detail"
+    },
+    {
+      "title": "Reflektionsfrågor som får det att fastna",
+      "text": "Varje misstag har 4 reflektionsfrågor, 400 totalt. Svara med dina egna projekt i tankarna, så blir det du läser till erfarenhet.\nDina svar samlas i reflektionsdagboken per kategori, redo att läsas igen.",
+      "shot": "retro"
+    },
+    {
+      "title": "Se hur långt du har kommit",
+      "text": "Bocka av misstagen du har varit med om, så växer dina framsteg per kategori och totalt. Lägg ett bokmärke på det du vill återvända till.\nAllt synkas via iCloud mellan iPhone, iPad och Mac.",
+      "shot": "progress"
+    }
+  ],
+  "steps": {
+    "title": "Tre steg för att komma igång",
+    "items": [
+      {
+        "title": "Välj en kategori",
+        "text": "Kodvanor, felsökning och versionshantering är öppna gratis."
+      },
+      {
+        "title": "Läs och bocka av",
+        "text": "Tryck på Upplevt vid de misstag du själv har gjort."
+      },
+      {
+        "title": "Reflektera",
+        "text": "Skriv ett svar, gärna kort. Det hamnar i din reflektionsdagbok."
+      }
+    ]
+  },
+  "reference": {
+    "title": "De 10 kategorierna",
+    "tags": [
+      "Gratis",
+      "PRO"
+    ],
+    "rows": [
+      [
+        "Kodvanor",
+        "#001–#010 · Gratis"
+      ],
+      [
+        "Felsökning och problemlösning",
+        "#011–#020 · Gratis"
+      ],
+      [
+        "Versionshantering och samarbete",
+        "#021–#030 · Gratis"
+      ],
+      [
+        "Design och arkitektur",
+        "#031–#040 · PRO"
+      ],
+      [
+        "Testning och kvalitet",
+        "#041–#050 · PRO"
+      ],
+      [
+        "Lärande och utveckling",
+        "#051–#060 · PRO"
+      ],
+      [
+        "Kommunikation och samarbete",
+        "#061–#070 · PRO"
+      ],
+      [
+        "Driftsättning och drift",
+        "#071–#080 · PRO"
+      ],
+      [
+        "Säkerhet och data",
+        "#081–#090 · PRO"
+      ],
+      [
+        "Prestanda och optimering",
+        "#091–#100 · PRO"
+      ]
+    ],
+    "note": "Varje kategori har 10 misstag, och varje misstag har 4 reflektionsfrågor."
+  },
+  "pricing": {
+    "title": "30 gratis. Alla 100 med PRO.",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "De första 3 kategorierna, 30 misstag",
+        "Deras 120 reflektionsfrågor",
+        "Checklista, reflektionsdagbok, framsteg och bokmärken",
+        "iCloud-synk (iPhone, iPad, Mac)"
+      ]
+    },
+    "pro": {
+      "name": "100 Misstag PRO",
+      "items": [
+        "De andra 7 kategorierna, 70 misstag till (#031–#100)",
+        "280 reflektionsfrågor till",
+        "Alla framtida innehållsuppdateringar"
+      ],
+      "note": "Månadsvis, årsvis (upp till 50 % billigare än månadsvis) eller ett engångsköp för alltid."
+    },
+    "note": "Ingen insamling av personuppgifter, inga analysverktyg och inga annonser."
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "items": [
+      {
+        "q": "Vad är gratis?",
+        "a": "Alla 30 misstag med frågor i kategorierna Kodvanor, Felsökning och problemlösning samt Versionshantering och samarbete. Checklistan, reflektionsdagboken, framsteg, bokmärken och iCloud-synk är också gratis."
+      },
+      {
+        "q": "Hur använder jag PRO på en annan enhet?",
+        "a": "Logga in med samma Apple-ID och tryck på Återställ köp på prenumerationsskärmen."
+      },
+      {
+        "q": "Hur säger jag upp prenumerationen?",
+        "a": "När som helst under Inställningar › Apple-ID › Prenumerationer. Prenumerationen förnyas automatiskt om du inte säger upp den minst 24 timmar innan den aktuella perioden slutar. Köpet för alltid betalas bara en gång."
+      },
+      {
+        "q": "Mina data synkas inte mellan enheterna.",
+        "a": "Kontrollera att alla enheter är inloggade på iCloud med samma Apple-ID och att iCloud är aktiverat för appen i Inställningar. Synkningen kräver också nätverksanslutning."
+      },
+      {
+        "q": "Hur raderar jag allt?",
+        "a": "Tryck på Återställ all data i appens inställningar. Bockar, svar och bokmärken raderas och det går inte att ångra."
+      },
+      {
+        "q": "Vilka enheter fungerar den på?",
+        "a": "iPhone, iPad och Mac. PRO låses upp på alla enheter med samma Apple-ID."
+      },
+      {
+        "q": "Skickas mina data någonstans?",
+        "a": "Nej. Dina bockar och svar sparas bara på dina enheter och i din egen iCloud. Appen samlar inte in personuppgifter och har varken analysverktyg eller annonser."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Bli utvecklaren som aldrig\ngör samma misstag två gånger",
+    "cta": "Hämta gratis på App Store"
+  },
+  "ui": {
+    "skip": "Hoppa till innehållet",
+    "languages": "Språk",
+    "privacy": "Integritetspolicy",
+    "contact": "Frågor eller förslag? Skriv till {email}."
+  }
+}

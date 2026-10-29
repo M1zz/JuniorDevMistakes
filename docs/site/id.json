@@ -1,0 +1,258 @@
+{
+  "title": "100 Kesalahan Junior Dev: checklist untuk berkembang lebih cepat",
+  "description": "Baca 100 kesalahan yang paling sering dibuat junior developer, centang yang pernah kamu alami, lalu jawab pertanyaan refleksi. 30 pertama gratis.",
+  "hero": {
+    "headline": "Kenali kesalahannya\nsebelum kena batunya",
+    "lead": "Kumpulan 100 kesalahan yang paling sering dibuat developer pemula. Tiap kesalahan menjelaskan apa yang terjadi, apa yang harus dilakukan, dan apa pelajarannya, lalu kamu menjawab satu pertanyaan refleksi supaya tidak jatuh di lubang yang sama dua kali.",
+    "cta": "Unduh gratis di App Store",
+    "note": "30 kesalahan pertama gratis. Bisa dipakai di iPhone, iPad, dan Mac."
+  },
+  "demo": {
+    "title": "Buka satu kesalahan",
+    "lead": "Ini 10 kesalahan di kategori pertama yang dibuka gratis, persis sama dengan isi app. Tandai Sudah dialami untuk yang pernah kamu alami.",
+    "note": "Versi web ini tidak menyimpan centang. Di app, centang dan jawaban tersinkron lewat iCloud ke semua perangkatmu.",
+    "category": "Kebiasaan menulis kode",
+    "labels": {
+      "happens": "Situasi yang terjadi",
+      "todo": "Yang sebaiknya dilakukan",
+      "learn": "Yang kamu pelajari",
+      "retro": "Pertanyaan refleksi",
+      "done": "Sudah dialami"
+    },
+    "items": [
+      {
+        "n": 1,
+        "mistake": "Menamai variabel dengan nama tak bermakna seperti a, b, x",
+        "situation": "Saat menulis kode dengan cepat, kamu terbiasa memakai nama seperti temp, data, result, val. Saat menulis, konteksnya masih ada di kepala jadi tidak masalah. Tapi seminggu kemudian kamu bertanya \"ini variabel apa ya?\" dan harus membaca ulang kode dari awal.",
+        "action": "Saat memberi nama variabel, luangkan 3 detik untuk memikirkan \"apa isi variabel ini\". Masukkan perannya ke dalam nama, misalnya userProfileList, bukan data; formattedDate, bukan temp; filteredActiveUsers, bukan result. Tujuannya membuat kode terbaca seperti kalimat bahasa Inggris. Misalnya if (isUserActive && hasPermission) sudah jelas artinya hanya dengan membaca kondisinya.",
+        "growth": "Kode dibaca 10 kali lebih sering daripada ditulis. Nama yang baik lebih kuat daripada komentar. Samakan aturan penamaan (camelCase, snake_case, dll.) dengan tim, hindari singkatan (usr → user, btn → button), dan pakai nama yang mudah dicari. Kebiasaan ini saja sudah sangat meningkatkan kecepatan code review dan kemudahan maintenance.",
+        "retro": "Apakah ada nama variabel yang maknanya tidak jelas di kode yang baru kamu tulis? Apa namanya, dan apa nama yang lebih baik?"
+      },
+      {
+        "n": 2,
+        "mistake": "Menjejalkan 100 baris kode atau lebih ke dalam satu fungsi",
+        "situation": "Saat membuat satu fitur, kamu menulis validasi input, transformasi data, pemanggilan API, pengolahan hasil, dan penanganan error semuanya dalam satu fungsi. Awalnya alurnya masih terlihat, tapi begitu fungsi melewati 200 baris, kamu sulit menemukan bagian yang harus diubah dan efek sampingnya tak bisa diprediksi.",
+        "action": "Kalau satu fungsi lebih dari 20 baris, pertimbangkan untuk memecahnya. Ukurannya: \"bisakah fungsi ini dijelaskan dalam satu kalimat?\" Pisahkan tiap langkah menjadi fungsi mandiri seperti validateUserInput(), transformToAPIFormat(), callPaymentAPI(), formatResponse(), dan biarkan fungsi utama hanya berperan sebagai orkestrator yang memanggil semuanya berurutan.",
+        "growth": "Kamu menguasai Single Responsibility Principle (SRP) lewat pengalaman langsung. Fungsi kecil perannya terlihat dari namanya, bisa di-test sendiri, dan bisa dipakai ulang di tempat lain. Kemampuan menyusun kode agar terbaca seperti \"cerita\" adalah kompetensi inti senior developer.",
+        "retro": "Berapa baris fungsi terpanjang di proyekmu sekarang? Bisakah kamu menjelaskan tugasnya dalam satu kalimat?"
+      },
+      {
+        "n": 3,
+        "mistake": "Mengulang kode dengan copy-paste",
+        "situation": "Saat butuh logika yang mirip, kamu copy-paste kode lama lalu mengubah sebagian. Kode untuk daftar pengguna dan daftar pesanan 90% sama, tapi ditulis terpisah. Kelak saat bug ditemukan di bagian yang sama, kamu harus mencari dan memperbaiki semua hasil copy-paste satu per satu, dan kalau ada yang terlewat, bug yang sama muncul lagi di tempat lain.",
+        "action": "Saat kamu hendak copy-paste kode, itu sinyal untuk refactoring. Ekstrak logika yang sama ke fungsi atau class, lalu kirim bagian yang berbeda lewat parameter atau callback. Kalau sudah berulang 3 kali (Rule of Three), wajib diabstraksikan. Misalnya satu fetchList(endpoint, transformer) bisa menangani berbagai pengambilan daftar.",
+        "growth": "Kamu melatih prinsip DRY (Don't Repeat Yourself) dan kemampuan abstraksi. Tapi abstraksi berlebihan juga berbahaya, jadi ukurlah dengan pertanyaan \"apakah kode ini benar-benar berubah bersama karena alasan yang sama?\" Abstraksi yang tepat bukan mengurangi jumlah kode, melainkan mengurangi biaya perubahan.",
+        "retro": "Pernahkah kamu baru-baru ini meng-copy-paste kode? Kenapa kamu memilih copy-paste, bukan abstraksi?"
+      },
+      {
+        "n": 4,
+        "mistake": "Menulis logika bisnis yang rumit tanpa komentar",
+        "situation": "Perhitungan diskon memakai tiga lapis kondisi tanpa komentar, jadi enam bulan kemudian saat ada permintaan perubahan dari perencana produk, tak seorang pun bisa menjelaskan kenapa kodenya begitu. Dari kode terlihat \"apa yang dilakukan\", tapi \"kenapa dilakukan\" tidak bisa diketahui.",
+        "action": "Tulis komentar yang menjelaskan \"Why\". Tinggalkan konteks bisnis, latar belakang keputusan, dan nomor isu terkait, misalnya // Pelanggan tier VIP mendapat diskon tambahan berdasarkan total pembelian tahunan (permintaan tim marketing 2024 Q3, JIRA-1234). Untuk algoritma kompleks, tulis komentar blok di atas fungsi yang meringkas alurnya.",
+        "growth": "Kamu memahami bahwa \"What\" dijelaskan oleh kode itu sendiri, \"Why\" oleh komentar, dan \"How\" oleh dokumen. Komentar yang baik adalah hadiah bagi developer masa depan (termasuk dirimu) agar bisa memahami dan mengubah kode dengan percaya diri.",
+        "retro": "Di kode yang baru kamu tulis, apakah bagian yang butuh penjelasan \"kenapa dibuat begini\" sudah diberi komentar?"
+      },
+      {
+        "n": 5,
+        "mistake": "Memberi terlalu banyak komentar sampai setiap baris dijelaskan",
+        "situation": "Kamu menulis komentar yang sudah jelas di setiap baris, seperti let count = 0; // inisialisasi count dengan 0. Saat kode berubah, komentar juga harus diubah, tapi kamu lupa memperbaruinya sehingga kode dan komentar jadi tidak cocok. Komentar yang berbohong lebih berbahaya daripada tidak ada komentar.",
+        "action": "Tulislah kode yang menjelaskan dirinya sendiri. Kalau nama variabel dan fungsi bagus, sebagian besar komentar tidak diperlukan. Jika merasa butuh komentar, periksa dulu apakah kode bisa di-refactor agar jelas tanpa komentar. Pakai komentar hanya untuk menjelaskan \"kenapa\" atau menyimpan latar belakang keputusan yang tidak intuitif.",
+        "growth": "Kamu melatih kemampuan menulis self-documenting code. Kode yang mudah dibaca mengurangi kebutuhan komentar, dan komentar yang ditulis di tempat yang benar-benar perlu justru bernilai lebih besar.",
+        "retro": "Pernahkah kamu menemukan komentar yang tidak cocok dengan kodenya? Kebingungan apa yang ditimbulkan komentar palsu itu?"
+      },
+      {
+        "n": 6,
+        "mistake": "Menulis magic number langsung (hardcode) di mana-mana dalam kode",
+        "situation": "Kode seperti if (retryCount > 3), setTimeout(() => {}, 86400000), if (role === 2) tersebar di mana-mana. Hanya penulisnya yang tahu apa itu 3, 86400000, dan 2. Saat kebijakan berubah dan jumlah retry harus jadi 5, kamu harus mencari angka 3 di seluruh kode, dan ada risiko salah ubah karena ada angka 3 lain dengan makna berbeda.",
+        "action": "Buat konstanta yang bermakna untuk setiap nilai literal. Gunakan nama yang menjelaskan maknanya, seperti const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2. Kalau konstanta dikumpulkan di satu tempat, saat kebijakan berubah kamu cukup mengubah satu baris.",
+        "growth": "Kamu terbiasa menyampaikan maksud kode dengan jelas. Ini dasar dari maintainability, dan berkembang secara alami menjadi pola arsitektur yang mengeluarkan nilai konfigurasi (configuration) dari kode.",
+        "retro": "Adakah angka atau string yang di-hardcode di kodemu sekarang dan maknanya sulit dipahami?"
+      },
+      {
+        "n": 7,
+        "mistake": "Mengabaikan coding convention dan ngotot dengan gaya sendiri",
+        "situation": "Dalam satu file, camelCase dan snake_case bercampur, dan indentasi bolak-balik antara tab dan spasi. Rekan setim menghabiskan tenaga untuk menerjemahkan gaya saat membaca kodemu, dan code review berubah jadi debat format, bukan logika.",
+        "action": "Ikuti coding convention yang disepakati tim, dan pasang alat otomatis seperti ESLint, Prettier, atau SwiftLint di proyek. Kalau auto-format saat simpan diaktifkan, kamu bahkan tak perlu memikirkan gaya. Kalau belum ada convention, usulkan ke tim dan jadikan standar industri (misalnya Airbnb Style Guide) sebagai titik awal.",
+        "growth": "Kamu belajar prinsip kolaborasi bahwa konsistensi lebih penting daripada selera pribadi. Kamu juga menghayati efisiensi untuk tidak menghabiskan energi manusia pada hal yang bisa diotomatisasi alat. Ini berdampak langsung pada produktivitas tim dan kecepatan onboarding.",
+        "retro": "Apakah kamu tahu persis coding convention timmu? Kalau belum, di mana kamu bisa mengeceknya?"
+      },
+      {
+        "n": 8,
+        "mistake": "Mengabaikan penanganan error dengan blok catch kosong",
+        "situation": "Kamu menelan error dengan try { ... } catch(e) {}. Layanan berperilaku aneh tapi tidak ada log error sehingga penyebabnya tak bisa ditemukan. Pengguna melapor pembayaran gagal, tetapi di server tidak ada catatan apa pun.",
+        "action": "Minimal catat log error di setiap blok catch. Kalau error bisa dipulihkan, pulihkan; kalau tidak, teruskan ke tingkat atas. Beri pesan yang ramah untuk pengguna, dan log yang rinci untuk developer. Bentuk dasarnya: catch(e) { logger.error('Pemrosesan pembayaran gagal', { userId, orderId, error: e.message }); throw new PaymentError('Terjadi masalah saat memproses pembayaran'); }",
+        "growth": "Kamu melatih kemampuan merancang strategi penanganan error (pemulihan, propagasi, logging) secara sistematis. Kamu menginternalisasi prinsip \"setiap error harus ditangani oleh seseorang\", yang menjadi fondasi stabilitas layanan dan observability.",
+        "retro": "Adakah blok catch kosong di proyekmu sekarang? Coba cari. Ada berapa?"
+      },
+      {
+        "n": 9,
+        "mistake": "Memakai variabel global secara berlebihan",
+        "situation": "Kamu memakai variabel global karena enak dibagi ke banyak fungsi. Saat aplikasi membesar, mustahil melacak fungsi mana yang mengubah variabel global itu dan kapan, dan memperbaiki satu fitur merusak fitur lain yang tampaknya sama sekali tak berhubungan.",
+        "action": "Perkecil scope variabel. Kirim data lewat parameter fungsi, nilai kembalian, atau dependency injection. Kalau butuh state management, pakai library seperti Redux atau Zustand, atau instance variable di class, agar jalur perubahan state mudah dilacak.",
+        "growth": "Kamu memahami prinsip state management dan scope. Kamu merasakan cara berpikir functional programming yang meminimalkan side effect dan nilai immutability, yang menjadi kemampuan inti untuk membuat aplikasi kompleks tetap bisa diprediksi.",
+        "retro": "Adakah bagian proyekmu yang memakai variabel global? Kenapa dijadikan global?"
+      },
+      {
+        "n": 10,
+        "mistake": "Mengakses objek tanpa memeriksa null/undefined",
+        "situation": "Kamu mengakses objek yang dalam seperti user.profile.address.city tanpa perlindungan apa pun. Begitu ada pengguna tanpa profil atau yang belum mengisi alamat, aplikasi langsung crash dengan error Cannot read property of null.",
+        "action": "Manfaatkan optional chaining (user?.profile?.address?.city) dan nilai default (nullish coalescing, ?? 'Alamat belum diisi') secara aktif. Taruh guard clause di awal fungsi: if (!user) return null; Kalau memakai TypeScript, aktifkan strictNullChecks agar keamanan null terjamin saat compile time.",
+        "growth": "Kamu menanamkan pola pikir defensive programming. Kebiasaan selalu bertanya dulu \"mungkinkah nilai ini kosong?\" sangat mengurangi crash saat runtime. Kamu juga jadi mengerti kenapa keamanan null di level bahasa, seperti Optional di Swift dan Nullable di Kotlin, begitu penting.",
+        "retro": "Pernahkah kamu baru-baru ini mengalami runtime error terkait null/undefined? Seberapa sering terjadi?"
+      }
+    ]
+  },
+  "problem": {
+    "title": "Dapat komentar yang sama lagi saat code review?",
+    "text": "Nama variabel yang tidak jelas, fungsi 200 baris, kode hasil copas di mana-mana. Semua senior pernah mengalaminya, tapi biasanya kita baru sadar setelah jatuh sendiri. 100 Kesalahan Junior Dev menunjukkan kesalahan-kesalahan itu lebih dulu dan mengajakmu merenungkan pekerjaanmu sendiri supaya tidak terulang."
+  },
+  "features": [
+    {
+      "title": "Apa yang terjadi, apa yang dilakukan, apa pelajarannya",
+      "text": "Setiap kesalahan dijelaskan dalam tiga bagian: apa yang terjadi, apa yang harus dilakukan, dan apa yang kamu pelajari.\nAda 10 kategori, dari kebiasaan menulis kode sampai keamanan dan performa, berisi kesalahan yang memang terus berulang di tim sungguhan.",
+      "shot": "detail"
+    },
+    {
+      "title": "Pertanyaan refleksi supaya melekat",
+      "text": "Setiap kesalahan punya 4 pertanyaan refleksi, total 400. Jawab sambil memikirkan proyekmu sendiri, dan yang kamu baca berubah jadi pengalaman.\nJawabanmu terkumpul di Jurnal Refleksi per kategori, siap dibaca ulang kapan saja.",
+      "shot": "retro"
+    },
+    {
+      "title": "Lihat sejauh mana kamu berkembang",
+      "text": "Centang kesalahan yang pernah kamu alami, dan progresmu bertambah per kategori maupun secara keseluruhan. Bookmark yang ingin kamu baca lagi.\nSemuanya tersinkron lewat iCloud di iPhone, iPad, dan Mac.",
+      "shot": "progress"
+    }
+  ],
+  "steps": {
+    "title": "Mulai dalam tiga langkah",
+    "items": [
+      {
+        "title": "Pilih kategori",
+        "text": "Kebiasaan menulis kode, debugging, dan version control terbuka gratis."
+      },
+      {
+        "title": "Baca dan centang",
+        "text": "Ketuk Sudah dialami pada kesalahan yang pernah kamu buat."
+      },
+      {
+        "title": "Refleksikan",
+        "text": "Tulis jawaban, sependek apa pun. Jawabanmu masuk ke Jurnal Refleksi."
+      }
+    ]
+  },
+  "reference": {
+    "title": "10 kategori",
+    "tags": [
+      "Gratis",
+      "PRO"
+    ],
+    "rows": [
+      [
+        "Kebiasaan menulis kode",
+        "#001–#010 · Gratis"
+      ],
+      [
+        "Debugging dan pemecahan masalah",
+        "#011–#020 · Gratis"
+      ],
+      [
+        "Version control dan kolaborasi",
+        "#021–#030 · Gratis"
+      ],
+      [
+        "Desain dan arsitektur",
+        "#031–#040 · PRO"
+      ],
+      [
+        "Testing dan kualitas",
+        "#041–#050 · PRO"
+      ],
+      [
+        "Belajar dan bertumbuh",
+        "#051–#060 · PRO"
+      ],
+      [
+        "Komunikasi dan kolaborasi",
+        "#061–#070 · PRO"
+      ],
+      [
+        "Deployment dan operasional",
+        "#071–#080 · PRO"
+      ],
+      [
+        "Keamanan dan data",
+        "#081–#090 · PRO"
+      ],
+      [
+        "Performa dan optimasi",
+        "#091–#100 · PRO"
+      ]
+    ],
+    "note": "Setiap kategori berisi 10 kesalahan, dan setiap kesalahan punya 4 pertanyaan refleksi."
+  },
+  "pricing": {
+    "title": "30 gratis. Semua 100 dengan PRO.",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "3 kategori pertama, 30 kesalahan",
+        "120 pertanyaan refleksinya",
+        "Checklist, Jurnal Refleksi, progres, dan bookmark",
+        "Sinkronisasi iCloud (iPhone, iPad, Mac)"
+      ]
+    },
+    "pro": {
+      "name": "100 Kesalahan Junior Dev PRO",
+      "items": [
+        "7 kategori lainnya, 70 kesalahan lagi (#031–#100)",
+        "280 pertanyaan refleksi tambahan",
+        "Semua pembaruan konten ke depannya"
+      ],
+      "note": "Pilih langganan bulanan, tahunan (hemat hingga 50% dibanding bulanan), atau beli sekali seumur hidup."
+    },
+    "note": "Tidak mengumpulkan data pribadi, tanpa alat analitik, dan tanpa iklan."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {
+        "q": "Apa saja yang gratis?",
+        "a": "Semua 30 kesalahan beserta pertanyaannya di kategori Kebiasaan menulis kode, Debugging dan pemecahan masalah, serta Version control dan kolaborasi. Checklist, Jurnal Refleksi, progres, bookmark, dan sinkronisasi iCloud juga gratis."
+      },
+      {
+        "q": "Bagaimana memakai PRO di perangkat lain?",
+        "a": "Masuk dengan Apple ID yang sama, lalu ketuk Pulihkan pembelian di layar langganan."
+      },
+      {
+        "q": "Bagaimana cara membatalkan langganan?",
+        "a": "Kapan saja di Pengaturan › Apple ID › Langganan. Langganan diperpanjang otomatis kecuali dibatalkan paling lambat 24 jam sebelum periode berjalan berakhir. Paket seumur hidup hanya dibayar sekali."
+      },
+      {
+        "q": "Data tidak tersinkron antar perangkat.",
+        "a": "Pastikan semua perangkat masuk ke iCloud dengan Apple ID yang sama dan iCloud untuk app ini sudah aktif di Pengaturan. Sinkronisasi juga butuh koneksi internet."
+      },
+      {
+        "q": "Bagaimana menghapus semuanya?",
+        "a": "Ketuk Reset semua data di pengaturan app. Centang, jawaban, dan bookmark akan terhapus dan tidak bisa dikembalikan."
+      },
+      {
+        "q": "Bisa dipakai di perangkat apa saja?",
+        "a": "iPhone, iPad, dan Mac. PRO terbuka di semua perangkat dengan Apple ID yang sama."
+      },
+      {
+        "q": "Apakah data saya dikirim ke mana-mana?",
+        "a": "Tidak. Centang dan jawabanmu hanya tersimpan di perangkatmu dan iCloud milikmu sendiri. App ini tidak mengumpulkan data pribadi, tanpa alat analitik maupun iklan."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Jadilah developer yang tidak\nmengulang kesalahan yang sama",
+    "cta": "Unduh gratis di App Store"
+  },
+  "ui": {
+    "skip": "Langsung ke konten",
+    "languages": "Bahasa",
+    "privacy": "Kebijakan Privasi",
+    "contact": "Ada pertanyaan atau saran? Kirim email ke {email}."
+  }
+}

@@ -1,464 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>100 ข้อพลาด — เช็กลิสต์เติบโตสำหรับจูเนียร์เดฟ</title>
-  <meta name="description" content="100 ข้อพลาดที่นักพัฒนามืออาชีพพลาดกันบ่อยที่สุด รู้ไว้ก่อนแล้วเติบโตได้เร็วขึ้น" />
-  <meta property="og:title" content="100 ข้อพลาด — เช็กลิสต์เติบโตสำหรับจูเนียร์เดฟ" />
-  <meta property="og:description" content="100 ข้อพลาดที่นักพัฒนามืออาชีพพลาดกันบ่อยที่สุด รู้ไว้ก่อนแล้วเติบโตได้เร็วขึ้น" />
-  <meta property="og:type" content="website" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/index.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/index.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/index.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/index.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/index.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/index.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/index.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/index.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/index.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/index.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/index.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/index.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/index.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/index.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/index.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/index.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/index.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/index.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/index.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/index.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/index.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/index.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/index.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --primary:      #3F3884;
-      --primary-light:#6159AD;
-      --accent:       #F06B6B;
-      --green:        #38C78C;
-      --amber:        #F2B333;
-      --blue:         #4D8CEB;
-      --purple:       #8059B8;
-      --bg:           #0f0e1a;
-      --surface:      #1a1829;
-      --border:       rgba(255,255,255,0.08);
-      --text:         #f0eefc;
-      --muted:        rgba(240,238,252,0.55);
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 5%;
-      height: 64px;
-      background: rgba(15,14,26,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.3px; }
-    .nav-logo span { color: var(--accent); }
-    nav a.nav-link {
-      font-size: 0.9rem; color: var(--muted); text-decoration: none;
-      transition: color .2s;
-    }
-    nav a.nav-link:hover { color: var(--text); }
-
-    /* ── HERO ── */
-    .hero {
-      position: relative; overflow: hidden;
-      display: flex; flex-direction: column; align-items: center; text-align: center;
-      padding: 100px 5% 80px;
-      background: linear-gradient(145deg, #2a2460 0%, #3F3884 40%, #8059B8 100%);
-    }
-    .hero::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(240,107,107,.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-badge {
-      display: inline-block;
-      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
-      color: var(--amber);
-      background: rgba(242,179,51,.12);
-      border: 1px solid rgba(242,179,51,.25);
-      border-radius: 99px;
-      padding: 5px 14px;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-    }
-    .app-icon {
-      width: 120px; height: 120px;
-      border-radius: 27px;
-      background: linear-gradient(145deg, #3F3884, #8059B8);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 52px;
-      margin-bottom: 32px;
-      box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.12);
-    }
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 3.6rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -1px;
-      margin-bottom: 20px;
-    }
-    h1 em { font-style: normal; color: var(--accent); }
-    .hero-sub {
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      color: rgba(255,255,255,.72);
-      max-width: 520px;
-      margin-bottom: 40px;
-      line-height: 1.75;
-    }
-    .btn-store {
-      display: inline-flex; align-items: center; gap: 10px;
-      background: #fff; color: #000;
-      font-weight: 700; font-size: 1rem;
-      padding: 14px 28px;
-      border-radius: 14px;
-      text-decoration: none;
-      transition: transform .2s, box-shadow .2s;
-      box-shadow: 0 8px 24px rgba(0,0,0,.25);
-    }
-    .btn-store:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.35); }
-    .btn-store svg { width: 22px; height: 22px; }
-    .btn-store-sub { font-size: .7rem; font-weight: 400; display: block; text-align: left; opacity: .6; margin-bottom: 1px; }
-    .btn-store-main { font-size: 1rem; font-weight: 700; display: block; text-align: left; }
-
-    /* ── FEATURES ── */
-    section { padding: 80px 5%; }
-    .section-label {
-      text-align: center;
-      font-size: .75rem; font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    h2 {
-      text-align: center;
-      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 12px;
-    }
-    .section-desc {
-      text-align: center;
-      color: var(--muted);
-      font-size: 1rem;
-      max-width: 500px;
-      margin: 0 auto 56px;
-      line-height: 1.75;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .feature-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      transition: transform .25s, border-color .25s;
-    }
-    .feature-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.15); }
-    .feature-icon {
-      width: 48px; height: 48px;
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 22px;
-      margin-bottom: 16px;
-    }
-    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-    .feature-card p { font-size: .9rem; color: var(--muted); line-height: 1.65; }
-
-    /* ── CATEGORIES ── */
-    .categories-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .categories-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .cat-chip {
-      display: flex; align-items: center; gap: 10px;
-      padding: 12px 16px;
-      background: rgba(255,255,255,.04);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      font-size: .9rem; font-weight: 500;
-    }
-    .cat-chip span { font-size: 1.1rem; }
-
-    /* ── PRICING ── */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    .price-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      text-align: center;
-    }
-    .price-card.featured {
-      background: linear-gradient(145deg, #3F3884, #6159AD);
-      border-color: rgba(255,255,255,.2);
-    }
-    .price-badge {
-      display: inline-block;
-      font-size: .7rem; font-weight: 700;
-      background: var(--amber); color: #000;
-      border-radius: 99px; padding: 3px 10px;
-      margin-bottom: 16px;
-      text-transform: uppercase; letter-spacing: .05em;
-    }
-    .price-plan { font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
-    .price-amount { font-size: 2rem; font-weight: 800; margin-bottom: 4px; }
-    .price-period { font-size: .8rem; color: var(--muted); margin-bottom: 20px; }
-    .price-features { list-style: none; text-align: left; }
-    .price-features li { font-size: .88rem; padding: 6px 0; color: var(--muted); display: flex; gap: 8px; }
-    .price-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
-    .price-card.featured .price-features li { color: rgba(255,255,255,.8); }
-
-    /* ── SYNC ── */
-    .sync-section { text-align: center; }
-    .devices {
-      display: flex; justify-content: center; align-items: center;
-      gap: 24px; flex-wrap: wrap;
-      margin-top: 40px;
-    }
-    .device-chip {
-      display: flex; align-items: center; gap: 8px;
-      padding: 10px 20px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 99px;
-      font-size: .9rem; font-weight: 500;
-    }
-
-    /* ── CTA ── */
-    .cta-section {
-      text-align: center;
-      background: linear-gradient(145deg, #2a2460, #3F3884, #8059B8);
-      padding: 100px 5%;
-    }
-    .cta-section h2 { margin-bottom: 16px; }
-    .cta-section p { color: rgba(255,255,255,.7); margin-bottom: 40px; font-size: 1.05rem; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--bg);
-      border-top: 1px solid var(--border);
-      padding: 32px 5%;
-      display: flex; flex-wrap: wrap;
-      align-items: center; justify-content: space-between;
-      gap: 12px;
-    }
-    footer p { font-size: .85rem; color: var(--muted); }
-    footer a { color: var(--muted); font-size: .85rem; text-decoration: none; transition: color .2s; }
-    footer a:hover { color: var(--text); }
-
-    @media (max-width: 640px) {
-      nav { padding: 0 4%; }
-      .hero { padding: 72px 4% 60px; }
-      section { padding: 60px 4%; }
-    }
-  
-    .langs { font-size: .8rem; color: rgba(240,238,252,.45); line-height: 2; }
-    .langs a { color: rgba(240,238,252,.6); text-decoration: none; margin-right: 10px; white-space: nowrap; }
-    .langs a:hover, .langs a.cur { color: #f0eefc; }
-    .langs a.cur { font-weight: 700; }
-    .doc-langs { max-width: 720px; margin: 64px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); }
-    .foot-links a { margin-right: 14px; }
-    .faq dt { font-weight: 700; margin: 24px 0 6px; color: #f0eefc; }
-    .faq dd { color: rgba(240,238,252,.75); margin: 0; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>100 ข้อพลาด: เช็กลิสต์เติบโตสำหรับจูเนียร์เดฟ</title>
+  <meta name="description" content="อ่าน 100 ข้อผิดพลาดที่จูเนียร์เดฟทำบ่อยที่สุด ติ๊กข้อที่เคยเจอ แล้วตอบคำถามทบทวน 30 ข้อแรกใช้ได้ฟรี">
+  <meta name="theme-color" content="#403885" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6759643878">
+  <link rel="canonical" href="https://m1zz.github.io/JuniorDevMistakes/th/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="100 ข้อพลาด: เช็กลิสต์เติบโตสำหรับจูเนียร์เดฟ">
+  <meta property="og:description" content="อ่าน 100 ข้อผิดพลาดที่จูเนียร์เดฟทำบ่อยที่สุด ติ๊กข้อที่เคยเจอ แล้วตอบคำถามทบทวน 30 ข้อแรกใช้ได้ฟรี">
+  <meta property="og:url" content="https://m1zz.github.io/JuniorDevMistakes/th/">
+  <meta property="og:image" content="https://m1zz.github.io/JuniorDevMistakes/img/th/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#403885}@media (prefers-color-scheme:dark){:root{--accent:#8C82E6}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <a class="skip" href="#main">ข้ามไปยังเนื้อหา</a>
+  <header class="bar">
+    <a class="brand" href="../th/"><img src="../icon.png" alt="" width="32" height="32">100 ข้อพลาด</a>
+    <a class="lang-link" href="#languages">ภาษา</a>
+  </header>
 
-<nav>
-  <div class="nav-logo">100 ข้อพลาด</div>
-  <span><a href="support.html" class="nav-link">ช่วยเหลือ</a> &nbsp; <a href="privacy.html" class="nav-link">นโยบายความเป็นส่วนตัว</a></span>
-</nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>รู้ไว้ก่อน<br>ก่อนจะเจ็บเอง</h1>
+        <p class="lead">รวม 100 ข้อผิดพลาดที่นักพัฒนามือใหม่ทำบ่อยที่สุด แต่ละข้อบอกว่าจะเกิดอะไรขึ้น ควรทำอย่างไร และได้เรียนรู้อะไร จากนั้นตอบคำถามทบทวน เพื่อไม่พลาดเรื่องเดิมซ้ำสอง</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6759643878">ดาวน์โหลดฟรีบน App Store</a><a class="try" href="#try">ลองเปิดดูสักข้อ ↓</a></div>
+        <p class="muted small">30 ข้อแรกใช้ได้ฟรี ใช้ได้บน iPhone, iPad และ Mac</p>
+      </div>
+      <div class="phone"><img src="../img/th/home.jpg" alt="รู้ไว้ก่อน ก่อนจะเจ็บเอง" width="600" height="1303" decoding="async"></div>
+    </section>
 
-<section class="hero">
-  <div class="hero-badge">🚀 แอปสำหรับจูเนียร์เดฟ</div>
-  <div class="app-icon">⌨️</div>
-  <h1>รู้ข้อพลาดไว้ก่อน ก็<br><em>เติบโตเร็วขึ้น</em>ได้เลย</h1>
-  <p class="hero-sub">
-    100 ข้อพลาดที่นักพัฒนามืออาชีพพลาดกันบ่อยที่สุด<br>
-    เช็กจากเช็กลิสต์ แล้วทบทวนให้กลายเป็นของตัวเอง
-  </p>
-  <a href="#" class="btn-store">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Download on the</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<section>
-  <p class="section-label">ฟีเจอร์เด่น</p>
-  <h2>ครบทุกอย่างเพื่อการเติบโต</h2>
-  <p class="section-desc">ไม่ได้หยุดแค่รู้ว่าอะไรพลาดง่าย แต่พาไปถึงขั้นทบทวนจนเป็นของตัวเองจริง ๆ</p>
+    <section class="reveal" id="try">
+      <h2>ลองเปิดดูสักข้อ</h2>
+      <p class="muted">นี่คือ 10 ข้อในหมวดแรกที่เปิดให้ใช้ฟรี เนื้อหาเหมือนในแอปทุกคำ ข้อไหนเคยเจอแล้ว ลองกด เจอมาแล้ว ดู</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;ลองเปิดดูสักข้อ&quot;, &quot;lead&quot;: &quot;นี่คือ 10 ข้อในหมวดแรกที่เปิดให้ใช้ฟรี เนื้อหาเหมือนในแอปทุกคำ ข้อไหนเคยเจอแล้ว ลองกด เจอมาแล้ว ดู&quot;, &quot;note&quot;: &quot;เว็บนี้ไม่บันทึกการติ๊ก ในแอป การติ๊กและคำตอบจะซิงก์ผ่าน iCloud ไปทุกอุปกรณ์ของคุณ&quot;, &quot;category&quot;: &quot;นิสัยการเขียนโค้ด&quot;, &quot;labels&quot;: {&quot;happens&quot;: &quot;สถานการณ์ที่มักเกิดขึ้น&quot;, &quot;todo&quot;: &quot;ควรทำอย่างนี้&quot;, &quot;learn&quot;: &quot;สิ่งที่ได้เรียนรู้และเติบโต&quot;, &quot;retro&quot;: &quot;คำถามทบทวน&quot;, &quot;done&quot;: &quot;เจอมาแล้ว&quot;}, &quot;items&quot;: [{&quot;n&quot;: 1, &quot;mistake&quot;: &quot;ตั้งชื่อตัวแปรแบบไร้ความหมาย เช่น a, b, x&quot;, &quot;situation&quot;: &quot;เวลาเขียนโค้ดเร็ว ๆ เรามักใช้ชื่ออย่าง temp, data, result, val จนติดเป็นนิสัย ตอนเขียนไม่มีปัญหาเพราะบริบทยังอยู่ในหัว แต่ผ่านไปแค่สัปดาห์เดียวก็ต้องอ่านโค้ดใหม่ตั้งแต่ต้นพร้อมคิดว่า &#x27;ตัวแปรนี้คืออะไรนะ?&#x27;&quot;, &quot;action&quot;: &quot;ตอนตั้งชื่อตัวแปร ให้ใช้เวลาแค่ 3 วินาทีคิดว่า &#x27;ตัวแปรนี้เก็บอะไรอยู่&#x27; ใส่บทบาทของมันลงไปในชื่อ เช่น userProfileList แทน data, formattedDate แทน temp, filteredActiveUsers แทน result เป้าหมายคือทำให้โค้ดอ่านได้เหมือนประโยคภาษาอังกฤษ ตัวอย่างเช่น if (isUserActive &amp;&amp; hasPermission) แค่อ่านเงื่อนไขก็เข้าใจความหมายแล้ว&quot;, &quot;growth&quot;: &quot;เราใช้เวลาอ่านโค้ดมากกว่าเวลาเขียนถึง 10 เท่า ชื่อที่ดีทรงพลังกว่าคอมเมนต์ ให้ตกลงกฎการตั้งชื่อ (camelCase, snake_case ฯลฯ) ให้ตรงกันทั้งทีม เลี่ยงตัวย่อ (usr → user, btn → button) และใช้ชื่อที่ค้นหาเจอได้ แค่นิสัยข้อนี้ข้อเดียวก็ทำให้ความเร็วในการรีวิวโค้ดและความง่ายในการดูแลรักษาดีขึ้นอย่างมาก&quot;, &quot;retro&quot;: &quot;ในโค้ดที่เพิ่งเขียนไป มีชื่อตัวแปรที่ความหมายไม่ชัดเจนไหม ชื่ออะไร และชื่อที่ดีกว่าควรเป็นอะไร&quot;}, {&quot;n&quot;: 2, &quot;mistake&quot;: &quot;ยัดโค้ดมากกว่า 100 บรรทัดไว้ในฟังก์ชันเดียว&quot;, &quot;situation&quot;: &quot;ตอนทำฟีเจอร์หนึ่ง เราเขียนทั้งตรวจสอบอินพุต แปลงข้อมูล เรียก API จัดการผลลัพธ์ และจัดการข้อผิดพลาดไว้ในฟังก์ชันเดียว ตอนแรกยังเห็นการไหลของโค้ดชัดเจน แต่พอฟังก์ชันเกิน 200 บรรทัด เวลาแก้ก็หาไม่เจอว่าต้องแก้ตรงไหน และคาดเดาผลข้างเคียงไม่ได้&quot;, &quot;action&quot;: &quot;ถ้าฟังก์ชันยาวเกิน 20 บรรทัด ให้พิจารณาแยกได้แล้ว เกณฑ์คือ &#x27;อธิบายสิ่งที่ฟังก์ชันนี้ทำได้ในประโยคเดียวไหม&#x27; แยกแต่ละขั้นตอนเป็นฟังก์ชันอิสระ เช่น validateUserInput(), transformToAPIFormat(), callPaymentAPI(), formatResponse() ส่วนฟังก์ชันหลักให้ทำหน้าที่เป็นตัวควบคุมที่เรียกฟังก์ชันเหล่านี้ตามลำดับเท่านั้น&quot;, &quot;growth&quot;: &quot;คุณจะได้ฝึกหลักความรับผิดชอบเดียว (SRP) จนเป็นนิสัย ฟังก์ชันเล็กบอกหน้าที่ได้จากชื่อ ทดสอบแยกได้ และนำไปใช้ซ้ำที่อื่นได้ ความสามารถในการจัดโครงสร้างโค้ดให้อ่านได้เหมือน &#x27;เรื่องเล่า&#x27; คือทักษะหลักของซีเนียร์เดฟ&quot;, &quot;retro&quot;: &quot;ฟังก์ชันที่ยาวที่สุดในโปรเจกต์ตอนนี้ยาวกี่บรรทัด อธิบายสิ่งที่มันทำได้ในประโยคเดียวไหม&quot;}, {&quot;n&quot;: 3, &quot;mistake&quot;: &quot;ก๊อปแล้ววางโค้ดซ้ำไปซ้ำมา&quot;, &quot;situation&quot;: &quot;เวลาต้องการลอจิกคล้าย ๆ กัน เราก๊อปโค้ดเดิมมาวางแล้วแก้นิดหน่อย โค้ดดึงรายการผู้ใช้กับรายการคำสั่งซื้อเหมือนกัน 90% แต่เขียนแยกกัน พอภายหลังเจอบั๊กในส่วนที่ซ้ำกัน ก็ต้องไล่หาและแก้ทุกจุดที่ก๊อปไว้ ถ้าพลาดไปแค่จุดเดียว บั๊กเดิมก็โผล่ที่อื่นอีก&quot;, &quot;action&quot;: &quot;ช่วงเวลาที่อยากก๊อปวางคือสัญญาณให้รีแฟกเตอร์ แยกลอจิกส่วนกลางออกเป็นฟังก์ชันหรือคลาส แล้วส่งเฉพาะส่วนที่ต่างกันเป็นพารามิเตอร์หรือคอลแบ็ก ถ้าซ้ำตั้งแต่ 3 ครั้งขึ้นไป (Rule of Three) ต้องทำเป็นนามธรรม ตัวอย่างเช่น fetchList(endpoint, transformer) เพียงตัวเดียวก็จัดการดึงรายการได้หลายแบบ&quot;, &quot;growth&quot;: &quot;คุณจะได้ฝึกหลัก DRY (Don&#x27;t Repeat Yourself) และความสามารถในการทำนามธรรม แต่การทำนามธรรมมากเกินไปก็อันตราย ให้ตัดสินจากคำถามว่า &#x27;โค้ดนี้เปลี่ยนไปพร้อมกันด้วยเหตุผลเดียวกันจริงไหม&#x27; นามธรรมที่ดีไม่ได้ลดปริมาณโค้ด แต่ลดต้นทุนการเปลี่ยนแปลง&quot;, &quot;retro&quot;: &quot;เพิ่งก๊อปวางโค้ดไปเมื่อไหร่ ทำไมถึงเลือกก๊อปวางแทนที่จะทำนามธรรม&quot;}, {&quot;n&quot;: 4, &quot;mistake&quot;: &quot;เขียนลอจิกธุรกิจที่ซับซ้อนโดยไม่มีคอมเมนต์&quot;, &quot;situation&quot;: &quot;การคำนวณอัตราส่วนลดมีเงื่อนไขซ้อน 3 ชั้น แต่ไม่มีคอมเมนต์เลย พอครึ่งปีต่อมาฝ่ายวางแผนขอเปลี่ยนแปลง ก็ไม่มีใครอธิบายได้ว่าทำไมถึงเขียนแบบนี้ อ่านโค้ดแล้วเห็นแค่ &#x27;ทำอะไร&#x27; แต่ไม่รู้ &#x27;ทำไมถึงทำ&#x27;&quot;, &quot;action&quot;: &quot;เขียนคอมเมนต์ที่อธิบาย &#x27;Why&#x27; ทิ้งบริบททางธุรกิจ ที่มาของการตัดสินใจ และเลขที่ issue ที่เกี่ยวข้อง เช่น // ลูกค้าระดับ VIP ได้ส่วนลดเพิ่มตามยอดซื้อรายปี (ทีมการตลาดขอ ไตรมาส 3 ปี 2024, JIRA-1234) สำหรับอัลกอริทึมที่ซับซ้อน ให้เขียนบล็อกคอมเมนต์สรุปภาพรวมไว้หน้าฟังก์ชัน&quot;, &quot;growth&quot;: &quot;คุณจะเข้าใจว่า &#x27;What&#x27; โค้ดบอกเอง &#x27;Why&#x27; คอมเมนต์บอก และ &#x27;How&#x27; เอกสารบอก คอมเมนต์ที่ดีคือของขวัญที่ช่วยให้นักพัฒนาในอนาคต (รวมถึงตัวเรา) เข้าใจโค้ดและแก้ไขได้อย่างมั่นใจ&quot;, &quot;retro&quot;: &quot;ในโค้ดที่เพิ่งเขียน ตรงส่วนที่ต้องอธิบายว่า &#x27;ทำไมถึงทำแบบนี้&#x27; ได้ทิ้งคอมเมนต์ไว้หรือเปล่า&quot;}, {&quot;n&quot;: 5, &quot;mistake&quot;: &quot;ใส่คอมเมนต์มากเกินไปจนอธิบายทุกบรรทัด&quot;, &quot;situation&quot;: &quot;เขียนคอมเมนต์ที่รู้อยู่แล้วทุกบรรทัด เช่น let count = 0; // กำหนดค่าเริ่มต้นของ count เป็น 0 พอโค้ดเปลี่ยน คอมเมนต์ก็ต้องแก้ตามด้วย แต่ถ้าลืมอัปเดต โค้ดกับคอมเมนต์ก็ไม่ตรงกัน คอมเมนต์ที่โกหกเป็นอันตรายยิ่งกว่าไม่มีเลย&quot;, &quot;action&quot;: &quot;เขียนโค้ดให้อธิบายตัวมันเองได้ ถ้าชื่อตัวแปรและฟังก์ชันดี คอมเมนต์ส่วนใหญ่ก็ไม่จำเป็น ถ้ารู้สึกว่าต้องมีคอมเมนต์ ให้ลองรีแฟกเตอร์โค้ดก่อนว่าทำให้เข้าใจได้โดยไม่ต้องมีคอมเมนต์ไหม ใช้คอมเมนต์เฉพาะตอนอธิบาย &#x27;ทำไม&#x27; หรือบันทึกที่มาของการตัดสินใจที่ไม่ตรงไปตรงมา&quot;, &quot;growth&quot;: &quot;คุณจะฝึกเขียนโค้ดที่อธิบายตัวเองได้ (Self-documenting code) เมื่อโค้ดอ่านง่าย ความจำเป็นของคอมเมนต์ก็ลดลง และคอมเมนต์ที่เขียนไว้ในจุดที่จำเป็นจริง ๆ ก็มีคุณค่ามากขึ้น&quot;, &quot;retro&quot;: &quot;เคยเจอโค้ดกับคอมเมนต์ไม่ตรงกันไหม คอมเมนต์เท็จนั้นสร้างความสับสนอย่างไร&quot;}, {&quot;n&quot;: 6, &quot;mistake&quot;: &quot;ฮาร์ดโค้ดเลขมหัศจรรย์ไว้ทั่วโค้ด&quot;, &quot;situation&quot;: &quot;โค้ดอย่าง if (retryCount &gt; 3), setTimeout(() =&gt; {}, 86400000), if (role === 2) กระจายอยู่ทั่ว เลข 3 คืออะไร 86400000 คืออะไร 2 คืออะไร มีแต่คนเขียนที่รู้ พอนโยบายเปลี่ยนต้องเพิ่มจำนวนลองใหม่เป็น 5 ก็ต้องหาเลข 3 ทั้งโค้ด แต่บางที่ 3 ก็มีความหมายอื่น เสี่ยงแก้ผิดจุด&quot;, &quot;action&quot;: &quot;สร้างค่าคงที่ที่ให้ความหมายกับทุกค่าลิเทอรัล เช่น const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2 ให้ชื่ออย่างเดียวก็สื่อความหมาย ถ้ารวมค่าคงที่ไว้ที่เดียว เวลานโยบายเปลี่ยนก็แก้แค่บรรทัดเดียว&quot;, &quot;growth&quot;: &quot;คุณจะติดนิสัยสื่อเจตนาของโค้ดให้ชัดเจน นี่คือพื้นฐานของการดูแลรักษาโค้ด และพัฒนาต่อไปเป็นรูปแบบสถาปัตยกรรมที่แยกค่าตั้งค่าออกไปภายนอก (configuration) ได้อย่างเป็นธรรมชาติ&quot;, &quot;retro&quot;: &quot;ในโค้ดปัจจุบัน มีตัวเลขหรือสตริงที่เดาความหมายยากถูกฮาร์ดโค้ดไว้ตรงไหนบ้างไหม&quot;}, {&quot;n&quot;: 7, &quot;mistake&quot;: &quot;ไม่ทำตามโค้ดดิ้งคอนเวนชันและยึดสไตล์ของตัวเอง&quot;, &quot;situation&quot;: &quot;ในไฟล์เดียวมีทั้ง camelCase และ snake_case ปนกัน การเว้นวรรคก็สลับไปมาระหว่างแท็บกับสเปซ เพื่อนร่วมทีมเสียพลังไปกับการถอดรหัสสไตล์ตอนอ่านโค้ดเรา และในการรีวิวโค้ดก็เถียงกันเรื่องฟอร์แมตแทนที่จะเป็นลอจิก&quot;, &quot;action&quot;: &quot;ทำตามโค้ดดิ้งคอนเวนชันที่ทีมกำหนด และตั้งค่าเครื่องมืออัตโนมัติอย่าง ESLint, Prettier, SwiftLint ให้โปรเจกต์ ถ้าตั้งค่าให้จัดฟอร์แมตอัตโนมัติตอนบันทึก ก็ไม่ต้องคิดเรื่องสไตล์อีกเลย ถ้ายังไม่มีคอนเวนชัน ให้เสนอทีม และใช้มาตรฐานของวงการ (เช่น Airbnb Style Guide) เป็นจุดเริ่มต้น&quot;, &quot;growth&quot;: &quot;คุณจะได้เรียนรู้หลักการทำงานร่วมกันว่าความสม่ำเสมอสำคัญกว่าความชอบส่วนตัว และเรียนรู้ที่จะไม่ใช้แรงมนุษย์กับสิ่งที่เครื่องมือทำแทนได้ ซึ่งส่งผลโดยตรงต่อผลิตภาพของทีมและความเร็วในการเริ่มงานของคนใหม่&quot;, &quot;retro&quot;: &quot;รู้โค้ดดิ้งคอนเวนชันของทีมแน่ชัดไหม ถ้าไม่รู้ ดูได้จากที่ไหน&quot;}, {&quot;n&quot;: 8, &quot;mistake&quot;: &quot;จัดการข้อผิดพลาดด้วย catch บล็อกว่างเปล่า&quot;, &quot;situation&quot;: &quot;กลืนข้อผิดพลาดด้วย try { ... } catch(e) {} บริการทำงานแปลก ๆ แต่ไม่มีล็อกข้อผิดพลาดเลยหาสาเหตุไม่เจอ ผู้ใช้สอบถามว่าชำระเงินไม่ได้ แต่ฝั่งเซิร์ฟเวอร์ไม่มีบันทึกอะไรเลย&quot;, &quot;action&quot;: &quot;ในทุก catch บล็อก อย่างน้อยต้องล็อกข้อผิดพลาด ถ้ากู้คืนได้ก็กู้คืน ถ้าไม่ได้ก็ส่งต่อขึ้นไปชั้นบน ให้ข้อความที่เป็นมิตรกับผู้ใช้ และล็อกรายละเอียดไว้ให้นักพัฒนา รูปแบบพื้นฐานคือ catch(e) { logger.error(&#x27;ชำระเงินล้มเหลว&#x27;, { userId, orderId, error: e.message }); throw new PaymentError(&#x27;เกิดปัญหาระหว่างการชำระเงิน&#x27;); }&quot;, &quot;growth&quot;: &quot;คุณจะฝึกออกแบบกลยุทธ์จัดการข้อผิดพลาด (กู้คืน ส่งต่อ ล็อก) อย่างเป็นระบบ และซึมซับหลักการที่ว่า &#x27;ข้อผิดพลาดต้องมีใครสักคนจัดการเสมอ&#x27; ซึ่งเป็นรากฐานของเสถียรภาพบริการและความสามารถในการสังเกตระบบ (observability)&quot;, &quot;retro&quot;: &quot;ในโปรเจกต์ตอนนี้มี catch บล็อกว่างไหม ลองค้นดู มีกี่อัน&quot;}, {&quot;n&quot;: 9, &quot;mistake&quot;: &quot;ใช้ตัวแปรโกลบอลพร่ำเพรื่อ&quot;, &quot;situation&quot;: &quot;ใช้ตัวแปรโกลบอลเพราะแชร์ระหว่างหลายฟังก์ชันได้สะดวก พอแอปใหญ่ขึ้น ก็ตามไม่ได้แล้วว่าฟังก์ชันไหนเปลี่ยนตัวแปรโกลบอลตอนไหน การแก้ฟีเจอร์หนึ่งไปทำให้อีกฟีเจอร์ที่ดูไม่เกี่ยวกันพังได้&quot;, &quot;action&quot;: &quot;ทำให้ขอบเขตของตัวแปรเล็กที่สุด ส่งข้อมูลผ่านพารามิเตอร์ของฟังก์ชัน ค่าที่คืนกลับ และ dependency injection ถ้าต้องจัดการสถานะ ให้ใช้ไลบรารีจัดการสถานะอย่าง Redux, Zustand หรือตัวแปรอินสแตนซ์ของคลาส เพื่อให้ตามรอยเส้นทางการเปลี่ยนสถานะได้ชัดเจน&quot;, &quot;growth&quot;: &quot;คุณจะเข้าใจหลักการจัดการสถานะและขอบเขตของตัวแปร ได้สัมผัสวิธีคิดแบบฟังก์ชันนัลที่ลดผลข้างเคียง และคุณค่าของความไม่เปลี่ยนรูป (immutability) ซึ่งเป็นความสามารถหลักที่ทำให้แอปพลิเคชันซับซ้อนคาดเดาได้&quot;, &quot;retro&quot;: &quot;ในโปรเจกต์ตอนนี้ใช้ตัวแปรโกลบอลตรงไหนบ้าง ทำไมถึงประกาศเป็นโกลบอล&quot;}, {&quot;n&quot;: 10, &quot;mistake&quot;: &quot;เข้าถึงออบเจ็กต์โดยไม่ตรวจสอบ null/undefined&quot;, &quot;situation&quot;: &quot;เข้าถึงออบเจ็กต์ลึก ๆ อย่าง user.profile.address.city โดยไม่มีการป้องกัน ถ้ามีผู้ใช้ที่ไม่มีโปรไฟล์หรือไม่ได้กรอกที่อยู่ แอปจะแครชทันทีด้วยข้อผิดพลาด Cannot read property of null&quot;, &quot;action&quot;: &quot;ใช้ optional chaining (user?.profile?.address?.city) และค่าเริ่มต้น (nullish coalescing, ?? &#x27;ยังไม่ได้กรอกที่อยู่&#x27;) ให้เต็มที่ วางการ์ดเคลสไว้ต้นฟังก์ชัน: if (!user) return null; ถ้าใช้ TypeScript ให้เปิด strictNullChecks เพื่อรับประกันความปลอดภัยเรื่อง null ตั้งแต่ตอนคอมไพล์&quot;, &quot;growth&quot;: &quot;คุณจะซึมซับวิธีคิดแบบเขียนโปรแกรมเชิงป้องกัน (Defensive Programming) นิสัยคิดก่อนเสมอว่า &#x27;ค่านี้อาจไม่มีไหม&#x27; ช่วยลดการแครชตอนรันไทม์ลงอย่างมาก และจะเข้าใจว่าทำไมความปลอดภัยเรื่อง null ระดับภาษา เช่น Optional ของ Swift และ Nullable ของ Kotlin จึงสำคัญ&quot;, &quot;retro&quot;: &quot;เพิ่งเจอข้อผิดพลาดตอนรันไทม์เกี่ยวกับ null/undefined ไหม เกิดบ่อยแค่ไหน&quot;}]}"></div>
+    </section>
 
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(63,56,132,.25)">✓</div>
-      <h3>เช็กลิสต์ 100 ข้อพลาด</h3>
-      <p>ตั้งแต่การเขียนโค้ดไปจนถึงการทำงานเป็นทีม รวบรวมข้อพลาดที่เกิดซ้ำ ๆ ในงานจริงและแบ่งเป็นหมวดหมู่ให้แล้ว</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(242,179,51,.2)">📓</div>
-      <h3>สมุดทบทวน</h3>
-      <p>ตอบคำถามทบทวนที่เตรียมไว้ให้ในแต่ละข้อพลาด เพื่อให้เข้าใจจริง ไม่ใช่แค่ท่องจำ</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(56,199,140,.2)">📊</div>
-      <h3>ติดตามความคืบหน้า</h3>
-      <p>ดูความคืบหน้ารายหมวดและภาพรวมทั้งหมดได้ในแวบเดียว แล้วรู้สึกถึงการเติบโตของตัวเอง</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(77,140,235,.2)">☁️</div>
-      <h3>ซิงก์ iCloud อัตโนมัติ</h3>
-      <p>ใช้ข้อมูลชุดเดียวกันบน iPhone, iPad และ Mac ซิงก์อัตโนมัติด้วย CloudKit</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(240,107,107,.2)">🔖</div>
-      <h3>บุ๊กมาร์ก</h3>
-      <p>บุ๊กมาร์กข้อที่อยากกลับมาดู แล้วรวบรวมมาทบทวนทีหลังได้</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(128,89,184,.2)">💻</div>
-      <h3>iPhone · iPad · Mac</h3>
-      <p>ด้วย Mac Catalyst แอปบน iPhone ก็ใช้งานบน Mac ได้เหมือนกัน เรียนรู้ได้ทุกที่</p>
-    </div>
-  </div>
-</section>
+    <section class="problem reveal">
+      <h2>โดนคอมเมนต์เรื่องเดิมในโค้ดรีวิวอีกแล้วใช่ไหม</h2>
+      <p>ตั้งชื่อตัวแปรไม่สื่อความหมาย ฟังก์ชันยาว 200 บรรทัด ก๊อปวางโค้ดไปทั่ว รุ่นพี่ทุกคนเคยผ่านมาแล้ว แต่เรามักรู้ตัวก็ตอนพลาดเอง 100 ข้อพลาด พาไปเจอข้อผิดพลาดเหล่านี้ก่อน แล้วให้ทบทวนกับงานของตัวเอง จะได้ไม่พลาดซ้ำ</p>
+    </section>
 
-<section class="categories-section">
-  <p class="section-label">10 หมวดหมู่</p>
-  <h2>มีข้อพลาดอะไรบ้าง?</h2>
-  <p class="section-desc">แบ่งตามสถานการณ์ที่จูเนียร์เดฟเจอในงานจริง</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>เกิดอะไรขึ้น ควรทำอย่างไร ได้เรียนรู้อะไร</h2>
+        <p>เปิดข้อผิดพลาดข้อไหนก็จะแบ่งเป็นสามส่วน คือ จะเกิดอะไรขึ้น ควรทำอย่างไร และจะได้เรียนรู้อะไร<br>มี 10 หมวด ตั้งแต่นิสัยการเขียนโค้ดไปจนถึงความปลอดภัยและประสิทธิภาพ คัดเฉพาะข้อที่เกิดซ้ำในการทำงานจริง</p>
+      </div>
+      <div class="phone"><img src="../img/th/detail.jpg" alt="เกิดอะไรขึ้น ควรทำอย่างไร ได้เรียนรู้อะไร" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="categories-grid">
-    <div class="cat-chip"><span>⌨️</span> นิสัยการเขียนโค้ด</div>
-    <div class="cat-chip"><span>🐛</span> การดีบักและแก้ปัญหา</div>
-    <div class="cat-chip"><span>🌿</span> การจัดการเวอร์ชันและการทำงานร่วมกัน</div>
-    <div class="cat-chip"><span>🏗️</span> การออกแบบและสถาปัตยกรรม</div>
-    <div class="cat-chip"><span>🛡️</span> การทดสอบและคุณภาพ</div>
-    <div class="cat-chip"><span>🧠</span> การเรียนรู้และการเติบโต</div>
-    <div class="cat-chip"><span>💬</span> การสื่อสาร</div>
-    <div class="cat-chip"><span>🖥️</span> อินฟราและการดีพลอย</div>
-    <div class="cat-chip"><span>🔒</span> ความปลอดภัยและความเป็นส่วนตัว</div>
-    <div class="cat-chip"><span>⚡</span> ประสิทธิภาพและการปรับแต่ง</div>
-  </div>
-</section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>คำถามทบทวน ให้จำได้จริง</h2>
+        <p>แต่ละข้อมีคำถามทบทวน 4 ข้อ รวม 400 ข้อ ตอบโดยนึกถึงโปรเจกต์ของตัวเอง สิ่งที่อ่านจะกลายเป็นประสบการณ์<br>คำตอบจะรวมอยู่ในสมุดทบทวน แยกตามหมวด กลับมาอ่านได้ทุกเมื่อ</p>
+      </div>
+      <div class="phone"><img src="../img/th/retro.jpg" alt="คำถามทบทวน ให้จำได้จริง" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-<section>
-  <p class="section-label">แพ็กเกจ</p>
-  <h2>เริ่มต้นฟรี</h2>
-  <p class="section-desc">ลองฟรี 30 ข้อแรก แล้วปลดล็อกครบทั้ง 100 ข้อด้วย PRO</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>เห็นว่าโตขึ้นแค่ไหนในหน้าเดียว</h2>
+        <p>ติ๊กข้อที่เคยเจอ แล้วความคืบหน้าจะเพิ่มขึ้นทั้งรายหมวดและภาพรวม ข้อไหนอยากกลับมาอ่าน ก็บุ๊กมาร์กไว้<br>ทุกอย่างซิงก์ผ่าน iCloud ระหว่าง iPhone, iPad และ Mac</p>
+      </div>
+      <div class="phone"><img src="../img/th/progress.jpg" alt="เห็นว่าโตขึ้นแค่ไหนในหน้าเดียว" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="pricing-grid">
-    <div class="price-card">
-      <p class="price-plan">ฟรี</p>
-      <p class="price-amount">ฟรี</p>
-      <p class="price-period">ฟรีตลอดไป</p>
-      <ul class="price-features">
-        <li>นิสัยการเขียนโค้ด (10 ข้อ)</li>
-        <li>การดีบักและแก้ปัญหา (10 ข้อ)</li>
-        <li>การจัดการเวอร์ชันและการทำงานร่วมกัน (10 ข้อ)</li>
-        <li>เขียนสมุดทบทวน</li>
-        <li>ความคืบหน้าและบุ๊กมาร์ก</li>
-      </ul>
-    </div>
-    <div class="price-card featured">
-      <div class="price-badge">BEST</div>
-      <p class="price-plan">PRO รายเดือน</p>
-      <p class="price-amount">รายเดือน</p>
-      <p class="price-period">ราคาตามที่แสดงใน App Store</p>
-      <ul class="price-features">
-        <li>ครบทั้ง 100 ข้อพลาด</li>
-        <li>ครบทั้ง 10 หมวดหมู่</li>
-        <li>เขียนสมุดทบทวน</li>
-        <li>ซิงก์ iCloud</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-    <div class="price-card">
-      <p class="price-plan">PRO ใช้ตลอดชีพ</p>
-      <p class="price-amount">ตลอดชีพ</p>
-      <p class="price-period">จ่ายครั้งเดียว ใช้ได้ตลอดไป</p>
-      <ul class="price-features">
-        <li>ครบทั้ง 100 ข้อพลาด</li>
-        <li>ครบทั้ง 10 หมวดหมู่</li>
-        <li>เขียนสมุดทบทวน</li>
-        <li>ซิงก์ iCloud</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <section class="reveal">
+      <h2>เริ่มได้ใน 3 ขั้นตอน</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>เลือกหมวด</h3><p>นิสัยการเขียนโค้ด การดีบักและแก้ปัญหา และการจัดการเวอร์ชันเปิดให้อ่านฟรี</p></li>
+<li class="card"><span class="n">2</span><h3>อ่านแล้วติ๊ก</h3><p>ข้อไหนเคยพลาดเอง ให้กด เจอมาแล้ว</p></li>
+<li class="card"><span class="n">3</span><h3>ตอบคำถามทบทวน</h3><p>นึกถึงประสบการณ์ของตัวเอง แล้วเขียนสั้น ๆ ก็ได้ คำตอบจะเก็บไว้ในสมุดทบทวน</p></li></ol>
+    </section>
 
-<section class="sync-section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
-  <p class="section-label">หลายแพลตฟอร์ม</p>
-  <h2>ไปด้วยกันในทุกอุปกรณ์</h2>
-  <p class="section-desc">ซิงก์ iCloud บน CloudKit เริ่มจากเครื่องไหนก็ต่อเนื่องได้</p>
-  <div class="devices">
-    <div class="device-chip">📱 iPhone</div>
-    <div class="device-chip">📲 iPad</div>
-    <div class="device-chip">💻 Mac</div>
-    <div class="device-chip">☁️ ซิงก์ iCloud อัตโนมัติ</div>
-  </div>
-</section>
+    <section class="reveal" id="commands">
+      <h2>10 หมวดที่ครอบคลุม</h2>
+      <div class="card table">
+        <dl><div><dt>นิสัยการเขียนโค้ด</dt><dd>#001–#010 · ฟรี</dd></div><div><dt>การดีบักและแก้ปัญหา</dt><dd>#011–#020 · ฟรี</dd></div><div><dt>การจัดการเวอร์ชันและการทำงานร่วมกัน</dt><dd>#021–#030 · ฟรี</dd></div><div><dt>การออกแบบและสถาปัตยกรรม</dt><dd>#031–#040 · PRO</dd></div><div><dt>การทดสอบและคุณภาพ</dt><dd>#041–#050 · PRO</dd></div><div><dt>การเรียนรู้และการเติบโต</dt><dd>#051–#060 · PRO</dd></div><div><dt>การสื่อสารและการทำงานร่วมกัน</dt><dd>#061–#070 · PRO</dd></div><div><dt>การดีพลอยและการดูแลระบบ</dt><dd>#071–#080 · PRO</dd></div><div><dt>ความปลอดภัยและข้อมูล</dt><dd>#081–#090 · PRO</dd></div><div><dt>ประสิทธิภาพและการปรับแต่ง</dt><dd>#091–#100 · PRO</dd></div></dl>
+      </div>
+      <p class="muted">แต่ละหมวดมี 10 ข้อ และแต่ละข้อมีคำถามทบทวน 4 ข้อ</p>
+    </section>
 
-<section class="cta-section">
-  <h2>เริ่มเติบโตตั้งแต่วันนี้</h2>
-  <p>ฟรี 30 ข้อ และ PRO ปลดล็อกครบ 100 ข้อ<br>เป็นนักพัฒนาที่ไม่พลาดซ้ำสองรอบ</p>
-  <a href="#" class="btn-store">
-    <svg style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Download on the</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<footer>
-  <div>
-    <p>© 2026 100 ข้อพลาด. All rights reserved.</p>
-    <div style="margin-top:12px"><div class="langs"><a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/index.html" hreflang="en" lang="en">English</a> <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a> <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/index.html" hreflang="es" lang="es">Español</a> <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a> <a href="../it/index.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/index.html" hreflang="th" lang="th" class="cur" aria-current="true">ไทย</a> <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a> <a href="../da/index.html" hreflang="da" lang="da">Dansk</a> <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a> <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a> <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a></div></div>
-  </div>
-  <span class="foot-links"><a href="support.html">ช่วยเหลือ</a><a href="privacy.html">นโยบายความเป็นส่วนตัว</a></span>
-</footer>
+    <section class="reveal" id="pricing">
+      <h2>30 ข้อฟรี ครบ 100 ข้อด้วย PRO</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>ฟรี</h3>
+          <ul><li>3 หมวดแรก 30 ข้อ</li><li>คำถามทบทวนของข้อเหล่านั้น 120 ข้อ</li><li>ติ๊กข้อที่เคยเจอ สมุดทบทวน ความคืบหน้า และบุ๊กมาร์ก</li><li>ซิงก์ผ่าน iCloud (iPhone, iPad, Mac)</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>100 ข้อพลาด PRO</h3>
+          <ul><li>อีก 7 หมวด เพิ่มอีก 70 ข้อ (#031–#100)</li><li>คำถามทบทวนเพิ่มอีก 280 ข้อ</li><li>อัปเดตเนื้อหาทั้งหมดในอนาคต</li></ul>
+          <p class="muted">เลือกได้ทั้งรายเดือน รายปี (ถูกกว่ารายเดือนสูงสุด 50%) หรือซื้อครั้งเดียวใช้ได้ตลอด</p>
+        </div>
+      </div>
+      <p class="muted">ไม่เก็บข้อมูลส่วนตัว ไม่มีเครื่องมือวิเคราะห์ และไม่มีโฆษณา</p>
+    </section>
 
+    <section class="reveal" id="faq">
+      <h2>คำถามที่พบบ่อย</h2>
+      <div class="faq"><details><summary>ใช้ฟรีได้แค่ไหน</summary><p>ใช้ได้ครบทั้ง 30 ข้อพร้อมคำถามทบทวนในหมวดนิสัยการเขียนโค้ด การดีบักและแก้ปัญหา และการจัดการเวอร์ชันและการทำงานร่วมกัน การติ๊ก สมุดทบทวน ความคืบหน้า บุ๊กมาร์ก และการซิงก์ iCloud ก็ฟรีเช่นกัน</p></details>
+<details><summary>ซื้อ PRO แล้วจะใช้บนอุปกรณ์อื่นอย่างไร</summary><p>ลงชื่อเข้าด้วย Apple ID เดียวกัน แล้วแตะ กู้คืนการซื้อ ในหน้าการสมัครสมาชิก</p></details>
+<details><summary>ยกเลิกการสมัครสมาชิกอย่างไร</summary><p>ทำได้ทุกเมื่อที่ การตั้งค่า › Apple ID › การสมัครรับ การสมัครจะต่ออายุอัตโนมัติ หากไม่ยกเลิกก่อนสิ้นสุดรอบปัจจุบันอย่างน้อย 24 ชั่วโมง แบบซื้อครั้งเดียวจ่ายแค่ครั้งเดียว</p></details>
+<details><summary>ข้อมูลไม่ซิงก์ระหว่างอุปกรณ์</summary><p>ตรวจดูว่าทุกอุปกรณ์ลงชื่อเข้า iCloud ด้วย Apple ID เดียวกัน และเปิด iCloud ให้แอปนี้ในการตั้งค่าแล้ว การซิงก์ต้องต่ออินเทอร์เน็ตด้วย</p></details>
+<details><summary>อยากลบข้อมูลทั้งหมด</summary><p>แตะ รีเซ็ตข้อมูลทั้งหมด ในการตั้งค่าของแอป การติ๊ก คำตอบ และบุ๊กมาร์กจะถูกลบทั้งหมด และกู้คืนไม่ได้</p></details>
+<details><summary>ใช้กับอุปกรณ์ไหนได้บ้าง</summary><p>iPhone, iPad และ Mac และ PRO จะปลดล็อกบนทุกอุปกรณ์ที่ใช้ Apple ID เดียวกัน</p></details>
+<details><summary>ข้อมูลของฉันถูกส่งไปที่ไหนไหม</summary><p>ไม่ การติ๊กและคำตอบเก็บไว้แค่ในอุปกรณ์และ iCloud ของคุณเอง แอปไม่เก็บข้อมูลส่วนตัว ไม่มีเครื่องมือวิเคราะห์ และไม่มีโฆษณา</p></details></div>
+      <p class="contact">มีคำถามหรือข้อเสนอแนะ ส่งอีเมลมาที่ <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> ได้เลย</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>เป็นเดฟที่ไม่พลาด<br>เรื่องเดิมซ้ำสอง</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6759643878">ดาวน์โหลดฟรีบน App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="ภาษา"><a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th" aria-current="page">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Hyunho Lee</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

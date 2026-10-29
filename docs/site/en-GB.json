@@ -1,0 +1,258 @@
+{
+  "title": "100 Dev Mistakes: a growth checklist for junior developers",
+  "description": "Read the 100 mistakes junior developers make most, tick off the ones you've made and answer reflection questions. The first 30 are free.",
+  "hero": {
+    "headline": "Learn the mistakes\nbefore they hurt",
+    "lead": "The 100 mistakes junior developers make most, in one place. For each one, read what happens, what to do and what you learn, then answer a reflection question so you don't make it twice.",
+    "cta": "Get it free on the App Store",
+    "note": "The first 30 mistakes are free. Works on iPhone, iPad and Mac."
+  },
+  "demo": {
+    "title": "Open a mistake",
+    "lead": "These are the 10 mistakes in the first free category, word for word from the app. Mark the ones you've been through as Experienced.",
+    "note": "This web demo doesn't save your ticks. In the app, ticks and reflections sync to all your devices through iCloud.",
+    "category": "Coding Habits",
+    "labels": {
+      "happens": "What happens",
+      "todo": "What to do",
+      "learn": "What you learn",
+      "retro": "Reflection questions",
+      "done": "Experienced"
+    },
+    "items": [
+      {
+        "n": 1,
+        "mistake": "Naming variables things like a, b and x",
+        "situation": "When you write code quickly, you fall into the habit of using names such as temp, data, result and val. In the moment it's fine, because the context is in your head, but a week later you find yourself wondering \"what was this variable?\" and rereading the code from the top.",
+        "action": "Spend three seconds asking \"what does this variable actually hold?\" whenever you name one. Put its role in the name: userProfileList instead of data, formattedDate instead of temp, filteredActiveUsers instead of result. The aim is code that reads like an English sentence. For instance, if (isUserActive && hasPermission) tells you what it means just by reading it.",
+        "growth": "You spend ten times longer reading code than writing it. A good name is more powerful than a comment. Agree naming conventions (camelCase, snake_case and so on) with your team, avoid abbreviations (usr becomes user, btn becomes button) and choose names that are easy to search for. This one habit alone dramatically improves code review speed and maintainability.",
+        "retro": "Have any variable names in your recent code been unclear? What were they, and what would have been better?"
+      },
+      {
+        "n": 2,
+        "mistake": "Cramming over 100 lines of code into a single function",
+        "situation": "While building one feature, you put input validation, data transformation, the API call, result processing and error handling all into one function. At first you can see the whole flow, but once it passes 200 lines it's hard to know where to make a change, and the side effects become impossible to predict.",
+        "action": "Consider splitting a function once it goes beyond 20 lines. The test is: \"can I describe what this function does in one sentence?\" Separate each step into its own function, such as validateUserInput(), transformToAPIFormat(), callPaymentAPI() and formatResponse(), and let the main function simply act as an orchestrator that calls them in order.",
+        "growth": "You get a real feel for the Single Responsibility Principle (SRP). A small function reveals its purpose through its name alone, can be tested independently and can be reused elsewhere. Being able to structure code so that it reads like a story is a core skill of senior developers.",
+        "retro": "How many lines is the longest function in your current project? Can you describe what it does in one sentence?"
+      },
+      {
+        "n": 3,
+        "mistake": "Repeating code by copying and pasting",
+        "situation": "When you need similar logic, you copy existing code and tweak a few bits. The code for fetching a list of users and a list of orders is 90% identical, yet you write each separately. Later, when a bug turns up in the shared part, you have to hunt down every pasted copy and fix each one, and if you miss a single one, the same bug comes back elsewhere.",
+        "action": "The moment you want to copy and paste is your cue to refactor. Extract the common logic into a function or class and pass only the parts that differ as parameters or callbacks. Once something repeats three times (the Rule of Three), you really must abstract it. For example, a single fetchList(endpoint, transformer) can handle several list lookups.",
+        "growth": "You build up the DRY (Don't Repeat Yourself) principle and the ability to abstract. Over-abstraction is dangerous too, so judge by asking \"is this code genuinely going to change together, for the same reason?\" The right abstraction doesn't reduce the amount of code; it reduces the cost of change.",
+        "retro": "Have you copied and pasted code recently? Why did you choose that over abstracting?"
+      },
+      {
+        "n": 4,
+        "mistake": "Writing complex business logic with no comments",
+        "situation": "A discount calculation contains a triple-nested condition with no comment, so when a change request arrives six months later, nobody can explain why it was written that way. Reading the code shows you what it does, but not why.",
+        "action": "Write comments that explain the \"why\". Leave the business context, the reasoning behind the decision and any related ticket numbers, as in // VIP customers get an extra discount based on annual purchases (requested by Marketing, Q3 2024, JIRA-1234). For complex algorithms, put a block comment before the function summarising the overall flow.",
+        "growth": "You come to see that the \"what\" is told by the code itself, the \"why\" by comments and the \"how\" by documentation. A good comment is a gift to future developers (yourself included), letting them understand the code and change it with confidence.",
+        "retro": "In the code you've written recently, did you leave comments where you needed to explain why you did something?"
+      },
+      {
+        "n": 5,
+        "mistake": "Over-commenting so that every line is explained",
+        "situation": "You write obvious comments on every line, such as let count = 0; // initialise count to zero. When the code changes the comments have to change too, but you forget to update them, and the code and comments end up disagreeing. A comment that lies is worse than no comment at all.",
+        "action": "Write code that explains itself. With good variable and function names, most comments become unnecessary. When you feel a comment is needed, first check whether you can refactor the code so that it's clear without one. Use comments only to explain \"why\", or to record the background to a non-obvious decision.",
+        "growth": "You develop the ability to write self-documenting code. Readable code reduces the need for comments, and the comments that remain, written where they are truly needed, are worth far more.",
+        "retro": "Have you ever found a comment that disagreed with the code? What confusion did that false comment cause?"
+      },
+      {
+        "n": 6,
+        "mistake": "Hardcoding magic numbers all over the code",
+        "situation": "Code such as if (retryCount > 3), setTimeout(() => {}, 86400000) and if (role === 2) is scattered everywhere. Only the author knows what the 3, the 86400000 and the 2 mean. When the policy changes and you need to raise the retry count to 5, you have to search the whole codebase for 3, and there are other 3s with different meanings, so you risk changing the wrong one.",
+        "action": "Create a constant that gives meaning to every literal value. Let the name alone carry the meaning, as in const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000 and const ROLE_ADMIN = 2. If you keep constants together in one place, a policy change means editing just one line.",
+        "growth": "You get into the habit of making the intent of your code clear. This is the foundation of maintainability, and it naturally leads on to the architectural pattern of externalising configuration.",
+        "retro": "Are there places in your current code where a number or string with an unclear meaning is hardcoded?"
+      },
+      {
+        "n": 7,
+        "mistake": "Ignoring coding conventions and insisting on your own style",
+        "situation": "camelCase and snake_case are mixed in a single file, and the indentation switches between tabs and spaces. Your teammates spend energy decoding your style when they read your code, and code reviews turn into arguments about formatting rather than logic.",
+        "action": "Follow the coding conventions your team has set, and set up automated tools such as ESLint, Prettier and SwiftLint in your project. If you configure formatting on save, you no longer even need to think about style. If there are no conventions, suggest some to your team and use an industry standard (such as the Airbnb Style Guide) as a starting point.",
+        "growth": "You learn the collaborative principle that consistency matters more than personal taste. You also pick up the efficiency of not spending human energy on what a tool can automate. This has a direct effect on team productivity and how quickly newcomers get up to speed.",
+        "retro": "Do you know your team's coding conventions precisely? If not, where can you find them?"
+      },
+      {
+        "n": 8,
+        "mistake": "Ignoring errors with an empty catch block",
+        "situation": "You swallow errors with try { ... } catch(e) {}. The service behaves strangely, but with no error log you can't find the cause. Users report that payments aren't going through, yet there is no record at all on the server.",
+        "action": "In every catch block, at the very least log the error. If you can recover from it, do so; if you can't, propagate it upwards. Give users a friendly message and leave developers a detailed log. The basic shape is catch(e) { logger.error('Payment failed', { userId, orderId, error: e.message }); throw new PaymentError('Something went wrong while processing the payment'); }",
+        "growth": "You build the ability to design an error-handling strategy (recover, propagate, log) in a systematic way. You internalise the principle that \"someone must always handle an error\", which underpins a service's stability and its observability.",
+        "retro": "Are there empty catch blocks in your current project? Search and find out. How many are there?"
+      },
+      {
+        "n": 9,
+        "mistake": "Using global variables all over the place",
+        "situation": "You use global variables because they're convenient for sharing between several functions. As the app grows, it becomes impossible to trace which function changes a global variable and when, and a change to one feature breaks another that looks completely unrelated.",
+        "action": "Keep the scope of your variables as small as possible. Pass data around through function parameters, return values and dependency injection. If you need state management, use a library such as Redux or Zustand, or instance variables on a class, so that the path of every state change can be traced clearly.",
+        "growth": "You come to understand the principles of state management and scope. You feel the value of immutability and the functional-programming mindset of minimising side effects, which is the key to making a complex application predictable.",
+        "retro": "Are there places in your current project where you use global variables? Why did you declare them as global?"
+      },
+      {
+        "n": 10,
+        "mistake": "Accessing objects without checking for null or undefined",
+        "situation": "You access deeply nested objects such as user.profile.address.city with no protection. As soon as there is a user without a profile, or one who hasn't entered an address, the app crashes with a Cannot read property of null error.",
+        "action": "Make good use of optional chaining (user?.profile?.address?.city) and default values (nullish coalescing, ?? 'No address entered'). Put guard clauses at the start of your functions: if (!user) return null; If you use TypeScript, turn on strictNullChecks so that null safety is guaranteed at compile time.",
+        "growth": "You absorb the mindset of defensive programming. Making \"might this value be missing?\" your first thought dramatically reduces runtime crashes. You'll also see why language-level null safety, such as Swift's Optional and Kotlin's nullable types, matters so much.",
+        "retro": "Have you run into a null or undefined runtime error recently? How often does it happen?"
+      }
+    ]
+  },
+  "problem": {
+    "title": "Same comment in code review, again?",
+    "text": "Vague variable names, 200-line functions, copy-pasted code. Every senior dev has been there, but you only find out by walking into it. 100 Dev Mistakes shows you those mistakes first and has you reflect on your own work, so you stop repeating them."
+  },
+  "features": [
+    {
+      "title": "What happens, what to do, what you learn",
+      "text": "Open any mistake and it's broken into three parts: what happens, what to do, and what you'll learn from it.\nTen categories, from coding habits to security and performance, covering only the mistakes that keep showing up on real teams.",
+      "shot": "detail"
+    },
+    {
+      "title": "Reflection questions, so it sticks",
+      "text": "Every mistake comes with 4 reflection questions, 400 in all. Answer them with your own projects in mind and what you read turns into experience.\nYour answers collect in the reflection journal, sorted by category, ready to revisit.",
+      "shot": "retro"
+    },
+    {
+      "title": "See how far you've come",
+      "text": "Tick off the mistakes you've experienced and your progress builds up by category and overall. Bookmark anything you want to come back to.\nEverything syncs through iCloud across iPhone, iPad and Mac.",
+      "shot": "progress"
+    }
+  ],
+  "steps": {
+    "title": "Three steps to start",
+    "items": [
+      {
+        "title": "Pick a category",
+        "text": "Coding habits, debugging and version control are open for free."
+      },
+      {
+        "title": "Read and tick",
+        "text": "Tap Experienced on the mistakes you've made yourself."
+      },
+      {
+        "title": "Reflect",
+        "text": "Jot down an answer, however short. It lands in your reflection journal."
+      }
+    ]
+  },
+  "reference": {
+    "title": "The 10 categories",
+    "tags": [
+      "Free",
+      "PRO"
+    ],
+    "rows": [
+      [
+        "Coding Habits",
+        "#001–#010 · Free"
+      ],
+      [
+        "Debugging and Problem Solving",
+        "#011–#020 · Free"
+      ],
+      [
+        "Version Control and Collaboration",
+        "#021–#030 · Free"
+      ],
+      [
+        "Design and Architecture",
+        "#031–#040 · PRO"
+      ],
+      [
+        "Testing and Quality",
+        "#041–#050 · PRO"
+      ],
+      [
+        "Learning and Growth",
+        "#051–#060 · PRO"
+      ],
+      [
+        "Communication and Collaboration",
+        "#061–#070 · PRO"
+      ],
+      [
+        "Deployment and Operations",
+        "#071–#080 · PRO"
+      ],
+      [
+        "Security and Data",
+        "#081–#090 · PRO"
+      ],
+      [
+        "Performance and Optimisation",
+        "#091–#100 · PRO"
+      ]
+    ],
+    "note": "Each category has 10 mistakes, and each mistake has 4 reflection questions."
+  },
+  "pricing": {
+    "title": "30 free. All 100 with PRO.",
+    "free": {
+      "name": "Free",
+      "items": [
+        "The first 3 categories, 30 mistakes",
+        "Their 120 reflection questions",
+        "Checklist, reflection journal, progress and bookmarks",
+        "iCloud sync across iPhone, iPad and Mac"
+      ]
+    },
+    "pro": {
+      "name": "100 Dev Mistakes PRO",
+      "items": [
+        "The other 7 categories, 70 more mistakes (#031–#100)",
+        "280 more reflection questions",
+        "Every future content update"
+      ],
+      "note": "Monthly, yearly (up to 50% less than monthly) or a one-time lifetime purchase."
+    },
+    "note": "No personal data collected. No analytics, no ads."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "What's free?",
+        "a": "All 30 mistakes and reflection questions in coding habits, debugging and problem solving, and version control and collaboration. The checklist, reflection journal, progress, bookmarks and iCloud sync are free too."
+      },
+      {
+        "q": "How do I use PRO on another device?",
+        "a": "Sign in with the same Apple ID, then tap Restore purchases on the subscription screen."
+      },
+      {
+        "q": "How do I cancel my subscription?",
+        "a": "In Settings › Apple ID › Subscriptions, at any time. Subscriptions renew automatically unless you cancel at least 24 hours before the current period ends. Lifetime is a one-off payment."
+      },
+      {
+        "q": "My data isn't syncing between devices.",
+        "a": "Make sure every device is signed in to iCloud with the same Apple ID and that iCloud is turned on for this app in Settings. Syncing also needs a network connection."
+      },
+      {
+        "q": "How do I erase everything?",
+        "a": "Tap Reset all data in the app's settings. Your ticks, reflections and bookmarks are deleted, and this can't be undone."
+      },
+      {
+        "q": "Which devices does it run on?",
+        "a": "iPhone, iPad and Mac. PRO unlocks on every device signed in with the same Apple ID."
+      },
+      {
+        "q": "Is my data sent anywhere?",
+        "a": "No. Your ticks and reflections are stored only on your devices and in your own iCloud. The app collects no personal data and has no analytics or ads."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Be the developer who\nnever makes it twice",
+    "cta": "Get it free on the App Store"
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "languages": "Language",
+    "privacy": "Privacy Policy",
+    "contact": "Questions or suggestions? Write to {email}."
+  }
+}

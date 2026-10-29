@@ -1,0 +1,258 @@
+{
+  "title": "100 Fejl: tjeklisten for juniorudviklere",
+  "description": "Læs de 100 fejl, juniorudviklere oftest begår, sæt flueben ved dem, du har lavet, og besvar refleksionsspørgsmål. De første 30 er gratis.",
+  "hero": {
+    "headline": "Kend fejlene,\nfør de gør ondt",
+    "lead": "De 100 fejl, nye udviklere oftest begår, samlet ét sted. For hver fejl læser du, hvad der sker, hvad du skal gøre, og hvad du lærer, og så besvarer du et refleksionsspørgsmål, så du ikke laver den samme fejl to gange.",
+    "cta": "Hent gratis i App Store",
+    "note": "De første 30 fejl er gratis. Til iPhone, iPad og Mac."
+  },
+  "demo": {
+    "title": "Åbn en fejl",
+    "lead": "Her er de 10 fejl i den første gratis kategori, ord for ord som i appen. Markér dem, du allerede har oplevet, som Oplevet.",
+    "note": "Webdemoen gemmer ikke dine flueben. I appen synkroniseres flueben og svar til alle dine enheder via iCloud.",
+    "category": "Kodevaner",
+    "labels": {
+      "happens": "Sådan går det",
+      "todo": "Gør sådan her",
+      "learn": "Det lærer og vokser du af",
+      "retro": "Refleksionsspørgsmål",
+      "done": "Oplevet"
+    },
+    "items": [
+      {
+        "n": 1,
+        "mistake": "Du giver variabler meningsløse navne som a, b og x",
+        "situation": "Når du skriver kode hurtigt, ender du med vanemæssigt at bruge navne som temp, data, result og val. I øjeblikket virker det fint, fordi du har sammenhængen i hovedet, men efter en uge må du læse koden helt forfra og spørge dig selv: 'Hvad var den variabel nu?'",
+        "action": "Når du navngiver en variabel, så brug tre sekunder på at tænke over, hvad den indeholder. Skriv rollen ind i navnet: userProfileList i stedet for data, formattedDate i stedet for temp, filteredActiveUsers i stedet for result. Målet er, at koden læses som almindelige engelske sætninger. if (isUserActive && hasPermission) kan for eksempel forstås, blot ved at du læser betingelsen.",
+        "growth": "Kode læses ti gange så meget, som den skrives. Et godt navn er stærkere end en kommentar. Aftal navngivningsregler med teamet (camelCase, snake_case osv.), undgå forkortelser (usr → user, btn → button), og brug navne, der er lette at søge efter. Alene denne ene vane forbedrer hastigheden på code review og vedligeholdelsen markant.",
+        "retro": "Var der variabelnavne i din seneste kode, hvis betydning var uklar? Hvad hed de, og hvad kunne et bedre navn have været?"
+      },
+      {
+        "n": 2,
+        "mistake": "Du propper mere end 100 linjer kode ind i én funktion",
+        "situation": "Mens du implementerer én funktion, skriver du inputvalidering, datatransformation, API-kald, bearbejdning af resultatet og fejlhåndtering i samme funktion. Først er forløbet nemt at overskue, men når funktionen runder 200 linjer, er det svært at se, hvor du skal rette, og bivirkninger bliver umulige at forudsige.",
+        "action": "Hvis en funktion bliver længere end 20 linjer, så overvej at dele den op. Tommelfingerreglen er: 'Kan jeg beskrive, hvad funktionen gør, i én sætning?' Del hvert trin ud i en selvstændig funktion som validateUserInput(), transformToAPIFormat(), callPaymentAPI() og formatResponse(), og lad hovedfunktionen blot kalde dem i rækkefølge som en dirigent.",
+        "growth": "Du får princippet om single responsibility (SRP) ind under huden. En lille funktion afslører sin rolle alene gennem sit navn, kan testes uafhængigt og kan genbruges andre steder. Evnen til at strukturere kode, så den kan læses som en historie, er en kernekompetence hos seniorudviklere.",
+        "retro": "Hvor mange linjer har den længste funktion i dit nuværende projekt? Kan du beskrive, hvad den gør, i én sætning?"
+      },
+      {
+        "n": 3,
+        "mistake": "Du gentager kode med kopier og indsæt",
+        "situation": "Når du har brug for lignende logik, kopierer du eksisterende kode og ændrer lidt. Koden til at hente brugerlisten og ordrelisten er 90 % ens, men du har skrevet dem hver for sig. Når der senere opdages en fejl i den fælles del, må du finde og rette alle de kopierede steder, og hvis du overser ét, dukker den samme fejl op igen et andet sted.",
+        "action": "Det øjeblik, du får lyst til at kopiere og indsætte kode, er et signal om at refaktorere. Træk den fælles logik ud i en funktion eller klasse, og send kun det, der varierer, som parametre eller callbacks. Når noget gentages tre gange eller mere (Rule of Three), skal du abstrahere. Med fx fetchList(endpoint, transformer) kan du håndtere flere listeopslag.",
+        "growth": "Du udvikler DRY-princippet (Don't Repeat Yourself) og evnen til at abstrahere. Overdreven abstraktion er dog også farlig, så spørg dig selv: 'Ændrer denne kode sig virkelig af samme grund og på samme tid?' En god abstraktion handler ikke om at have mindre kode, men om at gøre ændringer billigere.",
+        "retro": "Har du for nylig kopieret og indsat kode? Hvorfor valgte du det frem for en abstraktion?"
+      },
+      {
+        "n": 4,
+        "mistake": "Du skriver kompleks forretningslogik uden kommentarer",
+        "situation": "Beregningen af rabatprocenten har tre indlejrede betingelser, men der er ingen kommentar. Da der et halvt år senere kommer en ændringsanmodning fra produktafdelingen, kan ingen forklare, hvorfor den blev skrevet sådan. Koden viser, 'hvad' den gør, men ikke 'hvorfor'.",
+        "action": "Skriv kommentarer, der forklarer 'hvorfor'. Efterlad forretningssammenhæng, baggrunden for beslutningen og relevante sagsnumre, fx // VIP-kunder får ekstra rabat efter årligt køb (ønsket af marketing i 2024 Q3, JIRA-1234). Til komplekse algoritmer skriver du en blokkommentar før funktionen, der opsummerer hele forløbet.",
+        "growth": "Du forstår, at koden selv fortæller 'hvad', kommentaren fortæller 'hvorfor', og dokumentationen fortæller 'hvordan'. En god kommentar er en gave til fremtidige udviklere (dig selv inklusive), så de kan forstå koden og ændre den med selvtillid.",
+        "retro": "Har du i din seneste kode skrevet kommentarer de steder, hvor det kræver en forklaring, hvorfor du valgte løsningen?"
+      },
+      {
+        "n": 5,
+        "mistake": "Du skriver for mange kommentarer og forklarer hver eneste linje",
+        "situation": "Du skriver selvindlysende kommentarer på hver linje, som let count = 0; // sæt tælleren til 0. Når koden ændres, skal kommentaren også ændres, men hvis du glemmer det, passer koden og kommentaren ikke længere sammen. En kommentar, der lyver, er værre end ingen kommentar.",
+        "action": "Skriv kode, der forklarer sig selv. Med gode variabel- og funktionsnavne bliver de fleste kommentarer overflødige. Hvis du føler, at du har brug for en kommentar, så prøv først at refaktorere koden, så den kan forstås uden. Brug kun kommentarer til at forklare 'hvorfor' eller baggrunden for ikke-intuitive beslutninger.",
+        "growth": "Du udvikler evnen til at skrive selvforklarende kode (self-documenting code). Læsbar kode mindsker behovet for kommentarer, og de kommentarer, der står de rigtige steder, får større værdi.",
+        "retro": "Har du set en kommentar, der ikke passede til koden? Hvilken forvirring skabte den løgnagtige kommentar?"
+      },
+      {
+        "n": 6,
+        "mistake": "Du hardcoder magiske tal rundt omkring i koden",
+        "situation": "Kode som if (retryCount > 3), setTimeout(() => {}, 86400000) og if (role === 2) ligger spredt overalt. Kun forfatteren ved, hvad 3, 86400000 og 2 betyder. Når reglerne ændres, og antallet af forsøg skal op på 5, skal du lede efter 3 i hele koden, og der er andre treere med anden betydning, så du risikerer at rette det forkerte.",
+        "action": "Lav konstanter, der giver mening, til alle literalværdier. Lad navnet alene fortælle, hvad værdien betyder: const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2. Hvis du samler konstanterne ét sted, skal du kun rette én linje, når en regel ændres.",
+        "growth": "Du får vane med at udtrykke kodens hensigt tydeligt. Det er grundlaget for vedligeholdelse og udvikler sig naturligt til et arkitekturmønster, hvor konfigurationsværdier lægges uden for koden (configuration).",
+        "retro": "Er der steder i din kode, hvor der er hardcodet tal eller strenge, hvis betydning er svær at gennemskue?"
+      },
+      {
+        "n": 7,
+        "mistake": "Du ignorerer kodekonventionerne og holder fast i din egen stil",
+        "situation": "I samme fil blander du camelCase og snake_case, og indrykningen skifter mellem tabulatorer og mellemrum. Når kolleger læser din kode, bruger de energi på at afkode stilen, og i code review diskuterer I formatering i stedet for logik.",
+        "action": "Følg teamets kodekonventioner, og sæt automatiske værktøjer som ESLint, Prettier og SwiftLint op i projektet. Hvis du sætter automatisk formatering ved gem op, behøver du slet ikke tænke på stil. Hvis der ikke er nogen konventioner, så foreslå dem for teamet og tag en branchestandard (fx Airbnb Style Guide) som udgangspunkt.",
+        "growth": "Du lærer samarbejdets princip om, at konsistens er vigtigere end personlig smag. Du lærer også effektivitet i ikke at bruge menneskelig energi på det, værktøjer kan automatisere. Det har direkte indflydelse på teamets produktivitet og hvor hurtigt nye kolleger kommer i gang.",
+        "retro": "Kender du teamets kodekonventioner præcist? Hvis ikke, hvor kan du finde dem?"
+      },
+      {
+        "n": 8,
+        "mistake": "Du ignorerer fejl med en tom catch-blok",
+        "situation": "Du sluger fejl med try { ... } catch(e) {}. Tjenesten opfører sig mærkeligt, men der er ingen fejllog, så du kan ikke finde årsagen. Brugerne henvender sig og siger, at betalingen ikke virker, men serveren har slet ingen oplysninger om det.",
+        "action": "Log som minimum fejlen i hver catch-blok. Kan du genoprette fejlen, så gør det, og ellers så send den videre opad. Giv brugeren en venlig besked og udvikleren en detaljeret log. Grundformen er catch(e) { logger.error('Betalingen mislykkedes', { userId, orderId, error: e.message }); throw new PaymentError('Der opstod et problem under betalingen'); }",
+        "growth": "Du udvikler evnen til systematisk at designe strategien for fejlhåndtering (genoprette, sende videre, logge). Du internaliserer princippet om, at 'en fejl altid skal håndteres af nogen', og det er grundlaget for en tjenestes stabilitet og for at kunne observere og fejlfinde (observability).",
+        "retro": "Er der tomme catch-blokke i dit nuværende projekt? Prøv at søge efter dem. Hvor mange er der?"
+      },
+      {
+        "n": 9,
+        "mistake": "Du bruger globale variabler i stor stil",
+        "situation": "Du bruger globale variabler, fordi det er nemt at dele dem mellem flere funktioner. Efterhånden som appen vokser, bliver det umuligt at spore, hvilken funktion der ændrer den globale variabel hvornår, og en ændring i én funktion ødelægger en anden, som tilsyneladende ikke har noget med den at gøre.",
+        "action": "Gør variablers scope så lille som muligt. Send data via funktionsparametre, returværdier og dependency injection. Hvis du har brug for tilstandsstyring, så brug et bibliotek som Redux eller Zustand eller instansvariabler i en klasse, så du tydeligt kan spore, hvordan tilstanden ændres.",
+        "growth": "Du forstår principperne for tilstandsstyring og scope. Du mærker værdien af en funktionel tankegang, der minimerer bivirkninger, og af immutability, og det er nøglen til at gøre komplekse applikationer forudsigelige.",
+        "retro": "Bruger du globale variabler et sted i dit nuværende projekt? Hvorfor erklærede du dem globalt?"
+      },
+      {
+        "n": 10,
+        "mistake": "Du tilgår objekter uden at tjekke for null/undefined",
+        "situation": "Du tilgår dybe objekter som user.profile.address.city uden nogen beskyttelse. Så snart en bruger mangler en profil eller ikke har indtastet en adresse, går appen ned med fejlen Cannot read property of null.",
+        "action": "Brug optional chaining (user?.profile?.address?.city) og standardværdier (nullish coalescing, ?? 'Adresse ikke angivet') flittigt. Sæt guard clauses i starten af funktionen: if (!user) return null; Hvis du bruger TypeScript, så slå strictNullChecks til, så null-sikkerheden sikres allerede ved kompilering.",
+        "growth": "Du får tankegangen bag defensiv programmering (defensive programming). Vanen med altid først at spørge 'kan denne værdi mangle?' reducerer runtime-nedbrud markant. Du forstår også, hvorfor null-sikkerhed på sprogniveau er vigtig, fx Swifts Optional og Kotlins Nullable.",
+        "retro": "Har du for nylig oplevet en runtime-fejl på grund af null/undefined? Hvor ofte sker det?"
+      }
+    ]
+  },
+  "problem": {
+    "title": "Den samme kommentar i code review igen?",
+    "text": "Kryptiske variabelnavne, funktioner på 200 linjer, kopieret kode. Alle seniorer har prøvet det, men man opdager det som regel først, når man selv falder i. 100 Fejl viser dig fejlene på forhånd og får dig til at reflektere over dit eget arbejde, så du ikke gentager dem."
+  },
+  "features": [
+    {
+      "title": "Hvad sker der, hvad gør du, hvad lærer du",
+      "text": "Hver fejl er delt i tre: hvad der sker, hvad du skal gøre, og hvad du lærer af den.\nTi kategorier fra kodevaner til sikkerhed og ydeevne, kun med fejl, der går igen og igen i rigtige teams.",
+      "shot": "detail"
+    },
+    {
+      "title": "Refleksionsspørgsmål, så det sidder fast",
+      "text": "Hver fejl har 4 refleksionsspørgsmål, 400 i alt. Svar med dine egne projekter i tankerne, så bliver det, du læser, til erfaring.\nDine svar samles i refleksionsdagbogen efter kategori, klar til at blive genlæst.",
+      "shot": "retro"
+    },
+    {
+      "title": "Se, hvor langt du er nået",
+      "text": "Sæt flueben ved de fejl, du har oplevet, og dine fremskridt vokser pr. kategori og samlet. Gem et bogmærke ved det, du vil vende tilbage til.\nAlt synkroniseres via iCloud mellem iPhone, iPad og Mac.",
+      "shot": "progress"
+    }
+  ],
+  "steps": {
+    "title": "Tre trin, så er du i gang",
+    "items": [
+      {
+        "title": "Vælg en kategori",
+        "text": "Kodevaner, fejlfinding og versionsstyring er åbne gratis."
+      },
+      {
+        "title": "Læs og sæt flueben",
+        "text": "Tryk på Oplevet ved de fejl, du selv har lavet."
+      },
+      {
+        "title": "Reflektér",
+        "text": "Skriv et svar, også bare et kort. Det havner i din refleksionsdagbog."
+      }
+    ]
+  },
+  "reference": {
+    "title": "De 10 kategorier",
+    "tags": [
+      "Gratis",
+      "PRO"
+    ],
+    "rows": [
+      [
+        "Kodevaner",
+        "#001–#010 · Gratis"
+      ],
+      [
+        "Fejlfinding og problemløsning",
+        "#011–#020 · Gratis"
+      ],
+      [
+        "Versionsstyring og samarbejde",
+        "#021–#030 · Gratis"
+      ],
+      [
+        "Design og arkitektur",
+        "#031–#040 · PRO"
+      ],
+      [
+        "Test og kvalitet",
+        "#041–#050 · PRO"
+      ],
+      [
+        "Læring og vækst",
+        "#051–#060 · PRO"
+      ],
+      [
+        "Kommunikation og samarbejde",
+        "#061–#070 · PRO"
+      ],
+      [
+        "Udrulning og drift",
+        "#071–#080 · PRO"
+      ],
+      [
+        "Sikkerhed og data",
+        "#081–#090 · PRO"
+      ],
+      [
+        "Ydeevne og optimering",
+        "#091–#100 · PRO"
+      ]
+    ],
+    "note": "Hver kategori har 10 fejl, og hver fejl har 4 refleksionsspørgsmål."
+  },
+  "pricing": {
+    "title": "30 gratis. Alle 100 med PRO.",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "De første 3 kategorier, 30 fejl",
+        "Deres 120 refleksionsspørgsmål",
+        "Tjekliste, refleksionsdagbog, fremskridt og bogmærker",
+        "iCloud-synkronisering (iPhone, iPad, Mac)"
+      ]
+    },
+    "pro": {
+      "name": "100 Fejl PRO",
+      "items": [
+        "De andre 7 kategorier, 70 fejl mere (#031–#100)",
+        "280 refleksionsspørgsmål mere",
+        "Alle fremtidige indholdsopdateringer"
+      ],
+      "note": "Månedligt, årligt (op til 50 % billigere end månedligt) eller et engangskøb for altid."
+    },
+    "note": "Ingen indsamling af personoplysninger, ingen analyseværktøjer og ingen reklamer."
+  },
+  "faq": {
+    "title": "Ofte stillede spørgsmål",
+    "items": [
+      {
+        "q": "Hvad er gratis?",
+        "a": "Alle 30 fejl og deres spørgsmål i kategorierne Kodevaner, Fejlfinding og problemløsning samt Versionsstyring og samarbejde. Tjeklisten, refleksionsdagbogen, fremskridt, bogmærker og iCloud-synkronisering er også gratis."
+      },
+      {
+        "q": "Hvordan bruger jeg PRO på en anden enhed?",
+        "a": "Log ind med samme Apple-id, og tryk på Gendan køb på abonnementsskærmen."
+      },
+      {
+        "q": "Hvordan opsiger jeg abonnementet?",
+        "a": "Når som helst under Indstillinger › Apple-id › Abonnementer. Abonnementet fornyes automatisk, medmindre du opsiger det mindst 24 timer før den aktuelle periode slutter. Køb for altid betales kun én gang."
+      },
+      {
+        "q": "Mine data synkroniseres ikke mellem enheder.",
+        "a": "Tjek, at alle enheder er logget ind på iCloud med samme Apple-id, og at iCloud er slået til for appen i Indstillinger. Synkronisering kræver også netværksforbindelse."
+      },
+      {
+        "q": "Hvordan sletter jeg det hele?",
+        "a": "Tryk på Nulstil alle data i appens indstillinger. Flueben, svar og bogmærker slettes, og det kan ikke fortrydes."
+      },
+      {
+        "q": "Hvilke enheder virker den på?",
+        "a": "iPhone, iPad og Mac. PRO låses op på alle enheder med samme Apple-id."
+      },
+      {
+        "q": "Bliver mine data sendt nogen steder hen?",
+        "a": "Nej. Dine flueben og svar gemmes kun på dine enheder og i din egen iCloud. Appen indsamler ingen personoplysninger og har hverken analyseværktøjer eller reklamer."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Bliv udvikleren, der aldrig\nlaver samme fejl to gange",
+    "cta": "Hent gratis i App Store"
+  },
+  "ui": {
+    "skip": "Spring til indhold",
+    "languages": "Sprog",
+    "privacy": "Privatlivspolitik",
+    "contact": "Spørgsmål eller forslag? Skriv til {email}."
+  }
+}

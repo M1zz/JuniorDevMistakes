@@ -1,464 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>100 Fejl — vækst-tjekliste for juniorudviklere</title>
-  <meta name="description" content="De 100 fejl, som erfarne udviklere oftest begår. Kend dem på forhånd, og voks hurtigere." />
-  <meta property="og:title" content="100 Fejl — vækst-tjekliste for juniorudviklere" />
-  <meta property="og:description" content="De 100 fejl, som erfarne udviklere oftest begår. Kend dem på forhånd, og voks hurtigere." />
-  <meta property="og:type" content="website" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/index.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/index.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/index.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/index.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/index.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/index.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/index.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/index.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/index.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/index.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/index.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/index.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/index.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/index.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/index.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/index.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/index.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/index.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/index.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/index.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/index.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/index.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/index.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --primary:      #3F3884;
-      --primary-light:#6159AD;
-      --accent:       #F06B6B;
-      --green:        #38C78C;
-      --amber:        #F2B333;
-      --blue:         #4D8CEB;
-      --purple:       #8059B8;
-      --bg:           #0f0e1a;
-      --surface:      #1a1829;
-      --border:       rgba(255,255,255,0.08);
-      --text:         #f0eefc;
-      --muted:        rgba(240,238,252,0.55);
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 5%;
-      height: 64px;
-      background: rgba(15,14,26,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.3px; }
-    .nav-logo span { color: var(--accent); }
-    nav a.nav-link {
-      font-size: 0.9rem; color: var(--muted); text-decoration: none;
-      transition: color .2s;
-    }
-    nav a.nav-link:hover { color: var(--text); }
-
-    /* ── HERO ── */
-    .hero {
-      position: relative; overflow: hidden;
-      display: flex; flex-direction: column; align-items: center; text-align: center;
-      padding: 100px 5% 80px;
-      background: linear-gradient(145deg, #2a2460 0%, #3F3884 40%, #8059B8 100%);
-    }
-    .hero::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(240,107,107,.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-badge {
-      display: inline-block;
-      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
-      color: var(--amber);
-      background: rgba(242,179,51,.12);
-      border: 1px solid rgba(242,179,51,.25);
-      border-radius: 99px;
-      padding: 5px 14px;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-    }
-    .app-icon {
-      width: 120px; height: 120px;
-      border-radius: 27px;
-      background: linear-gradient(145deg, #3F3884, #8059B8);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 52px;
-      margin-bottom: 32px;
-      box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.12);
-    }
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 3.6rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -1px;
-      margin-bottom: 20px;
-    }
-    h1 em { font-style: normal; color: var(--accent); }
-    .hero-sub {
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      color: rgba(255,255,255,.72);
-      max-width: 520px;
-      margin-bottom: 40px;
-      line-height: 1.75;
-    }
-    .btn-store {
-      display: inline-flex; align-items: center; gap: 10px;
-      background: #fff; color: #000;
-      font-weight: 700; font-size: 1rem;
-      padding: 14px 28px;
-      border-radius: 14px;
-      text-decoration: none;
-      transition: transform .2s, box-shadow .2s;
-      box-shadow: 0 8px 24px rgba(0,0,0,.25);
-    }
-    .btn-store:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.35); }
-    .btn-store svg { width: 22px; height: 22px; }
-    .btn-store-sub { font-size: .7rem; font-weight: 400; display: block; text-align: left; opacity: .6; margin-bottom: 1px; }
-    .btn-store-main { font-size: 1rem; font-weight: 700; display: block; text-align: left; }
-
-    /* ── FEATURES ── */
-    section { padding: 80px 5%; }
-    .section-label {
-      text-align: center;
-      font-size: .75rem; font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    h2 {
-      text-align: center;
-      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 12px;
-    }
-    .section-desc {
-      text-align: center;
-      color: var(--muted);
-      font-size: 1rem;
-      max-width: 500px;
-      margin: 0 auto 56px;
-      line-height: 1.75;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .feature-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      transition: transform .25s, border-color .25s;
-    }
-    .feature-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.15); }
-    .feature-icon {
-      width: 48px; height: 48px;
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 22px;
-      margin-bottom: 16px;
-    }
-    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-    .feature-card p { font-size: .9rem; color: var(--muted); line-height: 1.65; }
-
-    /* ── CATEGORIES ── */
-    .categories-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .categories-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .cat-chip {
-      display: flex; align-items: center; gap: 10px;
-      padding: 12px 16px;
-      background: rgba(255,255,255,.04);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      font-size: .9rem; font-weight: 500;
-    }
-    .cat-chip span { font-size: 1.1rem; }
-
-    /* ── PRICING ── */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    .price-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      text-align: center;
-    }
-    .price-card.featured {
-      background: linear-gradient(145deg, #3F3884, #6159AD);
-      border-color: rgba(255,255,255,.2);
-    }
-    .price-badge {
-      display: inline-block;
-      font-size: .7rem; font-weight: 700;
-      background: var(--amber); color: #000;
-      border-radius: 99px; padding: 3px 10px;
-      margin-bottom: 16px;
-      text-transform: uppercase; letter-spacing: .05em;
-    }
-    .price-plan { font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
-    .price-amount { font-size: 2rem; font-weight: 800; margin-bottom: 4px; }
-    .price-period { font-size: .8rem; color: var(--muted); margin-bottom: 20px; }
-    .price-features { list-style: none; text-align: left; }
-    .price-features li { font-size: .88rem; padding: 6px 0; color: var(--muted); display: flex; gap: 8px; }
-    .price-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
-    .price-card.featured .price-features li { color: rgba(255,255,255,.8); }
-
-    /* ── SYNC ── */
-    .sync-section { text-align: center; }
-    .devices {
-      display: flex; justify-content: center; align-items: center;
-      gap: 24px; flex-wrap: wrap;
-      margin-top: 40px;
-    }
-    .device-chip {
-      display: flex; align-items: center; gap: 8px;
-      padding: 10px 20px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 99px;
-      font-size: .9rem; font-weight: 500;
-    }
-
-    /* ── CTA ── */
-    .cta-section {
-      text-align: center;
-      background: linear-gradient(145deg, #2a2460, #3F3884, #8059B8);
-      padding: 100px 5%;
-    }
-    .cta-section h2 { margin-bottom: 16px; }
-    .cta-section p { color: rgba(255,255,255,.7); margin-bottom: 40px; font-size: 1.05rem; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--bg);
-      border-top: 1px solid var(--border);
-      padding: 32px 5%;
-      display: flex; flex-wrap: wrap;
-      align-items: center; justify-content: space-between;
-      gap: 12px;
-    }
-    footer p { font-size: .85rem; color: var(--muted); }
-    footer a { color: var(--muted); font-size: .85rem; text-decoration: none; transition: color .2s; }
-    footer a:hover { color: var(--text); }
-
-    @media (max-width: 640px) {
-      nav { padding: 0 4%; }
-      .hero { padding: 72px 4% 60px; }
-      section { padding: 60px 4%; }
-    }
-  
-    .langs { font-size: .8rem; color: rgba(240,238,252,.45); line-height: 2; }
-    .langs a { color: rgba(240,238,252,.6); text-decoration: none; margin-right: 10px; white-space: nowrap; }
-    .langs a:hover, .langs a.cur { color: #f0eefc; }
-    .langs a.cur { font-weight: 700; }
-    .doc-langs { max-width: 720px; margin: 64px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); }
-    .foot-links a { margin-right: 14px; }
-    .faq dt { font-weight: 700; margin: 24px 0 6px; color: #f0eefc; }
-    .faq dd { color: rgba(240,238,252,.75); margin: 0; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>100 Fejl: tjeklisten for juniorudviklere</title>
+  <meta name="description" content="Læs de 100 fejl, juniorudviklere oftest begår, sæt flueben ved dem, du har lavet, og besvar refleksionsspørgsmål. De første 30 er gratis.">
+  <meta name="theme-color" content="#403885" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6759643878">
+  <link rel="canonical" href="https://m1zz.github.io/JuniorDevMistakes/da/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="100 Fejl: tjeklisten for juniorudviklere">
+  <meta property="og:description" content="Læs de 100 fejl, juniorudviklere oftest begår, sæt flueben ved dem, du har lavet, og besvar refleksionsspørgsmål. De første 30 er gratis.">
+  <meta property="og:url" content="https://m1zz.github.io/JuniorDevMistakes/da/">
+  <meta property="og:image" content="https://m1zz.github.io/JuniorDevMistakes/img/da/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#403885}@media (prefers-color-scheme:dark){:root{--accent:#8C82E6}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <a class="skip" href="#main">Spring til indhold</a>
+  <header class="bar">
+    <a class="brand" href="../da/"><img src="../icon.png" alt="" width="32" height="32">100 Fejl</a>
+    <a class="lang-link" href="#languages">Sprog</a>
+  </header>
 
-<nav>
-  <div class="nav-logo">100 Fejl</div>
-  <span><a href="support.html" class="nav-link">Support</a> &nbsp; <a href="privacy.html" class="nav-link">Privatlivspolitik</a></span>
-</nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Kend fejlene,<br>før de gør ondt</h1>
+        <p class="lead">De 100 fejl, nye udviklere oftest begår, samlet ét sted. For hver fejl læser du, hvad der sker, hvad du skal gøre, og hvad du lærer, og så besvarer du et refleksionsspørgsmål, så du ikke laver den samme fejl to gange.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6759643878">Hent gratis i App Store</a><a class="try" href="#try">Åbn en fejl ↓</a></div>
+        <p class="muted small">De første 30 fejl er gratis. Til iPhone, iPad og Mac.</p>
+      </div>
+      <div class="phone"><img src="../img/da/home.jpg" alt="Kend fejlene, før de gør ondt" width="600" height="1303" decoding="async"></div>
+    </section>
 
-<section class="hero">
-  <div class="hero-badge">En app til juniorudviklere</div>
-  <div class="app-icon">⌨️</div>
-  <h1>Kender du fejlene på forhånd,<br><em>vokser du hurtigere</em></h1>
-  <p class="hero-sub">
-    De 100 fejl, som erfarne udviklere oftest begår.<br>
-    Tjek dem af på tjeklisten, og gør dem helt til dine egne med refleksion.
-  </p>
-  <a href="#" class="btn-store">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Download on the</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<section>
-  <p class="section-label">Hovedfunktioner</p>
-  <h2>Alt, hvad du skal bruge for at vokse</h2>
-  <p class="section-desc">Det stopper ikke ved at kende fejlene. Med refleksion gør du dem helt til dine egne.</p>
+    <section class="reveal" id="try">
+      <h2>Åbn en fejl</h2>
+      <p class="muted">Her er de 10 fejl i den første gratis kategori, ord for ord som i appen. Markér dem, du allerede har oplevet, som Oplevet.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Åbn en fejl&quot;, &quot;lead&quot;: &quot;Her er de 10 fejl i den første gratis kategori, ord for ord som i appen. Markér dem, du allerede har oplevet, som Oplevet.&quot;, &quot;note&quot;: &quot;Webdemoen gemmer ikke dine flueben. I appen synkroniseres flueben og svar til alle dine enheder via iCloud.&quot;, &quot;category&quot;: &quot;Kodevaner&quot;, &quot;labels&quot;: {&quot;happens&quot;: &quot;Sådan går det&quot;, &quot;todo&quot;: &quot;Gør sådan her&quot;, &quot;learn&quot;: &quot;Det lærer og vokser du af&quot;, &quot;retro&quot;: &quot;Refleksionsspørgsmål&quot;, &quot;done&quot;: &quot;Oplevet&quot;}, &quot;items&quot;: [{&quot;n&quot;: 1, &quot;mistake&quot;: &quot;Du giver variabler meningsløse navne som a, b og x&quot;, &quot;situation&quot;: &quot;Når du skriver kode hurtigt, ender du med vanemæssigt at bruge navne som temp, data, result og val. I øjeblikket virker det fint, fordi du har sammenhængen i hovedet, men efter en uge må du læse koden helt forfra og spørge dig selv: &#x27;Hvad var den variabel nu?&#x27;&quot;, &quot;action&quot;: &quot;Når du navngiver en variabel, så brug tre sekunder på at tænke over, hvad den indeholder. Skriv rollen ind i navnet: userProfileList i stedet for data, formattedDate i stedet for temp, filteredActiveUsers i stedet for result. Målet er, at koden læses som almindelige engelske sætninger. if (isUserActive &amp;&amp; hasPermission) kan for eksempel forstås, blot ved at du læser betingelsen.&quot;, &quot;growth&quot;: &quot;Kode læses ti gange så meget, som den skrives. Et godt navn er stærkere end en kommentar. Aftal navngivningsregler med teamet (camelCase, snake_case osv.), undgå forkortelser (usr → user, btn → button), og brug navne, der er lette at søge efter. Alene denne ene vane forbedrer hastigheden på code review og vedligeholdelsen markant.&quot;, &quot;retro&quot;: &quot;Var der variabelnavne i din seneste kode, hvis betydning var uklar? Hvad hed de, og hvad kunne et bedre navn have været?&quot;}, {&quot;n&quot;: 2, &quot;mistake&quot;: &quot;Du propper mere end 100 linjer kode ind i én funktion&quot;, &quot;situation&quot;: &quot;Mens du implementerer én funktion, skriver du inputvalidering, datatransformation, API-kald, bearbejdning af resultatet og fejlhåndtering i samme funktion. Først er forløbet nemt at overskue, men når funktionen runder 200 linjer, er det svært at se, hvor du skal rette, og bivirkninger bliver umulige at forudsige.&quot;, &quot;action&quot;: &quot;Hvis en funktion bliver længere end 20 linjer, så overvej at dele den op. Tommelfingerreglen er: &#x27;Kan jeg beskrive, hvad funktionen gør, i én sætning?&#x27; Del hvert trin ud i en selvstændig funktion som validateUserInput(), transformToAPIFormat(), callPaymentAPI() og formatResponse(), og lad hovedfunktionen blot kalde dem i rækkefølge som en dirigent.&quot;, &quot;growth&quot;: &quot;Du får princippet om single responsibility (SRP) ind under huden. En lille funktion afslører sin rolle alene gennem sit navn, kan testes uafhængigt og kan genbruges andre steder. Evnen til at strukturere kode, så den kan læses som en historie, er en kernekompetence hos seniorudviklere.&quot;, &quot;retro&quot;: &quot;Hvor mange linjer har den længste funktion i dit nuværende projekt? Kan du beskrive, hvad den gør, i én sætning?&quot;}, {&quot;n&quot;: 3, &quot;mistake&quot;: &quot;Du gentager kode med kopier og indsæt&quot;, &quot;situation&quot;: &quot;Når du har brug for lignende logik, kopierer du eksisterende kode og ændrer lidt. Koden til at hente brugerlisten og ordrelisten er 90 % ens, men du har skrevet dem hver for sig. Når der senere opdages en fejl i den fælles del, må du finde og rette alle de kopierede steder, og hvis du overser ét, dukker den samme fejl op igen et andet sted.&quot;, &quot;action&quot;: &quot;Det øjeblik, du får lyst til at kopiere og indsætte kode, er et signal om at refaktorere. Træk den fælles logik ud i en funktion eller klasse, og send kun det, der varierer, som parametre eller callbacks. Når noget gentages tre gange eller mere (Rule of Three), skal du abstrahere. Med fx fetchList(endpoint, transformer) kan du håndtere flere listeopslag.&quot;, &quot;growth&quot;: &quot;Du udvikler DRY-princippet (Don&#x27;t Repeat Yourself) og evnen til at abstrahere. Overdreven abstraktion er dog også farlig, så spørg dig selv: &#x27;Ændrer denne kode sig virkelig af samme grund og på samme tid?&#x27; En god abstraktion handler ikke om at have mindre kode, men om at gøre ændringer billigere.&quot;, &quot;retro&quot;: &quot;Har du for nylig kopieret og indsat kode? Hvorfor valgte du det frem for en abstraktion?&quot;}, {&quot;n&quot;: 4, &quot;mistake&quot;: &quot;Du skriver kompleks forretningslogik uden kommentarer&quot;, &quot;situation&quot;: &quot;Beregningen af rabatprocenten har tre indlejrede betingelser, men der er ingen kommentar. Da der et halvt år senere kommer en ændringsanmodning fra produktafdelingen, kan ingen forklare, hvorfor den blev skrevet sådan. Koden viser, &#x27;hvad&#x27; den gør, men ikke &#x27;hvorfor&#x27;.&quot;, &quot;action&quot;: &quot;Skriv kommentarer, der forklarer &#x27;hvorfor&#x27;. Efterlad forretningssammenhæng, baggrunden for beslutningen og relevante sagsnumre, fx // VIP-kunder får ekstra rabat efter årligt køb (ønsket af marketing i 2024 Q3, JIRA-1234). Til komplekse algoritmer skriver du en blokkommentar før funktionen, der opsummerer hele forløbet.&quot;, &quot;growth&quot;: &quot;Du forstår, at koden selv fortæller &#x27;hvad&#x27;, kommentaren fortæller &#x27;hvorfor&#x27;, og dokumentationen fortæller &#x27;hvordan&#x27;. En god kommentar er en gave til fremtidige udviklere (dig selv inklusive), så de kan forstå koden og ændre den med selvtillid.&quot;, &quot;retro&quot;: &quot;Har du i din seneste kode skrevet kommentarer de steder, hvor det kræver en forklaring, hvorfor du valgte løsningen?&quot;}, {&quot;n&quot;: 5, &quot;mistake&quot;: &quot;Du skriver for mange kommentarer og forklarer hver eneste linje&quot;, &quot;situation&quot;: &quot;Du skriver selvindlysende kommentarer på hver linje, som let count = 0; // sæt tælleren til 0. Når koden ændres, skal kommentaren også ændres, men hvis du glemmer det, passer koden og kommentaren ikke længere sammen. En kommentar, der lyver, er værre end ingen kommentar.&quot;, &quot;action&quot;: &quot;Skriv kode, der forklarer sig selv. Med gode variabel- og funktionsnavne bliver de fleste kommentarer overflødige. Hvis du føler, at du har brug for en kommentar, så prøv først at refaktorere koden, så den kan forstås uden. Brug kun kommentarer til at forklare &#x27;hvorfor&#x27; eller baggrunden for ikke-intuitive beslutninger.&quot;, &quot;growth&quot;: &quot;Du udvikler evnen til at skrive selvforklarende kode (self-documenting code). Læsbar kode mindsker behovet for kommentarer, og de kommentarer, der står de rigtige steder, får større værdi.&quot;, &quot;retro&quot;: &quot;Har du set en kommentar, der ikke passede til koden? Hvilken forvirring skabte den løgnagtige kommentar?&quot;}, {&quot;n&quot;: 6, &quot;mistake&quot;: &quot;Du hardcoder magiske tal rundt omkring i koden&quot;, &quot;situation&quot;: &quot;Kode som if (retryCount &gt; 3), setTimeout(() =&gt; {}, 86400000) og if (role === 2) ligger spredt overalt. Kun forfatteren ved, hvad 3, 86400000 og 2 betyder. Når reglerne ændres, og antallet af forsøg skal op på 5, skal du lede efter 3 i hele koden, og der er andre treere med anden betydning, så du risikerer at rette det forkerte.&quot;, &quot;action&quot;: &quot;Lav konstanter, der giver mening, til alle literalværdier. Lad navnet alene fortælle, hvad værdien betyder: const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2. Hvis du samler konstanterne ét sted, skal du kun rette én linje, når en regel ændres.&quot;, &quot;growth&quot;: &quot;Du får vane med at udtrykke kodens hensigt tydeligt. Det er grundlaget for vedligeholdelse og udvikler sig naturligt til et arkitekturmønster, hvor konfigurationsværdier lægges uden for koden (configuration).&quot;, &quot;retro&quot;: &quot;Er der steder i din kode, hvor der er hardcodet tal eller strenge, hvis betydning er svær at gennemskue?&quot;}, {&quot;n&quot;: 7, &quot;mistake&quot;: &quot;Du ignorerer kodekonventionerne og holder fast i din egen stil&quot;, &quot;situation&quot;: &quot;I samme fil blander du camelCase og snake_case, og indrykningen skifter mellem tabulatorer og mellemrum. Når kolleger læser din kode, bruger de energi på at afkode stilen, og i code review diskuterer I formatering i stedet for logik.&quot;, &quot;action&quot;: &quot;Følg teamets kodekonventioner, og sæt automatiske værktøjer som ESLint, Prettier og SwiftLint op i projektet. Hvis du sætter automatisk formatering ved gem op, behøver du slet ikke tænke på stil. Hvis der ikke er nogen konventioner, så foreslå dem for teamet og tag en branchestandard (fx Airbnb Style Guide) som udgangspunkt.&quot;, &quot;growth&quot;: &quot;Du lærer samarbejdets princip om, at konsistens er vigtigere end personlig smag. Du lærer også effektivitet i ikke at bruge menneskelig energi på det, værktøjer kan automatisere. Det har direkte indflydelse på teamets produktivitet og hvor hurtigt nye kolleger kommer i gang.&quot;, &quot;retro&quot;: &quot;Kender du teamets kodekonventioner præcist? Hvis ikke, hvor kan du finde dem?&quot;}, {&quot;n&quot;: 8, &quot;mistake&quot;: &quot;Du ignorerer fejl med en tom catch-blok&quot;, &quot;situation&quot;: &quot;Du sluger fejl med try { ... } catch(e) {}. Tjenesten opfører sig mærkeligt, men der er ingen fejllog, så du kan ikke finde årsagen. Brugerne henvender sig og siger, at betalingen ikke virker, men serveren har slet ingen oplysninger om det.&quot;, &quot;action&quot;: &quot;Log som minimum fejlen i hver catch-blok. Kan du genoprette fejlen, så gør det, og ellers så send den videre opad. Giv brugeren en venlig besked og udvikleren en detaljeret log. Grundformen er catch(e) { logger.error(&#x27;Betalingen mislykkedes&#x27;, { userId, orderId, error: e.message }); throw new PaymentError(&#x27;Der opstod et problem under betalingen&#x27;); }&quot;, &quot;growth&quot;: &quot;Du udvikler evnen til systematisk at designe strategien for fejlhåndtering (genoprette, sende videre, logge). Du internaliserer princippet om, at &#x27;en fejl altid skal håndteres af nogen&#x27;, og det er grundlaget for en tjenestes stabilitet og for at kunne observere og fejlfinde (observability).&quot;, &quot;retro&quot;: &quot;Er der tomme catch-blokke i dit nuværende projekt? Prøv at søge efter dem. Hvor mange er der?&quot;}, {&quot;n&quot;: 9, &quot;mistake&quot;: &quot;Du bruger globale variabler i stor stil&quot;, &quot;situation&quot;: &quot;Du bruger globale variabler, fordi det er nemt at dele dem mellem flere funktioner. Efterhånden som appen vokser, bliver det umuligt at spore, hvilken funktion der ændrer den globale variabel hvornår, og en ændring i én funktion ødelægger en anden, som tilsyneladende ikke har noget med den at gøre.&quot;, &quot;action&quot;: &quot;Gør variablers scope så lille som muligt. Send data via funktionsparametre, returværdier og dependency injection. Hvis du har brug for tilstandsstyring, så brug et bibliotek som Redux eller Zustand eller instansvariabler i en klasse, så du tydeligt kan spore, hvordan tilstanden ændres.&quot;, &quot;growth&quot;: &quot;Du forstår principperne for tilstandsstyring og scope. Du mærker værdien af en funktionel tankegang, der minimerer bivirkninger, og af immutability, og det er nøglen til at gøre komplekse applikationer forudsigelige.&quot;, &quot;retro&quot;: &quot;Bruger du globale variabler et sted i dit nuværende projekt? Hvorfor erklærede du dem globalt?&quot;}, {&quot;n&quot;: 10, &quot;mistake&quot;: &quot;Du tilgår objekter uden at tjekke for null/undefined&quot;, &quot;situation&quot;: &quot;Du tilgår dybe objekter som user.profile.address.city uden nogen beskyttelse. Så snart en bruger mangler en profil eller ikke har indtastet en adresse, går appen ned med fejlen Cannot read property of null.&quot;, &quot;action&quot;: &quot;Brug optional chaining (user?.profile?.address?.city) og standardværdier (nullish coalescing, ?? &#x27;Adresse ikke angivet&#x27;) flittigt. Sæt guard clauses i starten af funktionen: if (!user) return null; Hvis du bruger TypeScript, så slå strictNullChecks til, så null-sikkerheden sikres allerede ved kompilering.&quot;, &quot;growth&quot;: &quot;Du får tankegangen bag defensiv programmering (defensive programming). Vanen med altid først at spørge &#x27;kan denne værdi mangle?&#x27; reducerer runtime-nedbrud markant. Du forstår også, hvorfor null-sikkerhed på sprogniveau er vigtig, fx Swifts Optional og Kotlins Nullable.&quot;, &quot;retro&quot;: &quot;Har du for nylig oplevet en runtime-fejl på grund af null/undefined? Hvor ofte sker det?&quot;}]}"></div>
+    </section>
 
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(63,56,132,.25)">✓</div>
-      <h3>Tjekliste med 100 fejl</h3>
-      <p>Fra kodevaner til teamsamarbejde: fejl, der gentager sig i det virkelige arbejde, ordnet efter kategori.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(242,179,51,.2)">📓</div>
-      <h3>Refleksionsdagbog</h3>
-      <p>Besvar de refleksionsspørgsmål, der er klar til hver fejl, og få en ægte forståelse i stedet for udenadslære.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(56,199,140,.2)">📊</div>
-      <h3>Følg dine fremskridt</h3>
-      <p>Se din fremgang pr. kategori og samlet, og mærk, at du vokser.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(77,140,235,.2)">☁️</div>
-      <h3>Automatisk iCloud-synkronisering</h3>
-      <p>Brug de samme data på iPhone, iPad og Mac. Alt synkroniseres automatisk via CloudKit.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(240,107,107,.2)">🔖</div>
-      <h3>Bogmærker</h3>
-      <p>Bogmærk de emner, du vil se igen, og gennemgå dem samlet senere.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(128,89,184,.2)">💻</div>
-      <h3>iPhone · iPad · Mac</h3>
-      <p>Med Mac Catalyst kører iPhone-appen også på Mac. Lær, hvor du vil.</p>
-    </div>
-  </div>
-</section>
+    <section class="problem reveal">
+      <h2>Den samme kommentar i code review igen?</h2>
+      <p>Kryptiske variabelnavne, funktioner på 200 linjer, kopieret kode. Alle seniorer har prøvet det, men man opdager det som regel først, når man selv falder i. 100 Fejl viser dig fejlene på forhånd og får dig til at reflektere over dit eget arbejde, så du ikke gentager dem.</p>
+    </section>
 
-<section class="categories-section">
-  <p class="section-label">10 kategorier</p>
-  <h2>Hvilke fejl handler det om?</h2>
-  <p class="section-desc">Sorteret efter de situationer, som juniorudviklere rent faktisk møder.</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Hvad sker der, hvad gør du, hvad lærer du</h2>
+        <p>Hver fejl er delt i tre: hvad der sker, hvad du skal gøre, og hvad du lærer af den.<br>Ti kategorier fra kodevaner til sikkerhed og ydeevne, kun med fejl, der går igen og igen i rigtige teams.</p>
+      </div>
+      <div class="phone"><img src="../img/da/detail.jpg" alt="Hvad sker der, hvad gør du, hvad lærer du" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="categories-grid">
-    <div class="cat-chip"><span>⌨️</span> Kodevaner</div>
-    <div class="cat-chip"><span>🐛</span> Fejlfinding og problemløsning</div>
-    <div class="cat-chip"><span>🌿</span> Versionsstyring og samarbejde</div>
-    <div class="cat-chip"><span>🏗️</span> Design og arkitektur</div>
-    <div class="cat-chip"><span>🛡️</span> Test og kvalitet</div>
-    <div class="cat-chip"><span>🧠</span> Læring og vækst</div>
-    <div class="cat-chip"><span>💬</span> Kommunikation</div>
-    <div class="cat-chip"><span>🖥️</span> Infrastruktur og udrulning</div>
-    <div class="cat-chip"><span>🔒</span> Sikkerhed og privatliv</div>
-    <div class="cat-chip"><span>⚡</span> Ydeevne og optimering</div>
-  </div>
-</section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Refleksionsspørgsmål, så det sidder fast</h2>
+        <p>Hver fejl har 4 refleksionsspørgsmål, 400 i alt. Svar med dine egne projekter i tankerne, så bliver det, du læser, til erfaring.<br>Dine svar samles i refleksionsdagbogen efter kategori, klar til at blive genlæst.</p>
+      </div>
+      <div class="phone"><img src="../img/da/retro.jpg" alt="Refleksionsspørgsmål, så det sidder fast" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-<section>
-  <p class="section-label">Priser</p>
-  <h2>Start gratis</h2>
-  <p class="section-desc">Prøv de første 30 fejl gratis, og lås alle 100 op med PRO.</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Se, hvor langt du er nået</h2>
+        <p>Sæt flueben ved de fejl, du har oplevet, og dine fremskridt vokser pr. kategori og samlet. Gem et bogmærke ved det, du vil vende tilbage til.<br>Alt synkroniseres via iCloud mellem iPhone, iPad og Mac.</p>
+      </div>
+      <div class="phone"><img src="../img/da/progress.jpg" alt="Se, hvor langt du er nået" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="pricing-grid">
-    <div class="price-card">
-      <p class="price-plan">Gratis</p>
-      <p class="price-amount">Gratis</p>
-      <p class="price-period">Gratis for altid</p>
-      <ul class="price-features">
-        <li>Kodevaner (10 fejl)</li>
-        <li>Fejlfinding og problemløsning (10 fejl)</li>
-        <li>Versionsstyring og samarbejde (10 fejl)</li>
-        <li>Refleksionsdagbog</li>
-        <li>Fremskridt og bogmærker</li>
-      </ul>
-    </div>
-    <div class="price-card featured">
-      <div class="price-badge">BEST</div>
-      <p class="price-plan">PRO månedlig</p>
-      <p class="price-amount">Månedlig</p>
-      <p class="price-period">Prisen vises i App Store</p>
-      <ul class="price-features">
-        <li>Alle 100 fejl</li>
-        <li>Alle 10 kategorier</li>
-        <li>Refleksionsdagbog</li>
-        <li>iCloud-synkronisering</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-    <div class="price-card">
-      <p class="price-plan">PRO livstidsadgang</p>
-      <p class="price-amount">Livstid</p>
-      <p class="price-period">Betal én gang, brug for evigt</p>
-      <ul class="price-features">
-        <li>Alle 100 fejl</li>
-        <li>Alle 10 kategorier</li>
-        <li>Refleksionsdagbog</li>
-        <li>iCloud-synkronisering</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <section class="reveal">
+      <h2>Tre trin, så er du i gang</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Vælg en kategori</h3><p>Kodevaner, fejlfinding og versionsstyring er åbne gratis.</p></li>
+<li class="card"><span class="n">2</span><h3>Læs og sæt flueben</h3><p>Tryk på Oplevet ved de fejl, du selv har lavet.</p></li>
+<li class="card"><span class="n">3</span><h3>Reflektér</h3><p>Skriv et svar, også bare et kort. Det havner i din refleksionsdagbog.</p></li></ol>
+    </section>
 
-<section class="sync-section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
-  <p class="section-label">Flere platforme</p>
-  <h2>Sammen på alle dine enheder</h2>
-  <p class="section-desc">Med iCloud-synkronisering via CloudKit kan du fortsætte, uanset hvilken enhed du startede på.</p>
-  <div class="devices">
-    <div class="device-chip">📱 iPhone</div>
-    <div class="device-chip">📲 iPad</div>
-    <div class="device-chip">💻 Mac</div>
-    <div class="device-chip">☁️ Automatisk iCloud-synkronisering</div>
-  </div>
-</section>
+    <section class="reveal" id="commands">
+      <h2>De 10 kategorier</h2>
+      <div class="card table">
+        <dl><div><dt>Kodevaner</dt><dd>#001–#010 · Gratis</dd></div><div><dt>Fejlfinding og problemløsning</dt><dd>#011–#020 · Gratis</dd></div><div><dt>Versionsstyring og samarbejde</dt><dd>#021–#030 · Gratis</dd></div><div><dt>Design og arkitektur</dt><dd>#031–#040 · PRO</dd></div><div><dt>Test og kvalitet</dt><dd>#041–#050 · PRO</dd></div><div><dt>Læring og vækst</dt><dd>#051–#060 · PRO</dd></div><div><dt>Kommunikation og samarbejde</dt><dd>#061–#070 · PRO</dd></div><div><dt>Udrulning og drift</dt><dd>#071–#080 · PRO</dd></div><div><dt>Sikkerhed og data</dt><dd>#081–#090 · PRO</dd></div><div><dt>Ydeevne og optimering</dt><dd>#091–#100 · PRO</dd></div></dl>
+      </div>
+      <p class="muted">Hver kategori har 10 fejl, og hver fejl har 4 refleksionsspørgsmål.</p>
+    </section>
 
-<section class="cta-section">
-  <h2>Begynd at vokse allerede nu</h2>
-  <p>30 fejl gratis, alle 100 med PRO.<br>Bliv en udvikler, der ikke begår den samme fejl to gange.</p>
-  <a href="#" class="btn-store">
-    <svg style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Download on the</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<footer>
-  <div>
-    <p>© 2026 100 Fejl. All rights reserved.</p>
-    <div style="margin-top:12px"><div class="langs"><a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/index.html" hreflang="en" lang="en">English</a> <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a> <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/index.html" hreflang="es" lang="es">Español</a> <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a> <a href="../it/index.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/index.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a> <a href="../da/index.html" hreflang="da" lang="da" class="cur" aria-current="true">Dansk</a> <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a> <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a> <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a></div></div>
-  </div>
-  <span class="foot-links"><a href="support.html">Support</a><a href="privacy.html">Privatlivspolitik</a></span>
-</footer>
+    <section class="reveal" id="pricing">
+      <h2>30 gratis. Alle 100 med PRO.</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Gratis</h3>
+          <ul><li>De første 3 kategorier, 30 fejl</li><li>Deres 120 refleksionsspørgsmål</li><li>Tjekliste, refleksionsdagbog, fremskridt og bogmærker</li><li>iCloud-synkronisering (iPhone, iPad, Mac)</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>100 Fejl PRO</h3>
+          <ul><li>De andre 7 kategorier, 70 fejl mere (#031–#100)</li><li>280 refleksionsspørgsmål mere</li><li>Alle fremtidige indholdsopdateringer</li></ul>
+          <p class="muted">Månedligt, årligt (op til 50 % billigere end månedligt) eller et engangskøb for altid.</p>
+        </div>
+      </div>
+      <p class="muted">Ingen indsamling af personoplysninger, ingen analyseværktøjer og ingen reklamer.</p>
+    </section>
 
+    <section class="reveal" id="faq">
+      <h2>Ofte stillede spørgsmål</h2>
+      <div class="faq"><details><summary>Hvad er gratis?</summary><p>Alle 30 fejl og deres spørgsmål i kategorierne Kodevaner, Fejlfinding og problemløsning samt Versionsstyring og samarbejde. Tjeklisten, refleksionsdagbogen, fremskridt, bogmærker og iCloud-synkronisering er også gratis.</p></details>
+<details><summary>Hvordan bruger jeg PRO på en anden enhed?</summary><p>Log ind med samme Apple-id, og tryk på Gendan køb på abonnementsskærmen.</p></details>
+<details><summary>Hvordan opsiger jeg abonnementet?</summary><p>Når som helst under Indstillinger › Apple-id › Abonnementer. Abonnementet fornyes automatisk, medmindre du opsiger det mindst 24 timer før den aktuelle periode slutter. Køb for altid betales kun én gang.</p></details>
+<details><summary>Mine data synkroniseres ikke mellem enheder.</summary><p>Tjek, at alle enheder er logget ind på iCloud med samme Apple-id, og at iCloud er slået til for appen i Indstillinger. Synkronisering kræver også netværksforbindelse.</p></details>
+<details><summary>Hvordan sletter jeg det hele?</summary><p>Tryk på Nulstil alle data i appens indstillinger. Flueben, svar og bogmærker slettes, og det kan ikke fortrydes.</p></details>
+<details><summary>Hvilke enheder virker den på?</summary><p>iPhone, iPad og Mac. PRO låses op på alle enheder med samme Apple-id.</p></details>
+<details><summary>Bliver mine data sendt nogen steder hen?</summary><p>Nej. Dine flueben og svar gemmes kun på dine enheder og i din egen iCloud. Appen indsamler ingen personoplysninger og har hverken analyseværktøjer eller reklamer.</p></details></div>
+      <p class="contact">Spørgsmål eller forslag? Skriv til <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Bliv udvikleren, der aldrig<br>laver samme fejl to gange</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6759643878">Hent gratis i App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Sprog"><a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da" aria-current="page">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Privatlivspolitik</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Hyunho Lee</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

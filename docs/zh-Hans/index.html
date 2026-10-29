@@ -1,464 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>踩坑100 — 初级开发者成长清单</title>
-  <meta name="description" content="在职开发者最常踩的 100 个坑。提前了解，成长更快。" />
-  <meta property="og:title" content="踩坑100 — 初级开发者成长清单" />
-  <meta property="og:description" content="在职开发者最常踩的 100 个坑。提前了解，成长更快。" />
-  <meta property="og:type" content="website" />
-  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/index.html" />
-  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/index.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/index.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/index.html" />
-  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/index.html" />
-  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/index.html" />
-  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/index.html" />
-  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/index.html" />
-  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/index.html" />
-  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/index.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/index.html" />
-  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/index.html" />
-  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/index.html" />
-  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/index.html" />
-  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/index.html" />
-  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/index.html" />
-  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/index.html" />
-  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/index.html" />
-  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/index.html" />
-  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/index.html" />
-  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/index.html" />
-  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/index.html" />
-  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/index.html" />
-  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/en/index.html" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --primary:      #3F3884;
-      --primary-light:#6159AD;
-      --accent:       #F06B6B;
-      --green:        #38C78C;
-      --amber:        #F2B333;
-      --blue:         #4D8CEB;
-      --purple:       #8059B8;
-      --bg:           #0f0e1a;
-      --surface:      #1a1829;
-      --border:       rgba(255,255,255,0.08);
-      --text:         #f0eefc;
-      --muted:        rgba(240,238,252,0.55);
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 5%;
-      height: 64px;
-      background: rgba(15,14,26,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.3px; }
-    .nav-logo span { color: var(--accent); }
-    nav a.nav-link {
-      font-size: 0.9rem; color: var(--muted); text-decoration: none;
-      transition: color .2s;
-    }
-    nav a.nav-link:hover { color: var(--text); }
-
-    /* ── HERO ── */
-    .hero {
-      position: relative; overflow: hidden;
-      display: flex; flex-direction: column; align-items: center; text-align: center;
-      padding: 100px 5% 80px;
-      background: linear-gradient(145deg, #2a2460 0%, #3F3884 40%, #8059B8 100%);
-    }
-    .hero::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(240,107,107,.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-badge {
-      display: inline-block;
-      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
-      color: var(--amber);
-      background: rgba(242,179,51,.12);
-      border: 1px solid rgba(242,179,51,.25);
-      border-radius: 99px;
-      padding: 5px 14px;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-    }
-    .app-icon {
-      width: 120px; height: 120px;
-      border-radius: 27px;
-      background: linear-gradient(145deg, #3F3884, #8059B8);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 52px;
-      margin-bottom: 32px;
-      box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.12);
-    }
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 3.6rem);
-      font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -1px;
-      margin-bottom: 20px;
-    }
-    h1 em { font-style: normal; color: var(--accent); }
-    .hero-sub {
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      color: rgba(255,255,255,.72);
-      max-width: 520px;
-      margin-bottom: 40px;
-      line-height: 1.75;
-    }
-    .btn-store {
-      display: inline-flex; align-items: center; gap: 10px;
-      background: #fff; color: #000;
-      font-weight: 700; font-size: 1rem;
-      padding: 14px 28px;
-      border-radius: 14px;
-      text-decoration: none;
-      transition: transform .2s, box-shadow .2s;
-      box-shadow: 0 8px 24px rgba(0,0,0,.25);
-    }
-    .btn-store:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,.35); }
-    .btn-store svg { width: 22px; height: 22px; }
-    .btn-store-sub { font-size: .7rem; font-weight: 400; display: block; text-align: left; opacity: .6; margin-bottom: 1px; }
-    .btn-store-main { font-size: 1rem; font-weight: 700; display: block; text-align: left; }
-
-    /* ── FEATURES ── */
-    section { padding: 80px 5%; }
-    .section-label {
-      text-align: center;
-      font-size: .75rem; font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-    h2 {
-      text-align: center;
-      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 12px;
-    }
-    .section-desc {
-      text-align: center;
-      color: var(--muted);
-      font-size: 1rem;
-      max-width: 500px;
-      margin: 0 auto 56px;
-      line-height: 1.75;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .feature-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      transition: transform .25s, border-color .25s;
-    }
-    .feature-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.15); }
-    .feature-icon {
-      width: 48px; height: 48px;
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 22px;
-      margin-bottom: 16px;
-    }
-    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
-    .feature-card p { font-size: .9rem; color: var(--muted); line-height: 1.65; }
-
-    /* ── CATEGORIES ── */
-    .categories-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .categories-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .cat-chip {
-      display: flex; align-items: center; gap: 10px;
-      padding: 12px 16px;
-      background: rgba(255,255,255,.04);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      font-size: .9rem; font-weight: 500;
-    }
-    .cat-chip span { font-size: 1.1rem; }
-
-    /* ── PRICING ── */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    .price-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      text-align: center;
-    }
-    .price-card.featured {
-      background: linear-gradient(145deg, #3F3884, #6159AD);
-      border-color: rgba(255,255,255,.2);
-    }
-    .price-badge {
-      display: inline-block;
-      font-size: .7rem; font-weight: 700;
-      background: var(--amber); color: #000;
-      border-radius: 99px; padding: 3px 10px;
-      margin-bottom: 16px;
-      text-transform: uppercase; letter-spacing: .05em;
-    }
-    .price-plan { font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
-    .price-amount { font-size: 2rem; font-weight: 800; margin-bottom: 4px; }
-    .price-period { font-size: .8rem; color: var(--muted); margin-bottom: 20px; }
-    .price-features { list-style: none; text-align: left; }
-    .price-features li { font-size: .88rem; padding: 6px 0; color: var(--muted); display: flex; gap: 8px; }
-    .price-features li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
-    .price-card.featured .price-features li { color: rgba(255,255,255,.8); }
-
-    /* ── SYNC ── */
-    .sync-section { text-align: center; }
-    .devices {
-      display: flex; justify-content: center; align-items: center;
-      gap: 24px; flex-wrap: wrap;
-      margin-top: 40px;
-    }
-    .device-chip {
-      display: flex; align-items: center; gap: 8px;
-      padding: 10px 20px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 99px;
-      font-size: .9rem; font-weight: 500;
-    }
-
-    /* ── CTA ── */
-    .cta-section {
-      text-align: center;
-      background: linear-gradient(145deg, #2a2460, #3F3884, #8059B8);
-      padding: 100px 5%;
-    }
-    .cta-section h2 { margin-bottom: 16px; }
-    .cta-section p { color: rgba(255,255,255,.7); margin-bottom: 40px; font-size: 1.05rem; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--bg);
-      border-top: 1px solid var(--border);
-      padding: 32px 5%;
-      display: flex; flex-wrap: wrap;
-      align-items: center; justify-content: space-between;
-      gap: 12px;
-    }
-    footer p { font-size: .85rem; color: var(--muted); }
-    footer a { color: var(--muted); font-size: .85rem; text-decoration: none; transition: color .2s; }
-    footer a:hover { color: var(--text); }
-
-    @media (max-width: 640px) {
-      nav { padding: 0 4%; }
-      .hero { padding: 72px 4% 60px; }
-      section { padding: 60px 4%; }
-    }
-  
-    .langs { font-size: .8rem; color: rgba(240,238,252,.45); line-height: 2; }
-    .langs a { color: rgba(240,238,252,.6); text-decoration: none; margin-right: 10px; white-space: nowrap; }
-    .langs a:hover, .langs a.cur { color: #f0eefc; }
-    .langs a.cur { font-weight: 700; }
-    .doc-langs { max-width: 720px; margin: 64px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); }
-    .foot-links a { margin-right: 14px; }
-    .faq dt { font-weight: 700; margin: 24px 0 6px; color: #f0eefc; }
-    .faq dd { color: rgba(240,238,252,.75); margin: 0; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>踩坑100：开发者成长清单</title>
+  <meta name="description" content="提前读一读新手开发者最常踩的 100 个坑，踩过的打个勾，再回答复盘问题。前 30 个免费。">
+  <meta name="theme-color" content="#403885" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6759643878">
+  <link rel="canonical" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="踩坑100：开发者成长清单">
+  <meta property="og:description" content="提前读一读新手开发者最常踩的 100 个坑，踩过的打个勾，再回答复盘问题。前 30 个免费。">
+  <meta property="og:url" content="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/">
+  <meta property="og:image" content="https://m1zz.github.io/JuniorDevMistakes/img/zh-Hans/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#403885}@media (prefers-color-scheme:dark){:root{--accent:#8C82E6}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="bar">
+    <a class="brand" href="../zh-Hans/"><img src="../icon.png" alt="" width="32" height="32">踩坑100</a>
+    <a class="lang-link" href="#languages">语言</a>
+  </header>
 
-<nav>
-  <div class="nav-logo">踩坑100</div>
-  <span><a href="support.html" class="nav-link">支持</a> &nbsp; <a href="privacy.html" class="nav-link">隐私政策</a></span>
-</nav>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>别等踩了坑<br>才知道疼</h1>
+        <p class="lead">我们整理了新手开发者最常踩的 100 个坑。每个坑都会讲清楚会发生什么、该怎么做、能学到什么，再回答一个复盘问题，同一个坑就不会踩第二次。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6759643878">在 App Store 免费下载</a><a class="try" href="#try">打开一个坑看看 ↓</a></div>
+        <p class="muted small">前 30 个坑免费。支持 iPhone、iPad 和 Mac。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/home.jpg" alt="别等踩了坑 才知道疼" width="600" height="1303" decoding="async"></div>
+    </section>
 
-<section class="hero">
-  <div class="hero-badge">面向初级开发者的 App</div>
-  <div class="app-icon">⌨️</div>
-  <h1>提前知道坑在哪，<br><em>成长更快</em>。</h1>
-  <p class="hero-sub">
-    在职开发者最常踩的 100 个坑。<br>
-    用清单逐条确认，再用复盘把它真正变成自己的经验。
-  </p>
-  <a href="#" class="btn-store">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Download on the</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<section>
-  <p class="section-label">核心功能</p>
-  <h2>成长所需，一应俱全</h2>
-  <p class="section-desc">不止于知道有哪些坑，更通过复盘把经验真正变成自己的。</p>
+    <section class="reveal" id="try">
+      <h2>打开一个坑看看</h2>
+      <p class="muted">这是免费开放的第一个分类里的 10 个坑，内容和 App 里一模一样。踩过的就点“已踩坑”勾上吧。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;打开一个坑看看&quot;, &quot;lead&quot;: &quot;这是免费开放的第一个分类里的 10 个坑，内容和 App 里一模一样。踩过的就点“已踩坑”勾上吧。&quot;, &quot;note&quot;: &quot;网页体验不会保存勾选。在 App 里，勾选和复盘回答会通过 iCloud 同步到你的所有设备。&quot;, &quot;category&quot;: &quot;代码编写习惯&quot;, &quot;labels&quot;: {&quot;happens&quot;: &quot;会发生什么&quot;, &quot;todo&quot;: &quot;正确做法&quot;, &quot;learn&quot;: &quot;从中成长&quot;, &quot;retro&quot;: &quot;复盘问题&quot;, &quot;done&quot;: &quot;已踩坑&quot;}, &quot;items&quot;: [{&quot;n&quot;: 1, &quot;mistake&quot;: &quot;变量名随便起成 a、b、x 这种没意义的名字&quot;, &quot;situation&quot;: &quot;赶着写代码时，会下意识地用 temp、data、result、val 这类名字。写的时候上下文都在脑子里，没什么问题；可是过了一周，你就得把代码从头读一遍才想得起“这个变量是干嘛的？”。&quot;, &quot;action&quot;: &quot;起变量名时，花 3 秒想一想“这个变量里装的是什么”。用 userProfileList 代替 data，用 formattedDate 代替 temp，用 filteredActiveUsers 代替 result，把变量的作用写进名字里。目标是让代码读起来像一句英文。比如 if (isUserActive &amp;&amp; hasPermission)，光读条件语句就能明白意思。&quot;, &quot;growth&quot;: &quot;代码被阅读的时间是编写时间的 10 倍。好名字比注释更有力。和团队统一命名规范（camelCase、snake_case 等），避免缩写（usr → user、btn → button），使用方便搜索的名字。光是这一个习惯，就能大幅提升代码评审的速度和可维护性。&quot;, &quot;retro&quot;: &quot;最近写的代码里，有没有含义不清的变量名？当时叫什么，更好的名字会是什么？&quot;}, {&quot;n&quot;: 2, &quot;mistake&quot;: &quot;把 100 行以上的代码全塞进一个函数&quot;, &quot;situation&quot;: &quot;实现一个功能时，把输入校验、数据转换、API 调用、结果处理、错误处理全写进同一个函数。刚开始流程还一目了然，可函数一旦超过 200 行，改的时候就很难找到该改哪里，副作用也无法预料。&quot;, &quot;action&quot;: &quot;函数一超过 20 行，就该考虑拆分了。判断标准是：这个函数做的事，能不能用一句话说清楚？把每个步骤拆成独立的函数，比如 validateUserInput()、transformToAPIFormat()、callPaymentAPI()、formatResponse()，主函数只负责按顺序调用它们，像个调度者。&quot;, &quot;growth&quot;: &quot;你会真正掌握单一职责原则（SRP）。小函数光看名字就知道做什么，可以独立测试，也能在别处复用。把代码组织得像讲故事一样好读，是资深开发者的核心能力。&quot;, &quot;retro&quot;: &quot;当前项目里最长的函数有多少行？你能用一句话说清楚它做什么吗？&quot;}, {&quot;n&quot;: 3, &quot;mistake&quot;: &quot;靠复制粘贴来重复写代码&quot;, &quot;situation&quot;: &quot;需要类似逻辑时，直接把现有代码复制过来改几处。用户列表查询和订单列表查询的代码 90% 一样，却各写了一份。之后公共部分发现 Bug，就得把所有复制的地方找出来逐个修，漏掉一处，同样的 Bug 就会在别处再次出现。&quot;, &quot;action&quot;: &quot;一想复制粘贴，就是该重构的信号。把公共逻辑提取成函数或类，只把不同的部分通过参数或回调传进去。重复出现 3 次以上（Rule of Three）就一定要抽象。比如一个 fetchList(endpoint, transformer) 就能处理多种列表查询。&quot;, &quot;growth&quot;: &quot;你会培养 DRY（Don&#x27;t Repeat Yourself）原则和抽象能力。不过过度抽象同样危险，要以“这些代码真的会因为同一个原因一起变化吗？”作为判断标准。正确的抽象，不是为了减少代码量，而是为了降低修改成本。&quot;, &quot;retro&quot;: &quot;最近有没有复制粘贴过代码？当时为什么选了复制粘贴而不是抽象？&quot;}, {&quot;n&quot;: 4, &quot;mistake&quot;: &quot;写复杂的业务逻辑却不加注释&quot;, &quot;situation&quot;: &quot;折扣计算里有三层嵌套条件，却没写注释。半年后产品要改需求，没人能说清当初为什么这样写。读代码能看出“做了什么”，却看不出“为什么这样做”。&quot;, &quot;action&quot;: &quot;写解释“Why”的注释。比如 // VIP 客户按年度消费额享受额外折扣（2024 Q3 市场部需求，JIRA-1234），把业务背景、决策原因、相关工单号留下来。对复杂算法，在函数前用块注释概括整体流程。&quot;, &quot;growth&quot;: &quot;你会明白：代码本身说明“What”，注释说明“Why”，文档说明“How”。好注释是送给未来开发者（包括你自己）的礼物，让人能看懂代码并放心地修改。&quot;, &quot;retro&quot;: &quot;最近写的代码里，需要解释“为什么这么做”的地方，你留注释了吗？&quot;}, {&quot;n&quot;: 5, &quot;mistake&quot;: &quot;注释写得太多，每一行都解释&quot;, &quot;situation&quot;: &quot;每一行都写 let count = 0; // 把计数初始化为 0 这种一目了然的注释。代码改了，注释也得跟着改，一旦漏改，代码和注释就对不上了。说谎的注释比没有注释更有害。&quot;, &quot;action&quot;: &quot;让代码自己说话。变量名和函数名起得好，大部分注释都是多余的。觉得需要注释时，先想想能不能通过重构，让代码不加注释也能看懂。注释只用来解释“为什么”，或者记录反直觉决定的背景。&quot;, &quot;growth&quot;: &quot;你会培养写自解释代码（Self-documenting code）的能力。代码可读性高了，对注释的需求就少了，而真正需要的地方写下的注释，价值反而更大。&quot;, &quot;retro&quot;: &quot;有没有发现过代码和注释对不上的情况？那条错误的注释造成了什么混乱？&quot;}, {&quot;n&quot;: 6, &quot;mistake&quot;: &quot;把魔法数字硬编码在代码各处&quot;, &quot;situation&quot;: &quot;if (retryCount &gt; 3)、setTimeout(() =&gt; {}, 86400000)、if (role === 2) 这类代码到处都是。3 是什么、86400000 是什么、2 又是什么，只有作者自己知道。策略变了要把重试次数改成 5，就得在整个代码库里找 3，其中还混着含义不同的 3，改错的风险很大。&quot;, &quot;action&quot;: &quot;给每个字面量都建一个有意义的常量。像 const MAX_RETRY_COUNT = 3、const ONE_DAY_MS = 86400000、const ROLE_ADMIN = 2 这样，光看名字就知道含义。把常量集中到一处管理，策略变化时只需改一行。&quot;, &quot;growth&quot;: &quot;你会养成清楚传达代码意图的习惯。这是可维护性的基础，也会自然发展为把配置值外置（configuration）的架构模式。&quot;, &quot;retro&quot;: &quot;当前代码里，有没有难以看出含义的数字或字符串被硬编码？&quot;}, {&quot;n&quot;: 7, &quot;mistake&quot;: &quot;无视编码规范，坚持自己的风格&quot;, &quot;situation&quot;: &quot;同一个文件里 camelCase 和 snake_case 混用，缩进在 Tab 和空格之间来回切换。同事读我的代码要花精力去适应风格，代码评审里争论的也不是逻辑，而是格式。&quot;, &quot;action&quot;: &quot;遵循团队制定的编码规范，并在项目里配置 ESLint、Prettier、SwiftLint 等自动化工具。设置保存时自动格式化，你就完全不用再操心风格问题。如果还没有规范，就向团队提议，并以行业标准（如 Airbnb Style Guide）为起点。&quot;, &quot;growth&quot;: &quot;你会学到协作的原则：一致性比个人喜好更重要。你也会体会到不把精力花在工具能自动完成的事情上的高效。这会直接影响团队的生产力和新人上手速度。&quot;, &quot;retro&quot;: &quot;你清楚地知道团队的编码规范吗？如果不知道，去哪里能查到？&quot;}, {&quot;n&quot;: 8, &quot;mistake&quot;: &quot;用空的 catch 块忽略错误处理&quot;, &quot;situation&quot;: &quot;用 try { ... } catch(e) {} 把错误吞掉。服务行为异常，却没有任何错误日志，找不到原因。用户反馈支付不了，服务器上却什么记录都没有。&quot;, &quot;action&quot;: &quot;每个 catch 块里至少要把错误记到日志里。能恢复的错误就恢复，不能恢复就向上抛出。对用户给出友好的提示，给开发者留下详细的日志。基本写法是 catch(e) { logger.error(&#x27;支付处理失败&#x27;, { userId, orderId, error: e.message }); throw new PaymentError(&#x27;支付处理时出现问题&#x27;); }。&quot;, &quot;growth&quot;: &quot;你会培养系统设计错误处理策略（恢复、传播、记录）的能力，并内化“错误一定要有人来处理”的原则，这是服务稳定性和可观测性（observability）的根基。&quot;, &quot;retro&quot;: &quot;当前项目里有空的 catch 块吗？搜索一下确认，一共有多少个？&quot;}, {&quot;n&quot;: 9, &quot;mistake&quot;: &quot;滥用全局变量&quot;, &quot;situation&quot;: &quot;觉得多个函数之间共享方便，就用全局变量。应用变大后，根本没法追踪哪个函数在什么时候改了全局变量，改一个功能，结果把看似毫不相关的另一个功能弄坏了。&quot;, &quot;action&quot;: &quot;把变量的作用域缩到最小。通过函数参数、返回值、依赖注入来传递数据。需要管理状态时，使用 Redux、Zustand 这类状态管理库，或类的实例变量，让状态变化的路径清晰可追踪。&quot;, &quot;growth&quot;: &quot;你会理解状态管理和作用域的原则，体会到尽量减少副作用的函数式编程思维和不可变性（immutability）的价值，这是让复杂应用可预测的核心能力。&quot;, &quot;retro&quot;: &quot;当前项目里哪里用了全局变量？当时为什么声明成全局的？&quot;}, {&quot;n&quot;: 10, &quot;mistake&quot;: &quot;不做 null/undefined 检查就直接访问对象&quot;, &quot;situation&quot;: &quot;像 user.profile.address.city 这样深层访问对象，却不做任何保护。只要有用户没有资料、没填地址，就会立刻抛出 Cannot read property of null，应用直接崩溃。&quot;, &quot;action&quot;: &quot;积极使用可选链（user?.profile?.address?.city）和默认值（空值合并，?? &#x27;未填写地址&#x27;）。在函数开头放置卫语句：if (!user) return null;。如果用 TypeScript，就开启 strictNullChecks，在编译期保证 null 安全。&quot;, &quot;growth&quot;: &quot;你会养成防御式编程（Defensive Programming）的思维。总是先想“这个值会不会不存在？”，能大幅减少运行时崩溃。你也会明白 Swift 的 Optional、Kotlin 的 Nullable 这类语言层面的 null 安全为什么重要。&quot;, &quot;retro&quot;: &quot;最近遇到过 null/undefined 相关的运行时错误吗？频率有多高？&quot;}]}"></div>
+    </section>
 
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(63,56,132,.25)">✓</div>
-      <h3>100 个错误清单</h3>
-      <p>从写代码到团队协作，把一线开发中反复出现的错误按分类整理好了。</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(242,179,51,.2)">📓</div>
-      <h3>复盘日志</h3>
-      <p>回答每个错误配套的复盘问题，不靠死记硬背，而是真正理解。</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(56,199,140,.2)">📊</div>
-      <h3>进度追踪</h3>
-      <p>直观查看各分类完成度和总体进度，真切感受自己的成长。</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(77,140,235,.2)">☁️</div>
-      <h3>iCloud 自动同步</h3>
-      <p>在 iPhone、iPad 和 Mac 上使用同一份数据，通过 CloudKit 自动同步。</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(240,107,107,.2)">🔖</div>
-      <h3>书签</h3>
-      <p>给需要再看的内容加上书签，之后集中复习。</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(128,89,184,.2)">💻</div>
-      <h3>iPhone · iPad · Mac</h3>
-      <p>借助 Mac Catalyst，iPhone App 也能在 Mac 上原样运行。随时随地学习。</p>
-    </div>
-  </div>
-</section>
+    <section class="problem reveal">
+      <h2>代码评审里又被指出同样的问题？</h2>
+      <p>变量名看不懂、函数几百行、到处复制粘贴。前辈们都踩过这些坑，可你往往要亲自摔一跤才明白。踩坑100 先把这些坑摆在你面前，再让你结合自己的经历复盘，帮你不再重复同样的错误。</p>
+    </section>
 
-<section class="categories-section">
-  <p class="section-label">10 个分类</p>
-  <h2>涵盖哪些错误？</h2>
-  <p class="section-desc">按初级开发者实际会遇到的场景分类。</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>每个坑：场景、做法、收获</h2>
+        <p>打开一个坑，会分三部分讲：会出现什么情况、应该怎么做、能从中学到什么。<br>从代码编写习惯到安全、性能，共 10 个分类，只挑真实工作中反复出现的坑。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/detail.jpg" alt="每个坑：场景、做法、收获" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="categories-grid">
-    <div class="cat-chip"><span>⌨️</span> 代码编写习惯</div>
-    <div class="cat-chip"><span>🐛</span> 调试与问题排查</div>
-    <div class="cat-chip"><span>🌿</span> 版本管理与协作</div>
-    <div class="cat-chip"><span>🏗️</span> 设计与架构</div>
-    <div class="cat-chip"><span>🛡️</span> 测试与质量</div>
-    <div class="cat-chip"><span>🧠</span> 学习与成长</div>
-    <div class="cat-chip"><span>💬</span> 沟通</div>
-    <div class="cat-chip"><span>🖥️</span> 基础设施与部署</div>
-    <div class="cat-chip"><span>🔒</span> 安全与隐私</div>
-    <div class="cat-chip"><span>⚡</span> 性能与优化</div>
-  </div>
-</section>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>不止读完，还要复盘</h2>
+        <p>每个坑配 4 个复盘问题，一共 400 个。想着自己的项目写下回答，读到的知识就变成了自己的经验。<br>写下的回答会按分类收进复盘日志，随时可以回看。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/retro.jpg" alt="不止读完，还要复盘" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-<section>
-  <p class="section-label">方案</p>
-  <h2>免费开始</h2>
-  <p class="section-desc">先免费体验 30 个，再用 PRO 解锁全部 100 个。</p>
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>成长多少，一眼看清</h2>
+        <p>勾上踩过的坑，分类进度和总进度就会一点点涨起来。想再看的坑可以加书签。<br>记录通过 iCloud 在 iPhone、iPad 和 Mac 之间同步。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/progress.jpg" alt="成长多少，一眼看清" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
 
-  <div class="pricing-grid">
-    <div class="price-card">
-      <p class="price-plan">免费</p>
-      <p class="price-amount">免费</p>
-      <p class="price-period">永久免费</p>
-      <ul class="price-features">
-        <li>代码编写习惯（10 个）</li>
-        <li>调试与问题排查（10 个）</li>
-        <li>版本管理与协作（10 个）</li>
-        <li>撰写复盘日志</li>
-        <li>进度与书签</li>
-      </ul>
-    </div>
-    <div class="price-card featured">
-      <div class="price-badge">BEST</div>
-      <p class="price-plan">PRO 月度订阅</p>
-      <p class="price-amount">月度订阅</p>
-      <p class="price-period">以 App Store 显示的价格为准</p>
-      <ul class="price-features">
-        <li>全部 100 个错误</li>
-        <li>全部 10 个分类</li>
-        <li>撰写复盘日志</li>
-        <li>iCloud 同步</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-    <div class="price-card">
-      <p class="price-plan">PRO 终身买断</p>
-      <p class="price-amount">终身买断</p>
-      <p class="price-period">一次付费，永久使用</p>
-      <ul class="price-features">
-        <li>全部 100 个错误</li>
-        <li>全部 10 个分类</li>
-        <li>撰写复盘日志</li>
-        <li>iCloud 同步</li>
-        <li>iPhone · iPad · Mac</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <section class="reveal">
+      <h2>三步就能开始</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>选一个分类</h3><p>代码编写习惯、调试与问题排查、版本管理与协作可以免费直接看。</p></li>
+<li class="card"><span class="n">2</span><h3>读完打勾</h3><p>踩过的坑，点“已踩坑”记下来。</p></li>
+<li class="card"><span class="n">3</span><h3>回答复盘问题</h3><p>想想自己的经历，哪怕只写一句。回答会收进复盘日志。</p></li></ol>
+    </section>
 
-<section class="sync-section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
-  <p class="section-label">多平台</p>
-  <h2>所有设备，无缝衔接</h2>
-  <p class="section-desc">基于 CloudKit 的 iCloud 同步，在任何设备上开始，都能接着继续。</p>
-  <div class="devices">
-    <div class="device-chip">📱 iPhone</div>
-    <div class="device-chip">📲 iPad</div>
-    <div class="device-chip">💻 Mac</div>
-    <div class="device-chip">☁️ iCloud 自动同步</div>
-  </div>
-</section>
+    <section class="reveal" id="commands">
+      <h2>涵盖的 10 个分类</h2>
+      <div class="card table">
+        <dl><div><dt>代码编写习惯</dt><dd>#001–#010 · 免费</dd></div><div><dt>调试与问题排查</dt><dd>#011–#020 · 免费</dd></div><div><dt>版本管理与协作</dt><dd>#021–#030 · 免费</dd></div><div><dt>设计与架构</dt><dd>#031–#040 · PRO</dd></div><div><dt>测试与质量</dt><dd>#041–#050 · PRO</dd></div><div><dt>学习与成长</dt><dd>#051–#060 · PRO</dd></div><div><dt>沟通与协作</dt><dd>#061–#070 · PRO</dd></div><div><dt>部署与运维</dt><dd>#071–#080 · PRO</dd></div><div><dt>安全与数据</dt><dd>#081–#090 · PRO</dd></div><div><dt>性能与优化</dt><dd>#091–#100 · PRO</dd></div></dl>
+      </div>
+      <p class="muted">每个分类 10 个坑，每个坑 4 个复盘问题。</p>
+    </section>
 
-<section class="cta-section">
-  <h2>现在就开始成长</h2>
-  <p>30 个免费，PRO 解锁全部 100 个。<br>做一个不会在同一个坑里摔两次的开发者。</p>
-  <a href="#" class="btn-store">
-    <svg style="width:22px;height:22px" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-    <div>
-      <span class="btn-store-sub">Download on the</span>
-      <span class="btn-store-main">App Store</span>
-    </div>
-  </a>
-</section>
 
-<footer>
-  <div>
-    <p>© 2026 踩坑100. All rights reserved.</p>
-    <div style="margin-top:12px"><div class="langs"><a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/index.html" hreflang="en" lang="en">English</a> <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a> <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" class="cur" aria-current="true">简体中文</a> <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/index.html" hreflang="es" lang="es">Español</a> <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a> <a href="../it/index.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/index.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a> <a href="../da/index.html" hreflang="da" lang="da">Dansk</a> <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a> <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a> <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a></div></div>
-  </div>
-  <span class="foot-links"><a href="support.html">支持</a><a href="privacy.html">隐私政策</a></span>
-</footer>
+    <section class="reveal" id="pricing">
+      <h2>30 个免费，全部 100 个用 PRO</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>免费</h3>
+          <ul><li>前 3 个分类，30 个坑</li><li>对应的 120 个复盘问题</li><li>打勾、复盘日志、进度、书签</li><li>iCloud 同步（iPhone、iPad、Mac）</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>踩坑100 PRO</h3>
+          <ul><li>其余 7 个分类，再多 70 个坑（#031–#100）</li><li>新增 280 个复盘问题</li><li>以后的所有内容更新</li></ul>
+          <p class="muted">可选按月订阅、按年订阅（比按月最多省 50%）或一次性买断。</p>
+        </div>
+      </div>
+      <p class="muted">不收集个人信息，没有分析工具，也没有广告。</p>
+    </section>
 
+    <section class="reveal" id="faq">
+      <h2>常见问题</h2>
+      <div class="faq"><details><summary>免费能看到哪些？</summary><p>代码编写习惯、调试与问题排查、版本管理与协作这 3 个分类的 30 个坑和复盘问题都能用。打勾、复盘日志、进度、书签和 iCloud 同步也都免费。</p></details>
+<details><summary>买了 PRO，怎么在其他设备上用？</summary><p>用同一个 Apple ID 登录，然后在购买页面点“恢复购买”。</p></details>
+<details><summary>怎么取消订阅？</summary><p>随时可以在“设置”App 的 Apple ID › 订阅中管理或取消。若未在当前周期结束前 24 小时取消，订阅会自动续期。买断只需付一次。</p></details>
+<details><summary>设备之间记录不同步。</summary><p>请确认所有设备都用同一个 Apple ID 登录了 iCloud，并且在设置里为这个 App 打开了 iCloud。同步还需要联网。</p></details>
+<details><summary>想清空所有记录。</summary><p>在 App 的设置里点“重置所有数据”，打勾、复盘记录和书签都会被删除，且无法恢复。</p></details>
+<details><summary>能在哪些设备上用？</summary><p>iPhone、iPad 和 Mac 都可以。买过的 PRO 在同一个 Apple ID 的所有设备上都能用。</p></details>
+<details><summary>我的记录会被发到别处吗？</summary><p>不会。打勾和复盘回答只保存在你的设备和你自己的 iCloud 里。不收集个人信息，没有分析工具，也没有广告。</p></details></div>
+      <p class="contact">有问题或建议，欢迎发邮件到 <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>做一个同样的坑<br>不踩第二次的开发者</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6759643878">在 App Store 免费下载</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="语言"><a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">隐私政策</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Hyunho Lee</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

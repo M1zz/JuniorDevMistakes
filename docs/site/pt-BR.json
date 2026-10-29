@@ -1,0 +1,258 @@
+{
+  "title": "100 Erros de Dev Júnior: o checklist para evoluir na carreira",
+  "description": "Leia os 100 erros mais comuns de devs júnior, marque os que você já cometeu e responda perguntas de retrospectiva. Os 30 primeiros são grátis.",
+  "hero": {
+    "headline": "Conheça os erros\nantes que doam",
+    "lead": "Os 100 erros que devs júnior mais cometem, num só lugar. Em cada um você lê o que acontece, o que fazer e o que aprende, e responde uma pergunta de retrospectiva para não cair no mesmo erro duas vezes.",
+    "cta": "Baixe grátis na App Store",
+    "note": "Os 30 primeiros erros são grátis. Funciona no iPhone, iPad e Mac."
+  },
+  "demo": {
+    "title": "Abra um erro",
+    "lead": "Estes são os 10 erros da primeira categoria gratuita, exatamente como no app. Marque como Vivido os que já aconteceram com você.",
+    "note": "Esta demonstração não salva suas marcações. No app, marcações e respostas sincronizam em todos os seus aparelhos pelo iCloud.",
+    "category": "Hábitos de código",
+    "labels": {
+      "happens": "O que acontece",
+      "todo": "Como evitar",
+      "learn": "O que você aprende",
+      "retro": "Perguntas de retrospectiva",
+      "done": "Vivido"
+    },
+    "items": [
+      {
+        "n": 1,
+        "mistake": "Dar nomes sem sentido às variáveis, como a, b, x",
+        "situation": "Escrevendo rápido, você acaba usando nomes como temp, data, result e val por hábito. Na hora, o contexto está na sua cabeça e tudo bem, mas uma semana depois você pensa 'o que era essa variável?' e precisa reler o código desde o começo.",
+        "action": "Ao nomear uma variável, pare 3 segundos para pensar no que ela guarda. Em vez de data, use userProfileList; em vez de temp, formattedDate; em vez de result, filteredActiveUsers. Coloque o papel da variável no nome. O objetivo é que o código se leia como uma frase em inglês. Por exemplo, if (isUserActive && hasPermission) já se entende só de ler a condição.",
+        "growth": "Lemos código 10 vezes mais do que escrevemos. Um bom nome vale mais que um comentário. Padronize as convenções de nomes (camelCase, snake_case etc.) com o time, evite abreviações (usr → user, btn → button) e use nomes fáceis de buscar. Só esse hábito já melhora muito a velocidade do code review e a manutenibilidade.",
+        "retro": "No código que você escreveu recentemente, havia algum nome de variável pouco claro? Qual era e qual seria um nome melhor?"
+      },
+      {
+        "n": 2,
+        "mistake": "Enfiar mais de 100 linhas de código em uma única função",
+        "situation": "Ao implementar uma funcionalidade, você coloca validação de entrada, transformação de dados, chamada de API, tratamento do resultado e tratamento de erros tudo numa função só. No começo dá para enxergar o fluxo, mas quando passa de 200 linhas fica difícil achar o que alterar e os efeitos colaterais viram imprevisíveis.",
+        "action": "Se uma função passar de 20 linhas, considere dividi-la. O critério é: você consegue explicar o que essa função faz em uma frase? Separe cada etapa em funções independentes, como validateUserInput(), transformToAPIFormat(), callPaymentAPI() e formatResponse(), e deixe a função principal só como orquestradora, chamando todas em ordem.",
+        "growth": "Você internaliza o princípio da responsabilidade única (SRP). Funções pequenas mostram seu papel pelo nome, podem ser testadas isoladamente e reaproveitadas em outros lugares. Saber estruturar o código para que ele se leia como uma história é uma competência central de quem é sênior.",
+        "retro": "Qual é a maior função do seu projeto atual, em linhas? Dá para explicar o que ela faz em uma frase?"
+      },
+      {
+        "n": 3,
+        "mistake": "Repetir código com copia e cola",
+        "situation": "Quando precisa de uma lógica parecida, você copia o código existente e muda só um pouco. A listagem de usuários e a de pedidos são 90% iguais, mas foram escritas separadamente. Quando aparece um bug na parte comum, você precisa achar e corrigir todas as cópias, e se esquecer uma, o mesmo bug reaparece em outro lugar.",
+        "action": "O momento em que você pensa em copiar e colar código é o sinal para refatorar. Extraia a lógica comum para uma função ou classe e passe só o que muda por parâmetro ou callback. Se algo se repete 3 vezes ou mais (Regra dos Três), abstraia sem pensar duas vezes. Por exemplo, um único fetchList(endpoint, transformer) pode atender várias listagens.",
+        "growth": "Você desenvolve o princípio DRY (Don't Repeat Yourself) e a capacidade de abstrair. Mas abstração demais também é perigosa, então avalie: esse código realmente muda junto pelo mesmo motivo? Uma boa abstração não serve para reduzir linhas, e sim o custo de mudar.",
+        "retro": "Você copiou e colou código recentemente? Por que escolheu isso em vez de abstrair?"
+      },
+      {
+        "n": 4,
+        "mistake": "Escrever lógica de negócio complexa sem nenhum comentário",
+        "situation": "O cálculo do desconto tem três condições aninhadas e nenhum comentário. Seis meses depois, quando chega uma mudança do produto, ninguém consegue explicar por que foi escrito assim. Lendo o código, dá para ver 'o que faz', mas não 'por que faz'.",
+        "action": "Escreva comentários que expliquem o porquê. Registre o contexto de negócio, a razão da decisão e o número da issue relacionada, como em // Clientes VIP recebem desconto extra conforme as compras do ano (pedido do marketing, 3º tri de 2024, JIRA-1234). Em algoritmos complexos, escreva antes da função um comentário em bloco resumindo o fluxo.",
+        "growth": "Você entende que o 'o quê' o código mostra, o 'porquê' o comentário explica e o 'como' a documentação conta. Um bom comentário é um presente para os devs do futuro (inclusive você), que poderão entender o código e alterá-lo com confiança.",
+        "retro": "No código que escreveu recentemente, você deixou comentários onde era preciso explicar por que foi feito assim?"
+      },
+      {
+        "n": 5,
+        "mistake": "Comentar demais, explicando todas as linhas",
+        "situation": "Você escreve comentários óbvios em todas as linhas, como let count = 0; // inicializa o contador com 0. Quando o código muda, o comentário também precisa mudar, mas alguém esquece de atualizar e os dois ficam inconsistentes. Um comentário que mente é pior do que nenhum.",
+        "action": "Escreva código que se explique sozinho. Com bons nomes de variáveis e funções, a maioria dos comentários fica desnecessária. Se sentir que precisa de um comentário, veja primeiro se refatorando o código ele já fica claro sem ele. Use comentários só para explicar o porquê ou registrar o contexto de uma decisão pouco intuitiva.",
+        "growth": "Você desenvolve a habilidade de escrever código autoexplicativo (self-documenting code). Com código legível, a necessidade de comentários diminui, e os comentários que realmente importam ganham ainda mais valor.",
+        "retro": "Você já encontrou comentário e código dizendo coisas diferentes? Que confusão esse comentário mentiroso causou?"
+      },
+      {
+        "n": 6,
+        "mistake": "Deixar números mágicos fixos pelo código todo",
+        "situation": "Trechos como if (retryCount > 3), setTimeout(() => {}, 86400000) e if (role === 2) estão espalhados pelo código. Só quem escreveu sabe o que é o 3, o 86400000 e o 2. Quando a regra muda e as tentativas passam para 5, você precisa procurar o 3 no código inteiro, e como há 3 com outros significados, o risco de alterar o errado é grande.",
+        "action": "Crie constantes com nome para todo valor literal. Use const MAX_RETRY_COUNT = 3, const ONE_DAY_MS = 86400000, const ROLE_ADMIN = 2, de modo que o nome já transmita o significado. Se as constantes ficam num só lugar, mudar uma regra exige alterar uma única linha.",
+        "growth": "Você adquire o hábito de deixar clara a intenção do código. Isso é a base da manutenibilidade e evolui naturalmente para o padrão de arquitetura de externalizar configurações.",
+        "retro": "No código atual, há números ou strings fixos cujo significado é difícil de entender?"
+      },
+      {
+        "n": 7,
+        "mistake": "Ignorar a convenção de código e insistir no próprio estilo",
+        "situation": "No mesmo arquivo, camelCase e snake_case se misturam e a indentação alterna entre tabs e espaços. Quem lê seu código gasta energia decifrando o estilo, e o code review vira discussão de formatação em vez de lógica.",
+        "action": "Siga a convenção de código definida pelo time e configure ferramentas de automação no projeto, como ESLint, Prettier e SwiftLint. Com a formatação automática ao salvar, você nem precisa pensar em estilo. Se não existir convenção, proponha uma ao time e use um padrão do mercado (como o Airbnb Style Guide) como ponto de partida.",
+        "growth": "Você aprende o princípio de colaboração de que consistência vale mais do que gosto pessoal. Aprende também a não gastar energia humana com o que uma ferramenta automatiza. Isso afeta diretamente a produtividade do time e a velocidade do onboarding.",
+        "retro": "Você conhece exatamente a convenção de código do seu time? Se não, onde dá para consultar?"
+      },
+      {
+        "n": 8,
+        "mistake": "Ignorar erros com um bloco catch vazio",
+        "situation": "Você engole o erro com try { ... } catch(e) {}. O serviço se comporta de forma estranha, mas não há log de erro e a causa não aparece. O usuário reclama que o pagamento não funciona e o servidor não tem nenhum registro.",
+        "action": "Em todo bloco catch, no mínimo registre o erro em log. Se der para se recuperar, recupere; se não, propague para cima. Mostre uma mensagem amigável ao usuário e deixe um log detalhado para a equipe. O básico é algo como catch(e) { logger.error('Falha no pagamento', { userId, orderId, error: e.message }); throw new PaymentError('Ocorreu um problema ao processar o pagamento'); }.",
+        "growth": "Você desenvolve a capacidade de projetar de forma sistemática a estratégia de tratamento de erros (recuperar, propagar, registrar). Internaliza o princípio de que todo erro precisa ser tratado por alguém, base da estabilidade do serviço e da observabilidade (observability).",
+        "retro": "Existe algum catch vazio no seu projeto atual? Faça uma busca para conferir. Quantos há?"
+      },
+      {
+        "n": 9,
+        "mistake": "Abusar de variáveis globais",
+        "situation": "Você usa variáveis globais porque é prático compartilhá-las entre várias funções. Conforme o app cresce, fica impossível rastrear qual função altera a variável global e quando, e mexer em uma funcionalidade quebra outra que parecia não ter nada a ver.",
+        "action": "Reduza ao mínimo o escopo das variáveis. Passe os dados por parâmetros de função, valores de retorno e injeção de dependência. Se precisar de gerenciamento de estado, use uma biblioteca como Redux ou Zustand, ou variáveis de instância de uma classe, para que o caminho das mudanças de estado seja fácil de rastrear.",
+        "growth": "Você entende os princípios de gerenciamento de estado e de escopo. Sente na prática o valor do pensamento da programação funcional, que minimiza efeitos colaterais, e da imutabilidade (immutability), uma habilidade central para tornar aplicações complexas previsíveis.",
+        "retro": "Há variáveis globais no seu projeto atual? Por que foram declaradas como globais?"
+      },
+      {
+        "n": 10,
+        "mistake": "Acessar objetos sem checar null/undefined",
+        "situation": "Você acessa objetos profundos, como user.profile.address.city, sem nenhuma proteção. Se houver um usuário sem perfil ou que não informou o endereço, o app crasha na hora com um erro de Cannot read property of null.",
+        "action": "Use bastante o optional chaining (user?.profile?.address?.city) e valores padrão (nullish coalescing, ?? 'Endereço não informado'). Coloque cláusulas de guarda no início da função: if (!user) return null; Se usar TypeScript, ative o strictNullChecks para garantir a segurança contra null em tempo de compilação.",
+        "growth": "Você incorpora a mentalidade da programação defensiva (Defensive Programming). O hábito de sempre se perguntar primeiro se esse valor pode não existir reduz muito os crashes em tempo de execução. Você também entende por que a segurança contra null na própria linguagem, como o Optional do Swift e o Nullable do Kotlin, é tão importante.",
+        "retro": "Você teve um erro de execução relacionado a null/undefined recentemente? Com que frequência isso acontece?"
+      }
+    ]
+  },
+  "problem": {
+    "title": "O mesmo comentário no code review de novo?",
+    "text": "Nomes de variáveis sem sentido, funções de 200 linhas, código copiado e colado. Todo sênior já passou por isso, mas a gente só descobre quando tropeça. O 100 Erros de Dev Júnior mostra esses erros antes e faz você refletir sobre o próprio trabalho para não repeti-los."
+  },
+  "features": [
+    {
+      "title": "O que acontece, o que fazer, o que aprender",
+      "text": "Cada erro é explicado em três partes: o que acontece, o que fazer e o que você aprende com ele.\nDez categorias, de hábitos de código a segurança e desempenho, só com os erros que se repetem de verdade nos times.",
+      "shot": "detail"
+    },
+    {
+      "title": "Perguntas de retrospectiva para fixar",
+      "text": "Cada erro vem com 4 perguntas de retrospectiva, 400 no total. Responda pensando nos seus projetos e o que você leu vira experiência.\nSuas respostas ficam no diário de retrospectivas, separadas por categoria, para reler quando quiser.",
+      "shot": "retro"
+    },
+    {
+      "title": "Veja o quanto você evoluiu",
+      "text": "Marque os erros que você já viveu e o progresso cresce por categoria e no total. Salve nos favoritos o que quiser rever.\nTudo sincroniza pelo iCloud entre iPhone, iPad e Mac.",
+      "shot": "progress"
+    }
+  ],
+  "steps": {
+    "title": "Comece em três passos",
+    "items": [
+      {
+        "title": "Escolha uma categoria",
+        "text": "Hábitos de código, depuração e controle de versão estão liberados de graça."
+      },
+      {
+        "title": "Leia e marque",
+        "text": "Toque em Vivido nos erros que você já cometeu."
+      },
+      {
+        "title": "Faça a retrospectiva",
+        "text": "Escreva uma resposta, mesmo curta. Ela vai para o seu diário de retrospectivas."
+      }
+    ]
+  },
+  "reference": {
+    "title": "As 10 categorias",
+    "tags": [
+      "Grátis",
+      "PRO"
+    ],
+    "rows": [
+      [
+        "Hábitos de código",
+        "#001–#010 · Grátis"
+      ],
+      [
+        "Depuração e resolução de problemas",
+        "#011–#020 · Grátis"
+      ],
+      [
+        "Controle de versão e colaboração",
+        "#021–#030 · Grátis"
+      ],
+      [
+        "Design e arquitetura",
+        "#031–#040 · PRO"
+      ],
+      [
+        "Testes e qualidade",
+        "#041–#050 · PRO"
+      ],
+      [
+        "Aprendizado e crescimento",
+        "#051–#060 · PRO"
+      ],
+      [
+        "Comunicação e colaboração",
+        "#061–#070 · PRO"
+      ],
+      [
+        "Deploy e operação",
+        "#071–#080 · PRO"
+      ],
+      [
+        "Segurança e dados",
+        "#081–#090 · PRO"
+      ],
+      [
+        "Desempenho e otimização",
+        "#091–#100 · PRO"
+      ]
+    ],
+    "note": "Cada categoria tem 10 erros, e cada erro tem 4 perguntas de retrospectiva."
+  },
+  "pricing": {
+    "title": "30 grátis. Todos os 100 com PRO.",
+    "free": {
+      "name": "Grátis",
+      "items": [
+        "As 3 primeiras categorias, 30 erros",
+        "As 120 perguntas de retrospectiva delas",
+        "Checklist, diário de retrospectivas, progresso e favoritos",
+        "Sincronização pelo iCloud (iPhone, iPad, Mac)"
+      ]
+    },
+    "pro": {
+      "name": "100 Erros de Dev Júnior PRO",
+      "items": [
+        "As outras 7 categorias, mais 70 erros (#031–#100)",
+        "Mais 280 perguntas de retrospectiva",
+        "Todas as próximas atualizações de conteúdo"
+      ],
+      "note": "Assinatura mensal, anual (até 50% mais barata que a mensal) ou compra única vitalícia."
+    },
+    "note": "Nenhum dado pessoal coletado, sem ferramentas de análise e sem anúncios."
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "q": "O que é grátis?",
+        "a": "Todos os 30 erros e suas perguntas nas categorias Hábitos de código, Depuração e resolução de problemas e Controle de versão e colaboração. Checklist, diário de retrospectivas, progresso, favoritos e sincronização pelo iCloud também são grátis."
+      },
+      {
+        "q": "Como uso o PRO em outro aparelho?",
+        "a": "Entre com o mesmo ID Apple e toque em Restaurar compras na tela de assinatura."
+      },
+      {
+        "q": "Como cancelo a assinatura?",
+        "a": "Quando quiser, em Ajustes › ID Apple › Assinaturas. A assinatura renova automaticamente se não for cancelada pelo menos 24 horas antes do fim do período atual. A compra vitalícia é paga uma vez só."
+      },
+      {
+        "q": "Meus dados não sincronizam entre aparelhos.",
+        "a": "Confira se todos os aparelhos estão conectados ao iCloud com o mesmo ID Apple e se o iCloud está ativado para este app em Ajustes. A sincronização também precisa de internet."
+      },
+      {
+        "q": "Como apago tudo?",
+        "a": "Toque em Apagar todos os dados nos ajustes do app. Marcações, respostas e favoritos são apagados, e não dá para desfazer."
+      },
+      {
+        "q": "Em quais aparelhos funciona?",
+        "a": "iPhone, iPad e Mac. O PRO é liberado em todos os aparelhos com o mesmo ID Apple."
+      },
+      {
+        "q": "Meus dados são enviados para algum lugar?",
+        "a": "Não. Suas marcações e respostas ficam só nos seus aparelhos e no seu próprio iCloud. O app não coleta dados pessoais e não tem ferramentas de análise nem anúncios."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Seja o dev que não comete\no mesmo erro duas vezes",
+    "cta": "Baixe grátis na App Store"
+  },
+  "ui": {
+    "skip": "Pular para o conteúdo",
+    "languages": "Idioma",
+    "privacy": "Política de Privacidade",
+    "contact": "Dúvidas ou sugestões? Escreva para {email}."
+  }
+}
