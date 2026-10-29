@@ -1,7 +1,9 @@
 import SwiftUI
+import LeeoKit
 
 struct OverallProgressView: View {
     @EnvironmentObject var manager: ChecklistManager
+    @EnvironmentObject var storeManager: StoreKitManager
     @State private var showResetAlert = false
 
     var body: some View {
@@ -11,6 +13,13 @@ struct OverallProgressView: View {
                     // Main progress ring
                     mainProgressCard
                         .padding(.top, 4)
+
+                    // 돌아본 실수가 쌓였을 때, 이미 PRO 인 사람에게만 드물게 응원을 부탁한다.
+                    // 아직 PRO 가 아닌 사람에게는 페이월이 맞는 길이다.
+                    if storeManager.isPremium {
+                        LeeoTipAskSlot<JuniorDevMistakesSpec>(tipJar: JuniorDevMistakesSpec.tipJar,
+                                                              reached: JuniorDevMistakesTipMoments.reached(checkedCount: manager.totalChecked))
+                    }
 
                     // Stats grid
                     statsGrid

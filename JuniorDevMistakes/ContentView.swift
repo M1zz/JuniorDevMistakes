@@ -1,5 +1,6 @@
 import SwiftUI
 import StoreKit
+import LeeoKit
 
 // MARK: - Design System
 enum AppTheme {
@@ -220,6 +221,12 @@ struct SettingsView: View {
                         }
                     }
                     .buttonStyle(.plain)
+                }
+
+                // 개발자 응원하기 — 판매 중인 팁이 있어야 선다.
+                Section {
+                    LeeoTipJarLink<JuniorDevMistakesSpec>(tipJar: JuniorDevMistakesSpec.tipJar)
+                        .font(.system(size: 15, design: .rounded))
                 }
 
                 // 데이터 섹션

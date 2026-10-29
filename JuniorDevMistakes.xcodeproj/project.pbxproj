@@ -27,6 +27,7 @@
 		A10101 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A20101 /* Localizable.xcstrings */; };
 		A10102 /* Mistakes.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A20102 /* Mistakes.xcstrings */; };
 		A10103 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A20103 /* InfoPlist.xcstrings */; };
+		EBE73A86AC3B4C5F809FEB2C /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = C37F018535764C68AB92A6E5 /* LeeoKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE73A86AC3B4C5F809FEB2C /* LeeoKit in Frameworks */,
 				CD0006 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +139,9 @@
 			);
 			dependencies = (
 			);
+			packageProductDependencies = (
+				C37F018535764C68AB92A6E5 /* LeeoKit */,
+			);
 			name = JuniorDevMistakes;
 			productName = JuniorDevMistakes;
 			productReference = A30001 /* JuniorDevMistakes.app */;
@@ -189,6 +194,9 @@
 				Base,
 			);
 			mainGroup = A50001;
+			packageReferences = (
+				BEF24E1C499D4FB7B8A86AF7 /* XCRemoteSwiftPackageReference "LeeoKit" */,
+			);
 			productRefGroup = A50003 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -395,6 +403,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEF24E1C499D4FB7B8A86AF7 /* XCRemoteSwiftPackageReference "LeeoKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.25.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C37F018535764C68AB92A6E5 /* LeeoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEF24E1C499D4FB7B8A86AF7 /* XCRemoteSwiftPackageReference "LeeoKit" */;
+			productName = LeeoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A60002 /* Project object */;
 }

@@ -1,4 +1,5 @@
 import StoreKit
+import LeeoKit
 
 @MainActor
 final class StoreKitManager: ObservableObject {
@@ -132,11 +133,54 @@ final class StoreKitManager: ObservableObject {
     private func startListening() -> Task<Void, Never> {
         Task {
             for await result in Transaction.updates {
-                if case .verified(let tx) = result {
+                // PRO 결제만 여기서 닫는다. 팁은 LeeoTipJar 가 세고 닫는다(기능을 열지 않는다).
+                if case .verified(let tx) = result, Self.allIds.contains(tx.productID) {
                     await refreshStatus()
                     await tx.finish()
                 }
             }
+        }
+    }
+}
+
+// MARK: - 팁 (LeeoKit)
+
+/// LeeoKit 은 팁 화면에만 쓴다. PRO 결제는 위의 `StoreKitManager` 가 그대로 맡는다.
+/// ⚠️ 여기서 bootstrap · 피드백 · 분석을 켜지 않는다 — 계약을 채우는 값일 뿐 아무것도 돌지 않는다.
+enum JuniorDevMistakesSpec: LeeoAppSpec {
+    static let appName = "실수100"
+    static let developerEmail = "leeo@kakao.com"
+    static let feedback = LeeoFeedbackConfig(
+        containerIdentifier: "iCloud.com.Ysoup.FeedbackHub",
+        appIdentifier: "com.leeo.JuniorDevMistakes"
+    )
+    static let legal = LeeoLegalConfig(
+        privacyURL: URL(string: "https://m1zz.github.io/JuniorDevMistakes/privacy.html")!,
+        supportURL: URL(string: "https://m1zz.github.io/JuniorDevMistakes/en/support.html")!
+    )
+    /// PRO 는 LeeoKit 밖(`StoreKitManager`)에 있다. LeeoKit 이 페이월을 그리지 않게 `.free` 로 둔다.
+    static let monetization = LeeoMonetization.free
+
+    /// 이미 PRO 인 사람이 조금 더 내고 싶을 때 내는 곳. 소모성 상품 셋, 작은 것부터.
+    /// ⚠️ 기능을 여는 상품이 아니다 — `StoreKitManager.allIds` 에 넣지 않는다.
+    @MainActor static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
+        "com.leeo.JuniorDevMistakes.tip.small",
+        "com.leeo.JuniorDevMistakes.tip.medium",
+        "com.leeo.JuniorDevMistakes.tip.large",
+    ]))
+}
+
+/// 팁을 부탁할 만한 순간 — 돌아본(경험했다고 체크한) 실수 수. 실수 하나를 체크할 때마다 는다.
+enum JuniorDevMistakesTipMoments {
+    /// 체크한 실수 수. 큰 것부터.
+    static let checked = [100, 50, 20]
+
+    /// 넘어선 순간, 인상적인 것부터.
+    static func reached(checkedCount count: Int) -> [LeeoTipMoment] {
+        checked.filter { count >= $0 }.map { threshold in
+            LeeoTipMoment(id: "checked.\(threshold)",
+                          message: String(localized: "지금까지 실수 \(count)개를 돌아봤어요",
+                                          comment: "Tip ask card: how many of the 100 mistakes the person has checked off"))
         }
     }
 }
