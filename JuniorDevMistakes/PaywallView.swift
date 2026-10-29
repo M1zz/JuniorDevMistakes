@@ -60,6 +60,7 @@ struct PaywallView: View {
                             .foregroundStyle(Color(.systemGray3))
                             .symbolRenderingMode(.hierarchical)
                     }
+                    .accessibilityLabel(Text("닫기"))
                 }
             }
         }
@@ -109,10 +110,10 @@ struct PaywallView: View {
 
                 VStack(spacing: 8) {
                     Text("PRO로 업그레이드")
-                        .font(.system(size: 26, weight: .bold, design: .rounded))
+                        .font(.system(.title, design: .rounded, weight: .bold))
                         .foregroundStyle(.white)
                     Text("실수 70개가 더 기다리고 있어요\n지금 잠금을 해제하세요")
-                        .font(.system(size: 15, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded))
                         .foregroundStyle(.white.opacity(0.85))
                         .multilineTextAlignment(.center)
                         .lineSpacing(3)
@@ -128,7 +129,7 @@ struct PaywallView: View {
     private var featuresView: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text("PRO 플랜 포함 내용")
-                .font(.system(size: 13, weight: .semibold, design: .rounded))
+                .font(.system(.footnote, design: .rounded, weight: .semibold))
                 .foregroundStyle(.secondary)
                 .padding(.horizontal, 20)
                 .padding(.top, 28)
@@ -146,7 +147,7 @@ struct PaywallView: View {
                                 .foregroundStyle(AppTheme.primary)
                         }
                         Text(item.1)
-                            .font(.system(size: 15, design: .rounded))
+                            .font(.system(.subheadline, design: .rounded))
                             .foregroundStyle(.primary)
                         Spacer()
                         Image(systemName: "checkmark")
@@ -172,7 +173,7 @@ struct PaywallView: View {
     private var plansView: some View {
         VStack(spacing: 12) {
             Text("플랜 선택")
-                .font(.system(size: 13, weight: .semibold, design: .rounded))
+                .font(.system(.footnote, design: .rounded, weight: .semibold))
                 .foregroundStyle(.secondary)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 20)
@@ -183,7 +184,7 @@ struct PaywallView: View {
                 if storeManager.loadFailed {
                     VStack(spacing: 12) {
                         Text("상품 정보를 불러오지 못했습니다.\n네트워크 연결을 확인해 주세요.")
-                            .font(.system(size: 13, design: .rounded))
+                            .font(.system(.footnote, design: .rounded))
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)
                             .lineSpacing(3)
@@ -191,7 +192,7 @@ struct PaywallView: View {
                             Task { await storeManager.loadProducts() }
                         } label: {
                             Text("다시 시도")
-                                .font(.system(size: 14, weight: .semibold, design: .rounded))
+                                .font(.system(.subheadline, design: .rounded, weight: .semibold))
                                 .foregroundStyle(AppTheme.primary)
                         }
                     }
@@ -201,7 +202,7 @@ struct PaywallView: View {
                     VStack(spacing: 12) {
                         ProgressView()
                         Text("상품 정보를 불러오는 중...")
-                            .font(.system(size: 13, design: .rounded))
+                            .font(.system(.footnote, design: .rounded))
                             .foregroundStyle(.secondary)
                     }
                     .frame(maxWidth: .infinity)
@@ -233,7 +234,7 @@ struct PaywallView: View {
                         ProgressView().tint(.white)
                     } else {
                         Text("지금 시작하기")
-                            .font(.system(size: 17, weight: .bold, design: .rounded))
+                            .font(.system(.body, design: .rounded, weight: .bold))
                             .foregroundStyle(.white)
                     }
                 }
@@ -252,7 +253,7 @@ struct PaywallView: View {
 
             if let terms = selectedTermsLine {
                 Text(terms)
-                    .font(.system(size: 12, weight: .medium, design: .rounded))
+                    .font(.system(.caption, design: .rounded, weight: .medium))
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
@@ -273,13 +274,13 @@ struct PaywallView: View {
                         ProgressView().scaleEffect(0.8)
                     }
                     Text("구매 복원하기")
-                        .font(.system(size: 14, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded))
                 }
                 .foregroundStyle(AppTheme.primary)
             }
 
             Text("월간·연간 구독은 자동으로 갱신되며, 현재 기간 종료 24시간 전까지 취소하지 않으면 결제됩니다. 구독은 Apple ID 설정에서 언제든지 관리·취소할 수 있습니다.")
-                .font(.system(size: 11, design: .rounded))
+                .font(.system(.caption2, design: .rounded))
                 .foregroundStyle(.tertiary)
                 .multilineTextAlignment(.center)
                 .lineSpacing(3)
@@ -294,7 +295,7 @@ struct PaywallView: View {
                     Text("개인정보처리방침").underline()
                 }
             }
-            .font(.system(size: 13, weight: .semibold, design: .rounded))
+            .font(.system(.footnote, design: .rounded, weight: .semibold))
             .tint(AppTheme.primary)
             .padding(.top, 6)
         }
@@ -355,11 +356,11 @@ struct ProductOptionCard: View {
                 VStack(alignment: .leading, spacing: 3) {
                     HStack(spacing: 6) {
                         Text(titleLabel)
-                            .font(.system(size: 15, weight: .semibold, design: .rounded))
+                            .font(.system(.subheadline, design: .rounded, weight: .semibold))
                             .foregroundStyle(.primary)
                         if isBestValue {
                             Text("인기")
-                                .font(.system(size: 10, weight: .bold, design: .rounded))
+                                .font(.system(.caption2, design: .rounded, weight: .bold))
                                 .foregroundStyle(.white)
                                 .padding(.horizontal, 7)
                                 .padding(.vertical, 2)
@@ -369,7 +370,7 @@ struct ProductOptionCard: View {
                     }
                     if let subtitle = subtitleLabel {
                         Text(subtitle)
-                            .font(.system(size: 11, design: .rounded))
+                            .font(.system(.caption2, design: .rounded))
                             .foregroundStyle(product.id == StoreKitManager.yearlyId ? AppTheme.actionGreen : .secondary)
                     }
                 }
@@ -378,10 +379,10 @@ struct ProductOptionCard: View {
 
                 HStack(alignment: .lastTextBaseline, spacing: 1) {
                     Text(product.displayPrice)
-                        .font(.system(size: 16, weight: .bold, design: .rounded))
+                        .font(.system(.callout, design: .rounded, weight: .bold))
                         .foregroundStyle(isSelected ? AppTheme.primary : .primary)
                     Text(periodLabel)
-                        .font(.system(size: 11, design: .rounded))
+                        .font(.system(.caption2, design: .rounded))
                         .foregroundStyle(.secondary)
                 }
             }

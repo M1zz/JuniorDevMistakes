@@ -58,16 +58,17 @@ struct RetroJournalView: View {
                     .fill(AppTheme.retroAmber.opacity(0.1))
                     .frame(width: 96, height: 96)
                 Image(systemName: "book.closed")
+                    .accessibilityHidden(true)
                     .font(.system(size: 40, weight: .light))
                     .foregroundStyle(AppTheme.retroAmber.opacity(0.5))
             }
 
             VStack(spacing: 8) {
                 Text("회고 기록이 없습니다")
-                    .font(.system(size: 17, weight: .semibold, design: .rounded))
+                    .font(.system(.body, design: .rounded, weight: .semibold))
                     .foregroundStyle(.primary)
                 Text("각 실수 항목의 회고 질문에\n답변을 작성해보세요")
-                    .font(.system(size: 14, design: .rounded))
+                    .font(.system(.subheadline, design: .rounded))
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
                     .lineSpacing(2)
@@ -160,7 +161,7 @@ struct RetroEntryCard: View {
                 // Header
                 HStack {
                     Text(mistake.numberString)
-                        .font(.system(size: 11, weight: .bold, design: .monospaced))
+                        .font(.system(.caption2, design: .monospaced, weight: .bold))
                         .foregroundStyle(.white)
                         .padding(.horizontal, 7)
                         .padding(.vertical, 3)
@@ -176,7 +177,7 @@ struct RetroEntryCard: View {
                         )
 
                     Text("Q\(entry.questionIndex + 1)")
-                        .font(.system(size: 11, weight: .bold, design: .rounded))
+                        .font(.system(.caption2, design: .rounded, weight: .bold))
                         .foregroundStyle(AppTheme.retroAmber)
                         .padding(.horizontal, 7)
                         .padding(.vertical, 3)
@@ -186,20 +187,20 @@ struct RetroEntryCard: View {
                     Spacer()
 
                     Text(entry.date, style: .date)
-                        .font(.system(size: 11, design: .rounded))
+                        .font(.system(.caption2, design: .rounded))
                         .foregroundStyle(.tertiary)
                 }
 
                 // Mistake title
                 Text(mistake.mistake)
-                    .font(.system(size: 12, weight: .medium, design: .rounded))
+                    .font(.system(.caption, design: .rounded, weight: .medium))
                     .foregroundStyle(.secondary)
-                    .lineLimit(1)
+                    .lineLimit(2)
 
                 // Question
                 if entry.questionIndex < mistake.retroQuestions.count {
                     Text(mistake.retroQuestions[entry.questionIndex])
-                        .font(.system(size: 12, weight: .medium, design: .rounded))
+                        .font(.system(.caption, design: .rounded, weight: .medium))
                         .foregroundStyle(AppTheme.retroAmber)
                         .lineLimit(2)
                         .lineSpacing(1)
@@ -207,7 +208,7 @@ struct RetroEntryCard: View {
 
                 // Answer
                 Text(entry.answer)
-                    .font(.system(size: 14, design: .rounded))
+                    .font(.system(.subheadline, design: .rounded))
                     .foregroundStyle(.primary)
                     .fixedSize(horizontal: false, vertical: true)
                     .lineSpacing(3)

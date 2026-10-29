@@ -32,7 +32,7 @@ struct OverallProgressView: View {
                         showResetAlert = true
                     } label: {
                         Label("전체 초기화", systemImage: "arrow.counterclockwise")
-                            .font(.system(size: 14, weight: .medium, design: .rounded))
+                            .font(.system(.subheadline, design: .rounded, weight: .medium))
                             .foregroundStyle(.red.opacity(0.6))
                             .padding(.horizontal, 16)
                             .padding(.vertical, 8)
@@ -90,13 +90,16 @@ struct OverallProgressView: View {
                         .font(.system(size: 52, weight: .bold, design: .rounded))
                         .foregroundStyle(AppTheme.primary)
                     Text("/ 100")
-                        .font(.system(size: 16, weight: .medium, design: .rounded))
+                        .font(.system(.callout, design: .rounded, weight: .medium))
                         .foregroundStyle(.secondary)
                 }
             }
+            // 큰 숫자는 고리 안 장식이라 고정 크기. VoiceOver 는 "N / 100" 으로 읽는다
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(Text("\(manager.totalChecked) / 100"))
 
             Text(progressMessage)
-                .font(.system(size: 14, weight: .medium, design: .rounded))
+                .font(.system(.subheadline, design: .rounded, weight: .medium))
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
                 .lineSpacing(3)
@@ -159,10 +162,11 @@ struct OverallProgressView: View {
         VStack(alignment: .leading, spacing: 16) {
             HStack {
                 Text("나의 실수 100")
-                    .font(.system(size: 17, weight: .bold, design: .rounded))
+                    .font(.system(.body, design: .rounded, weight: .bold))
+                    .accessibilityAddTraits(.isHeader)
                 Spacer()
                 Text("\(manager.totalChecked) / 100")
-                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+                    .font(.system(.footnote, design: .rounded, weight: .semibold))
                     .foregroundStyle(.secondary)
             }
             .padding(.top, 4)
@@ -184,6 +188,7 @@ struct OverallProgressView: View {
                         .animation(.spring(response: 0.4), value: checked)
                 }
             }
+            .accessibilityHidden(true)  // 칸 100개 대신 위의 "N / 100" 을 읽는다
         }
         .padding(20)
         .background(
@@ -210,15 +215,17 @@ struct StatCard: View {
                     .font(.system(size: 20))
                     .foregroundStyle(color)
             }
+            .accessibilityHidden(true)
             Text(value)
-                .font(.system(size: 30, weight: .bold, design: .rounded))
+                .font(.system(.title, design: .rounded, weight: .bold))
                 .foregroundStyle(.primary)
             Text(label)
-                .font(.system(size: 12, weight: .medium, design: .rounded))
+                .font(.system(.caption, design: .rounded, weight: .medium))
                 .foregroundStyle(.secondary)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 18)
+        .accessibilityElement(children: .combine)
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(.background)

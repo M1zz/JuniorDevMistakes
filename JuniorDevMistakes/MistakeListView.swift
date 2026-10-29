@@ -16,9 +16,10 @@ struct MistakeListView: View {
                     RoundedRectangle(cornerRadius: 2)
                         .fill(color)
                         .frame(width: 3)
+                        .accessibilityHidden(true)
 
                     Text(category.intro)
-                        .font(.system(size: 14, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded))
                         .foregroundStyle(.secondary)
                         .lineSpacing(3)
                         .padding(.vertical, 4)
@@ -36,14 +37,15 @@ struct MistakeListView: View {
             } header: {
                 HStack {
                     Text("\(category.items.count)개 항목")
-                        .font(.system(size: 12, weight: .medium, design: .rounded))
+                        .font(.system(.caption, design: .rounded, weight: .medium))
                     Spacer()
                     HStack(spacing: 4) {
                         Image(systemName: "checkmark.circle.fill")
                             .font(.system(size: 10))
                             .foregroundStyle(AppTheme.actionGreen)
+                            .accessibilityHidden(true)
                         Text("\(manager.checkedCount(for: category))개 완료")
-                            .font(.system(size: 12, weight: .medium, design: .rounded))
+                            .font(.system(.caption, design: .rounded, weight: .medium))
                             .foregroundStyle(AppTheme.actionGreen)
                     }
                 }
@@ -87,14 +89,13 @@ struct MistakeRow: View {
             // Content
             VStack(alignment: .leading, spacing: 5) {
                 Text(item.numberString)
-                    .font(.system(size: 11, weight: .bold, design: .monospaced))
+                    .font(.system(.caption2, design: .monospaced, weight: .bold))
                     .foregroundStyle(AppTheme.primary.opacity(0.5))
 
                 Text(item.mistake)
-                    .font(.system(size: 15, weight: .medium, design: .rounded))
+                    .font(.system(.subheadline, design: .rounded, weight: .medium))
                     .foregroundStyle(isChecked ? .secondary : .primary)
                     .strikethrough(isChecked, color: .secondary.opacity(0.5))
-                    .lineLimit(2)
 
                 // Status badges
                 HStack(spacing: 6) {
@@ -103,7 +104,7 @@ struct MistakeRow: View {
                             Image(systemName: "text.badge.checkmark")
                                 .font(.system(size: 9))
                             Text("회고 완료")
-                                .font(.system(size: 10, weight: .medium, design: .rounded))
+                                .font(.system(.caption2, design: .rounded, weight: .medium))
                         }
                         .foregroundStyle(AppTheme.retroAmber)
                         .padding(.horizontal, 6)
@@ -115,10 +116,17 @@ struct MistakeRow: View {
                         Image(systemName: "bookmark.fill")
                             .font(.system(size: 10))
                             .foregroundStyle(AppTheme.growthBlue)
+                            .accessibilityLabel(Text("북마크"))
                     }
                 }
             }
         }
         .padding(.vertical, 4)
+        // 행 하나로 읽고, 체크 원은 이름 붙은 동작으로 (VoiceOver 에선 행 안의 작은 단추에 닿기 어렵다)
+        .accessibilityElement(children: .combine)
+        .accessibilityValue(isChecked ? Text("경험 완료") : Text(verbatim: ""))
+        .accessibilityAction(named: Text("경험 완료")) {
+            manager.toggle(item.id)
+        }
     }
 }

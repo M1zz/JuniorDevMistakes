@@ -5,7 +5,13 @@ import LeeoKit
 // MARK: - Design System
 enum AppTheme {
     // Primary palette
-    static let primary = Color(red: 0.25, green: 0.22, blue: 0.52)        // Deep indigo
+    static let brandIndigo = Color(red: 0.25, green: 0.22, blue: 0.52)    // Deep indigo (그라데이션·흰 배경용 고정색)
+    /// 글자·강조색. 다크 모드에서는 어두운 배경에서 읽히도록 밝은 남색
+    static let primary = Color(uiColor: UIColor { traits in
+        traits.userInterfaceStyle == .dark
+            ? UIColor(red: 0.55, green: 0.51, blue: 0.90, alpha: 1)
+            : UIColor(red: 0.25, green: 0.22, blue: 0.52, alpha: 1)
+    })
     static let primaryLight = Color(red: 0.38, green: 0.35, blue: 0.68)   // Light indigo
     static let accent = Color(red: 0.94, green: 0.42, blue: 0.42)         // Warm coral
     static let accentSoft = Color(red: 1.0, green: 0.62, blue: 0.48)      // Soft peach
@@ -32,7 +38,7 @@ enum AppTheme {
 
     // Gradient presets
     static let headerGradient = LinearGradient(
-        colors: [primary, Color(red: 0.35, green: 0.28, blue: 0.62), Color(red: 0.50, green: 0.35, blue: 0.72)],
+        colors: [brandIndigo, Color(red: 0.35, green: 0.28, blue: 0.62), Color(red: 0.50, green: 0.35, blue: 0.72)],
         startPoint: .topLeading,
         endPoint: .bottomTrailing
     )
@@ -111,13 +117,14 @@ struct BookmarkListView: View {
                                 .font(.system(size: 36, weight: .light))
                                 .foregroundStyle(AppTheme.primary.opacity(0.4))
                         }
+                        .accessibilityHidden(true)
 
                         VStack(spacing: 8) {
                             Text("북마크한 항목이 없습니다")
-                                .font(.system(size: 17, weight: .semibold, design: .rounded))
+                                .font(.system(.body, design: .rounded, weight: .semibold))
                                 .foregroundStyle(.primary)
                             Text("상세 화면에서 북마크 버튼을 눌러\n나중에 볼 항목을 저장하세요")
-                                .font(.system(size: 14, design: .rounded))
+                                .font(.system(.subheadline, design: .rounded))
                                 .foregroundStyle(.secondary)
                                 .multilineTextAlignment(.center)
                                 .lineSpacing(2)
@@ -164,9 +171,9 @@ struct SettingsView: View {
                             }
                             VStack(alignment: .leading, spacing: 2) {
                                 Text("PRO 이용 중")
-                                    .font(.system(size: 15, weight: .bold, design: .rounded))
+                                    .font(.system(.subheadline, design: .rounded, weight: .bold))
                                 Text("100개 실수 전체 이용 가능")
-                                    .font(.system(size: 12, design: .rounded))
+                                    .font(.system(.caption, design: .rounded))
                                     .foregroundStyle(.secondary)
                             }
                         }
@@ -186,10 +193,10 @@ struct SettingsView: View {
                                 }
                                 VStack(alignment: .leading, spacing: 2) {
                                     Text("PRO로 업그레이드")
-                                        .font(.system(size: 15, weight: .bold, design: .rounded))
+                                        .font(.system(.subheadline, design: .rounded, weight: .bold))
                                         .foregroundStyle(.primary)
                                     Text("나머지 70개 실수를 잠금 해제하세요")
-                                        .font(.system(size: 12, design: .rounded))
+                                        .font(.system(.caption, design: .rounded))
                                         .foregroundStyle(.secondary)
                                 }
                                 Spacer()
@@ -212,7 +219,7 @@ struct SettingsView: View {
                     } label: {
                         HStack {
                             Label("구매 복원하기", systemImage: "arrow.clockwise")
-                                .font(.system(size: 15, design: .rounded))
+                                .font(.system(.subheadline, design: .rounded))
                                 .foregroundStyle(.primary)
                             Spacer()
                             if storeManager.isLoading {
@@ -226,7 +233,7 @@ struct SettingsView: View {
                 // 개발자 응원하기 — 판매 중인 팁이 있어야 선다.
                 Section {
                     LeeoTipJarLink<JuniorDevMistakesSpec>(tipJar: JuniorDevMistakesSpec.tipJar)
-                        .font(.system(size: 15, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded))
                 }
 
                 // 데이터 섹션
@@ -235,23 +242,23 @@ struct SettingsView: View {
                         showResetAlert = true
                     } label: {
                         Label("모든 데이터 초기화", systemImage: "trash")
-                            .font(.system(size: 15, design: .rounded))
+                            .font(.system(.subheadline, design: .rounded))
                     }
                 } header: {
                     Text("데이터")
                 } footer: {
                     Text("체크리스트, 회고 기록, 북마크가 모두 삭제됩니다.")
-                        .font(.system(size: 11, design: .rounded))
+                        .font(.system(.caption2, design: .rounded))
                 }
 
                 // 정보 섹션
                 Section {
                     HStack {
                         Text("버전")
-                            .font(.system(size: 15, design: .rounded))
+                            .font(.system(.subheadline, design: .rounded))
                         Spacer()
                         Text(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0")
-                            .font(.system(size: 15, design: .rounded))
+                            .font(.system(.subheadline, design: .rounded))
                             .foregroundStyle(.secondary)
                     }
                 } header: {

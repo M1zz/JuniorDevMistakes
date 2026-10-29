@@ -60,7 +60,7 @@ struct OnboardingView: View {
                     Spacer()
                     if !isLastPage {
                         Button("건너뛰기") { onFinish() }
-                            .font(.system(size: 15, design: .rounded))
+                            .font(.system(.subheadline, design: .rounded))
                             .foregroundStyle(.white.opacity(0.6))
                             .padding(.horizontal, 24)
                             .padding(.top, 16)
@@ -88,6 +88,7 @@ struct OnboardingView: View {
                                 .animation(.spring(response: 0.3, dampingFraction: 0.7), value: currentPage)
                         }
                     }
+                    .accessibilityHidden(true)
 
                     // 버튼
                     Button {
@@ -100,8 +101,8 @@ struct OnboardingView: View {
                         }
                     } label: {
                         Text(isLastPage ? "시작하기" : "다음")
-                            .font(.system(size: 17, weight: .bold, design: .rounded))
-                            .foregroundStyle(AppTheme.primary)
+                            .font(.system(.body, design: .rounded, weight: .bold))
+                            .foregroundStyle(AppTheme.brandIndigo)
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 16)
                             .background(.white)
@@ -115,6 +116,14 @@ struct OnboardingView: View {
     }
 
     private func pageView(_ page: Page) -> some View {
+        // 큰 글씨에서 한 화면에 안 들어가면 스크롤
+        ViewThatFits(in: .vertical) {
+            pageContent(page)
+            ScrollView { pageContent(page) }
+        }
+    }
+
+    private func pageContent(_ page: Page) -> some View {
         VStack(spacing: 32) {
             Spacer()
 
@@ -131,17 +140,19 @@ struct OnboardingView: View {
                     .foregroundStyle(page.iconColor)
                     .symbolRenderingMode(.hierarchical)
             }
+            .accessibilityHidden(true)
 
             // 텍스트
             VStack(spacing: 16) {
                 Text(page.title)
-                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .font(.system(.title, design: .rounded, weight: .bold))
                     .foregroundStyle(.white)
+                    .accessibilityAddTraits(.isHeader)
                     .multilineTextAlignment(.center)
                     .lineSpacing(4)
 
                 Text(page.description)
-                    .font(.system(size: 16, design: .rounded))
+                    .font(.system(.callout, design: .rounded))
                     .foregroundStyle(.white.opacity(0.72))
                     .multilineTextAlignment(.center)
                     .lineSpacing(4)

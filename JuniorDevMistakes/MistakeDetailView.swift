@@ -43,6 +43,8 @@ struct MistakeDetailView: View {
                             .foregroundStyle(manager.isBookmarked(item.id) ? AppTheme.accent : .secondary)
                             .symbolEffect(.bounce, value: manager.isBookmarked(item.id))
                     }
+                    .accessibilityLabel(Text("북마크"))
+                    .accessibilityAddTraits(manager.isBookmarked(item.id) ? .isSelected : [])
 
                     Button {
                         withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
@@ -54,6 +56,8 @@ struct MistakeDetailView: View {
                             .foregroundStyle(manager.isChecked(item.id) ? AppTheme.actionGreen : .secondary)
                             .symbolEffect(.bounce, value: manager.isChecked(item.id))
                     }
+                    .accessibilityLabel(Text("경험 완료"))
+                    .accessibilityAddTraits(manager.isChecked(item.id) ? .isSelected : [])
                 }
             }
         }
@@ -90,7 +94,7 @@ struct MistakeDetailView: View {
             VStack(alignment: .leading, spacing: 12) {
                 HStack {
                     Text(item.numberString)
-                        .font(.system(size: 14, weight: .bold, design: .monospaced))
+                        .font(.system(.subheadline, design: .monospaced, weight: .bold))
                         .foregroundStyle(.white.opacity(0.6))
                         .padding(.horizontal, 10)
                         .padding(.vertical, 4)
@@ -101,7 +105,7 @@ struct MistakeDetailView: View {
 
                     if manager.isChecked(item.id) {
                         Label("경험 완료", systemImage: "checkmark.seal.fill")
-                            .font(.system(size: 12, weight: .semibold, design: .rounded))
+                            .font(.system(.caption, design: .rounded, weight: .semibold))
                             .foregroundStyle(.white)
                             .padding(.horizontal, 12)
                             .padding(.vertical, 6)
@@ -111,8 +115,9 @@ struct MistakeDetailView: View {
                 }
 
                 Text(item.mistake)
-                    .font(.system(size: 22, weight: .bold, design: .rounded))
+                    .font(.system(.title2, design: .rounded, weight: .bold))
                     .foregroundStyle(.white)
+                    .accessibilityAddTraits(.isHeader)
                     .fixedSize(horizontal: false, vertical: true)
                     .lineSpacing(2)
             }
@@ -157,12 +162,13 @@ struct MistakeDetailView: View {
                 Image(systemName: "questionmark.bubble.fill")
                     .font(.system(size: 18))
                     .foregroundStyle(AppTheme.retroAmber)
+                    .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
                     Text("회고 질문")
-                        .font(.system(size: 16, weight: .bold, design: .rounded))
+                        .font(.system(.callout, design: .rounded, weight: .bold))
                         .foregroundStyle(AppTheme.retroAmber)
                     Text("실수 후 스스로에게 물어보세요")
-                        .font(.system(size: 12, design: .rounded))
+                        .font(.system(.caption, design: .rounded))
                         .foregroundStyle(.secondary)
                 }
             }
@@ -193,11 +199,11 @@ struct MistakeDetailView: View {
                         .font(.system(size: 16))
                         .foregroundStyle(AppTheme.retroAmber)
                     Text("나의 회고 기록")
-                        .font(.system(size: 16, weight: .bold, design: .rounded))
+                        .font(.system(.callout, design: .rounded, weight: .bold))
                 }
                 Spacer()
                 Text("\(manager.entries(for: item.id).count)개")
-                    .font(.system(size: 12, weight: .semibold, design: .rounded))
+                    .font(.system(.caption, design: .rounded, weight: .semibold))
                     .foregroundStyle(AppTheme.retroAmber)
                     .padding(.horizontal, 8)
                     .padding(.vertical, 3)
@@ -209,7 +215,7 @@ struct MistakeDetailView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     HStack {
                         Text("Q\(entry.questionIndex + 1)")
-                            .font(.system(size: 11, weight: .bold, design: .rounded))
+                            .font(.system(.caption2, design: .rounded, weight: .bold))
                             .foregroundStyle(.white)
                             .padding(.horizontal, 8)
                             .padding(.vertical, 3)
@@ -225,7 +231,7 @@ struct MistakeDetailView: View {
                         Spacer()
 
                         Text(entry.date, style: .date)
-                            .font(.system(size: 11, design: .rounded))
+                            .font(.system(.caption2, design: .rounded))
                             .foregroundStyle(.tertiary)
 
                         Button {
@@ -236,10 +242,11 @@ struct MistakeDetailView: View {
                                 .foregroundStyle(.red.opacity(0.4))
                         }
                         .buttonStyle(.plain)
+                        .accessibilityLabel(Text("삭제"))
                     }
 
                     Text(entry.answer)
-                        .font(.system(size: 14, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded))
                         .foregroundStyle(.primary)
                         .fixedSize(horizontal: false, vertical: true)
                         .lineSpacing(3)
@@ -275,14 +282,16 @@ struct ContentSection: View {
                         RoundedRectangle(cornerRadius: 8)
                             .fill(color)
                     )
+                    .accessibilityHidden(true)
 
                 Text(title)
-                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .font(.system(.callout, design: .rounded, weight: .bold))
                     .foregroundStyle(color)
+                    .accessibilityAddTraits(.isHeader)
             }
 
             Text(content)
-                .font(.system(size: 14, design: .rounded))
+                .font(.system(.subheadline, design: .rounded))
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
                 .lineSpacing(4)
@@ -306,7 +315,7 @@ struct RetroQuestionCard: View {
         Button(action: onTap) {
             HStack(alignment: .top, spacing: 12) {
                 Text("Q\(questionIndex + 1)")
-                    .font(.system(size: 12, weight: .bold, design: .rounded))
+                    .font(.system(.caption, design: .rounded, weight: .bold))
                     .foregroundStyle(.white)
                     .frame(width: 30, height: 30)
                     .background(
@@ -319,7 +328,7 @@ struct RetroQuestionCard: View {
                     )
 
                 Text(question)
-                    .font(.system(size: 14, design: .rounded))
+                    .font(.system(.subheadline, design: .rounded))
                     .foregroundStyle(.primary)
                     .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.leading)
@@ -361,11 +370,11 @@ struct RetroAnswerSheet: View {
                 // Context card
                 VStack(alignment: .leading, spacing: 8) {
                     Text(item.numberString)
-                        .font(.system(size: 11, weight: .bold, design: .monospaced))
+                        .font(.system(.caption2, design: .monospaced, weight: .bold))
                         .foregroundStyle(AppTheme.primary.opacity(0.5))
 
                     Text(item.mistake)
-                        .font(.system(size: 14, weight: .medium, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded, weight: .medium))
                         .foregroundStyle(.secondary)
                         .lineSpacing(2)
                 }
@@ -379,10 +388,10 @@ struct RetroAnswerSheet: View {
                 // The question
                 HStack(alignment: .top, spacing: 10) {
                     Text("Q\(questionIndex + 1)")
-                        .font(.system(size: 13, weight: .bold, design: .rounded))
+                        .font(.system(.footnote, design: .rounded, weight: .bold))
                         .foregroundStyle(AppTheme.retroAmber)
                     Text(item.retroQuestions[questionIndex])
-                        .font(.system(size: 15, weight: .semibold, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded, weight: .semibold))
                         .fixedSize(horizontal: false, vertical: true)
                         .lineSpacing(2)
                 }
@@ -392,7 +401,7 @@ struct RetroAnswerSheet: View {
                     .focused($isFocused)
                     .frame(minHeight: 150)
                     .padding(10)
-                    .font(.system(size: 14, design: .rounded))
+                    .font(.system(.subheadline, design: .rounded))
                     .background(Color(.systemGray6))
                     .clipShape(RoundedRectangle(cornerRadius: 14))
                     .overlay(
@@ -403,7 +412,7 @@ struct RetroAnswerSheet: View {
                         Group {
                             if answer.isEmpty {
                                 Text("여기에 답변을 작성하세요...")
-                                    .font(.system(size: 14, design: .rounded))
+                                    .font(.system(.subheadline, design: .rounded))
                                     .foregroundStyle(.tertiary)
                                     .padding(.leading, 14)
                                     .padding(.top, 18)
@@ -422,7 +431,7 @@ struct RetroAnswerSheet: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("취소") { dismiss() }
-                        .font(.system(size: 15, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded))
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("저장") {
@@ -435,7 +444,7 @@ struct RetroAnswerSheet: View {
                         dismiss()
                     }
                     .disabled(answer.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
-                    .font(.system(size: 15, weight: .bold, design: .rounded))
+                    .font(.system(.subheadline, design: .rounded, weight: .bold))
                     .foregroundStyle(answer.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? .secondary : AppTheme.primary)
                 }
             }

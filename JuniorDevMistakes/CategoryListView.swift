@@ -68,13 +68,14 @@ struct CategoryListView: View {
                 Image(systemName: "crown.fill")
                     .font(.system(size: 16))
                     .foregroundStyle(AppTheme.retroAmber)
+                    .accessibilityHidden(true)
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text("\(lockedCount)개 카테고리가 잠겨 있습니다")
-                        .font(.system(size: 14, weight: .semibold, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded, weight: .semibold))
                         .foregroundStyle(.primary)
                     Text("PRO로 업그레이드하여 전체 학습하기")
-                        .font(.system(size: 12, design: .rounded))
+                        .font(.system(.caption, design: .rounded))
                         .foregroundStyle(.secondary)
                 }
 
@@ -114,10 +115,10 @@ struct CategoryListView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("나의 성장 여정")
-                        .font(.system(size: 22, weight: .bold, design: .rounded))
+                        .font(.system(.title2, design: .rounded, weight: .bold))
                         .foregroundStyle(.white)
                     Text("\(manager.totalChecked) / 100 경험 완료")
-                        .font(.system(size: 15, weight: .medium, design: .rounded))
+                        .font(.system(.subheadline, design: .rounded, weight: .medium))
                         .foregroundStyle(.white.opacity(0.8))
                 }
                 Spacer()
@@ -132,13 +133,17 @@ struct CategoryListView: View {
                         .rotationEffect(.degrees(-90))
                         .animation(.spring(response: 0.8), value: manager.progress)
                     Text("\(Int(manager.progress * 100))%")
-                        .font(.system(size: 16, weight: .bold, design: .rounded))
+                        .font(.system(.callout, design: .rounded, weight: .bold))
                         .foregroundStyle(.white)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
+                        .padding(6)
                 }
             }
             .padding(20)
         }
         .clipShape(RoundedRectangle(cornerRadius: 20))
+        .accessibilityElement(children: .combine)
         .shadow(color: AppTheme.primary.opacity(0.3), radius: 12, y: 6)
     }
 }
@@ -172,6 +177,7 @@ struct CategoryCard: View {
                     .font(.system(size: 22, weight: .medium))
                     .foregroundStyle(isLocked ? color.opacity(0.35) : color)
             }
+            .accessibilityHidden(true)
             .overlay(alignment: .bottomTrailing) {
                 if isLocked {
                     ZStack {
@@ -190,14 +196,14 @@ struct CategoryCard: View {
             VStack(alignment: .leading, spacing: 8) {
                 HStack(spacing: 6) {
                     Text("\(category.id + 1).")
-                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                        .font(.system(.caption, design: .rounded, weight: .semibold))
                         .foregroundStyle(color.opacity(0.7))
                     Text(category.title)
-                        .font(.system(size: 16, weight: .bold, design: .rounded))
+                        .font(.system(.callout, design: .rounded, weight: .bold))
                         .foregroundStyle(isLocked ? .secondary : .primary)
                     if isLocked {
                         Text("PRO")
-                            .font(.system(size: 9, weight: .bold, design: .rounded))
+                            .font(.system(.caption2, design: .rounded, weight: .bold))
                             .foregroundStyle(.white)
                             .padding(.horizontal, 5)
                             .padding(.vertical, 2)
@@ -208,7 +214,7 @@ struct CategoryCard: View {
 
                 if isLocked {
                     Text("구독하여 잠금 해제")
-                        .font(.system(size: 12, design: .rounded))
+                        .font(.system(.caption, design: .rounded))
                         .foregroundStyle(.tertiary)
                 } else {
                     GeometryReader { geo in
@@ -229,6 +235,7 @@ struct CategoryCard: View {
                         }
                     }
                     .frame(height: 6)
+                    .accessibilityHidden(true)  // 오른쪽 "3/10" 이 같은 내용을 읽어 준다
                 }
             }
 
@@ -238,7 +245,7 @@ struct CategoryCard: View {
                     .foregroundStyle(.quaternary)
             } else {
                 Text("\(checked)/\(total)")
-                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+                    .font(.system(.footnote, design: .rounded, weight: .semibold))
                     .foregroundStyle(color)
                     .padding(.horizontal, 8)
                     .padding(.vertical, 4)
