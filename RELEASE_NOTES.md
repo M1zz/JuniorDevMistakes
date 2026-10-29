@@ -1,5 +1,151 @@
 # 실수 100 릴리즈 노트
 
+## 1.0.2
+
+### 앱스토어 (한국어)
+
+고마울 때 개발자에게 작은 팁을 보낼 수 있어요
+VoiceOver와 음성 제어로 더 편하게 쓸 수 있어요
+큰 글씨와 다크 모드에서도 보기 편해졌어요
+
+### 앱스토어 (영어)
+
+Leave a small tip if the app helps you
+Better with VoiceOver and Voice Control
+Clearer with larger text and Dark Mode
+
+### 앱스토어 (영어(영국))
+
+Leave a small tip if the app helps you
+Better with VoiceOver and Voice Control
+Clearer with larger text and Dark Mode
+
+### 앱스토어 (중국어 간체)
+
+想表达感谢时，可以给开发者一点小费
+使用旁白和语音控制时更加顺手
+大字体和深色模式下看得更清楚
+
+### 앱스토어 (중국어 번체)
+
+想表達感謝時，可以給開發者一點小費
+使用旁白和語音控制時更加順手
+大字體和深色模式下看得更清楚
+
+### 앱스토어 (일본어)
+
+気に入ったら開発者に小さなチップを送れます
+VoiceOverや音声コントロールで使いやすくなりました
+大きな文字やダークモードでも見やすくなりました
+
+### 앱스토어 (러시아어)
+
+Можно оставить разработчику чаевые
+Удобно с VoiceOver и Управлением голосом
+Удобнее с крупным текстом и тёмной темой
+
+### 앱스토어 (스페인어)
+
+Deja una pequeña propina si te gusta
+Mejor con VoiceOver y Control por voz
+Mejor con texto grande y modo oscuro
+
+### 앱스토어 (독일어)
+
+Sag Danke mit einem kleinen Trinkgeld
+Besser mit VoiceOver und Sprachsteuerung
+Großer Text und Dunkelmodus verbessert
+
+### 앱스토어 (프랑스어)
+
+Dites merci avec un petit pourboire
+Pensé pour VoiceOver et Contrôle vocal
+Mieux en gros texte et en mode sombre
+
+### 앱스토어 (이탈리아어)
+
+Lascia una piccola mancia se ti piace
+VoiceOver e Controllo vocale migliorati
+Testo grande e modalità scura migliorati
+
+### 앱스토어 (포르투갈어(브라질))
+
+Deixe uma gorjeta se o app te ajudar
+Melhor com VoiceOver e Controle por Voz
+Melhor com texto grande e modo escuro
+
+### 앱스토어 (태국어)
+
+ส่งทิปให้นักพัฒนาได้เมื่ออยากขอบคุณ
+รองรับ VoiceOver และการควบคุมด้วยเสียง
+อ่านง่ายขึ้นเมื่อใช้ตัวใหญ่และโหมดมืด
+
+### 앱스토어 (베트남어)
+
+Gửi nhà phát triển chút tiền tip cảm ơn
+Dùng tốt hơn với VoiceOver và Khẩu lệnh
+Dễ đọc hơn với chữ lớn và chế độ tối
+
+### 앱스토어 (체코어)
+
+Poděkujte vývojáři malým spropitným
+Lepší s VoiceOverem a Ovládáním hlasem
+Lepší s velkým písmem a tmavým režimem
+
+### 앱스토어 (덴마크어)
+
+Sig tak med lidt drikkepenge
+Bedre med VoiceOver og Stemmestyring
+Bedre med stor tekst og mørk tilstand
+
+### 앱스토어 (그리스어)
+
+Πείτε ευχαριστώ με ένα μικρό φιλοδώρημα
+Καλύτερο με VoiceOver και έλεγχο φωνής
+Βελτιωμένο μεγάλο κείμενο και σκούρα όψη
+
+### 앱스토어 (핀란드어)
+
+Kiitä kehittäjää pienellä tipillä
+Parempi VoiceOverilla ja ääniohjauksella
+Selkeämpi suurella tekstillä ja tummana
+
+### 앱스토어 (인도네시아어)
+
+Beri tip kecil untuk berterima kasih
+Mendukung VoiceOver dan Kontrol Suara
+Teks besar dan mode gelap lebih jelas
+
+### 앱스토어 (노르웨이어(보크말))
+
+Si takk med litt tips til utvikleren
+Bedre med VoiceOver og Talekontroll
+Bedre med stor tekst og mørk modus
+
+### 앱스토어 (네덜란드어)
+
+Bedank de maker met een kleine fooi
+Beter met VoiceOver en Stembediening
+Beter met grote tekst en donkere modus
+
+### 앱스토어 (폴란드어)
+
+Podziękuj twórcy drobnym napiwkiem
+Lepiej z VoiceOver i Sterowaniem głosem
+Lepiej z dużym tekstem i trybem ciemnym
+
+### 앱스토어 (스웨덴어)
+
+Tacka utvecklaren med lite dricks
+Bättre med VoiceOver och Röststyrning
+Bättre med stor text och mörkt läge
+
+### 앱스토어 (튀르키예어)
+
+Geliştiriciye küçük bir bahşiş bırakın
+VoiceOver ve Sesle Denetim ile kolay
+Büyük yazı ve karanlık modda daha net
+
 ## 1.0.1
 
 ### 앱스토어 (한국어)
