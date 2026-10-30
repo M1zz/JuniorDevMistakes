@@ -430,11 +430,11 @@ struct RetroAnswerSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소") { dismiss() }
+                    Button("취소", systemImage: "xmark") { dismiss() }
                         .font(.system(.subheadline, design: .rounded))
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("저장") {
+                    Button("저장", systemImage: "checkmark") {
                         guard !answer.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else { return }
                         manager.addRetroEntry(
                             mistakeId: item.id,

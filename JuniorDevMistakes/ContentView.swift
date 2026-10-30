@@ -62,24 +62,29 @@ struct ContentView: View {
     @State private var tab = ScreenshotScene.initialTab
 
     var body: some View {
+        // 아이폰 듀오를 펴면 고르는 쪽(가로면 왼쪽, 세로면 아래)에 고른 탭, 결과 쪽(오른쪽, 위)에 진행률.
+        // 접혀 있거나 보통 아이폰이면 `FoldTab` 은 그 탭만 그린다 — 지금 화면 그대로.
         TabView(selection: $tab) {
             Tab("실수 100", systemImage: "rectangle.grid.1x2.fill", value: 0) {
-                CategoryListView()
+                FoldTab { CategoryListView() }
             }
             Tab("진행률", systemImage: "chart.bar.fill", value: 1) {
                 OverallProgressView()
             }
             Tab("회고 일지", systemImage: "book.closed.fill", value: 2) {
-                RetroJournalView()
+                FoldTab { RetroJournalView() }
             }
             Tab("북마크", systemImage: "bookmark.fill", value: 3) {
-                BookmarkListView()
+                FoldTab { BookmarkListView() }
             }
             Tab("설정", systemImage: "gearshape.fill", value: 4) {
-                SettingsView()
+                FoldTab { SettingsView() }
             }
         }
         .tint(AppTheme.primary)
+        // 펴면 시스템 탭바 대신 고르는 쪽 판 바닥에 막대가 선다. 진행률은 늘 결과 쪽 판에 있어 빠진다.
+        .foldTabBar(items: FoldTab<EmptyView>.items, selected: tab == 1 ? 0 : tab) { tab = $0 }
+        .modifier(FoldProgressTabRedirect(tab: $tab))
 #if targetEnvironment(macCatalyst)
         .tabViewStyle(.sidebarAdaptable)
 #endif
@@ -89,6 +94,47 @@ struct ContentView: View {
                     requestReview()
                 }
             }
+        }
+    }
+}
+
+// MARK: - 아이폰 듀오
+
+/// 펼친 화면의 탭 한 장: 고르는 쪽에 그 탭 | 결과 쪽에 진행률. 접혀 있으면 그 탭만.
+/// 왼쪽에서 실수를 체크하면 오른쪽 진행률이 바로 차오른다.
+struct FoldTab<Choose: View>: View {
+    @ViewBuilder let choose: () -> Choose
+
+    var body: some View {
+        FoldSplitView {
+            choose()
+        } result: {
+            OverallProgressView()
+                // 결과 쪽 판 안에서는 접히지 않은 화면처럼 선다.
+                .environment(\.foldLayout, .single)
+        }
+        .foldTabBarRoom()
+    }
+
+    /// 펼쳤을 때 고르는 쪽 판 바닥에 서는 칸. 진행률(1)은 늘 결과 쪽 판에 있으므로 빠진다.
+    static var items: [FoldTabBar<Int>.Item] {
+        [
+            .init(value: 0, title: String(localized: "실수 100"), symbol: "rectangle.grid.1x2.fill"),
+            .init(value: 2, title: String(localized: "회고 일지"), symbol: "book.closed.fill"),
+            .init(value: 3, title: String(localized: "북마크"), symbol: "bookmark.fill"),
+            .init(value: 4, title: String(localized: "설정"), symbol: "gearshape.fill"),
+        ]
+    }
+}
+
+/// 펼쳤을 때 진행률 탭에 있었다면 실수 100 으로 옮긴다. 진행률은 결과 쪽 판에 그대로 서 있다.
+private struct FoldProgressTabRedirect: ViewModifier {
+    @Environment(\.foldLayout) private var fold
+    @Binding var tab: Int
+
+    func body(content: Content) -> some View {
+        content.onChange(of: fold.isUnfolded, initial: true) { _, unfolded in
+            if unfolded, tab == 1 { tab = 0 }
         }
     }
 }
