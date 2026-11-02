@@ -14,6 +14,7 @@ struct JuniorDevMistakesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .storeFallbackNotice()
                 .environmentObject(checklistManager)
                 .environmentObject(storeManager)
                 // 팁 상품을 불러오고 끝나지 않은 팁을 마저 센다 (LeeoStore 없이 혼자)
