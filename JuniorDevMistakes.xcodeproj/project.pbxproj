@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EE2DA83707A1BF6A806AE72 /* MistakeIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488770FB4ADF0B41A7D4CCAB /* MistakeIntents.swift */; };
+		6FD73AF405627DD2A236555A /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 86414C32D02062F66E6DFD13 /* AppShortcuts.xcstrings */; };
 		9C53980C2F4EBE5800905CF0 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53980A2F4EBE5800905CF0 /* PaywallView.swift */; };
 		9C53980D2F4EBE5800905CF0 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53980B2F4EBE5800905CF0 /* StoreKitManager.swift */; };
 		A10001 /* JuniorDevMistakesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001 /* JuniorDevMistakesApp.swift */; };
@@ -20,17 +22,19 @@
 		A10009 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20009 /* ProgressView.swift */; };
 		A10010 /* ChecklistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20010 /* ChecklistManager.swift */; };
 		A10012 /* RetroJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20012 /* RetroJournalView.swift */; };
+		A10101 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A20101 /* Localizable.xcstrings */; };
+		A10102 /* Mistakes.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A20102 /* Mistakes.xcstrings */; };
+		A10103 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A20103 /* InfoPlist.xcstrings */; };
 		CD0002 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0001 /* PersistenceController.swift */; };
 		CD0004 /* JuniorDevMistakes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD0003 /* JuniorDevMistakes.xcdatamodeld */; };
 		CD0006 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0005 /* CoreData.framework */; };
 		CD0008 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0009 /* OnboardingView.swift */; };
-		A10101 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A20101 /* Localizable.xcstrings */; };
-		A10102 /* Mistakes.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A20102 /* Mistakes.xcstrings */; };
-		A10103 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A20103 /* InfoPlist.xcstrings */; };
 		EBE73A86AC3B4C5F809FEB2C /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = C37F018535764C68AB92A6E5 /* LeeoKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		488770FB4ADF0B41A7D4CCAB /* MistakeIntents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MistakeIntents.swift; sourceTree = "<group>"; };
+		86414C32D02062F66E6DFD13 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
 		9C53980A2F4EBE5800905CF0 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		9C53980B2F4EBE5800905CF0 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
 		A20001 /* JuniorDevMistakesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuniorDevMistakesApp.swift; sourceTree = "<group>"; };
@@ -44,6 +48,10 @@
 		A20009 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		A20010 /* ChecklistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistManager.swift; sourceTree = "<group>"; };
 		A20012 /* RetroJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroJournalView.swift; sourceTree = "<group>"; };
+		A20101 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A20102 /* Mistakes.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Mistakes.xcstrings; sourceTree = "<group>"; };
+		A20103 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		A20104 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/Version.xcconfig; sourceTree = SOURCE_ROOT; };
 		A30001 /* JuniorDevMistakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuniorDevMistakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0001 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		CD0003 /* JuniorDevMistakes.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = JuniorDevMistakes.xcdatamodeld; sourceTree = "<group>"; };
@@ -51,10 +59,6 @@
 		CD0007 /* JuniorDevMistakes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JuniorDevMistakes.entitlements; sourceTree = "<group>"; };
 		CD0009 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		CD0010 /* JuniorDevMistakes.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = JuniorDevMistakes.storekit; sourceTree = "<group>"; };
-		A20101 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		A20102 /* Mistakes.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Mistakes.xcstrings; sourceTree = "<group>"; };
-		A20103 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-		A20104 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/Version.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				A20102 /* Mistakes.xcstrings */,
 				A20103 /* InfoPlist.xcstrings */,
 				A20104 /* Version.xcconfig */,
+				488770FB4ADF0B41A7D4CCAB /* MistakeIntents.swift */,
+				86414C32D02062F66E6DFD13 /* AppShortcuts.xcstrings */,
 			);
 			path = JuniorDevMistakes;
 			sourceTree = "<group>";
@@ -139,10 +145,10 @@
 			);
 			dependencies = (
 			);
+			name = JuniorDevMistakes;
 			packageProductDependencies = (
 				C37F018535764C68AB92A6E5 /* LeeoKit */,
 			);
-			name = JuniorDevMistakes;
 			productName = JuniorDevMistakes;
 			productReference = A30001 /* JuniorDevMistakes.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +221,7 @@
 				A10101 /* Localizable.xcstrings in Resources */,
 				A10102 /* Mistakes.xcstrings in Resources */,
 				A10103 /* InfoPlist.xcstrings in Resources */,
+				6FD73AF405627DD2A236555A /* AppShortcuts.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +247,7 @@
 				A10009 /* ProgressView.swift in Sources */,
 				A10010 /* ChecklistManager.swift in Sources */,
 				A10012 /* RetroJournalView.swift in Sources */,
+				0EE2DA83707A1BF6A806AE72 /* MistakeIntents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,9 +332,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "실수 100";
-				INFOPLIST_KEY_UIBackgroundModes = "remote-notification";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIBackgroundModes = "remote-notification";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -335,11 +343,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.JuniorDevMistakes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,9 +367,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "실수 100";
-				INFOPLIST_KEY_UIBackgroundModes = "remote-notification";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIBackgroundModes = "remote-notification";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -370,11 +378,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.JuniorDevMistakes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
