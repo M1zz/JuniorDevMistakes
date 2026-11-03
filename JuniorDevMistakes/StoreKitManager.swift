@@ -146,7 +146,7 @@ final class StoreKitManager: ObservableObject {
 // MARK: - 팁 (LeeoKit)
 
 /// LeeoKit 은 팁 화면에만 쓴다. PRO 결제는 위의 `StoreKitManager` 가 그대로 맡는다.
-/// ⚠️ 여기서 bootstrap · 피드백 · 분석을 켜지 않는다 — 계약을 채우는 값일 뿐 아무것도 돌지 않는다.
+/// ⚠️ 여기서 bootstrap · 피드백 · 분석을 켜지 않는다 (백업 금고만 App.init 에서 직접 켠다) — 계약을 채우는 값일 뿐 아무것도 돌지 않는다.
 enum JuniorDevMistakesSpec: LeeoAppSpec {
     static let appName = "실수100"
     static let developerEmail = "leeo@kakao.com"
@@ -160,6 +160,8 @@ enum JuniorDevMistakesSpec: LeeoAppSpec {
     )
     /// PRO 는 LeeoKit 밖(`StoreKitManager`)에 있다. LeeoKit 이 페이월을 그리지 않게 `.free` 로 둔다.
     static let monetization = LeeoMonetization.free
+    /// 피드백 허브 iCloud 컨테이너가 entitlements 에 없다 — 금고는 파일로만 백업한다.
+    static let vaultUsesICloud = false
 
     /// 이미 PRO 인 사람이 조금 더 내고 싶을 때 내는 곳. 소모성 상품 셋, 작은 것부터.
     /// ⚠️ 기능을 여는 상품이 아니다 — `StoreKitManager.allIds` 에 넣지 않는다.

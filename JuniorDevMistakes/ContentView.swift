@@ -284,6 +284,12 @@ struct SettingsView: View {
 
                 // 데이터 섹션
                 Section {
+                    // 백업 및 복원 (LeeoKit 금고)
+                    NavigationLink { LeeoVaultView(appName: JuniorDevMistakesSpec.displayName) } label: {
+                        Label(LeeoVaultText.entry, systemImage: "externaldrive.badge.timemachine")
+                            .font(.system(.subheadline, design: .rounded))
+                    }
+
                     Button(role: .destructive) {
                         showResetAlert = true
                     } label: {

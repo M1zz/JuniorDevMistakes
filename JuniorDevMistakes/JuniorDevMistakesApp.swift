@@ -11,6 +11,11 @@ struct JuniorDevMistakesApp: App {
     @StateObject private var storeManager = StoreKitManager()
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
 
+    init() {
+        // 백업 금고: 체크리스트 저장소(Core Data)가 열리기 전에 예약된 복원을 적용하고 업데이트 직전 백업을 뜬다.
+        LeeoVault.start(JuniorDevMistakesSpec.self)
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
