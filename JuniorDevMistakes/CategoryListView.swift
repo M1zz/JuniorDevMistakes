@@ -56,6 +56,15 @@ struct CategoryListView: View {
                 PaywallView()
             }
         }
+        // Siri · Spotlight 에서 회고를 열면 그 실수 화면으로 간다.
+        .onChange(of: MistakeRouter.shared.mistakeID, initial: true) { _, id in
+            guard let id, let category = allCategories.first(where: { $0.items.contains { $0.id == id } }),
+                  let item = category.items.first(where: { $0.id == id }) else { return }
+            path = NavigationPath()
+            path.append(category)
+            path.append(item)
+            MistakeRouter.shared.mistakeID = nil
+        }
     }
 
     // MARK: - PRO 배너

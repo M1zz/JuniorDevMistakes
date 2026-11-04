@@ -10,6 +10,7 @@ struct JuniorDevMistakesApp: App {
     }()
     @StateObject private var storeManager = StoreKitManager()
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
+    @Environment(\.scenePhase) private var scenePhase
 
     init() {
         // 백업 금고: 체크리스트 저장소(Core Data)가 열리기 전에 예약된 복원을 적용하고 업데이트 직전 백업을 뜬다.
@@ -33,6 +34,10 @@ struct JuniorDevMistakesApp: App {
                 }
                 // 창 크기로 접힘을 재서 아래로 흘린다. 시트 · 알림창도 접힌 선을 비킨다 (LeeoKit Fold).
                 .foldAware()
+                // 앱을 열 때와 뒤로 보낼 때 회고를 Spotlight 에 다시 싣는다 (MistakeIntents).
+                .onChange(of: scenePhase) { _, phase in
+                    if phase != .inactive { Task { await RetroLibrary.reindex() } }
+                }
 #if targetEnvironment(macCatalyst)
                 .frame(minWidth: 900, minHeight: 600)
 #endif

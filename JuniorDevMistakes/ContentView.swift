@@ -88,6 +88,10 @@ struct ContentView: View {
 #if targetEnvironment(macCatalyst)
         .tabViewStyle(.sidebarAdaptable)
 #endif
+        // Siri · Spotlight 에서 회고를 열면 실수 탭으로 (CategoryListView 가 그 화면을 연다).
+        .onChange(of: MistakeRouter.shared.mistakeID) { _, id in
+            if id != nil { tab = 0 }
+        }
         .onChange(of: manager.totalChecked) { _, count in
             if count == 5 || count == 20 || count == 50 {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
