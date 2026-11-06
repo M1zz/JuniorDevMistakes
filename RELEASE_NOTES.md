@@ -1,5 +1,199 @@
 # 실수 100 릴리즈 노트
 
+## 1.0.3
+
+### 앱스토어 (한국어)
+
+Siri가 오늘의 실수를 읽어 줘요
+내가 쓴 회고를 iPhone 검색에서 바로 열어요
+기록을 매일 자동으로 백업해요
+iCloud나 파일에서 기록을 되살릴 수 있어요
+기록을 열지 못할 때 앱이 꺼지던 문제를 고쳤어요
+
+### 앱스토어 (영어)
+
+Siri can read you today's mistake
+Find your reflections in iPhone Search
+Your notes are now backed up every day
+Restore them from iCloud or a file
+Fixed a crash when notes failed to load
+
+### 앱스토어 (영어(영국))
+
+Siri can read you today's mistake
+Find your reflections in iPhone Search
+Your notes are now backed up every day
+Restore them from iCloud or a file
+Fixed a crash when notes failed to load
+
+### 앱스토어 (중국어 간체)
+
+Siri 可以为你读出今天的失误
+在 iPhone 搜索中直接打开你的复盘
+每天自动备份你的记录
+可从 iCloud 或文件恢复记录
+修复了无法读取记录时闪退的问题
+
+### 앱스토어 (중국어 번체)
+
+Siri 可以為你唸出今天的失誤
+在 iPhone 搜尋中直接打開你的回顧
+每天自動備份你的紀錄
+可從 iCloud 或檔案回復紀錄
+修正了無法讀取紀錄時閃退的問題
+
+### 앱스토어 (일본어)
+
+Siriが今日の失敗を読み上げます
+書いた振り返りをiPhoneの検索から開けます
+記録を毎日自動でバックアップします
+iCloudやファイルから復元できます
+記録を開けないとき終了する問題を直しました
+
+### 앱스토어 (러시아어)
+
+Siri прочитает ошибку дня
+Ваши разборы — прямо в Поиске iPhone
+Ежедневная автокопия ваших записей
+Восстановление из iCloud или файла
+Исправлен вылет при ошибке загрузки
+
+### 앱스토어 (스페인어)
+
+Siri te lee el error del día
+Abre tus reflexiones desde la búsqueda
+Copia de seguridad automática diaria
+Restáurala desde iCloud o un archivo
+Corregido un cierre al cargar tus notas
+
+### 앱스토어 (독일어)
+
+Siri liest dir den Fehler des Tages vor
+Deine Rückblicke direkt in der Suche
+Tägliches automatisches Backup
+Wiederherstellen aus iCloud oder Datei
+Absturz beim Laden der Notizen behoben
+
+### 앱스토어 (프랑스어)
+
+Siri vous lit l’erreur du jour
+Vos bilans dans la recherche de l’iPhone
+Sauvegarde automatique chaque jour
+Restauration depuis iCloud ou un fichier
+Plantage au chargement corrigé
+
+### 앱스토어 (이탈리아어)
+
+Siri ti legge l’errore del giorno
+Trova le tue riflessioni nella Ricerca
+Backup automatico ogni giorno
+Ripristina da iCloud o da un file
+Risolto un arresto nel caricare le note
+
+### 앱스토어 (포르투갈어(브라질))
+
+A Siri lê o erro do dia para você
+Ache suas reflexões na Busca do iPhone
+Backup automático todos os dias
+Restaure pelo iCloud ou por um arquivo
+Corrigimos um travamento ao carregar
+
+### 앱스토어 (태국어)
+
+ให้ Siri อ่านความผิดพลาดประจำวันให้ฟัง
+เปิดบันทึกทบทวนจากการค้นหาใน iPhone
+สำรองข้อมูลอัตโนมัติทุกวัน
+กู้คืนจาก iCloud หรือไฟล์ได้
+แก้ปัญหาแอปปิดเองเมื่อโหลดข้อมูลไม่ได้
+
+### 앱스토어 (베트남어)
+
+Siri đọc cho bạn lỗi sai của hôm nay
+Mở bài nhìn lại ngay từ Tìm kiếm
+Tự động sao lưu mỗi ngày
+Khôi phục từ iCloud hoặc tệp
+Sửa lỗi thoát ứng dụng khi tải dữ liệu
+
+### 앱스토어 (체코어)
+
+Siri vám přečte chybu dne
+Vaše ohlédnutí přímo ve Vyhledávání
+Automatická záloha každý den
+Obnova z iCloudu nebo ze souboru
+Opraven pád při chybě načítání
+
+### 앱스토어 (덴마크어)
+
+Siri læser dagens fejl op for dig
+Find dine refleksioner i Søgning
+Automatisk backup hver dag
+Gendan fra iCloud eller en fil
+Rettet nedbrud ved fejl i indlæsning
+
+### 앱스토어 (그리스어)
+
+Η Siri σάς διαβάζει το λάθος της μέρας
+Οι σκέψεις σας στην Αναζήτηση του iPhone
+Αυτόματο αντίγραφο ασφαλείας κάθε μέρα
+Επαναφορά από iCloud ή αρχείο
+Διορθώθηκε κλείσιμο κατά τη φόρτωση
+
+### 앱스토어 (핀란드어)
+
+Siri lukee sinulle päivän virheen
+Löydä pohdintasi iPhonen haulla
+Automaattinen varmuuskopio joka päivä
+Palauta iCloudista tai tiedostosta
+Korjattu kaatuminen latausvirheessä
+
+### 앱스토어 (인도네시아어)
+
+Siri bisa membacakan kesalahan hari ini
+Buka catatan refleksi dari Pencarian
+Data dicadangkan otomatis setiap hari
+Pulihkan dari iCloud atau file
+Perbaikan app tertutup saat gagal memuat
+
+### 앱스토어 (노르웨이어(보크말))
+
+Siri leser opp dagens feil for deg
+Finn refleksjonene dine i Søk
+Automatisk sikkerhetskopi hver dag
+Gjenopprett fra iCloud eller en fil
+Rettet krasj når data ikke lastes
+
+### 앱스토어 (네덜란드어)
+
+Siri leest de fout van de dag voor
+Vind je terugblikken via Zoeken
+Elke dag automatisch een back-up
+Herstel vanuit iCloud of een bestand
+Crash bij laden van gegevens opgelost
+
+### 앱스토어 (폴란드어)
+
+Siri przeczyta Ci błąd dnia
+Twoje refleksje w Wyszukiwaniu iPhone’a
+Codzienna automatyczna kopia zapasowa
+Przywracanie z iCloud lub z pliku
+Naprawiono awarię przy wczytywaniu
+
+### 앱스토어 (스웨덴어)
+
+Siri läser upp dagens misstag
+Hitta dina reflektioner i Sök
+Automatisk säkerhetskopia varje dag
+Återställ från iCloud eller en fil
+Fixat krasch när data inte laddas
+
+### 앱스토어 (튀르키예어)
+
+Siri günün hatasını size okur
+Notlarınızı iPhone aramasında bulun
+Her gün otomatik yedekleme
+iCloud'dan veya dosyadan geri yükleyin
+Yükleme hatasında çökme giderildi
+
 ## 1.0.2
 
 ### 앱스토어 (한국어)
