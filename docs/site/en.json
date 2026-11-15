@@ -1,5 +1,5 @@
 {
-  "title": "100 Dev Mistakes: a growth checklist for junior developers",
+  "title": "Road to Senior Dev: a growth checklist for junior developers",
   "description": "Read the 100 mistakes junior developers make most, check off the ones you've made, and answer reflection questions. The first 30 are free.",
   "hero": {
     "headline": "Learn the mistakes\nbefore they hurt",
@@ -104,7 +104,7 @@
   },
   "problem": {
     "title": "Same comment in code review, again?",
-    "text": "Vague variable names, 200-line functions, copy-pasted code. Every senior dev has been there, but you only find out by walking into it. 100 Dev Mistakes shows you those mistakes first and has you reflect on your own work, so you stop repeating them."
+    "text": "Vague variable names, 200-line functions, copy-pasted code. Every senior dev has been there, but you only find out by walking into it. Road to Senior Dev shows you those mistakes first and has you reflect on your own work, so you stop repeating them."
   },
   "features": [
     {

@@ -1,14 +1,14 @@
-# 실수 100 App Store 문구
+# 시니어 개발자로 App Store 문구
 
 ## ko
 
 ### 이름
 
-실수 100
+시니어 개발자로
 
 ### 부제
 
-주니어 개발자 성장 체크리스트
+주니어 개발자 실수 100가지 체크리스트
 
 ### 키워드
 
@@ -20,7 +20,7 @@
 
 ### 설명
 
-실수는 미리 알면 덜 아픕니다. 실수 100은 주니어 개발자가 가장 많이 하는 실수 100가지를 모은 성장 체크리스트예요.
+실수는 미리 알면 덜 아픕니다. 「시니어 개발자로」는 주니어 개발자가 가장 많이 하는 실수 100가지를 모은 성장 체크리스트예요.
 직접 부딪혀 배우기 전에 먼저 읽고, 같은 실수를 반복하지 않도록 도와줍니다.
 
 실수는 10개 분야로 나뉘어 있습니다. 코드 작성 습관, 디버깅과 문제 해결, 버전 관리와 협업, 설계와 아키텍처, 테스트와 품질, 학습과 성장, 커뮤니케이션과 협업, 배포와 운영, 보안과 데이터, 성능과 최적화. 실수마다 이런 상황이 벌어진다, 이렇게 하면 된다, 이것을 배우며 성장한다는 세 가지로 풀어 설명합니다.
@@ -59,11 +59,11 @@ https://m1zz.github.io/JuniorDevMistakes/ko/index.html
 
 ### 이름
 
-100 Dev Mistakes: Grow Fast
+Road to Senior Dev
 
 ### 부제
 
-Never repeat a coding mistake
+Avoid 100 junior dev mistakes
 
 ### 키워드
 
@@ -75,7 +75,7 @@ Learn the 100 mistakes junior developers make most, before you make them yoursel
 
 ### 설명
 
-Know the mistakes before you make them. 100 Dev Mistakes is a growth checklist that covers the 100 mistakes junior developers make most, so you can grow faster and stop repeating the same errors.
+Know the mistakes before you make them. Road to Senior Dev is a growth checklist that covers the 100 mistakes junior developers make most, so you can grow faster and stop repeating the same errors.
 
 The mistakes are organized into 10 categories: coding habits, debugging and problem solving, version control and collaboration, design and architecture, testing and quality, learning and growth, communication, infrastructure and deployment, security and privacy, and performance and optimization. Each one is explained in three parts: what happens, what to do, and what you learn from it.
 
@@ -111,11 +111,11 @@ https://m1zz.github.io/JuniorDevMistakes/en/index.html
 
 ### 이름
 
-100 Dev Mistakes: Grow Faster
+Road to Senior Dev
 
 ### 부제
 
-Checklist and reflection diary
+Avoid 100 junior dev mistakes
 
 ### 키워드
 
@@ -127,7 +127,7 @@ Learn the 100 mistakes junior developers make most often before you make them yo
 
 ### 설명
 
-Know the mistakes before you make them. 100 Dev Mistakes is a growth checklist covering the 100 mistakes junior developers make most often, so you can improve faster and stop repeating the same errors.
+Know the mistakes before you make them. Road to Senior Dev is a growth checklist covering the 100 mistakes junior developers make most often, so you can improve faster and stop repeating the same errors.
 
 The mistakes are organised into 10 categories: coding habits, debugging and problem solving, version control and collaboration, design and architecture, testing and quality, learning and growth, communication, infrastructure and deployment, security and privacy, and performance and optimisation. Each one is explained in three parts: what happens, what to do, and what you learn from it.
 

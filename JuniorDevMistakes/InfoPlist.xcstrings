@@ -32,13 +32,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "100 Dev Mistakes"
+            "value" : "Senior Dev"
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "100 Dev Mistakes"
+            "value" : "Senior Dev"
           }
         },
         "es" : {
@@ -80,7 +80,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "실수 100"
+            "value" : "시니어 개발자로"
           }
         },
         "nb" : {
@@ -182,13 +182,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "100 Dev Mistakes"
+            "value" : "Senior Dev"
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "100 Dev Mistakes"
+            "value" : "Senior Dev"
           }
         },
         "es" : {
@@ -230,7 +230,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "실수 100"
+            "value" : "시니어 개발자로"
           }
         },
         "nb" : {

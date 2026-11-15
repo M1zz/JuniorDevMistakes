@@ -1,0 +1,481 @@
+<title>시니어 개발자로 시안</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: 이름 후보 표 → 아이콘 시안 4개 그리드 → 홈 화면 미리보기 */
+:root{
+  --bg:#F5F4FA; --surface:#FFFFFF; --fg:#1E1B3A; --muted:#5E5A7A; --line:#E2E0EE;
+  --indigo:#403985; --coral:#E8595F; --pick:#FDECEC;
+  --home:linear-gradient(160deg,#C9C4EA,#F3C7B8);
+  --f-display:"IBM Plex Sans KR",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#131126; --surface:#1D1A36; --fg:#ECEAF7; --muted:#A6A2C4; --line:#2E2A4E;
+  --indigo:#A49CF0; --coral:#FF8A86; --pick:#3A2234;
+  --home:linear-gradient(160deg,#2A2550,#4A2A3A); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131126; --surface:#1D1A36; --fg:#ECEAF7; --muted:#A6A2C4; --line:#2E2A4E;
+  --indigo:#A49CF0; --coral:#FF8A86; --pick:#3A2234;
+  --home:linear-gradient(160deg,#2A2550,#4A2A3A); color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-display);font-size:16px;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding-block:40px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:48px}
+h1{font-size:30px;margin:0;text-wrap:balance}
+h2{font-size:21px;margin:0 0 6px}
+.lede{color:var(--muted);margin:6px 0 0;max-width:62ch}
+.tag{font-family:var(--f-mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--coral)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:620px}
+th,td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:14px;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+tr.pick td{background:var(--pick)}
+.nm{font-weight:700;font-size:18px}
+.en{font-family:var(--f-mono);font-size:14px;color:var(--muted)}
+.badge{display:inline-block;margin-left:8px;font-size:12px;font-weight:700;color:#fff;background:var(--coral);border-radius:999px;padding:2px 9px;vertical-align:middle}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.icon{width:100%;max-width:100%;aspect-ratio:1;border-radius:22.4%;overflow:hidden;box-shadow:0 6px 20px rgba(30,20,80,.18)}
+.icon svg{display:block;width:100%;height:100%}
+.card h3{margin:0;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.sizes{display:flex;align-items:flex-end;gap:12px}
+.sizes .icon{box-shadow:none}
+.home{background:var(--home);border-radius:20px;padding:28px 20px;display:grid;grid-template-columns:repeat(4,76px);justify-content:center;gap:22px 18px}
+.app{display:flex;flex-direction:column;align-items:center;gap:6px}
+.app .icon{width:62px;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.app span{width:76px;text-align:center;font-size:12px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.45);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:system-ui,-apple-system,sans-serif}
+.note{color:var(--muted);font-size:15px;margin:10px 0 0}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="P1bg" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#2B2B36"/><stop offset="1" stop-color="#0D0D12"/></linearGradient>
+    <linearGradient id="P1chk" gradientUnits="userSpaceOnUse" x1="0" y1="38" x2="0" y2="60"><stop offset="0" stop-color="#7CF2A0"/><stop offset="1" stop-color="#22B35E"/></linearGradient>
+    <radialGradient id="P1hl" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <filter id="P1blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.2"/></filter><linearGradient id="P2bg" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#6158D6"/><stop offset="1" stop-color="#2A236E"/></linearGradient>
+    <linearGradient id="P2chk" gradientUnits="userSpaceOnUse" x1="0" y1="38" x2="0" y2="60"><stop offset="0" stop-color="#FFC2A8"/><stop offset="1" stop-color="#FF6B6B"/></linearGradient>
+    <radialGradient id="P2hl" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <filter id="P2blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.2"/></filter><linearGradient id="P3bg" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#ECEAF6"/></linearGradient>
+    <linearGradient id="P3chk" gradientUnits="userSpaceOnUse" x1="0" y1="38" x2="0" y2="60"><stop offset="0" stop-color="#FF8F7A"/><stop offset="1" stop-color="#E5484D"/></linearGradient>
+    <radialGradient id="P3hl" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <filter id="P3blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.2"/></filter><linearGradient id="P4bg" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#FFB36B"/><stop offset="1" stop-color="#F0566A"/></linearGradient>
+    <linearGradient id="P4chk" gradientUnits="userSpaceOnUse" x1="0" y1="38" x2="0" y2="60"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFE9DC"/></linearGradient>
+    <radialGradient id="P4hl" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <filter id="P4blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.2"/></filter>
+    <symbol id="ppP1" viewBox="0 0 100 100"><rect width="100" height="100" fill="url(#P1bg)"/>
+  <rect width="100" height="100" fill="url(#P1hl)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="28,36 16,50 28,64" stroke="#FFFFFF" stroke-opacity="0.92" stroke-width="6.5"/>
+    <polyline points="72,36 84,50 72,64" stroke="#FFFFFF" stroke-opacity="0.92" stroke-width="6.5"/>
+    <line x1="58.5" y1="64" x2="66" y2="36" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="6.5"/>
+    <polyline points="34,50.5 41.5,59 54,38" stroke="#2BD46C" stroke-width="12" filter="url(#P1blur)" opacity=".75"/>
+    <polyline points="34,50.5 41.5,59 54,38" stroke="url(#P1chk)" stroke-width="8.5"/>
+  </g></symbol><symbol id="ppP2" viewBox="0 0 100 100"><rect width="100" height="100" fill="url(#P2bg)"/>
+  <rect width="100" height="100" fill="url(#P2hl)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="28,36 16,50 28,64" stroke="#FFFFFF" stroke-opacity="0.95" stroke-width="6.5"/>
+    <polyline points="72,36 84,50 72,64" stroke="#FFFFFF" stroke-opacity="0.95" stroke-width="6.5"/>
+    <line x1="58.5" y1="64" x2="66" y2="36" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="6.5"/>
+    <polyline points="34,50.5 41.5,59 54,38" stroke="#FF7A6E" stroke-width="12" filter="url(#P2blur)" opacity=".75"/>
+    <polyline points="34,50.5 41.5,59 54,38" stroke="url(#P2chk)" stroke-width="8.5"/>
+  </g></symbol><symbol id="ppP3" viewBox="0 0 100 100"><rect width="100" height="100" fill="url(#P3bg)"/>
+  <rect width="100" height="100" fill="url(#P3hl)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="28,36 16,50 28,64" stroke="#403985" stroke-opacity="1" stroke-width="6.5"/>
+    <polyline points="72,36 84,50 72,64" stroke="#403985" stroke-opacity="1" stroke-width="6.5"/>
+    <line x1="58.5" y1="64" x2="66" y2="36" stroke="#403985" stroke-opacity="0.4" stroke-width="6.5"/>
+    
+    <polyline points="34,50.5 41.5,59 54,38" stroke="url(#P3chk)" stroke-width="8.5"/>
+  </g></symbol><symbol id="ppP4" viewBox="0 0 100 100"><rect width="100" height="100" fill="url(#P4bg)"/>
+  <rect width="100" height="100" fill="url(#P4hl)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="28,36 16,50 28,64" stroke="#FFFFFF" stroke-opacity="0.95" stroke-width="6.5"/>
+    <polyline points="72,36 84,50 72,64" stroke="#FFFFFF" stroke-opacity="0.95" stroke-width="6.5"/>
+    <line x1="58.5" y1="64" x2="66" y2="36" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="6.5"/>
+    
+    <polyline points="34,50.5 41.5,59 54,38" stroke="url(#P4chk)" stroke-width="8.5"/>
+  </g></symbol>
+    <linearGradient id="gIndigo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B53AE"/><stop offset="1" stop-color="#262058"/></linearGradient>
+    <linearGradient id="gCoral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF9E7A"/><stop offset="1" stop-color="#E6475A"/></linearGradient>
+    <linearGradient id="gNight" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2E2866"/><stop offset="1" stop-color="#171338"/></linearGradient>
+    <symbol id="iA" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="url(#gIndigo)"/>
+      <rect x="18" y="66" width="21" height="16" rx="2" fill="#fff" opacity=".4"/>
+      <rect x="39.5" y="51" width="21" height="31" rx="2" fill="#fff" opacity=".7"/>
+      <rect x="61" y="36" width="21" height="46" rx="2" fill="#fff"/>
+      <circle cx="71.5" cy="25" r="7.5" fill="#FF7A6E"/>
+    </symbol>
+    <symbol id="iB" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="url(#gCoral)"/>
+      <polyline points="31,33 15,50 31,67" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="69,33 85,50 69,67" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="38,51 47,61 63,39" fill="none" stroke="#2B2563" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <linearGradient id="gJourney" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A6E"/><stop offset=".5" stop-color="#B0507E"/><stop offset="1" stop-color="#2E2770"/></linearGradient>
+    <symbol id="iB1" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="url(#gJourney)"/>
+      <polyline points="31,33 15,50 31,67" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="69,33 85,50 69,67" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="38,51 47,61 63,39" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="iB2" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="url(#gIndigo)"/>
+      <polyline points="31,33 15,50 31,67" fill="none" stroke="#FF7A6E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="69,33 85,50 69,67" fill="none" stroke="#FF7A6E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="38,51 47,61 63,39" fill="none" stroke="#3CD08F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="sMark" viewBox="0 0 100 100">
+      <polyline points="31,33 15,50 31,67" fill="none" style="stroke:var(--b)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="69,33 85,50 69,67" fill="none" style="stroke:var(--b)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="38,51 47,61 63,39" fill="none" style="stroke:var(--c)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="mSlash" viewBox="0 0 100 100">
+      <polyline points="30,33 14,50 30,67" fill="none" style="stroke:var(--b)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="70,33 86,50 70,67" fill="none" style="stroke:var(--b)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="38,56 45,67 60,30" fill="none" style="stroke:var(--c)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="mBadge" viewBox="0 0 100 100">
+      <polyline points="27,28 12,44 27,60" fill="none" style="stroke:var(--b)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="65,28 80,44 65,60" fill="none" style="stroke:var(--b)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="39" y1="62" x2="53" y2="26" style="stroke:var(--b)" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="76" cy="77" r="13" style="fill:var(--c)"/>
+      <polyline points="70,77 74.5,81.5 82.5,72" fill="none" style="stroke:var(--k)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="vCheck" viewBox="0 0 100 100">
+      <polyline points="24,35 11,50 24,65" fill="none" style="stroke:var(--b)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="29,50 37.5,60 51,37" fill="none" style="stroke:var(--c)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="58" y1="65" x2="66" y2="35" style="stroke:var(--b)" stroke-width="7" stroke-linecap="round"/>
+      <polyline points="76,35 89,50 76,65" fill="none" style="stroke:var(--b)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="vLetter" viewBox="0 0 100 100">
+      <polyline points="24,35 11,50 24,65" fill="none" style="stroke:var(--b)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="30,37 40,63 50,37" fill="none" style="stroke:var(--c)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="58" y1="65" x2="66" y2="35" style="stroke:var(--b)" stroke-width="7" stroke-linecap="round"/>
+      <polyline points="76,35 89,50 76,65" fill="none" style="stroke:var(--b)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="iC" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="url(#gIndigo)"/>
+      <polyline points="26,76 50,58 74,76" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="26,58 50,40 74,58" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="26,40 50,22 74,40" fill="none" stroke="#FF7A6E" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="iD" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="url(#gNight)"/>
+      <text x="22" y="34" font-family="ui-rounded,'SF Pro Rounded',system-ui,sans-serif" font-weight="700" font-size="17" fill="#fff" fill-opacity=".45">Jr</text>
+      <line x1="20" y1="28.5" x2="42" y2="28.5" stroke="#FF7A6E" stroke-width="2.6" stroke-linecap="round"/>
+      <text x="19" y="76" font-family="ui-rounded,'SF Pro Rounded',system-ui,sans-serif" font-weight="800" font-size="48" fill="#fff" letter-spacing="-1">Sr</text>
+      <circle cx="80" cy="72" r="6" fill="#FF7A6E"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <header>
+    <div class="tag">JuniorDevMistakes · 리브랜딩 시안</div>
+    <h1>앱 이름 후보와 아이콘 시안</h1>
+    <p class="lede">지금 이름 "실수 100"은 무슨 앱인지 짐작이 어렵습니다. 결과(시니어로 성장)를 이름에 넣고, 내용(주니어 실수 100가지)은 부제에 넣어 검색에 걸리게 하는 방향입니다.</p>
+  </header>
+
+  <section>
+    <div class="tag">6차 · 다듬은 &lt;V/&gt;</div>
+    <h2>더 예쁘게 다듬은 &lt;V/&gt;</h2>
+    <p class="note" style="margin:0 0 14px">기호 주변에 여백을 두고, 체크를 굵고 밝게 해서 주인공으로 세웠습니다. 괄호는 그대로, 슬래시는 반투명하게 한 단계 눌렀습니다. 바탕에는 위에서 빛이 비치는 은은한 그라데이션을 넣었습니다.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="icon" style=""><svg><use href="#ppP1"/></svg></div>
+        <div class="tag">P1 · 추천</div><h3>미드나잇 터미널</h3>
+        <p>깊은 남색이 섞인 검정 위에 초록 체크가 은은하게 빛납니다. 어두운 에디터에서 테스트가 통과하는 순간입니다. 슬래시를 반투명하게 눌러서 체크가 먼저 눈에 들어옵니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px;"><svg><use href="#ppP1"/></svg></div><div class="icon" style="width:29px;"><svg><use href="#ppP1"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style=""><svg><use href="#ppP2"/></svg></div>
+        <div class="tag">P2</div><h3>인디고 글로우</h3>
+        <p>앱 메인 색 인디고 위에 코랄 체크가 빛납니다. 앱을 열었을 때 화면 색과 그대로 이어집니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px;"><svg><use href="#ppP2"/></svg></div><div class="icon" style="width:29px;"><svg><use href="#ppP2"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="outline:1px solid var(--line);"><svg><use href="#ppP3"/></svg></div>
+        <div class="tag">P3</div><h3>페이퍼</h3>
+        <p>살짝 라벤더가 도는 흰 종이에 인디고 코드, 코랄 체크입니다. 그림자 없이 가장 깔끔하고, 코드 리뷰에서 빨간 펜으로 체크한 느낌입니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px;outline:1px solid var(--line);"><svg><use href="#ppP3"/></svg></div><div class="icon" style="width:29px;outline:1px solid var(--line);"><svg><use href="#ppP3"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style=""><svg><use href="#ppP4"/></svg></div>
+        <div class="tag">P4</div><h3>선라이즈</h3>
+        <p>코랄에서 주황으로 넘어가는 따뜻한 바탕에 흰 기호만 썼습니다. 밝고 친근해서 홈 화면에서 가장 눈에 띕니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px;"><svg><use href="#ppP4"/></svg></div><div class="icon" style="width:29px;"><svg><use href="#ppP4"/></svg></div></div>
+      </article>
+    </div>
+    <div class="home" style="margin-top:20px;grid-template-columns:repeat(4,76px)">
+      <div class="app"><div class="icon" style=""><svg><use href="#ppP1"/></svg></div><span>시니어 개발자로</span></div><div class="app"><div class="icon" style=""><svg><use href="#ppP2"/></svg></div><span>시니어 개발자로</span></div><div class="app"><div class="icon" style=""><svg><use href="#ppP3"/></svg></div><span>시니어 개발자로</span></div><div class="app"><div class="icon" style=""><svg><use href="#ppP4"/></svg></div><span>시니어 개발자로</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="tag">5차 · &lt;V/&gt;</div>
+    <h2>&lt;V/&gt; 셀프 클로징 태그 버전</h2>
+    <p class="note" style="margin:0 0 14px">JSX와 SwiftUI 개발자에게 익숙한 셀프 클로징 태그 모양입니다. 괄호와 슬래시는 코드, 가운데 V는 체크입니다. 가운데를 체크(V1)와 V 글자(V2) 두 가지로 그렸습니다.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759"><svg><use href="#vCheck"/></svg></div>
+        <div class="tag">V1-1 · 추천</div><h3>체크 태그 · 터미널</h3>
+        <p>검정은 터미널, 초록은 테스트 통과. 가운데를 체크 표시로 그렸습니다. &lt;Check/&gt; 컴포넌트처럼 읽혀서 "확인 완료"라는 뜻이 바로 보입니다.</p>
+        <div class="sizes"><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;width:40px"><svg><use href="#vCheck"/></svg></div><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;width:29px"><svg><use href="#vCheck"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A"><svg><use href="#vCheck"/></svg></div>
+        <div class="tag">V1-2</div><h3>체크 태그 · 인디고 + 코랄</h3>
+        <p>앱의 메인 인디고와 포인트 코랄.</p>
+        <div class="sizes"><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;width:40px"><svg><use href="#vCheck"/></svg></div><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;width:29px"><svg><use href="#vCheck"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E"><svg><use href="#vCheck"/></svg></div>
+        <div class="tag">V1-3</div><h3>체크 태그 · 주의 표지판</h3>
+        <p>노랑과 검정, 실수 조심 경고.</p>
+        <div class="sizes"><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;width:40px"><svg><use href="#vCheck"/></svg></div><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;width:29px"><svg><use href="#vCheck"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;outline:1px solid var(--line)"><svg><use href="#vCheck"/></svg></div>
+        <div class="tag">V1-4</div><h3>체크 태그 · 흰 종이 + 빨간 펜</h3>
+        <p>선배가 빨간 펜으로 체크한 코드 리뷰.</p>
+        <div class="sizes"><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;width:40px;outline:1px solid var(--line)"><svg><use href="#vCheck"/></svg></div><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;width:29px;outline:1px solid var(--line)"><svg><use href="#vCheck"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759"><svg><use href="#vLetter"/></svg></div>
+        <div class="tag">V2-1</div><h3>V 글자 태그 · 터미널</h3>
+        <p>검정은 터미널, 초록은 테스트 통과. 가운데를 좌우 대칭 V 글자로 그렸습니다. 코드 글꼴 느낌이 더 강하고, V는 체크이자 승리(Victory) 표시로도 읽힙니다.</p>
+        <div class="sizes"><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;width:40px"><svg><use href="#vLetter"/></svg></div><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;width:29px"><svg><use href="#vLetter"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A"><svg><use href="#vLetter"/></svg></div>
+        <div class="tag">V2-2</div><h3>V 글자 태그 · 인디고 + 코랄</h3>
+        <p>앱의 메인 인디고와 포인트 코랄.</p>
+        <div class="sizes"><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;width:40px"><svg><use href="#vLetter"/></svg></div><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;width:29px"><svg><use href="#vLetter"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E"><svg><use href="#vLetter"/></svg></div>
+        <div class="tag">V2-3</div><h3>V 글자 태그 · 주의 표지판</h3>
+        <p>노랑과 검정, 실수 조심 경고.</p>
+        <div class="sizes"><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;width:40px"><svg><use href="#vLetter"/></svg></div><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;width:29px"><svg><use href="#vLetter"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;outline:1px solid var(--line)"><svg><use href="#vLetter"/></svg></div>
+        <div class="tag">V2-4</div><h3>V 글자 태그 · 흰 종이 + 빨간 펜</h3>
+        <p>선배가 빨간 펜으로 체크한 코드 리뷰.</p>
+        <div class="sizes"><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;width:40px;outline:1px solid var(--line)"><svg><use href="#vLetter"/></svg></div><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;width:29px;outline:1px solid var(--line)"><svg><use href="#vLetter"/></svg></div></div>
+      </article>
+    </div>
+    <div class="home" style="margin-top:20px">
+      <div class="app"><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759"><svg><use href="#vCheck"/></svg></div><span>V1-1</span></div><div class="app"><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A"><svg><use href="#vCheck"/></svg></div><span>V1-2</span></div><div class="app"><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E"><svg><use href="#vCheck"/></svg></div><span>V1-3</span></div><div class="app"><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;outline:1px solid var(--line)"><svg><use href="#vCheck"/></svg></div><span>V1-4</span></div><div class="app"><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759"><svg><use href="#vLetter"/></svg></div><span>V2-1</span></div><div class="app"><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A"><svg><use href="#vLetter"/></svg></div><span>V2-2</span></div><div class="app"><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E"><svg><use href="#vLetter"/></svg></div><span>V2-3</span></div><div class="app"><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;outline:1px solid var(--line)"><svg><use href="#vLetter"/></svg></div><span>V2-4</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="tag">4차 · &lt;/&gt; 로 다시</div>
+    <h2>&lt;/&gt; 코드 기호 버전</h2>
+    <p class="note" style="margin:0 0 14px">개발자에게 가장 익숙한 &lt;/&gt; 모양으로 바꿨습니다. 모양 두 가지(M1, M2)에 마음에 들어 하신 심플한 색 조합 네 가지를 입혔습니다.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;--k:#1C1C1E"><svg><use href="#mSlash"/></svg></div>
+        <div class="tag">M1-1 · 추천</div><h3>슬래시가 체크 · 터미널</h3>
+        <p>검은 바탕은 터미널, 초록은 테스트 통과. &lt;/&gt; 가운데 슬래시를 체크 표시로 바꿨습니다. 멀리서는 &lt;/&gt;, 가까이서는 체크로 읽힙니다.</p>
+        <div class="sizes"><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;--k:#1C1C1E;width:40px"><svg><use href="#mSlash"/></svg></div><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;--k:#1C1C1E;width:29px"><svg><use href="#mSlash"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;--k:#403985"><svg><use href="#mSlash"/></svg></div>
+        <div class="tag">M1-2</div><h3>슬래시가 체크 · 인디고 + 코랄</h3>
+        <p>앱의 메인 인디고와 포인트 코랄. </p>
+        <div class="sizes"><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;--k:#403985;width:40px"><svg><use href="#mSlash"/></svg></div><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;--k:#403985;width:29px"><svg><use href="#mSlash"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;--k:#FFC53D"><svg><use href="#mSlash"/></svg></div>
+        <div class="tag">M1-3</div><h3>슬래시가 체크 · 주의 표지판</h3>
+        <p>노랑과 검정, 실수 조심 경고. </p>
+        <div class="sizes"><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;--k:#FFC53D;width:40px"><svg><use href="#mSlash"/></svg></div><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;--k:#FFC53D;width:29px"><svg><use href="#mSlash"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;--k:#FFFFFF;outline:1px solid var(--line)"><svg><use href="#mSlash"/></svg></div>
+        <div class="tag">M1-4</div><h3>슬래시가 체크 · 흰 종이 + 빨간 펜</h3>
+        <p>선배가 빨간 펜으로 체크한 코드 리뷰. </p>
+        <div class="sizes"><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;--k:#FFFFFF;width:40px;outline:1px solid var(--line)"><svg><use href="#mSlash"/></svg></div><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;--k:#FFFFFF;width:29px;outline:1px solid var(--line)"><svg><use href="#mSlash"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;--k:#1C1C1E"><svg><use href="#mBadge"/></svg></div>
+        <div class="tag">M2-1</div><h3>&lt;/&gt; + 체크 배지 · 터미널</h3>
+        <p>검은 바탕은 터미널, 초록은 테스트 통과. &lt;/&gt; 는 그대로 두고 오른쪽 아래에 체크 배지를 달았습니다. 코드 기호가 가장 또렷합니다.</p>
+        <div class="sizes"><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;--k:#1C1C1E;width:40px"><svg><use href="#mBadge"/></svg></div><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;--k:#1C1C1E;width:29px"><svg><use href="#mBadge"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;--k:#403985"><svg><use href="#mBadge"/></svg></div>
+        <div class="tag">M2-2</div><h3>&lt;/&gt; + 체크 배지 · 인디고 + 코랄</h3>
+        <p>앱의 메인 인디고와 포인트 코랄. </p>
+        <div class="sizes"><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;--k:#403985;width:40px"><svg><use href="#mBadge"/></svg></div><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;--k:#403985;width:29px"><svg><use href="#mBadge"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;--k:#FFC53D"><svg><use href="#mBadge"/></svg></div>
+        <div class="tag">M2-3</div><h3>&lt;/&gt; + 체크 배지 · 주의 표지판</h3>
+        <p>노랑과 검정, 실수 조심 경고. </p>
+        <div class="sizes"><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;--k:#FFC53D;width:40px"><svg><use href="#mBadge"/></svg></div><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;--k:#FFC53D;width:29px"><svg><use href="#mBadge"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;--k:#FFFFFF;outline:1px solid var(--line)"><svg><use href="#mBadge"/></svg></div>
+        <div class="tag">M2-4</div><h3>&lt;/&gt; + 체크 배지 · 흰 종이 + 빨간 펜</h3>
+        <p>선배가 빨간 펜으로 체크한 코드 리뷰. </p>
+        <div class="sizes"><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;--k:#FFFFFF;width:40px;outline:1px solid var(--line)"><svg><use href="#mBadge"/></svg></div><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;--k:#FFFFFF;width:29px;outline:1px solid var(--line)"><svg><use href="#mBadge"/></svg></div></div>
+      </article>
+    </div>
+    <div class="home" style="margin-top:20px">
+      <div class="app"><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;--k:#1C1C1E"><svg><use href="#mSlash"/></svg></div><span>M1-1</span></div><div class="app"><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;--k:#403985"><svg><use href="#mSlash"/></svg></div><span>M1-2</span></div><div class="app"><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;--k:#FFC53D"><svg><use href="#mSlash"/></svg></div><span>M1-3</span></div><div class="app"><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;--k:#FFFFFF;outline:1px solid var(--line)"><svg><use href="#mSlash"/></svg></div><span>M1-4</span></div><div class="app"><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759;--k:#1C1C1E"><svg><use href="#mBadge"/></svg></div><span>M2-1</span></div><div class="app"><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A;--k:#403985"><svg><use href="#mBadge"/></svg></div><span>M2-2</span></div><div class="app"><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E;--k:#FFC53D"><svg><use href="#mBadge"/></svg></div><span>M2-3</span></div><div class="app"><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F;--k:#FFFFFF;outline:1px solid var(--line)"><svg><use href="#mBadge"/></svg></div><span>M2-4</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="tag">3차 · 심플한 색 조합</div>
+    <h2>단색 바탕 + 두 가지 색</h2>
+    <p class="note" style="margin:0 0 14px">그라데이션 없이 바탕 한 색, 괄호 한 색, 체크 한 색만 썼습니다. 색 하나하나가 한 가지 뜻만 가집니다.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759"><svg><use href="#sMark"/></svg></div>
+        <div class="tag">S1 · 추천</div><h3>터미널 + 통과</h3>
+        <p>검은 바탕은 터미널과 에디터, 초록 체크는 테스트 통과. 개발자라면 설명 없이 "실수 없이 통과"로 읽습니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px;background:#1C1C1E;--b:#FFFFFF;--c:#34C759"><svg><use href="#sMark"/></svg></div><div class="icon" style="width:29px;background:#1C1C1E;--b:#FFFFFF;--c:#34C759"><svg><use href="#sMark"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F"><svg><use href="#sMark"/></svg></div>
+        <div class="tag">S2</div><h3>흰 종이 + 빨간 펜</h3>
+        <p>흰 바탕에 인디고 코드, 선배가 빨간 펜으로 체크해 준 모습. 코드 리뷰를 받는 느낌입니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px;background:#FFFFFF;--b:#403985;--c:#E8595F;outline:1px solid var(--line)"><svg><use href="#sMark"/></svg></div><div class="icon" style="width:29px;background:#FFFFFF;--b:#403985;--c:#E8595F;outline:1px solid var(--line)"><svg><use href="#sMark"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E"><svg><use href="#sMark"/></svg></div>
+        <div class="tag">S3</div><h3>주의 표지판</h3>
+        <p>노랑과 검정은 공사장 표지판 색. "이 실수 조심"이라는 경고가 가장 직관적으로 전달되고 홈 화면에서 가장 눈에 띕니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px;background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E"><svg><use href="#sMark"/></svg></div><div class="icon" style="width:29px;background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E"><svg><use href="#sMark"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FFFFFF"><svg><use href="#sMark"/></svg></div>
+        <div class="tag">S4</div><h3>인디고 단색</h3>
+        <p>앱의 메인 색 하나에 흰색만. 가장 차분하고, 앱을 열었을 때 화면 색과 그대로 이어집니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px;background:#403985;--b:#FFFFFF;--c:#FFFFFF"><svg><use href="#sMark"/></svg></div><div class="icon" style="width:29px;background:#403985;--b:#FFFFFF;--c:#FFFFFF"><svg><use href="#sMark"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A"><svg><use href="#sMark"/></svg></div>
+        <div class="tag">S5</div><h3>인디고 + 코랄 포인트</h3>
+        <p>S4에 체크만 코랄로. 앱의 두 색(메인 인디고, 포인트 코랄)을 그대로 쓴 조합입니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px;background:#403985;--b:#FFFFFF;--c:#FF8A7A"><svg><use href="#sMark"/></svg></div><div class="icon" style="width:29px;background:#403985;--b:#FFFFFF;--c:#FF8A7A"><svg><use href="#sMark"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon" style="background:#E8595F;--b:#FFFFFF;--c:#FFFFFF"><svg><use href="#sMark"/></svg></div>
+        <div class="tag">S6</div><h3>코랄 단색</h3>
+        <p>실수 화면의 빨강을 바탕으로. 따뜻하고 밝아서 개발 앱 같지 않은 친근함이 있습니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px;background:#E8595F;--b:#FFFFFF;--c:#FFFFFF"><svg><use href="#sMark"/></svg></div><div class="icon" style="width:29px;background:#E8595F;--b:#FFFFFF;--c:#FFFFFF"><svg><use href="#sMark"/></svg></div></div>
+      </article>
+    </div>
+    <div class="home" style="margin-top:20px">
+      <div class="app"><div class="icon" style="background:#1C1C1E;--b:#FFFFFF;--c:#34C759"><svg><use href="#sMark"/></svg></div><span>S1</span></div>
+      <div class="app"><div class="icon" style="background:#FFFFFF;--b:#403985;--c:#E8595F"><svg><use href="#sMark"/></svg></div><span>S2</span></div>
+      <div class="app"><div class="icon" style="background:#FFC53D;--b:#1C1C1E;--c:#1C1C1E"><svg><use href="#sMark"/></svg></div><span>S3</span></div>
+      <div class="app"><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FFFFFF"><svg><use href="#sMark"/></svg></div><span>S4</span></div>
+      <div class="app"><div class="icon" style="background:#403985;--b:#FFFFFF;--c:#FF8A7A"><svg><use href="#sMark"/></svg></div><span>S5</span></div>
+      <div class="app"><div class="icon" style="background:#E8595F;--b:#FFFFFF;--c:#FFFFFF"><svg><use href="#sMark"/></svg></div><span>S6</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iB1"/></svg></div><span>B1</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iB2"/></svg></div><span>B2</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="tag">2차 · 이름 확정: 시니어 개발자로</div>
+    <h2>B안 색에 담은 뜻</h2>
+    <p class="note" style="margin:0 0 14px">세 가지 모두 앱 안에서 이미 쓰는 색입니다. 코랄은 실수 화면의 "상황" 빨강, 인디고는 앱의 메인 색, 초록은 "이렇게 하세요" 초록입니다.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="icon"><svg><use href="#iB1"/></svg></div>
+        <div class="tag">B1 · 추천</div><h3>실수에서 시니어로</h3>
+        <p>왼쪽 위 코랄(실수)에서 오른쪽 아래 인디고(시니어)로 넘어가는 그라데이션이 이름 "시니어 개발자로"의 여정 그 자체입니다. 흰 체크는 그 길에서 실수를 하나씩 확인했다는 뜻입니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px"><svg><use href="#iB1"/></svg></div><div class="icon" style="width:29px"><svg><use href="#iB1"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon"><svg><use href="#iB2"/></svg></div>
+        <div class="tag">B2</div><h3>빨간 에러, 초록 통과</h3>
+        <p>코랄 괄호는 코드 속 실수(빌드 에러 빨강), 초록 체크는 테스트 통과 표시입니다. 개발자라면 누구나 아는 빨강과 초록 신호를 인디고 바탕 위에 올렸습니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px"><svg><use href="#iB2"/></svg></div><div class="icon" style="width:29px"><svg><use href="#iB2"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon"><svg><use href="#iB"/></svg></div>
+        <div class="tag">B3 · 처음 시안</div><h3>실수 위의 시니어 체크</h3>
+        <p>코랄 바탕은 실수를 피하지 않고 정면으로 마주한다는 뜻, 인디고 체크는 시니어가 확인해 준다는 뜻입니다. 가장 밝고 눈에 띄지만 색의 이야기는 가장 약합니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px"><svg><use href="#iB"/></svg></div><div class="icon" style="width:29px"><svg><use href="#iB"/></svg></div></div>
+      </article>
+    </div>
+    <div class="home" style="margin-top:20px">
+      <div class="app"><div class="icon"><svg><use href="#iB1"/></svg></div><span>시니어 개발자로</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iB2"/></svg></div><span>시니어 개발자로</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iB"/></svg></div><span>시니어 개발자로</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iB1"/></svg></div><span>Senior Dev</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>이름 후보</h2>
+    <p class="note" style="margin:0 0 14px">App Store 이름은 30자, 부제도 30자까지 됩니다. 홈 화면 이름은 짧을수록 안 잘립니다.</p>
+    <div class="tbl"><table>
+      <thead><tr><th>App Store 이름</th><th>홈 화면 이름</th><th>부제 (검색 키워드)</th><th>영어</th></tr></thead>
+      <tbody>
+        <tr class="pick"><td><span class="nm">시니어 개발자로</span><span class="badge">추천</span></td><td>시니어 개발자로</td><td>주니어 개발자 실수 100가지 체크</td><td><div class="en">Road to Senior Dev</div><div class="en">100 Junior Dev Mistakes</div></td></tr>
+        <tr><td><span class="nm">시니어로 가는 길</span></td><td>시니어로</td><td>개발자 실수 100 체크리스트</td><td><div class="en">Path to Senior</div><div class="en">Dev Mistakes Checklist</div></td></tr>
+        <tr><td><span class="nm">주니어 졸업</span></td><td>주니어 졸업</td><td>실수 100개로 시니어 되기</td><td><div class="en">Beyond Junior</div><div class="en">Learn from 100 Mistakes</div></td></tr>
+        <tr><td><span class="nm">시니어 체크리스트</span></td><td>시니어 체크</td><td>주니어 개발자가 하는 실수 100</td><td><div class="en">Senior Checklist</div><div class="en">Avoid Junior Dev Mistakes</div></td></tr>
+        <tr><td><span class="nm">개발자 실수 노트</span></td><td>실수 노트</td><td>시니어가 알려주는 실수 100가지</td><td><div class="en">Dev Mistake Notes</div><div class="en">What Seniors Wish You Knew</div></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>아이콘 시안</h2>
+    <p class="note" style="margin:0 0 14px">앱 안에서 쓰는 인디고와 코랄 색을 그대로 가져왔습니다. 오른쪽 아래 작은 크기는 설정 화면과 알림에서 보이는 크기입니다.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="icon"><svg><use href="#iA"/></svg></div>
+        <div class="tag">A</div><h3>계단</h3>
+        <p>한 칸씩 올라가 꼭대기의 점(나)에 닿는 모습. 작은 크기에서도 형태가 가장 또렷합니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px"><svg><use href="#iA"/></svg></div><div class="icon" style="width:29px"><svg><use href="#iA"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon"><svg><use href="#iB"/></svg></div>
+        <div class="tag">B</div><h3>코드 체크</h3>
+        <p>&lt; &gt; 안에 체크 표시. 개발 앱이면서 체크리스트 앱이라는 게 바로 보입니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px"><svg><use href="#iB"/></svg></div><div class="icon" style="width:29px"><svg><use href="#iB"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon"><svg><use href="#iC"/></svg></div>
+        <div class="tag">C</div><h3>계급장</h3>
+        <p>위로 쌓이는 갈매기 세 줄. 맨 위 코랄이 시니어 계급입니다. 위쪽 화살표로도 읽힙니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px"><svg><use href="#iC"/></svg></div><div class="icon" style="width:29px"><svg><use href="#iC"/></svg></div></div>
+      </article>
+      <article class="card">
+        <div class="icon"><svg><use href="#iD"/></svg></div>
+        <div class="tag">D</div><h3>Jr → Sr</h3>
+        <p>Jr에 줄을 긋고 Sr로. 이름과 가장 직접 연결되지만 작은 크기에서 Jr이 잘 안 보입니다.</p>
+        <div class="sizes"><div class="icon" style="width:40px"><svg><use href="#iD"/></svg></div><div class="icon" style="width:29px"><svg><use href="#iD"/></svg></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>홈 화면에서 보면</h2>
+    <div class="home">
+      <div class="app"><div class="icon"><svg><use href="#iA"/></svg></div><span>시니어 개발자로</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iB"/></svg></div><span>시니어 개발자로</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iC"/></svg></div><span>시니어 개발자로</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iD"/></svg></div><span>시니어 개발자로</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iA"/></svg></div><span>시니어로</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iB"/></svg></div><span>주니어 졸업</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iC"/></svg></div><span>시니어 체크</span></div>
+      <div class="app"><div class="icon"><svg><use href="#iD"/></svg></div><span>실수 노트</span></div>
+    </div>
+    <p class="note">홈 화면 라벨 폭은 기기마다 달라서 대략적인 미리보기입니다. "시니어 개발자로"는 작은 기기에서 끝이 잘릴 수 있어요.</p>
+  </section>
+</div>

@@ -1,5 +1,5 @@
 {
- "i_title": "100 Dev Mistakes: A Growth Checklist for Junior Developers",
+ "i_title": "Road to Senior Dev: A Growth Checklist for Junior Developers",
  "i_desc": "The 100 mistakes working developers make most often. Know them early and grow faster.",
  "nav_privacy": "Privacy Policy",
  "nav_support": "Support",
@@ -71,7 +71,7 @@
  "lang_label": "Language",
  "p_title": "Privacy Policy",
  "p_updated": "Last updated: February 2026",
- "p_intro": "The 100 Dev Mistakes app (the \"App\") values your privacy. This policy explains what information the App collects and how it is used.",
+ "p_intro": "The Road to Senior Dev app (the \"App\") values your privacy. This policy explains what information the App collects and how it is used.",
  "p_h1": "Information we collect",
  "p_collect_lead": "The App stores the following data locally on your device:",
  "p_collect_li1": "Checklist progress (which mistakes you have ticked off)",
@@ -99,8 +99,8 @@
  "p_h9": "Contact",
  "p_contact": "If you have any questions about privacy, please contact us through the contact details on the developer's App Store page.",
  "su_title": "Support",
- "su_title_full": "Support: 100 Dev Mistakes",
- "su_intro": "Need a hand with 100 Dev Mistakes? Please take a look at the frequently asked questions below first.",
+ "su_title_full": "Support: Road to Senior Dev",
+ "su_intro": "Need a hand with Road to Senior Dev? Please take a look at the frequently asked questions below first.",
  "su_h_contact": "Contact us",
  "su_contact": "If you have a problem or a suggestion, please get in touch through the contact details on the developer's App Store page.",
  "su_h_faq": "Frequently asked questions",
@@ -116,5 +116,5 @@
  "a5": "You can use it on iPhone, iPad and Mac.",
  "su_h_docs": "Related documents",
  "su_eula": "Terms of Use (Apple Standard EULA)",
- "brand": "100 Dev Mistakes"
+ "brand": "Road to Senior Dev"
 }

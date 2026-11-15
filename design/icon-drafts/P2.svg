@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="1024" height="1024"><defs><linearGradient id="P2bg" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#6158D6"/><stop offset="1" stop-color="#2A236E"/></linearGradient>
+    <linearGradient id="P2chk" gradientUnits="userSpaceOnUse" x1="0" y1="38" x2="0" y2="60"><stop offset="0" stop-color="#FFC2A8"/><stop offset="1" stop-color="#FF6B6B"/></linearGradient>
+    <radialGradient id="P2hl" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+    <filter id="P2blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.2"/></filter></defs><rect width="100" height="100" fill="url(#P2bg)"/>
+  <rect width="100" height="100" fill="url(#P2hl)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="28,36 16,50 28,64" stroke="#FFFFFF" stroke-opacity="0.95" stroke-width="6.5"/>
+    <polyline points="72,36 84,50 72,64" stroke="#FFFFFF" stroke-opacity="0.95" stroke-width="6.5"/>
+    <line x1="58.5" y1="64" x2="66" y2="36" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="6.5"/>
+    <polyline points="34,50.5 41.5,59 54,38" stroke="#FF7A6E" stroke-width="12" filter="url(#P2blur)" opacity=".75"/>
+    <polyline points="34,50.5 41.5,59 54,38" stroke="url(#P2chk)" stroke-width="8.5"/>
+  </g></svg>
