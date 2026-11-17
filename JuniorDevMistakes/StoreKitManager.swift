@@ -167,6 +167,23 @@ enum JuniorDevMistakesSpec: LeeoAppSpec {
         "com.leeo.JuniorDevMistakes.tip.medium",
         "com.leeo.JuniorDevMistakes.tip.large",
     ]))
+
+    /// 선물 코드 링크에 들어가는 App Store 앱 번호.
+    static let appStoreID: String? = "6759643878"
+
+    /// PRO 선물하기. 보내는 사람은 소모성 선물 상품을 사고, App Store 오퍼 코드 링크를 받아 건넨다.
+    /// 받는 사람은 링크를 누르거나 설정의 "선물 코드 입력" 에서 코드를 넣으면 평생 이용권이 열린다
+    /// (오퍼 코드 결제는 `StoreKitManager` 의 결제 갱신으로 들어와 PRO 가 된다).
+    /// ⚠️ 선물 상품은 `StoreKitManager.allIds` 에 넣지 않는다. 넣으면 선물을 산 사람이 PRO 가 된다.
+    /// ⚠️ App Store Connect 에 선물 상품이 없으면 보내기 줄은 숨는다(`isAvailable`).
+    ///    오퍼 코드 묶음은 FeedbackHub 의 "선물 코드 묶음" 에서 채운다.
+    @MainActor static let gift = LeeoGiftStore(config: LeeoGiftConfig(
+        productID: "com.leeo.JuniorDevMistakes.gift.pro",
+        grantsProductID: StoreKitManager.lifetimeId,
+        containerIdentifier: "iCloud.com.Ysoup.FeedbackHub",
+        sellsGifts: true,
+        tierName: "PRO"
+    ))
 }
 
 /// 팁을 부탁할 만한 순간 — 돌아본(경험했다고 체크한) 실수 수. 실수 하나를 체크할 때마다 는다.

@@ -20,7 +20,7 @@
       "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "2200",
+      "displayPrice" : "4400",
       "familySharable" : false,
       "internalID" : "A1B2C3D4-0001-0001-0001-A1B2C3D40021",
       "localizations" : [
@@ -35,7 +35,7 @@
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "5500",
+      "displayPrice" : "11000",
       "familySharable" : false,
       "internalID" : "A1B2C3D4-0001-0001-0001-A1B2C3D40022",
       "localizations" : [
@@ -50,7 +50,7 @@
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "11000",
+      "displayPrice" : "33000",
       "familySharable" : false,
       "internalID" : "A1B2C3D4-0001-0001-0001-A1B2C3D40023",
       "localizations" : [
@@ -62,6 +62,21 @@
       ],
       "productID" : "com.leeo.JuniorDevMistakes.tip.large",
       "referenceName" : "Large Tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "39900",
+      "familySharable" : false,
+      "internalID" : "A1B2C3D4-0001-0001-0001-A1B2C3D40031",
+      "localizations" : [
+        {
+          "description" : "PRO 평생 이용권을 선물해요",
+          "displayName" : "PRO 선물",
+          "locale" : "ko_KR"
+        }
+      ],
+      "productID" : "com.leeo.JuniorDevMistakes.gift.pro",
+      "referenceName" : "Gift PRO",
       "type" : "Consumable"
     }
   ],

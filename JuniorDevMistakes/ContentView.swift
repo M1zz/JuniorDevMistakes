@@ -207,7 +207,7 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             List {
-                // 구독 섹션
+                // PRO — 지금 상태 · 업그레이드 · 구매 복원
                 Section {
                     if storeManager.isPremium {
                         HStack(spacing: 14) {
@@ -219,11 +219,12 @@ struct SettingsView: View {
                                     .font(.system(size: 18))
                                     .foregroundStyle(AppTheme.retroAmber)
                             }
+                            .accessibilityHidden(true)
                             VStack(alignment: .leading, spacing: 2) {
                                 Text("PRO 이용 중")
-                                    .font(.system(.subheadline, design: .rounded, weight: .bold))
+                                    .font(.system(.body, design: .rounded, weight: .bold))
                                 Text("100개 실수 전체 이용 가능")
-                                    .font(.system(.caption, design: .rounded))
+                                    .font(.system(.body, design: .rounded))
                                     .foregroundStyle(.secondary)
                             }
                         }
@@ -241,49 +242,51 @@ struct SettingsView: View {
                                         .font(.system(size: 18))
                                         .foregroundStyle(AppTheme.primary)
                                 }
+                                .accessibilityHidden(true)
                                 VStack(alignment: .leading, spacing: 2) {
                                     Text("PRO로 업그레이드")
-                                        .font(.system(.subheadline, design: .rounded, weight: .bold))
+                                        .font(.system(.body, design: .rounded, weight: .bold))
                                         .foregroundStyle(.primary)
                                     Text("나머지 70개 실수를 잠금 해제하세요")
-                                        .font(.system(.caption, design: .rounded))
+                                        .font(.system(.body, design: .rounded))
                                         .foregroundStyle(.secondary)
                                 }
                                 Spacer()
                                 Image(systemName: "chevron.right")
-                                    .font(.system(size: 12))
-                                    .foregroundStyle(.quaternary)
+                                    .font(.body)
+                                    .foregroundStyle(.tertiary)
+                                    .accessibilityHidden(true)
                             }
                             .padding(.vertical, 4)
                         }
                         .buttonStyle(.plain)
-                    }
-                } header: {
-                    Text("구독")
-                }
 
-                // 복원 섹션
-                Section {
-                    Button {
-                        Task { await storeManager.restorePurchases() }
-                    } label: {
-                        HStack {
-                            Label("구매 복원하기", systemImage: "arrow.clockwise")
-                                .font(.system(.subheadline, design: .rounded))
-                                .foregroundStyle(.primary)
-                            Spacer()
-                            if storeManager.isLoading {
-                                ProgressView().scaleEffect(0.85)
+                        Button {
+                            Task { await storeManager.restorePurchases() }
+                        } label: {
+                            HStack {
+                                Label("구매 복원하기", systemImage: "arrow.clockwise")
+                                    .font(.system(.body, design: .rounded))
+                                    .foregroundStyle(.primary)
+                                Spacer()
+                                if storeManager.isLoading {
+                                    ProgressView()
+                                }
                             }
                         }
+                        .buttonStyle(.plain)
+                        .disabled(storeManager.isLoading)
                     }
-                    .buttonStyle(.plain)
+                } header: {
+                    Text(verbatim: "PRO")
                 }
+
+                // PRO 선물하기 · 받은 선물 코드 넣기
+                GiftRows(gift: JuniorDevMistakesSpec.gift, isPro: storeManager.isPremium)
 
                 // 개발자 응원하기 — 판매 중인 팁이 있어야 선다.
                 Section {
                     LeeoTipJarLink<JuniorDevMistakesSpec>(tipJar: JuniorDevMistakesSpec.tipJar)
-                        .font(.system(.subheadline, design: .rounded))
                 }
 
                 // 데이터 섹션
@@ -330,6 +333,62 @@ struct SettingsView: View {
                 Button("초기화", role: .destructive) { manager.resetAll() }
             } message: {
                 Text("모든 진행 데이터가 삭제됩니다. 이 작업은 되돌릴 수 없습니다.")
+            }
+        }
+    }
+}
+
+// MARK: - 선물
+
+/// PRO 칸 바로 아래의 **선물** 줄. 보내는 사람은 소모성 선물 상품을 사고 App Store 오퍼 코드 링크를 건넨다.
+/// 받는 사람은 링크를 누르거나 여기서 코드를 넣는다.
+///
+/// ⚠️ 보내기 줄은 선물 상품이 App Store 에서 와야 선다(`isAvailable`). 이미 결제했거나 보낸 선물이 있는 사람에게는
+///    늘 보인다 — 상품을 못 불러온 날에도 코드를 다시 보거나 문의까지 갈 길이 있어야 한다.
+/// ⚠️ 문구는 LeeoKit 카탈로그(`LeeoGiftText`)에 24개 언어로 들어 있다.
+private struct GiftRows: View {
+    @ObservedObject var gift: LeeoGiftStore
+    let isPro: Bool
+    @State private var showSupport = false
+
+    private var showsSend: Bool {
+        gift.isAvailable || gift.pendingCount > 0 || !gift.sentGifts.isEmpty
+    }
+    /// 이미 PRO 인 사람은 받을 것이 없다.
+    private var showsRedeem: Bool { gift.canRedeem && !isPro }
+
+    var body: some View {
+        if showsSend || showsRedeem {
+            Section {
+                if showsSend {
+                    NavigationLink {
+                        LeeoGiftView<JuniorDevMistakesSpec>(gift: gift, showsRedeemLink: false,
+                                                            onContactSupport: { showSupport = true })
+                    } label: {
+                        Label(LeeoGiftText.sendEntry(tier: gift.config.tierName), systemImage: "gift.fill")
+                            .font(.system(.body, design: .rounded))
+                    }
+                }
+                if showsRedeem {
+                    NavigationLink {
+                        LeeoGiftRedeemView<JuniorDevMistakesSpec>(gift: gift,
+                                                                  onContactSupport: { showSupport = true })
+                    } label: {
+                        Label(LeeoGiftText.redeemEntry, systemImage: "giftcard")
+                            .font(.system(.body, design: .rounded))
+                    }
+                }
+            }
+            .sheet(isPresented: $showSupport) {
+                NavigationStack {
+                    LeeoFeedbackView<JuniorDevMistakesSpec>(initialType: .bug, extraInfo: gift.supportLines,
+                                                            initialCategory: .purchase)
+                        .toolbar {
+                            ToolbarItem(placement: .cancellationAction) {
+                                Button("닫기", systemImage: "xmark") { showSupport = false }
+                            }
+                        }
+                }
             }
         }
     }

@@ -55,3 +55,14 @@
 - [x] 새 문구 8개 23개 언어 번역 추가 (Localizable.xcstrings)
 - [ ] 남은 작은 글자 정리: 배지 · 보조 설명에 .caption · .caption2 · .footnote 가 아직 많음 (전역 규칙은 .body 이상)
 - [ ] 회고 기록 수정 기능 (지금은 삭제 후 다시 쓰기만 됨)
+
+## 설정: PRO · 선물하기 · 개발자 응원 — 2026-11-17
+- [x] LeeoKit 3.38.1 → 3.44.1 (새 응원 화면 · 선물 화면 틀)
+- [x] 설정 맨 위 PRO 칸: 지금 상태 / 업그레이드 / 구매 복원(PRO 아닐 때만), 글자 .body 로
+- [x] PRO 선물하기 줄 · 선물 코드 입력 줄 (LeeoGiftStore 를 LeeoStore 없이 혼자 씀, 받으면 평생 이용권)
+- [x] 개발자 응원 줄 (LeeoTipJarLink)
+- [x] 응원 금액 올림 (.storekit 기준): 작은 2,200 → 4,400 · 중간 5,500 → 11,000 · 큰 11,000 → 33,000원
+- [ ] App Store Connect 에서 팁 세 상품 가격을 위 금액으로 바꾸기 (.storekit 은 테스트용이라 실제 가격은 여기서 바뀌지 않음)
+- [ ] App Store Connect 에 소모성 상품 com.leeo.JuniorDevMistakes.gift.pro 만들기 (39,900원, 평생 이용권과 같은 값). 없으면 선물하기 줄이 안 보임
+- [ ] 평생 이용권(pro.1lifetime)에 일회용 오퍼 코드 만들어 FeedbackHub "선물 코드 묶음"에 채우기
+- [ ] Xcode 에서 실행해 설정 화면의 선물 · 응원 줄 눈으로 확인 (simctl 실행은 StoreKit 테스트 상품을 못 불러옴)

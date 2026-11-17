@@ -27,6 +27,14 @@ struct JuniorDevMistakesApp: App {
                 .environmentObject(storeManager)
                 // 팁 상품을 불러오고 끝나지 않은 팁을 마저 센다 (LeeoStore 없이 혼자)
                 .task { await JuniorDevMistakesSpec.tipJar.startStandalone() }
+                // 선물 상품을 불러오고, 결제는 됐는데 코드를 못 받은 선물을 마저 처리한다.
+                .task {
+                    let gift = JuniorDevMistakesSpec.gift
+                    gift.alreadyEntitled = { storeManager.isPremium }
+                    await gift.loadProduct()
+                    await gift.resumePending()
+                    await gift.refresh()
+                }
                 .fullScreenCover(isPresented: Binding(
                     get: { !hasSeenOnboarding },
                     set: { _ in }
