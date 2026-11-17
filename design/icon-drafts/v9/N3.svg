@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="1024" height="1024"><rect width="100" height="100" fill="#22C55E"/>
+<g stroke="#14532D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+<line x1="34" y1="44" x2="22" y2="38"/><line x1="33" y1="56" x2="20" y2="56"/><line x1="35" y1="68" x2="23" y2="75"/>
+<line x1="66" y1="44" x2="78" y2="38"/><line x1="67" y1="56" x2="80" y2="56"/><line x1="65" y1="68" x2="77" y2="75"/>
+<line x1="44" y1="27" x2="38" y2="18"/><line x1="56" y1="27" x2="62" y2="18"/>
+</g>
+<circle cx="50" cy="33" r="9" fill="#14532D"/>
+<ellipse cx="50" cy="58" rx="18" ry="22" fill="#14532D"/>
+<g transform="rotate(-35 50 58)">
+<rect x="26" y="51" width="48" height="14" rx="7" fill="#FFE2B8"/>
+<rect x="42" y="51" width="16" height="14" fill="#F5C68C"/>
+<g fill="#E0A766"><circle cx="46" cy="55" r="1.2"/><circle cx="54" cy="55" r="1.2"/><circle cx="46" cy="61" r="1.2"/><circle cx="54" cy="61" r="1.2"/><circle cx="50" cy="58" r="1.2"/></g>
+</g>
+</svg>
