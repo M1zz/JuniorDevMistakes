@@ -63,7 +63,7 @@ struct MistakeRow: View {
     private var isChecked: Bool { manager.isChecked(item.id) }
 
     var body: some View {
-        HStack(spacing: 14) {
+        HStack(spacing: 6) {
             // Check circle with animation
             Button {
                 withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
@@ -83,8 +83,12 @@ struct MistakeRow: View {
                             .foregroundStyle(.white)
                     }
                 }
+                // 원은 26pt 지만 누르는 곳은 44pt — 손가락으로 행을 잘못 눌러 화면이 넘어가지 않게
+                .frame(width: 44, height: 44)
+                .contentShape(Circle())
             }
             .buttonStyle(.plain)
+            .sensoryFeedback(.success, trigger: isChecked) { _, checked in checked }
 
             // Content
             VStack(alignment: .leading, spacing: 5) {

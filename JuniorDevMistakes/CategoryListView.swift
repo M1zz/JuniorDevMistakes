@@ -5,6 +5,30 @@ struct CategoryListView: View {
     @EnvironmentObject var storeManager: StoreKitManager
     @State private var showPaywall = false
     @State private var path = ScreenshotScene.initialPath
+    @State private var query = ""
+
+    /// 열려 있는 카테고리에서 아직 경험 체크하지 않은 첫 실수. 다 했으면 없다.
+    private var continueItem: MistakeItem? {
+        allCategories
+            .filter { !storeManager.isCategoryLocked($0.id) }
+            .flatMap(\.items)
+            .first { !manager.isChecked($0.id) }
+    }
+
+    private var trimmedQuery: String { query.trimmingCharacters(in: .whitespacesAndNewlines) }
+
+    /// 실수 제목 · 상황 · 해결 방법에서 찾는다.
+    private var searchResults: [(item: MistakeItem, isLocked: Bool)] {
+        allCategories.flatMap { category in
+            category.items
+                .filter {
+                    $0.mistake.localizedCaseInsensitiveContains(trimmedQuery)
+                        || $0.situation.localizedCaseInsensitiveContains(trimmedQuery)
+                        || $0.action.localizedCaseInsensitiveContains(trimmedQuery)
+                }
+                .map { ($0, storeManager.isCategoryLocked(category.id)) }
+        }
+    }
 
     private var lockedCount: Int {
         allCategories.count - StoreKitManager.freeCategoryLimit
@@ -13,9 +37,16 @@ struct CategoryListView: View {
     var body: some View {
         NavigationStack(path: $path) {
             ScrollView {
+                if !trimmedQuery.isEmpty {
+                    searchResultsView
+                } else {
                 VStack(spacing: 16) {
                     headerCard
                         .padding(.top, 8)
+
+                    if let item = continueItem {
+                        continueCard(item)
+                    }
 
                     if !storeManager.isPremium {
                         proBanner
@@ -42,8 +73,10 @@ struct CategoryListView: View {
                     .padding(.bottom, 24)
                 }
                 .padding(.horizontal)
+                }
             }
             .background(Color(.systemGroupedBackground))
+            .searchable(text: $query, prompt: Text("실수 검색"))
             .navigationTitle("주니어 개발자의 실수 100")
             .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(for: MistakeCategory.self) { category in
@@ -65,6 +98,115 @@ struct CategoryListView: View {
             path.append(item)
             MistakeRouter.shared.mistakeID = nil
         }
+    }
+
+    // MARK: - 이어서 보기
+
+    private func continueCard(_ item: MistakeItem) -> some View {
+        Button {
+            path.append(item)
+        } label: {
+            HStack(spacing: 14) {
+                Image(systemName: "play.circle.fill")
+                    .font(.system(size: 34))
+                    .foregroundStyle(AppTheme.accent)
+                    .accessibilityHidden(true)
+
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("이어서 보기")
+                        .font(.system(.body, design: .rounded, weight: .bold))
+                        .foregroundStyle(AppTheme.accent)
+                    Text(item.mistake)
+                        .font(.system(.body, design: .rounded))
+                        .foregroundStyle(.primary)
+                        .lineLimit(2)
+                        .multilineTextAlignment(.leading)
+                }
+
+                Spacer(minLength: 0)
+
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(.tertiary)
+                    .accessibilityHidden(true)
+            }
+            .padding(16)
+            .background(
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(Color(.systemBackground))
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 16)
+                    .strokeBorder(AppTheme.accent.opacity(0.25), lineWidth: 1)
+            )
+        }
+        .buttonStyle(.plain)
+        .accessibilityElement(children: .combine)
+    }
+
+    // MARK: - 검색 결과
+
+    @ViewBuilder
+    private var searchResultsView: some View {
+        let results = searchResults
+        if results.isEmpty {
+            ContentUnavailableView.search(text: trimmedQuery)
+                .padding(.top, 60)
+        } else {
+            LazyVStack(spacing: 10) {
+                ForEach(results, id: \.item.id) { result in
+                    if result.isLocked {
+                        Button {
+                            showPaywall = true
+                        } label: {
+                            lockedResultRow(result.item)
+                        }
+                        .buttonStyle(.plain)
+                    } else {
+                        NavigationLink(value: result.item) {
+                            MistakeRow(item: result.item)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.horizontal, 10)
+                                .padding(.vertical, 6)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 14)
+                                        .fill(Color(.systemBackground))
+                                )
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+            }
+            .padding(.horizontal)
+            .padding(.vertical, 12)
+        }
+    }
+
+    private func lockedResultRow(_ item: MistakeItem) -> some View {
+        HStack(spacing: 14) {
+            Image(systemName: "lock.fill")
+                .font(.system(size: 16))
+                .foregroundStyle(AppTheme.primary)
+                .frame(width: 44, height: 44)
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: 4) {
+                Text(item.mistake)
+                    .font(.system(.body, design: .rounded))
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.leading)
+                Text("구독하여 잠금 해제")
+                    .font(.system(.body, design: .rounded))
+                    .foregroundStyle(AppTheme.primary)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 8)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(Color(.systemGray6))
+        )
+        .accessibilityElement(children: .combine)
     }
 
     // MARK: - PRO 배너

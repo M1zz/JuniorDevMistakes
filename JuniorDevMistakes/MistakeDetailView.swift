@@ -1,16 +1,35 @@
 import SwiftUI
 
 struct MistakeDetailView: View {
-    let item: MistakeItem
+    /// 지금 보고 있는 실수. "다음 실수"를 누르면 목록으로 돌아가지 않고 이 화면에서 바로 바뀐다.
+    @State private var item: MistakeItem
     @EnvironmentObject var manager: ChecklistManager
+    @EnvironmentObject var storeManager: StoreKitManager
     @State private var showRetroSheet = false
     @State private var selectedQuestionIndex = 0
+    @State private var entryToDelete: RetroEntry?
+
+    init(item: MistakeItem) {
+        _item = State(initialValue: item)
+    }
+
+    /// 1~100 순서에서 바로 다음 실수. 잠긴 카테고리면 없다.
+    private var nextItem: MistakeItem? {
+        let all = allCategories.flatMap(\.items)
+        guard let index = all.firstIndex(of: item), index + 1 < all.count else { return nil }
+        let next = all[index + 1]
+        guard let category = allCategories.first(where: { $0.items.contains(next) }),
+              !storeManager.isCategoryLocked(category.id) else { return nil }
+        return next
+    }
 
     var body: some View {
+        ScrollViewReader { proxy in
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
                 // Header
                 headerSection
+                    .id("top")
 
                 // 4 content sections
                 VStack(spacing: 2) {
@@ -25,10 +44,27 @@ struct MistakeDetailView: View {
                     retroEntriesSection
                 }
 
-                Spacer(minLength: 40)
+                Spacer(minLength: 24)
             }
         }
+        .onChange(of: item.id) { _, _ in
+            withAnimation { proxy.scrollTo("top", anchor: .top) }
+        }
+        }
         .background(Color(.systemGroupedBackground))
+        .safeAreaInset(edge: .bottom) { bottomBar }
+        .sensoryFeedback(.success, trigger: manager.isChecked(item.id)) { _, checked in checked }
+        .confirmationDialog(
+            Text("이 회고를 삭제할까요?"),
+            isPresented: Binding(get: { entryToDelete != nil }, set: { if !$0 { entryToDelete = nil } }),
+            titleVisibility: .visible
+        ) {
+            Button("삭제", role: .destructive) {
+                if let entry = entryToDelete { manager.deleteRetroEntry(entry) }
+                entryToDelete = nil
+            }
+            Button("취소", role: .cancel) { entryToDelete = nil }
+        }
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -45,19 +81,6 @@ struct MistakeDetailView: View {
                     }
                     .accessibilityLabel(Text("북마크"))
                     .accessibilityAddTraits(manager.isBookmarked(item.id) ? .isSelected : [])
-
-                    Button {
-                        withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                            manager.toggle(item.id)
-                        }
-                    } label: {
-                        Image(systemName: manager.isChecked(item.id) ? "checkmark.circle.fill" : "circle")
-                            .font(.system(size: 18))
-                            .foregroundStyle(manager.isChecked(item.id) ? AppTheme.actionGreen : .secondary)
-                            .symbolEffect(.bounce, value: manager.isChecked(item.id))
-                    }
-                    .accessibilityLabel(Text("경험 완료"))
-                    .accessibilityAddTraits(manager.isChecked(item.id) ? .isSelected : [])
                 }
             }
         }
@@ -235,11 +258,13 @@ struct MistakeDetailView: View {
                             .foregroundStyle(.tertiary)
 
                         Button {
-                            manager.deleteRetroEntry(entry)
+                            entryToDelete = entry
                         } label: {
                             Image(systemName: "trash")
-                                .font(.system(size: 12))
-                                .foregroundStyle(.red.opacity(0.4))
+                                .font(.system(size: 15))
+                                .foregroundStyle(.red.opacity(0.6))
+                                .frame(width: 44, height: 44)
+                                .contentShape(Rectangle())
                         }
                         .buttonStyle(.plain)
                         .accessibilityLabel(Text("삭제"))
@@ -261,6 +286,62 @@ struct MistakeDetailView: View {
         .padding(20)
         .background(.background)
         .padding(.top, 2)
+    }
+}
+
+// MARK: - Bottom Bar
+extension MistakeDetailView {
+    /// 경험 체크와 다음 실수를 엄지가 닿는 화면 아래에 둔다.
+    var bottomBar: some View {
+        let checked = manager.isChecked(item.id)
+        return HStack(spacing: 10) {
+            Button {
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
+                    manager.toggle(item.id)
+                }
+            } label: {
+                Label {
+                    Text(checked ? "경험 완료" : "이 실수 경험했어요")
+                } icon: {
+                    Image(systemName: checked ? "checkmark.circle.fill" : "circle")
+                }
+                .font(.system(.body, design: .rounded, weight: .semibold))
+                .frame(maxWidth: .infinity, minHeight: 50)
+                .foregroundStyle(checked ? AppTheme.actionGreen : .white)
+                .background(
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(checked ? AppTheme.actionGreen.opacity(0.15) : AppTheme.brandIndigo)
+                )
+            }
+            .buttonStyle(.plain)
+            .accessibilityAddTraits(checked ? .isSelected : [])
+
+            if let next = nextItem {
+                Button {
+                    withAnimation(.easeInOut(duration: 0.25)) { item = next }
+                } label: {
+                    Label {
+                        Text("다음 실수")
+                    } icon: {
+                        Image(systemName: "arrow.right")
+                    }
+                    .labelStyle(.titleAndIcon)
+                    .font(.system(.body, design: .rounded, weight: .semibold))
+                    .frame(minHeight: 50)
+                    .padding(.horizontal, 16)
+                    .foregroundStyle(AppTheme.primary)
+                    .background(
+                        RoundedRectangle(cornerRadius: 14)
+                            .fill(AppTheme.primary.opacity(0.1))
+                    )
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.top, 10)
+        .padding(.bottom, 8)
+        .background(.bar)
     }
 }
 
@@ -291,8 +372,8 @@ struct ContentSection: View {
             }
 
             Text(content)
-                .font(.system(.subheadline, design: .rounded))
-                .foregroundStyle(.secondary)
+                .font(.system(.body, design: .rounded))
+                .foregroundStyle(.primary)
                 .fixedSize(horizontal: false, vertical: true)
                 .lineSpacing(4)
                 .padding(.leading, 40)
@@ -361,7 +442,12 @@ struct RetroAnswerSheet: View {
     @EnvironmentObject var manager: ChecklistManager
     @Environment(\.dismiss) private var dismiss
     @State private var answer = ""
+    @State private var showDiscardConfirm = false
     @FocusState private var isFocused: Bool
+
+    private var hasDraft: Bool {
+        !answer.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
 
     var body: some View {
         NavigationStack {
@@ -430,8 +516,18 @@ struct RetroAnswerSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소", systemImage: "xmark") { dismiss() }
-                        .font(.system(.subheadline, design: .rounded))
+                    Button("취소", systemImage: "xmark") {
+                        if hasDraft { showDiscardConfirm = true } else { dismiss() }
+                    }
+                    .font(.system(.body, design: .rounded))
+                    .confirmationDialog(
+                        Text("작성 중인 회고를 버릴까요?"),
+                        isPresented: $showDiscardConfirm,
+                        titleVisibility: .visible
+                    ) {
+                        Button("버리기", role: .destructive) { dismiss() }
+                        Button("계속 쓰기", role: .cancel) {}
+                    }
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("저장", systemImage: "checkmark") {
@@ -449,6 +545,7 @@ struct RetroAnswerSheet: View {
                 }
             }
         }
+        .interactiveDismissDisabled(hasDraft)
         .onAppear {
             isFocused = true
         }
