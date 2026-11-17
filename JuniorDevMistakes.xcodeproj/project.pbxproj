@@ -14,6 +14,7 @@
 		A10001 /* JuniorDevMistakesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001 /* JuniorDevMistakesApp.swift */; };
 		A10002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20002 /* ContentView.swift */; };
 		A10003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20003 /* Assets.xcassets */; };
+		A10099 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = A20099 /* AppIcon.icon */; };
 		A10004 /* MistakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20004 /* MistakeData.swift */; };
 		A10005 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20005 /* Models.swift */; };
 		A10006 /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20006 /* CategoryListView.swift */; };
@@ -40,6 +41,7 @@
 		A20001 /* JuniorDevMistakesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuniorDevMistakesApp.swift; sourceTree = "<group>"; };
 		A20002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A20003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20099 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		A20004 /* MistakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistakeData.swift; sourceTree = "<group>"; };
 		A20005 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		A20006 /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				A20009 /* ProgressView.swift */,
 				A20012 /* RetroJournalView.swift */,
 				A20003 /* Assets.xcassets */,
+				A20099 /* AppIcon.icon */,
 				A20101 /* Localizable.xcstrings */,
 				A20102 /* Mistakes.xcstrings */,
 				A20103 /* InfoPlist.xcstrings */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10003 /* Assets.xcassets in Resources */,
+				A10099 /* AppIcon.icon in Resources */,
 				A10101 /* Localizable.xcstrings in Resources */,
 				A10102 /* Mistakes.xcstrings in Resources */,
 				A10103 /* InfoPlist.xcstrings in Resources */,

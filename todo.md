@@ -30,6 +30,9 @@
 ### 다음에 할 일
 - [x] 아이콘 최종안: 9차 N3 반창고 버그
 - [x] AppIcon 1024.png 교체 (알파 없는 RGB) 후 빌드 확인
+- [x] Icon Composer 아이콘으로 전환: JuniorDevMistakes/AppIcon.icon (레이어: 앞 반창고, 뒤 버그 / 다크 모드용 밝은 버그). 옛 AppIcon.appiconset 은 지우고 PNG 는 design/icon-drafts/legacy/ 로 옮김
+  - 미리보기: design/icon-drafts/v9/N3-icon-composer-renditions.png (기본 · 다크 · 투명 · 틴트)
+  - 확인 명령: ictool JuniorDevMistakes/AppIcon.icon --export-image --output-file out.png --platform iOS --rendition Default --width 1024 --height 1024 --scale 1
 - [x] docs/icon.png (웹 페이지 아이콘) 교체
 - [ ] App Store 스크린샷 · 프로모션 이미지에 옛 아이콘이 들어갔는지 확인
 - [ ] 나머지 21개 언어 이름 바꿀지 결정 (지금은 옛 이름 유지: やらかし100, 踩坑100 등)
@@ -39,3 +42,16 @@
 
 ### 참고
 - 원래 컴퓨터에 커밋 안 한 pbxproj 변경이 git stash 에 남아 있음 (Mac Catalyst · iPad 지원 끄기). stash 는 푸시되지 않으므로 다른 컴퓨터에는 없음. 필요 없으면 원래 컴퓨터에서 git stash drop
+
+## 사용성 개선 — 2026-11-17
+- [x] 상세 화면 본문 글자 키우기 (.subheadline 회색 → .body 기본색)
+- [x] 상세 화면 아래 "이 실수 경험했어요" 큰 버튼 + "다음 실수" 버튼 (목록으로 안 돌아가도 됨, 잠긴 카테고리 전까지)
+- [x] 상단 툴바의 이름 없는 체크 원 제거 (아래 버튼으로 대체)
+- [x] 회고 삭제 전에 확인, 삭제 버튼 누르는 영역 44pt
+- [x] 회고 작성 중 취소 · 아래로 쓸어 닫기 시 버릴지 확인
+- [x] 홈에 "이어서 보기" 카드 (아직 체크 안 한 첫 실수)
+- [x] 홈에 실수 검색 (제목 · 상황 · 해결 방법, 잠긴 실수는 PRO 안내)
+- [x] 목록 체크 원 누르는 영역 26pt → 44pt, 체크할 때 햅틱
+- [x] 새 문구 8개 23개 언어 번역 추가 (Localizable.xcstrings)
+- [ ] 남은 작은 글자 정리: 배지 · 보조 설명에 .caption · .caption2 · .footnote 가 아직 많음 (전역 규칙은 .body 이상)
+- [ ] 회고 기록 수정 기능 (지금은 삭제 후 다시 쓰기만 됨)
