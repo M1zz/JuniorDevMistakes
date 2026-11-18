@@ -1,5 +1,199 @@
 # 실수 100 릴리즈 노트
 
+## 1.0.4
+
+### 앱스토어 (한국어)
+
+앱 아이콘이 새로워졌어요
+실수를 검색해서 바로 찾아요
+홈에서 이어서 볼 실수를 알려 줘요
+다음 실수로 바로 넘어갈 수 있어요
+회고를 지우기 전에 한 번 더 물어봐요
+
+### 앱스토어 (영어)
+
+A fresh new app icon
+Search to find any mistake fast
+Home shows where to pick up next
+Jump straight to the next mistake
+Asks before deleting a reflection
+
+### 앱스토어 (영어(영국))
+
+A fresh new app icon
+Search to find any mistake fast
+Home shows where to pick up next
+Jump straight to the next mistake
+Asks before deleting a reflection
+
+### 앱스토어 (중국어 간체)
+
+全新的应用图标
+可以直接搜索想看的错误
+首页会提示接着看哪一条
+看完可直接进入下一条
+删除复盘前会先确认
+
+### 앱스토어 (중국어 번체)
+
+全新的 App 圖像
+可以直接搜尋想看的錯誤
+首頁會提示接著看哪一則
+看完可直接進入下一則
+刪除回顧前會先確認
+
+### 앱스토어 (일본어)
+
+アプリのアイコンが新しくなりました
+ミスを検索してすぐに見つけられます
+ホームで続きから読めます
+次のミスへそのまま進めます
+振り返りを消す前に確認します
+
+### 앱스토어 (러시아어)
+
+Новая иконка приложения
+Поиск по ошибкам
+На главной видно, с чего продолжить
+Переход сразу к следующей ошибке
+Подтверждение перед удалением заметки
+
+### 앱스토어 (스페인어)
+
+Nuevo icono de la app
+Busca cualquier error al instante
+El inicio te dice por dónde seguir
+Pasa directo al siguiente error
+Confirma antes de borrar una reflexión
+
+### 앱스토어 (독일어)
+
+Neues App-Symbol
+Fehler jetzt per Suche finden
+Start zeigt, wo es weitergeht
+Direkt zum nächsten Fehler springen
+Rückfrage vor dem Löschen von Notizen
+
+### 앱스토어 (프랑스어)
+
+Nouvelle icône de l’app
+Recherchez une erreur en un instant
+L’accueil indique où reprendre
+Passez directement à l’erreur suivante
+Confirmation avant de supprimer une note
+
+### 앱스토어 (이탈리아어)
+
+Nuova icona dell’app
+Cerca subito qualsiasi errore
+La Home ti dice da dove riprendere
+Passa subito all’errore successivo
+Conferma prima di eliminare una nota
+
+### 앱스토어 (포르투갈어(브라질))
+
+Novo ícone do app
+Busque qualquer erro na hora
+O início mostra de onde continuar
+Vá direto para o próximo erro
+Confirma antes de apagar uma reflexão
+
+### 앱스토어 (태국어)
+
+ไอคอนแอปใหม่
+ค้นหาข้อผิดพลาดได้ทันที
+หน้าแรกบอกว่าควรอ่านต่อตรงไหน
+ไปยังข้อถัดไปได้เลย
+ถามยืนยันก่อนลบบันทึกทบทวน
+
+### 앱스토어 (베트남어)
+
+Biểu tượng ứng dụng mới
+Tìm nhanh mọi lỗi bằng tìm kiếm
+Trang chủ gợi ý đọc tiếp từ đâu
+Chuyển ngay sang lỗi tiếp theo
+Hỏi lại trước khi xóa ghi chép
+
+### 앱스토어 (체코어)
+
+Nová ikona aplikace
+Chyby teď najdete hledáním
+Domů ukáže, kde pokračovat
+Přejděte rovnou na další chybu
+Před smazáním poznámky se zeptáme
+
+### 앱스토어 (덴마크어)
+
+Nyt appikon
+Søg og find en fejl med det samme
+Forsiden viser, hvor du fortsætter
+Gå direkte til den næste fejl
+Spørger, før en note slettes
+
+### 앱스토어 (그리스어)
+
+Νέο εικονίδιο εφαρμογής
+Βρείτε κάθε λάθος με αναζήτηση
+Η αρχική δείχνει από πού να συνεχίσετε
+Πηγαίνετε απευθείας στο επόμενο λάθος
+Επιβεβαίωση πριν από τη διαγραφή
+
+### 앱스토어 (핀란드어)
+
+Uusi sovelluskuvake
+Löydä virheet nopeasti haulla
+Etusivu näyttää, mistä jatkaa
+Siirry suoraan seuraavaan virheeseen
+Varmistus ennen muistiinpanon poistoa
+
+### 앱스토어 (인도네시아어)
+
+Ikon aplikasi baru
+Cari kesalahan apa pun dengan cepat
+Beranda menunjukkan lanjut dari mana
+Langsung ke kesalahan berikutnya
+Konfirmasi sebelum menghapus catatan
+
+### 앱스토어 (노르웨이어(보크말))
+
+Nytt appsymbol
+Søk og finn en feil med en gang
+Hjem viser hvor du fortsetter
+Gå rett til neste feil
+Spør før et notat slettes
+
+### 앱스토어 (네덜란드어)
+
+Nieuw appsymbool
+Vind elke fout snel met zoeken
+Home laat zien waar je verdergaat
+Ga direct naar de volgende fout
+Vraagt eerst voordat je een notitie wist
+
+### 앱스토어 (폴란드어)
+
+Nowa ikona aplikacji
+Szybko znajdź błąd w wyszukiwarce
+Ekran główny podpowie, co dalej
+Przejdź od razu do kolejnego błędu
+Pytanie przed usunięciem notatki
+
+### 앱스토어 (스웨덴어)
+
+Ny appsymbol
+Sök och hitta ett misstag direkt
+Hem visar var du fortsätter
+Gå direkt till nästa misstag
+Frågar innan en anteckning raderas
+
+### 앱스토어 (튀르키예어)
+
+Yeni uygulama simgesi
+Hataları aramayla hemen bul
+Ana ekran kaldığın yeri gösterir
+Doğrudan sonraki hataya geç
+Notu silmeden önce onay ister
+
 ## 1.0.3
 
 ### 앱스토어 (한국어)
