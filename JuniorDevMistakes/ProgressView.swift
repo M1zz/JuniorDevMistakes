@@ -97,6 +97,8 @@ struct OverallProgressView: View {
             // 큰 숫자는 고리 안 장식이라 고정 크기. VoiceOver 는 "N / 100" 으로 읽는다
             .accessibilityElement(children: .ignore)
             .accessibilityLabel(Text("\(manager.totalChecked) / 100"))
+            // 고리는 아랍어에서도 12시에서 시계 방향으로 차고, "/ 100" 도 그대로 읽힌다.
+            .environment(\.layoutDirection, .leftToRight)
 
             Text(progressMessage)
                 .font(.system(.subheadline, design: .rounded, weight: .medium))

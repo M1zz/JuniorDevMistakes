@@ -48,6 +48,9 @@ struct JuniorDevMistakesApp: App {
                 .onChange(of: scenePhase) { _, phase in
                     if phase != .inactive { Task { await RetroLibrary.reindex() } }
                 }
+                // 아랍어는 숫자를 0-9, 날짜를 양력으로 맞춘다 (기기 설정에 따라 ١٢٣ · 히즈라력이 섞이지 않게).
+                .environment(\.locale, AppLocale.display)
+                .environment(\.calendar, AppLocale.calendar)
 #if targetEnvironment(macCatalyst)
                 .frame(minWidth: 900, minHeight: 600)
 #endif
@@ -64,6 +67,24 @@ struct JuniorDevMistakesApp: App {
         }
 #endif
     }
+}
+
+// MARK: - 표시 로케일
+
+enum AppLocale {
+    /// 화면에 숫자 · 날짜를 그릴 로케일. 아랍어만 0-9 숫자와 양력으로 고정하고, 다른 언어는 기기 설정 그대로.
+    static let display: Locale = {
+        let lang = Bundle.main.preferredLocalizations.first ?? "en"
+        return lang == "ar" ? Locale(identifier: "ar@calendar=gregorian;numbers=latn") : .autoupdatingCurrent
+    }()
+
+    /// 날짜(Text(date, style:))는 로케일이 아니라 이 달력을 따른다.
+    static let calendar: Calendar = {
+        guard display.language.languageCode == .arabic else { return .autoupdatingCurrent }
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.locale = display
+        return calendar
+    }()
 }
 
 // MARK: - App Store 스크린샷 장면
@@ -194,6 +215,9 @@ extension ScreenshotScene {
         "sv": ["Gårdagens kod hade data och temp. Jag döpte om dem till userList och formattedDate.",
                "Jag lade in över tio print. Nästa gång börjar jag med en brytpunkt.",
                "Tre commits hette bara ”fix”. Nu skriver jag vad jag ändrade och varför."],
+        "ar": ["كان في كود أمس data وtemp. غيّرت اسميهما إلى userList وformattedDate.",
+               "أضفت أكثر من عشر عبارات print. في المرة القادمة سأبدأ بنقطة توقف.",
+               "ثلاثة commits كان اسمها fix فقط. الآن أكتب ما غيّرته ولماذا."],
         "tr": ["Dünkü kodda data ve temp vardı. Adlarını userList ve formattedDate yaptım.",
                "On taneden fazla print ekledim. Bir dahaki sefere önce breakpoint koyacağım.",
                "Üç commit'te sadece \"fix\" yazıyordu. Artık neyi neden değiştirdiğimi yazıyorum."],

@@ -125,7 +125,7 @@ struct CategoryListView: View {
 
                 Spacer(minLength: 0)
 
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundStyle(.tertiary)
                     .accessibilityHidden(true)
@@ -232,7 +232,7 @@ struct CategoryListView: View {
 
                 Spacer()
 
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
                     .font(.system(size: 12, weight: .semibold))
                     .foregroundStyle(.quaternary)
             }
@@ -290,6 +290,8 @@ struct CategoryListView: View {
                         .minimumScaleFactor(0.5)
                         .padding(6)
                 }
+                // 고리는 아랍어에서도 12시에서 시계 방향으로 찬다.
+                .environment(\.layoutDirection, .leftToRight)
             }
             .padding(20)
         }
@@ -391,7 +393,7 @@ struct CategoryCard: View {
             }
 
             if isLocked {
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
                     .font(.system(size: 12, weight: .semibold))
                     .foregroundStyle(.quaternary)
             } else {
@@ -403,7 +405,7 @@ struct CategoryCard: View {
                     .background(color.opacity(0.1))
                     .clipShape(Capsule())
 
-                Image(systemName: "chevron.right")
+                Image(systemName: "chevron.forward")
                     .font(.system(size: 12, weight: .semibold))
                     .foregroundStyle(.quaternary)
             }

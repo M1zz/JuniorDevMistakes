@@ -252,7 +252,7 @@ struct SettingsView: View {
                                         .foregroundStyle(.secondary)
                                 }
                                 Spacer()
-                                Image(systemName: "chevron.right")
+                                Image(systemName: "chevron.forward")
                                     .font(.body)
                                     .foregroundStyle(.tertiary)
                                     .accessibilityHidden(true)

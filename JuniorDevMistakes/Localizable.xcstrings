@@ -12,6 +12,12 @@
     },
     "/년" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/سنة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -154,6 +160,12 @@
     },
     "/월" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/شهر"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -296,6 +308,12 @@
     },
     "/일" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/يوم"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -438,6 +456,12 @@
     },
     "/주" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "/أسبوع"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -584,6 +608,12 @@
     "%@ %@\n대신 이렇게: %@" : {
       "comment" : "Siri: a mistake and what to do instead. Arguments: number, mistake, action",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@\nبدلًا من ذلك: %3$@"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -732,6 +762,12 @@
     },
     "%lld / 100 경험 완료" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مررت بـ %lld من 100"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -891,6 +927,48 @@
     },
     "%lld개" : {
       "localizations" : {
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "لا شيء"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "واحدة"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "اثنتان"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld"
+                }
+              }
+            }
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1033,6 +1111,48 @@
     },
     "%lld개 완료" : {
       "localizations" : {
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "لم يكتمل شيء"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "اكتمل واحد"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "اكتمل اثنان"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "اكتمل %lld"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "اكتمل %lld"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "اكتمل %lld"
+                }
+              }
+            }
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1175,6 +1295,48 @@
     },
     "%lld개 카테고리가 잠겨 있습니다" : {
       "localizations" : {
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "لا توجد فئات مقفلة"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "فئة واحدة مقفلة"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "فئتان مقفلتان"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld فئات مقفلة"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld فئة مقفلة"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld فئة مقفلة"
+                }
+              }
+            }
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1317,6 +1479,48 @@
     },
     "%lld개 항목" : {
       "localizations" : {
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "لا عناصر"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "عنصر واحد"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "عنصران"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld عناصر"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld عنصرًا"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld عنصر"
+                }
+              }
+            }
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1459,6 +1663,12 @@
     },
     "10개 카테고리, 100가지 실수\n직접 경험하기 전에 미리 배우세요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 فئات و100 خطأ\nتعلّمها قبل أن تقع فيها"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1601,6 +1811,12 @@
     },
     "100가지 실수\n체크리스트" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قائمة تحقق\n100 خطأ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1743,6 +1959,12 @@
     },
     "100개 실수 전체 이용 가능" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كل الأخطاء الـ100 متاحة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1885,6 +2107,12 @@
     },
     "100개 완전한 성장 추적" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تتبّع تقدمك في الأخطاء الـ100 كلها"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2027,6 +2255,12 @@
     },
     "280개 추가 회고 질문" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "280 سؤال مراجعة إضافيًا"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2169,6 +2403,12 @@
     },
     "iPhone, iPad, Mac에서\niCloud로 데이터가 항상 이어집니다" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بياناتك متزامنة دائمًا عبر iCloud\nعلى iPhone وiPad وMac"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2311,6 +2551,12 @@
     },
     "PRO" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRO"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2453,6 +2699,12 @@
     },
     "PRO 이용 중" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشتراك PRO مفعّل"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2595,6 +2847,12 @@
     },
     "PRO 플랜 포함 내용" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماذا يتضمن PRO"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2737,6 +2995,12 @@
     },
     "PRO로 업그레이드" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الترقية إلى PRO"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2879,6 +3143,12 @@
     },
     "PRO로 업그레이드하여 전체 학습하기" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رقِّ إلى PRO وتعلّمها كلها"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3021,6 +3291,12 @@
     },
     "Q%lld" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "س%lld"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3163,6 +3439,12 @@
     },
     "Today’s Mistake" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطأ اليوم"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3311,6 +3593,12 @@
     },
     "각 실수 항목의 회고 질문에\n답변을 작성해보세요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اكتب إجاباتك عن أسئلة المراجعة\nلكل خطأ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3453,6 +3741,12 @@
     },
     "각 실수마다 회고 질문에 답하며\n같은 실수를 두 번 하지 않게 됩니다" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أجب عن أسئلة المراجعة لكل خطأ\nولن تكرر الخطأ نفسه مرتين"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3595,6 +3889,12 @@
     },
     "개인정보처리방침" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سياسة الخصوصية"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3737,6 +4037,12 @@
     },
     "거의 다 왔습니다!\n이 정도면 이미 많은 것을 배웠을 거예요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اقتربت كثيرًا!\nلا بد أنك تعلّمت الكثير حتى الآن"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3879,6 +4185,12 @@
     },
     "건너뛰기" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تخطٍّ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4021,6 +4333,12 @@
     },
     "경험 완료" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مررت به"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4163,6 +4481,12 @@
     },
     "경험한 실수" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أخطاء مررت بها"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4305,6 +4629,12 @@
     },
     "계속 쓰기" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة الكتابة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4447,6 +4777,12 @@
     },
     "구독" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاشتراك"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4589,6 +4925,12 @@
     },
     "구독하여 잠금 해제" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشترك لفتح المحتوى"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4731,6 +5073,12 @@
     },
     "구매 복원에 실패했습니다." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّرت استعادة المشتريات."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4873,6 +5221,12 @@
     },
     "구매 복원하기" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استعادة المشتريات"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5015,6 +5369,12 @@
     },
     "구매 요청이 접수되었습니다. 승인이 완료되면 자동으로 잠금이 해제됩니다." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم إرسال طلب الشراء. سيُفتح كل شيء تلقائيًا بعد الموافقة عليه."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5157,6 +5517,12 @@
     },
     "구매 중 오류가 발생했습니다." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حدث خطأ أثناء الشراء."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5299,6 +5665,12 @@
     },
     "구매를 확인하지 못했습니다. 잠시 후 다시 시도해 주세요." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر التحقق من الشراء. حاول مرة أخرى بعد قليل."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5441,6 +5813,12 @@
     },
     "기록을 열지 못했어요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر فتح سجلاتك"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5583,6 +5961,12 @@
     },
     "꾸준히 성장하고 있습니다!\n실수가 쌓일수록 실력도 쌓입니다" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنت تتطور بثبات!\nكل خطأ تتعلّم منه يزيد خبرتك"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5725,6 +6109,12 @@
     },
     "나머지 70개 실수를 잠금 해제하세요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "افتح الأخطاء الـ70 المتبقية"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5867,6 +6257,12 @@
     },
     "나의 성장 여정" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رحلة تطوّري"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6009,6 +6405,12 @@
     },
     "나의 실수 100" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أخطائي المئة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6151,6 +6553,12 @@
     },
     "나의 회고 기록" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مراجعاتي"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6293,6 +6701,12 @@
     },
     "다시 시도" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة المحاولة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6435,6 +6849,12 @@
     },
     "다음" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التالي"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6577,6 +6997,12 @@
     },
     "다음 실수" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخطأ التالي"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6720,6 +7146,12 @@
     "닫기" : {
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إغلاق"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6862,6 +7294,12 @@
     },
     "데이터" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البيانات"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7004,6 +7442,12 @@
     },
     "마지막 몇 개만 남았습니다!\n완주가 코앞입니다" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بقي القليل فقط!\nخط النهاية أمامك"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7146,6 +7590,12 @@
     },
     "모든 기기에서\n자동으로 동기화" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مزامنة تلقائية\nعلى كل أجهزتك"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7288,6 +7738,12 @@
     },
     "모든 데이터 초기화" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مسح كل البيانات"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7430,6 +7886,12 @@
     },
     "모든 진행 데이터가 삭제됩니다. 이 작업은 되돌릴 수 없습니다." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سيُحذف كل تقدمك. لا يمكن التراجع عن ذلك."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7572,6 +8034,12 @@
     },
     "버리기" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تجاهل"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7714,6 +8182,12 @@
     },
     "버전" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإصدار"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7856,6 +8330,12 @@
     },
     "복원할 구매 내역이 없습니다." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا توجد مشتريات لاستعادتها."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7998,6 +8478,12 @@
     },
     "북마크" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المحفوظات"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8140,6 +8626,12 @@
     },
     "북마크한 항목이 없습니다" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا توجد عناصر محفوظة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8282,6 +8774,12 @@
     },
     "삭제" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8424,6 +8922,12 @@
     },
     "상세 화면에서 북마크 버튼을 눌러\n나중에 볼 항목을 저장하세요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اضغط زر الحفظ في صفحة الخطأ\nلتعود إليه لاحقًا"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8566,6 +9070,12 @@
     },
     "상품 정보를 불러오는 중..." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جارٍ تحميل معلومات المنتج..."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8708,6 +9218,12 @@
     },
     "상품 정보를 불러오지 못했습니다.\n네트워크 연결을 확인해 주세요." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر تحميل معلومات المنتج.\nتحقق من اتصالك بالإنترنت."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8850,6 +9366,12 @@
     },
     "설정" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإعدادات"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8992,6 +9514,12 @@
     },
     "시작하기" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9134,6 +9662,12 @@
     },
     "실수 #031-100 전체 학습" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعلّم الأخطاء من 031 إلى 100"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9276,6 +9810,12 @@
     },
     "실수 70개가 더 기다리고 있어요\n지금 잠금을 해제하세요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "70 خطأ آخر بانتظارك\nافتحها الآن"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9418,6 +9958,12 @@
     },
     "실수 100" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 خطأ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9560,6 +10106,12 @@
     },
     "실수 검색" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابحث في الأخطاء"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9703,6 +10255,12 @@
     "실수 하나와 대신 해 볼 일을 읽어 줍니다." : {
       "comment" : "Siri: daily mistake description",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقرأ لك خطأً واحدًا وما تفعله بدلًا منه."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9845,6 +10403,12 @@
     },
     "실수 후 스스로에게 물어보세요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسأل نفسك بعد الخطأ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9987,6 +10551,12 @@
     },
     "아직 시작하지 않았습니다.\n첫 번째 실수를 경험해보세요!" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم تبدأ بعد.\nابدأ بأول خطأ!"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10129,6 +10699,12 @@
     },
     "안내" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنبيه"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10271,6 +10847,12 @@
     },
     "여기에 답변을 작성하세요..." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اكتب إجابتك هنا..."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10413,6 +10995,12 @@
     },
     "여정을 시작했습니다!\n모든 시니어도 여기서 시작했어요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بدأت رحلتك!\nكل مطوّر خبير بدأ من هنا"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10555,6 +11143,12 @@
     },
     "연간 구독" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشتراك سنوي"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10697,6 +11291,12 @@
     },
     "연간 구독 · %@/년 · 매년 자동 갱신" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشتراك سنوي · %@/سنة · يتجدد تلقائيًا كل سنة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10840,6 +11440,12 @@
     "열어 볼 회고 일지의 답" : {
       "comment" : "Siri: retro parameter description",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإجابة التي تريد فتحها من دفتر المراجعة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10983,6 +11589,12 @@
     "오늘의 실수" : {
       "comment" : "Siri: read one junior developer mistake",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطأ اليوم"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11125,6 +11737,12 @@
     },
     "오류" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطأ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11267,6 +11885,12 @@
     },
     "월간 구독" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشتراك شهري"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11409,6 +12033,12 @@
     },
     "월간 구독 · %@/월 · 매월 자동 갱신" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشتراك شهري · %@/شهر · يتجدد تلقائيًا كل شهر"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11551,6 +12181,12 @@
     },
     "월간 대비 최대 50% 절약" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وفّر حتى 50% مقارنة بالشهري"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11693,6 +12329,12 @@
     },
     "월간·연간 구독은 자동으로 갱신되며, 현재 기간 종료 24시간 전까지 취소하지 않으면 결제됩니다. 구독은 Apple ID 설정에서 언제든지 관리·취소할 수 있습니다." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتجدد الاشتراكان الشهري والسنوي تلقائيًا ما لم تلغِهما قبل 24 ساعة على الأقل من نهاية الفترة الحالية. يمكنك إدارة اشتراكك أو إلغاؤه في أي وقت من إعدادات Apple ID."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11835,6 +12477,12 @@
     },
     "이 실수 경험했어요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وقعت في هذا الخطأ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11977,6 +12625,12 @@
     },
     "이 회고를 삭제할까요?" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل تريد حذف هذه المراجعة؟"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12119,6 +12773,12 @@
     },
     "이것을 배우며 성장합니다" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما الذي تتعلمه"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12261,6 +12921,12 @@
     },
     "이런 상황이 벌어집니다" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما الذي يحدث"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12403,6 +13069,12 @@
     },
     "이렇게 하세요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما الذي تفعله"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12545,6 +13217,12 @@
     },
     "이어서 보기" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12687,6 +13365,12 @@
     },
     "이용약관(EULA)" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شروط الاستخدام (EULA)"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12829,6 +13513,12 @@
     },
     "인기" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأكثر طلبًا"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12971,6 +13661,12 @@
     },
     "작성 중인 회고를 버릴까요?" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل تريد تجاهل هذه المراجعة؟"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13113,6 +13809,12 @@
     },
     "저장" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حفظ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13255,6 +13957,12 @@
     },
     "저장된 기록은 지워지지 않았어요. 다만 지금 적는 내용은 저장되지 않으니, 앱을 껐다 켜 보세요." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجلاتك المحفوظة لم تُحذف، لكن ما تكتبه الآن لن يُحفظ. أغلق التطبيق وافتحه من جديد."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13397,6 +14105,12 @@
     },
     "전체" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكل"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13539,6 +14253,12 @@
     },
     "전체 초기화" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مسح الكل"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13681,6 +14401,12 @@
     },
     "절반에 가까워지고 있습니다!\n이 속도면 금방 시니어가 되겠네요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقترب من المنتصف!\nبهذه الوتيرة ستصبح مطوّرًا خبيرًا قريبًا"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13823,6 +14549,12 @@
     },
     "절반을 넘었습니다!\n이제 중급 개발자의 시야가 보이기 시작합니다" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تجاوزت المنتصف!\nبدأت تفكر كمطوّر متوسط الخبرة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13965,6 +14697,12 @@
     },
     "정보" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حول التطبيق"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14107,6 +14845,12 @@
     },
     "주니어 개발자의\n실수 100" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 خطأ\nيقع فيها المطوّر المبتدئ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14249,6 +14993,12 @@
     },
     "주니어 개발자의 실수 100" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100 خطأ يقع فيها المطوّر المبتدئ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14393,6 +15143,12 @@
       "comment" : "Mac Catalyst 앱 메뉴 (macCatalyst 빌드에서만 컴파일됨)",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حول 100 خطأ يقع فيها المطوّر المبتدئ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14535,6 +15291,12 @@
     },
     "지금 시작하기" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ الآن"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14678,6 +15440,48 @@
     "지금까지 실수 %lld개를 돌아봤어요" : {
       "comment" : "Tip ask card: how many of the 100 mistakes the person has checked off",
       "localizations" : {
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "لم تراجع أي خطأ بعد"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "راجعت خطأً واحدًا حتى الآن"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "راجعت خطأين حتى الآن"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "راجعت %lld أخطاء حتى الآن"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "راجعت %lld خطأً حتى الآن"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "راجعت %lld خطأ حتى الآن"
+                }
+              }
+            }
+          }
+        },
         "cs" : {
           "variations" : {
             "plural" : {
@@ -15054,6 +15858,12 @@
     },
     "진행률" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التقدم"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15196,6 +16006,12 @@
     },
     "체크리스트, 회고 기록, 북마크가 모두 삭제됩니다." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ستُحذف قائمة التحقق والمراجعات والمحفوظات كلها."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15338,6 +16154,12 @@
     },
     "체크리스트, 회고 기록, 북마크가 모두 삭제됩니다. 이 작업은 되돌릴 수 없습니다." : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ستُحذف قائمة التحقق والمراجعات والمحفوظات كلها. لا يمكن التراجع عن ذلك."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15480,6 +16302,12 @@
     },
     "초기화" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مسح"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15622,6 +16450,12 @@
     },
     "초기화 확인" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تأكيد المسح"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15764,6 +16598,12 @@
     },
     "축하합니다! 모든 실수를 경험했습니다!\n이제 시니어의 길이 열렸습니다!" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مبروك! مررت بكل الأخطاء!\nالطريق إلى الخبرة مفتوح أمامك الآن!"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15906,6 +16746,12 @@
     },
     "취소" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16048,6 +16894,12 @@
     },
     "카테고리 4-10 완전 잠금 해제" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فتح الفئات من 4 إلى 10 بالكامل"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16190,6 +17042,12 @@
     },
     "평생 이용권" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وصول مدى الحياة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16332,6 +17190,12 @@
     },
     "평생 이용권 · %@ · 1회 결제, 자동 갱신 없음" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وصول مدى الحياة · %@ · دفعة واحدة دون تجديد"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16474,6 +17338,12 @@
     },
     "플랜 선택" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر خطة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16616,6 +17486,12 @@
     },
     "한 번 결제로 영구 이용" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ادفع مرة واحدة واستخدمه للأبد"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16758,6 +17634,12 @@
     },
     "향후 모든 콘텐츠 업데이트" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كل تحديثات المحتوى القادمة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16900,6 +17782,12 @@
     },
     "현직 개발자들이 가장 많이 하는\n실수를 미리 알고 더 빨리 성장하세요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اعرف مسبقًا أكثر الأخطاء شيوعًا بين المطوّرين\nوتطوّر أسرع"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17042,6 +17930,12 @@
     },
     "확인" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حسنًا"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17185,6 +18079,12 @@
     "회고" : {
       "comment" : "Siri/Spotlight: one answer written in the retro journal\nSiri: retro parameter",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المراجعة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17327,6 +18227,12 @@
     },
     "회고 기록" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المراجعات"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17469,6 +18375,12 @@
     },
     "회고 기록이 없습니다" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا توجد مراجعات بعد"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17612,6 +18524,12 @@
     "회고 열기" : {
       "comment" : "Siri/Spotlight: open a retro journal answer",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فتح المراجعة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17754,6 +18672,12 @@
     },
     "회고 완료" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمت المراجعة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17896,6 +18820,12 @@
     },
     "회고 일지" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دفتر المراجعة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18039,6 +18969,12 @@
     "회고 일지에 쓴 답과 그 실수 화면을 엽니다." : {
       "comment" : "Siri: open retro description",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح إجابة من دفتر المراجعة مع صفحة الخطأ الخاص بها."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18181,6 +19117,12 @@
     },
     "회고 작성" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كتابة مراجعة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18323,6 +19265,12 @@
     },
     "회고 질문" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أسئلة المراجعة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18465,6 +19413,12 @@
     },
     "회고로 진짜\n성장을 경험하세요" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عِش تطوّرًا حقيقيًا\nمن خلال المراجعة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18607,6 +19561,12 @@
     },
     "회고한 항목" : {
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عناصر راجعتها"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",

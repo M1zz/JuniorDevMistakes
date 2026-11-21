@@ -196,6 +196,7 @@ enum JuniorDevMistakesTipMoments {
         checked.filter { count >= $0 }.map { threshold in
             LeeoTipMoment(id: "checked.\(threshold)",
                           message: String(localized: "지금까지 실수 \(count)개를 돌아봤어요",
+                                          locale: AppLocale.display,
                                           comment: "Tip ask card: how many of the 100 mistakes the person has checked off"))
         }
     }

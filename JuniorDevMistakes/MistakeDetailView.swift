@@ -323,7 +323,7 @@ extension MistakeDetailView {
                     Label {
                         Text("다음 실수")
                     } icon: {
-                        Image(systemName: "arrow.right")
+                        Image(systemName: "arrow.forward")
                     }
                     .labelStyle(.titleAndIcon)
                     .font(.system(.body, design: .rounded, weight: .semibold))
