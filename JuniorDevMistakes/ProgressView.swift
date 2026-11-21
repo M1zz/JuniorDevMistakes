@@ -89,7 +89,8 @@ struct OverallProgressView: View {
                     Text("\(manager.totalChecked)")
                         .font(.system(size: 52, weight: .bold, design: .rounded))
                         .foregroundStyle(AppTheme.primary)
-                    Text("/ 100")
+                    // 숫자 분수는 아랍어 문장 방향에서도 "/ 100" 그대로 (왼쪽→오른쪽 고립)
+                    Text(verbatim: "\u{2066}/ 100\u{2069}")
                         .font(.system(.callout, design: .rounded, weight: .medium))
                         .foregroundStyle(.secondary)
                 }
@@ -167,7 +168,7 @@ struct OverallProgressView: View {
                     .font(.system(.body, design: .rounded, weight: .bold))
                     .accessibilityAddTraits(.isHeader)
                 Spacer()
-                Text("\(manager.totalChecked) / 100")
+                Text(verbatim: "\u{2066}\(manager.totalChecked) / 100\u{2069}")
                     .font(.system(.footnote, design: .rounded, weight: .semibold))
                     .foregroundStyle(.secondary)
             }
