@@ -30,7 +30,7 @@
       ${section("happens", L.happens, it.situation)}
       ${section("todo", L.todo, it.action)}
       ${section("learn", L.learn, it.growth)}
-      <section class="jm-sec retro"><h3>${esc(L.retro)}</h3><p class="q"><b>Q1</b> ${esc(it.retro)}</p></section>`;
+      <section class="jm-sec retro"><h3>${esc(L.retro)}</h3><p class="q"><b>${esc(L.q || "Q1")}</b> ${esc(it.retro)}</p></section>`;
     list.querySelectorAll("[data-i]").forEach((b, i) => {
       b.classList.toggle("on", i === current);
       b.classList.toggle("done", done.has(i));

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سياسة الخصوصية — 100 خطأ برمجي</title>
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/JuniorDevMistakes/ko/privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/JuniorDevMistakes/en/privacy.html" />
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/JuniorDevMistakes/en-GB/privacy.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hans/privacy.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/JuniorDevMistakes/zh-Hant/privacy.html" />
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/JuniorDevMistakes/ja/privacy.html" />
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/JuniorDevMistakes/ru/privacy.html" />
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/JuniorDevMistakes/es/privacy.html" />
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/JuniorDevMistakes/de/privacy.html" />
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/JuniorDevMistakes/fr/privacy.html" />
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/JuniorDevMistakes/it/privacy.html" />
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/JuniorDevMistakes/pt-BR/privacy.html" />
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/JuniorDevMistakes/th/privacy.html" />
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/JuniorDevMistakes/vi/privacy.html" />
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/JuniorDevMistakes/cs/privacy.html" />
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/JuniorDevMistakes/da/privacy.html" />
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/JuniorDevMistakes/el/privacy.html" />
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/JuniorDevMistakes/fi/privacy.html" />
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/JuniorDevMistakes/id/privacy.html" />
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/JuniorDevMistakes/nb/privacy.html" />
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/JuniorDevMistakes/nl/privacy.html" />
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/JuniorDevMistakes/pl/privacy.html" />
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/JuniorDevMistakes/sv/privacy.html" />
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/JuniorDevMistakes/tr/privacy.html" />
+  <link rel="alternate" hreflang="ar" href="https://m1zz.github.io/JuniorDevMistakes/ar/privacy.html" />
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/JuniorDevMistakes/en/privacy.html" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0e1a; color: #f0eefc;
+      line-height: 1.75; padding: 0 5% 80px;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0; height: 64px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      margin-bottom: 60px;
+    }
+    .nav-logo { font-size: 1.1rem; font-weight: 700; }
+    .nav-logo span { color: #F06B6B; }
+    nav a { color: rgba(240,238,252,.55); font-size: .9rem; text-decoration: none; }
+    nav a:hover { color: #f0eefc; }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+    .updated { font-size: .85rem; color: rgba(240,238,252,.45); margin-bottom: 48px; }
+    h2 { font-size: 1.15rem; font-weight: 700; margin: 40px 0 12px; color: #a89ee6; }
+    p { color: rgba(240,238,252,.75); margin-bottom: 16px; }
+    ul { padding-left: 20px; color: rgba(240,238,252,.75); margin-bottom: 16px; }
+    li { margin-bottom: 6px; }
+    a { color: #a89ee6; }
+  
+    .langs { font-size: .8rem; color: rgba(240,238,252,.45); line-height: 2; }
+    .langs a { color: rgba(240,238,252,.6); text-decoration: none; margin-right: 10px; white-space: nowrap; }
+    .langs a:hover, .langs a.cur { color: #f0eefc; }
+    .langs a.cur { font-weight: 700; }
+    .doc-langs { max-width: 720px; margin: 64px auto 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); }
+    .foot-links a { margin-right: 14px; }
+    .faq dt { font-weight: 700; margin: 24px 0 6px; color: #f0eefc; }
+    .faq dd { color: rgba(240,238,252,.75); margin: 0; }
+
+    [dir="rtl"] ul { padding-left: 0; padding-right: 20px; }
+    [dir="rtl"] .langs a { margin-right: 0; margin-left: 10px; }
+    [dir="rtl"] .foot-links a { margin-right: 0; margin-left: 14px; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">100 خطأ برمجي</div>
+  <a href="index.html">→ العودة إلى الرئيسية</a>
+</nav>
+
+<div class="container">
+  <h1>سياسة الخصوصية</h1>
+  <p class="updated">آخر تحديث: فبراير 2026</p>
+
+  <p>يحترم تطبيق «100 خطأ برمجي» (المشار إليه بـ«التطبيق») خصوصيتك. توضّح هذه السياسة المعلومات التي يحفظها التطبيق وكيف تُستخدم.</p>
+
+  <h2>المعلومات التي نحفظها</h2>
+  <p>يحفظ التطبيق البيانات التالية محليًا على جهازك:</p>
+  <ul>
+    <li>تقدّمك في قائمة التحقق (الأخطاء التي وضعت عليها علامة)</li>
+    <li>إجاباتك في دفتر المراجعة (ما تكتبه بنفسك)</li>
+    <li>قائمة المحفوظات</li>
+    <li>حالة اشتراكك</li>
+  </ul>
+  <p>قد تتزامن هذه البيانات عبر iCloud (CloudKit) المرتبط بحساب Apple ID الخاص بك بين الأجهزة المسجّلة بالحساب نفسه.</p>
+
+  <h2>المعلومات التي لا نجمعها</h2>
+  <ul>
+    <li>معلومات تحدد هويتك مثل الاسم أو البريد الإلكتروني أو رقم الجوال</li>
+    <li>معلومات الموقع</li>
+    <li>صلاحيات الوصول إلى الجهاز مثل جهات الاتصال أو الكاميرا أو الميكروفون</li>
+    <li>بيانات تحليل الاستخدام أو التتبع الإعلاني</li>
+  </ul>
+
+  <h2>المشاركة مع أطراف ثالثة</h2>
+  <p>لا يبيع التطبيق أي بيانات ولا يشاركها مع أي طرف ثالث.</p>
+
+  <h2>المزامنة عبر iCloud</h2>
+  <p>عند استخدام المزامنة عبر iCloud، تُنقل بياناتك وتُخزَّن عبر بنية CloudKit التابعة لشركة Apple، وتنطبق سياسة خصوصية Apple على معالجة تلك البيانات. سياسة خصوصية Apple: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></p>
+
+  <h2>عمليات الشراء داخل التطبيق</h2>
+  <p>تتم معالجة الاشتراكات وعمليات الشراء داخل التطبيق عبر App Store. تتولى Apple بيانات الدفع، ولا يستطيع مطوّر التطبيق الاطلاع عليها.</p>
+
+  <h2>حذف بياناتك</h2>
+  <p>يمكنك حذف كل البيانات المحفوظة في التطبيق من الإعدادات ← «مسح كل البيانات» داخل التطبيق. ولحذف البيانات المتزامنة مع iCloud، افتح إعدادات iOS ← Apple ID ← iCloud ← إدارة التخزين واحذفها من هناك.</p>
+
+  <h2>خصوصية الأطفال</h2>
+  <p>لا يجمع التطبيق عن قصد أي معلومات شخصية من الأطفال دون سن 14 عامًا.</p>
+
+  <h2>التغييرات على هذه السياسة</h2>
+  <p>إذا تغيّرت سياسة الخصوصية فسنحدّث هذه الصفحة، وسنعلن عن التغييرات المهمة من خلال تحديث للتطبيق.</p>
+
+  <h2>التواصل</h2>
+  <p>إن كان لديك أي سؤال عن الخصوصية، فتواصل معنا عبر بيانات الاتصال في صفحة المطوّر على App Store.</p>
+</div>
+<div class="doc-langs"><div class="langs"><a href="../ko/privacy.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/privacy.html" hreflang="en" lang="en">English</a> <a href="../en-GB/privacy.html" hreflang="en-GB" lang="en-GB">English (UK)</a> <a href="../zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/privacy.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/privacy.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/privacy.html" hreflang="es" lang="es">Español</a> <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a> <a href="../it/privacy.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/privacy.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/privacy.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/privacy.html" hreflang="cs" lang="cs">Čeština</a> <a href="../da/privacy.html" hreflang="da" lang="da">Dansk</a> <a href="../el/privacy.html" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/privacy.html" hreflang="fi" lang="fi">Suomi</a> <a href="../id/privacy.html" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/privacy.html" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/privacy.html" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/privacy.html" hreflang="pl" lang="pl">Polski</a> <a href="../sv/privacy.html" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/privacy.html" hreflang="tr" lang="tr">Türkçe</a> <a href="../ar/privacy.html" hreflang="ar" lang="ar" class="cur" aria-current="true">العربية</a></div></div>
+</body>
+</html>

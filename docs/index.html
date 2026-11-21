@@ -8,7 +8,7 @@
   <meta http-equiv="refresh" content="1; url=en/">
   <script>
     // 소개 페이지는 언어 폴더에 있다. 브라우저 언어에 맞는 폴더로 보낸다 (없으면 영어).
-    const have = ["ko","en","en-GB","zh-Hans","zh-Hant","ja","ru","es","de","fr","it","pt-BR","th","vi","cs","da","el","fi","id","nb","nl","pl","sv","tr"];
+    const have = ["ko","en","en-GB","zh-Hans","zh-Hant","ja","ru","es","de","fr","it","pt-BR","th","vi","cs","da","el","fi","id","nb","nl","pl","sv","tr","ar"];
     const pick = l => have.find(h => h.toLowerCase() === l.toLowerCase())
       || (/^zh-(tw|hk|mo|hant)/i.test(l) && "zh-Hant") || (/^zh/i.test(l) && "zh-Hans")
       || (/^(no|nn)/i.test(l) && "nb") || (/^pt/i.test(l) && "pt-BR")

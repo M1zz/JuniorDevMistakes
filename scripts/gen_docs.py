@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""docs/<언어>/{index,privacy,support}.html 생성기.
+"""docs/<언어>/{privacy,support}.html 생성기.
 문구: scripts/docs_i18n/<언어>.json (ko.json 이 원문). 사용: python3 scripts/gen_docs.py
+소개 페이지(docs/<언어>/index.html)는 공용 생성기 sitegen 이 docs/site/ 로 만든다. 여기서는 만들지 않는다.
 """
 import json, os, re, html
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -8,9 +9,17 @@ BASE = 'https://m1zz.github.io/JuniorDevMistakes'
 LANGS = [('ko','한국어'),('en','English'),('en-GB','English (UK)'),('zh-Hans','简体中文'),('zh-Hant','繁體中文'),
  ('ja','日本語'),('ru','Русский'),('es','Español'),('de','Deutsch'),('fr','Français'),('it','Italiano'),
  ('pt-BR','Português (Brasil)'),('th','ไทย'),('vi','Tiếng Việt'),('cs','Čeština'),('da','Dansk'),('el','Ελληνικά'),
- ('fi','Suomi'),('id','Bahasa Indonesia'),('nb','Norsk bokmål'),('nl','Nederlands'),('pl','Polski'),('sv','Svenska'),('tr','Türkçe')]
+ ('fi','Suomi'),('id','Bahasa Indonesia'),('nb','Norsk bokmål'),('nl','Nederlands'),('pl','Polski'),('sv','Svenska'),('tr','Türkçe'),('ar','العربية')]
+RTL = {'ar'}
+# 오른쪽에서 왼쪽으로 쓰는 언어에서만 붙인다. 위 스타일의 왼쪽 · 오른쪽 여백을 뒤집는다.
+RTL_CSS = """
+    [dir="rtl"] ul { padding-left: 0; padding-right: 20px; }
+    [dir="rtl"] .langs a { margin-right: 0; margin-left: 10px; }
+    [dir="rtl"] .foot-links a { margin-right: 0; margin-left: 14px; }
+"""
 src = open(os.path.join(ROOT,'docs/index.html'),encoding='utf-8').read()
-INDEX_CSS = re.search(r'<style>(.*?)</style>',src,re.S).group(1)
+_m = re.search(r'<style>(.*?)</style>',src,re.S)
+INDEX_CSS = _m.group(1) if _m else ''   # 옛 소개 페이지 스타일. 지금 docs/index.html 은 sitegen 이 만든다
 priv = open(os.path.join(ROOT,'docs/privacy.html'),encoding='utf-8').read()
 DOC_CSS = re.search(r'<style>(.*?)</style>',priv,re.S).group(1)
 EXTRA_CSS = """
@@ -44,12 +53,12 @@ def btn(d,extra=''):
 def head(lang,title,desc,page,css):
     d = f'  <meta name="description" content="{E_(desc)}" />\n  <meta property="og:title" content="{E_(title)}" />\n  <meta property="og:description" content="{E_(desc)}" />\n  <meta property="og:type" content="website" />\n' if desc else ''
     return f'''<!DOCTYPE html>
-<html lang="{lang}">
+<html lang="{lang}"{' dir="rtl"' if lang in RTL else ''}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{E_(title)}</title>
-{d}{alt_links(page)}  <style>{css}</style>
+{d}{alt_links(page)}  <style>{css}{RTL_CSS if lang in RTL else ''}</style>
 </head>
 '''
 def logo(lang,d):
@@ -249,7 +258,7 @@ def main():
         if not os.path.exists(p): continue
         d = json.load(open(p,encoding='utf-8'))
         out = os.path.join(ROOT,'docs',lang); os.makedirs(out,exist_ok=True)
-        for name,fn in (('index.html',index),('privacy.html',privacy),('support.html',support)):
+        for name,fn in (('privacy.html',privacy),('support.html',support)):
             open(os.path.join(out,name),'w',encoding='utf-8').write(fn(lang,d))
         print('generated',lang)
 if __name__=='__main__': main()

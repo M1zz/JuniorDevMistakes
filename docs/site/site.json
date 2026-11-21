@@ -1,8 +1,8 @@
 {
   "name": {
-    "ko": "실수 100",
-    "en": "100 Dev Mistakes",
-    "en-GB": "100 Dev Mistakes",
+    "ko": "시니어 개발자로",
+    "en": "Road to Senior Dev",
+    "en-GB": "Road to Senior Dev",
     "zh-Hans": "踩坑100",
     "zh-Hant": "踩雷100",
     "ja": "やらかし100",
@@ -23,7 +23,8 @@
     "nl": "100 Fouten",
     "pl": "100 błędów juniora",
     "sv": "100 Misstag",
-    "tr": "100 Hata"
+    "tr": "100 Hata",
+    "ar": "100 خطأ برمجي"
   },
   "url": "https://m1zz.github.io/JuniorDevMistakes/",
   "appStoreId": "6759643878",
@@ -163,6 +164,11 @@
       "code": "tr",
       "path": "tr/",
       "name": "Türkçe"
+    },
+    {
+      "code": "ar",
+      "path": "ar/",
+      "name": "العربية"
     }
   ]
 }
