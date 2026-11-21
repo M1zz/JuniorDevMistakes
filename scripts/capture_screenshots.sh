@@ -19,7 +19,7 @@ SCENES=(home detail list retro progress)
 
 # <AppleLanguages code>:<AppleLocale>. The code is also the folder name.
 LANGS=(ko:ko_KR en:en_US en-GB:en_GB zh-Hans:zh_CN zh-Hant:zh_TW ja:ja_JP ru:ru_RU es:es_ES de:de_DE fr:fr_FR it:it_IT
-       pt-BR:pt_BR th:th_TH vi:vi_VN cs:cs_CZ da:da_DK el:el_GR fi:fi_FI id:id_ID nb:nb_NO nl:nl_NL pl:pl_PL sv:sv_SE tr:tr_TR)
+       pt-BR:pt_BR th:th_TH vi:vi_VN cs:cs_CZ da:da_DK el:el_GR fi:fi_FI id:id_ID nb:nb_NO nl:nl_NL pl:pl_PL sv:sv_SE tr:tr_TR ar:ar_SA)
 
 # True when the capture is missing or a single flat colour (app not drawn yet).
 blank() { [[ ! -s $1 ]] || python3 -c 'import sys; from PIL import Image, ImageStat
@@ -30,17 +30,16 @@ nice -n 10 xcodebuild -project $ROOT/JuniorDevMistakes.xcodeproj -scheme JuniorD
   -destination "generic/platform=iOS Simulator" -derivedDataPath $DD build -quiet
 APP=$DD/Build/Products/Debug-iphonesimulator/JuniorDevMistakes.app
 
-for device in $IPHONE $IPAD; do
+# One device at a time: boot, capture every language, then put it back the way it was
+# (one simulator busy at a time keeps this Mac responsive).
+capture() {
+  local kind=$1 device=$2; shift 2
+  local was_booted=$(xcrun simctl list devices | grep -c "$device) (Booted)" || true)
   xcrun simctl boot $device 2>/dev/null || true
   xcrun simctl bootstatus $device -b >/dev/null
   xcrun simctl install $device $APP
   xcrun simctl status_bar $device override --time "9:41" --dataNetwork wifi --wifiBars 3 \
     --cellularMode active --cellularBars 4 --batteryState discharging --batteryLevel 100 --operatorName ""
-done
-
-# One loop per device, run side by side.
-capture() {
-  local kind=$1 device=$2; shift 2
   for entry in $LANGS; do
     local lang=${entry%%:*} locale=${entry##*:}
     if (( $# > 0 )) && (( ! ${@[(Ie)$lang]} )); then continue; fi
@@ -58,14 +57,11 @@ capture() {
       echo "captured $kind/$lang/$scene"
     done
   done
-}
-capture iphone $IPHONE "$@" &
-capture ipad $IPAD "$@" &
-wait
-
-for device in $IPHONE $IPAD; do
   xcrun simctl terminate $device $BUNDLE_ID 2>/dev/null || true
   xcrun simctl status_bar $device clear
-done
+  (( was_booted )) || xcrun simctl shutdown $device
+}
+capture iphone $IPHONE "$@"
+capture ipad $IPAD "$@"
 
 python3 $ROOT/scripts/compose_screenshots.py "$@"

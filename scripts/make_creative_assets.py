@@ -53,6 +53,7 @@ HEADER = {
     "pl":      ("100 błędów juniora", "Ucz się na cudzych błędach.\n{Rozwijaj się szybciej.}"),
     "sv":      ("100 Misstag", "Lär dig av andras misstag.\n{Väx snabbare.}"),
     "tr":      ("100 Hata", "Başkalarının hatalarından öğren.\n{Daha hızlı geliş.}"),
+    "ar":      ("100 خطأ برمجي", "تعلّم من أخطاء غيرك\n{وتطوّر أسرع}"),
 }
 
 # Search result eyebrow: what people in that country type into the search field.
@@ -65,6 +66,7 @@ EYEBROW = {
     "da": "Juniorudvikler", "el": "Προγραμματισμός", "fi": "Ohjelmointi aloittelijalle",
     "id": "Belajar coding", "nb": "Juniorutvikler", "nl": "Junior developer",
     "pl": "Początkujący programista", "sv": "Juniorutvecklare", "tr": "Junior yazılımcı",
+    "ar": "نصائح للمبرمجين",
 }
 
 
@@ -88,11 +90,14 @@ def search_html(lang):
     scene, headline, sub = compose.COPY[lang][0]
     col = int((r - l) * 0.6)
     ph_w = 1000
-    ph_left = l + col + 140
+    rtl = lang == "ar"
+    # Right-to-left languages read from the right: text column on the right, phone on the left.
+    ph_left = r - col - 140 - ph_w if rtl else l + col + 140
+    text_left = r - col if rtl else l
     img = (RAW / lang / f"{scene}.png").as_uri()
     return f"""
-{compose.device("iphone", img, ph_left, t - 330, ph_w, 4)}
-<div class="box" style="position:absolute;left:{l}px;top:{t}px;width:{col}px;height:{b - t}px;
+{compose.device("iphone", img, ph_left, t - 330, ph_w, -4 if rtl else 4)}
+<div class="box" style="position:absolute;left:{text_left}px;top:{t}px;width:{col}px;height:{b - t}px;
      display:flex;flex-direction:column;justify-content:center;overflow:hidden">
   <div class="eyebrow" style="font-size:88px">{html.escape(EYEBROW[lang])}</div>
   <div class="headline" data-max="200" data-min="110" style="margin-top:32px">{compose.rich(headline)}</div>

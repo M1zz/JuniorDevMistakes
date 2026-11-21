@@ -190,6 +190,13 @@ COPY = {
         ("retro", "Doğru sorularla\n{geriye bak}", "Cevapların kişisel geri bakış günlüğüne dönüşür"),
         ("progress", "Gelişimini\n{tek bakışta} gör", "Yaşadığın hatalar, geri bakışlar ve yer imleri"),
     ],
+    "ar": [
+        ("home", "لا تقع في الخطأ\n{نفسه مرتين}", "100 خطأ شائع يقع فيه المطوّرون المبتدئون"),
+        ("detail", "المشكلة والحل\n{في صفحة واحدة}", "ما الذي يحدث، وما تفعله، وما تتعلمه"),
+        ("list", "{ضع علامة} على الأخطاء\nالتي مررت بها", "10 فئات، في كل فئة 10 أخطاء"),
+        ("retro", "راجع نفسك\n{بالأسئلة الصحيحة}", "إجاباتك تصنع دفتر مراجعتك الخاص"),
+        ("progress", "تطوّرك\n{بنظرة واحدة}", "الأخطاء التي مررت بها والمراجعات والمحفوظات"),
+    ],
 }
 
 # Shared with make_creative_assets.py so the header and search result look like the same app.
@@ -199,13 +206,16 @@ html,body { width:%(W)dpx; height:%(H)dpx; overflow:hidden; }
 body { position:relative;
   background: radial-gradient(ellipse at 85%% 0%%, rgba(255,158,122,.28), transparent 55%%),
               linear-gradient(160deg, #403985 0%%, #5a479e 55%%, #8059b8 100%%);
-  font-family:-apple-system, "SF Pro Display", "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC", "Thonburi", sans-serif; }
+  font-family:-apple-system, "SF Pro Display", "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC", "Thonburi", "SF Arabic", "Geeza Pro", sans-serif; }
 .headline { font-weight:800; color:#ffffff; letter-spacing:-0.025em; line-height:1.14; }
 .headline b { color:#ffb08f; font-weight:800; }
 .eyebrow { font-weight:700; color:#ffb08f; letter-spacing:-0.005em; line-height:1.15; }
 .sub { font-weight:500; color:#d9d3f2; letter-spacing:-0.01em; line-height:1.3; text-wrap:balance; }
 :lang(ja) .headline, :lang(zh) .headline, :lang(th) .headline, :lang(th) .sub, :lang(th) .eyebrow { letter-spacing:0; }
 :lang(th) .headline { line-height:1.32; }
+/* Arabic letters join; any letter-spacing breaks them apart. */
+:lang(ar) .headline, :lang(ar) .sub, :lang(ar) .eyebrow { letter-spacing:0; }
+:lang(ar) .headline { line-height:1.3; }
 :lang(ko) .headline, :lang(ko) .sub, :lang(ko) .eyebrow { word-break:keep-all; }
 .device { position:absolute; background:#0d0b1c; border:solid #2b2650; box-shadow:0 50px 140px rgba(18,10,50,.55); }
 .device img { width:100%%; display:block; }
@@ -277,7 +287,8 @@ def slide_html(lang, kind, index, scene, headline, sub):
 
 def render(page_body, W, H, lang, out_png):
     """Render with headless Chrome after the fit script has run; stop when copy does not fit."""
-    page = (f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>'
+    direction = "rtl" if lang == "ar" else "ltr"
+    page = (f'<!doctype html><html lang="{lang}" dir="{direction}"><head><meta charset="utf-8"><style>'
             f'{BASE_CSS % {"W": W, "H": H}}</style></head><body>{page_body}{FIT_JS}</body></html>')
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
         f.write(page)
