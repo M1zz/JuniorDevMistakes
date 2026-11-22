@@ -25,6 +25,8 @@ struct JuniorDevMistakesApp: App {
                 .storeFallbackNotice()
                 .environmentObject(checklistManager)
                 .environmentObject(storeManager)
+                // App Store 이벤트 링크(<번들 ID>://paywall)로 열리면 요금제를 띄운다 (LeeoKit).
+                .leeoPaywallLink { PaywallView().environmentObject(storeManager).environmentObject(checklistManager) }
                 // 팁 상품을 불러오고 끝나지 않은 팁을 마저 센다 (LeeoStore 없이 혼자)
                 .task { await JuniorDevMistakesSpec.tipJar.startStandalone() }
                 // 선물 상품을 불러오고, 결제는 됐는데 코드를 못 받은 선물을 마저 처리한다.
