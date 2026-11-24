@@ -109,150 +109,200 @@ App Store fırsatları planları açar
 아랍어를 새로 지원해요
 화살표가 읽는 방향을 따라 바뀌어요
 앱이 더 안정적으로 실행돼요
+할인 기간에는 앱을 열 때 소식을 알려 드려요
+처음 구독하면 할인된 값으로 시작할 수 있어요
 
 ### 앱스토어 (영어)
 
 Now available in Arabic
 Arrows now follow your reading direction
 The app starts up more reliably
+The app now tells you when a sale is on
+New subscribers start at a lower price
 
 ### 앱스토어 (영어(영국))
 
 Now available in Arabic
 Arrows now follow your reading direction
 The app starts up more reliably
+The app now tells you when a sale is on
+New subscribers start at a lower price
 
 ### 앱스토어 (중국어 간체)
 
 新增阿拉伯语
 箭头会跟随阅读方向
 应用启动更稳定
+优惠期间打开应用时会通知你
+首次订阅可以优惠价开始
 
 ### 앱스토어 (중국어 번체)
 
 新增阿拉伯文
 箭頭會跟著閱讀方向
 App 啟動更穩定
+優惠期間開啟 App 時會通知你
+首次訂閱可用優惠價開始
 
 ### 앱스토어 (일본어)
 
 アラビア語に対応しました
 矢印が読む向きに合わせて変わります
 アプリがより安定して起動します
+セール期間中はアプリを開くとお知らせします
+初めての登録なら割引価格で始められます
 
 ### 앱스토어 (러시아어)
 
 Добавлен арабский язык
 Стрелки следуют направлению чтения
 Приложение запускается надёжнее
+Приложение сообщит о скидках при запуске
+Новая подписка по сниженной цене
 
 ### 앱스토어 (스페인어)
 
 Ahora disponible en árabe
 Las flechas siguen tu sentido de lectura
 La app se abre de forma más estable
+La app te avisa cuando hay ofertas
+Tu primera suscripción tiene descuento
 
 ### 앱스토어 (독일어)
 
 Jetzt auch auf Arabisch
 Pfeile folgen deiner Leserichtung
 Die App startet zuverlässiger
+Die App zeigt dir laufende Angebote
+Neue Abos starten zum reduzierten Preis
 
 ### 앱스토어 (프랑스어)
 
 L’app est désormais en arabe
 Les flèches suivent le sens de lecture
 L’app démarre de façon plus fiable
+L’app vous prévient pendant les promos
+Premier abonnement à prix réduit
 
 ### 앱스토어 (이탈리아어)
 
 Ora disponibile in arabo
 Le frecce seguono il verso di lettura
 L’app si avvia in modo più stabile
+L’app ti avvisa quando c’è un’offerta
+Con il primo abbonamento parti scontato
 
 ### 앱스토어 (포르투갈어(브라질))
 
 Agora disponível em árabe
 As setas seguem o sentido de leitura
 O app abre de forma mais estável
+O app avisa quando há promoção
+A primeira assinatura tem desconto
 
 ### 앱스토어 (태국어)
 
 รองรับภาษาอาหรับแล้ว
 ลูกศรเปลี่ยนตามทิศทางการอ่าน
 แอปเปิดได้เสถียรขึ้น
+ช่วงลดราคา เราจะแจ้งเมื่อคุณเปิดแอป
+สมัครครั้งแรกเริ่มได้ในราคาพิเศษ
 
 ### 앱스토어 (베트남어)
 
 Đã hỗ trợ tiếng Ả Rập
 Mũi tên đổi theo hướng đọc
 Ứng dụng khởi động ổn định hơn
+Khi có ưu đãi, ứng dụng sẽ báo cho bạn
+Lần đăng ký đầu tiên có giá ưu đãi
 
 ### 앱스토어 (체코어)
 
 Nově také v arabštině
 Šipky se řídí směrem čtení
 Aplikace se spouští spolehlivěji
+Během slev vám dáme vědět po otevření
+Noví předplatitelé začnou se slevou
 
 ### 앱스토어 (덴마크어)
 
 Nu også på arabisk
 Pilene følger din læseretning
 Appen starter mere stabilt
+Appen fortæller dig, når der er udsalg
+Nye abonnenter starter til nedsat pris
 
 ### 앱스토어 (그리스어)
 
 Τώρα και στα αραβικά
 Τα βέλη ακολουθούν τη φορά ανάγνωσης
 Η εφαρμογή ξεκινά πιο σταθερά
+Η εφαρμογή σας ενημερώνει για προσφορές
+Οι νέοι συνδρομητές ξεκινούν με έκπτωση
 
 ### 앱스토어 (핀란드어)
 
 Nyt myös arabiaksi
 Nuolet seuraavat lukusuuntaa
 Sovellus käynnistyy luotettavammin
+Alennuksista kerrotaan, kun avaat apin
+Uudet tilaajat aloittavat alennushintaan
 
 ### 앱스토어 (인도네시아어)
 
 Kini tersedia dalam bahasa Arab
 Panah mengikuti arah bacaan
 Aplikasi terbuka lebih stabil
+App memberi tahu saat ada diskon
+Pelanggan baru mulai dengan harga diskon
 
 ### 앱스토어 (노르웨이어(보크말))
 
 Nå også på arabisk
 Pilene følger leseretningen din
 Appen starter mer stabilt
+Appen sier fra når det er salg
+Nye abonnenter starter til redusert pris
 
 ### 앱스토어 (네덜란드어)
 
 Nu ook in het Arabisch
 Pijlen volgen je leesrichting
 De app start betrouwbaarder op
+De app laat weten wanneer er korting is
+Nieuwe abonnees beginnen met korting
 
 ### 앱스토어 (폴란드어)
 
 Teraz także po arabsku
 Strzałki podążają za kierunkiem czytania
 Aplikacja uruchamia się stabilniej
+Aplikacja powie Ci o promocjach
+Nowi subskrybenci zaczną w niższej cenie
 
 ### 앱스토어 (스웨덴어)
 
 Nu även på arabiska
 Pilarna följer din läsriktning
 Appen startar stabilare
+Appen berättar nu när det är rea
+Nya prenumeranter börjar till lägre pris
 
 ### 앱스토어 (튀르키예어)
 
 Artık Arapça da var
 Oklar okuma yönünü izliyor
 Uygulama daha kararlı açılıyor
+Uygulama indirimleri size haber verir
+Yeni aboneler indirimli başlayabilir
 
 ### 앱스토어 (아랍어)
 
 التطبيق متاح الآن بالعربية
 الأسهم تتبع اتجاه القراءة
 يعمل التطبيق بثبات أكبر عند فتحه
+نخبرك بالعروض عند فتح التطبيق
+المشتركون الجدد يبدؤون بسعر مخفّض
 
 ## 1.0.4
 
