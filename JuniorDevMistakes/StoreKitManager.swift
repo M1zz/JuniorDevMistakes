@@ -38,6 +38,8 @@ final class StoreKitManager: ObservableObject {
     func loadProducts() async {
         loadFailed = false
         do {
+            // 할인 배너가 첫 구독 할인을 받을 수 있는 사람인지 보려고 파는 상품을 알려 준다 (LeeoKit).
+            LeeoSale.productIDs = Self.allIds
             let fetched = try await Product.products(for: Self.allIds)
             products = fetched.sorted {
                 (Self.allIds.firstIndex(of: $0.id) ?? 0) < (Self.allIds.firstIndex(of: $1.id) ?? 0)
